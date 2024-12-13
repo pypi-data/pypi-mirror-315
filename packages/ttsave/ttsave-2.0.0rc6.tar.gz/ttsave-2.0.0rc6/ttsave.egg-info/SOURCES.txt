@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+ttsave_cli.py
+ttsave/__init__.py
+ttsave/__version__.py
+ttsave/lib.cp310-win_amd64.pyd
+ttsave.egg-info/PKG-INFO
+ttsave.egg-info/SOURCES.txt
+ttsave.egg-info/dependency_links.txt
+ttsave.egg-info/entry_points.txt
+ttsave.egg-info/not-zip-safe
+ttsave.egg-info/requires.txt
+ttsave.egg-info/top_level.txt
+ttsave/js/xbogus-js.min.js
+ttsave/utils/xbogus.cp310-win_amd64.pyd
