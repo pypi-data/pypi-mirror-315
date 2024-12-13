@@ -1,0 +1,90 @@
+[build-system]
+requires = ["scikit-build-core-conan", "cython >=3.0"]
+build-backend = "scikit_build_core_conan.build"
+
+[project]
+name = "pyncbitk"
+version = "0.1.0-alpha.1"
+description = "Cython bindings and Python interface to the NCBI C++ Toolkit."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "COPYING" }
+authors = [
+  { name = "Martin Larralde", email = "martin.larralde@embl.de" },
+]
+keywords = ["bioinformatics", "blast", "sequence", "alignment", "ncbi"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: C++",
+    "Programming Language :: Cython",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Typing :: Typed",
+]
+
+[project.urls]
+"Documentation" = "https://pyncbitk.readthedocs.io/en/stable/"
+"Bug Tracker" = "https://github.com/althonos/pyncbitk/issues"
+"Changelog" = "https://github.com/althonos/pyncbitk/blob/master/CHANGELOG.md"
+"Coverage" = "https://codecov.io/gh/althonos/pyncbitk/"
+"Builds" = "https://github.com/althonos/pyncbitk/actions"
+"PyPI" = "https://pypi.org/project/pyncbitk"
+
+[tool.scikit-build-core-conan]
+path = "."
+build = "missing"
+output_folder = "build/Conan"
+config = ["tools.cmake.cmaketoolchain:generator=Ninja"]
+
+[[tool.scikit-build-core-conan.local-recipes]]
+path = "vendor/ncbi-cxx-toolkit-conan"
+name = "ncbi-cxx-toolkit-public"
+version = "28.0.11"
+
+[tool.scikit-build]
+build-dir = "build/{build_type}"
+cmake.build-type = "Release"
+editable.rebuild = false
+editable.verbose = false
+
+[tool.scikit-build.cmake.define]
+PYNCBITK_INSTALL_LIBS = { env = "PYNCBITK_INSTALL_LIBS", default = false }
+PYNCBITK_DISABLE_SSE4 = { env = "PYNCBITK_DISABLE_SSE4", default = false }
+
+[[tool.scikit-build.overrides]]
+if.state = "editable"
+cmake.build-type = "Debug"
+
+[[tool.scikit-build-overrides]]
+if.env.SCCACHE = true
+cmake.define.CMAKE_C_COMPILER_LAUNCHER = "sccache"
+cmake.define.CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
+
+[[tool.scikit-build-overrides]]
+if.env.MOLD = true
+cmake.define.CMAKE_LINKER_TYPE = "mold"
+
+[tool.cibuildwheel]
+before-build = ["pip install scikit-build-core-conan cython"]
+build-frontend = { name = "pip", args = ["--no-build-isolation", "--config-settings=cmake.define.PYNCBITK_INSTALL_LIBS=OFF"] }
+build-verbosity = 1
+free-threaded-support = false
+test-command = "cd {project} && python -m unittest tests -v"
+manylinux-x86_64-image = "althonos/pyncbitk-manylinux_2_28:release"
+
+[tool.cibuildwheel.macos]
+environment = { MACOSX_DEPLOYMENT_TARGET = "10.12" }
+archs = ["x86_64", "arm64"]
