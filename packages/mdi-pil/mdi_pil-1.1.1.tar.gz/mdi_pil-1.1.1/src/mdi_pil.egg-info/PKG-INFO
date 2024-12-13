@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mdi_pil
+Version: 1.1.1
+Summary: A library to draw MDI icons onto PIL Image objects.
+Author: Slalamander
+Project-URL: Homepage, https://github.com/Slalamander/mdi_pil
+Keywords: mdi,MaterialDesignIcon,pictogrammers,mdi icons
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow
+Provides-Extra: ttk
+Requires-Dist: ttkbootstrap; extra == "ttk"

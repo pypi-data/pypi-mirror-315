@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+src/mdi_pil/__init__.py
+src/mdi_pil/constants.py
+src/mdi_pil/ttkbootstrap_mdi.py
+src/mdi_pil.egg-info/PKG-INFO
+src/mdi_pil.egg-info/SOURCES.txt
+src/mdi_pil.egg-info/dependency_links.txt
+src/mdi_pil.egg-info/requires.txt
+src/mdi_pil.egg-info/top_level.txt
