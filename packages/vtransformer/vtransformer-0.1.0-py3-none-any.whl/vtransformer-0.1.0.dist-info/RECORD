@@ -1,0 +1,11 @@
+VisionTransformer/__init__.py,sha256=XIg-D2pQD_GyETzEJZ4urzJVLUys1RyupUapENA7KSc,8396
+VisionTransformer/__main__.py,sha256=yr7MgOVuKRcx-6Tyli9qW9XnzpFd1uEE5AmM9BIrnEI,939
+VisionTransformer/config/config.yaml,sha256=k1MMqd1Le-h1h1XOT50lmolLVAVQb9HLFcdZyBaOo7o,2026
+VisionTransformer/data.py,sha256=7bOAt21u2n3aX5t4Zgg_tduerSyVq9MaRRdkN5XjQgg,6046
+VisionTransformer/model.py,sha256=xjguWSli0N7c9Idsspq5R4cLkcioqOx0ZOcnq1KmvNY,6089
+VisionTransformer/test.py,sha256=hhT2rB-2K5NUYRVKLrhsEVGDkSyfQzl_6b31czX8-rw,1459
+VisionTransformer/train.py,sha256=BYfEzid-ge4rsTkXcl6BATq_qMthLO_jF-kViEYa0Oo,7484
+VisionTransformer/utils.py,sha256=w0atCSMDmyo7ryCrFrA9ECXUPbX8XDq68k87G3E731I,473
+vtransformer-0.1.0.dist-info/METADATA,sha256=DZQ12sbiEBNqjtYPLyw81GKNJJrOlLSrLthY3DdC4b0,2059
+vtransformer-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+vtransformer-0.1.0.dist-info/RECORD,,
