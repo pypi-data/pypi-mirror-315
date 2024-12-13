@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+package/__init__.py
+package/subpckg1/EnergyRequirements.py
+package/subpckg1/Goals.py
+package/subpckg1/PersonalSummary.py
+package/subpckg1/__init__.py
+package/subpckg2/Macros.py
+package/subpckg2/WorkoutSchedule.py
+package/subpckg2/__init__.py
+project_step_3.egg-info/PKG-INFO
+project_step_3.egg-info/SOURCES.txt
+project_step_3.egg-info/dependency_links.txt
+project_step_3.egg-info/requires.txt
+project_step_3.egg-info/top_level.txt
