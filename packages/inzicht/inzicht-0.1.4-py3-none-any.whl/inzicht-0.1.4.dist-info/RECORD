@@ -1,0 +1,9 @@
+inzicht/__init__.py,sha256=3yvRSlZrsJepv6W6GgxBCLU86D49DNUJTjHwpjfrsFE,83
+inzicht/crud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inzicht/crud/errors.py,sha256=a4bKwi0UlQbKaG6oqwhSBuXbrWWAACjKTOZAztYe0F8,90
+inzicht/crud/generic.py,sha256=by8lPZeEejX3SBYj7juPg8tDYsJiegI4ZrUfJa5OBdY,3187
+inzicht/crud/interfaces.py,sha256=sdkgYPGHIaT4nn1fCApSEbDmLbsS_8ERpdHgmDKVGus,3241
+inzicht/declarative.py,sha256=yyIOldJr-dzN0HAqjsXVnJRik4Vg_7KXucJfvMUoTh0,1129
+inzicht-0.1.4.dist-info/METADATA,sha256=6B4sNZY608x0K7Lu9qpmVSi9Gydh-y1lIQfXZuaHUDw,1158
+inzicht-0.1.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+inzicht-0.1.4.dist-info/RECORD,,
