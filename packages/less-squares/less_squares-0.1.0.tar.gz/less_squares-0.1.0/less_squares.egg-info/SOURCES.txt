@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+less_squares.egg-info/PKG-INFO
+less_squares.egg-info/SOURCES.txt
+less_squares.egg-info/dependency_links.txt
+less_squares.egg-info/requires.txt
+less_squares.egg-info/top_level.txt
+tests/test_less_squares.py
+tests/test_less_squares_iterative.py
