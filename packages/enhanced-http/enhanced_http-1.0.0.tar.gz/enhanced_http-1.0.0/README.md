@@ -1,0 +1,244 @@
+# **Enhanced HTTP Client**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)  
+[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/)  
+
+Enhanced HTTP Client is a lightweight, production-ready library for handling asynchronous HTTP and WebSocket connections. Built using Python’s standard libraries, it features connection pooling, caching, retries, WebSocket communication, and advanced middleware support.
+
+---
+
+## **Features**
+
+- 🌐 **HTTP 1.1 Support**: Efficient HTTP client built on `asyncio`.
+- 📡 **WebSocket Communication**: Send and receive messages with ping/pong handling.
+- 🔁 **Retries with Exponential Backoff**: Robust handling of transient errors.
+- 🚀 **Connection Pooling**: Reuse connections to reduce latency.
+- 💾 **In-Memory Caching**: Key-value caching with configurable TTL.
+- 🔧 **Pluggable Middleware**: Add custom request/response handlers.
+- 📊 **Metrics**: Track requests, retries, and failures for better insights.
+- 🔒 **Secure Defaults**: TLS/SSL support for HTTPS and WebSocket communication.
+
+---
+
+## **Installation**
+
+### **With pip**
+```bash
+pip install enhanced-http
+```
+
+### **Manual Installation**
+1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/enhanced-http.git
+cd enhanced-http
+```
+
+2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+---
+## **Usage**
+### **HTTP Client**
+
+```python
+from enhanced_http.client import EnhancedHttpClient
+import asyncio
+
+async def main():
+    client = EnhancedHttpClient()
+    
+    # Basic GET request
+    response = await client.request("GET", "https://httpbin.org/get")
+    print(response)  # {'status_code': 200, 'headers': {...}, 'body': {...}}
+    
+    # POST request with JSON body
+    response = await client.request(
+        "POST",
+        "https://httpbin.org/post",
+        headers={"Content-Type": "application/json"},
+        body={"key": "value"}
+    )
+    print(response)
+    
+    await client.close()  # Close all connections
+
+asyncio.run(main())
+```
+---
+## **WebSocket Client**
+
+```python
+from enhanced_http.websocket import WebSocketClient
+import asyncio
+
+async def main():
+    ws_client = WebSocketClient()
+    ws_conn = await ws_client.connect("wss://echo.websocket.org")
+    
+    # Send a message
+    await ws_conn.send("Hello, WebSocket!")
+    
+    # Receive a message
+    response = await ws_conn.receive()
+    print(response)  # Should echo "Hello, WebSocket!"
+    
+    await ws_conn.close()
+
+asyncio.run(main())
+```
+---
+## **Caching**
+```python
+from enhanced_http.cache import InMemoryCache
+import asyncio
+
+async def main():
+    cache = InMemoryCache()
+    
+    # Set a value with TTL
+    await cache.set("key1", "value1", ttl=5)
+    
+    # Get the cached value
+    value = await cache.get("key1")
+    print(value)  # "value1"
+    
+    # Wait for the TTL to expire
+    await asyncio.sleep(6)
+    value = await cache.get("key1")
+    print(value)  # None
+
+asyncio.run(main())
+```
+---
+## **Middleware**
+### **Features of the Robust Middleware**
+#### **1. Prioritized Middleware**
+Middleware can now be assigned a priority (lower numbers execute first). For example:
+```python
+client.middleware.add_request_middleware(logging_middleware_request, priority=50)
+client.middleware.add_request_middleware(add_default_headers_middleware, priority=10)
+```
+#### **2. Prebuilt Middleware**
+Logging Middleware: Logs requests and responses.
+Exception Handling Middleware: Catches and processes exceptions during middleware execution.
+Default Headers Middleware: Adds default headers like `User-Agent`.
+#### **3. Synchronous and Asynchronous Middleware Support**
+Both synchronous and asynchronous middleware functions are supported.
+
+#### **4. Flexible Chains**
+Request and response middleware are managed separately, so you can preprocess requests and post-process responses independently.
+
+### **Example Usage**
+```python
+from enhanced_http.middleware import MiddlewareManager
+import asyncio
+
+async def log_request(method, url, headers, body):
+    print(f"Request: {method} {url}")
+    return method, url, headers, body
+
+async def log_response(response):
+    print(f"Response: {response['status_code']}")
+    return response
+
+async def main():
+    # Initialize middleware
+    middleware = MiddlewareManager()
+    middleware.add_request_middleware(log_request)
+    middleware.add_response_middleware(log_response)
+
+    # Use middleware with an HTTP client
+    client = EnhancedHttpClient()
+    response = await client.request("GET", "https://httpbin.org/get")
+    await client.close()
+
+asyncio.run(main())
+
+```
+
+---
+## **Advanced Features**
+### **Retires with Exponential Backoff**
+Handle transient errors like timeouts with automatic retries.
+
+```python
+async def main():
+    client = EnhancedHttpClient(max_retries=3, backoff_factor=0.5)
+    
+    # Will retry on failure
+    response = await client.request("GET", "https://httpbin.org/status/500")
+    print(response)
+    
+    await client.close()
+
+asyncio.run(main())
+```
+---
+## **Metrics**
+Track the number of requests, retries, and failures.
+```python
+client = EnhancedHttpClient()
+metrics = client.get_metrics()
+print(metrics)  # {'requests': 10, 'retries': 2, 'failures': 1}
+```
+---
+## **Development**
+### **Running Tests**
+1. Install development dependencies:
+```bash
+pip install pytest pytest-asyncio
+```
+2. Run the tests:
+```bash
+pytest enhanced_http/tests/
+```
+### **Code Formatting**
+This project uses `black` for code formatting:
+```bash
+pip install black
+black .
+```
+
+---
+## **Roadmap**
+
+Here are the planned features and enhancements for the Enhanced HTTP Client:
+
+- [x] Add HTTP/2 and HTTP/3 support
+- [x] Implement exponential backoff and retry logic
+- [x] Add distributed caching support (e.g., Redis backend)
+- [x] Support circuit breaker middleware
+- [x] Integrate request tracing with OpenTelemetry
+- [x] Enhance logging and monitoring capabilities
+- [ ] Add prebuilt authentication middleware (e.g., OAuth2, API keys)
+- [ ] Provide detailed documentation and tutorials
+
+Want to see more features? Submit a feature request or vote on existing ones in the [issues](https://github.com/Treytek/enhanced-http/issues).
+
+
+---
+## **Contributing**
+
+We welcome contributions to Enhanced HTTP! Here’s how you can help:
+
+1. Fork the repository.
+2. Create a new branch:
+```bash
+   git checkout -b feature-name
+```
+3. Make your changes and commit:
+```bash
+git commit -m "Description of changes"
+```
+4. Push to your fork:
+```bash
+git push origin feature-name
+```
+5. Create a pull request.
+Need help? Open an issue or contact us at dgoss@treytek.com
+
+```vbnet
+Feel free to copy and paste this into your `README.md` file! Let me know if you’d like further refinements.
+```
