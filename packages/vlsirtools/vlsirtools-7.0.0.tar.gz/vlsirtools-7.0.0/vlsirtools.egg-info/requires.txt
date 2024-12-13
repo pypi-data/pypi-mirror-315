@@ -1,0 +1,6 @@
+vlsir==7.0.0
+numpy
+pandas
+
+[dev]
+vlsirdev
