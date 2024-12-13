@@ -1,0 +1,41 @@
+#! /usr/bin/env python
+'''
+Auther      : xiaobaiTser
+Email       : 807447312@qq.com
+createTime  : 2024/11/18 23:26
+fileName    : __init__.py.py
+'''
+
+
+import re
+from collections import defaultdict
+from functools import reduce
+
+# 示例 curl 命令列表
+curl_commands = [
+    "curl -X POST 'https://mp.weixin.qq.com/api/v2/ci/path1' -d '{}'",
+    "curl 'https://mp.weixin.qq.com/api/v1/ii/path2'",
+    "curl -H \"content-type: application/json\"    \"https://mp.weixin.qq.com/api/v3/yy/path3\""
+]
+
+# 正则表达式用于匹配 curl 命令中的 URL
+url_pattern = re.compile(r"curl\s+(?:-[^'\"]*\s+)*['\"]([^'\"]+)['\"]")
+
+# 提取所有 URL
+urls = [url_pattern.search(cmd).group(1) for cmd in curl_commands]
+
+# 函数用于找到字符串列表的公共前缀
+def common_prefix(strings):
+    if not strings:
+        return ""
+    s1 = min(strings)
+    s2 = max(strings)
+    for i, c in enumerate(s1):
+        if c != s2[i]:
+            return s1[:i]
+    return s1
+
+# 找到所有 URL 的公共前缀
+common_url_prefix = common_prefix(urls)
+
+print("Common URL prefix:", common_url_prefix)
