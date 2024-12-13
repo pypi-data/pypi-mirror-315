@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: quote_inspire_jokes
+Version: 0.1
+Summary: A Python module to fetch quotes, inspiring quotes, and jokes from APIs
+Home-page: https://github.com/francefaraz/far_quotes_python_module
+Author: Shaik Muneer
+Requires-Dist: requests

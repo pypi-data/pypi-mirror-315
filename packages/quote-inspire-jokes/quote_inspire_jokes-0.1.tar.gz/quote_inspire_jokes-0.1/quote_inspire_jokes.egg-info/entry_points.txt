@@ -1,0 +1,2 @@
+[console_scripts]
+quote_inspire_jokes = quote_inspire_jokes.__main__:main

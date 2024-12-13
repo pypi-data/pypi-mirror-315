@@ -1,0 +1,12 @@
+README.md
+setup.py
+quote_inspire_jokes/__init__.py
+quote_inspire_jokes/inspire.py
+quote_inspire_jokes/joke.py
+quote_inspire_jokes/quote.py
+quote_inspire_jokes.egg-info/PKG-INFO
+quote_inspire_jokes.egg-info/SOURCES.txt
+quote_inspire_jokes.egg-info/dependency_links.txt
+quote_inspire_jokes.egg-info/entry_points.txt
+quote_inspire_jokes.egg-info/requires.txt
+quote_inspire_jokes.egg-info/top_level.txt
