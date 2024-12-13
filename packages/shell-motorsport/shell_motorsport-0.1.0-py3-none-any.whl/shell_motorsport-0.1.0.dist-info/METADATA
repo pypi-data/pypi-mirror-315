@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: shell-motorsport
+Version: 0.1.0
+Summary: Control de Autos RC de Shell Motorsport a través de Bluetooth Low Energy (BLE)
+Home-page: https://github.com/AMasetti/shell-motorsport-rc-lib
+Author: Augusto Masetti
+Author-email: augmas15@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: bleak==0.21.1
+Requires-Dist: pybluez==0.23
+Requires-Dist: pycryptodome==3.19.0
+
+UNKNOWN
+
