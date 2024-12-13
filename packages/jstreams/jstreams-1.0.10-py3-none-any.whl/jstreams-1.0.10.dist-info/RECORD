@@ -1,0 +1,12 @@
+jstreams/__init__.py,sha256=Kj4LtCQNClgWvpHXwbgq4fEbzprIPqzzAN1bLI2zWlI,575
+jstreams/__init__.pyi,sha256=L3tvmw0PckzidGYS5sWrj_763P3X6bagxYkdcaXIOxc,612
+jstreams/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jstreams/stream.py,sha256=wnJM8nvmNIumh0FDQBPJL6eivAr4M0XmE0kcev-jS4E,8880
+jstreams/stream.pyi,sha256=TykjnUOGhaCs9vU936IGccMKGP3v31PchH8SBGaa0B8,3767
+jstreams/tryOpt.py,sha256=tM6MnruWdNwhkC1sI7uemBgVUiaYNlJLKOXnMmm-MRE,1893
+jstreams/tryOpt.pyi,sha256=dH6ZOGa_7-reMCE_Bhz-MWVB1A4aOKqz1rNKylgTFOU,624
+jstreams-1.0.10.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+jstreams-1.0.10.dist-info/METADATA,sha256=uV-0Awf6yO2_1ZfZdAkfDnm-fKij8YW8fk71LkAWdGk,6004
+jstreams-1.0.10.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+jstreams-1.0.10.dist-info/top_level.txt,sha256=hI5ffAo-U6x1GQIFy8DxhEGl5dp0jDfWOtiS2YzMKkE,9
+jstreams-1.0.10.dist-info/RECORD,,
