@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load humanize static %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/vendor/photoswipe-v5.4.4.css' %}">
+<link rel="stylesheet" href="{% static 'css/vendor/photoswipe-dynamic-caption-plugin-v1.2.7.css' %}">
+<script type="module" src="{% static 'js/photoswipe.js' %}"></script>
+{% endblock extra_head %}
+
+
+{% block title %}Frontpage{% endblock title %}
+
+{% block main_content %}
+  <div class="row justify-content-between">
+
+    <div class="col-6 mt-4">
+      <div class="row">
+        <div class="col-md-12 col-sm-10">
+          <div class="row">
+            <div class="col-12">
+              <h3>Recent images</h3>
+              <hr/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                {% for image in 6_last_images %}
+                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <div class="pswp-gallery" id="gallery">
+                    {% include "includes/file_thumbnail_pswp.html" with record=image width=200 ratio="1/1" %}
+                    <small class="text-wrap">{{ image.title }}</small>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6 col-sm-10">
+          <div class="row">
+            <div class="col-12">
+              <h3>Recent videos</h3>
+              <hr/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                {% for video in 6_last_videos %}
+                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <div class="pswp-gallery" id="gallery">
+                    {% include "includes/file_thumbnail_pswp.html" with record=image width=200 ratio="1/1" %}
+                    <small class="text-wrap">{{ video.title }}</small>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6 col-sm-10">
+          <div class="row">
+            <div class="col-12">
+              <h3>Recent audios</h3>
+              <hr/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                {% for audio in 6_last_audios %}
+                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <audio controls class="w-75">
+                      <source src="{{ audio.original.url }}">
+                    </audio>
+                    <small class="text-wrap">{{ audio.title }}</small>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6 col-sm-10">
+          <div class="row">
+            <div class="col-12">
+              <h3>Recent documents</h3>
+              <hr/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                {% for document in 6_last_documents %}
+                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <i class="fa-solid fa-file fa-2x"></i>
+                    <small class="text-wrap">{{ document.title }}</small>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 mt-4">
+      <div class="row">
+        <div class="col-12">
+          <h3>Most viewed</h3>
+          <hr class="w-75"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          {% for image in 6_most_popular %}
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <div class="pswp-gallery" id="gallery">
+              {% include "includes/file_thumbnail_pswp.html" with record=image width=200 ratio="1/1" %}
+              <small class="text-wrap">{{ image.title }}</small>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock main_content %}

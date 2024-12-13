@@ -1,0 +1,24 @@
+{% extends "file_detail.html" %} 
+{% block file_detail %}
+<h1>{{ file.filetype|capfirst }} {{ file.title }}</h1>
+<div class="d-flex justify-content-center">
+  {% if file.filetype == "image" %}
+  <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+    <div class="pswp-gallery__item">
+      <a class="gallerya" href="{{ file.fullsize_url }}"
+          data-bma-file-uuid="{{ file.uuid }}"
+          data-bma-file-orig-url="{{ file.original.url }}"
+          data-pswp-width="{{ file.width }}"
+          data-pswp-height="{{ file.height }}"
+          data-pswp-type="image"
+          data-pswp-srcset="{% render_source_set image=file mimetype="image/webp" %}">
+      {% render_file file.original img_alt=file.title img_loading="lazy" img_class="img-fluid" lg=9 sm=12 %}
+      </a>
+      {% include "includes/file_pswp_caption.html" %}
+    </div>
+  </div>
+  {% else %}
+    {% render_file file.original lg=9 sm=12 %}
+  {% endif %}
+</div>
+{% endblock file_detail %}

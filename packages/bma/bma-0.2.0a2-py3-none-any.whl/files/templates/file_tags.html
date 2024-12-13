@@ -1,0 +1,25 @@
+{% extends "file_detail.html" %}
+{% load django_bootstrap5 %}
+{% load render_table from django_tables2 %}
+
+{% block title %}File Tags{% endblock title %}
+
+{% block file_detail %}
+<h1>{{ file.filetype|capfirst }} {{ file.title }} Tags</h1>
+<div class="row">
+
+  <!-- tag filter sidebar -->
+  <div class="col-xxl-2 col-12 collapse collapse-horizontal" id="TagFilters">
+  {% include "includes/tag_filter.html" %}
+  </div>
+
+  <!-- main tag table -->
+  {% include "includes/tag_toolbar.html" %}
+  {% if not filter.qs.count %}
+    <h2>No tags found</h2>
+    <p><a class="btn btn-success" href="{% url 'files:file_tag_create' file_uuid=file.uuid %}"><i class="fas fa-plus"></i> Add new tags</a></p>
+  {% else %}
+    {% render_table table %}
+  {% endif %}
+</div>
+{% endblock file_detail %}

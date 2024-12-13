@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load humanize static %}
+{% load django_bootstrap5 %}
+
+{% block title %}File list{% endblock title %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/vendor/photoswipe-v5.4.4.css' %}">
+<link rel="stylesheet" href="{% static 'css/vendor/photoswipe-dynamic-caption-plugin-v1.2.7.css' %}">
+{% endblock extra_head %}
+
+{% block main_content %}
+  <div class="row">
+
+    <!-- Sidebar with file filters start -->
+    <div class="col-xl-2 col-12 collapse collapse-horizontal" id="FileFilters">
+    {% include "includes/file_filters.html" %}
+    </div>
+    <!-- Sidebar with file filters end -->
+
+    <!-- Main content -->
+    <div class="col">
+      <h1>Files</h1>
+      <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+      {% block file_list %}
+        {% include "includes/file_table.html" %}
+      {% endblock file_list %}
+      </div>
+    </div>
+  </div>
+<script type="module" src="{% static 'js/photoswipe.js' %}"></script>
+{% endblock main_content %}

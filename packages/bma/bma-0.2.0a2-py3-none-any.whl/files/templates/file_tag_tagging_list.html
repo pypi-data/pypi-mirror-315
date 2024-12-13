@@ -1,0 +1,11 @@
+{% extends "file_detail.html" %}
+{% load django_bootstrap5 %}
+{% load render_table from django_tables2 %}
+
+{% block title %}Tag '{{ tag.name }}' Taggings{% endblock title %}
+
+{% block file_detail %}
+<h1>Taggings with '{{ tag.name }}' for {{ file.filetype|capfirst }} {{ file.pk }}</h1>
+{% include "includes/taggings_toolbar.html" %}
+{% render_table table %}
+{% endblock file_detail %}
