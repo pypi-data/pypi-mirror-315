@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "how-old"
+version = "0.0.4"
+description = "Age Calculator CLI Tool"
+authors = ["jean2262"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ipykernel = "^6.29.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
