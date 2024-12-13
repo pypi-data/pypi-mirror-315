@@ -1,0 +1,13 @@
+SpotYourSpotify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SpotYourSpotify/play.py,sha256=vxjYAcBBFHMG8xIEf4lHehC_YGzzMay7HH4CwAZ4JXg,1546
+SpotYourSpotify/quiz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SpotYourSpotify/quiz/playgame.py,sha256=SRVOksdavHFWmdXszHtJLyklg7zaQJDfT_nPEUppakQ,4986
+SpotYourSpotify/quiz/quizbuilder.py,sha256=5Pjp81qHSaT1eEvaY-Un8C_MUM2SA1UJSOlEXjInTXY,6226
+SpotYourSpotify/stats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SpotYourSpotify/stats/readdata.py,sha256=RFOwihNhnfHaNXM3EDCrP_AnUd5U-1Jfen-GYoFkIsw,7878
+SpotYourSpotify/stats/showstats.py,sha256=R5QDyqlZYw3kHTCTN5OYjUBBG4lRz1i0stXDj_1MKVg,7164
+SpotYourSpotify-0.0.1.dist-info/LICENSE.txt,sha256=Dbz267mKzg9kRtaiNR1LdxghBGqJ87LJ_a-3OPSr__g,577
+SpotYourSpotify-0.0.1.dist-info/METADATA,sha256=HcqJtBLTM8k6xKaA71Pzyo7c6V8bVmoXK_qub7ZuWwg,907
+SpotYourSpotify-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+SpotYourSpotify-0.0.1.dist-info/top_level.txt,sha256=uVu1BhKna1rBMmmjJhU85uoV068xctV10GxTIzmLp00,16
+SpotYourSpotify-0.0.1.dist-info/RECORD,,
