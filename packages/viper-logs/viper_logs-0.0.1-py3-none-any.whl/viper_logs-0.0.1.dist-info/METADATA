@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: viper_logs
+Version: 0.0.1
+Summary: Modern Python logging library
+Author: BANAS Yann
+Requires-Python: >=3.9.0
+License-File: LICENCE
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: pyyaml>=6.0.0
