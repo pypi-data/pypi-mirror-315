@@ -1,0 +1,2 @@
+breeze_chms_api>=1.4.4
+configured_mail_sender>=1.1.0
