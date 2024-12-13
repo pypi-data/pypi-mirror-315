@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epijats"
+description = "E-Printing Identified JATS"
+readme = "README.md"
+dynamic = ["version"]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX",
+    "Development Status :: 4 - Beta",
+    "Topic :: Text Processing :: Markup :: XML",
+]
+license = {file = "LICENSE"}
+authors = [
+  { name="Castedo Ellerman", email = "castedo@castedo.com" },
+]
+dependencies = [
+  "dulwich",
+  "elifetools >= 0.26",
+  "hidos >= 1.4.1",
+  "jinja2",
+  "jsoml",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/perm.pub/epijats"
+
+[project.optional-dependencies]
+pdf = ["weasyprint >= 60.2"]
+
+[project.scripts]
+epijats = "epijats.__main__:main"
+
+[tool.setuptools]
+packages = [
+  "epijats",
+  "epijats.pandoc",
+  "epijats.static",
+  "epijats.static.katex",
+  "epijats.static.katex.fonts",
+  "epijats.templates",
+  "epijats.templates.epijats",
+]
+
+[tool.setuptools_scm]
+version_file = "epijats/_version.py"
+
+[[tool.mypy.overrides]]
+module= [
+  'epijats.webstract',
+]
+check_untyped_defs = false
+disallow_untyped_defs = false
+
+[[tool.mypy.overrides]]
+module = ['weasyprint', 'elifetools', 'ruamel', 'epijats._version']
+ignore_missing_imports = true
+
+[tool.yapf]
+column_limit = 88
+based_on_style = "facebook"
+
+[tool.ruff.format]
+quote-style = "preserve"
+
+[tool.ruff.lint]
+ignore = [
+    "E401",  # Multiple imports on one line
+]

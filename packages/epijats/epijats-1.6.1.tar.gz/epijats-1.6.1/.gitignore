@@ -1,0 +1,7 @@
+__pycache__
+jsoml
+_archive
+dist
+build
+*.egg-info
+epijats/_version.py

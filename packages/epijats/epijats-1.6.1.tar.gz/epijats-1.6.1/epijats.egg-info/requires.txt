@@ -1,0 +1,8 @@
+dulwich
+elifetools>=0.26
+hidos>=1.4.1
+jinja2
+jsoml
+
+[pdf]
+weasyprint>=60.2
