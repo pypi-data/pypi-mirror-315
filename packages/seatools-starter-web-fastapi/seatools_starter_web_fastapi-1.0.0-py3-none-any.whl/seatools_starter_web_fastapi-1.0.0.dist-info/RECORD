@@ -1,0 +1,8 @@
+seatools/ioc/server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seatools/ioc/server/app.py,sha256=I8UW1l0VM2qTqjQQuUL12EjJl0U-k5y2uITQPV5XAk0,202
+seatools/ioc/starters/fastapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seatools/ioc/starters/fastapi/base.py,sha256=w2uZr5N-HhMMEgZ8IST3hfaRlm-cz9Ef_3khLiH9wcg,619
+seatools_starter_web_fastapi-1.0.0.dist-info/METADATA,sha256=A1XJw1qzh-GOCp8iTmQTYa7d6FEuThTQqTMSxAaEDMI,2841
+seatools_starter_web_fastapi-1.0.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+seatools_starter_web_fastapi-1.0.0.dist-info/licenses/LICENSE,sha256=LduyjxA3Y1efJOve6wB7602ArsRPlM6vc5aJ2q9-M6k,1067
+seatools_starter_web_fastapi-1.0.0.dist-info/RECORD,,
