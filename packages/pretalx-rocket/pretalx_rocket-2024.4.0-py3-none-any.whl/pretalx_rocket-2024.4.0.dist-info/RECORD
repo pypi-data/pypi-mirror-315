@@ -1,0 +1,17 @@
+pretalx_rocket/__init__.py,sha256=zP-AhbvEk1c9r5OyY7FB5-i8_A1mHHMjqB1ffwH5T9o,25
+pretalx_rocket/apps.py,sha256=bH1AnOT0QyArwxtPJPYD3aZnfS2n9gr3PppnoBTWoSY,636
+pretalx_rocket/forms.py,sha256=apvy7-6f3PrkOUTQBt1XCfXvmufpHtKLhS8B3l_ypZg,697
+pretalx_rocket/models.py,sha256=fT74r3klYOhZr08FiKGfuZ8UTH0enchexD4jUnsmqkI,975
+pretalx_rocket/signals.py,sha256=YE8SiwltXnoFm91vBVQA_aE2ervxjPcsDrHMZ8iRmQw,3390
+pretalx_rocket/urls.py,sha256=kUHkvswPC07QYVUUx0leTAkFIS12HMWqn6VHKM0cRFI,288
+pretalx_rocket/views.py,sha256=J7TcNBmpjkeGhE_XfUghOLqLkp7FcRH-zqUI9vEMxCk,852
+pretalx_rocket/migrations/0001_initial.py,sha256=rR8EbGyoexZ3QOzJXOCOK2pjGgHvcSzsXTUaR0BMD-I,1515
+pretalx_rocket/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretalx_rocket/static/pretalx_rocket/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretalx_rocket/templates/pretalx_rocket/settings.html,sha256=apwbDHWxCkv1ZiREv1c0YWv4HLTlX0jaEBhAadvRfvk,248
+pretalx_rocket-2024.4.0.dist-info/LICENSE,sha256=I5frmWrPDazpP3QGQZmoH7mxMdUZDUiZk8cWzBbPfns,555
+pretalx_rocket-2024.4.0.dist-info/METADATA,sha256=6htruCktrAm5OTIkQn7StxAJeOk7TmPBMdpsj3OzfnU,2174
+pretalx_rocket-2024.4.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pretalx_rocket-2024.4.0.dist-info/entry_points.txt,sha256=RNMFZrqqbBAbioXON-uZ9ZjNNceaIeNOSLjR5c2Fz2k,67
+pretalx_rocket-2024.4.0.dist-info/top_level.txt,sha256=oczNmEnbTzdGrQP_l14WvkQER-Hro48eaYziHvu87m0,15
+pretalx_rocket-2024.4.0.dist-info/RECORD,,

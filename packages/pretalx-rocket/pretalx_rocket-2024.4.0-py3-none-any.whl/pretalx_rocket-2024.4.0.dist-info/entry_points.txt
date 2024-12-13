@@ -1,0 +1,2 @@
+[pretalx.plugin]
+pretalx_rocket = pretalx_rocket:PretalxPluginMeta
