@@ -1,0 +1,2 @@
+[console_scripts]
+TP_MARTINI2 = AMOFMS.DSGPM_TP_MARTINI2.CGPredictionFromDSGPM_TP:main
