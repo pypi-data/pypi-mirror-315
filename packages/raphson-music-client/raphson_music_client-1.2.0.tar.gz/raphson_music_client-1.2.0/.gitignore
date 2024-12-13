@@ -1,0 +1,4 @@
+dist/
+*.pyc
+test_config.json
+dpkg-sign.*/
