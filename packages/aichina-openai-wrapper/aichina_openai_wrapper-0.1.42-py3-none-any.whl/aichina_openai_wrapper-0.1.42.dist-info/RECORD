@@ -1,0 +1,10 @@
+openai_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openai_wrapper/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openai_wrapper/config/logger.py,sha256=_yVGQeKejGyN61RdfiZKY3xXbdIsyD5jzPz_cVMpA2E,2262
+openai_wrapper/config/prompts.py,sha256=rd2dDFL4gVyec98dOQ_LyPKV8HNHO38gAJeTYtpYgUw,9427
+openai_wrapper/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openai_wrapper/core/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openai_wrapper/core/clients/enhanced_openai_client.py,sha256=JiLY4UyYfQGTckR4iVMExxQuBHHDEhoH6igEJ_lmaFA,6302
+aichina_openai_wrapper-0.1.42.dist-info/METADATA,sha256=kWsPooRbMTeaX844AtZ_pyoDtDE7_BvnO7O2amfMA88,797
+aichina_openai_wrapper-0.1.42.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+aichina_openai_wrapper-0.1.42.dist-info/RECORD,,
