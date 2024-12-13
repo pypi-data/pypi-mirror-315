@@ -1,0 +1,9 @@
+camsai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+camsai/standards/__init__.py,sha256=NwdHnHtXqEpi71_UP5-SJv7_0BRsxYlAT54UzON-5N0,568
+camsai/standards/jarvisnist/__init__.py,sha256=5OsVSrHnc4Mg8ffcq7E2cP1HYbwmHssYJjRVjTVwKBE,125
+camsai/standards/mat3ra/__init__.py,sha256=30fhZRNzqafEVRIP1yk8BJBe2ijuyQjwMrL2uBZcl84,88
+camsai_standards-2024.12.13.post1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+camsai_standards-2024.12.13.post1.dist-info/METADATA,sha256=1z6TRXU7HqAPhj8Ub32UZe0MIgDXsX0xabmEGmwN_yE,4006
+camsai_standards-2024.12.13.post1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+camsai_standards-2024.12.13.post1.dist-info/top_level.txt,sha256=7aOcXBwAGIvZ1tfbr91nTvaJ1Xcv-BIpMyKT6TIxMQU,7
+camsai_standards-2024.12.13.post1.dist-info/RECORD,,
