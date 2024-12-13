@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: ibm_cloud_fail_over
+Version: 0.0.1
+Summary: Module providing IBM Fail over functions
+Project-URL: Homepage, https://github.com/gampel/ibm_cloud_fail_over
+Project-URL: Issues, https://github.com/gampel/ibm_cloud_fail_over/issues
+Author-email: Eran Gampel <dev@gampel.net>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# ibm_cloud_fail_over
