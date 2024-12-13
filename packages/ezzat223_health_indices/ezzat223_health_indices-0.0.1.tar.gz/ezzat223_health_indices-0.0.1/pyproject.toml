@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "ezzat223_health_indices"
+version = "0.0.1"
+description = "A unified collection of health indices and indicators eg: bmi, bai ..."
+authors = ["ezzat223 <ezzat22hegazy@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "health_indices", from = "src" }]
+homepage = "https://github.com/jcharistech/health-indices"
+repository = "https://github.com/jcharistech/health-indices"
+keywords = [
+    "health-indices",
+    "health-indicators",
+    "bmi",
+    "bodymass index",
+    "bai",
+    "birth-rate",
+    "jcharistech",
+]
+
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Operating System :: OS Independent",
+]
+
+# ENTRY POINTS / SCRIPTS
+[tool.poetry.scripts]
+hi = 'health_indices.health_indices:main' # Creates a command 'bikes' that runs the main function in bikes/scripts.py
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.6"
+uvicorn = "^0.32.1"
+python-dotenv = "^1.0.1"
+black = "^24.10.0"
+bandit = "^1.8.0"
+radon = "^6.0.1"
+vulture = "^2.14"
+isort = "^5.13.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

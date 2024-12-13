@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: ezzat223_health_indices
+Version: 0.0.1
+Summary: A unified collection of health indices and indicators eg: bmi, bai ...
+Home-page: https://github.com/jcharistech/health-indices
+Keywords: health-indices,health-indicators,bmi,bodymass index,bai,birth-rate,jcharistech
+Author: ezzat223
+Author-email: ezzat22hegazy@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: bandit (>=1.8.0,<2.0.0)
+Requires-Dist: black (>=24.10.0,<25.0.0)
+Requires-Dist: fastapi (>=0.115.6,<0.116.0)
+Requires-Dist: isort (>=5.13.2,<6.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: radon (>=6.0.1,<7.0.0)
+Requires-Dist: uvicorn (>=0.32.1,<0.33.0)
+Requires-Dist: vulture (>=2.14,<3.0)
+Project-URL: Repository, https://github.com/jcharistech/health-indices
+Description-Content-Type: text/markdown
+
+# No more Dependency hell!
+- Creates virtual environments.
+- Manages dependencies.
+- Publish packages to PyPI.
+
+- You define everything in the pyproject.toml file.
+
+## Commands
+----------------
+- To create a new project using it: >`poetry new <project-name>`
+- Create a new project with the src directory: >`poetry new <project-name> --src`
+- To init the pyproject.toml only: >`poetry init`
+- Check everything is correct: >`poetry check`
+
+***Packages***
+- Add new package from cli (This will add it to current pyproject.toml file) and installs it in the venv:
+>`poetry add <package-name>`
+- Specify the version of the package: >`poetry add <package-name>@<version>`
+- Add a package for dev only: >`poetry add <package-name> --group=dev`
+- If you changed any package's version from the file not cli (update lock): >`poetry update`
+
+- Show all packages: >`poetry show`
+- Show a specific package: >`poetry show <package-name>`
+- Remove a package: >`poetry remove <package-name>`
+
+- Now to create a venv and install all specified packages: >`poetry install`
+- Install without dev dependencies: >`poetry install --without dev`
+- Install ONLY dev dependencies: >`poetry install --with dev`
+
+------------
+***VENV***
+- To make your venv be in current working directory: >`poetry config virtualenvs.in-project true`
+- Open a shell or activate the venv: >`poetry shell`
+- Exit the shell: >`exit`
+- Deactivate the virtualenv: >`deactivate`
+- Get env info: >`poetry env info`
+- List envs: >`poetry env list`
+- Remove a venv: >`poetry env remove <venv-name>`
+- Select a specific python version (You must have that version's exe): >`poetry env use <version>`
+
+- If you're not in the venv and wanna execute a command using it: >`poetry run <command`
+
+-----------------
+***Versioning***
+- Pump major version: >`poetry version major`
+- Pump minor version: >`poetry version minor`
+- Pump patch version: >`poetry version patch`
+
+---------------------------
+***Publish the package***
+- First configure it: >`poetry config repositories.test-pypi https://test.pypi.org/legacy`
+- Get a token and add it to the configurations: >`poetry config pypi-token.<token-name> <token>`
+- Build: >`poetry build`
+- Publish: >`poetry publish -r <token-name>`
+
+---------------
+***export***
+- Export packages to a requirements.txt file: >`poetry export -f requirements.txt --output requirements.txt`
+- Include dev or any group packages too:
+>`poetry export -f requirements.txt --output requirements.txt --with <group-name>`
+- By default, Poetry exports dependencies with hashes for security. If you want to exclude hashes:
+>`poetry export -f requirements.txt --without-hashes --output requirements.txt`
