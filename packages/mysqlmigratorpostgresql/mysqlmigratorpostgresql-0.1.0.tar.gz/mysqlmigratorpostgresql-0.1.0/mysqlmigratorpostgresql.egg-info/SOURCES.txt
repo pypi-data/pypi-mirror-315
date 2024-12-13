@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+mysqlmigratorpostgresql/__init__.py
+mysqlmigratorpostgresql/connect_mysql.py
+mysqlmigratorpostgresql/connect_postgresql.py
+mysqlmigratorpostgresql/migrator.py
+mysqlmigratorpostgresql.egg-info/PKG-INFO
+mysqlmigratorpostgresql.egg-info/SOURCES.txt
+mysqlmigratorpostgresql.egg-info/dependency_links.txt
+mysqlmigratorpostgresql.egg-info/requires.txt
+mysqlmigratorpostgresql.egg-info/top_level.txt
