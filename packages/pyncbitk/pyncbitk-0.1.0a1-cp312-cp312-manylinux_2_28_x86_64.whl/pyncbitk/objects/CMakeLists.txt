@@ -1,0 +1,8 @@
+cython_extension(general  DEPENDS general)
+cython_extension(seq      DEPENDS seq)
+cython_extension(seqdata  DEPENDS seq)
+cython_extension(seqinst  DEPENDS seq)
+cython_extension(seqalign DEPENDS seq align_format)
+cython_extension(seqid    DEPENDS seq)
+cython_extension(seqloc   DEPENDS seq)
+cython_extension(seqset   DEPENDS seq)
