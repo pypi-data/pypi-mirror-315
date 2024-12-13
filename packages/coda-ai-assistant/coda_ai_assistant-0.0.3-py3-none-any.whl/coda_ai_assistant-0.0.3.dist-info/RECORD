@@ -1,0 +1,12 @@
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/app.py,sha256=fBYE5phUMrkrtu5vj9MEIXAkJKW46rthm6UDLAupihw,11238
+app/change_processor.py,sha256=k59hPv2BjoK38pUzquypBU5PG_HJsvM3VJg4k-bWGHA,7308
+app/context_storage.py,sha256=YUCjA9fE-J1GtFjbU8ez-xUh_Rinj5pPT4Dlpi3RSbE,1913
+app/file_indexer.py,sha256=6md0IHkgTnLQXY6dq6axnBc78kh3mmuClexh017PmH0,4236
+app/llm_client.py,sha256=xS_vesYsbW97wPNE-7tWjklfvKFQIW6t3dyUZ4-QYMI,2847
+app/settings.py,sha256=kW0-ycn3z51GDv7wlbI8lc7huQkr5PcmWKpAca5WtL4,2279
+app/shared.py,sha256=M4Rac_DdtfSzb3iszsVoQwwH7xx0xwsMNfPeszXRWEA,1025
+coda_ai_assistant-0.0.3.dist-info/METADATA,sha256=Anip81nMpmwjplKuhv8rmOosrqAztOFSA8y8bXwUhKA,1089
+coda_ai_assistant-0.0.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+coda_ai_assistant-0.0.3.dist-info/entry_points.txt,sha256=Xi-clB9VQml282w3OrxhRVgIiluxB4pwOxPPfnvQQdU,36
+coda_ai_assistant-0.0.3.dist-info/RECORD,,
