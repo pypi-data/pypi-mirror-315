@@ -1,0 +1,6 @@
+setup.py
+src/sudoki/__init__.py
+src/sudoki.egg-info/PKG-INFO
+src/sudoki.egg-info/SOURCES.txt
+src/sudoki.egg-info/dependency_links.txt
+src/sudoki.egg-info/top_level.txt
