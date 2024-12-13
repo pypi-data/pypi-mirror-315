@@ -1,0 +1,3 @@
+dist
+idea_generator
+tests
