@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "aladeen-media-indexer"
+version = "0.2.0"
+description = "A package for indexing news media articles"
+authors = ["Irakli Janiashvili <irakli.janiashvili@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "aladeen_media_indexer", from = "." }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+scikit-learn = "^1.6.0"
+umap-learn = "^0.5.7"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.dev.dependencies]
+streamlit = "^1.41.0"
+psycopg2 = "^2.9.10"
+sqlalchemy = "^2.0.36"
+streamlit-echarts = "^0.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

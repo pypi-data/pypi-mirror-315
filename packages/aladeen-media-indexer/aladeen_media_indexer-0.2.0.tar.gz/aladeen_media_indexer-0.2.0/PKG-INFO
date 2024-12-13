@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: aladeen-media-indexer
+Version: 0.2.0
+Summary: A package for indexing news media articles
+Author: Irakli Janiashvili
+Author-email: irakli.janiashvili@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: scikit-learn (>=1.6.0,<2.0.0)
+Requires-Dist: umap-learn (>=0.5.7,<0.6.0)
+Description-Content-Type: text/markdown
+
+# aladeen-media-indexer
+
+Temperature index for news media
+
+
+```sh
+poetry env use python3.12
+poetry install
+source .envrc
+```
+
+## run demo
+
+```sh
+export DATABASE_URL=postgres://...
+poetry run streamlit examples/app.py
+```
