@@ -1,0 +1,13 @@
+package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/subpckg1/EnergyRequirements.py,sha256=FjoJvIyZcOyMoJaVce7cnEV-g4hvUKcmc0tAQRZ0SJ8,2918
+package/subpckg1/Goals.py,sha256=3H61tG1TgWWMurklKjhCHBSwZfAyyNQt8CjiaxXI0lM,2495
+package/subpckg1/PersonalSummary.py,sha256=bkjRzCaPWxSw6QnpKSAfvjDmFgngCBvRdWhKuGAQTsg,1234
+package/subpckg1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/subpckg2/Macros.py,sha256=30Ek14g5CRd4HElZZi2SODWQnNAoM7edM9-l6pspWEc,11333
+package/subpckg2/WorkoutSchedule.py,sha256=GY9a0FccnrFSYTG9Fr5_5jXjdeb99VDl2U_OgjdHye0,7316
+package/subpckg2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+project_step_3-0.1.0.dist-info/LICENSE,sha256=pOuZq6DFkYxfJNJQSyeq-P73pqyXcu-cnpUu6azQMrU,1086
+project_step_3-0.1.0.dist-info/METADATA,sha256=FK3PIfJ2i-0-hDstwO2_PfdwAWnKsMpJd4M4aM9p2uM,4956
+project_step_3-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+project_step_3-0.1.0.dist-info/top_level.txt,sha256=TpQW7893uEAT8mPh-QCMZWhhKYvlqryC9Fjm5Hxg2f8,8
+project_step_3-0.1.0.dist-info/RECORD,,
