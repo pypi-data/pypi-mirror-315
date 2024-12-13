@@ -1,0 +1,1 @@
+This is the homepage of our project. Fixing project README and Updating to version 2.0

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+shahpdf/__init__.py
+shahpdf/pdf2image.py
+shahpdf/pdf2text.py
+shahpdf.egg-info/PKG-INFO
+shahpdf.egg-info/SOURCES.txt
+shahpdf.egg-info/dependency_links.txt
+shahpdf.egg-info/top_level.txt
