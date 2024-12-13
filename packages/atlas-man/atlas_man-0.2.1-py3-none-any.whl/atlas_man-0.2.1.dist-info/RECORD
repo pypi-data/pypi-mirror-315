@@ -1,0 +1,13 @@
+atlasman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atlasman/__main__.py,sha256=sSpU1Ba8kzYTo0Kpu0d4L7Hec9kR9ZkBfTZkEe8PpEE,9719
+atlasman/config.py,sha256=fAaPuWEoO61yuhBLwV0imBQ6unEQAwCQEOngLaiPwWY,5259
+atlasman/jira_commands.py,sha256=9dIntEWow6qfu1iyL5U65HcJohRFT675-nSZJ0CcdnE,19122
+atlasman/trello_commands.py,sha256=HCR21jUGHe3WILLVUXweOzEUnArVbgyA0bjAtL7IXPo,13965
+atlasman/constants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atlasman/constants/jira_field_types.py,sha256=C0FIztYwOHHdYPNiqlaTIzncMZqgOg_O-CH6cBa8X7A,3341
+atlas_man-0.2.1.dist-info/LICENSE,sha256=7y52oFUNG3bAe5ZHQwMdMtQTwaRboT7sKI55xqh8lU4,1070
+atlas_man-0.2.1.dist-info/METADATA,sha256=3u-I78d757K3hLJoEjV0ukCkim4TH6xc4dftOk_Fu_c,8961
+atlas_man-0.2.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+atlas_man-0.2.1.dist-info/entry_points.txt,sha256=1MF6DSE_Cv7V9znn-C2FLqf37D-dgWIWQNxHt39lexo,52
+atlas_man-0.2.1.dist-info/top_level.txt,sha256=PA9fn0D9jefUk1qkGfzbyvG-WY38ZlQwqhQJPH5yDdU,9
+atlas_man-0.2.1.dist-info/RECORD,,
