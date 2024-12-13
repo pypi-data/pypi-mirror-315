@@ -1,0 +1,6 @@
+# extra requirements to be installed in docker
+pyramid-session-redis
+redis<4
+ldap3>=2,<3
+# rqlcontroller to be removed after migration is done in the database
+cubicweb-rqlcontroller
