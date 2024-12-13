@@ -1,0 +1,6 @@
+README.md
+setup.py
+abod_altikrity.egg-info/PKG-INFO
+abod_altikrity.egg-info/SOURCES.txt
+abod_altikrity.egg-info/dependency_links.txt
+abod_altikrity.egg-info/top_level.txt
