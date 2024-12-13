@@ -1,0 +1,8 @@
+flask_tabler_icons/__init__.py,sha256=4Z5SDQDan1IXm9RMrh9sPQghrwpKuitRhfTEbqmmu4s,830
+flask_tabler_icons/static/tabler-sprite.svg,sha256=_oLODKfhjE97JkAnNltzujWr86L3vFRRHPIZd926mQ4,2638026
+flask_tabler_icons/templates/tabler_icons/helper.html,sha256=_NQ0W7bwudTadD79NvOxXofEHYszY_GX93f0UbSJU4Y,1130
+flask_tabler_icons-3.24.0.dist-info/LICENSE.txt,sha256=Gf8n7S-6iJZmwOOfwAp6v3BEINIwHTpSCzycwmmJFyc,1452
+flask_tabler_icons-3.24.0.dist-info/METADATA,sha256=r2g0e7iioLZlASHEqJyvRL7JFo1vfjsUBNP8u9MD_dY,3130
+flask_tabler_icons-3.24.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+flask_tabler_icons-3.24.0.dist-info/top_level.txt,sha256=Z6DlPOkTZCdmKJfOcVEg72OOqkSV2uw_KX6WwxqB9jM,19
+flask_tabler_icons-3.24.0.dist-info/RECORD,,
