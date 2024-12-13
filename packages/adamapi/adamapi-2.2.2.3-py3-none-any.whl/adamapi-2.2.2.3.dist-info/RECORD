@@ -1,0 +1,10 @@
+adamapi/__init__.py,sha256=4WACCE7VY-B7pBa4tq5Dew_J3iQUREO4n7xLNrq9Gj8,1782
+adamapi/authorization.py,sha256=obeFQhZSx99n5UhlgSWAABgVOWypw1ckmfKGow-_tuQ,7500
+adamapi/datasets.py,sha256=KkzYb5bjNnBzF6NFX3KxFjMKDPjCa-jPvyZ2HJSKvWQ,2022
+adamapi/get_data.py,sha256=NsgRP95W04qGhSJBEAXLPpx1iW0v6wmExpcKBxmC7sc,7736
+adamapi/search.py,sha256=lNjWiJu4pNd5W7PIEjgUX1MyRI9wIGLw-650P9lKglw,2963
+adamapi-2.2.2.3.dist-info/LICENSE,sha256=_TNrxq5goT8tafRCfAfL-o5divfLqbIjfRLYUgKZYP4,1056
+adamapi-2.2.2.3.dist-info/METADATA,sha256=lmjGZGGJjTzHJgwCZE6Y4E_DCjRct5BFhLYvNuQDWnI,13056
+adamapi-2.2.2.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+adamapi-2.2.2.3.dist-info/top_level.txt,sha256=wgqRVjHerzGzs0oLSd-YZwmbq_ZGOgg0HjmxpJTDKcA,8
+adamapi-2.2.2.3.dist-info/RECORD,,
