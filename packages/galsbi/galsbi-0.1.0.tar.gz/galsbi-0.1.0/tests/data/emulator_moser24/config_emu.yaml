@@ -1,0 +1,21 @@
+input_band_dep:
+  - mag
+
+input_band_indep:
+  - r50
+  - e1
+  - e2
+  - galaxy_type
+  - sersic_n
+  - z
+
+output:
+  - MAG_APER
+  - MAG_AUTO
+  - FLUX_RADIUS
+  - FLUX_APER
+  - FLUX_AUTO
+  - X2WIN_IMAGE
+  - Y2WIN_IMAGE
+  - XYWIN_IMAGE
+  - log10_snr
