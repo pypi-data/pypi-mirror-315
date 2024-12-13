@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mwt_games_manager
+Version: 0.0.2
+Summary: Manages users game data in MWT games
+Author-email: Mani Fatemi <mani@milkywaytrail.ca>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
