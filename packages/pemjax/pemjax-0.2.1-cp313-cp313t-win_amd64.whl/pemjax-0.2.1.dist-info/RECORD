@@ -1,0 +1,12 @@
+pemja_core.cp313t-win_amd64.dll,sha256=6r4u7wWPBBBExApSuh6VhKueK4U14rs9qYxNZR2e1U4,88576
+pemja_core.cp313t-win_amd64.pyd,sha256=6r4u7wWPBBBExApSuh6VhKueK4U14rs9qYxNZR2e1U4,88576
+pemja_utils.cp313t-win_amd64.dll,sha256=GjJCY14q5MY800_B_KfTMHxZhNk_V-0_rOZdRvN-QRw,10752
+pemja_utils.cp313t-win_amd64.pyd,sha256=GjJCY14q5MY800_B_KfTMHxZhNk_V-0_rOZdRvN-QRw,10752
+pemja/__init__.py,sha256=jRm-3MFYLa_nM1BrRSnm6Qfi4KUoZ-taJnMzSZvpHnQ,846
+pemja/redirect_stream.py,sha256=GlIbRFKbXOz1vxQNRxVFuAjqI1JGeu6-Vah-yeUHBHI,1432
+pemja/version.py,sha256=sQbST9ZTtU03pIPaIX60K-mknqZyKiCrIU84oprOZqQ,808
+pemjax-0.2.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pemjax-0.2.1.dist-info/METADATA,sha256=sQtuIpUpQ-BFkWGpIqn-rAIjJlKDqATUCpfGGzwr30g,4675
+pemjax-0.2.1.dist-info/WHEEL,sha256=c_MFPONUiTjMV2eCqqwRp83qY3Rvw_QW1cIHci2oYFc,102
+pemjax-0.2.1.dist-info/top_level.txt,sha256=OOlNGh--QZB0yQIp1Kns0_9mkVZOXCITULMc3530trE,29
+pemjax-0.2.1.dist-info/RECORD,,
