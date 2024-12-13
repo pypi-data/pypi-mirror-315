@@ -1,0 +1,17 @@
+numpy
+scipy
+matplotlib
+gpytorch
+pyDOE3
+
+[docs]
+sphinx
+sphinx-rtd-theme
+
+[pytorch]
+torch
+
+[test]
+pytest
+coverage
+pytest-cov
