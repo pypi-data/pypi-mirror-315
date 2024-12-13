@@ -1,0 +1,180 @@
+#
+### project ##########################################################################
+# evohome-async, updated: 2024-06-24
+#
+
+[project]
+  name = "evohome-async"
+  dynamic = ["version"]
+  description = "An async client for connecting to Honeywell's TCC RESTful API."
+  readme = "README.md"
+  authors = [
+    {name = "David Bonnes", email = "zxdavb@bonnes.me"},
+    {name = "Andrew Stock", email = "evohome@andrew-stock.com"},
+  ]
+  maintainers = [
+    {name = "David Bonnes", email = "zxdavb@bonnes.me"},
+  ]
+  dependencies = [
+    "aiohttp>=3.9.5",
+    "voluptuous>=0.13.1",
+  ]
+  requires-python = ">=3.11"
+  license = "Apache-2.0"
+
+  keywords = [
+    "evohome", "honeywell", "resideo", "round thermostat", "tcc", "vision pro"
+  ]
+  classifiers = [
+    "Topic :: Home Automation",
+    "License :: OSI Approved :: Apache Software License",
+  ]
+
+#
+[project.scripts]
+  evo-client = "evohomeasync2.client:main"
+
+#
+[project.urls]
+  "Homepage" = "https://github.com/zxdavb/evohome-async"
+  "Bug Tracker" = "https://github.com/zxdavb/evohome-async/issues"
+  "Wiki" = "https://github.com/zxdavb/evohome-async/wiki"
+
+
+#
+### build-system #####################################################################
+
+[build-system]
+  requires = ["hatchling"]
+  build-backend = "hatchling.build"
+
+[tool.hatch.build]
+  sources = ["src"]
+
+[tool.hatch.build.targets.wheel]
+  packages = ["src/evohomeasync", "src/evohomeasync2"]
+
+[tool.hatch.version]
+  path = "src/evohomeasync2/__init__.py"
+
+
+#
+### pytest ###########################################################################
+
+[tool.pytest.ini_options]
+  asyncio_mode = "auto"
+
+  norecursedirs = "deprecated/*"
+
+
+#
+###  mypy ############################################################################
+
+[tool.mypy]
+  exclude = "docs"
+  files = ["src", "tests"]
+
+  no_implicit_optional = true
+
+  # see: https://mypy.readthedocs.io/en/stable/existing_code.html#introduce-stricter-options
+
+  # Start off with these
+  warn_unused_configs = true
+  warn_redundant_casts = true  # this is not per-module
+  warn_unused_ignores = true
+
+  # Getting these passing should be easy
+  extra_checks = true  # now incl.: strict_concatenate = true
+  strict_equality = true
+
+  # Strongly recommend enabling this one as soon as you can
+  check_untyped_defs = true
+
+  # These shouldn't be too much additional work, but may be tricky to
+  # get passing if you use a lot of untyped libraries
+  disallow_subclassing_any = true
+  disallow_untyped_decorators = true
+  disallow_any_generics = true
+
+  # These next few are various gradations of forcing use of type annotations
+  disallow_untyped_calls = true
+  disallow_incomplete_defs = true
+  disallow_untyped_defs = true
+
+  # This one isn't too hard to get passing, but return on investment is lower
+  # no_implicit_reexport = true  # WIP
+
+  # This one can be tricky to get passing if you use a lot of untyped libraries
+  warn_return_any = true
+
+  disallow_any_unimported = true
+  warn_no_return = true
+  warn_unreachable = true
+
+
+#
+[[tool.mypy.overrides]]
+  module = [
+    "tests.*",
+    "tests_rf.*"
+  ]
+
+  disable_error_code = [
+    "arg-type",        #  7
+    "index",           # 18
+    "type-arg",        # 15
+  ]
+
+#
+[[tool.mypy.overrides]]
+  module = "tests_rf.mocked_server.*"
+
+  disable_error_code = [
+    "arg-type",        #  2 (aiohttp,vendor)
+    "index",           #  3 (vendor)
+    "no-any-return",   #  5 (aiohttp,const,vendor)
+    "no-untyped-def",  # 15 (aiohttp)
+    "return-value",    #  2 (aiohttp): high risk, low benefit to fix
+    "type-arg",        # 16 (aiohttp,const,vendor)
+  ]
+#
+[[tool.mypy.overrides]]
+  module = "tests_rf.helpers"
+
+  disable_error_code = [
+    "call-arg",        # high risk, low benefit to fix
+  ]
+
+#
+## ruff ##############################################################################
+
+[tool.ruff]
+  exclude = ["docs/*.py"]
+  src = ["src", "tests"]
+  target-version = "py311"  # Assume Python 3.11
+
+[tool.ruff.lint]
+  select = [
+    "B",  # flake8-bugbear
+    "E",  # pycodestyle
+    "F",  # Pyflakes
+    "I",  # isort
+    "SIM",  # flake8-simplify
+    "UP",  # pyupgrade
+  ]
+  ignore = ["B011", "E501", "SIM102", "SIM114", "UP009"]
+  # B011   - Do not call assert False since python -O removes these calls
+  # E501   - Line too long
+  # SIM102 - Use a single `if` statement instead of nested `if` statements
+  # SIM114 - Combine `if` branches using logical `or` operator
+  # UP009  - UTF-8 encoding declaration is unnecessary
+
+
+[tool.ruff.lint.flake8-import-conventions.extend-aliases]
+  voluptuous = "vol"
+
+
+[tool.ruff.lint.isort]
+  combine-as-imports = true
+  force-sort-within-sections = false
+  split-on-trailing-comma = false
