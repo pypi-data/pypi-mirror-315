@@ -1,0 +1,126 @@
+# /pyproject.toml
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = ["docs*", "tests*"]
+
+[tool.setuptools.package-data]
+panther = ['*.yml', "Dockerfile",  "Dockerfile.*",  ".yaml", "*.sh", "*.html", "*.jinja", "webapp/**", "plugins/**"]
+
+# include = ["*.yaml", "*.yml", "panther"]
+[project]
+name = "panther-net"
+version = "0.0.1"
+description = "Panther: Protocol formal Analysis and formal Network Threat Evaluation Resources"
+readme = "README.md"
+authors = [
+    { name = "ElNiak", email = "christophe.crochet.researcher@gmail.com" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+requires-python = ">=3.8"
+
+dependencies = [
+    "omegaconf",
+    "cerberus",
+    "jinja2",
+    "requests",
+    "PyYAML",
+    "docker",
+    "termcolor",
+    "terminal_banner",
+    "flask",
+    "flask_session",
+    "flask_wtf",
+    "django",
+    "flask-socketio",
+    "Flask-Cors==4.0.1",
+    "npf-web-extension",
+    "execnet",
+    "pexpect",
+    "chardet",
+    "gperf",
+    "pandas",
+    "scandir",
+    "ply",
+    "plantuml",
+    # "pygraphviz",
+    "scapy",
+    "importlib_metadata"
+]
+
+[project.optional-dependencies]
+# web = [
+#     "flask",
+#     "flask_session",
+#     "flask_wtf",
+#     "django",
+#     "flask-socketio",
+#     "Flask-Cors==4.0.1",
+#     "npf-web-extension",
+#     "execnet",
+#     "pexpect",
+#     "chardet",
+#     "gperf",
+#     "pandas",
+#     "scandir",
+#     "ply",
+#     "plantuml",
+#     "pygraphviz",
+#     "scapy",
+#     "importlib_metadata"
+# ]
+tests = [
+  "pytest",
+  "pytest-cov",
+  "hypothesis",
+  "pytest-mock"
+]
+lint = [
+  "black",
+  "flake8",
+#   "pylint"
+]
+doc = [
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocs-minify-plugin",
+    "mkdocs-git-revision-date-localized-plugin",
+    "mkdocs-git-authors-plugin",
+    "mkdocs-table-reader-plugin",
+    "mkdocs-img2fig-plugin",
+    "mknotebooks",
+    "mkdocs-awesome-pages-plugin",
+    "mkdocs-enumerate-headings-plugin",
+    "mkdocs-print-site-plugin",
+    "mkgendocs",
+    "markdown-callouts",
+    "mkdocs-coverage",
+    "mkdocs-material",
+    "mkdocs-gen-files",
+    "mkdocs-literate-nav",
+    "mkdocstrings",
+    "PyYAML == 6.0.1",
+    "pymdown-extensions",
+    "mkdocs-material-extensions",
+    "mkdocs-gen-files",
+    "mkdocs-literate-nav",
+    "mkdocs-section-index",
+    "mkdocstrings[python]",
+    "mkdocs-exclude",
+    "mkdocs-same-dir"
+]
+
+[project.urls]
+repository = "https://github.com/ElNiak/PANTHER"
+ivy = "https://github.com/ElNiak/PANTHER-Ivy"
+
+
+[project.entry-points.console_scripts]
+panther = "panther.__main__:main"
