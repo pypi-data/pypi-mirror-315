@@ -1,0 +1,2 @@
+include src/data/*
+include src/pyarmor_runtime_000000/*
