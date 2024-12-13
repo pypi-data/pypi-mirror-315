@@ -1,0 +1,62 @@
+Metadata-Version: 2.3
+Name: ttsim3d
+Version: 0.1.2
+Summary: Simulate a 3D electrostatic potential map from a PDB in pyTorch
+Project-URL: homepage, https://github.com/jdickerson95/ttsim3d
+Project-URL: repository, https://github.com/jdickerson95/ttsim3d
+Author-email: Josh Dickerson <jdickerson@berkeley.edu>
+License: BSD-3-Clause
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: einops
+Requires-Dist: mmdf
+Requires-Dist: mrcfile
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: scipy
+Requires-Dist: starfile
+Requires-Dist: torch
+Requires-Dist: torch-fourier-filter
+Requires-Dist: torch-grid-utils
+Provides-Extra: dev
+Requires-Dist: ipython; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pdbpp; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: rich; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: requests; extra == 'test'
+Description-Content-Type: text/markdown
+
+# ttsim3d
+
+[![License](https://img.shields.io/pypi/l/ttsim3d.svg?color=green)](https://github.com/jdickerson95/ttsim3d/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/ttsim3d.svg?color=green)](https://pypi.org/project/ttsim3d)
+[![Python Version](https://img.shields.io/pypi/pyversions/ttsim3d.svg?color=green)](https://python.org)
+[![CI](https://github.com/jdickerson95/ttsim3d/actions/workflows/ci.yml/badge.svg)](https://github.com/jdickerson95/ttsim3d/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/jdickerson95/ttsim3d/branch/main/graph/badge.svg)](https://codecov.io/gh/jdickerson95/ttsim3d)
+
+Simulate a 3D electrostatic potential map from a PDB in pyTorch
+
+Install via source using
+```zsh
+pip install -e .
+```
+And for development and testing use
+```zsh
+pip install -e ".[dev,test]"
+```
+
+To run, adjust the input parameters in the file run_ttsim3d.py and run using
+```zsh
+python run_ttsim3d.py
+```
