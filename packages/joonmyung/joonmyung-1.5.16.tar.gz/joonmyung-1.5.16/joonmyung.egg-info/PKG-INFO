@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: joonmyung
+Version: 1.5.16
+Summary: JoonMyung's Library
+Home-page: https://github.com/pizard/JoonMyung.git
+Author: JoonMyung Choi
+Author-email: pizard@korea.ac.kr
+License: MIT
+License-File: LICENSE.txt
+Requires-Dist: fvcore
+Requires-Dist: timm
+Requires-Dist: torchprofile
+Requires-Dist: thop
+Requires-Dist: wandb
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: opencv-python
+Requires-Dist: ftfy
+Requires-Dist: regex
