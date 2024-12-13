@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mikk
+Version: 0.1
+Summary: Various utilities
+Home-page: https://github.com/Mikk155/mikk
+Author: Mikk155
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+Various utilities i do use on various of my projects
