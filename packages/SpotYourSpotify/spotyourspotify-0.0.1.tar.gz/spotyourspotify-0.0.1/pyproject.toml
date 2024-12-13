@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "SpotYourSpotify"
+version = "0.0.1"
+authors = [
+    {name = "Jason Samuel Suwito", email = "jason.suwito@outlook.com"},
+    {name = "Seamus Riordan-Short", email = "seamusprs@gmail.com"},
+]
+description = "A package that contains two subpackages: stats and quiz. Stats allows users to gain insights about their Spotify playlist such as top artist, longest song, slowest song, etc. Quiz allows users to enter a game where they will be questioned on how well they know their playlist. The program will read a CSV file of the user playlist that users can obtain using Exportify."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+Homepage = "https://github.com/seamusprs/spotyour3"
+Issues = "https://github.com/seamusprs/spotyour3/issues"
