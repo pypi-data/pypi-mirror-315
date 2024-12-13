@@ -1,0 +1,2 @@
+[console_scripts]
+pycolint = pycolint.main:main
