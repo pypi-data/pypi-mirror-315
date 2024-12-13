@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block topbar %}
+    <div class="d-flex flex-row">
+        <div class="col">
+            <h3>{{ header_title }}</h3>
+            <p class="text-body-secondary fw-normal mb-0">
+                <a href="{{ header_description_href }}" class="description text-body-secondary fw-normal mb-0">
+                    {{ header_description }}
+                </a></p>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for year in years %}
+            <li>
+                <div class="mb-4">
+                    <h3>{{ year.title }}</h3>
+                    <ul>
+                        {% for month in year.months %}
+                            <li>
+                                <a href="{{ month.folder }}" class="text-decoration-none">
+                                    <h4 class="mb-1 fw-normal">
+                                        {{ month.title }}
+                                    </h4>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
