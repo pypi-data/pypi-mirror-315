@@ -1,0 +1,108 @@
+[tool.poetry]
+name = "jmu-openconnect"
+version = "0.4.1"
+description = "Wrapper script around openconnect for JMU VPN authentication on Linux."
+authors = ["TabulateJarl8 <tabulatejarl8@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://tabulate.tech/"
+repository = "https://github.com/TabulateJarl8/jmu-openconnect"
+
+classifiers = [
+	"Development Status :: 7 - Inactive",
+	"Environment :: Console",
+	"Intended Audience :: End Users/Desktop",
+	"License :: OSI Approved :: MIT License",
+	"Natural Language :: English",
+	"Operating System :: POSIX :: Linux",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.23.1"
+typing-extensions = "^4.12.2"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.5"
+
+[tool.poetry.scripts]
+jmu-openconnect = "jmu_openconnect.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+reportUnusedCallResult = false
+
+[tool.ruff.lint]
+preview = true
+extend-select = [
+	# pycodestyle
+	"E",
+	"W293",
+	"W292",
+	"W605",
+	# Pyflakes
+	"F",
+	# pyupgrade
+	"UP",
+	# flake8-bugbear
+	"B",
+	# flake8-simplify
+	"SIM",
+	# isort
+	"I",
+	# pep8-naming
+	"N",
+	# flake8-bandit
+	"S",
+	# flake8-boolean-trap
+	"FBT",
+	# flake8-comprehensions
+	"C4",
+	# flake8-pie
+	"PIE",
+	# quote rules
+	"Q001",
+	"Q002",
+	# flake8-raise
+	"RSE",
+	# flake8-return
+	"RET",
+	# flake8-unused-arguments
+	"ARG",
+	# flake8-use-pathlib
+	"PTH",
+	# eradicate
+	"ERA",
+	# perflint
+	"PERF",
+]
+
+ignore = [
+	"E501",
+	"E274",
+	"S110",
+	"FBT001",
+	"FBT002",
+	"PERF203",
+	"S101",
+	"ERA001",
+	"S603",
+	"S404",
+]
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "tab"
+line-ending = "lf"
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-wrap-aliases = true
+order-by-type = true
