@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mwt_games_manager"
+version = "0.0.3"
+authors = [
+  { name="Mani Fatemi", email="mani@milkywaytrail.ca" },
+]
+description = "Manages users game data in MWT games"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+exclude = ["configs/*"]
