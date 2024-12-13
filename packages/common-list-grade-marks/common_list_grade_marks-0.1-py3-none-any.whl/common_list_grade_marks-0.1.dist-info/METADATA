@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: common_list_grade_marks
+Version: 0.1
+Summary: This package is related to findout the grades based on marks and also findout the common elements from different lists
+Author: K Saral Kumar
+Author-email: saralkumar28@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENCE.txt
+
