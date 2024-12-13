@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: peslac
+Version: 0.1.1
+Summary: A Python package for the Peslac API
+Home-page: https://github.com/peslacai/peslac-python
+Author: Jibril Kala
+Author-email: support@peslac.com
+Keywords: peslac,api,documents,tools,nodejs,rag,ai,llm,remote-file,remote-file-processing,document-processing,file-processing,ocr,image-processing,pdf-processing,document-ocr,image-ocr,pdf-ocr,document-processing,image-processing,pdf-processing,pdf-splitter,pdf-merger,pdf-splitter,pdf-merger,pdf-splitter,pdf-merger,pdf-splitter,pdf-merger,pdf-splitter,pdf-merger
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
