@@ -1,0 +1,134 @@
+## Project metadata
+
+[project]
+name = "myproject"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Andre Ratzenberger", email = "andre.ratzenberger@whiteduck.de" },
+]
+requires-python = ">=3.12"
+
+## Dependencies
+
+dependencies = [
+    "fastapi>=0.115.6",
+    "loguru>=0.7.3",
+    "psutil>=6.1.0",
+    "pydantic>=2.10.3",
+    "rich>=13.9.4",
+    "uvicorn>=0.32.1",
+]
+
+[dependency-groups]
+dev = [
+    "poethepoet>=0.31.1",
+    "pytest>=8.3.4",
+    "pytest-asyncio>=0.24.0",
+    "pytest-clarity>=1.0.1",
+    "pytest-cov>=6.0.0",
+    "pytest-sugar>=1.0.0",
+    "ruff>=0.8.2",
+]
+
+## Build system configuration
+
+[project.scripts]
+myproject = "myproject:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+## poe tasks
+
+[tool.poe.tasks.npm_install]
+cmd = "npm install"
+cwd = "src/frontend"
+
+[tool.poe.tasks.npm_run]
+cmd = "npm run dev --host"
+cwd = "src/frontend"
+
+[tool.poe.tasks.npm_build]
+cmd = "npm run build"
+cwd = "src/frontend"
+
+[tool.poe.tasks.run_backend]
+cmd = "uv run myproject"
+cwd = "."
+
+[tool.poe.tasks.build_frontend]
+sequence = ["npm_install", "npm_build"]
+
+[tool.poe.tasks.run_frontend]
+sequence = ["npm_install", "npm_run"]
+
+[tool.poe.tasks.run]
+sequence = ["build_frontend", "run_backend"]
+
+
+[tool.pyright]
+include = ["."]
+exclude = [
+    "**/.venv",
+    "**/dump",          # exclude virtual environment - exclude means that it will not be scanned
+    "**/settings.json",
+    "src/frontend/",
+]
+useLibraryCodeForTypes = true
+ignore = [
+    "**/settings.json",
+] # ignore means that it will be scanned but not checked
+defineConstant = { DEBUG = true }
+reportMissingImports = "error"
+reportMissingTypeStubs = false
+typeCheckingMode = "basic"
+
+
+[tool.ruff]
+cache-dir = ".cache/ruff"
+line-length = 120
+
+## formatting
+format.quote-style = "double"
+format.indent-style = "space"
+format.skip-magic-trailing-comma = false
+format.line-ending = "auto"
+format.docstring-code-format = true
+format.docstring-code-line-length = "dynamic"
+
+## linting
+lint.select = [
+    'D',   #pydocstyle
+    'E',
+    'W',   # pycodestyle
+    'F',   #pyflakes
+    'I',   # sort imports
+    'UP',  #pyupgrade
+    "RUF", # ruff dev's own rules
+    "SIM", # pyflakes simplicity
+    "C90", # more complexity rules
+]
+lint.ignore = ["E203", "E266", "E501", "F541", "D417"]
+lint.exclude = ["logs/", "data/", "tests/", "docs/", "dump/"]
+lint.pydocstyle.convention = "google"
+lint.isort.combine-as-imports = true
+exclude = [
+    "logs/",
+    "data/",
+    "tests/",
+    "docs/",
+    "src/templates/",
+    "dump/",
+    "src/frontend/",
+]
+
+[tool.pytest.ini_options]
+addopts = " -v"
+minversion = "6.0"
+python_files = "test_*.py"
+python_classes = "Test"
+python_functions = "test"
+verbosity_test_cases = 2
