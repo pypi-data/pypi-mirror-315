@@ -1,0 +1,2 @@
+[console_scripts]
+helloworld = helloworld_print.main:helloworld
