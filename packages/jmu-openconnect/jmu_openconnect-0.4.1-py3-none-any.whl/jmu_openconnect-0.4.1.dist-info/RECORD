@@ -1,0 +1,10 @@
+jmu_openconnect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jmu_openconnect/argument_parser.py,sha256=W0C_aID8_ToiaSfZUIjBiomszp1W_rd25aQPLF2B60w,1965
+jmu_openconnect/auth.py,sha256=XOtDuQs4-Mq6PhH4iz_l8whAG1fZECWtXiRSFPVCF4s,8150
+jmu_openconnect/exceptions.py,sha256=sPE_luoqUW6rrpNgwTfIoAYE9JdoaF7doCWA9-b0U00,1028
+jmu_openconnect/main.py,sha256=k_EH1G-eB_Kl1dkPTa2bO1yr1-X0yoCYasf3MDCwlgc,4715
+jmu_openconnect-0.4.1.dist-info/LICENSE,sha256=-jeynW9yVzhdA60OtPJO4o8SuiW7WfWa-75G47Aybtw,1070
+jmu_openconnect-0.4.1.dist-info/METADATA,sha256=GULmmH-FcvtfEkWXYtqUkvCzJXYksFWlyjHFbviev0c,5209
+jmu_openconnect-0.4.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+jmu_openconnect-0.4.1.dist-info/entry_points.txt,sha256=ivp0Cut-sFbGTV3b_qvtxYBacofuCS2znodsQavf-K8,61
+jmu_openconnect-0.4.1.dist-info/RECORD,,
