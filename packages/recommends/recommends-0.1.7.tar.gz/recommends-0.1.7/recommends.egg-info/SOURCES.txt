@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.py
+recommend/__init__.py
+recommend/filteringengine.py
+recommend/history.py
+recommend/location.py
+recommend/recommendationengine.py
+recommend/storageengine.py
+recommend/user.py
+recommend/usermanager.py
+recommends.egg-info/PKG-INFO
+recommends.egg-info/SOURCES.txt
+recommends.egg-info/dependency_links.txt
+recommends.egg-info/top_level.txt
+test/testfilteringengine.py
+test/teststorageengine.py
