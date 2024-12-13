@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: beachbot_config
+Version: 0.0.1
+Summary: Configuration for the Beachbot project
+Project-URL: Source, https://github.com/okinawa-ai-beach-robot/beachbot-config
+Project-URL: Issues, https://github.com/okinawa-ai-beach-robot/beachbot-config/issues
+Author: Christopher Buckley
+License: CC BY-NC 4.0
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: <3.14,>=3.8
+Requires-Dist: platformdirs
+Description-Content-Type: text/markdown
+
+# beachbot_config
+Standardized config and loggers for beachbot package
+
+# testing
+`hatch test --coverage --all -vv`
+
+# Format Checking
+`hatch fmt --check`
+
+# Automatically Fix Formatting
+`hatch fmt`
