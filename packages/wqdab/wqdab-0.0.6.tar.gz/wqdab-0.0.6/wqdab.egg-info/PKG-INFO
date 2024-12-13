@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wqdab
+Version: 0.0.6
+Summary: This is a pre-alpha package that contains benchmark for water quality monitoring.
+Home-page: https://github.com/vhrique/wqdab
+Author: Victor Henrique Alves Ribeiro
+Author-email: vhrique@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: prts>=1.0.0.3
+Requires-Dist: scikit-learn>=1.5.2
+Requires-Dist: pandas>=2.2.2
+
+# wqdab
+Water Quality Domain Adaptation Benchmark
