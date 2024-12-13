@@ -1,0 +1,3 @@
+[console_scripts]
+wfls=wfls.cli:main
+
