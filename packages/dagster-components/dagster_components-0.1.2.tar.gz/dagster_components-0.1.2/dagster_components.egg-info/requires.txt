@@ -1,0 +1,11 @@
+dagster
+tomli
+
+[dbt]
+dagster-dbt
+
+[sling]
+dagster-embedded-elt
+
+[test]
+dbt-duckdb
