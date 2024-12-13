@@ -1,0 +1,2 @@
+[commitizen.provider]
+ros-provider = commitizen_ros:ROSProvider
