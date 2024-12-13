@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyscf-forge
+Version: 1.0.2
+Summary: Staging ground for PySCF core features
+Home-page: UNKNOWN
+Author: Pyscf Developer
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+
+Staging ground for PySCF core features
+
