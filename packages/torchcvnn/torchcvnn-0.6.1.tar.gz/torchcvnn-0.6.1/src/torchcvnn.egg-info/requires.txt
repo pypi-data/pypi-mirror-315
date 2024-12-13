@@ -1,0 +1,10 @@
+torch>=2.0
+numpy
+requests>=2.31.0
+tqdm>=4.66.1
+pillow
+
+[docs]
+sphinx>=8.1.3
+furo>=2024.04.27
+sphinx-copybutton>=0.5.2
