@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Pytolith
+Version: 0.0.5
+Summary: A simple package for reading Halo tag files.
+Author-email: Num0005 <num0005@outlook.com>
+Project-URL: Homepage, https://github.com/num0005/Pytolith
+Project-URL: Issues, https://github.com/num0005/Pytolith/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+A simple python library for reading (and perhaps writing in the future) Halo 2 tag files. Allows for tags to be introspected on any platform without the hassle of using the official tools.
+
