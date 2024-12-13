@@ -1,0 +1,6 @@
+flaky
+flask
+pyflakes
+pytest>=5
+sphinx
+setuptools
