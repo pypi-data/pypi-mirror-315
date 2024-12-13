@@ -1,0 +1,6 @@
+system,version,queue,variant,jobid,nodes,taskspernode,threadspertask,runtime,success,energy_start,energy_stop
+juwelsbooster,2024.01,booster,jedi.evaluation.jedi,10672935,2,4,1,0.453434,true,1733992320504,1733992325504
+juwelsbooster,2024.01,booster,jedi.evaluation.jedi,10672936,4,4,1,0.453434,true,1733992323430,1733992328430
+juwelsbooster,2024.01,booster,jedi.evaluation.jedi,10672937,6,4,1,0.453434,true,1733992199794,1733992204794
+juwelsbooster,2024.01,booster,jedi.evaluation.jedi,10672938,8,4,1,0.453434,true,1733991949717,1733991954717
+

@@ -1,0 +1,86 @@
+{
+    "version": 1,
+    "reporter": {
+        "generator": "jureap-gitlab-exacb",
+        "info": {
+            "pipeline": "238994",
+            "job": "1232906",
+            "commit": "3c50883cd0c7ea6fe42dd479e3e4a554afb4fbad",
+            "username": "badwaik1",
+            "project": "/p/project1/cexalab",
+            "budget": "exalab",
+            "system": "juwelsbooster",
+            "version": "2024.12",
+            "timestamp": "2024-12-12T09:20:37+01:00"
+        }
+    },
+    "parameter": {},
+    "experiment": {
+        "system": "juwelsbooster",
+        "version": "2024.12",
+        "variant": "jedi.evaluation.jedi",
+        "timestamp": "2024-12-12T09:20:37+01:00"
+    },
+    "data": [
+        {
+            "success": "true",
+            "runtime": "0.453434",
+            "parameter": {
+                "nodes": "2",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "10672935",
+            "queue": "booster",
+            "metrics": {
+                "energy_start": "1733992320504",
+                "energy_stop": "1733992325504"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "0.453434",
+            "parameter": {
+                "nodes": "4",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "10672936",
+            "queue": "booster",
+            "metrics": {
+                "energy_start": "1733992323430",
+                "energy_stop": "1733992328430"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "0.453434",
+            "parameter": {
+                "nodes": "6",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "10672937",
+            "queue": "booster",
+            "metrics": {
+                "energy_start": "1733992199794",
+                "energy_stop": "1733992204794"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "0.453434",
+            "parameter": {
+                "nodes": "8",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "10672938",
+            "queue": "booster",
+            "metrics": {
+                "energy_start": "1733991949717",
+                "energy_stop": "1733991954717"
+            }
+        }
+    ]
+}
