@@ -1,0 +1,14 @@
+Pytolith/TagTypes.py,sha256=GPnVk2SfZJc-gyf-Pl2SNsfWoi_lT9NiVBEzp0bWkds,5228
+Pytolith/_TagSystem.py,sha256=l5B_CXWbduHqgdCVL27ERf7d2xaOv3BTUQRO_x7CJzU,1612
+Pytolith/__init__.py,sha256=TQcoEYzwTMtLsWIfEtq89A0aHb1dC1PdqI7f3C1oCwQ,41
+Pytolith/halo2.layouts,sha256=dxkTCUkz3vkIItfaobKQI3avvpXVP9f7zw0oBzfeLTI,434479
+Pytolith/Definitions/Fields.py,sha256=VQ74tvCsBgi69rMCENR65DI8WOg88y_j5Ee3X8lffKE,2325
+Pytolith/Definitions/Layout.py,sha256=L6qTSAjyZjeHkNIzo7r96tG6cUJfTz7urxfOh_xbAoY,8655
+Pytolith/Definitions/Package.py,sha256=RD5Md7Pl1TGRPCJBG9NmSpq802fHfevX23oHlQcr_cc,10780
+Pytolith/Definitions/__init__.py,sha256=EpFlbh7t7RE8knm1JIoDf6kVwAvODwCjQQ25qRUg5qk,170
+Pytolith/TagLoader/Header.py,sha256=wp7htPGAp55pLbujfsSV7P5ekFqQ3gIkaNhpWTwH9qI,4117
+Pytolith/TagLoader/Loader.py,sha256=5OO17_DEupxKqomyq0pRAe91cJkFdrCsDYr1y4IXhKY,16671
+Pytolith-0.0.5.dist-info/METADATA,sha256=0cnos6u_qKrzBIOhnSG9QLw_FXe8h2h_O2DmWepgyeY,674
+Pytolith-0.0.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+Pytolith-0.0.5.dist-info/top_level.txt,sha256=Oh1kRIXtK4JFmA2poL2x9DLy3Dk2ko7UaUzzRGqqmII,9
+Pytolith-0.0.5.dist-info/RECORD,,
