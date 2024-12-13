@@ -1,0 +1,13 @@
+fraud/__init__.py,sha256=-AyR7yF7bLWtp7rOHTySRj1ts-e3vnfFl5_5iDxkKfI,72
+fraud/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fraud/core/base.py,sha256=Tq2TTaKeau9LDLcZrhu6BtMiDfDSGuYpF5X74785PAk,1378
+fraud/core/utils.py,sha256=qN2TB9vu9ssM__M24LKZhszvAJozzKaRUmv-0f6wdIg,360
+fraud/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fraud/plugins/faker.py,sha256=KvIBNSn6oBtPKoJI2U0eEP8otQ6jUkuL0giSV8Ikq-I,1499
+fraud/plugins/gliner.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fraud/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fraud/utils/_decorators.py,sha256=t5zyAXlgT9m_p4NzYXAyB2xPyvBi1mL4wKRKcLO7WsQ,496
+fraud-0.1.0.dist-info/METADATA,sha256=tnui2BBdRRikuRMQZQizTBUDynsumYv5EK4w698lSt4,1264
+fraud-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+fraud-0.1.0.dist-info/top_level.txt,sha256=HT1yRxREYazcEirKa0gt7zu1fDPzf2UxNwxzFmi8yoA,6
+fraud-0.1.0.dist-info/RECORD,,
