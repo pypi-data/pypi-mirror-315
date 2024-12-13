@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/attaparse/__init__.py
+src/attaparse/depparse.py
+src/attaparse.egg-info/PKG-INFO
+src/attaparse.egg-info/SOURCES.txt
+src/attaparse.egg-info/dependency_links.txt
+src/attaparse.egg-info/requires.txt
+src/attaparse.egg-info/top_level.txt
