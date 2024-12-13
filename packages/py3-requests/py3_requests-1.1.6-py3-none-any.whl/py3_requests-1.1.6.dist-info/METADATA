@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: py3-requests
+Version: 1.1.6
+Summary: The Python3 Requests Library Developed By Guolei
+Home-page: https://github.com/guolei19850528/py3_requests
+Author: guolei
+Author-email: 174000902@qq.com
+License: MIT
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: addict
+Requires-Dist: xmltodict
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+Requires-Dist: html5lib
+
+# py3_requests
+
+The Python3 Requests Package Developed By Guolei
+
+# Installation
+
+```shell
+pip install py3_requests
+```
+
+# Documentation
+
+## [requests](https://requests.readthedocs.io/en/latest/)
+
+## [beautifulsoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/)
+
+## [addict document](https://pypi.org/project/addict/)
+
+## [xmltodict document](https://pypi.org/project/xmltodict/)
+
+# Example
+
+```python
+import py3_requests
+from requests import Response
+
+# response handler usage 
+result = py3_requests.request(
+    response_handler=py3_requests.ResponseHandler.status_code_200_text,
+    url="https://www.baidu.com",
+    method="GET"
+)
+# result is normal_response_handler return value
+print(result)
+
+# not response handler usage return requests.Response instance
+response = py3_requests.request(
+    url="https://www.baidu.com",
+    method="GET"
+)
+# response is requests.Response instance
+print(response)
+```
