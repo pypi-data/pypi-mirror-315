@@ -1,0 +1,11 @@
+test_cases/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_cases/test_board.py,sha256=EpGmG8p5rit0AgUa1uFsTCq5YrcIyVLEtr2DNfr0fXs,5372
+test_cases/test_game.py,sha256=8UxvoidG2RSjzaP7doO4DWpDRvVW4JAIm6X7XSAcVQ8,4354
+test_cases/test_player.py,sha256=nkqp7cs7ZWd9COB59Z33FqVASLeokNj84PG_FeqMbME,1444
+test_cases/test_snakeandladdder.py,sha256=qVaW1jpUP0Lp_toh0fLGeLx5qgcRNcRjmmjPwnRzeq4,1608
+test_cases/test_util.py,sha256=-UeQAd5DlK8J7Hzely-NPe_ixBeO6FyPzy9mvVbX-ds,766
+snakeandladder-0.1.0.dist-info/LICENSE.txt,sha256=E_qJxrjeuc3qeZq_ci52u5daJ-lC9qZapxkzBzbXEIc,1089
+snakeandladder-0.1.0.dist-info/METADATA,sha256=BOcl1MGN16p0Qkd3nTNGAwfHfbiyl4cn_XomN6bJy88,4955
+snakeandladder-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+snakeandladder-0.1.0.dist-info/top_level.txt,sha256=QqKyYK8MJ935Gck6HuaeVDqO3w37-RxTbHwRd5GRryo,11
+snakeandladder-0.1.0.dist-info/RECORD,,
