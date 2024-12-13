@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+zerpy/__init__.py
+zerpy/zerpy.py
+zerpy.egg-info/PKG-INFO
+zerpy.egg-info/SOURCES.txt
+zerpy.egg-info/dependency_links.txt
+zerpy.egg-info/requires.txt
+zerpy.egg-info/top_level.txt
