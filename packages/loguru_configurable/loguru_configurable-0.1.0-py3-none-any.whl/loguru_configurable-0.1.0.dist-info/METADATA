@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: loguru_configurable
+Version: 0.1.0
+Summary: Wrapper that adds an application_settings ConfigSection to loguru
+Author: Stockwatchdevs
+Author-email: stockwatchdevs@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: application-settings (>=0.5)
+Requires-Dist: loguru (>=0.7)
+Requires-Dist: loguru-config (>=0.1)
+Requires-Dist: loguru-logging-intercept (>=0.1)
+Description-Content-Type: text/markdown
+
+# loguru_configurable #
+
+Wrapper that adds an [application_settings](https://github.com/StockwatchDev/application_settings) ConfigSection to
+[loguru](https://github.com/Delgan/loguru), a library which aims to bring enjoyable logging in Python.
+
+Also relies on [loguru-config](https://github.com/erezinman/loguru-config) and
+[loguru-logging-intercept](https://github.com/MatthewScholefield/loguru-logging-intercept).
+
