@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+my_component/__init__.py
+my_component/example.py
+my_component/frontend/build/asset-manifest.json
+my_component/frontend/build/bootstrap.min.css
+my_component/frontend/build/index.html
+my_component/frontend/build/static/js/main.84ff9180.js
+my_component/frontend/build/static/js/main.84ff9180.js.LICENSE.txt
+my_component/frontend/build/static/js/main.84ff9180.js.map
+streamlit_drag_n_drop.egg-info/PKG-INFO
+streamlit_drag_n_drop.egg-info/SOURCES.txt
+streamlit_drag_n_drop.egg-info/dependency_links.txt
+streamlit_drag_n_drop.egg-info/requires.txt
+streamlit_drag_n_drop.egg-info/top_level.txt
