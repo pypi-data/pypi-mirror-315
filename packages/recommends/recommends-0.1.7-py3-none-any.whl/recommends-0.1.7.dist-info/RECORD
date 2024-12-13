@@ -1,0 +1,13 @@
+recommend/__init__.py,sha256=zCSWarc3cUQijSLunsT_pzmbby6ubWrAAYwJqL9nDiI,378
+recommend/filteringengine.py,sha256=77Tf4uym5doFoeKBhPv6Zp9QU-8Bkdw3zZAfBhPcr9E,4305
+recommend/history.py,sha256=wic0XL2NibyM7YefbxmvFeFkRC-mXRILd0f5PK-WBKQ,1814
+recommend/location.py,sha256=T3o1cEKqc2ZKYWeL6cxKu70V_4Bf66VjkB7yka532n0,1023
+recommend/recommendationengine.py,sha256=RN21QOeb-7e1CHzvlH10aqijoJIpzn2k7yWmxM7JPo4,4684
+recommend/storageengine.py,sha256=khsl-f49pohBJYhm7ME1bXe3rBaBP_eXW7DuyrFuxug,5394
+recommend/user.py,sha256=lCv44OswHeA681h2kpgwaxZmzMpJpL-g8cIj45xT1ac,1373
+recommend/usermanager.py,sha256=DClbJur-KjMniDBUdda1pusXbKXlnjba7oJRTk96LSk,5009
+recommends-0.1.7.dist-info/LICENSE.txt,sha256=4-U86IZz9TAnqdGUmqP0kPQmtblBLSqIWNohOJrHAWA,1087
+recommends-0.1.7.dist-info/METADATA,sha256=wYthNaWEGYKrmvfjn_UmflnN5DoyvWOHOp-piSriBlU,434
+recommends-0.1.7.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+recommends-0.1.7.dist-info/top_level.txt,sha256=ngaoFP1m0JpkNdIDF3eP5oivfs35kLcvxupVTjMmfPU,10
+recommends-0.1.7.dist-info/RECORD,,
