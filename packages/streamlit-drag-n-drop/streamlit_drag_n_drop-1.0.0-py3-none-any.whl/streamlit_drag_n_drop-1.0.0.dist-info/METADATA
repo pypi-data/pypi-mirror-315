@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: streamlit_drag_n_drop
+Version: 1.0.0
+Summary: This streamlit component uses react beautiful dnd to provide you a kanban structure where you can create dinamically the kanban columns and cards with also dynamic fields
+Home-page: 
+Author: Andre Scudiere
+Author-email: andrescudiere@gmail.com
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit>=1.4
+Provides-Extra: devel
+Requires-Dist: wheel; extra == "devel"
+Requires-Dist: pytest==7.4.0; extra == "devel"
+Requires-Dist: playwright==1.48.0; extra == "devel"
+Requires-Dist: requests==2.31.0; extra == "devel"
+Requires-Dist: pytest-playwright-snapshot==1.0; extra == "devel"
+Requires-Dist: pytest-rerunfailures==12.0; extra == "devel"
+
+# streamlit-custom-component
+
+Streamlit component that allows you to do X
+
+## Installation instructions
+
+```sh
+pip install streamlit-custom-component
+```
+
+## Important!
+
+```
+This should be used with session state to hold the current state of the kanban, 
+more information you can find in the sample code example.py
+```
+
+## Usage instructions
+
+```python
+
+#The component should receive a data structure JSON like this sample below:
+
+    data = {
+        "columns": [
+            {
+                "id": "todo",
+                "title": "To Do",
+                "cards": [
+                    {"id": "card-1", "name": "Task 1", "fields": ["Bug"], "color": "#FF5555"},
+                    {"id": "card-2", "name": "Task 2", "fields": ["Bug"], "color": "#55FF55"},
+                ],
+            },
+            {
+                "id": "in-progress",
+                "title": "In Progress",
+                "cards": [
+                    {"id": "card-3", "name": "Task 3", "fields": ["Bug"], "color": "#5555FF"},
+                ],
+            },
+            {"id": "done", "title": "Done", "cards": []},
+        ]
+    }
+
+For more example on how to call it please look into example.py file
+```
