@@ -1,0 +1,41 @@
+[project]
+name = "bakerstreet"
+version = "2.1.0"
+description = "The place where most characters meet. RPC defnition for our services"
+authors = [{ name = "Appknox", email = "engineering@appknox.com" }]
+dependencies = [
+    "grpcio>=1.68.1",
+    "protobuf>=5.29.1",
+]
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+keywords = [
+    "appknox", 
+    "rpc", 
+    "bakerstreet",
+]
+readme = "README.md"
+
+[project.urls]
+Repository = "https://github.com/appknox/bakerstreet"
+Releases = "https://github.com/appknox/bakerstreet/releases"
+
+[dependency-groups]
+dev = [
+    "grpcio-tools>=1.68.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.hooks.custom]
+dependencies = [
+    "grpcio-tools>=1.68.1"
+]
+path = "hatch_build.py"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "bakerstreet",
+]
