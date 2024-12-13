@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: zuban
+Version: 0.0.1
+Summary: ZubanLS - The Zuban Language Server
+Home-page: https://github.com/zubanls/zuban
+Author: David Halter
+Author-email: info@zubanls.com
+Maintainer: David Halter
+Maintainer-email: info@zubanls.com
+License: Proprietary
+Keywords: typechecking mypy static analysis autocompletion
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Editors :: Integrated Development Environments (IDE)
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.4
+
+# Zuban
+
+It's coming: [https://zubanls.com]().
+
+There will be a closed alpha and then a more public alpha/beta.
+Please be patient.
+
+
+# Changelog
+
+## Unreleased
+
+
