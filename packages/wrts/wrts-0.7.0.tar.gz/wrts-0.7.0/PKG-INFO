@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: wrts
+Version: 0.7.0
+Summary: A small lil library for using the WRTS API 
+Author: BadPythonCoder
+Author-email: xsare435@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# WRTS.py (or wrts or wrtsapi)
+*renaming wrts to studygo is like the rebranding of twitter to X*
+
+No docs *yet*.
+
+oh yeah btw disclaimer: not my responsibility if you do something dumb dumb
+
+## TODO
+[ ] Add "PublicSession" class
+[ ] Add functions for changing account settings
+[ ] Add support for Groups
+[ ] Add support for Books
+[ ] Add more exercise types
+[ ] Parse more objects
+[ ] Make documentation
