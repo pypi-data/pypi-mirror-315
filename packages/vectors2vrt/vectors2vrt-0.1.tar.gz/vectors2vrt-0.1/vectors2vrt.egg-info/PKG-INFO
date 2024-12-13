@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: vectors2vrt
+Version: 0.1
+Summary: Generate a VRT file from GIS vector sources
+License: MIT License
+Project-URL: Homepage, https://github.com/fgregg/vectors2vrt
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: gdal
+Requires-Dist: click
