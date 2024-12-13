@@ -1,0 +1,9 @@
+ClearData/Interfaces.py,sha256=CeUosZvYLlHYOjdvLwXGeQ53b_8kjnmn31XAwBqfMQc,6080
+ClearData/PostgreSQLClearData.py,sha256=Tq5QTn0DzcyRmOV7apyzA7u5OGUayNGPmvPfQRP6h5I,14046
+ClearData/SQLServerClearData.py,sha256=E4dPNPX4IC_bdJX-_ar1lZUIYGAZ-CF-eHVF4heRDhU,27949
+ClearData/TextClearData.py,sha256=NF8NfIaiYVcC69F5zT2QTG9hEnn8JZ8nFSVtuQQ9668,8926
+ClearData/__init__.py,sha256=f-4W6sStDap4WgxaB-9qwaJh30ImUV2FrvAgKo99ShY,128
+cleardata-1.0.5.dist-info/METADATA,sha256=LMR2cYy7PxGJXnd-SXF61CrwLEJvxGeSBsmWX27b9CA,763
+cleardata-1.0.5.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+cleardata-1.0.5.dist-info/licenses/LICENSE,sha256=J7OZ4q8C9Q-h6_TvW2G9srj2jCKMqUMvGdy-RhBAGTI,1094
+cleardata-1.0.5.dist-info/RECORD,,
