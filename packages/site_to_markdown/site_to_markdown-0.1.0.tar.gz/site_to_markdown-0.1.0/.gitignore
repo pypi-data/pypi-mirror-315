@@ -1,0 +1,10 @@
+CACHEDIR.TAG
+bin/
+cookies.json
+lib/
+pyvenv.cfg
+__pycache__
+*.pyc
+*.pyo
+markdown_pages/
+*.egg-info/
