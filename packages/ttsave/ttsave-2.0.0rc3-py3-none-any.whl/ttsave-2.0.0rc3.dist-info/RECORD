@@ -1,0 +1,12 @@
+ttsave_cli.py,sha256=Uv52s_paXoRj6-kMc6hGmiQETmTrQ2mIoHJhES_RRxQ,3368
+ttsave/__init__.py,sha256=MHd_t-NN3fV0GXmeC2rnp48h1Jdw65lOrMUGW6DlIoc,39
+ttsave/__version__.py,sha256=XpLy1oEhFQs2o9AM5pMFBBwI3IQDAMOjF-1QL2mTNK8,22
+ttsave/lib.cp310-win_amd64.pyd,sha256=pf9Wlr9QT4idPNvgBsXy2d0fv9VYzSCf3bQ3Pj3pbOk,89088
+ttsave/js/xbogus-js.min.js,sha256=G-1KE5WtpoQxfKv7ZDAzmUqDQ3O83u8_8wAdOOPs0_k,66383
+ttsave/utils/xbogus.cp310-win_amd64.pyd,sha256=dJ2zt91AXdaLJycVD0658o3EIIjZ1au_Y1wPfRR8NEI,41984
+ttsave-2.0.0rc3.dist-info/LICENSE,sha256=UVxBm0fqUrenxWNgX6jWpjL8itcmx9ysCD8S26xRb4k,11537
+ttsave-2.0.0rc3.dist-info/METADATA,sha256=oZ6xX2j2ei3Ic-6p5B1f4Mk0sSS4A9bMHK2W5x9XLiE,4100
+ttsave-2.0.0rc3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+ttsave-2.0.0rc3.dist-info/entry_points.txt,sha256=9PrTy_0usfM3UnKTugi-v6Rztfb55aaTdqv3AgE-lDY,42
+ttsave-2.0.0rc3.dist-info/top_level.txt,sha256=TbfMRfALIe3PywAs6zJ6GIEy0PBRHhPoXvQe2kBJQY4,18
+ttsave-2.0.0rc3.dist-info/RECORD,,
