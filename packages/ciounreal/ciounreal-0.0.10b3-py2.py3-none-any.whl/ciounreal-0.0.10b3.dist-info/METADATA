@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: ciounreal
+Version: 0.0.10b3
+Summary: Unreal plugin for Conductor Cloud Rendering Platform.
+Home-page: https://github.com/ConductorTechnologies/ciounreal
+Author: Conductor
+Author-email: info@conductortech.com
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ciocore<9.0.0,>=8.3.3
+Requires-Dist: cioseq<1.0.0,>=0.1.14
+Requires-Dist: p4python==2024.1.2625398
+
+# Conductor plugin for Unreal
+
+Unreal Engine plugin to manage MovieRenderPipeline submissions to Conductor's cloud service. 
+
+Supported software: Unreal Engine 5 and higher
+
+
+## Development
+
+See [DEVELOPMENT](DEVELOPMENT.md) for more information.
+
+## Changelog
+
+## Unreleased: 
+
+- Matching Unreal render specs by displaying only single GPU instance types
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.0.1] - 2024-07-05
+
+### Added
+
+- `ConductorJob` and `PerforceConductorJob` classes that represent conductor job payload
+- `ConductorJobBuilder` class
+- `ConductorJobSubmitter` class
+- Common utilities:
+  *  `context.Context` class for resolving templated strings
+  * `dependency_collector.DependencyCollector` class for search Unreal asset dependencies recursively
+  * `perforce.PerforceConnection` class for manage Perforce entities
+  * `unreal_paths` module for working with UE pths
+
+
+[0.0.1]: https://git.icvr.io/ictools/clients/conductor-technologies/ct.ciounreal.python
+
+## [0.0.2] - 2024-08-01
+
+### Added
+
+- Compile C++ binaries for different Unreal Engine version in `python -m build`. 
+  Compiled plugins saved within Plugins folder in pip package: `Plugins\ConductorUE_5.3.zip` 
+- Added Unreal Engine/Project compatible Conductor plugin version installation in `post_install.py` script 
+- Added ability to find all Unreal Engine versions installed with Epic Games Launcher
+
+
+[0.0.2]: https://git.icvr.io/ictools/clients/conductor-technologies/ct.ciounreal.python
+
+## [0.0.3] - 2024-08-01
+
+### Changed
+
+- Updated `p4utils-for-unreal` package version number in dependencies 
+
+
+[0.0.3]: https://git.icvr.io/ictools/clients/conductor-technologies/ct.ciounreal.python
+
+## [0.0.4] - 2024-08-01
+
+### Changed
+
+- `p4utils-for-unreal` moved inside of ciounreal repo
+
+
+[0.0.4]: https://git.icvr.io/ictools/clients/conductor-technologies/ct.ciounreal.python
+
+## [0.0.5] - 2024-08-14
+
+### Changed
+
+- Fixed notifications for failing jobs
+- Unique Perforce workspace name generation in case of host machine name collision
+
+
+[0.0.5]: https://git.icvr.io/ictools/clients/conductor-technologies/ct.ciounreal.python
+
+## [0.0.6] - 2024-08-15
+
+### Changed
+
+- Exit Unreal Editor in case of errors, returning an appropriate exit code
+- Fixed Perforce workspace clearing issue when some files are checked out on the rendering instance
+- Handle Render Executor exceptions and exit Unreal Editor to prevent it from hanging in an idle state
+
+[0.0.6]: https://git.icvr.io/ictools/clients/conductor-technologies/ct.ciounreal.python
+
+## [0.0.7] - 2024-08-28
+
+### Changed
+
+- Update Unreal plugin metadata for Epic Marketplace
+- Collect soft reference dependencies for Unreal assets in Perforce job
+- Add "Reconnect" button in Plugin settings
+- Enable by default setting for Unreal plugin
+- Update unique workspace name generation algorithm for Perforce
+
+[0.0.7]: https://git.icvr.io/ictools/clients/conductor-technologies/ct.ciounreal.python
+
+## [0.0.8] - 2024-09-02
+
+### Changed
+
+- Add "Reconnect" button in Main toolbar Menu
+- Add plugin icons
+- Update enable by default setting for Unreal plugin in setup.py
+
+[0.0.8]: https://git.icvr.io/ictools/clients/conductor-technologies/ct.ciounreal.python
+
+## [0.0.10b1] - 2024-09-02
+
+### Changed
+
+- Matching Unreal render specs by displaying only single GPU instance types
+
+[0.0.8]: https://git.icvr.io/ictools/clients/conductor-technologies/ct.ciounreal.python
