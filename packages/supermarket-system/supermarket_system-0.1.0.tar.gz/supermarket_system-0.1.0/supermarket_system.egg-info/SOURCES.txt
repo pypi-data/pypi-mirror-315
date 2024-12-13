@@ -1,0 +1,6 @@
+README.md
+setup.py
+supermarket_system.egg-info/PKG-INFO
+supermarket_system.egg-info/SOURCES.txt
+supermarket_system.egg-info/dependency_links.txt
+supermarket_system.egg-info/top_level.txt
