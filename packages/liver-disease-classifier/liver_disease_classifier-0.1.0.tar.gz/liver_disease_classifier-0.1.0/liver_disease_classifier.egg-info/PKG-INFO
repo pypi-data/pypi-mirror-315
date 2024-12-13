@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: liver_disease_classifier
+Version: 0.1.0
+Summary: Library for liver disease prediction using various machine learning models
+Author: Sentongo Muhsin
+License: MIT
+Keywords: Liver Disease classification
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: imbalanced-learn
+Requires-Dist: scipy
+Requires-Dist: numpy
