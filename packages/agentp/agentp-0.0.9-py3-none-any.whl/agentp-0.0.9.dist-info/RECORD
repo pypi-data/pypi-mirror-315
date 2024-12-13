@@ -1,0 +1,11 @@
+agentp/GREX.py,sha256=mzsxlfyaVGLOTe0TiZzgk2Jwwv10fzxO9kCBQa4TOj0,9333
+agentp/GWAS.py,sha256=A3JLGJHeinpW93AWeqN29gCV8RIHvoIaMk9LVzvLxjQ,7136
+agentp/Genotypes.py,sha256=5NYFahhDMfyrrqYdar153J5eYxCfxQ6wr0wdy34Ppak,4207
+agentp/Project.py,sha256=F_T0GEMNwixSWHkSnYANSdNsk0ps4ZBR-3l6t9-Xfxs,12335
+agentp/Static.py,sha256=jqAczxmofQ609ip430UuSTeW6ZZi0-MjQnqiCZOJgLw,2687
+agentp/TWAS.py,sha256=44OAK7LF0QdtIvZ0Tv9o9khog2BjgphQn2mH8_6VaBI,14843
+agentp/__init__.py,sha256=SyvoINWVi8a066IX9i5UGcjuCsvMZQnkLqFqRJUQtkE,203
+agentp-0.0.9.dist-info/METADATA,sha256=vjTiXIBCSsCFz4Gz4r09ysPvNe0EbXOsYHdhAhuRT3k,559
+agentp-0.0.9.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+agentp-0.0.9.dist-info/top_level.txt,sha256=m-yfbr802MUMsJ7JTzuvzqzwRQFOpuMIHjIx7QsKZis,7
+agentp-0.0.9.dist-info/RECORD,,
