@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: srcmlmal
+Version: 0.0.2
+Summary: mlops course repo
+Author: mmmhdp
+Requires-Python: ~=3.12
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+
+# Репозиторий курса MLOps
+Мальцев Никита БИВТ-21-17
+
+Всё, что связано с курсом MLOps
+
