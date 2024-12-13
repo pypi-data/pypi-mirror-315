@@ -1,0 +1,5 @@
+[console_scripts]
+autoablesci = autoAnSign.web_ablesci:main
+autoalicloud = autoAnSign.app_alicloud:main
+automuchong = autoAnSign.web_muchong:main
+autourl = autoAnSign.web_url:main
