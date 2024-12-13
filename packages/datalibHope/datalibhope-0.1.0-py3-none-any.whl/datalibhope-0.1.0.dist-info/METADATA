@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: datalibHope
+Version: 0.1.0
+Summary: 
+Author: Amal_Maatoug
+Author-email: maatougamal1@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: matplotlib (>=3.9.3,<4.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: scikit-learn (>=1.6.0,<2.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Description-Content-Type: text/markdown
+
+DataLib
+=======
+
+A Python library for data manipulation and analysis.
+
+Features:
+- Load and save CSV files
+- Normalize and handle missing data
+- Statistical calculations
+- Data visualization
+- Advanced machine learning models
+
+Installation:
+    pip install datalib
+
+Usage:
+    from datalib.data_processing import load_csv
+
+    data = load_csv("data.csv")
+    print(data.head())
