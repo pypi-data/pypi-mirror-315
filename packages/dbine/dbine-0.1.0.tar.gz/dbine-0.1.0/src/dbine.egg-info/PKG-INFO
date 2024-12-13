@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: dbine
+Version: 0.1.0
+Summary: Auxiliary tools related to databases
+Author-email: mskz-3110 <mskz.saito@gmail.com>
+Project-URL: Homepage, https://github.com/mskz-3110/dbine
+Project-URL: Issues, https://github.com/mskz-3110/dbine/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psycopg
+Requires-Dist: mysql-connector-python
+Requires-Dist: graspgraph
+
+# dbine
+Auxiliary tools related to databases
+
+## Versions
+
+|Version|Summary|
+|:--|:--|
+|0.1.0|Release dbine|
+
+## Installation
+### dbine
+`pip install dbine`
+
+### [graspgraph](https://github.com/mskz-3110/graspgraph)
+
+## Usage
+![](./images/database_mysql.png)
+```python
+import dbine as db
+
+type = db.Type.PostgreSQL
+with db.Connection(db.ConnectionOptions(**{"Type": type, "DatabaseName": "dbine", "UserName": "reader", "Password": "READER"})) as connection:
+  dbergraph = gg.Dbergraph(connection.get_database())
+  dbergraph.Database.update()
+  dbergraph.to_dot_helper().write_image("""./images/database_{}.pdf""".format(type.name.lower()))
+```
+
+## CLI
+### graph
+Convert database table definition to PDF
+
+`dbine graph database.yaml`
+
+#### [database.yaml]
+```yaml
+Type: PostgreSQL
+DatabaseName: dbine
+UserName: reader
+Password: READER
+Host: localhost
+Port: ''
+```
+
+### pdf convert
+Convert PDF to image
+
+`dbine pdf convert database.pdf database.png`
