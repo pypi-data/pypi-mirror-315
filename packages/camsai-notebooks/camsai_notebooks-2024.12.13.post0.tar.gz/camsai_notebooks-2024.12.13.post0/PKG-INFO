@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: camsai-notebooks
+Version: 2024.12.13.post0
+Summary: CAMSAI notebooks
+Author-email: CAMSAI <info@camsai.org>
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: mat3ra-utils[jupyterlite]
+Provides-Extra: tests
+Requires-Dist: coverage[toml]>=5.3; extra == "tests"
+Requires-Dist: pre-commit; extra == "tests"
+Requires-Dist: black; extra == "tests"
+Requires-Dist: ruff; extra == "tests"
+Requires-Dist: isort; extra == "tests"
+Requires-Dist: mypy; extra == "tests"
+Requires-Dist: pip-tools; extra == "tests"
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Requires-Dist: pytest-mock; extra == "tests"
+Requires-Dist: pytest-asyncio; extra == "tests"
+Provides-Extra: all
+Requires-Dist: camsai-notebooks[tests]; extra == "all"
+
+Empty main branch
