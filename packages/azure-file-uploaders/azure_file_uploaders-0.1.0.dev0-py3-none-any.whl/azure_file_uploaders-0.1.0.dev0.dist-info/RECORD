@@ -1,0 +1,8 @@
+azure-file-uploaders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azure-file-uploaders/blobs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azure-file-uploaders/blobs/client.py,sha256=d0I_CJi9h6w6nKEiSpI5Q-hU_3DYUcQcr8HwpPPPZG4,12198
+azure-file-uploaders/blobs/README.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azure_file_uploaders-0.1.0.dev0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azure_file_uploaders-0.1.0.dev0.dist-info/METADATA,sha256=8z3ZRAznvXgffzW2t3BrbulDA-wCtEK-cMJ-lGQNU9A,877
+azure_file_uploaders-0.1.0.dev0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+azure_file_uploaders-0.1.0.dev0.dist-info/RECORD,,

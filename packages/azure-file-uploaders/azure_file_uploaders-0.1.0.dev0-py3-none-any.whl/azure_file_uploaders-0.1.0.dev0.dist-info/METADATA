@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: azure-file-uploaders
+Version: 0.1.0.dev0
+Summary: Azure Handlers
+Home-page: https://github.com/osrokas/azure-handlers.git
+Keywords: azure,handlers
+Author: osrokas
+Author-email: rokasptr@gmail.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: azure-storage-blob (>=12.24.0,<13.0.0)
+Requires-Dist: geojson (>=3.1.0,<4.0.0)
+Requires-Dist: geopandas (>=1.0.1,<2.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: pytest (>=8.3.3,<9.0.0)
+Project-URL: Repository, https://github.com/osrokas/azure-handlers.git
+Description-Content-Type: text/markdown
+
+
+
