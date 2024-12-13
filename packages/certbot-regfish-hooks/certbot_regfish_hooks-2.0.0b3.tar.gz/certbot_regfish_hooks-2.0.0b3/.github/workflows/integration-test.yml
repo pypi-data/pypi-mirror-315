@@ -1,0 +1,17 @@
+name: "Integration Test"
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  integration-test:
+    uses: "./.github/workflows/integration-test-with-version.yml"
+    with:
+      python-version: "${{ matrix.python-version }}"
+    secrets: inherit
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
