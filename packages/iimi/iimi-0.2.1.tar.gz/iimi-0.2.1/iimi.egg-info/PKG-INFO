@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: iimi
+Version: 0.2.1
+Summary: identifying plant infection with machine intelligence.
+Home-page: https://github.com/jaspreetks/iimi
+Author: Jaspreet S
+License: MIT
+Description: # iimi: identifying infection with machine intelligence
+        
+        `iimi` is a Python package designed for plant virus diagnostics using high-throughput genome sequencing data. It provides tools for converting BAM files into coverage profiles, processing viral genomic data, and predicting viral infections in plant samples.
+        
+        ## Installation
+        
+        ```bash
+        pip install iimi
+        ```
+        
+        
+        ## Loading Packages and Data
+        
+        ```python
+        import iimi
+        ```
+        
+        ## Converting BAM file(s) into coverage profiles and feature-extracted data frame
+        
+        ```python
+        # Specify path to BAM files
+        path_to_bamfiles = "path/to/your/BAM/files"
+        
+        # Convert BAM files to coverage profiles
+        example_cov = iimi.convert_bam_to_rle(bam_files=path_to_bamfiles)
+        
+        # Convert coverage profiles to feature-extracted DataFrame
+        df = iimi.convert_rle_to_df(example_cov)
+        ```
+        
+        ## Predicting Plant Sample(s)
+        
+        ### Using Pre-trained Models
+        
+        ```python
+        # Predict using pre-trained XGBoost model
+        predictions = iimi.predict_iimi(newdata=df, method='xgb')
+        ```
+        
+        ### Training a Custom Model
+        
+        ```python
+        # Split data into training and testing sets
+        train_x = df[df['sample_id'].isin(train_names)]
+        test_x = df[~df['sample_id'].isin(train_names)]
+        
+        # Prepare labels
+        train_y = [example_diag.loc[row['seg_id'], row['sample_id']] for _, row in train_x.iterrows()]
+        
+        # Train custom model
+        custom_model = iimi.train_iimi(train_x=train_x, train_y=train_y)
+        
+        # Predict using custom model
+        custom_predictions = iimi.predict_iimi(newdata=test_x, trained_model=custom_model)
+        ```
+        
+        
+        ### Customizing Unreliable Regions
+        
+        #### Mappability Profile
+        
+        ```python
+        # Create mappability profile for virus segments
+        mappability_profile_virus = iimi.create_mappability_profile(
+            bam_folder='path/to/virus/bam/files',
+            category='Unmappable region (virus)',
+            virus_info=virus_segments
+        )
+        
+        # Create mappability profile for host genome
+        mappability_profile_host = iimi.create_mappability_profile(
+            bam_folder='path/to/host/bam/files',
+            category='Unmappable region (host)',
+            virus_info=virus_segments
+        )
+        ```
+        
+        #### High Nucleotide Content Regions
+        
+        ```python
+        # Create high nucleotide content regions
+        high_nucleotide_regions = iimi.create_high_nucleotide_content(
+            gc_threshold=0.6,
+            a_threshold=0.45,
+            virus_info=virus_segments
+        )
+        ```
+        
+        ## Visualizing Coverage Profiles
+        
+        ```python
+        # Select specific segments to visualize
+        segs = ['82np2784', 'm0kacxse']
+        covs_selected = {sample: {seg: example_cov[sample][seg] for seg in segs} for sample in example_cov}
+        
+        iimi.plot_cov(covs=covs_selected, virus_info=virus_segments)
+        ```
+        
+        ## References
+        
+        - H. Ning, I. Boyes, Ibrahim Numanagić, M. Rott, L. Xing, and X. Zhang, “Diagnostics of viral infections using high-throughput genome sequencing data,” Briefings in Bioinformatics, vol. 25, no. 6, Sep. 2024, doi: https://doi.org/10.1093/bib/bbae501.
+        - Grigorii Sukhorukov, M. Khalili, Olivier Gascuel, Thierry Candresse, Armelle Marais-Colombel, and Macha Nikolski, “VirHunter: A Deep Learning-Based Method for Detection of Novel RNA Viruses in Plant Sequencing Data,” Frontiers in bioinformatics, vol. 2, May 2022, doi: https://doi.org/10.3389/fbinf.2022.867111.
+        
+Keywords: bioinformatics,plant-virus,machine-learning,diagnostics
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

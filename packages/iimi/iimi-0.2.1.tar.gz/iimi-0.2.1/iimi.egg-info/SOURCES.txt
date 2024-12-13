@@ -1,0 +1,17 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+iimi/__init__.py
+iimi/globals.py
+iimi/map.py
+iimi/plot.py
+iimi/predict_iimi.py
+iimi/preprocess.py
+iimi/train_iimi.py
+iimi.egg-info/PKG-INFO
+iimi.egg-info/SOURCES.txt
+iimi.egg-info/dependency_links.txt
+iimi.egg-info/requires.txt
+iimi.egg-info/top_level.txt
+iimi/data/__init__.py
