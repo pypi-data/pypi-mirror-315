@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: python-terminusgps
+Version: 1.0.0
+Summary: Provides abstractions/utilities for working with Wialon and Authorize.NET APIs.
+Author-email: Blake Nall <blake@terminusgps.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: argparse>=1.4.0
+Requires-Dist: authorizenet>=1.1.5
+Requires-Dist: python-wialon>=1.2.4

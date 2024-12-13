@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+python_terminusgps.egg-info/PKG-INFO
+python_terminusgps.egg-info/SOURCES.txt
+python_terminusgps.egg-info/dependency_links.txt
+python_terminusgps.egg-info/requires.txt
+python_terminusgps.egg-info/top_level.txt
+terminusgps/__init__.py
