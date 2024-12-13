@@ -1,0 +1,8 @@
+biomodules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biomodules/merge_dir.py,sha256=XPztN2OsrTNNSepvCuqUrIXT5i1az9DNNrulCYGfEXs,877
+biomodules/preprocessing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biomodules/preprocessing/fastqc.py,sha256=nIqkjnTqM9hMlc5irvhKA0SvSnNBZum2QWAC1eMxBPg,738
+biomodules-1.0.3.dist-info/METADATA,sha256=gyyxoOVaZlPeU1_a65WVoAhIkG5bnzVvlAFq6PdbKiA,900
+biomodules-1.0.3.dist-info/WHEEL,sha256=Kh9pAotZVRFj97E15yTA4iADqXdQfIVTHcNaZTjxeGM,110
+biomodules-1.0.3.dist-info/top_level.txt,sha256=NMAS-ClP0Bt6FMc9tY6aiOVH_vPkjP3mUaLNu2eAG_A,11
+biomodules-1.0.3.dist-info/RECORD,,
