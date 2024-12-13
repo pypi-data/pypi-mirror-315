@@ -1,0 +1,2 @@
+[console_scripts]
+objwatch = objwatch.cli:main

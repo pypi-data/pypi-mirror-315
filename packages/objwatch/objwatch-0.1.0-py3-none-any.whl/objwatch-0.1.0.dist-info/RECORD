@@ -1,0 +1,12 @@
+objwatch/__init__.py,sha256=ncJWYjzUBCq72jdINaMc9OUJvljGmIt0a5G0hRzrWPY,67
+objwatch/cli.py,sha256=q3vmcbJXZkPHOuWCgKDPWk6vAyYoGn_G9M4ap_NqJss,1990
+objwatch/core.py,sha256=0YEHwE-pb8LWW9XIEQ8Aiwismmj_xETCKPouNfVCEZ8,656
+objwatch/logger.py,sha256=UMsEqv_UxVOs6Xn_jrJA-nqqcvJ_NFptk7tHd7RcLTk,438
+objwatch/tracer.py,sha256=fFYiSM6BCPMbbIbBWQFRVNfKmNfCc6li_r93r0qFzpY,4328
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=WXk04rMYLj8PZfpjnZwobuGvA3DdBxH_eN-RkTXn40Q,2474
+objwatch-0.1.0.dist-info/METADATA,sha256=Gt0LaW3L---d63F1rldBRkC4x-_i2epAQtE9xwVmoho,8995
+objwatch-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+objwatch-0.1.0.dist-info/entry_points.txt,sha256=JUesozLza2uP9oGAMdMRQBXL4ag1MVTmZDg-47Qtq8c,47
+objwatch-0.1.0.dist-info/top_level.txt,sha256=Wu4OAkDodBZ2SrolrEYCGdehMOMEv9jBP1pFoGWniw0,15
+objwatch-0.1.0.dist-info/RECORD,,
