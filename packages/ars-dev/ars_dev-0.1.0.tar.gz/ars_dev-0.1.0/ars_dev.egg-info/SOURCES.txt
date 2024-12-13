@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ars_dev.egg-info/PKG-INFO
+ars_dev.egg-info/SOURCES.txt
+ars_dev.egg-info/dependency_links.txt
+ars_dev.egg-info/requires.txt
+ars_dev.egg-info/top_level.txt
+tests/test_ARS_class.py
+tests/test_distributions.py
+tests/test_modules.py
+tests/test_utils.py

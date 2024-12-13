@@ -1,0 +1,92 @@
+# Ars-dev
+Ars-dev is a Python package designed for adaptive rejection sampling(ARS). This implementation references Adaptive Rejection Sampling for Gibbs Sampling(Gilks et al. 1992).
+
+
+## Installation
+
+First clone this project locally with `git`
+```
+git clone https://github.berkeley.edu/yoshi-chiu/ars-dev.git
+```
+
+Then you can install the package via `pip`. First move in the directory, then run `pip`.
+
+```
+cd ars-dev/
+python -m pip install .
+```
+
+## Quick Start
+
+Here is an example on how to run the package.
+```
+from ars import ars
+from scipy.stats import norm
+import numpy as np
+
+domain = (-np.inf, np.inf)
+n_samples = 10000
+samples = ars(pdf=norm.pdf, domain=domain, n_samples=n_samples, is_logpdf=False, verbose=True)
+```
+
+The function also accepts pdf functions built with JAX. In that case, jax automatic differentiation is used in the sampling
+```
+from ars import ars
+import jax.numpy as jnp
+
+target_pdf = lambda x: jnp.exp(-x**2 / 2)
+domain = (-jnp.inf, jnp.inf)
+
+samples = ars(pdf=target_pdf, domain=domain, n_samples=1000, is_logpdf=False, verbose=True)
+```
+
+A function `test_ars` is also provided to run tests on easy to compute pdfs
+```
+from ars import test_ars
+from scipy.stats import norm
+import numpy as np
+
+domain = (-np.inf, np.inf)
+n_samples = 10000
+samples, obj, fig = test_ars(pdf=norm.pdf, domain=domain, n_samples=n_samples, verbose=False)
+```
+
+## Running Unit tests
+To run all the unit tests, first move in the project directory then run `pytest`
+```
+pytest
+```
+
+## Documentation
+Documentation can be found at https://github.berkeley.edu/yoshi-chiu/ars-dev/blob/main/docs/report.pdf
+
+## License
+This project is licensed under the MIT License.
+
+---
+---
+---
+
+# (To be deleted)
+
+## Setup (For us)
+
+Run this to install the package in editable mode
+
+```
+python -m pip install -e .
+```
+
+## Running the function
+
+## TODO 
+- [ ] JIT ? (TBD)
+- [x] write testing for all non-trivial functions (Jordan)
+- [ ] Setup as a package (Hongyu)
+- [ ] write a README on the easy setup and initial simple examples (Hongyu)
+- [x] Write documentation, especially the main function with some simple examples (Yoshi)
+- [x] write a report documet explaining the implementation approach (Jordan for a good part of it)
+- [x] Add tests explanation and examples in report (Yoshi)
+- [x] Add in results plots and examples in report (Jordan, Yoshi)
+- [x] Improve the update of the arrays to avoid recomputing everything (not faster)
+- [x] Update code for non-jax functions (Jordan)
