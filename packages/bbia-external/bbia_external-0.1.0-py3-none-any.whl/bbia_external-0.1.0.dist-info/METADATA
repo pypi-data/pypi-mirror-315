@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bbia-external
+Version: 0.1.0
+Summary: Assistente virtual da BBoom
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: cachetools>=5.5.0
+Requires-Dist: langchain-community>=0.3.7
+Requires-Dist: langchain-groq>=0.2.1
+Requires-Dist: langchain-huggingface>=0.1.2
+Requires-Dist: langchain-pinecone>=0.2.0
+Requires-Dist: langserve[all]>=0.3.0
+Requires-Dist: pinecone-notebooks>=0.1.1
+Requires-Dist: pydantic-settings>=2.6.1
+
+# BBIA EXTERNAL
