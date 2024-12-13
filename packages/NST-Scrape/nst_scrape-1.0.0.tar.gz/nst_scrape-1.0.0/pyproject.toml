@@ -1,0 +1,17 @@
+[project]
+name = "NST_Scrape"
+version = "1.0.0"
+authors = [
+  { name="Owen Singh", email="owenbksingh@gmail.com" },
+]
+description = "A Python Package for scraping National Hockey League information and stats from Natural Stat Trick."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/owensingh38/nst_scrape/"

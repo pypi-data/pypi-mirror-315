@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: NST_Scrape
+Version: 1.0.0
+Summary: A Python Package for scraping National Hockey League information and stats from Natural Stat Trick.
+Author-email: Owen Singh <owenbksingh@gmail.com>
+Project-URL: Homepage, https://github.com/owensingh38/nst_scrape/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NST_Scrape
+
+NST_Scrape is a Python Package for scraping National Hockey League information and stats from Natural Stat Trick.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install NST_Scrape.
+
+```bash
+pip install NST_scrape
+```
+
+## Usage
+
