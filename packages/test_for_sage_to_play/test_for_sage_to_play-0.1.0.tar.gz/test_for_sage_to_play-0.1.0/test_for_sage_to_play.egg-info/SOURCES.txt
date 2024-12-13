@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+test_for_sage_to_play.egg-info/PKG-INFO
+test_for_sage_to_play.egg-info/SOURCES.txt
+test_for_sage_to_play.egg-info/dependency_links.txt
+test_for_sage_to_play.egg-info/requires.txt
+test_for_sage_to_play.egg-info/top_level.txt

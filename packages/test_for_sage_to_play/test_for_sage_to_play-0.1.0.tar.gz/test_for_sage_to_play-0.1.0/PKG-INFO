@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: test_for_sage_to_play
+Version: 0.1.0
+Summary: project description
+Author-email: CabbageSage <geduozeng@gmail.com>
+Maintainer-email: CabbageSage <geduozeng@gmail.com>
+License: MIT License
+Project-URL: repository, https://github.com/CabbageSage/starting_uv
+Project-URL: homepage, https://github.com/CabbageSage/starting_uv
+Keywords: xxx,xxx-toolkit
+Classifier: Topic :: Multimedia
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4>=4.12.3
+Requires-Dist: requests>=2.32.3
+Provides-Extra: network
+Requires-Dist: httpx[http2]>=0.27.2; extra == "network"
+
+# Hello World
+
+Welcome to the Hello World project! This project is a simple demonstration of a basic program that prints "Hello, World!" to the console. It is often used as a beginner's introduction to programming in various languages.
+
+## Getting Started
+
+To get started with this project, clone the repository and follow the instructions in the relevant language directory.
+
+## Contributing
+
+We welcome contributions! Please fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License.
+
+Happy coding!
