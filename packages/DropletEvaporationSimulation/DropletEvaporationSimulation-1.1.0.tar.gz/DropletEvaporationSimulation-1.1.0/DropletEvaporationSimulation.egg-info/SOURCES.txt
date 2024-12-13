@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+DropletEvaporationSimulation.egg-info/PKG-INFO
+DropletEvaporationSimulation.egg-info/SOURCES.txt
+DropletEvaporationSimulation.egg-info/dependency_links.txt
+DropletEvaporationSimulation.egg-info/requires.txt
+DropletEvaporationSimulation.egg-info/top_level.txt
+src/__init__.py
+src/constants.py
+src/main.py
+src/plots.py
+src/simulation.py
+src/utils.py
