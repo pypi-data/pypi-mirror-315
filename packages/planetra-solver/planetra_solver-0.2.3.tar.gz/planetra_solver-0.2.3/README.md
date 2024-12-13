@@ -1,0 +1,87 @@
+# Planetra Solver
+
+**Planetra Solver** — это библиотека для работы с API Knowledge Space. Она предоставляет удобные функции для управления: объектами, моделями, наборами данных, классами и справочниками.
+
+## Содержание
+- [Установка](#установка)
+- [Зависимости](#зависимости)
+- [Использование](#использование)
+- [Функции](#функции)
+- [Авторы](#авторы)
+- [Контакты](#контакты)
+
+## Установка
+Чтобы установить библиотеку, выполните следующую команду:
+```bash
+pip install planetra_solver
+```
+
+## Зависимости
+Все необходимые для работы зависимости устанавливаются автоматически вместе с библиотекой.
+
+## Использование
+Для использования библиотеки необходимо импортировать её в ваш проект:
+```python
+from planetra_solver import *
+```
+
+## Функции
+Библиотека включает в себя следующие функции:
+
+### Объекты
+- `create_object(class_id: str, model_id: str, object_name: str) -> None`: Создает новый объект.
+- `create_objects(class_id: str, model_id: str, object_names: list) -> None`: Создает несколько объектов.
+- `delete_object(object_id: str) -> None`: Удаляет объект.
+- `delete_objects(object_ids: list) -> None`: Удаляет несколько объектов.
+- `rename_object(object_id: str, object_name: str) -> None`: Переименовывает объект.
+- `rename_objects(object_ids: list, object_names: list) -> None`: Переименовывает несколько объектов.
+- `get_all_objects() -> None`: Возвращает список всех объектов.
+
+### Модели
+- `create_model(model_name: str) -> None`: Создает новую модель.
+- `create_models(model_names: list) -> None`: Создает несколько моделей.
+- `delete_model(node_id: str) -> None`: Удаляет модель.
+- `delete_models(node_ids: list) -> None`: Удаляет несколько моделей.
+- `rename_model(node_id: str, model_name: str) -> None`: Переименовывает модель.
+- `rename_models(node_ids: list, model_names: list) -> None`: Переименовывает несколько моделей.
+- `get_all_models() -> None`: Возвращает список всех моделей.
+
+### Наборы данных
+- `create_dataset(model_id: str, dataset_name: str) -> None`: Создает новый набор данных.
+- `create_datasets(model_id: str, dataset_names: list) -> None`: Создает несколько наборов данных.
+- `delete_dataset(dataset_id: str) -> None`: Удаляет набор данных.
+- `delete_datasets(dataset_ids: list) -> None`: Удаляет несколько наборов данных.
+- `get_all_datasets() -> None`: Возвращает список всех наборов данных.
+
+### Классы
+- `create_class(name: str) -> None`: Создает новый класс.
+- `create_classes(name: list) -> None`: Создает несколько классов.
+- `delete_class(class_id: str) -> None`: Удаляет класс.
+- `rename_class(class_id: str, name: str) -> None`: Переименовывает класс.
+- `update_class_policy(class_id: str, denied_edit: bool = False, denied_read: bool = False) -> None`: Обновляет политику класса.
+- `get_class_tree() -> None`: Возвращает иерархию классов.
+
+### Справочники
+- `create_dict(name: str) -> None`: Создает новый справочник.
+- `create_dict_element(dict_uuid: str, name: str, shortname: str | None = None) -> None`: Добавляет элемент в справочник.
+- `create_dict_elements(dict_uuid: str, names: list) -> None`: Добавляет несколько элементов в справочник.
+- `delete_dict(dict_uuid: str) -> None`: Удаляет справочник.
+- `delete_dict_elements(elem_uuid: list) -> None`: Удаляет несколько элементов из справочника.
+- `delete_dict_element(elem_uuid: str) -> None`: Удаляет элемент из справочника.
+- `get_dict_elements_list(dict_uuid: str) -> None`: Возвращает список всех элементов справочника.
+
+### Чаты
+- `create_chat(name: str) -> None`: Создает новый чат.
+- `delete_chat(chat_uuid: str) -> None`: Удаляет чат.
+- `send_message(chat_uuid: str, body: str, comment: str) -> None`: Отправляет сообщение.
+
+## Авторы
+- **Ruslan Gafurov**
+- **Anton Vyugin**
+
+## Контакты
+Если у вас есть предложения, вы можете связаться с авторами по следующим адресам:
+- ruslan.gafurov@planetra.ru
+- anton.vyugin.00@mail.ru
+
+### Спасибо за использование **Planetra Solver!**
