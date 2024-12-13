@@ -1,0 +1,99 @@
+Metadata-Version: 2.3
+Name: whiteduck
+Version: 0.4.6
+Summary: Add your description here
+Author-email: Andre Ratzenberger <andre.ratzenberger@whiteduck.de>
+Requires-Python: >=3.10
+Requires-Dist: rich>=13.9.4
+Requires-Dist: typer>=0.15.1
+Description-Content-Type: text/markdown
+
+# white duck Project Starter
+
+A command-line tool for quickly creating new projects from templates. Automatically discovers and provides commands for all templates in the templates directory.
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/whiteduck-dev/project-starter.git
+cd project-starter
+
+# Install using uv
+uv build
+uv pip install -e .
+```
+
+## Usage
+
+Install `uv`
+
+Visit the official documentation for detailed installation instructions:
+- [UV Installation Guide](https://docs.astral.sh/uv/)
+- [UV GitHub Repository](https://github.com/astral-sh/uv)
+
+List available templates:
+```bash
+uvx whiteduck --help
+```
+
+Create a new project:
+```bash
+# Basic usage - creates in current directory
+uvx whiteduck react
+
+# Specify output directory
+uvx whiteduck react -o my-project
+```
+
+Get help for a specific template:
+```bash
+uvx whiteduck react --help
+```
+
+## Available Templates
+
+- **react** - A modern React project template with:
+  - TypeScript support
+  - Vite for fast development
+  - TailwindCSS for styling
+  - Shadcn/ui components
+  - Python backend structure
+
+- **lib** - A template for creating Python libraries
+  - Modern Python package structure
+  - Testing setup
+  - Documentation scaffolding
+
+- **package** - A template for Python packages
+  - Basic package structure
+  - Development tools configuration
+  - Distribution setup
+
+## Adding New Templates
+
+1. Create a new directory under `src/whiteduck/templates/`
+2. Name the directory what you want the command to be (e.g., `api` for `whiteduck api`)
+3. Add your template files to this directory
+4. The command will be automatically available - no code changes needed
+
+For example:
+```bash
+# Create a new template
+mkdir src/whiteduck/templates/api
+
+# Add template files
+cp -r my-api-files/* src/whiteduck/templates/api/
+
+# The command is now available
+uv run whiteduck api --help
+```
+
+## Links
+
+- Website: [https://www.whiteduck.de](https://www.whiteduck.de)
+- Version: 0.1.0
+
+## License
+
+Copyright © 2024 white duck GmbH. All rights reserved.
