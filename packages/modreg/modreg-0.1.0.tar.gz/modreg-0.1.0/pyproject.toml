@@ -1,0 +1,20 @@
+[project]
+name = "modreg"
+version = "0.1.0"
+description = "Modular Registry"
+readme = "README.md"
+authors = [{ name = "Fei-Wang", email = "fei.comm@icloud.com" }]
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["F", "E", "W", "I"]
