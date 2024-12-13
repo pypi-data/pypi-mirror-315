@@ -1,0 +1,83 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "beachbot_config"
+dynamic = ["version"]
+authors = [
+    { name = "Christopher Buckley"},
+]
+description = "Configuration for the Beachbot project"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+]
+license = { text = "CC BY-NC 4.0" }
+
+requires-python = ">=3.8, <3.14"
+
+dependencies = [
+    "platformdirs"
+]
+
+[project.urls]
+Source = "https://github.com/okinawa-ai-beach-robot/beachbot-config"
+Issues = "https://github.com/okinawa-ai-beach-robot/beachbot-config/issues"
+
+[tool.hatch.build.targets.sdist]
+sources = ["src"]
+
+[tool.hatch.build.targets.wheel]
+sources = ["src"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "_version.py"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+log_level = "INFO"
+
+[tool.mypy]
+# Ignore missing imports globally
+ignore_missing_imports = false
+
+[tool.black]
+line-length = 80
+exclude = "_version.py"
+
+[tool.pydocstyle]
+ignore = ["D400","D212","D200"]
+
+[tool.hatch.envs.default]
+type="virtual"
+python = "3.8"
+system-packages = false
+
+[tool.hatch.envs.hatch-test]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12", "3.13"]
+extra-dependencies = ["mypy"]
+
+[tool.hatch.envs.hatch-static-analysis]
+dependenceis = [
+    "black",
+    "isort",
+    "flake8",
+    "bandit",
+]
+
+[tool.hatch.envs.hatch-static-analysis.scripts]
+format-check = [
+  "black --check --diff {args:.}",
+  "isort --check-only --diff {args:.}",
+]
+format-fix = [
+  "isort {args:.}",
+  "black {args:.}",
+]
+lint-check = "flake8 {args:.}"
+lint-fix = "lint-check"
