@@ -1,0 +1,47 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+oafuncs/__init__.py
+oafuncs - 副本/__init__.py
+oafuncs - 副本/oa_cmap.py
+oafuncs - 副本/oa_data.py
+oafuncs - 副本/oa_draw.py
+oafuncs - 副本/oa_file.py
+oafuncs - 副本/oa_help.py
+oafuncs - 副本/oa_nc.py
+oafuncs - 副本/oa_python.py
+oafuncs - 副本/oa_down/__init__.py
+oafuncs - 副本/oa_down/hycom_3hourly.py
+oafuncs - 副本/oa_down/literature.py
+oafuncs - 副本/oa_down/test_ua.py
+oafuncs - 副本/oa_sign/__init__.py
+oafuncs - 副本/oa_sign/meteorological.py
+oafuncs - 副本/oa_sign/ocean.py
+oafuncs - 副本/oa_sign/scientific.py
+oafuncs - 副本/oa_tool/__init__.py
+oafuncs - 副本/oa_tool/email.py
+oafuncs.egg-info/PKG-INFO
+oafuncs.egg-info/SOURCES.txt
+oafuncs.egg-info/dependency_links.txt
+oafuncs.egg-info/requires.txt
+oafuncs.egg-info/top_level.txt
+oafuncs/oa_down/User_Agent-list.txt
+oafuncs/oa_down/__init__.py
+oafuncs/oa_down/hycom_3hourly.py
+oafuncs/oa_down/literature.py
+oafuncs/oa_down/test_ua.py
+oafuncs/oa_s/__init__.py
+oafuncs/oa_s/oa_cmap.py
+oafuncs/oa_s/oa_data.py
+oafuncs/oa_s/oa_draw.py
+oafuncs/oa_s/oa_file.py
+oafuncs/oa_s/oa_help.py
+oafuncs/oa_s/oa_nc.py
+oafuncs/oa_s/oa_python.py
+oafuncs/oa_sign/__init__.py
+oafuncs/oa_sign/meteorological.py
+oafuncs/oa_sign/ocean.py
+oafuncs/oa_sign/scientific.py
+oafuncs/oa_tool/__init__.py
+oafuncs/oa_tool/email.py
