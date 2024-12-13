@@ -1,0 +1,10 @@
+onenode/__init__.py,sha256=Jx_wqaKr7CqxcqZGFmG7DP2y33NeFrG-jcjdJSHKQtg,81
+onenode/collection.py,sha256=Igu2c6zRv2l6YQRDOiBANo6sW3OACeqEH2cArAZ6028,3791
+onenode/database.py,sha256=CteZNl1cZlv1JdkQCjOvT5KhzNbmUCNhyREMTeLr4ek,1120
+onenode/emb_json/__init__.py,sha256=8BoGkLYk-Hch-t5zPx1aGXjAhTiusGqJ4sshtom-vTo,52
+onenode/emb_json/emb_text.py,sha256=xOqXMRL3wloAm-rA2ViFxbnCXFDJOKGR1VyeKItQvhE,1491
+onenode/onenode.py,sha256=dSmVYtZdz7M6OOEoZUef2SAkUdoTGRHTv5ckF3b6qiI,1676
+onenode-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+onenode-0.1.5.dist-info/METADATA,sha256=f4yvQwudF-rkS6IC4H8uqsAK6DdrNNH_BfTW71IQYYE,1077
+onenode-0.1.5.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+onenode-0.1.5.dist-info/RECORD,,
