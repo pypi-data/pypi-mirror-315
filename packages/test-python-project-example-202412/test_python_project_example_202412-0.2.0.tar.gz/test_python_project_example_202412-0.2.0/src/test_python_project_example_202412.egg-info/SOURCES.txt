@@ -1,0 +1,6 @@
+pyproject.toml
+src/test_python_project_example_202412/__init__.py
+src/test_python_project_example_202412.egg-info/PKG-INFO
+src/test_python_project_example_202412.egg-info/SOURCES.txt
+src/test_python_project_example_202412.egg-info/dependency_links.txt
+src/test_python_project_example_202412.egg-info/top_level.txt
