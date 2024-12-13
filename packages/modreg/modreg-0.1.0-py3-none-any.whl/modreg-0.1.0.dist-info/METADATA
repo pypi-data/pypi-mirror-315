@@ -1,0 +1,7 @@
+Metadata-Version: 2.3
+Name: modreg
+Version: 0.1.0
+Summary: Modular Registry
+Author-email: Fei-Wang <fei.comm@icloud.com>
+License: MIT
+Requires-Python: >=3.12
