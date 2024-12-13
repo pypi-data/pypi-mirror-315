@@ -1,0 +1,9 @@
+afs_file_validator-1.1.1.dist-info/METADATA,sha256=W3PNNxBkf1-tAPzg4CjGPXQ8Noh2zmyL6yrF1PWdxV0,504
+afs_file_validator-1.1.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+afs_file_validator-1.1.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+afs_file_validator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+afs_file_validator/fv/__init__.py,sha256=_afLGChx7quI1iIS5VN6cNLYapomsaUJ22L1VJDJNiU,1105
+afs_file_validator/fv/files.py,sha256=7KJ9bpBq3kr5JZ0_nwdZ6T3oqXd5KgV9VJpeG-bntxI,2121
+afs_file_validator/fv/runner.py,sha256=mgTpeMCewebW6ux8netwQ7KJqDXRCbLBM5UV3hE2rzI,3002
+afs_file_validator/fv/tools/sigcheck.exe,sha256=T-mivUsWClNSMz0A0LDBDxNoWves20jp6dDDh3oZ7tQ,445856
+afs_file_validator-1.1.1.dist-info/RECORD,,
