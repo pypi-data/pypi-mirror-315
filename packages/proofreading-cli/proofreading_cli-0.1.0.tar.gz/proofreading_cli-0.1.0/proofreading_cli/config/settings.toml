@@ -1,0 +1,6 @@
+[default.proofreading]
+    [default.proofreading.api]
+        hit = "https://hit-api.argusgroupcore.com/api/v1.0/hits"
+        timeout = 100
+    [default.proofreading.data]
+        path = "../gc-hits-data"
