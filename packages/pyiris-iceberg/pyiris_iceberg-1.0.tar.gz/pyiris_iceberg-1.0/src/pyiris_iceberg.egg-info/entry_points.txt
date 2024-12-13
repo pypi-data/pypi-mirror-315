@@ -1,0 +1,2 @@
+[console_scripts]
+irice = pyiris_iceberg.app:main

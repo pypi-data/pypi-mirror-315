@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyiris_iceberg
+Version: 1.0
+Summary: IRIS Iceberg library
+Home-page: 
+Author: Patrick Sulin
+Author-email: psulin@intersystems.com
+Requires-Dist: pytest>=8.0
+Requires-Dist: sqlalchemy-iris==0.12.0
+Requires-Dist: pyarrow>=17.0.0
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: loguru>=0.7.0
+Requires-Dist: pyiceberg==0.8.0
+Requires-Dist: pydantic>=2.8.2
+Requires-Dist: pydantic-settings>=2.5.0
+Requires-Dist: pydantic_core>=2.20.0
+Requires-Dist: sqlalchemy>=2.0
+Requires-Dist: adlfs>=2024.7.0
+Requires-Dist: pyodbc>=5.1.0
