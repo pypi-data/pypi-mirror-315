@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fast-trans-obj/__init__.py
+fast-trans-obj/tcp_client.py
+fast_trans_obj_client.egg-info/PKG-INFO
+fast_trans_obj_client.egg-info/SOURCES.txt
+fast_trans_obj_client.egg-info/dependency_links.txt
+fast_trans_obj_client.egg-info/requires.txt
+fast_trans_obj_client.egg-info/top_level.txt
