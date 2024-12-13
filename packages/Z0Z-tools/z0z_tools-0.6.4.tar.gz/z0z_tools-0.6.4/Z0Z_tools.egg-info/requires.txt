@@ -1,0 +1,10 @@
+numpy
+resampy
+soundfile
+packaging
+
+[testing]
+pytest>=7.0
+pytest-cov
+pytest-mock
+pandas
