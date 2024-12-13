@@ -1,0 +1,8 @@
+dimbridge/__init__.py,sha256=ZRcZ12DsPFrXvqcz6DBbbFNfS2iywGOrKmVSHjImky8,51
+dimbridge/datautils.py,sha256=FbS_2SPbWDnjM4B6cm5mFlwbjYxQ2j3aL_RTAhDj9EY,407
+dimbridge/main.py,sha256=n14hbSCYICqg2snsoZ2Q3aQipPyy8XzpDlVpiWnrF0s,3536
+dimbridge/predicate_engine.py,sha256=Xrc-jBaka3cNgB_NUJUHxehtJzCniB1AEQRHmAbAMfM,7556
+dimbridge/static/widget.js,sha256=GUB5o3rHJ-uY6n92N_nGc3J9c24iCfwsOa1EkZhmpBA,9463732
+dimbridge-0.2.0.dist-info/METADATA,sha256=ui0JXg8V97x1PlzHlTGMFQYvnfpqRnO4JxXlVSTNPLM,1578
+dimbridge-0.2.0.dist-info/WHEEL,sha256=aO3RJuuiFXItVSnAUEmQ0yRBvv9e1sbJh68PtuQkyAE,105
+dimbridge-0.2.0.dist-info/RECORD,,
