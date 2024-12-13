@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: planetra_solver
+Version: 0.1.9
+Summary: The library contains basic functions that can help in Planetra development
+Home-page: https://planetra.gitlab.yandexcloud.net/testgroup/planetra_solver.git
+Author: Anton Vyugin, Ruslan Gafurov
+Author-email: anton.vyugin.00@mail.ru, g.r.9@mail.ru
+License: MIT
+Keywords: api solver planetra knowledge space
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests~=2.32.3
+Requires-Dist: python-dotenv~=1.0.1
+
+# Planetra Solver
+
+**Planetra Solver** — это библиотека для работы с API Knowledge Space. Она предоставляет удобные функции для управления: объектами, моделями, наборами данных, классами и справочниками.
+
+## Содержание
+- [Установка](#установка)
+- [Зависимости](#зависимости)
+- [Использование](#использование)
+- [Функции](#функции)
+- [Авторы](#авторы)
+- [Контакты](#контакты)
+
+## Установка
+Чтобы установить библиотеку, выполните следующую команду:
+```bash
+pip install planetra_solver
+```
+
+## Зависимости
+Все необходимые для работы зависимости устанавливаются автоматически вместе с библиотекой.
+
+## Использование
+Для использования библиотеки необходимо импортировать её в ваш проект:
+```python
+from planetra_solver import *
+```
+
+## Функции
+Библиотека включает в себя следующие функции:
+
+### Объекты
+- `create_object`: Создает новый объект.
+- `create_objects`: Создает несколько объектов.
+- `delete_object`: Удаляет объект.
+- `delete_objects`: Удаляет несколько объектов.
+- `rename_object`: Переименовывает объект.
+- `rename_objects`: Переименовывает несколько объектов.
+- `get_all_objects`: Возвращает список всех объектов.
+
+### Модели
+- `create_model`: Создает новую модель.
+- `create_models`: Создает несколько моделей.
+- `delete_model`: Удаляет модель.
+- `delete_models`: Удаляет несколько моделей.
+- `rename_model`: Переименовывает модель.
+- `rename_models`: Переименовывает несколько моделей.
+- `get_all_models`: Возвращает список всех моделей.
+
+### Наборы данных
+- `create_dataset`: Создает новый набор данных.
+- `create_datasets`: Создает несколько наборов данных.
+- `delete_dataset`: Удаляет набор данных.
+- `delete_datasets`: Удаляет несколько наборов данных.
+- `get_all_datasets`: Возвращает список всех наборов данных.
+
+### Классы
+- `create_class`: Создает новый класс.
+- `create_classes`: Создает несколько классов.
+- `delete_class`: Удаляет класс.
+- `rename_class`: Переименовывает класс.
+- `update_class_policy`: Обновляет политику класса.
+- `get_class_tree`: Возвращает иерархию классов.
+
+### Справочники
+- `create_dict`: Создает новый справочник.
+- `create_dict_element`: Добавляет элемент в справочник.
+- `create_dict_elements`: Добавляет несколько элементов в справочник.
+- `delete_dict`: Удаляет справочник.
+- `delete_dict_elements`: Удаляет несколько элементов из справочника.
+- `delete_dict_element`: Удаляет элемент из справочника.
+- `get_dict_elements_list`: Возвращает список всех элементов справочника.
+
+### Чаты
+- `create_chat`: Создает новый чат.
+- `delete_chat`: Удаляет чат.
+- `send_message`: Отправляет сообщение.
+
+## Авторы
+- **Ruslan Gafurov**
+- **Anton Vyugin**
+
+## Контакты
+Если у вас есть предложения, вы можете связаться с авторами по следующим адресам:
+- ruslan.gafurov@planetra.ru
+- anton.vyugin.00@mail.ru
+
+### Спасибо за использование **Planetra Solver!**
