@@ -1,0 +1,5 @@
+build
+csvdir
+dist
+notebooks
+tests
