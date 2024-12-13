@@ -1,0 +1,8 @@
+idea_generator/__init__.py,sha256=xzgp0cL8TYoJD0jH12lDXVaf2YVVnn_PpkWyg2QlSsM,96
+idea_generator/generator.py,sha256=NdenKQsYtPuLHqTygHqmyAjZK6-fmKp-fNyF6AqsSjA,6799
+tests/__init__.py,sha256=iViLDCvp2HIGDniqaMz5X5TKJ-pry3mkNQnWbClsc84,20
+tests/test_generator.py,sha256=VOzJtIIs2fkrnZdbFFtWSw4KIlHIlLkegMtz1mx1tmM,1306
+infinite_idealist-0.1.1.dist-info/METADATA,sha256=eWfv33FGCMmVWKupXI_7eIP1LKDu1rguBh8SWqjP_BI,5460
+infinite_idealist-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+infinite_idealist-0.1.1.dist-info/top_level.txt,sha256=NGSDbqt6KfgUHBH_dlQSs0ij840cFDL7cIcAUEjZglE,21
+infinite_idealist-0.1.1.dist-info/RECORD,,
