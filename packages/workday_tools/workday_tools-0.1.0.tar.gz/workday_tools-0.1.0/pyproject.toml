@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "workday_tools"
+authors = [{name = "Mark W Anderson", email = "nosrednakram@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version"]
+description = "Python Tools for Workday Interactions RaaS/REST."
+keywords = ["workday","raas","rest"]
+
+[tool.flit.module]
+name = "workday_tools_nosrednakram"
+
+[tool.flit.sdist]
+exclude = ['.DS_Store','.idea']

@@ -1,0 +1,123 @@
+# Workday Tools
+
+I use this to make REST calls to return RaaS data for further processing.
+Initially, I also had SOAP but switched to the **workday** package. I may
+add additional tools and don't want to change the code that uses this so 
+keeping plural. 
+
+## Workday Base URL
+
+My primary goal when writing reusable code is to not force changes within
+the code but rather within configuration files. To this end, pun intended
+the endpoint URL is specified in a config file with credentials. This uses
+basic auth, which isn't recommended. If I get a few requests, I can look into
+updatign to additional methods. The test for with url to use is an if else
+where the value must be **PROD** and is case-sensitive.
+
+```yaml
+environment: "PROD"
+account: "ACCOUNT"
+password: "PASSWORD"
+tenant: "TENANT"
+prod_url: "https://PROD_URL"
+devel_url: "https://DEVEL_URL"
+ ```
+
+## Workday Application Configuration
+
+I generally have a second configuration file for end points and often have
+multiple reports pulled and combined. This is just as easy to include here 
+if that's your preference but I like checking in the configuration files
+as I keep passwords out of them. This is not required or used directly, 
+but these values are passed to the REST call. Below is an example that takes
+extra parameters. You can look all of this up by clicking on related actions
+for a report and then down to **Web Service** and **View URLs**. This snippet
+is in config.yaml.
+
+```yaml
+#
+# RaaS Parameters
+#
+raas_config: workday.yaml
+raas_report: "Distribution_Lists_Student"
+raas_format: csv
+raas_extra_params: '&Parmeter=1&...'
+```
+## Example (rest_call) 
+
+The one required paramter is the report name to send. I always pull 
+this from **View URLs** link to make it easy. The other parameters have 
+examples. Although not needed it's handy if you make multiple rest calls 
+or need to add this call frequently. I simply make the call from within
+the app if working on a web app for example. 
+
+I'll assume the above configuration exists for this example. This call has
+a few defaults. The raas_config is workday.yaml if not provided. I have it 
+included and pass to make it easier for the next person to follow along. 
+
+The default raas_format is JSON, but it will pass whatever format you would
+like if provided. They can be seen on the **View URLs** page.
+
+The default value for extra params is **None** as well.
+
+I import this snippet into code to make it easy to use RaaS data. I added a few
+print statements to make it easier to follow along. I also setup logging in the
+snippet, if needed and other house keeping.
+
+```python
+import os
+import workday_tools_nosrednakram.RaaSRest
+
+# Determine the base for config files
+cfg_file_base = os.path.abspath(os.path.join(os.path.dirname(__file__), '.'))
+
+def rest_call(report, extra_params=None, report_format='csv', raas_config="workday.yaml"):
+    raas_endpoint = workday_tools_nosrednakram.RaaSRest.RaaSRest(config_file=os.path.join(cfg_file_base, raas_config))
+    print(f'{__name__}: Report {report}')
+    print(f'{__name__}: Extra Parameters {extra_params}')
+    response = raas_endpoint.report(report=report, format=report_format)
+    try:
+        return response.text
+    except:
+        return None
+```
+
+This is generally called from within a larger application. It's included and 
+in this case as it requests a csv returned is a text object that I will process.
+This assumes configuration is loaded and correct. I left the loading of the file
+as a csv into pandas as I use it frequently and it may be usefull to someone else. 
+
+```python
+from rest import rest_call
+import pandas as pd
+import yaml
+from io import StringIO
+
+try:
+    with open('config.yaml', 'r') as stream:
+        config = yaml.load(stream, Loader=yaml.Loader)
+except Exception as e:
+    print(f'Reading YAML Error: {e}')
+
+try:
+    rest_response = rest_call(report=config['raas_report'],
+                              extra_params=config['raas_extra_params'],
+                              report_format=config['raas_format'],
+                              raas_config=config['raas_config'])
+
+    in_csv = pd.read_csv(StringIO(rest_response))
+
+except Exception as e:
+    print(f'REST Error: {e}')
+```
+
+## Security
+
+You'll need to be able to log in as an integrations system user (ISU) with an appropriate integration system security group (ISSG) to access the objet. We
+needed to setup a user based security group that allows basic auth connections
+to get this working. Reach out if you have questions. 
+
+Depending on your policies it's also common to exempt the ISU from requiring
+password reset, ***Maintain Password Rules**. I still change passwords at least
+once a year but don't want a changed time out to kill applications. If there is
+interest I can look at adding Oauth2. If interested please let me know.

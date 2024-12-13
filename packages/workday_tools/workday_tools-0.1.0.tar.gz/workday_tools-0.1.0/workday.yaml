@@ -1,0 +1,7 @@
+---
+ environment: "PROD"
+ account: "ACCOUNT"
+ password: "PASSWORD"
+ tenant: "TENANT"
+ prod_url: "https://PROD_URL"
+ devel_url: "https://DEVEL_URL"
