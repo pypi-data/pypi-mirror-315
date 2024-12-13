@@ -1,0 +1,11 @@
+tamil_translite/__init__.py,sha256=K4-qpBX5t2SRBOdcX8_pPh1fJZQ4q-B2Vvbv-mbVbjw,88
+tamil_translite/olipeyarppu.py,sha256=De6xNQAml5hpYefFPR3wGcmr4VLSDkpvj4FlJv5xmY0,3075
+tamil_translite/translit_rules.json,sha256=y5w2s5DJwd_BOgkiUMW8ccuEvM07jvx98u4m9oSBywo,8011
+tamil_translite/translite.py,sha256=BT6gaz946835eB8Vjblxk-WCKfLQatywPppln2nUxqc,2920
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_translite.py,sha256=b8D8vzzj6Hs0eP4gA3NTbnvCG1gIDRu7wAAPNHNlbi4,2239
+tamil_translite-0.2.5.dist-info/LICENSE,sha256=5Xpicw-fnB3Mnmslxvn2jpQAgIwvL4blIza0wz5ctN0,1077
+tamil_translite-0.2.5.dist-info/METADATA,sha256=ciY99p5NxIErqvLMc5VQQL2_Wx9COVIGavSUpyaXDsk,1661
+tamil_translite-0.2.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tamil_translite-0.2.5.dist-info/top_level.txt,sha256=35r5cVIlKEB1bqHWcXk_mEUk1pi7QvH0larBs3govXw,22
+tamil_translite-0.2.5.dist-info/RECORD,,
