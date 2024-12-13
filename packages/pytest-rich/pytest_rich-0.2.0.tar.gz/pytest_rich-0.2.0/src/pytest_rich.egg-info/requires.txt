@@ -1,0 +1,13 @@
+attrs
+pytest>=7.0
+rich
+
+[dev]
+black
+flake8
+freezegun
+mypy
+pre-commit
+reorder-python-imports
+tox
+types-attrs
