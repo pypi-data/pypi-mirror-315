@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: depcon
+Version: 0.1.0
+Summary: Convert requirements files to pyproject.toml format
+Author-email: Lance Reinsmith <info@k2rad.com>
+License: MIT
+Project-URL: Homepage, https://github.com/lancereinsmith/depcon
+Project-URL: Bug Tracker, https://github.com/lancereinsmith/depcon/issues
+Project-URL: Documentation, https://github.com/lancereinsmith/depcon#readme
+Keywords: requirements,dependencies,pyproject,conversion
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: toml
+Requires-Dist: requirements-parser
+
+# depcon
+
+Convert requirements files to pyproject.toml format.
+
+## Installation
+
+```
+pipx install depcon
+```
+
+or 
+
+```
+uvx install depcon
+```
+
+## Usage
+
+```
+depcon -r requirements.txt -d requirements-dev.txt -p pyproject.toml
+```
+
+## Options
+
+- `-r`, `--requirements`: Path to requirements.txt file
+- `-d`, `--requirements-dev`: Path to requirements-dev.txt file
+- `-p`, `--pyproject`: Path to target pyproject.toml file (default: ./pyproject.toml)
