@@ -1,0 +1,16 @@
+KalaTorch/__init__.py,sha256=OyWpnNne7MuxhNy5x1BgR6bYlKauqfJ_R6o-29tZzWo,97
+KalaTorch/datasets/__init__.py,sha256=yLvPfC3i2lkLXb6Nzx6PiWKiUbOejP3PxWFlNjX5BcU,43
+KalaTorch/datasets/dataloader.py,sha256=gkRF7YxRv20gRNKTCNmL4vr1DJxv8uEorhfg_5aDW-k,497
+KalaTorch/models/__init__.py,sha256=W09RaPpzirAN07IsncLJ0Hgbd1e7f1aCMKOsbPh7y9c,120
+KalaTorch/models/convnet.py,sha256=015h6xEBKfQrqERwK1roNtKS1Hal2KOeA6aT4y_yLCk,517
+KalaTorch/models/recurrent.py,sha256=SwnDciXzn9ikz_MQdw0v45bQhhYdX_0Hjb9M5KuxWO8,243
+KalaTorch/models/transformer.py,sha256=w8-ClbCxyDsTcrdH75xutxa_K5kgKINclWcQyar2E4o,350
+KalaTorch/training/__init__.py,sha256=TSCpDwct_CDDEK8dPKgpHjS_litkvHlpXiQEswie0dg,33
+KalaTorch/training/trainer.py,sha256=1EfA6Fwg0rPS2C-c5O5QfJlNDnb5C5bqKW1ejqcrMVc,1445
+KalaTorch/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+KalaTorch/utils/helpers.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+KalaTorch/utils/metrics.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kalatorch-0.0.0.dist-info/METADATA,sha256=c5N5qUt_jNiUtv7PB6et7dGCsRl_QtuQycFq-6aKK-Q,5922
+kalatorch-0.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+kalatorch-0.0.0.dist-info/top_level.txt,sha256=dbXkgrGlA496lCKDdml8KwmG4ykK3NtSTN5bp5YcqfQ,10
+kalatorch-0.0.0.dist-info/RECORD,,
