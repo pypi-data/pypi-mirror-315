@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xid-xpl
+Version: 0.0.3
+Summary: Xidware Python Library
+Home-page: https://xidware.com
+Author: xidware
+Author-email: developer@xidware.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# **XPL**
+
+Xidware Python Library
