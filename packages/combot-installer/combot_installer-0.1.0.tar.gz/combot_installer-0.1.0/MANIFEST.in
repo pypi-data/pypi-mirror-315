@@ -1,0 +1,3 @@
+include Inst/Install.sh
+include Inst/Install.ps1
+
