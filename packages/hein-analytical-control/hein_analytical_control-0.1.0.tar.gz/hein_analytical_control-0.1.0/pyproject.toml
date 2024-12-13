@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hein-analytical-control"
+version = "0.1.0"
+description = ""
+authors = ["lucyhao <hao.lucyy@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+nmrglue = "^0.11"
+matplotlib = "^3.9.3"
+seabreeze = "^2.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
