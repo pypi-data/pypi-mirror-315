@@ -1,0 +1,7 @@
+tests/__init__.py,sha256=XMq_vl8yX03dEcP7kcps7TSh_Q-UiZTfZrP6AQlS7sI,76
+tests/conftest.py,sha256=H9e4VPN3XjMtbnFYD3A1Rv8Jo-A7IePC9zRUpjkAlLE,122
+tests/test_shell_motorsport.py,sha256=1ZZWhOvtArxQHTdpFtOUD2OMBe5pkIMSrfmk0SPvN7I,2916
+shell_motorsport-0.1.1.dist-info/METADATA,sha256=azNvEeLRMbAip9hy-InVaCir-gmhRN0YYw9h7iwzv-c,5342
+shell_motorsport-0.1.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+shell_motorsport-0.1.1.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+shell_motorsport-0.1.1.dist-info/RECORD,,
