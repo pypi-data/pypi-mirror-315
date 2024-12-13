@@ -1,0 +1,7 @@
+README.md
+setup.py
+ftraining.egg-info/PKG-INFO
+ftraining.egg-info/SOURCES.txt
+ftraining.egg-info/dependency_links.txt
+ftraining.egg-info/requires.txt
+ftraining.egg-info/top_level.txt
