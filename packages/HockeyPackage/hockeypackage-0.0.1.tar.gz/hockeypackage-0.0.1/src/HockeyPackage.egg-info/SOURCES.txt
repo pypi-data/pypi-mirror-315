@@ -1,0 +1,20 @@
+README.md
+pyproject.toml
+src/HockeyPackage.egg-info/PKG-INFO
+src/HockeyPackage.egg-info/SOURCES.txt
+src/HockeyPackage.egg-info/dependency_links.txt
+src/HockeyPackage.egg-info/top_level.txt
+src/hockey/__init__.py
+src/hockey/setup.py
+src/hockey/player/__init__ .py
+src/hockey/player/get_player_stats.py
+src/hockey/player/goalie.py
+src/hockey/player/player.py
+src/hockey/player/skater.py
+src/hockey/teamstats/__init__.py
+src/hockey/teamstats/basic.py
+src/hockey/teamstats/toplists.py
+tests/test_get_player_stats.py
+tests/test_goalie.py
+tests/test_player.py
+tests/test_skater.py
