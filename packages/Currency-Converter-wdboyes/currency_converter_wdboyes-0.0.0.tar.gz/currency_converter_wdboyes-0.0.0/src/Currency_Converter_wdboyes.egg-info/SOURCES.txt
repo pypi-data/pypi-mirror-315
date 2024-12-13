@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/Currency_Converter_wdboyes/CurrencyEquations.py
+src/Currency_Converter_wdboyes/__init__.py
+src/Currency_Converter_wdboyes/main.py
+src/Currency_Converter_wdboyes.egg-info/PKG-INFO
+src/Currency_Converter_wdboyes.egg-info/SOURCES.txt
+src/Currency_Converter_wdboyes.egg-info/dependency_links.txt
+src/Currency_Converter_wdboyes.egg-info/top_level.txt
