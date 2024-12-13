@@ -1,0 +1,31 @@
+===========
+feat+descr
+===========
+
+feat: new
+---
+(hdr
+		(type (word))  (descr (word)))
+
+==================
+end descr with dot
+==================
+f: a.
+---
+(ERROR
+	(type (word)) (word) (dot))
+
+=================
+empty type
+=================
+: a
+---
+(hdr 
+	(type (MISSING word) ) (descr (word)))
+
+=============================
+empty summary with whitespace
+=============================
+feat: 
+---
+(ERROR (type (word)) )
