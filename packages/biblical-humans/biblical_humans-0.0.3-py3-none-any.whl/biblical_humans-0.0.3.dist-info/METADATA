@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: biblical_humans
+Version: 0.0.3
+Summary: collection of biblical humans and their family relations
+Project-URL: Homepage, https://github.com/MariyaSha/humans
+Project-URL: Issues, https://github.com/MariyaSha/humans
+Author-email: Mariya Sha <mariya@pythonsimplified.org>
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# Biblical Humans Library
+a Python collection of biblical humans and their family relations
+
+## Quickstart
+the library provides different scopes of information
+
+### Father Objects
+a set of classes that represent biblical fathers from different nationalities. For example, Hebrew fathers: Abraham, Isaac and Jacob, as well as Mesopotamian fathers: Noah, Shem, and Ham.
+
+```
+from biblical_humans import hebrews
+from biblical_humans import mesopotamians
+
+abraham = hebrews.Abraham()
+noah = mesopotamians.Noah()
+
+print(abraham.__dict__)
+print(noah.__dict__)
+```
+### List of Humans
+on a broader scope, the library traces different categories of humans, such as fathers, mothers and children from different nationalities.
+
+```
+from biblical_humans import hebrews
+from biblical_humans import mesopotamians
+
+heb_mothers = hebrews.mothers
+mes_children = mesopotamians.children
+
+print(heb_mothers)
+print(mes_children)
+```
