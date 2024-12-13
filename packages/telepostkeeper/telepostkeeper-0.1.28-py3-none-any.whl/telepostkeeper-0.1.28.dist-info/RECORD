@@ -1,0 +1,14 @@
+telepostkeeper/encryption.py,sha256=jP_hf9Rowqfne9ysgToZFrcOksAF5t8kCEzReykuwzg,1557
+telepostkeeper/frontend.py,sha256=VYjYZkLqdcyu0ADpE3UGMHBuscP0-LwsjHV1SomMbWo,8397
+telepostkeeper/telepostkeeper.py,sha256=wwfA58Fh_A6Bmh35AoYq68dGHTuQF4sIlJqF-cho7es,12384
+telepostkeeper/templates/base.html,sha256=1Df0Q6U3433s5UYew8W2T2Dqwg9TuSrGxV3Z1ZQBM4M,3693
+telepostkeeper/templates/chat.html,sha256=sIvoQseJuooObMmIVHip_XSVYJwi0TNNBTm-k4Cop5o,1177
+telepostkeeper/templates/forwardPostContent.html,sha256=KtaiIcCP_0Ejf3xY9tVmqOogYDt-4ILzYDP7A8P-CIQ,93
+telepostkeeper/templates/month.html,sha256=lzcneP2V8S_EEMC6kvBTDVn_BVEqq4FBitIp-tkPDIo,2756
+telepostkeeper/templates/store.html,sha256=f0soQk71mRVctxDeXZxHBzvTgCINYEgvGUWkrg6INMg,592
+telepostkeeper/templates/year.html,sha256=GeEZlM5o58umXP_FKyCBAa4UIwPjsTyqN53VrVgXRYo,414
+telepostkeeper/utils.py,sha256=Xz0vTaEuuu_DcyjCGf31uLXQX3mXHDruW_G2RB60QF0,3749
+telepostkeeper-0.1.28.dist-info/METADATA,sha256=rL_1XTo4C4-L6hze-yaHGc8FZdT6zsTz5rR1WH9NYoY,5896
+telepostkeeper-0.1.28.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+telepostkeeper-0.1.28.dist-info/entry_points.txt,sha256=R3t1c3nE0X-NGWj2-McbgWhRBuhqRp9dGTHHwBT5Myw,122
+telepostkeeper-0.1.28.dist-info/RECORD,,
