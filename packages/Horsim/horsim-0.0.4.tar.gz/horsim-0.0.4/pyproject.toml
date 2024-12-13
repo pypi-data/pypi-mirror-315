@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Horsim"
+version = "0.0.4"
+authors = [
+  { name="Amali", email="amali.jayatileke14@gmail.com" },
+]
+description = "Horsim package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.package-data]
+horse_race_simulator = ["runs.csv"]
+
+
+[project.urls]
+Homepage = "https://github.com/JKiran4/Horse-Race-Simulator"
