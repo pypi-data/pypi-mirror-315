@@ -1,0 +1,3 @@
+[console_scripts]
+email_giver_report = breeze_email_reports.EmailGiverReport:main
+email_profile_report = breeze_email_reports.EmailProfileReport:main
