@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: Pred_in_Open_Env
+Version: 1.0.0
+Summary: A model to predict pedestrian flow in open environment
+Author: hzy
+Author-email: bbts123@sjtu.edu.cn
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: torch==2.2.2
+Requires-Dist: matplotlib
+
+Pred_in_Open_Env是一个基于RNN的开放街区人流量预测模型  
+可进行三个任务：
+
+--全点位未来 10/20/30 分钟人数预测及人数流向接口
+
+参数1为currentTime,其含义为当前时间，需按照以下格式（yyyy-MM-dd HH:mm:ss）
+
+参数2为forecastDuration，含义为预测的时间，可选择（10，20，30）三个时段
+
+可变参数:  
+step:预测时间步数  
+to_GPU:是否加载到GPU训练  
+update:本次训练是否更新并保存历史平均值与模型参数  
+运行示例:
+```bash
+python run.py task1 --currentTime "2024-10-22 10:20:00" --forecastDuration 10
+```
+或者在run.py中添加语句
+```python
+task1("2024-10-22 10:20:00",10)
+```
+
+--全点位在指定时间范围内实际人数与预测人数趋势
+
+参数1为startTime,其含义为预测开始时间，需按照以下格式（yyyy-MM-dd HH:mm:ss）
+
+参数2为endTime,其含义为预测结束时间，需按照以下格式（yyyy-MM-dd HH:mm:ss）
+
+参数3为duration，含义为指定数据时间间隔，10/20/30，表示返回数据的时间间隔为10/20/30分钟
+
+可变参数:  
+to_GPU:是否加载到GPU训练  
+update:本次训练是否更新并保存历史平均值与模型参数  
+运行示例:  
+```bash
+python run.py task2 --startTime "2024-10-22 10:20:00" --endTime "2024-10-22 15:20:00" --duration 10
+```
+或者在run.py中添加语句
+```python
+task2("2024-10-22 10:20:00","2024-10-22 15:20:00",10)
+```
+
+--指定点位指定时间范围内实际人数与预测人数趋势
+
+参数1为startTime,其含义为预测开始时间，需按照以下格式（yyyy-MM-dd HH:mm:ss）
+
+参数2为endTime,其含义为预测结束时间，需按照以下格式（yyyy-MM-dd HH:mm:ss）
+
+参数3为duration，含义为指定数据时间间隔，10/20/30，表示返回数据的时间间隔为10/20/30分钟
+
+参数4为id,其含义为指定点位序号，在1～10选择
+
+可变参数:  
+to_GPU:是否加载到GPU训练  
+update:本次训练是否更新并保存历史平均值与模型参数  
+运行示例:  
+```bash
+python run.py task3 --startTime "2024-10-22 10:20:00" --endTime "2024-10-22 15:20:00" --duration 10 --id 1
+```
+或者在run.py中添加语句
+```python
+task3("2024-10-22 10:20:00","2024-10-22 15:20:00",10,1)
