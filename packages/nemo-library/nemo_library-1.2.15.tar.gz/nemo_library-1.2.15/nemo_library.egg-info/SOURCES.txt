@@ -1,0 +1,221 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+nemo_library/__init__.py
+nemo_library/nemo_library.py
+nemo_library.egg-info/PKG-INFO
+nemo_library.egg-info/SOURCES.txt
+nemo_library.egg-info/dependency_links.txt
+nemo_library.egg-info/requires.txt
+nemo_library.egg-info/top_level.txt
+nemo_library/features/__init__.py
+nemo_library/features/config.py
+nemo_library/features/fileingestion.py
+nemo_library/features/focus.py
+nemo_library/features/hubspot.py
+nemo_library/features/migman_mapping.py
+nemo_library/features/migman_projects.py
+nemo_library/features/projects.py
+nemo_library/migmantemplates/Template Account Groups ADD1.csv
+nemo_library/migmantemplates/Template Account Groups MAIN.csv
+nemo_library/migmantemplates/Template Accounts MAIN.csv
+nemo_library/migmantemplates/Template Activities (Projects) MAIN.csv
+nemo_library/migmantemplates/Template Activity Types MAIN.csv
+nemo_library/migmantemplates/Template Addresses MAIN.csv
+nemo_library/migmantemplates/Template Alternate Parts and Cross Selling Items MAIN.csv
+nemo_library/migmantemplates/Template Alternate Resources ADD1.csv
+nemo_library/migmantemplates/Template Alternate Resources MAIN.csv
+nemo_library/migmantemplates/Template Average Prices MAIN.csv
+nemo_library/migmantemplates/Template Balances MAIN.csv
+nemo_library/migmantemplates/Template Banks MAIN.csv
+nemo_library/migmantemplates/Template Base Measures MAIN.csv
+nemo_library/migmantemplates/Template Batch Postings MAIN.csv
+nemo_library/migmantemplates/Template Bill-To Addresses (Customers) MAIN.csv
+nemo_library/migmantemplates/Template Bills of Materials for Operations (Routings Production) MAIN.csv
+nemo_library/migmantemplates/Template Blanket Order (more Customers) MAIN.csv
+nemo_library/migmantemplates/Template Blanket Order ADD1.csv
+nemo_library/migmantemplates/Template Blanket Order ADD2.csv
+nemo_library/migmantemplates/Template Blanket Order MAIN.csv
+nemo_library/migmantemplates/Template Blanket Purchase Order ADD1.csv
+nemo_library/migmantemplates/Template Blanket Purchase Order ADD2.csv
+nemo_library/migmantemplates/Template Blanket Purchase Order MAIN.csv
+nemo_library/migmantemplates/Template Business Unit MAIN.csv
+nemo_library/migmantemplates/Template CAD Configurations MAIN.csv
+nemo_library/migmantemplates/Template Call Sales Orders ADD1.csv
+nemo_library/migmantemplates/Template Call Sales Orders ADD2.csv
+nemo_library/migmantemplates/Template Call Sales Orders MAIN.csv
+nemo_library/migmantemplates/Template Categories (Drawings Management) MAIN.csv
+nemo_library/migmantemplates/Template Classification Systems MAIN.csv
+nemo_library/migmantemplates/Template Clearing Rates (Base Measures) MAIN.csv
+nemo_library/migmantemplates/Template Company Calendars ADD1.csv
+nemo_library/migmantemplates/Template Company Calendars MAIN.csv
+nemo_library/migmantemplates/Template Competitor MAIN.csv
+nemo_library/migmantemplates/Template Contacts MAIN.csv
+nemo_library/migmantemplates/Template Cost Centers MAIN.csv
+nemo_library/migmantemplates/Template Cost Items (Cost Center Accounting) MAIN.csv
+nemo_library/migmantemplates/Template Cost Items (Cost Object Accounting) MAIN.csv
+nemo_library/migmantemplates/Template Cost Objects MAIN.csv
+nemo_library/migmantemplates/Template Costing Groups MAIN.csv
+nemo_library/migmantemplates/Template Countries ADD1.csv
+nemo_library/migmantemplates/Template Countries MAIN.csv
+nemo_library/migmantemplates/Template Credit Terms ADD1.csv
+nemo_library/migmantemplates/Template Credit Terms MAIN.csv
+nemo_library/migmantemplates/Template Currencies MAIN.csv
+nemo_library/migmantemplates/Template Customers (Parts) MAIN.csv
+nemo_library/migmantemplates/Template Customers MAIN.csv
+nemo_library/migmantemplates/Template Descriptions (Part) MAIN.csv
+nemo_library/migmantemplates/Template Discounts (Part-Suppliers Relationships) MAIN.csv
+nemo_library/migmantemplates/Template Document Parameters MAIN.csv
+nemo_library/migmantemplates/Template Drawings (Categories Drawings Management) MAIN.csv
+nemo_library/migmantemplates/Template Drawings (Parts) MAIN.csv
+nemo_library/migmantemplates/Template Drawings MAIN.csv
+nemo_library/migmantemplates/Template Employee Pool (Assignments) MAIN.csv
+nemo_library/migmantemplates/Template Employees MAIN.csv
+nemo_library/migmantemplates/Template Error Types And Causes MAIN.csv
+nemo_library/migmantemplates/Template Export Definitions (Analyzer) MAIN.csv
+nemo_library/migmantemplates/Template External Service Providers MAIN.csv
+nemo_library/migmantemplates/Template Features (Assignments) MAIN.csv
+nemo_library/migmantemplates/Template Features (Generic Assignments) MAIN.csv
+nemo_library/migmantemplates/Template Features MAIN.csv
+nemo_library/migmantemplates/Template Field-Coloumn Securities MAIN.csv
+nemo_library/migmantemplates/Template Fixed Assets ADD1.csv
+nemo_library/migmantemplates/Template Fixed Assets MAIN.csv
+nemo_library/migmantemplates/Template Function Securities MAIN.csv
+nemo_library/migmantemplates/Template Global Trade Item Numbers MAIN.csv
+nemo_library/migmantemplates/Template House Banks MAIN.csv
+nemo_library/migmantemplates/Template Identification Numbers MAIN.csv
+nemo_library/migmantemplates/Template Income Accounts ADD1.csv
+nemo_library/migmantemplates/Template Income Accounts MAIN.csv
+nemo_library/migmantemplates/Template Income Objects MAIN.csv
+nemo_library/migmantemplates/Template Industries (Prospects) MAIN.csv
+nemo_library/migmantemplates/Template Industries MAIN.csv
+nemo_library/migmantemplates/Template Internal Activity Factors MAIN.csv
+nemo_library/migmantemplates/Template Invoices ADD1.csv
+nemo_library/migmantemplates/Template Invoices ADD2.csv
+nemo_library/migmantemplates/Template Invoices MAIN.csv
+nemo_library/migmantemplates/Template Lots MAIN.csv
+nemo_library/migmantemplates/Template MRP Parameters MAIN.csv
+nemo_library/migmantemplates/Template MRP Teams MAIN.csv
+nemo_library/migmantemplates/Template Manufacturer Part Numbers MAIN.csv
+nemo_library/migmantemplates/Template Manufacturers (Part) MAIN.csv
+nemo_library/migmantemplates/Template Manufacturers MAIN.csv
+nemo_library/migmantemplates/Template Mappings (INWB) ADD1.csv
+nemo_library/migmantemplates/Template Mappings (INWB) MAIN.csv
+nemo_library/migmantemplates/Template Notes MAIN.csv
+nemo_library/migmantemplates/Template Operation Catalog Production ADD1.csv
+nemo_library/migmantemplates/Template Operation Catalog Production MAIN.csv
+nemo_library/migmantemplates/Template Operations (Routings Production) ADD1.csv
+nemo_library/migmantemplates/Template Operations (Routings Production) MAIN.csv
+nemo_library/migmantemplates/Template Operations (Service Order Lines) ADD1.csv
+nemo_library/migmantemplates/Template Operations (Service Order Lines) MAIN.csv
+nemo_library/migmantemplates/Template Order-From Addresses (Supplier) MAIN.csv
+nemo_library/migmantemplates/Template Orders ADD1.csv
+nemo_library/migmantemplates/Template Orders ADD2.csv
+nemo_library/migmantemplates/Template Orders MAIN.csv
+nemo_library/migmantemplates/Template Packaging Instructions (Header Data Master Files) MAIN.csv
+nemo_library/migmantemplates/Template Packaging Instructions (Header Data Part-Customer) MAIN.csv
+nemo_library/migmantemplates/Template Packaging Instructions (Individual) MAIN.csv
+nemo_library/migmantemplates/Template Packaging Instructions (Line Data) MAIN.csv
+nemo_library/migmantemplates/Template Packaging Instructions (Order) MAIN.csv
+nemo_library/migmantemplates/Template Packaging Materials MAIN.csv
+nemo_library/migmantemplates/Template Packaging Movements MAIN.csv
+nemo_library/migmantemplates/Template Packaging Pools MAIN.csv
+nemo_library/migmantemplates/Template Part Discount Groups (Customers) MAIN.csv
+nemo_library/migmantemplates/Template Part Supplier Relationships Drawing MAIN.csv
+nemo_library/migmantemplates/Template Part-Storage Areas Relationships MAIN.csv
+nemo_library/migmantemplates/Template Part-Suppliers Relationships MAIN.csv
+nemo_library/migmantemplates/Template Partner MstrFiles EDI MAIN.csv
+nemo_library/migmantemplates/Template Parts MAIN.csv
+nemo_library/migmantemplates/Template Postings (Cost Center Accounting) MAIN.csv
+nemo_library/migmantemplates/Template Postings (Cost Object Accounting) MAIN.csv
+nemo_library/migmantemplates/Template Price List ADD1.csv
+nemo_library/migmantemplates/Template Price List ADD2.csv
+nemo_library/migmantemplates/Template Price List MAIN.csv
+nemo_library/migmantemplates/Template Price Schedule Groups MAIN.csv
+nemo_library/migmantemplates/Template Price Units MAIN.csv
+nemo_library/migmantemplates/Template Prices (Part-Suppliers Relationships) MAIN.csv
+nemo_library/migmantemplates/Template Prices (Parts) MAIN.csv
+nemo_library/migmantemplates/Template Product Files ADD1.csv
+nemo_library/migmantemplates/Template Product Files MAIN.csv
+nemo_library/migmantemplates/Template Product Lines MAIN.csv
+nemo_library/migmantemplates/Template Program Securities MAIN.csv
+nemo_library/migmantemplates/Template Projects ADD1.csv
+nemo_library/migmantemplates/Template Projects ADD2.csv
+nemo_library/migmantemplates/Template Projects MAIN.csv
+nemo_library/migmantemplates/Template Prospect Classes MAIN.csv
+nemo_library/migmantemplates/Template Prospects MAIN.csv
+nemo_library/migmantemplates/Template Provided Parts MAIN.csv
+nemo_library/migmantemplates/Template Purchase Orders ADD1.csv
+nemo_library/migmantemplates/Template Purchase Orders ADD2.csv
+nemo_library/migmantemplates/Template Purchase Orders MAIN.csv
+nemo_library/migmantemplates/Template QA Check Areas (Parts) MAIN.csv
+nemo_library/migmantemplates/Template Quotes ADD1.csv
+nemo_library/migmantemplates/Template Quotes ADD2.csv
+nemo_library/migmantemplates/Template Quotes MAIN.csv
+nemo_library/migmantemplates/Template Regions MAIN.csv
+nemo_library/migmantemplates/Template Remit-To Addresses Supplier MAIN.csv
+nemo_library/migmantemplates/Template Resource Groups MAIN.csv
+nemo_library/migmantemplates/Template Resource Locations MAIN.csv
+nemo_library/migmantemplates/Template Resources MAIN.csv
+nemo_library/migmantemplates/Template Resources for Operations (Routings Production) MAIN.csv
+nemo_library/migmantemplates/Template Result Types MAIN.csv
+nemo_library/migmantemplates/Template Revenue Groups-Purchasing Groups MAIN.csv
+nemo_library/migmantemplates/Template Role MAIN.csv
+nemo_library/migmantemplates/Template Routings (Standard BOMs) MAIN.csv
+nemo_library/migmantemplates/Template Sales Agent (Customers) MAIN.csv
+nemo_library/migmantemplates/Template Sales Agents MAIN.csv
+nemo_library/migmantemplates/Template Sales Tax ID MAIN.csv
+nemo_library/migmantemplates/Template Sales Units of Measure MAIN.csv
+nemo_library/migmantemplates/Template Selection Codes MAIN.csv
+nemo_library/migmantemplates/Template Sequential Relations MAIN.csv
+nemo_library/migmantemplates/Template Serial Numbers MAIN.csv
+nemo_library/migmantemplates/Template Service Objects MAIN.csv
+nemo_library/migmantemplates/Template Service Orders ADD1.csv
+nemo_library/migmantemplates/Template Service Orders MAIN.csv
+nemo_library/migmantemplates/Template Ship-To Addresses (Customers) MAIN.csv
+nemo_library/migmantemplates/Template Shipments (Call Sales Order Lines) MAIN.csv
+nemo_library/migmantemplates/Template Shipping Documents ADD1.csv
+nemo_library/migmantemplates/Template Shipping Documents ADD2.csv
+nemo_library/migmantemplates/Template Shipping Documents MAIN.csv
+nemo_library/migmantemplates/Template Shipping Types MAIN.csv
+nemo_library/migmantemplates/Template Sizes ADD1.csv
+nemo_library/migmantemplates/Template Sizes MAIN.csv
+nemo_library/migmantemplates/Template Special Customer Discounts MAIN.csv
+nemo_library/migmantemplates/Template Special Customer Prices MAIN.csv
+nemo_library/migmantemplates/Template Specifications (Features) MAIN.csv
+nemo_library/migmantemplates/Template Standard BOMs (Header Data) ADD1.csv
+nemo_library/migmantemplates/Template Standard BOMs (Header Data) MAIN.csv
+nemo_library/migmantemplates/Template Standard BOMs (Line Data Electro) MAIN.csv
+nemo_library/migmantemplates/Template Standard BOMs (Line Data) ADD1.csv
+nemo_library/migmantemplates/Template Standard BOMs (Line Data) MAIN.csv
+nemo_library/migmantemplates/Template Statistics MAIN.csv
+nemo_library/migmantemplates/Template Stock On Hand MAIN.csv
+nemo_library/migmantemplates/Template Storage Areas (Packaging Material) MAIN.csv
+nemo_library/migmantemplates/Template Storage Areas ADD1.csv
+nemo_library/migmantemplates/Template Storage Areas ADD2.csv
+nemo_library/migmantemplates/Template Storage Areas MAIN.csv
+nemo_library/migmantemplates/Template Subaccount Groups MAIN.csv
+nemo_library/migmantemplates/Template Supplier Part Numbers MAIN.csv
+nemo_library/migmantemplates/Template Suppliers MAIN.csv
+nemo_library/migmantemplates/Template Tax Codes MAIN.csv
+nemo_library/migmantemplates/Template Terms of Delivery MAIN.csv
+nemo_library/migmantemplates/Template Texts MAIN.csv
+nemo_library/migmantemplates/Template Time Units of Measure MAIN.csv
+nemo_library/migmantemplates/Template Transport Information MAIN.csv
+nemo_library/migmantemplates/Template Units of Measure MAIN.csv
+nemo_library/migmantemplates/Template Unloading Points MAIN.csv
+nemo_library/migmantemplates/Template User (Group Assignments) MAIN.csv
+nemo_library/migmantemplates/Template User (Role Assignments) MAIN.csv
+nemo_library/migmantemplates/Template User Groups MAIN.csv
+nemo_library/migmantemplates/Template Users MAIN.csv
+nemo_library/migmantemplates/Template Value Distribution Operations MAIN.csv
+nemo_library/migmantemplates/Template Value Flow Groups MAIN.csv
+nemo_library/migmantemplates/Template Workflow Status (Assignments) MAIN.csv
+nemo_library/migmantemplates/Template Workflow Status (Master Files) MAIN.csv
+nemo_library/migmantemplates/Template WuP Threshold Values MAIN.csv
+nemo_library/utils/__init__.py
+nemo_library/utils/migmanutils.py
+nemo_library/utils/password_manager.py
+nemo_library/utils/utils.py
+tests/test_nemo_library.py
