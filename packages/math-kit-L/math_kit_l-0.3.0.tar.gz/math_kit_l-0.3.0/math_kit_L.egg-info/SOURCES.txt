@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+math_kit_FF/__init__.py
+math_kit_L.egg-info/PKG-INFO
+math_kit_L.egg-info/SOURCES.txt
+math_kit_L.egg-info/dependency_links.txt
+math_kit_L.egg-info/top_level.txt
