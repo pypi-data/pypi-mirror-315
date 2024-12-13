@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snakeandladder"
+version = "0.1.0"
+authors = [
+    { name = "Mohammed and Vidal", email = "example@gmail.com" }
+]
+description = "A Python implementation of the Snake and Ladder game"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "Art"  # Add other dependencies if needed
+]
+
+[project.urls]
+Homepage = "https://github.com/mohbay95/Project_533.git"
+Issues = "https://github.com/mohbay95/Project_533.git/issues"
