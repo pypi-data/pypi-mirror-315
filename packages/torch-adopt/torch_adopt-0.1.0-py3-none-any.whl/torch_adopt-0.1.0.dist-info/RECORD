@@ -1,0 +1,6 @@
+adopt/__init__.py,sha256=LLew9G2MWXJ5pvyXcQZ8GvL1Prd-5ltBBg2nTB5MJoE,84
+adopt/adopt.py,sha256=uVGqXRKm_1XPZLhvxQraTm6jRpQVzeeLeYh6QXlZNe0,20039
+torch_adopt-0.1.0.dist-info/METADATA,sha256=olIp6JnK8wQARPsbOf7vT-JzPzm3BcdA6SsDUh1KYSc,3964
+torch_adopt-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+torch_adopt-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+torch_adopt-0.1.0.dist-info/RECORD,,
