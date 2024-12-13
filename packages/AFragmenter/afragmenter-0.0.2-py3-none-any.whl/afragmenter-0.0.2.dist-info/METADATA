@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: AFragmenter
+Version: 0.0.2
+Summary: 
+Home-page: https://github.com/sverwimp/AFragmenter
+License: MIT
+Author: Stefaan Verwimp
+Author-email: stefaan.verwimp@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: biopython (>=1.84,<2.0)
+Requires-Dist: matplotlib (>=3.9.2,<4.0.0)
+Requires-Dist: numpy (>=2.0.0,<3.0.0)
+Requires-Dist: python-igraph (>=0.11.6,<0.12.0)
+Requires-Dist: rich (>=13.8.1,<14.0.0)
+Requires-Dist: rich-click (>=1.8.3,<2.0.0)
+Project-URL: Repository, https://github.com/sverwimp/AFragmenter
+Description-Content-Type: text/markdown
+
+# AFragmenter
