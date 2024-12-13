@@ -1,0 +1,16 @@
+AnimeScraper/AsyncScraper.py,sha256=fnN5lvWUsivthYiQ9Cjgiugh9Oypjv2iCTFQK2WFBzs,4973
+AnimeScraper/SyncScraper.py,sha256=K-Q6BDAFi0E8iS-PM4O4UyQCAVS9WHt4Z7VFygREo6s,5099
+AnimeScraper/__init__.py,sha256=amYtCKdFjdBsQ0ninfBCgvtMdmXDrvhnbWq-spXkwPQ,235
+AnimeScraper/_cache_utils.py,sha256=D8FLgafgnjgfw1HoZN4erRnhKbSYu4JLz4i80qjCK2I,2528
+AnimeScraper/_model.py,sha256=netrfxJ7YNNDeZmwtzUxwFrzbkbji7RjeazZtTe34Ig,5420
+AnimeScraper/_parse_anime_data.py,sha256=UNZwRRi-jVX30UR0frT_pfXg0Q9JBycitA831ndnDyc,8319
+AnimeScraper/animescraper_server.py,sha256=hZpiklAGusKiBwDmb8Td7m9_IeXuIBNGJlXmcTbEMD0,5217
+AnimeScraper/async_malscraper.py,sha256=1Hpc56MkRYI8_qNwQOqm5V3I4QkACiUJnsmKyfvFUE8,9301
+AnimeScraper/cli.py,sha256=pie5i6uyqK_8xTGiag7GsCDubSwCwXQvTkhqVgYOHjA,8041
+AnimeScraper/exceptions.py,sha256=T2yZV3ew6KRhq23oOqNPi5JYHMgYzNYzOq4Mjb-4sgw,974
+AnimeScraper/sync_malscraper.py,sha256=Wo6JKuQtAPtDZl8cENE0qDCnTiSN37WxQNEaAV-Eodo,6473
+animescraper-1.1.3.dist-info/LICENSE.md,sha256=7L0YcDKfBRucvvhdKHfSl75jQvGTeFxWSEvqYf8RqXA,35212
+animescraper-1.1.3.dist-info/METADATA,sha256=7NwXUz0D7CFSzuGp6V_w5JTzuG61Dix-9IeU60uF6Po,5391
+animescraper-1.1.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+animescraper-1.1.3.dist-info/entry_points.txt,sha256=gWo9tHFJq_iwfcQ_Bv82Fqkck2YbLJqiAl3EL8LjeK0,53
+animescraper-1.1.3.dist-info/RECORD,,
