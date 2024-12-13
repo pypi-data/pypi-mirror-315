@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: less_squares
+Version: 0.1.0
+Summary: A fast O(nm) iterative least squares solution
+Home-page: https://github.com/Christopher-DArcy/less_squares
+Author: Christopher D'Arcy
+Author-email: chris@scigood.com
+License: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: test
+Requires-Dist: unittest; python_version >= "3.8" and extra == "test"
+
+## Readme
+This is the placeholder
