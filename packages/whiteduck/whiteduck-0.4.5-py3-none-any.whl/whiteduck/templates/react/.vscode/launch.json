@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: FastAPI",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "myproject.api.routes:app",
+                "--reload"
+            ],
+            "jinja": true
+        },
+        {
+            "name": "01 - WIN - Debug Server",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/myproject/__init__.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python",
+            "preLaunchTask": "run frontend"
+        },
+        {
+            "name": "01 - OSX/Linux - Debug Server",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/myproject/__init__.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "preLaunchTask": "run frontend"
+        },
+    ]
+}
