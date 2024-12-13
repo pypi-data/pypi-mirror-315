@@ -1,0 +1,4 @@
+dist
+docs
+mapc_dcf
+scripts
