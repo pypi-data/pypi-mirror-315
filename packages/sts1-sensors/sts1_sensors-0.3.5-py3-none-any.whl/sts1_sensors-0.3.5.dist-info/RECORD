@@ -1,0 +1,15 @@
+sts1_sensors/__init__.py,sha256=c19R-UkKbCj1thmILhDY6V5i89mncKaTgEi9Mqb8pWw,23
+sts1_sensors/main.py,sha256=o1Se-OA3Zc06d81DH0nx8gdPS4S9YrtFRLslJwn5na0,4248
+sts1_sensors/sensors/ADXL345.py,sha256=FPAJxpCLQThj5lsoG_dnMX5AWHKGfG6ySpTlgXIxEzo,3853
+sts1_sensors/sensors/AbstractSensor.py,sha256=vHdqQuUEZOmKkHWvaOnJKd4519uWIMr8vlom1D13Mf8,395
+sts1_sensors/sensors/BME688.py,sha256=-2Xz8xlKWL2Jus-rQ3hXz9qBFWZgP3laSYZysXb8LrY,21075
+sts1_sensors/sensors/BMM150.py,sha256=fKoPCJP69RxiNQkjNvL4b5a_ANyr7_qLkmpsEnJpP4c,6815
+sts1_sensors/sensors/GUVA_C32.py,sha256=lYtN6W_FVIuji_TjxnWzp01VWNcyr4DZiv8HXBqXRg4,6364
+sts1_sensors/sensors/L3GD20H.py,sha256=qMmqSVlFcZcZbS6RxJ5yDSZhXFaoajZJuHC6yXRcAP0,7225
+sts1_sensors/sensors/TMP112.py,sha256=A5YsJz0OkaTJYgXDqa5DYravL-vhIXcZIkkw3ZulrJQ,2860
+sts1_sensors/sensors/__init__.py,sha256=5nUW1vglZAM1By1hWNIhV50450a9dgK9BpbE3vv4dQc,45
+sts1_sensors/sensors/pysatdosclient.py,sha256=957i1L8RrSsAJ9OYzha0PqU_C7reXfdqNc5uGk30eDI,4526
+sts1_sensors-0.3.5.dist-info/METADATA,sha256=WdlIyo150Ecx-A0y0wdb3hQNwakAE484SgNbi39wJwo,3606
+sts1_sensors-0.3.5.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+sts1_sensors-0.3.5.dist-info/licenses/LICENSE,sha256=c3yBrhYkoQPx9dQq4gfDlAFZUsZVPV-nMv_kjxfLRvo,1075
+sts1_sensors-0.3.5.dist-info/RECORD,,
