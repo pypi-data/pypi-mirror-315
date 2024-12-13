@@ -1,0 +1,5 @@
+# extra requirements to be installed in docker
+pyramid-session-redis
+cubicweb-trustedauth
+cubicweb-rqlcontroller
+ldap3>=2,<3
