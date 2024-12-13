@@ -1,0 +1,8 @@
+mwt_games_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mwt_games_manager/example.py,sha256=2hCv6Yh7K0T-x0qIX6w9bPWSTmI-Y_c246oo388KRrA,393
+mwt_games_manager/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mwt_games_manager/models/game_history.py,sha256=VWzE5AI59a2rTzVAX00mmJgLvJHNUEwho9jnFAcK4vc,239
+mwt_games_manager/models/general_game_data.py,sha256=_Dac5aK6mr760H0307-MCMAriZoKPnfnV-QCYDpVkOY,268
+mwt_games_manager-0.0.5.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+mwt_games_manager-0.0.5.dist-info/METADATA,sha256=Yas6AYwsr1kF3n1dv8vK15XmiQCURDt4B8qb2p909H0,326
+mwt_games_manager-0.0.5.dist-info/RECORD,,
