@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ftraining
+Version: 0.2.0
+Summary: A fast LLM training module with QLoRA and GPU support.
+Author: tuber92svv
+Author-email: frredrrttt@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: datasets
+Requires-Dist: peft
+Requires-Dist: bitsandbytes
+Requires-Dist: accelerate
+Requires-Dist: trl
+
+# ftraining
+
+`ftraining` is a Python module for efficiently training large language models (LLMs) using QLoRA, mixed-precision training, and GPU support.
+
+## Installation
+
+Install the package using pip:
