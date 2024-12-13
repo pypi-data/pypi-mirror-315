@@ -1,0 +1,22 @@
+{% extends "file_detail.html" %} 
+{% load render_table from django_tables2 %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% load humanize %}
+{% block title %}File jobs{% endblock title %}
+
+{% block file_detail %}
+<h1>{{ file.filetype|capfirst }} {{ file.title }} Jobs</h1>
+<div class="row">
+
+  <!-- job filter sidebar -->
+  <div class="col-3xl-2 col-12 mb-3 mb-3xl-0 collapse collapse-horizontal" id="JobFilters">
+  {% include "includes/job_filter.html" %}
+  </div>
+
+  <!-- main job table -->
+  <div class="col">
+    {% include "includes/job_list_table.html" %}
+  </div>
+</div>
+{% endblock file_detail %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load render_table from django_tables2 %}
+{% block title %}Job list{% endblock title %}
+
+{% block main_content %}
+<div class="row">
+
+  <!-- Sidebar with job filters start -->
+  <div id="JobFilters" class="col-xl-2 col-12 collapse collapse-horizontal">
+  {% include "includes/job_filter.html" %}
+  </div>
+  <!-- Sidebar with job filters end -->
+
+  <!-- Main content start -->
+  <div class="col">
+    <h1>Jobs</h1>
+    {% include "includes/job_list_table.html" %}
+  </div>
+  <!-- Main content end -->
+</div>
+{% endblock main_content %}

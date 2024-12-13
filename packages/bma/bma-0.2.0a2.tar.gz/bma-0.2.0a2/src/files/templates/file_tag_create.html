@@ -1,0 +1,12 @@
+{% extends "file_detail.html" %}
+{% load django_bootstrap5 %}
+{% block title %}Add Tags{% endblock title %}
+
+{% block file_detail %}
+<h1>Add Tags to {{ file.filetype|capfirst }} {{ file.title }}</h1>
+<form method="post">{% csrf_token %}
+  {% bootstrap_form form %}
+  <input class="btn btn-success" type="submit" value="Add Tag(s)">
+  <a href="{% url 'files:file_show' file_uuid=file.uuid %}" class="btn btn-primary">Cancel</a>
+</form>
+{% endblock file_detail %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block title %}{{ album.title }} | Album{% endblock title %}
+
+{% block main_content %}
+
+  <div class="row">
+    <!-- left block start -->
+    <div class="col-xl-2 col-12 collapse collapse-horizontal" id="FileFilters">
+    {% include "includes/file_filters.html" %}
+    </div>
+    <!-- left block end -->
+
+    <!-- main block start -->
+    <div class="col">
+      <!-- album detail block -->
+      {% block album_detail %}
+      {% endblock %}
+    </div>
+    <!-- main block end -->
+
+    <!-- right sidebar start -->
+    <div class="col-12 mt-3 col-xl-2 mt-xl-0">
+    {% include "includes/album_sidebar.html" %}
+    </div>
+    <!-- right sidebar end -->
+  </div>
+
+{% endblock main_content %}
