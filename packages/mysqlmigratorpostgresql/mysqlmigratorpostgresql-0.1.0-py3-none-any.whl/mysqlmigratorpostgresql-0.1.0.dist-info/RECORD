@@ -1,0 +1,9 @@
+mysqlmigratorpostgresql/__init__.py,sha256=7cDb87G4oTMu7WLclOys200sq5Fh_O-nTnVM--O7JBI,230
+mysqlmigratorpostgresql/connect_mysql.py,sha256=b4sZBrUikX2X00MaVQv0r38MKZRx5tJyxFKoOX0POS4,788
+mysqlmigratorpostgresql/connect_postgresql.py,sha256=HtvpMZ6-VLwPOpOgoz6k881q-rgLi-mzdixRk67EEZs,892
+mysqlmigratorpostgresql/migrator.py,sha256=KFqOx9R-26MaBU5SQf47wwpyZ2mmKH2zCjgJ_AHQ_Bo,3907
+mysqlmigratorpostgresql-0.1.0.dist-info/LICENCE,sha256=UCpEm77ZXAMmw13bBt0ee_V6bfFbGmK4wy9bWd3-1KU,1090
+mysqlmigratorpostgresql-0.1.0.dist-info/METADATA,sha256=yeyLR3Qk9_2nlBbe5lT0Od9V5biJmXtjx05O1f72-v0,5149
+mysqlmigratorpostgresql-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+mysqlmigratorpostgresql-0.1.0.dist-info/top_level.txt,sha256=MQCLKR6z92UNEJ73LAfeSxqSgpDyn7HTb48nR8S_0iQ,24
+mysqlmigratorpostgresql-0.1.0.dist-info/RECORD,,
