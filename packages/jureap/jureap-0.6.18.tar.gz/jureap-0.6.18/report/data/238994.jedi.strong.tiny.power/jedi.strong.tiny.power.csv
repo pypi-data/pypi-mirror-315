@@ -1,0 +1,6 @@
+system,version,queue,variant,jobid,nodes,taskspernode,threadspertask,runtime,success,energy_start,energy_stop
+jedi,2024.01,all,jedi.evaluation.jedi,33349,2,4,1,0.453434,true,1733991878158,1733991883158
+jedi,2024.01,all,jedi.evaluation.jedi,33350,4,4,1,0.453434,true,1733991878436,1733991883436
+jedi,2024.01,all,jedi.evaluation.jedi,33351,6,4,1,0.453434,true,1733991818557,1733991823557
+jedi,2024.01,all,jedi.evaluation.jedi,33352,8,4,1,0.453434,true,1733991698425,1733991703425
+

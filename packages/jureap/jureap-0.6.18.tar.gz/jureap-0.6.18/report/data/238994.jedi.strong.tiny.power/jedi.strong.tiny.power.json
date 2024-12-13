@@ -1,0 +1,86 @@
+{
+    "version": 1,
+    "reporter": {
+        "generator": "jureap-gitlab-exacb",
+        "info": {
+            "pipeline": "238994",
+            "job": "1232902",
+            "commit": "3c50883cd0c7ea6fe42dd479e3e4a554afb4fbad",
+            "username": "badwaik1",
+            "project": "/p/project1/cjsc",
+            "budget": "zam",
+            "system": "jedi",
+            "version": "2024.12",
+            "timestamp": "2024-12-12T09:20:37+01:00"
+        }
+    },
+    "parameter": {},
+    "experiment": {
+        "system": "jedi",
+        "version": "2024.12",
+        "variant": "jedi.evaluation.jedi",
+        "timestamp": "2024-12-12T09:20:37+01:00"
+    },
+    "data": [
+        {
+            "success": "true",
+            "runtime": "0.453434",
+            "parameter": {
+                "nodes": "2",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "33349",
+            "queue": "all",
+            "metrics": {
+                "energy_start": "1733991878158",
+                "energy_stop": "1733991883158"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "0.453434",
+            "parameter": {
+                "nodes": "4",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "33350",
+            "queue": "all",
+            "metrics": {
+                "energy_start": "1733991878436",
+                "energy_stop": "1733991883436"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "0.453434",
+            "parameter": {
+                "nodes": "6",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "33351",
+            "queue": "all",
+            "metrics": {
+                "energy_start": "1733991818557",
+                "energy_stop": "1733991823557"
+            }
+        },
+        {
+            "success": "true",
+            "runtime": "0.453434",
+            "parameter": {
+                "nodes": "8",
+                "taskspernode": "4",
+                "threadspertask": "1"
+            },
+            "slurm_jobid": "33352",
+            "queue": "all",
+            "metrics": {
+                "energy_start": "1733991698425",
+                "energy_stop": "1733991703425"
+            }
+        }
+    ]
+}
