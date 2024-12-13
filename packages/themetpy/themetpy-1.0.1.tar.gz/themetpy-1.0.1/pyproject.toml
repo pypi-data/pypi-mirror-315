@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "themetpy"
+version = "1.0.1"
+description = "The Python Package for The MET Museum."
+authors = ["Yuxi Sun"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "themetpy", from = "src" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.32.3"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-mock = "^3.14.0"
+myst-nb = "^1.1.2"
+sphinx-autoapi = "^3.4.0"
+sphinx-rtd-theme = "^3.0.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
