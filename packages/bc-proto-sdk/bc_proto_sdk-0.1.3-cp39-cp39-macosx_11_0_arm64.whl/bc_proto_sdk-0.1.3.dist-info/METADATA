@@ -1,0 +1,59 @@
+Metadata-Version: 2.4
+Name: bc_proto_sdk
+Version: 0.1.3
+Summary: BrainCo FW proto message SDK
+Author: BrainCo
+License: 	
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/BrainCoTech/bc_proto_sdk
+
+# BrainCo Proto Message SDK
+
+```shell
+cargo tree
+cargo b
+cargo test stark_msg_encode -- --show-output -- --features="stark, tracing-log"
+cargo test eeg_cap_parser_test -- --show-output -- --features="eeg-cap, tracing-log"
+cargo test edu_msg_decode -- --show-output -- --features="edu, tracing-log"
+cargo test edu_msg_encode -- --show-output -- --features="edu, tracing-log"
+cargo test morpheus_parser_test -- --show-output -- --features="morpheus, tracing-log"
+cargo test morpheus_parser_normal -- --show-output -- --features="morpheus, tracing-log"
+cargo run --no-default-features --example morp-algo-test --features="morpheus, examples"
+cargo run --no-default-features --example stark_mock --features="stark, modbus, examples"
+cargo run --no-default-features --example stark_test --features="stark, modbus, examples"
+cargo run --no-default-features --example stark_ota --features="stark, modbus, examples"
+cargo run --no-default-features --example sci-test --features="eeg-cap, examples"
+cargo run --no-default-features --example eeg-cap-msg-test --features="eeg-cap, examples"
+cargo run --no-default-features --example eeg-cap-test --features="eeg-cap, examples" # scan and connect by tcp
+
+rustc --print target-list | grep ohos
+# NOTE: use feature "ohos" in Cargo.toml
+sh scripts/build_ohos.sh
+# NOTE: use feature "nodejs" in Cargo.toml
+sh scripts/build_wasm.sh
+tree -I target
+tree dist
+
+# for python
+# python -m venv .env
+# source .env/bin/activate
+
+# pyenv virtualenv pyo3
+# pyenv local pyo3
+
+pyenv local venv39
+pyenv virtualenv venv39
+pyenv activate venv39
+pyenv deactivate
+
+# pip install maturin
+# maturin init --bindings pyo3
+
+# NOTE: use feature "python3" in Cargo.toml
+maturin dev
+
+export PYTHON_SYS_EXECUTABLE=$(which python3)
+cargo run --example pyo3
+sh scripts/test_python.sh
+```
+
