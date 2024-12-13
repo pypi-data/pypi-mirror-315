@@ -1,0 +1,7 @@
+packaging
+setuptools
+click
+hkdf
+pycryptodome
+pyjwt[crypto]
+requests>=2.13.0
