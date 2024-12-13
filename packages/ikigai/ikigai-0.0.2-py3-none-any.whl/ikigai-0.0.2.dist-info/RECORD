@@ -1,0 +1,14 @@
+ikigai/__about__.py,sha256=ZzxgAGKOy0jiDubURTWcnGWhqWuMKcznjUIcZvWcvnA,130
+ikigai/__init__.py,sha256=uqydvSC9PNxM-jXfihyZfiYoeoLWeTE8_z8YO5GNbmE,163
+ikigai/ikigai.py,sha256=mH2-11gSMKP-NNlVqeEZBEemqDDGKSpxJjTbtk3HtlQ,1311
+ikigai/client/__init__.py,sha256=iymB7-QrzIO12n5S25WDIakPIFad0CCIs0bQaP-K4sc,132
+ikigai/client/session.py,sha256=DfwAKvOFK5vd9myq4FL7qUlFsdv2QK3XLBOfFum0qfw,1495
+ikigai/components/__init__.py,sha256=FhAkdy65WpVQd1A6JFOtefsm_VCnJfrtLSfzm2oGJeU,191
+ikigai/components/app.py,sha256=UzTaqvEfWusCf0NadSOgGvBKE4wB4kOwo2VzoJFjPMs,3985
+ikigai/utils/__init__.py,sha256=wGLY2tecu-wl7sMOGo9xmSAczy2iD7Sxr33YnGnhpbk,133
+ikigai/utils/named_mapping.py,sha256=E1IGKrhyiSqqOa6rwlWiDLL_4j49HhS2Uz61wTWJ0pY,1068
+ikigai/utils/protocols.py,sha256=IRyJPi6c-alzFcQmeNgJ6H-2QhDzN8SjecJrNxQS8Fg,240
+ikigai-0.0.2.dist-info/METADATA,sha256=MrcoGYeh6gsrZUikZngrpm0EgqjpYoYiNnrYzkeEYQQ,1643
+ikigai-0.0.2.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+ikigai-0.0.2.dist-info/licenses/LICENSE.txt,sha256=BD9pf1wRz64MyqDC90MD15YnSWE6Zi2igjc40X4Q4cY,1099
+ikigai-0.0.2.dist-info/RECORD,,
