@@ -1,0 +1,9 @@
+src/commander/__about__.py,sha256=pax_dpAw8Qf7-fW9Pj4U7eBIoUTl7OZrwCtVi2JPq6U,128
+src/commander/__init__.py,sha256=lTqau8mUoCllWVkU7a8OD_CcSllj-daYe1iCbOPw49Q,105
+src/commander/command.py,sha256=ZWsrKf3k08fA4wb0DcksMD-HATe91PQ5xJSZ6wPWKL4,6230
+src/commander/result.py,sha256=Y9fNYy5V6ehqdRXx_ulO64G2iSdc2WF6oEnJgf5CRNY,598
+src/commander/runner.py,sha256=i3iXFNDoiXkSTkkVuURkVEWm4AooZIq6OFMjoQ5mIG4,3926
+manmade2_commander-0.0.1.dist-info/METADATA,sha256=GxPs8mCKyj7LgfrGgzhqOPKv8X9w5H3_QJD5d7KohNI,1082
+manmade2_commander-0.0.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+manmade2_commander-0.0.1.dist-info/licenses/LICENSE.txt,sha256=6_R8jRmMgFfNHP6BxlCDB0BfyuXXDbu8dlMR8B2VY9c,1103
+manmade2_commander-0.0.1.dist-info/RECORD,,
