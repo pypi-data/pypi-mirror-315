@@ -60613,2324 +60613,2324 @@
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/59/fa/a80873d6128161a459029798416950e57710abcb84f5d6cd46f730e99baf/KratosCSharpWrapperApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:54:44.585227Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "emailspoofergui",
       "project_version": "3.4",
       "url": "https://files.pythonhosted.org/packages/da/3b/41279f40b86383ac71e6e8df29bbc087f5694911729fa8d43ea4e2408970/emailspoofergui-3.4.tar.gz",
       "upload_time": "2024-12-13T09:54:45.465297Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "odoo-addon-purchase-internal-product-reference",
       "project_version": "15.0.1.0.0.2",
       "url": "https://files.pythonhosted.org/packages/db/1c/f266bd575318a4aaa2dcd56708de50a7f6f74dd6b0ce1f2ecc3f40d0d937/odoo_addon_purchase_internal_product_reference-15.0.1.0.0.2-py3-none-any.whl",
       "upload_time": "2024-12-13T09:54:47.116923Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosCSharpWrapperApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/14/84/6ec017fce3cac1d4ff20ae10a509e483703982c0ecf9ee5755700809952b/KratosCSharpWrapperApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:54:48.907131Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosCSharpWrapperApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/17/ad/5d874a5f1dd7ea5b45f49c431b29db41abd412e5bffaa0df85cb9b32c872/KratosCSharpWrapperApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:54:52.239429Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosCSharpWrapperApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/c8/14/b689999edf18c2525ba96dc4a9a8994d64bd945a096f1eb005cecf27e5de/KratosCSharpWrapperApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:54:56.254743Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDamApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/5b/c4/f8534965ec17a31ef49c7b30062b630f8c03b9318e5efac0fe0429598bea/KratosDamApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:54:58.446290Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDamApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/67/07/ae71466047b98bb6dffbe4463b5f453cdc6350b5eb9d4979c965b4f66c92/KratosDamApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:01.889538Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDamApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/bb/fc/9e47a3e936ed0a08cbb707b722b1257b12faceacd8686f56145e44adf801/KratosDamApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:04.015636Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDamApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/fc/03/afdccee6e0bab54842a2301206b958be542b2aff22097915203321115d09/KratosDamApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:07.268747Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDamApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/3b/49/30795a77dc239e0261504dafe32604e5a65a61439cf7907fa24c9f98d6c6/KratosDamApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:09.331242Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDEMApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/e1/98/d5423b1de7ff07adb45a4d6ca791f712bb611cf53a6cdb6128e3026e5e67/KratosDEMApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:13.294189Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDEMApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/c1/86/fef1162f734bb19b145fb180f095bd38f2d68d9b8c3f7aa1e11eecd9544c/KratosDEMApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:16.252881Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDEMApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/2b/b1/55cea18f1962de744b20917f8d3475079087ac2c90ce450fc6651e6a5bcb/KratosDEMApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:19.195584Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eclypse-core",
       "project_version": "0.6.17",
       "url": "https://files.pythonhosted.org/packages/3c/1c/dc12b31ab0698ed6d87dabc131e1d47468bae596a039b8b3a1b820de70b9/eclypse_core-0.6.17-cp312-cp312-macosx_14_0_arm64.whl",
       "upload_time": "2024-12-13T09:55:22.463177Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDEMApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/6e/16/c17325e034eb269c6b2220f4530c02e116639a47db1086b2db46effe05e1/KratosDEMApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:22.673906Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eclypse-core",
       "project_version": "0.6.17",
       "url": "https://files.pythonhosted.org/packages/18/9e/7d62d4a7e3b39882121f002b0d84d7448baa799392bd6b975700ef0b7a80/eclypse_core-0.6.17-cp311-cp311-macosx_14_0_arm64.whl",
       "upload_time": "2024-12-13T09:55:24.399656Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDEMApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/af/2a/12b4a80e5d5eac65861cbb63572c7a4a986a1cedce311e5a2cc9c490ab10/KratosDEMApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:26.293179Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "rh-aws-saml-login",
       "project_version": "0.7.0",
       "url": "https://files.pythonhosted.org/packages/95/36/74e58ab0d9047024ed5a2e8255280d76aed03fc5cc135d78b2d561b654d9/rh_aws_saml_login-0.7.0-py3-none-any.whl",
       "upload_time": "2024-12-13T09:55:27.919362Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "rh-aws-saml-login",
       "project_version": "0.7.0",
       "url": "https://files.pythonhosted.org/packages/f9/20/e0e1457854a01e4b8d537519149e73e256ea463da20193b261f56d20240d/rh_aws_saml_login-0.7.0.tar.gz",
       "upload_time": "2024-12-13T09:55:28.976926Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDemStructuresCouplingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/dc/3a/c9102fa88274623d6be6d280d547d881aae9cf27a5f7ad1861bf87570816/KratosDemStructuresCouplingApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:30.940315Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "deknp",
       "project_version": "0.1.72",
       "url": "https://files.pythonhosted.org/packages/70/b5/4a861d08e0ae74f213ce6c7a1a6cfcb0e1240b22189b290d8fb79756b6b3/deknp-0.1.72-py3-none-any.whl",
       "upload_time": "2024-12-13T09:55:35.707830Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "deknp",
       "project_version": "0.1.72",
       "url": "https://files.pythonhosted.org/packages/13/d2/ba72488faf5ef5c281c3c7bee4b3f671f2b1fe2de8b048ed584b4fdf75f5/deknp-0.1.72.tar.gz",
       "upload_time": "2024-12-13T09:55:36.762621Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDemStructuresCouplingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/9e/23/215bcfc92e19a1fd25a6a8b35d501d737121d8c1a3e8ee737304ad78dfd3/KratosDemStructuresCouplingApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:37.223723Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eclypse-core",
       "project_version": "0.6.17",
       "url": "https://files.pythonhosted.org/packages/5d/1b/ee63d7462a020ba5a4f3b368e14c943a5a3c84ac8355308731691208c8ae/eclypse_core-0.6.17-cp310-cp310-macosx_14_0_arm64.whl",
       "upload_time": "2024-12-13T09:55:42.093381Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDemStructuresCouplingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/2c/09/1795f13ec133fc39ac4b397daf9e78091a77a5ea026df85aa045ed77ef52/KratosDemStructuresCouplingApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:43.346643Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDemStructuresCouplingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/15/54/91be97a07879d33ee1e1b6ceb2921640e51959b80cd7f63b96c14ecee03c/KratosDemStructuresCouplingApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:49.590688Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosDemStructuresCouplingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/ce/85/737f0903566044203a22f1702a92c12be906b84b2f52b81f6e6b4f86a932/KratosDemStructuresCouplingApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:54.507249Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosFluidDynamicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/3b/cf/a81ac0c06508777ae84bab4ea5e06831bc5fb5e6f1d3d6f2f6549ee6c332/KratosFluidDynamicsApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:55:59.125450Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosFluidDynamicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/3b/85/db5e7505a5acd4be124dfd9451d8cd5e08d97f7c606f243037f7ff04cd6b/KratosFluidDynamicsApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:56:05.823399Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosFluidDynamicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/f7/89/69990a44b245719e3c84c0202cacbe8fc4145e29d40c155b7408c36e4af4/KratosFluidDynamicsApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:56:12.237592Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosFluidDynamicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/ee/73/3ed72431d8a4f3a875fb82456beae6cbeef8233779ed7be634ebafd33433/KratosFluidDynamicsApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:56:17.714864Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosFluidDynamicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/db/f1/e2a93c69022c2a560c3685dc334d638ac177fe4ee8ad5fb3166b4165e0b1/KratosFluidDynamicsApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:56:22.691668Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosFSIApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/72/92/d5efedab49bc4856162d795bd17c1d55c7c81d98c4a6ebc362c530ae23cb/KratosFSIApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:56:24.998773Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosFSIApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/5d/f4/36eaa912b893a4717f5b6e31da81854982a98fdeb33520011aa1d29835f3/KratosFSIApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:56:27.797217Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosFSIApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/5f/9b/f332d93bce73ef1ffad74fd2f0c2c92efd4777f861afdeac8e94e2792862/KratosFSIApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:56:29.342488Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosFSIApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/3e/82/b7f314917efc1ac9fa93c057db9ca6311ecbf20a6ddeea5f514c2a75784f/KratosFSIApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:56:31.009384Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosFSIApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/ac/a1/05cd162a3b2c312ec7bafbb62dea1956ae551fe37eb72a01f56ff7188268/KratosFSIApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:56:33.738484Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "superagentx",
       "project_version": "0.1.13b0",
       "url": "https://files.pythonhosted.org/packages/92/88/673df58427fdac88d45a615704337d83e0a841fa68990dda53fb344a149e/superagentx-0.1.13b0-py3-none-any.whl",
       "upload_time": "2024-12-13T09:56:37.556190Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eclypse-core",
       "project_version": "0.6.17",
       "url": "https://files.pythonhosted.org/packages/78/2f/1a0bf446dba364a8433b3665fc30173fc9d994389c2376fe62b1c08bf5d8/eclypse_core-0.6.17-cp311-cp311-manylinux_2_39_x86_64.whl",
       "upload_time": "2024-12-13T09:56:37.897892Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosGeoMechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/bd/cc/4a1b52c04ed5120dddc384c79b6f9db5e15a735d4cdbd66d9baa3b08ec85/KratosGeoMechanicsApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:56:39.107008Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "superagentx",
       "project_version": "0.1.13b0",
       "url": "https://files.pythonhosted.org/packages/ef/10/6b2dc59228d14bd0cef30acc7d364a3c287d195b4c64d99fe9c22224162b/superagentx-0.1.13b0.tar.gz",
       "upload_time": "2024-12-13T09:56:40.602456Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eclypse-core",
       "project_version": "0.6.17",
       "url": "https://files.pythonhosted.org/packages/4c/a6/d1345b99da653f3f135b3c8bd135791ed6f05a6de64b50c01b9e116fffe6/eclypse_core-0.6.17-cp310-cp310-manylinux_2_39_x86_64.whl",
       "upload_time": "2024-12-13T09:56:41.902074Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eclypse-core",
       "project_version": "0.6.17",
       "url": "https://files.pythonhosted.org/packages/5f/c9/36b488e7d12b2c5d3ced2846cf4c597d499ed37b35ae887df295d2b223de/eclypse_core-0.6.17-cp312-cp312-manylinux_2_39_x86_64.whl",
       "upload_time": "2024-12-13T09:56:42.924566Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosGeoMechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/d4/d9/7c04ae6ce1fbcab5cc9ef05d5eb6a8134597ce3b52fd966c96f8fe05d216/KratosGeoMechanicsApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:56:48.700248Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosGeoMechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/2e/fe/5cbc7d97be09320ba55e78aa7f001897171b068a3609af7bc9681f31582d/KratosGeoMechanicsApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:56:56.818305Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosGeoMechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/f4/ca/4bfa6dcc454e8746a5473cdbc86081b35c1d1dfd05b5b756a3bcca133adf/KratosGeoMechanicsApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:02.919181Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosGeoMechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/06/bd/9aaf5669472a344f3bb4080900f8aaebd6231b56ee369280d0c1fb8be7dc/KratosGeoMechanicsApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:09.209488Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosIgaApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/f4/46/9132e0c5c87c9b8e668bda1b07a898692d88a488d4dee35ec8c5d16e039c/KratosIgaApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:11.853484Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosIgaApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/56/60/5e83169c1fbb233c4ea7afb29b9f17f767bcde8db0ee76a0305b48a42783/KratosIgaApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:13.981486Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosIgaApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/51/03/55afad8b5723b6066f20aa12e1d003a99559398eb5f4802940446b157d7a/KratosIgaApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:15.780350Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosIgaApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/eb/5d/8bf5c82bd04bf9d1372c0910b6889cfd3a180d241b81f325df7035781855/KratosIgaApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:17.822047Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosIgaApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/ee/ac/48cba1e1129aa4eaa95483dcd5b36b1b845b4866712c843611b560f35f6f/KratosIgaApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:20.801163Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosLinearSolversApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/06/ff/6bf6b965d3263ec4cc9489e6d602f7ba94e4c44121031c18e8de8ddf4ee7/KratosLinearSolversApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:23.381684Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosLinearSolversApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/0b/df/593f17ed9cfa5de7cd1c3780bc306c38076957fbb06b0a05f7cd4dc495d0/KratosLinearSolversApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:26.494189Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosLinearSolversApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/15/29/b5734fe5a63adb8abe4761a6f7b3805fc96e5a9cb738a189b818c3daa5ea/KratosLinearSolversApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:28.424725Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosLinearSolversApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/0c/c1/55baed67637dcee45a41b310017080859655372a29f6c1fee009d0c01331/KratosLinearSolversApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:30.294394Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "woy",
       "project_version": "1.4",
       "url": "https://files.pythonhosted.org/packages/b6/5d/b194ea32928ef20d56082d691fcfb7ec88e5b2015fe1090cdbb51195ea07/woy-1.4-py3-none-any.whl",
       "upload_time": "2024-12-13T09:57:31.803898Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosLinearSolversApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/dc/ab/2eff9574541a30dcb5e247f529f1e22df66db54b66fe9642426d2dcc7320/KratosLinearSolversApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:32.199436Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "woy",
       "project_version": "1.4",
       "url": "https://files.pythonhosted.org/packages/be/5e/b96a75101ded3630c3d7d01f2bcae18a3813ab2a0c98c694e87e3ef1a5ee/woy-1.4.tar.gz",
       "upload_time": "2024-12-13T09:57:32.806321Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMappingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/ef/4a/e93cb96ca5c59f5c08929d2f85a217b80a5d074772b89e27a962e8a54827/KratosMappingApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:35.106288Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMappingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/ff/d1/64c7e821a0f4c3ede17db3deceacfd9d1390c5d8ed3d6b08e03cf50b3002/KratosMappingApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:36.961059Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMappingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/fd/55/d31c6237faa52c13024f125a54748258f2e85dbb2734d03c354874e33752/KratosMappingApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:38.717102Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMappingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/3a/d3/8b33b21a7c59e48e79b56ed82e12c79e4fd92e2ece747f6d9ac311b2c75f/KratosMappingApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:40.797635Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMappingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/25/1e/b45c4f3c6e2dbeef1208bbaaa2405ce9181651ebdf535bbdbedd3872360b/KratosMappingApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:42.847800Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMeshingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/99/1b/03273276cdde80ecf606bc285c43253bf3f7c1b1d674ed3c237a85040f64/KratosMeshingApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:45.447797Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMeshingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/a7/74/cfc3e9d6040b97d138940dd2cd9554eed9e3f2594ceeab6c73ded85dbf48/KratosMeshingApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:49.302033Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMeshingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/6d/be/e396fe794886e2a7f105d5e3f05682d9cb2b0ef03a5248cbbd9d35a89e78/KratosMeshingApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:51.936728Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMeshingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/53/67/0bf2bcb2a5a93711d9b0a7b6c6b351e003db5096097bac4cfe0993be3d91/KratosMeshingApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:57:54.733544Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "zebrazoom",
       "project_version": "1.34.76",
       "url": "https://files.pythonhosted.org/packages/78/67/761c019390600f22314d62490df4e95cb1831b0db2c955fa4d015a8e3899/zebrazoom-1.34.76-py3-none-any.whl",
       "upload_time": "2024-12-13T09:57:55.633888Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "zebrazoom",
       "project_version": "1.34.76",
       "url": "https://files.pythonhosted.org/packages/5a/40/5e5a8a79e99c16acb3c885b24e974ba65a3138527bf9acfe015d76875695/zebrazoom-1.34.76.tar.gz",
       "upload_time": "2024-12-13T09:58:01.197025Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMeshingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/b4/f8/51cae73c75f76fa4bd01bad9d905b24ead8b496d3a305f37b507fbd4ef70/KratosMeshingApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:01.303837Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMeshMovingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/39/80/54d2aad42ba6db1ef68d62e2ffba7a1da1e01c1bcaf4fb90301da2aad4b9/KratosMeshMovingApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:04.219593Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "open-meteo",
       "project_version": "0.3.2",
       "url": "https://files.pythonhosted.org/packages/61/54/a2c9461c2b5b95bb09f15773207a0b7d7f859013707b3e9910c5807f4213/open_meteo-0.3.2-py3-none-any.whl",
       "upload_time": "2024-12-13T09:58:05.955056Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMeshMovingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/6c/6f/b71e620764846df6af4e8dd0e241a3aeb6a660196c4e1a02a936efb6f062/KratosMeshMovingApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:08.155753Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "open-meteo",
       "project_version": "0.3.2",
       "url": "https://files.pythonhosted.org/packages/a1/a1/07539fd4acb9bae161aee52407da798998444919271c7d6c4f4352961155/open_meteo-0.3.2.tar.gz",
       "upload_time": "2024-12-13T09:58:08.996850Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMeshMovingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/c6/2b/d76e472f67ea79c42b11d4cfd65dfaa4a424fed93f08e5f33688457f2226/KratosMeshMovingApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:11.653566Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMeshMovingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/a1/b7/990ff1aa3f1ab9fe106b836b08989e2a265438a973a8e60758e941638458/KratosMeshMovingApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:14.771818Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMeshMovingApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/81/dc/91204ce8686ccde59567d6888686cef91c1f815cd663c468189bc5d23728/KratosMeshMovingApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:16.647922Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMetisApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/02/9b/10f495b1adc834781b87f375d2101682d2cab70b72f22e60f0facbeb706e/KratosMetisApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:19.476757Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMetisApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/21/fd/179c3e020237a31897c627ae865692d25ea71035250bc2dc221bb0711e79/KratosMetisApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:21.234529Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMetisApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/80/c4/c86444c98625592d0146d2a1afe1d3d57fd2f1d303f07dd801f1e6753774/KratosMetisApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:22.823057Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMetisApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/dd/85/db32cda4f4902dc16b3c818427708cf116b8b07e18e03a3a5b31352365ee/KratosMetisApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:24.729660Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMetisApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/87/d1/f64047de7b5086509eec95c93ef6a314ccc81307db597fe0c5b9261967f3/KratosMetisApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:26.970737Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMPMApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/08/60/5111f0b72023c6ffe7284e4dbbbd380e44c2bed4730f465a08ca57bf99fa/KratosMPMApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:28.974135Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMPMApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/57/7e/b6182335374c8b97714b0fea1f1b3a633210c378bbaf0f4a3fd1fb935c7d/KratosMPMApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:31.146253Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMPMApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/51/48/1329b1280c0342a734aa527a64d8a2997dbbb9a1ab45ab436b700a85c22a/KratosMPMApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:33.214743Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMPMApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/cf/58/642a8fc13ba5134bfc861ab71215cbe89cf28e6ec804028c462e708b45d2/KratosMPMApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:36.566807Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMPMApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/9a/cf/c301c9078147bdb5560d14656751ae29c42960c10a569d6b650799fcc091/KratosMPMApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:38.687560Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMultiphysics",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/6b/dc/0ba879e45112a9550794ea3dcb6f98dc4cd75e5afb79ba27398015a98b14/KratosMultiphysics-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:46.903833Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMultiphysics",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/54/3d/4dc00cb8015f8303082054688d78cb19b2dcd6fda1fc73bff600d4060dbf/KratosMultiphysics-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:58:55.116053Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMultiphysics",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/0c/d6/f19366b72fea58ff7e43346d0779ff946ad73364f1fb3f7ea4a01c55c5d5/KratosMultiphysics-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:03.113521Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMultiphysics",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/29/c5/b87808e8eb9b9297e5c5a06362054c6f42b0792751be4a08fd43d7113960/KratosMultiphysics-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:12.497438Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "pyqqq",
       "project_version": "0.12.105",
       "url": "https://files.pythonhosted.org/packages/f4/b5/83d67d47ca82283554c33e77a5d0dc88ab4be7dd7853b6e4a4907c67a4de/pyqqq-0.12.105-py3-none-any.whl",
       "upload_time": "2024-12-13T09:59:14.383480Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "pyqqq",
       "project_version": "0.12.105",
       "url": "https://files.pythonhosted.org/packages/35/83/0cb197b1802d896981bfa9f3342e7193fb25b588c537a9cc06da2466a797/pyqqq-0.12.105.tar.gz",
       "upload_time": "2024-12-13T09:59:16.840626Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMultiphysics",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/b6/47/9258e9a98ef53277cb3c64a58f5cc278cd623a37bf1b38d8f4dd8135ac1d/KratosMultiphysics-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:21.916558Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosMultiphysics-all",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/21/54/74c37bb828105b7b1f8edf98223990fee8ddf1ef64aa82c3a737857ac3bf/KratosMultiphysics_all-10.2.0-py3-none-any.whl",
       "upload_time": "2024-12-13T09:59:25.381960Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosOptimizationApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/04/ca/63b972c92950748b05c38897dc7b9f2a386ad074227ca5acd317ac3bf43b/KratosOptimizationApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:27.102932Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "optimum-neuron",
       "project_version": "0.0.27",
       "url": "https://files.pythonhosted.org/packages/6a/e2/dc2e88b94e4a3d7c2e643184055716394b1671bee9685a7fa86ddd47e4ca/optimum_neuron-0.0.27-py3-none-any.whl",
       "upload_time": "2024-12-13T09:59:29.560124Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosOptimizationApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/c9/bb/c176b93d3705713bf4de0b891e9d5576398c5aeb31b864a39a80e8907e81/KratosOptimizationApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:30.622837Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "optimum-neuron",
       "project_version": "0.0.27",
       "url": "https://files.pythonhosted.org/packages/9e/23/bb8c168e75f9c7456ac8ce5dfbbb1eb1edbba84a7c2f2a92f509ff0f8360/optimum_neuron-0.0.27.tar.gz",
       "upload_time": "2024-12-13T09:59:31.520447Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosOptimizationApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/88/1f/500a97ae5eb58be70e48a5c5b2d2cba2c2dcea11b1589eb79c697368fc88/KratosOptimizationApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:32.713291Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosOptimizationApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/d6/18/b7ac4f495152f13e9a6928e19e30e64da9960d7ed8a932bb5c6e1f5e9355/KratosOptimizationApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:35.031931Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosOptimizationApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/40/d8/721d9cf0938e622ab015b4441957d31ac4bc2108a055b32527ab49ebc1f5/KratosOptimizationApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:37.412247Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosPoromechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/05/48/889f3871b4e59737ce2598f7f3c7604f691cc6b0c157764630292679e2b7/KratosPoromechanicsApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:40.007125Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosPoromechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/ab/2f/075116954bfdaab0ff6e39886a27a67f3c80c6532750a1c320083028e584/KratosPoromechanicsApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:42.778396Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosPoromechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/69/54/f4a14796f1536355d9f47650df0181cd049e6da6bba7bccb9a8144864b27/KratosPoromechanicsApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:45.674490Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosPoromechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/ea/f0/ef582234f916f496469b70e3cab3ed4cd86ff3feaef58a3b750e0bebb0f4/KratosPoromechanicsApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:48.574036Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosPoromechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/d7/a2/750f2efd63170d1ea05a618c9bf01197fb77385996de15da77fa9bd95f60/KratosPoromechanicsApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:51.547435Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosRANSApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/51/eb/b4b1da8d5d844b68bd44761a017110ce541f9196b8eda985eb4115ef82ca/KratosRANSApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T09:59:55.863753Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosRANSApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/0d/70/60e2ca6409d018aee225b7979d22710e49a94818bd19b24c4006a4259d38/KratosRANSApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:00.903376Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosRANSApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/bd/2f/1790e38d212c4c637abf5a8be2b75ca1926ce6a76edbb9fb4c4aedb66ae2/KratosRANSApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:06.537483Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosRANSApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/dd/20/112c520f67217d09705f32fa5d04a03417eec2d12c7b238adc1f122bb375/KratosRANSApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:12.399695Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosRANSApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/2c/18/bcb7c6771344190cefa0d121c3c6bfb8e106da5994bdaa7d40c8169a5dc7/KratosRANSApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:18.831111Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosRomApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/36/1b/2f382a8fe56af329889e0a9aea78b71387718aa4c4cc427292c23d6eb4bd/KratosRomApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:22.061524Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosRomApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/93/f5/d821f9dc4ee6f9b822d2c67ae757709ec102a07db3eab4387928b837a5fe/KratosRomApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:24.182433Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "genomenotebook",
       "project_version": "1.0.0",
       "url": "https://files.pythonhosted.org/packages/5f/21/d4744092ec34c34ac5f92f9f2e0b5890aa279258f0383d3aacac90938c84/genomenotebook-1.0.0-py3-none-any.whl",
       "upload_time": "2024-12-13T10:00:24.494758Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "hui",
       "project_version": "0.1.1",
       "url": "https://files.pythonhosted.org/packages/98/6e/050634a081c99a020fb60bb4ed1f301cf88ab87fdd3745a8c8649960a4e1/hui-0.1.1.tar.gz",
       "upload_time": "2024-12-13T10:00:25.969401Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosRomApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/29/6c/313aa3e3af79ddeaaa33a7b42c21a4cb11cbd6946814e1c903d37b6807f0/KratosRomApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:27.788347Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "planetra-solver",
       "project_version": "0.2.3",
       "url": "https://files.pythonhosted.org/packages/cc/09/3189cd8bde9aaaa9798b9cfc7f5f7d83869adbc47541d7d196103c763b1d/planetra_solver-0.2.3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:00:28.589159Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "genomenotebook",
       "project_version": "1.0.0",
       "url": "https://files.pythonhosted.org/packages/b6/f9/bf5d70fc538b8ac50d48487437eb3631ebe562b6babd7e88868b0dd4d553/genomenotebook-1.0.0.tar.gz",
       "upload_time": "2024-12-13T10:00:29.704135Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosRomApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/11/82/76d54a5fe62c1901d21d77fe6020a1005993a83ed4bd923d8bc7c8136587/KratosRomApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:32.202284Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "nonebot-plugin-ollama",
       "project_version": "0.1.1",
       "url": "https://files.pythonhosted.org/packages/33/29/48df8b106fea14008bd20f401fec8b50cfbf0823c6b64ed69178e95c5276/nonebot_plugin_ollama-0.1.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:00:32.680943Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "planetra-solver",
       "project_version": "0.2.3",
       "url": "https://files.pythonhosted.org/packages/43/6b/9faf221b079d8b01160b21bcff0179701e38e01145467950b2e98ff6d8e8/planetra_solver-0.2.3.tar.gz",
       "upload_time": "2024-12-13T10:00:33.909462Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "nonebot-plugin-ollama",
       "project_version": "0.1.1",
       "url": "https://files.pythonhosted.org/packages/8b/a9/141286c8e1db689f8308000f29f2a61ac9ff487e9db4988fcd489f39954b/nonebot_plugin_ollama-0.1.1.tar.gz",
       "upload_time": "2024-12-13T10:00:33.982550Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosRomApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/20/16/8313e93b7a7d1465eb7df5a4b2466dc94e76a57d81a97fdb47f4e98564e7/KratosRomApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:34.434084Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosShallowWaterApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/7a/5d/12c16ac5da61b4ab5d9038fc9953fd4edcbe9cb5dcca7885b6bfa934742d/KratosShallowWaterApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:38.246300Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosShallowWaterApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/ad/dc/d8733501bff6b3d2b28d25ffe11a7adddd490b99cf669158f730ce8d46b4/KratosShallowWaterApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:40.222383Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosShallowWaterApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/f1/8b/8acdd36993a7d979467da02e9ebac92e1b23bd9db431c33c8b53b8a414a5/KratosShallowWaterApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:42.720078Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosShallowWaterApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/3d/38/8251c2e22d5e979294b0c91e77a26a3dfd900e7b96b317f891b66e75919b/KratosShallowWaterApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:44.968325Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosShallowWaterApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/2b/f5/07c81ec34a58ca15404be80ad4a0da9706a81ee639d46638e733a94f6cbe/KratosShallowWaterApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:46.928018Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosShapeOptimizationApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/95/99/874b7598c9740b1c260631212376182df307a21d3defc3c7d875bc470102/KratosShapeOptimizationApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:48.736561Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosShapeOptimizationApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/64/17/26de8c196f24f0b64dffa4ee6bdbab1f205dd5209a60ce52290d8828551f/KratosShapeOptimizationApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:50.637467Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosShapeOptimizationApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/1e/c1/02b97b024d5c584418a38203edebed099a49cd50fb16a7d5003b29c3cfb3/KratosShapeOptimizationApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:52.416741Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eclypse",
       "project_version": "0.6.17",
       "url": "https://files.pythonhosted.org/packages/a4/c8/3f6a9c879606fe071fad5b60942f198f66d18f2d248664958cbc84d9479e/eclypse-0.6.17-cp311-cp311-macosx_14_0_arm64.whl",
       "upload_time": "2024-12-13T10:00:52.616405Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosShapeOptimizationApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/18/ef/7016326c0f32c890b2dbe8702292a935f8473345e2ba2514cc38f41964d4/KratosShapeOptimizationApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:55.670389Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosShapeOptimizationApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/1e/8e/47ad82ca3c1910411c991e74b57714568c19dc2d7fd9fdd5e6d431c361b1/KratosShapeOptimizationApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:00:57.861807Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eclypse",
       "project_version": "0.6.17",
       "url": "https://files.pythonhosted.org/packages/99/df/d0563d7223bc5ccfd5709e979acdb27ed0b850998d39f1a81fe9c7a8f83d/eclypse-0.6.17-cp312-cp312-manylinux_2_39_x86_64.whl",
       "upload_time": "2024-12-13T10:00:59.594943Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eclypse",
       "project_version": "0.6.17",
       "url": "https://files.pythonhosted.org/packages/ab/4d/27e6b28f77e0f7e79e22c048be053d1ab06ab24b8bb94a9dcebde3c00c0c/eclypse-0.6.17-cp311-cp311-manylinux_2_39_x86_64.whl",
       "upload_time": "2024-12-13T10:01:00.327538Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eclypse",
       "project_version": "0.6.17",
       "url": "https://files.pythonhosted.org/packages/3c/81/27f055521c2100c34faaf8620c0bd0763965c8411302ac41b535dfbcfa77/eclypse-0.6.17-cp310-cp310-manylinux_2_39_x86_64.whl",
       "upload_time": "2024-12-13T10:01:00.442547Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosStatisticsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/3e/09/52d1598cfbb84c5aace967f92cb9371a1152e5d5607d64ee4023e5d6cbc3/KratosStatisticsApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:01:01.382884Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eclypse",
       "project_version": "0.6.17",
       "url": "https://files.pythonhosted.org/packages/be/80/49783de51a4713c26a08138f8fa813b5fdb393997ed1a1fa8ac4be11ca79/eclypse-0.6.17-cp312-cp312-macosx_14_0_arm64.whl",
       "upload_time": "2024-12-13T10:01:02.965744Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosStatisticsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/21/ea/a99d603fba7b26512931019c3fb72084ea1767a596df92bc951266f242e5/KratosStatisticsApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:01:03.754992Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosStatisticsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/61/84/214861f9e978023b8925649c29482cec21cf4e69b63275a42a845f9504ef/KratosStatisticsApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:01:06.291664Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eclypse",
       "project_version": "0.6.17",
       "url": "https://files.pythonhosted.org/packages/3a/4f/3d675d5c5f8a5bf8eb7a61d7ba5db74636341a7ae2ab6f0bbfc8865f584a/eclypse-0.6.17-cp310-cp310-macosx_14_0_arm64.whl",
       "upload_time": "2024-12-13T10:01:08.258239Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosStatisticsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/80/66/83919b93a1eb8f2f924dbef0409585f559f0b8f020a8580acde4e0d88482/KratosStatisticsApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:01:10.339545Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosStatisticsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/30/e8/acf1a85e13b9cfd795694ee257b375afd680a99dec5c22b58e2875985336/KratosStatisticsApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:01:13.981691Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "odoo-addon-so-product-set-report-hide-lines",
       "project_version": "15.0.1.0.0.2",
       "url": "https://files.pythonhosted.org/packages/41/5b/31dc49821023aba1f6400d7575c714f3ad12f492e8dd3db90a9a64c3e36e/odoo_addon_so_product_set_report_hide_lines-15.0.1.0.0.2-py3-none-any.whl",
       "upload_time": "2024-12-13T10:01:16.615393Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosStructuralMechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/8a/3d/c80f04b179e240c5916b82e7f4628943c1c5b9b7059c5dea292cbae8772c/KratosStructuralMechanicsApplication-10.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:01:19.698073Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosStructuralMechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/07/3d/2617d498ce38b9fd2686ca396a1dc2022c97efba710f29236b5ee2309588/KratosStructuralMechanicsApplication-10.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:01:25.507807Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosStructuralMechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/99/09/3c0c93442cfa019513807a63f1473ba3b36dc773b61712e1a19b38e45612/KratosStructuralMechanicsApplication-10.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:01:30.004978Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosStructuralMechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/e5/3a/2a767812ac7c276fb4226168730de460e92968213f13af5b3c5d79ad22ba/KratosStructuralMechanicsApplication-10.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:01:35.173790Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eltetrado",
       "project_version": "1.5.20",
       "url": "https://files.pythonhosted.org/packages/65/b0/d51c1e285c2db9e3524220a8f2ee158fb7b176fe89f68f566b4ff7213101/eltetrado-1.5.20-py3-none-any.whl",
       "upload_time": "2024-12-13T10:01:40.442701Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "KratosStructuralMechanicsApplication",
       "project_version": "10.2.0",
       "url": "https://files.pythonhosted.org/packages/d5/1a/64b9edfe0afdce4e1ee3691910b8b6f69e7ecf99452cb1f3eb125bec1a2b/KratosStructuralMechanicsApplication-10.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
       "upload_time": "2024-12-13T10:01:41.532407Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eltetrado",
       "project_version": "1.5.20",
       "url": "https://files.pythonhosted.org/packages/42/53/22691cf6c69d34e0132916608e9aba845820e2b2e89940b2ca1091cf27d4/eltetrado-1.5.20.tar.gz",
       "upload_time": "2024-12-13T10:01:43.226569Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "NearBeach",
       "project_version": "0.31.51",
       "url": "https://files.pythonhosted.org/packages/5a/4a/2c2449b60cac31c2b98f16e34c7295009a19a27ba8b8727f6970323b959a/nearbeach-0.31.51-py3-none-any.whl",
       "upload_time": "2024-12-13T10:02:11.502906Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "NearBeach",
       "project_version": "0.31.51",
       "url": "https://files.pythonhosted.org/packages/d8/10/a9ff7cf4c244ff94f471a8a502d3f18ced084e47eb2ad4c318455d58e977/nearbeach-0.31.51.tar.gz",
       "upload_time": "2024-12-13T10:02:17.090021Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "semarchy-xdi-runtime-client",
       "project_version": "0.2.3",
       "url": "https://files.pythonhosted.org/packages/79/fb/e5473c88a0157e223e7f6b88e98ec0a3be52489a7079a22775e52462b80e/semarchy_xdi_runtime_client-0.2.3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:03:08.338382Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "semarchy-xdi-runtime-client",
       "project_version": "0.2.3",
       "url": "https://files.pythonhosted.org/packages/20/ed/dc73045d2422bb1710e4be3de39b6b21f27817ceccf0031114f8010c54fb/semarchy_xdi_runtime_client-0.2.3.tar.gz",
       "upload_time": "2024-12-13T10:03:09.636428Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "odoo-addon-product-main-supplierinfo",
       "project_version": "18.0.1.0.0.2",
       "url": "https://files.pythonhosted.org/packages/97/8f/7020ea8db07a4d800005f079673e7f2383476faf22cb0f9312d8b407264f/odoo_addon_product_main_supplierinfo-18.0.1.0.0.2-py3-none-any.whl",
       "upload_time": "2024-12-13T10:03:17.766610Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "starco-utility",
       "project_version": "1.1.3",
       "url": "https://files.pythonhosted.org/packages/9a/40/b604cad4c94268f0c7ba40e6cedc5a0c3deea4511b4615a0e822aa212190/starco_utility-1.1.3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:03:30.763650Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "starco-utility",
       "project_version": "1.1.3",
       "url": "https://files.pythonhosted.org/packages/e3/1c/f422d480bb0073df8db2e34740342b46496740fc20aa793c1d0194b56ec0/starco_utility-1.1.3.tar.gz",
       "upload_time": "2024-12-13T10:03:32.963753Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "conflux-web3",
       "project_version": "1.4.0b3",
       "url": "https://files.pythonhosted.org/packages/f2/27/12a0a05ef9f7880ee910ad80c8564655ac3d0239181aadd8961d3689d5bf/conflux_web3-1.4.0b3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:03:56.741268Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "conflux-web3",
       "project_version": "1.4.0b3",
       "url": "https://files.pythonhosted.org/packages/2b/12/ea6b1ccc1f09bb7aeffb2bcd24674837fbd1c1dfdfa00ad8dde004e9e861/conflux_web3-1.4.0b3.tar.gz",
       "upload_time": "2024-12-13T10:04:02.100843Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "iaparc-inference",
       "project_version": "0.6.3",
       "url": "https://files.pythonhosted.org/packages/6a/c1/930b09c93a38835172f598baa929374259b3d7b5478afcac26f92db6c843/iaparc_inference-0.6.3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:04:31.301597Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "iaparc-inference",
       "project_version": "0.6.3",
       "url": "https://files.pythonhosted.org/packages/cb/b5/1786315c5a5ac2e6142149b38d89022b65207367ed3930681625054d0a34/iaparc_inference-0.6.3.tar.gz",
       "upload_time": "2024-12-13T10:04:33.922408Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "astreintes",
       "project_version": "1.0.4",
       "url": "https://files.pythonhosted.org/packages/9b/6d/e8f45b1effef3809668b8ecfb6a7375d5a7afdc35fe25111bd1df993e528/astreintes-1.0.4-py3-none-any.whl",
       "upload_time": "2024-12-13T10:05:37.713503Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "astreintes",
       "project_version": "1.0.4",
       "url": "https://files.pythonhosted.org/packages/e3/0c/79263fa1251e15ba04a2335a412fd986f20b196a1b5b5d50d6f240d10ece/astreintes-1.0.4.tar.gz",
       "upload_time": "2024-12-13T10:05:40.013226Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "aeiva",
       "project_version": "0.8.2.4",
       "url": "https://files.pythonhosted.org/packages/5a/92/89e7fe6c7bf4fef8a803a98b0aecf9db4512670c0345529216986e13d9c3/aeiva-0.8.2.4-py3-none-any.whl",
       "upload_time": "2024-12-13T10:05:40.581222Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "aeiva",
       "project_version": "0.8.2.4",
       "url": "https://files.pythonhosted.org/packages/8e/25/cb13047b532cc2780c983de2de46be17f1399400df71b29c7ee44ea3d95b/aeiva-0.8.2.4.tar.gz",
       "upload_time": "2024-12-13T10:05:44.270120Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "openmetadata-ingestion",
       "project_version": "1.5.14.1",
       "url": "https://files.pythonhosted.org/packages/36/5b/1c8a13925bb334c4157fc51dabc5f401799beeae3f3e8661c59510c70e46/openmetadata_ingestion-1.5.14.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:05:58.494719Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "openmetadata-ingestion",
       "project_version": "1.5.14.1",
       "url": "https://files.pythonhosted.org/packages/70/3d/455db8054321fc95f16801be41975fc0e937b3dc821ad598f6ad3394d5cc/openmetadata_ingestion-1.5.14.1.tar.gz",
       "upload_time": "2024-12-13T10:06:05.707498Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "batched",
       "project_version": "0.1.3",
       "url": "https://files.pythonhosted.org/packages/b6/d3/d3bcec455cb074a0a8f6c1540e1687d553269591dc3e210c2818f9512faa/batched-0.1.3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:06:17.613111Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "starco-utility",
       "project_version": "1.1.4",
       "url": "https://files.pythonhosted.org/packages/9b/4e/68d30ddcfc8171514e3f4ef8c4e77774d903681def83d02ba4797f7b8e7c/starco_utility-1.1.4-py3-none-any.whl",
       "upload_time": "2024-12-13T10:06:18.975060Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "batched",
       "project_version": "0.1.3",
       "url": "https://files.pythonhosted.org/packages/3e/de/8131a9e97d643231cee00163bcbd0aef9070602bddcd412e583cf682c218/batched-0.1.3.tar.gz",
       "upload_time": "2024-12-13T10:06:20.360971Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "starco-utility",
       "project_version": "1.1.4",
       "url": "https://files.pythonhosted.org/packages/f7/bb/6740a4a2fc5d81dbdc367fbfe5006b0285dd6f0af1467a2c33744e00c648/starco_utility-1.1.4.tar.gz",
       "upload_time": "2024-12-13T10:06:23.120396Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "localstack-core",
       "project_version": "4.0.4.dev43",
       "url": "https://files.pythonhosted.org/packages/ce/11/1bfb2351b4164819c85fd34c4bc244839b535f09fd89ce3f99da1091ca5e/localstack_core-4.0.4.dev43-py3-none-any.whl",
       "upload_time": "2024-12-13T10:06:32.720977Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "localstack-core",
       "project_version": "4.0.4.dev43",
       "url": "https://files.pythonhosted.org/packages/ec/39/e81b43f1580861d92d429b3e93713b6a5d2b58e3bc262402700461d2458b/localstack_core-4.0.4.dev43.tar.gz",
       "upload_time": "2024-12-13T10:06:38.504027Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "cdk8s-plone",
       "project_version": "0.0.51",
       "url": "https://files.pythonhosted.org/packages/a9/30/e4825c220bedc50bed27df4f10f2760aca158a9209adc5cad8da0948b774/cdk8s_plone-0.0.51-py3-none-any.whl",
       "upload_time": "2024-12-13T10:06:56.189767Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "cmd-llm-chat",
       "project_version": "0.1.0",
       "url": "https://files.pythonhosted.org/packages/9a/95/5c3aed7bbfa0d144376c883a43974ffc6646871bce3781361c1f506a0f10/cmd_llm_chat-0.1.0-py3-none-any.whl",
       "upload_time": "2024-12-13T10:06:56.726941Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "odoo-addon-sale-category-pricelist",
       "project_version": "16.0.1.0.0.2",
       "url": "https://files.pythonhosted.org/packages/c6/ac/d1766173c73f074d8cff6e7b26a33d62b06f1b121c51b685f8651fb9af7b/odoo_addon_sale_category_pricelist-16.0.1.0.0.2-py3-none-any.whl",
       "upload_time": "2024-12-13T10:06:59.520503Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "cdk8s-plone",
       "project_version": "0.0.51",
       "url": "https://files.pythonhosted.org/packages/1d/01/c84a15609afb18b93bc533b9251fd08c7cda8d3326740e729be66693247b/cdk8s_plone-0.0.51.tar.gz",
       "upload_time": "2024-12-13T10:06:59.659195Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "cmd-llm-chat",
       "project_version": "0.1.0",
       "url": "https://files.pythonhosted.org/packages/50/ef/0527afc8a48a7164d99cbcc12bf9a8b7a7f4c07eb237ae3e542682d33b5c/cmd_llm_chat-0.1.0.tar.gz",
       "upload_time": "2024-12-13T10:07:01.507411Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "odoo-addon-sale-stock-deposit",
       "project_version": "16.0.1.1.2.1",
       "url": "https://files.pythonhosted.org/packages/47/03/5fe51788ea8ff8a7a725156ddbd244847ee2a90d7cf0f7005ab0a5ee7106/odoo_addon_sale_stock_deposit-16.0.1.1.2.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:07:11.464255Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "openmetadata-managed-apis",
       "project_version": "1.5.14.1",
       "url": "https://files.pythonhosted.org/packages/c3/40/ac6a2fa6f02f041426ec9eae10395af5046d3baf2f026b71229625feee19/openmetadata_managed_apis-1.5.14.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:07:17.066742Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "openmetadata-managed-apis",
       "project_version": "1.5.14.1",
       "url": "https://files.pythonhosted.org/packages/90/67/fd84c76e930ee6be6ff1f70a4ff5c110b9df56b0882074ab322c7722b4be/openmetadata_managed_apis-1.5.14.1.tar.gz",
       "upload_time": "2024-12-13T10:07:19.170589Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "fast-trans-obj",
       "project_version": "0.0.1",
       "url": "https://files.pythonhosted.org/packages/df/87/6128f90aad5c887e3f2bc89262aa69790e909048ca6d69bcdae0f9d19c7b/fast_trans_obj-0.0.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:07:26.196145Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "fast-trans-obj",
       "project_version": "0.0.1",
       "url": "https://files.pythonhosted.org/packages/8f/22/aad6e253c7635e16f339e7e2147ca8280f15962322b9154ed1c1852be368/fast-trans-obj-0.0.1.tar.gz",
       "upload_time": "2024-12-13T10:07:29.262107Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "jst-aicommit",
       "project_version": "1.3",
       "url": "https://files.pythonhosted.org/packages/86/42/233e08b00bf52fe0ccf54a07c3438f5c7ccfd9edd256935bddef2b88e1f7/jst_aicommit-1.3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:08:12.866435Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "jst-aicommit",
       "project_version": "1.3",
       "url": "https://files.pythonhosted.org/packages/cb/c1/47b1b3f65ccef1cf5d2af7e59f01451732d6acecd4959a67cfb3d5edbdf2/jst_aicommit-1.3.tar.gz",
       "upload_time": "2024-12-13T10:08:13.917396Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "verify-oidc-identity",
       "project_version": "0.4.8",
       "url": "https://files.pythonhosted.org/packages/80/05/e2af886c1887772b91bca65f543236391e34488f1a8d7e4d27f44d51c7c8/verify_oidc_identity-0.4.8-py3-none-any.whl",
       "upload_time": "2024-12-13T10:08:20.075212Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "verify-oidc-identity",
       "project_version": "0.4.8",
       "url": "https://files.pythonhosted.org/packages/d8/d7/498ac5ab9a02854c46a5874485f0623f8d8be276cb308d3dab9b7f2433fe/verify_oidc_identity-0.4.8.tar.gz",
       "upload_time": "2024-12-13T10:08:22.442953Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "digimat.mbio",
       "project_version": "0.1.101",
       "url": "https://files.pythonhosted.org/packages/24/85/b5c6f5fff33ef5fed4f61e08621721cf07fd3b9090a084cd6f3c8c424f8e/digimat_mbio-0.1.101.tar.gz",
       "upload_time": "2024-12-13T10:08:22.967947Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "tui-dsg",
       "project_version": "202412130955",
       "url": "https://files.pythonhosted.org/packages/1e/b6/3b59b59b746508c4aabe7f80a364fe28686fc95c82c2a354fdcf9e4c347b/tui_dsg-202412130955-py3-none-any.whl",
       "upload_time": "2024-12-13T10:08:26.188974Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "tui-dsg",
       "project_version": "202412130955",
       "url": "https://files.pythonhosted.org/packages/4c/04/f3a64dd4462c9c6e56d55c9c9b111398fca8b01fd0ed24d16efa1eba0f0a/tui_dsg-202412130955.tar.gz",
       "upload_time": "2024-12-13T10:08:31.092689Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "modal",
       "project_version": "0.68.11",
       "url": "https://files.pythonhosted.org/packages/1a/94/c4263a915d1047a18b3e1ac03a9dd0c41582172a69fce12f3d2cfc3d9814/modal-0.68.11-py3-none-any.whl",
       "upload_time": "2024-12-13T10:09:47.069731Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "rcplus_alloy_common",
       "project_version": "7.3.1",
       "url": "https://files.pythonhosted.org/packages/5d/4c/3a4c156ec368465f282a1b86d302db2ac21b5d637c839a870c79955fb6db/rcplus_alloy_common-7.3.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:10:50.765771Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "rcplus_alloy_common",
       "project_version": "7.3.1",
       "url": "https://files.pythonhosted.org/packages/4c/83/f691e0b958f048ada123080c3c4bfb80da57616ddf947599dc3ad7d723ba/rcplus_alloy_common-7.3.1.tar.gz",
       "upload_time": "2024-12-13T10:10:52.179577Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "starco-utility",
       "project_version": "1.1.5",
       "url": "https://files.pythonhosted.org/packages/45/b7/6a494a4ae68532a45657e104dbc523e971e6aab967dabf6ed34e35f1369a/starco_utility-1.1.5-py3-none-any.whl",
       "upload_time": "2024-12-13T10:11:27.115294Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "starco-utility",
       "project_version": "1.1.5",
       "url": "https://files.pythonhosted.org/packages/f9/c5/f7a8bcf043673036da3274da0e86424446fc8d48ca0f76d73a8a321199b5/starco_utility-1.1.5.tar.gz",
       "upload_time": "2024-12-13T10:11:32.109868Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "adamapi",
       "project_version": "2.2.2.3",
       "url": "https://files.pythonhosted.org/packages/23/be/c2d983a84b4f66ec9666cf653fd47f96d453c1f67a304dff2037b1542528/adamapi-2.2.2.3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:11:46.089480Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "adamapi",
       "project_version": "2.2.2.3",
       "url": "https://files.pythonhosted.org/packages/94/aa/d228d866ef4569c140abb45d3e973a62f4aa5e1e6a8a9ed86f25add32d94/adamapi-2.2.2.3.tar.gz",
       "upload_time": "2024-12-13T10:11:47.356287Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "airavata-python-sdk-test",
       "project_version": "0.0.6.post3",
       "url": "https://files.pythonhosted.org/packages/8f/22/67469b548de602e92a32972eed0b4f55253a547fcf5bcce0d8fc44b7fddb/airavata_python_sdk_test-0.0.6.post3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:12:04.626840Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "airavata-python-sdk-test",
       "project_version": "0.0.6.post3",
       "url": "https://files.pythonhosted.org/packages/1d/18/6536a5a279d27638ef234be6a8ccf17d252344498f2688c8e705785a160b/airavata_python_sdk_test-0.0.6.post3.tar.gz",
       "upload_time": "2024-12-13T10:12:08.422939Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "paddlenlp",
       "project_version": "3.0.0b3",
       "url": "https://files.pythonhosted.org/packages/bd/73/58044034d57ffde8a1a132fa35f2ecbee991b68d00ee83dc802eb70ad000/paddlenlp-3.0.0b3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:12:22.490985Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "starco-utility",
       "project_version": "1.1.6",
       "url": "https://files.pythonhosted.org/packages/28/1c/d19df5d643565b17503b8ccb37e8ab999b43baa3e20c0ff4cb1a84c8e03c/starco_utility-1.1.6-py3-none-any.whl",
       "upload_time": "2024-12-13T10:12:27.160461Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "paddlenlp",
       "project_version": "3.0.0b3",
       "url": "https://files.pythonhosted.org/packages/03/69/ac444996d4700a506eabd729805e4c639cc343b7eb6086fac36c82e1f993/paddlenlp-3.0.0b3.tar.gz",
       "upload_time": "2024-12-13T10:12:27.425222Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "pyedifice",
       "project_version": "2.8.0",
       "url": "https://files.pythonhosted.org/packages/83/de/060547b638d81723bd9d32fab5a9adb0d0a6069f06d4a097b13e6969ab4e/pyedifice-2.8.0-py3-none-any.whl",
       "upload_time": "2024-12-13T10:12:32.255081Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "starco-utility",
       "project_version": "1.1.6",
       "url": "https://files.pythonhosted.org/packages/c7/af/2f68d0dcf7285977fdb266ef774cf56a3c1b096644a6ee500aa26e9cd39b/starco_utility-1.1.6.tar.gz",
       "upload_time": "2024-12-13T10:12:33.513639Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "pyedifice",
       "project_version": "2.8.0",
       "url": "https://files.pythonhosted.org/packages/81/9d/7577723f920b2a9428d82cd957f9ad50cf4f8347fdceebdd63f94c3ec411/pyedifice-2.8.0.tar.gz",
       "upload_time": "2024-12-13T10:12:35.745479Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "blueapi",
       "project_version": "0.6.2rc2",
       "url": "https://files.pythonhosted.org/packages/c8/30/85c1e8c6b781862ce6763ec1a57adeda6b7035fa1d34f6e1671e8d5b26f2/blueapi-0.6.2rc2-py3-none-any.whl",
       "upload_time": "2024-12-13T10:12:39.939722Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "blueapi",
       "project_version": "0.6.2rc2",
       "url": "https://files.pythonhosted.org/packages/fd/21/7e6e749f01533c9a549b5f8e6703184935ad3106ceb5042dbd53c391f415/blueapi-0.6.2rc2.tar.gz",
       "upload_time": "2024-12-13T10:12:41.192400Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "sts1-sensors",
       "project_version": "0.3.5",
       "url": "https://files.pythonhosted.org/packages/20/5e/052d015d79b431e70de5951156282f5299bab291b2b1bb7d2d52a5fede8a/sts1_sensors-0.3.5-py3-none-any.whl",
       "upload_time": "2024-12-13T10:12:41.834782Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "sts1-sensors",
       "project_version": "0.3.5",
       "url": "https://files.pythonhosted.org/packages/f7/bf/32017af5e296f21b4b3e3770812d5a51e3539e378ffafc635051aa888ec0/sts1_sensors-0.3.5.tar.gz",
       "upload_time": "2024-12-13T10:12:44.955043Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "gordo",
       "project_version": "6.0.4",
       "url": "https://files.pythonhosted.org/packages/e7/70/88a2cfca8428805253aea4758f2433ea59e851bc320aad4efc0da3743725/gordo-6.0.4-py3-none-any.whl",
       "upload_time": "2024-12-13T10:13:20.359407Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "gordo",
       "project_version": "6.0.4",
       "url": "https://files.pythonhosted.org/packages/69/0e/fedf39ab65670d92aa17f48e7cbe227c56c17180a33ce8e2d596bab3d3c1/gordo-6.0.4.tar.gz",
       "upload_time": "2024-12-13T10:13:24.584573Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "ai-edge-torch-nightly",
       "project_version": "0.3.0.dev20241213",
       "url": "https://files.pythonhosted.org/packages/de/93/b2fe012086eb250a66be02546ab379b932ce8ac72e4c93806cac55f78ee1/ai_edge_torch_nightly-0.3.0.dev20241213-py3-none-any.whl",
       "upload_time": "2024-12-13T10:13:45.401924Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "zeit.nightwatch",
       "project_version": "2.1.0",
       "url": "https://files.pythonhosted.org/packages/5d/2e/06f4f517fa02462168f7a00157860773d2c6a6940cbef8a9efe7c65a2f43/zeit_nightwatch-2.1.0-py2.py3-none-any.whl",
       "upload_time": "2024-12-13T10:13:46.445903Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "zeit.nightwatch",
       "project_version": "2.1.0",
       "url": "https://files.pythonhosted.org/packages/57/b7/ca04ecb68c2fd0f5ffc5ccb4280d3b4929c4139f9562346aee7519e456e2/zeit_nightwatch-2.1.0.tar.gz",
       "upload_time": "2024-12-13T10:13:49.430729Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "cmd-llm-chat",
       "project_version": "0.1.1",
       "url": "https://files.pythonhosted.org/packages/d3/26/f253637c22bfa1d6ca1bf2214c08bf08fe80f8e8960c31d51e762c1f748d/cmd_llm_chat-0.1.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:13:53.853290Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "cmd-llm-chat",
       "project_version": "0.1.1",
       "url": "https://files.pythonhosted.org/packages/f5/7d/bd4d24ea23ad8382581b5c526ffa5f10370c67eca2ad1bdb29718666407e/cmd_llm_chat-0.1.1.tar.gz",
       "upload_time": "2024-12-13T10:13:55.960868Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "EnergySystemModels",
       "project_version": "0.1.22.post7",
       "url": "https://files.pythonhosted.org/packages/1f/1d/90f6f90f51b5d60d4282dd129279a40dfa0dccba261648c7df7de2235698/EnergySystemModels-0.1.22.post7-py3-none-any.whl",
       "upload_time": "2024-12-13T10:14:22.963768Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "fast-trans-obj",
       "project_version": "0.0.2",
       "url": "https://files.pythonhosted.org/packages/23/2c/907415f7fbdfdc6657ce26e82ddc9935b36377f64885a05188e6128525a8/fast_trans_obj-0.0.2-py3-none-any.whl",
       "upload_time": "2024-12-13T10:14:54.951590Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "fast-trans-obj",
       "project_version": "0.0.2",
       "url": "https://files.pythonhosted.org/packages/bb/e4/4f0216cbd2051760b7f4223d868f3256954d7c9ecdf81e08fe0dab0ad6fc/fast-trans-obj-0.0.2.tar.gz",
       "upload_time": "2024-12-13T10:14:57.132694Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "webdrivermanager-cn",
       "project_version": "2.3.1",
       "url": "https://files.pythonhosted.org/packages/0e/f2/956585916e17e5816d240e1ade33d979254adfb48906868f87f1d6469e2d/webdrivermanager_cn-2.3.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:14:57.415274Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "c2cgeoportal-commons",
       "project_version": "2.9rc29",
       "url": "https://files.pythonhosted.org/packages/70/9d/e9bdc41738deaa3a4665aa0faa067c17c7996e2d8493836d184b93d016c3/c2cgeoportal_commons-2.9rc29-py3-none-any.whl",
       "upload_time": "2024-12-13T10:15:35.029289Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "c2cgeoportal-geoportal",
       "project_version": "2.9rc29",
       "url": "https://files.pythonhosted.org/packages/fb/a3/f97bba8a37289dadeb3e05d3b5b40728df6bce18b3c1be76bcb7242b354e/c2cgeoportal_geoportal-2.9rc29-py3-none-any.whl",
       "upload_time": "2024-12-13T10:15:38.040417Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "c2cgeoportal-admin",
       "project_version": "2.9rc29",
       "url": "https://files.pythonhosted.org/packages/c9/53/9356ef826770ed45de5931da798d0f00205a179efc3ee0b251262e03e2e9/c2cgeoportal_admin-2.9rc29-py3-none-any.whl",
       "upload_time": "2024-12-13T10:15:40.850459Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "mindee",
       "project_version": "4.16.0",
       "url": "https://files.pythonhosted.org/packages/83/c4/9cca6b55cd4ad835ca7a435927429f91676949c327b73d75bbcb982cf8b7/mindee-4.16.0-py3-none-any.whl",
       "upload_time": "2024-12-13T10:15:54.175486Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "mindee",
       "project_version": "4.16.0",
       "url": "https://files.pythonhosted.org/packages/84/24/bf3033093dd4ec483455b106a8f2ebb05cc8e403ea735f422c2ede0a0ecb/mindee-4.16.0.tar.gz",
       "upload_time": "2024-12-13T10:15:56.776512Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "otcextensions",
       "project_version": "0.32.7",
       "url": "https://files.pythonhosted.org/packages/99/3e/81f4e9c27b9246a8e51b3665c710f55d5653be7d7fd818882d389e212f24/otcextensions-0.32.7-py2.py3-none-any.whl",
       "upload_time": "2024-12-13T10:17:27.048053Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "otcextensions",
       "project_version": "0.32.7",
       "url": "https://files.pythonhosted.org/packages/e4/e8/9e5c3d6d001f227745192606c9ba0dd7d4aeb67d843239500dadba97e88d/otcextensions-0.32.7.tar.gz",
       "upload_time": "2024-12-13T10:17:29.897304Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "aopc",
       "project_version": "0.1.0",
       "url": "https://files.pythonhosted.org/packages/85/b3/5e7bb92de3ef6b55ac48518a0da20ce8eab18f8c3700be1eda9efbeb0169/aopc-0.1.0-py3-none-any.whl",
       "upload_time": "2024-12-13T10:17:50.407941Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "aopc",
       "project_version": "0.1.0",
       "url": "https://files.pythonhosted.org/packages/be/7b/28d89726af550d71d8fb7e2f8605621696db83ac54c7b3eb4c4b11539a62/aopc-0.1.0.tar.gz",
       "upload_time": "2024-12-13T10:17:52.984785Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "mdi-pil",
       "project_version": "1.1.1",
       "url": "https://files.pythonhosted.org/packages/25/86/bf932299a8442b8eb9a16aaf7f9b6f2d6eaf2b90b4b33c4dbc6bc85e00aa/mdi_pil-1.1.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:18:17.767888Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "mdi-pil",
       "project_version": "1.1.1",
       "url": "https://files.pythonhosted.org/packages/96/d1/fafdd16312159cb698207bd5a8c9dae7eb7ca5ea5892ea76dddc520c2faf/mdi_pil-1.1.1.tar.gz",
       "upload_time": "2024-12-13T10:18:20.150668Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "tbp-nightly",
       "project_version": "2.19.0a20241213",
       "url": "https://files.pythonhosted.org/packages/cf/7b/28630b854ca553dc8586aec2600dd8f590e20bb9a762c0fcb327a6d4131a/tbp_nightly-2.19.0a20241213-py3-none-any.whl",
       "upload_time": "2024-12-13T10:18:25.192101Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "vision_oslo_extension",
       "project_version": "3.3.0",
       "url": "https://files.pythonhosted.org/packages/14/99/e707272a40f9c66df19bf92e3b1595eb596097d579ceda99aa0fc6f4a22c/vision_oslo_extension-3.3.0-py3-none-any.whl",
       "upload_time": "2024-12-13T10:18:26.058741Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "tbp-nightly",
       "project_version": "2.19.0a20241213",
       "url": "https://files.pythonhosted.org/packages/c8/e9/3e50a9149f33626ad4f3a0b68bc5500c2d2d31b8c50adb7d140b1d1b4d65/tbp-nightly-2.19.0a20241213.tar.gz",
       "upload_time": "2024-12-13T10:18:29.740121Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "vision_oslo_extension",
       "project_version": "3.3.0",
       "url": "https://files.pythonhosted.org/packages/0e/72/3a873429481328455c4bb93853c6268d277a8803cd5d2b0d529bf857180b/vision_oslo_extension-3.3.0.tar.gz",
       "upload_time": "2024-12-13T10:18:44.056711Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "xn-client",
       "project_version": "0.0.3.dev2",
       "url": "https://files.pythonhosted.org/packages/93/af/3cafb3a2364e6663de236c7557aef11d6fa0b1aaaeeab4bf39b8e6774a02/xn_client-0.0.3.dev2-py3-none-any.whl",
       "upload_time": "2024-12-13T10:18:46.049373Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "xn-client",
       "project_version": "0.0.3.dev2",
       "url": "https://files.pythonhosted.org/packages/9f/8d/21019b6de33fd5731b2adbde5a92a78d74e11e9fc94343949960f75e9ab5/xn_client-0.0.3.dev2.tar.gz",
       "upload_time": "2024-12-13T10:18:48.475721Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "reclaim-python-sdk",
       "project_version": "0.1.4",
       "url": "https://files.pythonhosted.org/packages/e5/4b/5acc39415f486c62cef45beb7432d96c2796f4dc94e705c6e9cd1d6c267d/reclaim_python_sdk-0.1.4-py3-none-any.whl",
       "upload_time": "2024-12-13T10:18:53.483827Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "reclaim-python-sdk",
       "project_version": "0.1.4",
       "url": "https://files.pythonhosted.org/packages/7c/4a/126908476997ed23b6fcbeb4afcd2ce395da50e1576f119580e4aca490d6/reclaim_python_sdk-0.1.4.tar.gz",
       "upload_time": "2024-12-13T10:18:54.886656Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "stko",
       "project_version": "2024.12.13.1",
       "url": "https://files.pythonhosted.org/packages/e6/3a/cb36ce05aee505317ac24200ee8105493fb0b176f7890ce83cbf79054ef5/stko-2024.12.13.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:19:31.741039Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "stko",
       "project_version": "2024.12.13.1",
       "url": "https://files.pythonhosted.org/packages/57/64/6d1830c2204f3018b7948b9443b72b0727998526823e71f0622f64fbc394/stko-2024.12.13.1.tar.gz",
       "upload_time": "2024-12-13T10:19:33.176630Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "pyqqq",
       "project_version": "0.12.106",
       "url": "https://files.pythonhosted.org/packages/0d/00/3f4056787a181b37ec45f5efabf5b7a039ebe17e1160e876f875a4e8c785/pyqqq-0.12.106-py3-none-any.whl",
       "upload_time": "2024-12-13T10:19:55.612437Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "pyqqq",
       "project_version": "0.12.106",
       "url": "https://files.pythonhosted.org/packages/02/5e/e4ea4006cfdbad46d3e444a0290db25f618cd59560e19ec70e68843e8921/pyqqq-0.12.106.tar.gz",
       "upload_time": "2024-12-13T10:19:59.899316Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "dataos-sdk-py",
       "project_version": "1.0.0",
       "url": "https://files.pythonhosted.org/packages/ff/9a/d862de1b0b349f0f8dcfb9fba8c504ad0e02118576d520dd8abb83274526/dataos_sdk_py-1.0.0-py3-none-any.whl",
       "upload_time": "2024-12-13T10:20:08.370280Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "simo-sonos",
       "project_version": "1.2.11",
       "url": "https://files.pythonhosted.org/packages/2f/4d/d76acfafec3853658c0b1583ebd6717cd4141db788208d4e9c1e19cb7ed1/simo_sonos-1.2.11-py3-none-any.whl",
       "upload_time": "2024-12-13T10:20:19.376233Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "simo-sonos",
       "project_version": "1.2.11",
       "url": "https://files.pythonhosted.org/packages/ea/d7/f67dc2df6d5da4a0cb354e63d02e067c92832df6bf4449abb1164f4bc9a7/simo_sonos-1.2.11.tar.gz",
       "upload_time": "2024-12-13T10:20:21.892893Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "best403unlocker_py",
       "project_version": "0.0.2.0a4",
       "url": "https://files.pythonhosted.org/packages/8b/cd/ac179655bdeb8dbbb75615d13af2e97c7d6f14a9f508fb3bc26a0183b7bb/best403unlocker_py-0.0.2.0a4-py3-none-any.whl",
       "upload_time": "2024-12-13T10:20:27.272568Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "best403unlocker_py",
       "project_version": "0.0.2.0a4",
       "url": "https://files.pythonhosted.org/packages/07/56/7eb220d2f524077a820d073b2bd6f8ebf0a25e2fb6c8d774b7b7a7202551/best403unlocker_py-0.0.2.0a4.tar.gz",
       "upload_time": "2024-12-13T10:20:28.681934Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "fast-trans-obj",
       "project_version": "0.0.3",
       "url": "https://files.pythonhosted.org/packages/7f/0f/47fb2835f7f012cb972960b40831896724801f3dcb03f18a9842bfd3f82c/fast_trans_obj-0.0.3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:21:02.553222Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "fast-trans-obj",
       "project_version": "0.0.3",
       "url": "https://files.pythonhosted.org/packages/0d/1e/b7e1652feecca90bd457ff1ab2a2497f94b15028b56763082d13e74675bf/fast-trans-obj-0.0.3.tar.gz",
       "upload_time": "2024-12-13T10:21:04.092704Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "simo",
       "project_version": "2.7.12",
       "url": "https://files.pythonhosted.org/packages/be/80/6b6275c730499b0243f79b146892f57e3b44c1aa724e66717c40934c43ef/simo-2.7.12-py3-none-any.whl",
       "upload_time": "2024-12-13T10:21:16.502401Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "simo",
       "project_version": "2.7.12",
       "url": "https://files.pythonhosted.org/packages/a5/71/0e5e3475eec492a937ec92fac68b95cdc8b90c2935ea12f3242b9526a160/simo-2.7.12.tar.gz",
       "upload_time": "2024-12-13T10:21:24.788787Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "best403unlocker_py",
       "project_version": "0.0.2.0a5",
       "url": "https://files.pythonhosted.org/packages/54/69/81a6f831577078d60c7606118ec3df1fc938205c386d16c912e43d477263/best403unlocker_py-0.0.2.0a5-py3-none-any.whl",
       "upload_time": "2024-12-13T10:21:26.045892Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eprllib",
       "project_version": "1.5.1",
       "url": "https://files.pythonhosted.org/packages/a9/c2/a3857cda455b3032fbd7aeab54aecbb070b6120ad5758214ad8a16ca37df/eprllib-1.5.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:21:26.758726Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "best403unlocker_py",
       "project_version": "0.0.2.0a5",
       "url": "https://files.pythonhosted.org/packages/e1/54/d66df41add1bfe8ee737a1055525a62c78b2f9964123a70e09b4b94a2bd7/best403unlocker_py-0.0.2.0a5.tar.gz",
       "upload_time": "2024-12-13T10:21:27.354201Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "eprllib",
       "project_version": "1.5.1",
       "url": "https://files.pythonhosted.org/packages/63/2a/4daaa4c28fa51a22906b00d0a667f343556015a6cf0020d0030e62c8bf29/eprllib-1.5.1.tar.gz",
       "upload_time": "2024-12-13T10:21:33.424360Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "matchescu-matching",
       "project_version": "0.1.3",
       "url": "https://files.pythonhosted.org/packages/05/54/be4321bb45df9445d858cec0cef5a4aa390efdbbcc0cc0f7baa5c01e5c75/matchescu_matching-0.1.3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:22:10.396406Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "matchescu-matching",
       "project_version": "0.1.3",
       "url": "https://files.pythonhosted.org/packages/8e/31/1337ee7ecdc0803acb9488210977704b83c5f810ff18b26afb2ca9d9b9d4/matchescu_matching-0.1.3.tar.gz",
       "upload_time": "2024-12-13T10:22:13.313680Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "ephios",
       "project_version": "0.18.11",
       "url": "https://files.pythonhosted.org/packages/2c/e9/faf4b2ea2b1dda325aef9a838476cd447097f0dd0bbaa4972545c1e99f29/ephios-0.18.11-py3-none-any.whl",
       "upload_time": "2024-12-13T10:22:15.929568Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "ephios",
       "project_version": "0.18.11",
       "url": "https://files.pythonhosted.org/packages/35/b6/df1bd109b415863dd8c7180ddaccd480db85d7555069b652e4e1e07b0280/ephios-0.18.11.tar.gz",
       "upload_time": "2024-12-13T10:22:19.288700Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "sidradataquality",
       "project_version": "2024.8.14",
       "url": "https://files.pythonhosted.org/packages/4d/f5/2b4f582032ecb07ccb2bd294d3530053b92a05c3feeb5c735326b2a3d44d/sidradataquality-2024.8.14-py3-none-any.whl",
       "upload_time": "2024-12-13T10:22:37.443894Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "SidraDataQualityApiPythonClient",
       "project_version": "2024.8.14",
       "url": "https://files.pythonhosted.org/packages/72/ff/dce170543bb7a8fc52d413bab2f64542a93e9c0a3111d551dfffde4d5654/SidraDataQualityApiPythonClient-2024.8.14-py3-none-any.whl",
       "upload_time": "2024-12-13T10:23:07.940628Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "fsd",
       "project_version": "0.1.509",
       "url": "https://files.pythonhosted.org/packages/73/9a/c5090006bc2e89c20384a511ad4248e390271a52015cf0d58b4950f915fe/fsd-0.1.509-py3-none-any.whl",
       "upload_time": "2024-12-13T10:23:09.434073Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "odoo-addon-message-connector-base",
       "project_version": "15.0.1.0.0.2",
       "url": "https://files.pythonhosted.org/packages/03/ad/da7409bed7544785132d2228b1ad53182a176a178dd663341137db5204e8/odoo_addon_message_connector_base-15.0.1.0.0.2-py3-none-any.whl",
       "upload_time": "2024-12-13T10:23:13.337596Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "fsd",
       "project_version": "0.1.509",
       "url": "https://files.pythonhosted.org/packages/cd/ba/7bcaed61e8293f88066a3776d6c6451c701f8ff05542f4de212ba127aaaa/fsd-0.1.509.tar.gz",
       "upload_time": "2024-12-13T10:23:16.746207Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "flask-tabler-icons",
       "project_version": "3.24.0",
       "url": "https://files.pythonhosted.org/packages/8b/5d/47ce2762eeeebbbadbb6f832551f07b75dc6fe06605bf0b7c787dc6cf358/flask_tabler_icons-3.24.0-py3-none-any.whl",
       "upload_time": "2024-12-13T10:23:24.895676Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "xync-client",
       "project_version": "0.0.11.dev10",
       "url": "https://files.pythonhosted.org/packages/4b/55/f0e5fffa12e4c7e261a3bf721a9396ceeb046664d204a64164c4480e9929/xync_client-0.0.11.dev10-py3-none-any.whl",
       "upload_time": "2024-12-13T10:23:25.359692Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "flask-tabler-icons",
       "project_version": "3.24.0",
       "url": "https://files.pythonhosted.org/packages/6b/13/9cccbbbbf0fb81604250d543ad8aded84942ac238328b12b8dc375294caa/flask_tabler_icons-3.24.0.tar.gz",
       "upload_time": "2024-12-13T10:23:28.366009Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "xync-client",
       "project_version": "0.0.11.dev10",
       "url": "https://files.pythonhosted.org/packages/44/8e/1ad9c54f3c5841d7e4546afee1933381133a1a0f19ddeb6ea97bace6f2e9/xync_client-0.0.11.dev10.tar.gz",
       "upload_time": "2024-12-13T10:23:29.112353Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "ns1-python",
       "project_version": "0.23.0",
       "url": "https://files.pythonhosted.org/packages/a6/3a/776325c3bcaec8dd35814015697f3e088a7c6189bebd300e8fd3ad7c3ef9/ns1_python-0.23.0-py2.py3-none-any.whl",
       "upload_time": "2024-12-13T10:23:32.259455Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "ns1-python",
       "project_version": "0.23.0",
       "url": "https://files.pythonhosted.org/packages/97/1b/7772b112a84cfdd6c5671923a191e7184cb9857e2ae5eb6bb82cb3a3787e/ns1-python-0.23.0.tar.gz",
       "upload_time": "2024-12-13T10:23:34.184664Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "cmd-llm-chat",
       "project_version": "0.1.2",
       "url": "https://files.pythonhosted.org/packages/b7/8d/373758da6908119c36fcfe76b626ed1907cdbe641a8f53178299009dc29d/cmd_llm_chat-0.1.2-py3-none-any.whl",
       "upload_time": "2024-12-13T10:23:48.935161Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "cmd-llm-chat",
       "project_version": "0.1.2",
       "url": "https://files.pythonhosted.org/packages/95/cf/bb9f91091e47a84728af678849ea67df1ea53baa5eff312882ea8392465f/cmd_llm_chat-0.1.2.tar.gz",
       "upload_time": "2024-12-13T10:23:51.669429Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "xid-xpl",
       "project_version": "0.0.3",
       "url": "https://files.pythonhosted.org/packages/8f/1a/e173393e490dfcb5777e50b4c3824f76fa328ffb717bdee360a532f022c5/xid_xpl-0.0.3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:24:06.417058Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "pulumi-nutanix",
       "project_version": "0.6.0",
       "url": "https://files.pythonhosted.org/packages/ac/9a/8903944b62bcbbcc72cd3c45d470c60977e90eeb54f64988449287779064/pulumi_nutanix-0.6.0.tar.gz",
       "upload_time": "2024-12-13T10:24:06.670473Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "xid-xpl",
       "project_version": "0.0.3",
       "url": "https://files.pythonhosted.org/packages/96/8f/67bebf5acd87723144e916db546f20c47d05857aff03a759acd7ae22039b/xid_xpl-0.0.3.tar.gz",
       "upload_time": "2024-12-13T10:24:07.904864Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "sourcepp",
       "project_version": "2024.12.13.dev1",
       "url": "https://files.pythonhosted.org/packages/08/46/e65275f72d4614840c88bcd7ec7451a9fd7e8f501c4f050ad62d3e44e13f/sourcepp-2024.12.13.dev1.tar.gz",
       "upload_time": "2024-12-13T10:24:45.860332Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "keboola-streamlit",
       "project_version": "0.0.8",
       "url": "https://files.pythonhosted.org/packages/a4/d9/d5cc0d04621ce69c23c0dea364b3f39ddf30de084f6ab9b346ee23a02706/keboola_streamlit-0.0.8-py3-none-any.whl",
       "upload_time": "2024-12-13T10:24:56.025168Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "keboola-streamlit",
       "project_version": "0.0.8",
       "url": "https://files.pythonhosted.org/packages/19/d0/186c89f9ccb2c996567283e66dbe51d6867629f9e5c3e5fccdcf2c32d05e/keboola_streamlit-0.0.8.tar.gz",
       "upload_time": "2024-12-13T10:24:56.955418Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "ctraceback",
       "project_version": "1.2",
       "url": "https://files.pythonhosted.org/packages/b4/30/1d03da3f87d8df2de3d58ba873b284f97794a1a9dc8ebe310d712ab890e8/ctraceback-1.2-py3-none-any.whl",
       "upload_time": "2024-12-13T10:25:30.952307Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "ctraceback",
       "project_version": "1.2",
       "url": "https://files.pythonhosted.org/packages/e1/6c/79247521ee2d1187560e4be948705f5d7ddd19bd3c186a39a36f6a157a85/ctraceback-1.2.tar.gz",
       "upload_time": "2024-12-13T10:25:34.172730Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "felafax-cli",
       "project_version": "0.1.17",
       "url": "https://files.pythonhosted.org/packages/be/84/004895f854cdafc524d86a74fa003e28aecb149315a29daa02c7e2a0ba68/felafax_cli-0.1.17-py3-none-any.whl",
       "upload_time": "2024-12-13T10:25:46.905964Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "felafax-cli",
       "project_version": "0.1.17",
       "url": "https://files.pythonhosted.org/packages/99/d3/29a8fe7353fff6fb8198a5e58be7c2dbae87e7fd63da413ffc5da3ec7826/felafax_cli-0.1.17.tar.gz",
       "upload_time": "2024-12-13T10:25:48.752485Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "ibek",
       "project_version": "3.1.1b4",
       "url": "https://files.pythonhosted.org/packages/57/44/2d3e4ad38fa8272639564148bae196118c9ee74ac59e383c1296c985d4ef/ibek-3.1.1b4-py3-none-any.whl",
       "upload_time": "2024-12-13T10:25:59.491809Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "ibek",
       "project_version": "3.1.1b4",
       "url": "https://files.pythonhosted.org/packages/45/18/c26dac1b3b313b3e98f8fc80f883239a841490e342ebfb274c2eb1474a9c/ibek-3.1.1b4.tar.gz",
       "upload_time": "2024-12-13T10:26:03.187020Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "starco-utility",
       "project_version": "1.1.7",
       "url": "https://files.pythonhosted.org/packages/c0/6c/2927cf1565f90f3e60d4cdcd06c8eb196babd23a3a84525e0e3e68c1dd67/starco_utility-1.1.7-py3-none-any.whl",
       "upload_time": "2024-12-13T10:26:09.307695Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "starco-utility",
       "project_version": "1.1.7",
       "url": "https://files.pythonhosted.org/packages/cc/74/d2d5265aeede2f39bc8d4249a3a9a5854a7ea13967df96efbe56d66c73ff/starco_utility-1.1.7.tar.gz",
       "upload_time": "2024-12-13T10:26:12.251010Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "balance-subscriber",
       "project_version": "0.0.1",
       "url": "https://files.pythonhosted.org/packages/e4/bc/6f288b64af140cfc64afd039ea9981cfb7bb24f67aaf55b60e1d59fe7133/balance_subscriber-0.0.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:26:20.867506Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "balance-subscriber",
       "project_version": "0.0.1",
       "url": "https://files.pythonhosted.org/packages/e4/f0/f32f6c12f2369e8b622ece41c60b586e1117654c4402cf944fbd8c8627f4/balance_subscriber-0.0.1.tar.gz",
       "upload_time": "2024-12-13T10:26:22.422285Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "joecomp",
       "project_version": "1.2.7.2",
       "url": "https://files.pythonhosted.org/packages/3e/63/0b45fed228793f6b3ab094b0b3ef1b4a7a043709e663ac9fa6f095d8eadb/joecomp-1.2.7.2-py3-none-any.whl",
       "upload_time": "2024-12-13T10:26:24.882264Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "joecomp",
       "project_version": "1.2.7.2",
       "url": "https://files.pythonhosted.org/packages/71/ce/05fdc661fdda9e9287f0a00718baedc41ff19cd07b4e244b64d721950dcc/joecomp-1.2.7.2.tar.gz",
       "upload_time": "2024-12-13T10:26:26.316116Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "actinia-module-plugin",
       "project_version": "2.7.0",
       "url": "https://files.pythonhosted.org/packages/2e/86/72b2d94706021f5841e6a70d4ddb1e505ec96b17061150c171a9b08661c7/actinia_module_plugin-2.7.0-py3-none-any.whl",
       "upload_time": "2024-12-13T10:26:27.878489Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "actinia-module-plugin",
       "project_version": "2.7.0",
       "url": "https://files.pythonhosted.org/packages/9a/fb/dc61e7c19502901ae53d73170feadb544d8e75f64aa98198c08336a55aa9/actinia_module_plugin-2.7.0.tar.gz",
       "upload_time": "2024-12-13T10:26:30.039901Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "EnergySystemModels",
       "project_version": "0.1.22.post8",
       "url": "https://files.pythonhosted.org/packages/03/0f/7bc335033a265e1d912d571c1b22c5e6c44b7a89cf515362b91492782844/EnergySystemModels-0.1.22.post8-py3-none-any.whl",
       "upload_time": "2024-12-13T10:28:06.352216Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "ohme",
       "project_version": "1.1.1",
       "url": "https://files.pythonhosted.org/packages/0c/6d/46dc3898f7bf646962ca24964c0c09ad0cdec5558593e9d32aed0b57591c/ohme-1.1.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:28:13.864972Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "ohme",
       "project_version": "1.1.1",
       "url": "https://files.pythonhosted.org/packages/7c/c0/4c54aeac7da9da9f78ddb5b0f45c6dbda83efa1daefbe3b00ed1a0ae3cf4/ohme-1.1.1.tar.gz",
       "upload_time": "2024-12-13T10:28:15.796682Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "bpkio-cli",
       "project_version": "2.6.0",
       "url": "https://files.pythonhosted.org/packages/41/09/15fb2d354955224f5a40360edf4457a2cd3d6063505356b507ece14013c0/bpkio_cli-2.6.0-py3-none-any.whl",
       "upload_time": "2024-12-13T10:29:08.118759Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "bpkio-cli",
       "project_version": "2.6.0",
       "url": "https://files.pythonhosted.org/packages/1f/87/1a875af029f99e2635d345fa31640d2888fccd69b7bd7e66cf48ecc2090b/bpkio_cli-2.6.0.tar.gz",
       "upload_time": "2024-12-13T10:29:10.876333Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "nucliadb",
       "project_version": "6.1.0.post2569",
       "url": "https://files.pythonhosted.org/packages/cf/98/d2cf0fa72e38d8d68c0d32d7c1611a43ae451ca3e893a87ad677172b55c6/nucliadb-6.1.0.post2569-py3-none-any.whl",
       "upload_time": "2024-12-13T10:29:23.102721Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "nucliadb-dataset",
       "project_version": "6.1.0.post2569",
       "url": "https://files.pythonhosted.org/packages/a0/a8/89a1736855c657e9fc3721c8d7d5e69844ee2567b18674db4126af14919b/nucliadb_dataset-6.1.0.post2569-py3-none-any.whl",
       "upload_time": "2024-12-13T10:29:27.116416Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "nucliadb-models",
       "project_version": "6.1.0.post2569",
       "url": "https://files.pythonhosted.org/packages/1c/9e/8aad8fdc7bea08f768503f94c5ad9b0aea4e13773108e82532f5b78cfe87/nucliadb_models-6.1.0.post2569-py3-none-any.whl",
       "upload_time": "2024-12-13T10:29:30.097510Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "nucliadb-protos",
       "project_version": "6.1.0.post2569",
       "url": "https://files.pythonhosted.org/packages/46/04/a89cd963fa18a0476e7aff2c6b2a2a9173e4dae8b0055881b820a3339cef/nucliadb_protos-6.1.0.post2569-py3-none-any.whl",
       "upload_time": "2024-12-13T10:29:34.367707Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "fast-trans-obj",
       "project_version": "0.0.4",
       "url": "https://files.pythonhosted.org/packages/3c/86/6b1a34ecf829663f78121bae1945a7c6c48d72c4998ab675a39fc039b0ed/fast_trans_obj-0.0.4-py3-none-any.whl",
       "upload_time": "2024-12-13T10:29:34.922992Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "nonebot-plugin-ollama",
       "project_version": "0.1.2",
       "url": "https://files.pythonhosted.org/packages/5b/e6/61ad6beb142242915cf9b8c352340545906bfedccfd3eafba5d6ebaaae38/nonebot_plugin_ollama-0.1.2-py3-none-any.whl",
       "upload_time": "2024-12-13T10:29:35.591396Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "nucliadb-sdk",
       "project_version": "6.1.0.post2569",
       "url": "https://files.pythonhosted.org/packages/16/17/de48699cf450fe66f0f6a887ee1b9d463f46403dde565deb6ba4732d9c8f/nucliadb_sdk-6.1.0.post2569-py3-none-any.whl",
       "upload_time": "2024-12-13T10:29:37.503094Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "fast-trans-obj",
       "project_version": "0.0.4",
       "url": "https://files.pythonhosted.org/packages/20/43/319f4e6fcf67ee1c88d71130aadade6ce520ae466cf4f1810af11e9ebe1b/fast_trans_obj-0.0.4.tar.gz",
       "upload_time": "2024-12-13T10:29:38.042498Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "nonebot-plugin-ollama",
       "project_version": "0.1.2",
       "url": "https://files.pythonhosted.org/packages/0e/c0/36d3485282b843934dca5b81a9775f840515ede48e043290d155c00e5ea5/nonebot_plugin_ollama-0.1.2.tar.gz",
       "upload_time": "2024-12-13T10:29:38.904150Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "nucliadb-telemetry",
       "project_version": "6.1.0.post2569",
       "url": "https://files.pythonhosted.org/packages/ee/f5/2771fd10defeac2125155e4dc0f3e52e7ef1a547914b522487807a5e0387/nucliadb_telemetry-6.1.0.post2569-py3-none-any.whl",
       "upload_time": "2024-12-13T10:29:40.939154Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "nucliadb-utils",
       "project_version": "6.1.0.post2569",
       "url": "https://files.pythonhosted.org/packages/91/65/9a1bd268f2117c17efce02bc7c81f155e746e0d380f86f733394e8d36bd0/nucliadb_utils-6.1.0.post2569-py3-none-any.whl",
       "upload_time": "2024-12-13T10:29:43.889448Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "iaparc-inference",
       "project_version": "0.6.4",
       "url": "https://files.pythonhosted.org/packages/7b/eb/27008b0c18a0f9239482efe915268df091819af01c2c50f0472f0f2e0dd9/iaparc_inference-0.6.4-py3-none-any.whl",
       "upload_time": "2024-12-13T10:29:44.129863Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "iaparc-inference",
       "project_version": "0.6.4",
       "url": "https://files.pythonhosted.org/packages/b2/8a/125c775deaaa1faa2fd917ea1d993d04a29a6037660461eebd125ddbed8e/iaparc_inference-0.6.4.tar.gz",
       "upload_time": "2024-12-13T10:29:47.532007Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "camsai-standards",
       "project_version": "2024.12.13.post1",
       "url": "https://files.pythonhosted.org/packages/12/f3/1c9cb0b9b40a0dec80bdffb7692da855e40dba6fb184000f36431464d40d/camsai_standards-2024.12.13.post1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:29:58.870931Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "camsai-standards",
       "project_version": "2024.12.13.post1",
       "url": "https://files.pythonhosted.org/packages/a2/d1/c8ad17a1f932068165af7ca6ef5f3b2861fcc29f50c0246ba2b66fe301f4/camsai_standards-2024.12.13.post1.tar.gz",
       "upload_time": "2024-12-13T10:29:59.924950Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "lkj",
       "project_version": "0.1.33",
       "url": "https://files.pythonhosted.org/packages/cb/00/760238f3ca703250887d04ceb16a5367b51b77c7060094e931e27eba1bc6/lkj-0.1.33-py3-none-any.whl",
       "upload_time": "2024-12-13T10:30:20.741349Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "lkj",
       "project_version": "0.1.33",
       "url": "https://files.pythonhosted.org/packages/fe/d3/552310f3d5a3e0b8fe1d24ddde99fca5b4c29167b5a66adcec0a8a525bb9/lkj-0.1.33.tar.gz",
       "upload_time": "2024-12-13T10:30:22.708472Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "PYield",
       "project_version": "0.25.3",
       "url": "https://files.pythonhosted.org/packages/c5/9b/20092cd8ec41351b270a96ed36363a9a7b54f02de5268c70f5f47a36609a/pyield-0.25.3-py3-none-any.whl",
       "upload_time": "2024-12-13T10:30:34.170370Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "PYield",
       "project_version": "0.25.3",
       "url": "https://files.pythonhosted.org/packages/11/4f/e66aa6e43e13f60d22a0e119cfa27bffea970829b9e1ceef8f7c62d99be5/pyield-0.25.3.tar.gz",
       "upload_time": "2024-12-13T10:30:37.143863Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "xinference-client",
       "project_version": "1.1.0",
       "url": "https://files.pythonhosted.org/packages/1c/87/a783486cfc54668ab10b5d584101b960f412e287919e158ce6979e14a140/xinference_client-1.1.0-py3-none-any.whl",
       "upload_time": "2024-12-13T10:30:39.477403Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "xinference-client",
       "project_version": "1.1.0",
       "url": "https://files.pythonhosted.org/packages/40/76/2cba4b9c579a3b66883ef8589964138a17b274a18de819a4b0940bff7e3a/xinference-client-1.1.0.tar.gz",
       "upload_time": "2024-12-13T10:30:41.741860Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "jst-django",
       "project_version": "3.5",
       "url": "https://files.pythonhosted.org/packages/c9/d6/c251bb1bb7137943e3a8ab6f73be2fc0abf47232b08b6adb74d0fbf2ca8b/jst_django-3.5-py3-none-any.whl",
       "upload_time": "2024-12-13T10:30:42.420540Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "jst-django",
       "project_version": "3.5",
       "url": "https://files.pythonhosted.org/packages/9a/36/cfc8db7799b10f2dcb54adba9a8dc691f0a0c58da8d5b3aeb25fbbc6147f/jst_django-3.5.tar.gz",
       "upload_time": "2024-12-13T10:30:45.193551Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "kcli",
       "project_version": "99.0.202412131031",
       "url": "https://files.pythonhosted.org/packages/7c/ac/ae66da3f3f62466885f81d44671237243890344223ceb624aaa71fc49ad6/kcli-99.0.202412131031-py3-none-any.whl",
       "upload_time": "2024-12-13T10:31:07.095959Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "kcli",
       "project_version": "99.0.202412131031",
       "url": "https://files.pythonhosted.org/packages/77/d5/9bbbb6521eab57dd23a2b12accf6ae2fd0a4de8628fdc68e1e193a2c8b20/kcli-99.0.202412131031.tar.gz",
       "upload_time": "2024-12-13T10:31:10.632312Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "jupyterlite-xeus",
       "project_version": "3.0.0a0",
       "url": "https://files.pythonhosted.org/packages/6d/2d/2ddfa3d39a541b5be9c2778742aab0c9a7327898455d90928a103ef517f3/jupyterlite_xeus-3.0.0a0-py3-none-any.whl",
       "upload_time": "2024-12-13T10:31:45.173008Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "pywikibot",
       "project_version": "9.6.1",
       "url": "https://files.pythonhosted.org/packages/d4/3c/579bd197076cdca75f7f1f09378210e0b48d6aa14c4d3f21097d16e867e2/pywikibot-9.6.1-py3-none-any.whl",
       "upload_time": "2024-12-13T10:31:47.163090Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "jupyterlite-xeus",
       "project_version": "3.0.0a0",
       "url": "https://files.pythonhosted.org/packages/a9/7f/1996733dbb4e5ab1c842b34ad931a5bc15781dd8605555ba29ff0b9b596d/jupyterlite_xeus-3.0.0a0.tar.gz",
       "upload_time": "2024-12-13T10:31:47.351426Z",
-      "processed": false
+      "processed": true
     },
     {
       "project_name": "pywikibot",
       "project_version": "9.6.1",
       "url": "https://files.pythonhosted.org/packages/a3/47/c3fbbb2ed869f0de1fa17736c5096831c2b30a852f3d4d51e365d2be1a43/pywikibot-9.6.1.tar.gz",
       "upload_time": "2024-12-13T10:31:50.679508Z",
-      "processed": false
+      "processed": true
     }
   ]
 }
