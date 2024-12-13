@@ -1,0 +1,5 @@
+numpy
+opencv
+pillow
+matplotlib
+ffmpeg-python

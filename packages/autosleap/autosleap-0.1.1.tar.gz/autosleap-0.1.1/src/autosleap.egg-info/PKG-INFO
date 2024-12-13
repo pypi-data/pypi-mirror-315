@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: autosleap
+Version: 0.1.1
+Summary: Python package to automate some aspects of SLEAP analysis.
+Author-email: Maxwell Madden <mxwllmadden@gmail.com>
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: opencv
+Requires-Dist: pillow
+Requires-Dist: matplotlib
+Requires-Dist: ffmpeg-python

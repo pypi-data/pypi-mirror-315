@@ -1,0 +1,2 @@
+[console_scripts]
+autosleap = autosleap.cli_parser:main
