@@ -1,0 +1,48 @@
+fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7fb107893e50>
+2024-12-13 03:01:07,685 | INFO | 140398334759360 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7fb107893e50>
+Build services
+2024-12-13 03:01:07,784 | INFO | 140398334759360 | Build services
+Create dependency injection Utilites
+2024-12-13 03:01:07,797 | INFO | 140398334759360 | Create dependency injection Utilites
+Create dependency injection Presentation
+2024-12-13 03:01:07,798 | INFO | 140398334759360 | Create dependency injection Presentation
+Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'upload': 'Upload from 1C pdf document service'}
+2024-12-13 03:01:07,824 | INFO | 140398334759360 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'upload': 'Upload from 1C pdf document service'}
+Inititalize DB
+2024-12-13 03:01:07,825 | INFO | 140398334759360 | Inititalize DB
+fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7f171ae23160>
+2024-12-13 03:04:15,610 | INFO | 139737232605632 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7f171ae23160>
+Build services
+2024-12-13 03:04:15,664 | INFO | 139737232605632 | Build services
+Create dependency injection Utilites
+2024-12-13 03:04:15,667 | INFO | 139737232605632 | Create dependency injection Utilites
+Create dependency injection Presentation
+2024-12-13 03:04:15,668 | INFO | 139737232605632 | Create dependency injection Presentation
+Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'upload': 'Upload from 1C pdf document service'}
+2024-12-13 03:04:15,683 | INFO | 139737232605632 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'upload': 'Upload from 1C pdf document service'}
+Inititalize DB
+2024-12-13 03:04:15,684 | INFO | 139737232605632 | Inititalize DB
+fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7f38137e7160>
+2024-12-13 03:06:18,359 | INFO | 139878844080576 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7f38137e7160>
+Build services
+2024-12-13 03:06:18,450 | INFO | 139878844080576 | Build services
+Create dependency injection Utilites
+2024-12-13 03:06:18,462 | INFO | 139878844080576 | Create dependency injection Utilites
+Create dependency injection Presentation
+2024-12-13 03:06:18,463 | INFO | 139878844080576 | Create dependency injection Presentation
+Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'upload': 'Upload from 1C pdf document service'}
+2024-12-13 03:06:18,486 | INFO | 139878844080576 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'upload': 'Upload from 1C pdf document service'}
+Inititalize DB
+2024-12-13 03:06:18,487 | INFO | 139878844080576 | Inititalize DB
+fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7f1301297160>
+2024-12-13 03:07:52,818 | INFO | 139719623209408 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7f1301297160>
+Build services
+2024-12-13 03:07:52,888 | INFO | 139719623209408 | Build services
+Create dependency injection Utilites
+2024-12-13 03:07:52,897 | INFO | 139719623209408 | Create dependency injection Utilites
+Create dependency injection Presentation
+2024-12-13 03:07:52,898 | INFO | 139719623209408 | Create dependency injection Presentation
+Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'upload': 'Upload from 1C pdf document service'}
+2024-12-13 03:07:52,919 | INFO | 139719623209408 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'upload': 'Upload from 1C pdf document service'}
+Inititalize DB
+2024-12-13 03:07:52,920 | INFO | 139719623209408 | Inititalize DB

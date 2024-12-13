@@ -1,0 +1,50 @@
+fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin
+2024-12-13 03:01:23,364 | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin
+{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}
+2024-12-13 03:01:23,364 | DEBUG | 140394126587456 | {'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}
+fwdi.Utilites.jwt_tools:admin
+2024-12-13 03:01:23,365 | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:admin
+fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fb00d6c60e0>
+2024-12-13 03:01:23,649 | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fb00d6c60e0>
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0
+2024-12-13 03:01:23,654 | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fb00d6c60e0>
+2024-12-13 03:01:33,695 | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fb00d6c60e0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-13 03:01:33,698 | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fb00d6c60e0>
+2024-12-13 03:01:51,847 | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fb00d6c60e0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-13 03:01:51,850 | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin
+2024-12-13 03:04:27,745 | DEBUG | 139733023446592 | fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin
+{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}
+2024-12-13 03:04:27,746 | DEBUG | 139733023446592 | {'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}
+fwdi.Utilites.jwt_tools:admin
+2024-12-13 03:04:27,747 | DEBUG | 139733023446592 | fwdi.Utilites.jwt_tools:admin
+fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f1621d76230>
+2024-12-13 03:04:28,030 | DEBUG | 139733023446592 | fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f1621d76230>
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMDY4fQ.KiQ7jKKpATM2C95RkHXuz0DZOX4FeAvPR14lE1C4_5g
+2024-12-13 03:04:28,032 | DEBUG | 139733023446592 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMDY4fQ.KiQ7jKKpATM2C95RkHXuz0DZOX4FeAvPR14lE1C4_5g
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMDY4fQ.KiQ7jKKpATM2C95RkHXuz0DZOX4FeAvPR14lE1C4_5g:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f1621d76230>
+2024-12-13 03:04:32,314 | DEBUG | 139733023446592 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMDY4fQ.KiQ7jKKpATM2C95RkHXuz0DZOX4FeAvPR14lE1C4_5g:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f1621d76230>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-13 03:04:32,317 | DEBUG | 139733023446592 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin
+2024-12-13 03:08:31,054 | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin
+{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}
+2024-12-13 03:08:31,055 | DEBUG | 139715417327168 | {'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}
+fwdi.Utilites.jwt_tools:admin
+2024-12-13 03:08:31,056 | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:admin
+fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f12073a70a0>
+2024-12-13 03:08:31,350 | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f12073a70a0>
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4
+2024-12-13 03:08:31,352 | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f12073a70a0>
+2024-12-13 03:08:35,073 | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f12073a70a0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-13 03:08:35,076 | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f12073a70a0>
+2024-12-13 03:10:35,053 | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f12073a70a0>
+fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-13 03:10:35,056 | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru

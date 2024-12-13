@@ -1,0 +1,419 @@
+2024-12-12 18:49:17,653 | passlib.utils.compat | DEBUG | 140475132424640 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-12-12 18:49:17,654 | passlib.utils.compat | DEBUG | 140475132424640 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-12-12 18:49:17,654 | passlib.utils.compat | DEBUG | 140475132424640 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-12-12 18:50:02,072 | passlib.utils.compat | DEBUG | 139636556849600 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-12-12 18:50:02,072 | passlib.utils.compat | DEBUG | 139636556849600 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-12-12 18:50:02,073 | passlib.utils.compat | DEBUG | 139636556849600 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-12-12 18:50:02,350 | faiss.loader | DEBUG | 139636556849600 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2024-12-12 18:50:02,351 | faiss.loader | INFO | 139636556849600 | Loading faiss with AVX512 support.
+2024-12-12 18:50:02,370 | faiss.loader | INFO | 139636556849600 | Successfully loaded faiss with AVX512 support.
+2024-12-12 18:50:34,658 | passlib.utils.compat | DEBUG | 140643241599424 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-12-12 18:50:34,659 | passlib.utils.compat | DEBUG | 140643241599424 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-12-12 18:50:34,659 | passlib.utils.compat | DEBUG | 140643241599424 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-12-12 18:50:34,982 | faiss.loader | DEBUG | 140643241599424 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2024-12-12 18:50:34,984 | faiss.loader | INFO | 140643241599424 | Loading faiss with AVX512 support.
+2024-12-12 18:50:35,014 | faiss.loader | INFO | 140643241599424 | Successfully loaded faiss with AVX512 support.
+2024-12-13 02:58:22,052 | passlib.utils.compat | DEBUG | 139738687062464 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-12-13 02:58:22,054 | passlib.utils.compat | DEBUG | 139738687062464 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-12-13 02:58:22,054 | passlib.utils.compat | DEBUG | 139738687062464 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-12-13 02:58:22,581 | faiss.loader | DEBUG | 139738687062464 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2024-12-13 02:58:22,582 | faiss.loader | INFO | 139738687062464 | Loading faiss with AVX512 support.
+2024-12-13 02:58:22,637 | faiss.loader | INFO | 139738687062464 | Successfully loaded faiss with AVX512 support.
+2024-12-13 02:59:54,659 | passlib.utils.compat | DEBUG | 140318967222720 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-12-13 02:59:54,660 | passlib.utils.compat | DEBUG | 140318967222720 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-12-13 02:59:54,660 | passlib.utils.compat | DEBUG | 140318967222720 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-12-13 02:59:54,923 | faiss.loader | DEBUG | 140318967222720 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2024-12-13 02:59:54,923 | faiss.loader | INFO | 140318967222720 | Loading faiss with AVX512 support.
+2024-12-13 02:59:54,943 | faiss.loader | INFO | 140318967222720 | Successfully loaded faiss with AVX512 support.
+2024-12-13 03:00:01,686 | pymorphy3.opencorpora_dict.wrapper | INFO | 140318967222720 | Loading dictionaries from /home/alitrix/projects/fwdi/env/lib/python3.10/site-packages/pymorphy3_dicts_ru/data
+2024-12-13 03:00:01,786 | pymorphy3.opencorpora_dict.wrapper | INFO | 140318967222720 | format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+2024-12-13 03:00:54,769 | passlib.utils.compat | DEBUG | 140398334759360 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-12-13 03:00:54,771 | passlib.utils.compat | DEBUG | 140398334759360 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-12-13 03:00:54,772 | passlib.utils.compat | DEBUG | 140398334759360 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-12-13 03:00:55,138 | faiss.loader | DEBUG | 140398334759360 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2024-12-13 03:00:55,138 | faiss.loader | INFO | 140398334759360 | Loading faiss with AVX512 support.
+2024-12-13 03:00:55,175 | faiss.loader | INFO | 140398334759360 | Successfully loaded faiss with AVX512 support.
+2024-12-13 03:01:01,874 | pymorphy3.opencorpora_dict.wrapper | INFO | 140398334759360 | Loading dictionaries from /home/alitrix/projects/fwdi/env/lib/python3.10/site-packages/pymorphy3_dicts_ru/data
+2024-12-13 03:01:01,983 | pymorphy3.opencorpora_dict.wrapper | INFO | 140398334759360 | format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+2024-12-13 03:01:07,681 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:01:07,683 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:01:07,685 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140398334759360 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7fb107893e50>
+2024-12-13 03:01:07,686 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | Create dependency injection Persistence
+2024-12-13 03:01:07,690 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | Create dependency injection Application
+2024-12-13 03:01:07,692 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | Create dependency injection Infrastructure
+2024-12-13 03:01:07,784 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140398334759360 | Build services
+2024-12-13 03:01:07,797 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140398334759360 | Create dependency injection Utilites
+2024-12-13 03:01:07,798 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140398334759360 | Create dependency injection Presentation
+2024-12-13 03:01:07,798 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7fb00ea58a00>>
+2024-12-13 03:01:07,801 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7fb00ea3ecb0>
+2024-12-13 03:01:07,824 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140398334759360 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'upload': 'Upload from 1C pdf document service'}
+2024-12-13 03:01:07,825 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 140398334759360 | Inititalize DB
+2024-12-13 03:01:07,832 | peewee | DEBUG | 140398334759360 | ('CREATE TABLE IF NOT EXISTS "permissions" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL)', [])
+2024-12-13 03:01:07,837 | peewee | DEBUG | 140398334759360 | ('CREATE TABLE IF NOT EXISTS "scope" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL, "description" VARCHAR(255) NOT NULL)', [])
+2024-12-13 03:01:07,838 | peewee | DEBUG | 140398334759360 | ('CREATE TABLE IF NOT EXISTS "permissions_scope_through" ("id" INTEGER NOT NULL PRIMARY KEY, "permissions_id" INTEGER NOT NULL, "scope_id" INTEGER NOT NULL, FOREIGN KEY ("permissions_id") REFERENCES "permissions" ("id"), FOREIGN KEY ("scope_id") REFERENCES "scope" ("id"))', [])
+2024-12-13 03:01:07,839 | peewee | DEBUG | 140398334759360 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id" ON "permissions_scope_through" ("permissions_id")', [])
+2024-12-13 03:01:07,839 | peewee | DEBUG | 140398334759360 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_scope_id" ON "permissions_scope_through" ("scope_id")', [])
+2024-12-13 03:01:07,840 | peewee | DEBUG | 140398334759360 | ('CREATE UNIQUE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id_scope_id" ON "permissions_scope_through" ("permissions_id", "scope_id")', [])
+2024-12-13 03:01:07,840 | peewee | DEBUG | 140398334759360 | ('CREATE TABLE IF NOT EXISTS "user" ("id" INTEGER NOT NULL PRIMARY KEY, "username" VARCHAR(255) NOT NULL, "full_name" VARCHAR(255) NOT NULL, "email" VARCHAR(255) NOT NULL, "hashed_password" VARCHAR(255) NOT NULL, "disabled" INTEGER NOT NULL, "scopes_id" INTEGER NOT NULL, FOREIGN KEY ("scopes_id") REFERENCES "permissions" ("id"))', [])
+2024-12-13 03:01:07,841 | peewee | DEBUG | 140398334759360 | ('CREATE INDEX IF NOT EXISTS "user_scopes_id" ON "user" ("scopes_id")', [])
+2024-12-13 03:01:07,843 | peewee | DEBUG | 140398334759360 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1"', [])
+2024-12-13 03:01:07,844 | peewee | DEBUG | 140398334759360 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1"', [])
+2024-12-13 03:01:07,845 | peewee | DEBUG | 140398334759360 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-12-13 03:01:07,845 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/document/add:<function DocumentEndpoint.add at 0x7fb0d24bcaf0>
+2024-12-13 03:01:07,849 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/document/add_raw:<function DocumentEndpoint.add_raw at 0x7fb0d24bcee0>
+2024-12-13 03:01:07,854 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/document/list:<function DocumentEndpoint.list_document at 0x7fb0d24bcf70>
+2024-12-13 03:01:07,861 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/document/change:<function DocumentEndpoint.change at 0x7fb0d24bd000>
+2024-12-13 03:01:07,865 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/document/delete:<function DocumentEndpoint.delete at 0x7fb0d24bd090>
+2024-12-13 03:01:07,871 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/list:<function ProjectEndpoint.list_project at 0x7fb0d24be440>
+2024-12-13 03:01:07,873 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/prepare:<function ProjectEndpoint.prepare at 0x7fb0d24bf130>
+2024-12-13 03:01:07,879 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/add_metrics:<function ProjectEndpoint.add_metric at 0x7fb0d24bf1c0>
+2024-12-13 03:01:07,885 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/proccessing:<function ProjectEndpoint.proccessing at 0x7fb0d24bf010>
+2024-12-13 03:01:07,892 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/embedding:<function ProjectEndpoint.embedding at 0x7fb0d24bf0a0>
+2024-12-13 03:01:07,895 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/create_vector:<function ProjectEndpoint.create_vector at 0x7fb0d24bf250>
+2024-12-13 03:01:07,899 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/create_lsilda:<function ProjectEndpoint.create_lsi_lda at 0x7fb0d24bf2e0>
+2024-12-13 03:01:07,904 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/upload:<function ProjectEndpoint.upload_to_service at 0x7fb0d24bedd0>
+2024-12-13 03:01:07,909 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/delete:<function ProjectEndpoint.delete at 0x7fb0d24bee60>
+2024-12-13 03:01:07,912 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/get_db:<function ProjectEndpoint.get_db at 0x7fb0d24beef0>
+2024-12-13 03:01:07,917 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/get_dump:<function ProjectEndpoint.get_dump at 0x7fb0d24bef80>
+2024-12-13 03:01:07,923 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/metric/list:<function MetricEndpoint.list at 0x7fb0d24bd1b0>
+2024-12-13 03:01:07,927 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/metric/add:<function MetricEndpoint.add at 0x7fb0d24bd240>
+2024-12-13 03:01:07,931 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/metric/update:<function MetricEndpoint.update at 0x7fb0d24bd2d0>
+2024-12-13 03:01:07,938 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/metric/del:<function MetricEndpoint.delete at 0x7fb0d24bd360>
+2024-12-13 03:01:07,945 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/test/v_search:<function SearchEndpoint.vector_search at 0x7fb0d24be710>
+2024-12-13 03:01:07,951 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/test/l_search:<function SearchEndpoint.lsi_search at 0x7fb0d24be7a0>
+2024-12-13 03:01:07,955 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/test/common_search:<function SearchEndpoint.common_search at 0x7fb0d24bf5b0>
+2024-12-13 03:01:07,960 | logs/ITSHelper_WebApplication.log | INFO | 140398334759360 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5005}
+2024-12-13 03:01:07,971 | asyncio | DEBUG | 140398334759360 | Using selector: EpollSelector
+2024-12-13 03:01:23,336 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_field_start with no data
+2024-12-13 03:01:23,336 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_field_name with data[0:10]
+2024-12-13 03:01:23,336 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_field_data with data[11:19]
+2024-12-13 03:01:23,336 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_field_end with no data
+2024-12-13 03:01:23,336 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_field_start with no data
+2024-12-13 03:01:23,336 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_field_name with data[20:28]
+2024-12-13 03:01:23,337 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_field_data with data[29:34]
+2024-12-13 03:01:23,337 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_field_end with no data
+2024-12-13 03:01:23,337 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_field_start with no data
+2024-12-13 03:01:23,337 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_field_name with data[35:43]
+2024-12-13 03:01:23,337 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_field_data with data[44:49]
+2024-12-13 03:01:23,338 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_field_end with no data
+2024-12-13 03:01:23,338 | python_multipart.multipart | DEBUG | 140398334759360 | Calling on_end with no data
+2024-12-13 03:01:23,357 | logs/ITSHelper_TokenController.log | DEBUG | 140394126587456 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7fb00d8385b0>
+2024-12-13 03:01:23,360 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 140394126587456 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7fb00d6c6e90>
+2024-12-13 03:01:23,360 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 140394126587456 | fwdi.Persistence.manager_db_context
+2024-12-13 03:01:23,362 | peewee | DEBUG | 140394126587456 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-12-13 03:01:23,363 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 140394126587456 | [{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]
+2024-12-13 03:01:23,364 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin:admin
+2024-12-13 03:01:23,364 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin
+2024-12-13 03:01:23,364 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140394126587456 | {'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}
+2024-12-13 03:01:23,365 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:01:23,365 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:admin
+2024-12-13 03:01:23,638 | logs/ITSHelper_TokenController.log | DEBUG | 140394126587456 | username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:01:23,640 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 140394126587456 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7fb00d6c6b90>:admin@admin.ru
+2024-12-13 03:01:23,640 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 140394126587456 | fwdi.Persistence.manager_db_context
+2024-12-13 03:01:23,641 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 140394126587456 | fwdi.Persistence.manager_db_context
+2024-12-13 03:01:23,642 | peewee | DEBUG | 140394126587456 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1" WHERE ("t1"."email" = ?) LIMIT ? OFFSET ?', ['admin@admin.ru', 1, 0])
+2024-12-13 03:01:23,643 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 140394126587456 | 1
+2024-12-13 03:01:23,644 | peewee | DEBUG | 140394126587456 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1" WHERE ("t1"."id" = ?) LIMIT ? OFFSET ?', [1, 1, 0])
+2024-12-13 03:01:23,646 | peewee | DEBUG | 140394126587456 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = ?)', [1])
+2024-12-13 03:01:23,647 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 140394126587456 | SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = 1)
+2024-12-13 03:01:23,648 | logs/ITSHelper_TokenController.log | DEBUG | 140394126587456 | ['admin']
+2024-12-13 03:01:23,649 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fb00d6c60e0>
+2024-12-13 03:01:23,654 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0
+2024-12-13 03:01:23,655 | logs/ITSHelper_TokenController.log | DEBUG | 140394126587456 | Create token :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0
+2024-12-13 03:01:33,695 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7fb00d838df0>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0
+2024-12-13 03:01:33,695 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+2024-12-13 03:01:33,695 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fb00d6c60e0>
+2024-12-13 03:01:33,697 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734622883}
+2024-12-13 03:01:33,697 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+2024-12-13 03:01:33,698 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 140394126587456 | fwdi.Persistence.manager_db_context
+2024-12-13 03:01:33,698 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-13 03:01:33,699 | peewee | DEBUG | 140394126587456 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-12-13 03:01:33,700 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:01:33,701 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:01:51,845 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7fb00ce877f0>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0
+2024-12-13 03:01:51,846 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+2024-12-13 03:01:51,847 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7fb00d6c60e0>
+2024-12-13 03:01:51,849 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734622883}
+2024-12-13 03:01:51,849 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+2024-12-13 03:01:51,849 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 140394126587456 | fwdi.Persistence.manager_db_context
+2024-12-13 03:01:51,850 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 140394126587456 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-13 03:01:51,851 | peewee | DEBUG | 140394126587456 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-12-13 03:01:51,852 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:01:51,853 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:04:03,497 | passlib.utils.compat | DEBUG | 139737232605632 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-12-13 03:04:03,497 | passlib.utils.compat | DEBUG | 139737232605632 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-12-13 03:04:03,498 | passlib.utils.compat | DEBUG | 139737232605632 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-12-13 03:04:03,960 | faiss.loader | DEBUG | 139737232605632 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2024-12-13 03:04:03,961 | faiss.loader | INFO | 139737232605632 | Loading faiss with AVX512 support.
+2024-12-13 03:04:04,003 | faiss.loader | INFO | 139737232605632 | Successfully loaded faiss with AVX512 support.
+2024-12-13 03:04:12,190 | pymorphy3.opencorpora_dict.wrapper | INFO | 139737232605632 | Loading dictionaries from /home/alitrix/projects/fwdi/env/lib/python3.10/site-packages/pymorphy3_dicts_ru/data
+2024-12-13 03:04:12,266 | pymorphy3.opencorpora_dict.wrapper | INFO | 139737232605632 | format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+2024-12-13 03:04:15,608 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:04:15,609 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:04:15,610 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139737232605632 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7f171ae23160>
+2024-12-13 03:04:15,610 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | Create dependency injection Persistence
+2024-12-13 03:04:15,611 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | Create dependency injection Application
+2024-12-13 03:04:15,611 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | Create dependency injection Infrastructure
+2024-12-13 03:04:15,664 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139737232605632 | Build services
+2024-12-13 03:04:15,667 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139737232605632 | Create dependency injection Utilites
+2024-12-13 03:04:15,668 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139737232605632 | Create dependency injection Presentation
+2024-12-13 03:04:15,668 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f1621df0b80>>
+2024-12-13 03:04:15,671 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f1621dd2e60>
+2024-12-13 03:04:15,683 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139737232605632 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'upload': 'Upload from 1C pdf document service'}
+2024-12-13 03:04:15,684 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139737232605632 | Inititalize DB
+2024-12-13 03:04:15,685 | peewee | DEBUG | 139737232605632 | ('CREATE TABLE IF NOT EXISTS "permissions" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL)', [])
+2024-12-13 03:04:15,686 | peewee | DEBUG | 139737232605632 | ('CREATE TABLE IF NOT EXISTS "scope" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL, "description" VARCHAR(255) NOT NULL)', [])
+2024-12-13 03:04:15,687 | peewee | DEBUG | 139737232605632 | ('CREATE TABLE IF NOT EXISTS "permissions_scope_through" ("id" INTEGER NOT NULL PRIMARY KEY, "permissions_id" INTEGER NOT NULL, "scope_id" INTEGER NOT NULL, FOREIGN KEY ("permissions_id") REFERENCES "permissions" ("id"), FOREIGN KEY ("scope_id") REFERENCES "scope" ("id"))', [])
+2024-12-13 03:04:15,688 | peewee | DEBUG | 139737232605632 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id" ON "permissions_scope_through" ("permissions_id")', [])
+2024-12-13 03:04:15,688 | peewee | DEBUG | 139737232605632 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_scope_id" ON "permissions_scope_through" ("scope_id")', [])
+2024-12-13 03:04:15,688 | peewee | DEBUG | 139737232605632 | ('CREATE UNIQUE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id_scope_id" ON "permissions_scope_through" ("permissions_id", "scope_id")', [])
+2024-12-13 03:04:15,689 | peewee | DEBUG | 139737232605632 | ('CREATE TABLE IF NOT EXISTS "user" ("id" INTEGER NOT NULL PRIMARY KEY, "username" VARCHAR(255) NOT NULL, "full_name" VARCHAR(255) NOT NULL, "email" VARCHAR(255) NOT NULL, "hashed_password" VARCHAR(255) NOT NULL, "disabled" INTEGER NOT NULL, "scopes_id" INTEGER NOT NULL, FOREIGN KEY ("scopes_id") REFERENCES "permissions" ("id"))', [])
+2024-12-13 03:04:15,689 | peewee | DEBUG | 139737232605632 | ('CREATE INDEX IF NOT EXISTS "user_scopes_id" ON "user" ("scopes_id")', [])
+2024-12-13 03:04:15,690 | peewee | DEBUG | 139737232605632 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1"', [])
+2024-12-13 03:04:15,691 | peewee | DEBUG | 139737232605632 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1"', [])
+2024-12-13 03:04:15,692 | peewee | DEBUG | 139737232605632 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-12-13 03:04:15,693 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/document/add:<function DocumentEndpoint.add at 0x7f16e5888c10>
+2024-12-13 03:04:15,697 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/document/add_raw:<function DocumentEndpoint.add_raw at 0x7f16e5889000>
+2024-12-13 03:04:15,702 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/document/list:<function DocumentEndpoint.list_document at 0x7f16e5889090>
+2024-12-13 03:04:15,707 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/document/change:<function DocumentEndpoint.change at 0x7f16e5889120>
+2024-12-13 03:04:15,710 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/document/delete:<function DocumentEndpoint.delete at 0x7f16e58891b0>
+2024-12-13 03:04:15,712 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/list:<function ProjectEndpoint.list_project at 0x7f16e588a560>
+2024-12-13 03:04:15,714 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/prepare:<function ProjectEndpoint.prepare at 0x7f16e588b250>
+2024-12-13 03:04:15,718 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/add_metrics:<function ProjectEndpoint.add_metric at 0x7f16e588b2e0>
+2024-12-13 03:04:15,721 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/proccessing:<function ProjectEndpoint.proccessing at 0x7f16e588b130>
+2024-12-13 03:04:15,726 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/embedding:<function ProjectEndpoint.embedding at 0x7f16e588b1c0>
+2024-12-13 03:04:15,729 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/create_vector:<function ProjectEndpoint.create_vector at 0x7f16e588b370>
+2024-12-13 03:04:15,731 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/create_lsilda:<function ProjectEndpoint.create_lsi_lda at 0x7f16e588b400>
+2024-12-13 03:04:15,734 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/upload:<function ProjectEndpoint.upload_to_service at 0x7f16e588aef0>
+2024-12-13 03:04:15,739 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/delete:<function ProjectEndpoint.delete at 0x7f16e588af80>
+2024-12-13 03:04:15,745 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/get_db:<function ProjectEndpoint.get_db at 0x7f16e588b010>
+2024-12-13 03:04:15,749 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/get_dump:<function ProjectEndpoint.get_dump at 0x7f16e588b0a0>
+2024-12-13 03:04:15,755 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/metric/list:<function MetricEndpoint.list at 0x7f16e58892d0>
+2024-12-13 03:04:15,757 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/metric/add:<function MetricEndpoint.add at 0x7f16e5889360>
+2024-12-13 03:04:15,760 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/metric/update:<function MetricEndpoint.update at 0x7f16e58893f0>
+2024-12-13 03:04:15,763 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/metric/del:<function MetricEndpoint.delete at 0x7f16e5889480>
+2024-12-13 03:04:15,767 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/test/v_search:<function SearchEndpoint.vector_search at 0x7f16e588a830>
+2024-12-13 03:04:15,771 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/test/l_search:<function SearchEndpoint.lsi_search at 0x7f16e588a8c0>
+2024-12-13 03:04:15,775 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/test/common_search:<function SearchEndpoint.common_search at 0x7f16e588b6d0>
+2024-12-13 03:04:15,779 | logs/ITSHelper_WebApplication.log | INFO | 139737232605632 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5005}
+2024-12-13 03:04:15,783 | asyncio | DEBUG | 139737232605632 | Using selector: EpollSelector
+2024-12-13 03:04:27,724 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_field_start with no data
+2024-12-13 03:04:27,725 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_field_name with data[0:10]
+2024-12-13 03:04:27,725 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_field_data with data[11:19]
+2024-12-13 03:04:27,725 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_field_end with no data
+2024-12-13 03:04:27,725 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_field_start with no data
+2024-12-13 03:04:27,725 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_field_name with data[20:28]
+2024-12-13 03:04:27,725 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_field_data with data[29:34]
+2024-12-13 03:04:27,725 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_field_end with no data
+2024-12-13 03:04:27,726 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_field_start with no data
+2024-12-13 03:04:27,726 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_field_name with data[35:43]
+2024-12-13 03:04:27,726 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_field_data with data[44:49]
+2024-12-13 03:04:27,726 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_field_end with no data
+2024-12-13 03:04:27,726 | python_multipart.multipart | DEBUG | 139737232605632 | Calling on_end with no data
+2024-12-13 03:04:27,739 | logs/ITSHelper_TokenController.log | DEBUG | 139733023446592 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f1621cf5060>
+2024-12-13 03:04:27,741 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139733023446592 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f1621d76fe0>
+2024-12-13 03:04:27,742 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139733023446592 | fwdi.Persistence.manager_db_context
+2024-12-13 03:04:27,743 | peewee | DEBUG | 139733023446592 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-12-13 03:04:27,744 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139733023446592 | [{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]
+2024-12-13 03:04:27,745 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin:admin
+2024-12-13 03:04:27,745 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139733023446592 | fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin
+2024-12-13 03:04:27,746 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139733023446592 | {'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}
+2024-12-13 03:04:27,747 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139733023446592 | Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:04:27,747 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139733023446592 | fwdi.Utilites.jwt_tools:admin
+2024-12-13 03:04:28,018 | logs/ITSHelper_TokenController.log | DEBUG | 139733023446592 | username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:04:28,021 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139733023446592 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f1621d763e0>:admin@admin.ru
+2024-12-13 03:04:28,021 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139733023446592 | fwdi.Persistence.manager_db_context
+2024-12-13 03:04:28,022 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139733023446592 | fwdi.Persistence.manager_db_context
+2024-12-13 03:04:28,023 | peewee | DEBUG | 139733023446592 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1" WHERE ("t1"."email" = ?) LIMIT ? OFFSET ?', ['admin@admin.ru', 1, 0])
+2024-12-13 03:04:28,024 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139733023446592 | 1
+2024-12-13 03:04:28,025 | peewee | DEBUG | 139733023446592 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1" WHERE ("t1"."id" = ?) LIMIT ? OFFSET ?', [1, 1, 0])
+2024-12-13 03:04:28,027 | peewee | DEBUG | 139733023446592 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = ?)', [1])
+2024-12-13 03:04:28,028 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139733023446592 | SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = 1)
+2024-12-13 03:04:28,029 | logs/ITSHelper_TokenController.log | DEBUG | 139733023446592 | ['admin']
+2024-12-13 03:04:28,030 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139733023446592 | fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f1621d76230>
+2024-12-13 03:04:28,032 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139733023446592 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMDY4fQ.KiQ7jKKpATM2C95RkHXuz0DZOX4FeAvPR14lE1C4_5g
+2024-12-13 03:04:28,032 | logs/ITSHelper_TokenController.log | DEBUG | 139733023446592 | Create token :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMDY4fQ.KiQ7jKKpATM2C95RkHXuz0DZOX4FeAvPR14lE1C4_5g
+2024-12-13 03:04:32,313 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7f1621cf4d30>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMDY4fQ.KiQ7jKKpATM2C95RkHXuz0DZOX4FeAvPR14lE1C4_5g
+2024-12-13 03:04:32,314 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+2024-12-13 03:04:32,314 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139733023446592 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMDY4fQ.KiQ7jKKpATM2C95RkHXuz0DZOX4FeAvPR14lE1C4_5g:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f1621d76230>
+2024-12-13 03:04:32,315 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734623068}
+2024-12-13 03:04:32,316 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+2024-12-13 03:04:32,317 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139733023446592 | fwdi.Persistence.manager_db_context
+2024-12-13 03:04:32,317 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139733023446592 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-13 03:04:32,318 | peewee | DEBUG | 139733023446592 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-12-13 03:04:32,319 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:04:32,320 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:06:08,529 | passlib.utils.compat | DEBUG | 139878844080576 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-12-13 03:06:08,529 | passlib.utils.compat | DEBUG | 139878844080576 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-12-13 03:06:08,529 | passlib.utils.compat | DEBUG | 139878844080576 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-12-13 03:06:08,859 | faiss.loader | DEBUG | 139878844080576 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2024-12-13 03:06:08,860 | faiss.loader | INFO | 139878844080576 | Loading faiss with AVX512 support.
+2024-12-13 03:06:08,886 | faiss.loader | INFO | 139878844080576 | Successfully loaded faiss with AVX512 support.
+2024-12-13 03:06:15,098 | pymorphy3.opencorpora_dict.wrapper | INFO | 139878844080576 | Loading dictionaries from /home/alitrix/projects/fwdi/env/lib/python3.10/site-packages/pymorphy3_dicts_ru/data
+2024-12-13 03:06:15,229 | pymorphy3.opencorpora_dict.wrapper | INFO | 139878844080576 | format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+2024-12-13 03:06:18,356 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:06:18,358 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:06:18,359 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139878844080576 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7f38137e7160>
+2024-12-13 03:06:18,360 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | Create dependency injection Persistence
+2024-12-13 03:06:18,361 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | Create dependency injection Application
+2024-12-13 03:06:18,362 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | Create dependency injection Infrastructure
+2024-12-13 03:06:18,450 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139878844080576 | Build services
+2024-12-13 03:06:18,462 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139878844080576 | Create dependency injection Utilites
+2024-12-13 03:06:18,463 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139878844080576 | Create dependency injection Presentation
+2024-12-13 03:06:18,464 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f3719820be0>>
+2024-12-13 03:06:18,467 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f371a9f6e60>
+2024-12-13 03:06:18,486 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139878844080576 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'upload': 'Upload from 1C pdf document service'}
+2024-12-13 03:06:18,487 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139878844080576 | Inititalize DB
+2024-12-13 03:06:18,494 | peewee | DEBUG | 139878844080576 | ('CREATE TABLE IF NOT EXISTS "permissions" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL)', [])
+2024-12-13 03:06:18,497 | peewee | DEBUG | 139878844080576 | ('CREATE TABLE IF NOT EXISTS "scope" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL, "description" VARCHAR(255) NOT NULL)', [])
+2024-12-13 03:06:18,497 | peewee | DEBUG | 139878844080576 | ('CREATE TABLE IF NOT EXISTS "permissions_scope_through" ("id" INTEGER NOT NULL PRIMARY KEY, "permissions_id" INTEGER NOT NULL, "scope_id" INTEGER NOT NULL, FOREIGN KEY ("permissions_id") REFERENCES "permissions" ("id"), FOREIGN KEY ("scope_id") REFERENCES "scope" ("id"))', [])
+2024-12-13 03:06:18,498 | peewee | DEBUG | 139878844080576 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id" ON "permissions_scope_through" ("permissions_id")', [])
+2024-12-13 03:06:18,498 | peewee | DEBUG | 139878844080576 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_scope_id" ON "permissions_scope_through" ("scope_id")', [])
+2024-12-13 03:06:18,499 | peewee | DEBUG | 139878844080576 | ('CREATE UNIQUE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id_scope_id" ON "permissions_scope_through" ("permissions_id", "scope_id")', [])
+2024-12-13 03:06:18,499 | peewee | DEBUG | 139878844080576 | ('CREATE TABLE IF NOT EXISTS "user" ("id" INTEGER NOT NULL PRIMARY KEY, "username" VARCHAR(255) NOT NULL, "full_name" VARCHAR(255) NOT NULL, "email" VARCHAR(255) NOT NULL, "hashed_password" VARCHAR(255) NOT NULL, "disabled" INTEGER NOT NULL, "scopes_id" INTEGER NOT NULL, FOREIGN KEY ("scopes_id") REFERENCES "permissions" ("id"))', [])
+2024-12-13 03:06:18,500 | peewee | DEBUG | 139878844080576 | ('CREATE INDEX IF NOT EXISTS "user_scopes_id" ON "user" ("scopes_id")', [])
+2024-12-13 03:06:18,501 | peewee | DEBUG | 139878844080576 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1"', [])
+2024-12-13 03:06:18,501 | peewee | DEBUG | 139878844080576 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1"', [])
+2024-12-13 03:06:18,502 | peewee | DEBUG | 139878844080576 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-12-13 03:06:18,503 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/document/add:<function DocumentEndpoint.add at 0x7f37de3c8c10>
+2024-12-13 03:06:18,508 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/document/add_raw:<function DocumentEndpoint.add_raw at 0x7f37de3c9000>
+2024-12-13 03:06:18,512 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/document/list:<function DocumentEndpoint.list_document at 0x7f37de3c9090>
+2024-12-13 03:06:18,516 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/document/change:<function DocumentEndpoint.change at 0x7f37de3c9120>
+2024-12-13 03:06:18,519 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/document/delete:<function DocumentEndpoint.delete at 0x7f37de3c91b0>
+2024-12-13 03:06:18,523 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/list:<function ProjectEndpoint.list_project at 0x7f37de3ca560>
+2024-12-13 03:06:18,526 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/prepare:<function ProjectEndpoint.prepare at 0x7f37de3cb250>
+2024-12-13 03:06:18,531 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/add_metrics:<function ProjectEndpoint.add_metric at 0x7f37de3cb2e0>
+2024-12-13 03:06:18,536 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/proccessing:<function ProjectEndpoint.proccessing at 0x7f37de3cb130>
+2024-12-13 03:06:18,543 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/embedding:<function ProjectEndpoint.embedding at 0x7f37de3cb1c0>
+2024-12-13 03:06:18,547 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/create_vector:<function ProjectEndpoint.create_vector at 0x7f37de3cb370>
+2024-12-13 03:06:18,550 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/create_lsilda:<function ProjectEndpoint.create_lsi_lda at 0x7f37de3cb400>
+2024-12-13 03:06:18,555 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/upload:<function ProjectEndpoint.upload_to_service at 0x7f37de3caef0>
+2024-12-13 03:06:18,561 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/delete:<function ProjectEndpoint.delete at 0x7f37de3caf80>
+2024-12-13 03:06:18,565 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/get_db:<function ProjectEndpoint.get_db at 0x7f37de3cb010>
+2024-12-13 03:06:18,569 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/get_dump:<function ProjectEndpoint.get_dump at 0x7f37de3cb0a0>
+2024-12-13 03:06:18,574 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/metric/list:<function MetricEndpoint.list at 0x7f37de3c92d0>
+2024-12-13 03:06:18,578 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/metric/add:<function MetricEndpoint.add at 0x7f37de3c9360>
+2024-12-13 03:06:18,582 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/metric/update:<function MetricEndpoint.update at 0x7f37de3c93f0>
+2024-12-13 03:06:18,587 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/metric/del:<function MetricEndpoint.delete at 0x7f37de3c9480>
+2024-12-13 03:06:18,592 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/test/v_search:<function SearchEndpoint.vector_search at 0x7f37de3ca830>
+2024-12-13 03:06:18,595 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/test/l_search:<function SearchEndpoint.lsi_search at 0x7f37de3ca8c0>
+2024-12-13 03:06:18,598 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/test/common_search:<function SearchEndpoint.common_search at 0x7f37de3cb6d0>
+2024-12-13 03:06:18,602 | logs/ITSHelper_WebApplication.log | INFO | 139878844080576 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5005}
+2024-12-13 03:06:18,612 | asyncio | DEBUG | 139878844080576 | Using selector: EpollSelector
+2024-12-13 03:07:41,784 | passlib.utils.compat | DEBUG | 139719623209408 | loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2024-12-13 03:07:41,785 | passlib.utils.compat | DEBUG | 139719623209408 | loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2024-12-13 03:07:41,785 | passlib.utils.compat | DEBUG | 139719623209408 | loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2024-12-13 03:07:42,395 | faiss.loader | DEBUG | 139719623209408 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2024-12-13 03:07:42,395 | faiss.loader | INFO | 139719623209408 | Loading faiss with AVX512 support.
+2024-12-13 03:07:42,433 | faiss.loader | INFO | 139719623209408 | Successfully loaded faiss with AVX512 support.
+2024-12-13 03:07:48,425 | pymorphy3.opencorpora_dict.wrapper | INFO | 139719623209408 | Loading dictionaries from /home/alitrix/projects/fwdi/env/lib/python3.10/site-packages/pymorphy3_dicts_ru/data
+2024-12-13 03:07:48,501 | pymorphy3.opencorpora_dict.wrapper | INFO | 139719623209408 | format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+2024-12-13 03:07:52,816 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:07:52,817 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:07:52,818 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139719623209408 | fwdi.WebApp.web_application_builder:<fwdi.WebApp.web_application.WebApplication object at 0x7f1301297160>
+2024-12-13 03:07:52,819 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | Create dependency injection Persistence
+2024-12-13 03:07:52,820 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | Create dependency injection Application
+2024-12-13 03:07:52,821 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | Create dependency injection Infrastructure
+2024-12-13 03:07:52,888 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139719623209408 | Build services
+2024-12-13 03:07:52,897 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139719623209408 | Create dependency injection Utilites
+2024-12-13 03:07:52,898 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139719623209408 | Create dependency injection Presentation
+2024-12-13 03:07:52,898 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f1207422140>>
+2024-12-13 03:07:52,901 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f1208607b50>
+2024-12-13 03:07:52,919 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139719623209408 | Inititalize OAuth2PasswordBearer: scope:{'admin': 'Administration access.', 'upload': 'Upload from 1C pdf document service'}
+2024-12-13 03:07:52,920 | logs/ITSHelper_WebApplicationBuilder.log | INFO | 139719623209408 | Inititalize DB
+2024-12-13 03:07:52,923 | peewee | DEBUG | 139719623209408 | ('CREATE TABLE IF NOT EXISTS "permissions" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL)', [])
+2024-12-13 03:07:52,926 | peewee | DEBUG | 139719623209408 | ('CREATE TABLE IF NOT EXISTS "scope" ("id" INTEGER NOT NULL PRIMARY KEY, "name" VARCHAR(255) NOT NULL, "description" VARCHAR(255) NOT NULL)', [])
+2024-12-13 03:07:52,927 | peewee | DEBUG | 139719623209408 | ('CREATE TABLE IF NOT EXISTS "permissions_scope_through" ("id" INTEGER NOT NULL PRIMARY KEY, "permissions_id" INTEGER NOT NULL, "scope_id" INTEGER NOT NULL, FOREIGN KEY ("permissions_id") REFERENCES "permissions" ("id"), FOREIGN KEY ("scope_id") REFERENCES "scope" ("id"))', [])
+2024-12-13 03:07:52,927 | peewee | DEBUG | 139719623209408 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id" ON "permissions_scope_through" ("permissions_id")', [])
+2024-12-13 03:07:52,928 | peewee | DEBUG | 139719623209408 | ('CREATE INDEX IF NOT EXISTS "permissionsscopethrough_scope_id" ON "permissions_scope_through" ("scope_id")', [])
+2024-12-13 03:07:52,928 | peewee | DEBUG | 139719623209408 | ('CREATE UNIQUE INDEX IF NOT EXISTS "permissionsscopethrough_permissions_id_scope_id" ON "permissions_scope_through" ("permissions_id", "scope_id")', [])
+2024-12-13 03:07:52,928 | peewee | DEBUG | 139719623209408 | ('CREATE TABLE IF NOT EXISTS "user" ("id" INTEGER NOT NULL PRIMARY KEY, "username" VARCHAR(255) NOT NULL, "full_name" VARCHAR(255) NOT NULL, "email" VARCHAR(255) NOT NULL, "hashed_password" VARCHAR(255) NOT NULL, "disabled" INTEGER NOT NULL, "scopes_id" INTEGER NOT NULL, FOREIGN KEY ("scopes_id") REFERENCES "permissions" ("id"))', [])
+2024-12-13 03:07:52,929 | peewee | DEBUG | 139719623209408 | ('CREATE INDEX IF NOT EXISTS "user_scopes_id" ON "user" ("scopes_id")', [])
+2024-12-13 03:07:52,930 | peewee | DEBUG | 139719623209408 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1"', [])
+2024-12-13 03:07:52,931 | peewee | DEBUG | 139719623209408 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1"', [])
+2024-12-13 03:07:52,931 | peewee | DEBUG | 139719623209408 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-12-13 03:07:52,932 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/document/add:<function DocumentEndpoint.add at 0x7f1208606320>
+2024-12-13 03:07:52,937 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/document/add_raw:<function DocumentEndpoint.add_raw at 0x7f12086063b0>
+2024-12-13 03:07:52,941 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/document/list:<function DocumentEndpoint.list_document at 0x7f1208606440>
+2024-12-13 03:07:52,944 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/document/change:<function DocumentEndpoint.change at 0x7f12086064d0>
+2024-12-13 03:07:52,947 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/document/delete:<function DocumentEndpoint.delete at 0x7f1208606560>
+2024-12-13 03:07:52,951 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/list:<function ProjectEndpoint.list_project at 0x7f12086065f0>
+2024-12-13 03:07:52,955 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/prepare:<function ProjectEndpoint.prepare at 0x7f12086069e0>
+2024-12-13 03:07:52,959 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/add_metrics:<function ProjectEndpoint.add_metric at 0x7f1208606a70>
+2024-12-13 03:07:52,964 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/proccessing:<function ProjectEndpoint.proccessing at 0x7f12086068c0>
+2024-12-13 03:07:52,969 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/embedding:<function ProjectEndpoint.embedding at 0x7f1208606950>
+2024-12-13 03:07:52,972 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/create_vector:<function ProjectEndpoint.create_vector at 0x7f1208606b00>
+2024-12-13 03:07:52,975 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/create_lsilda:<function ProjectEndpoint.create_lsi_lda at 0x7f1208606b90>
+2024-12-13 03:07:52,979 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/upload:<function ProjectEndpoint.upload_to_service at 0x7f1208606680>
+2024-12-13 03:07:52,981 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/delete:<function ProjectEndpoint.delete at 0x7f1208606710>
+2024-12-13 03:07:52,984 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/get_db:<function ProjectEndpoint.get_db at 0x7f12086067a0>
+2024-12-13 03:07:52,988 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/get_dump:<function ProjectEndpoint.get_dump at 0x7f1208606830>
+2024-12-13 03:07:52,991 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/metric/list:<function MetricEndpoint.list at 0x7f1208606c20>
+2024-12-13 03:07:52,993 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/metric/add:<function MetricEndpoint.add at 0x7f1208606cb0>
+2024-12-13 03:07:52,996 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/metric/update:<function MetricEndpoint.update at 0x7f1208606d40>
+2024-12-13 03:07:53,000 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/metric/del:<function MetricEndpoint.delete at 0x7f1208606dd0>
+2024-12-13 03:07:53,003 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/test/v_search:<function SearchEndpoint.vector_search at 0x7f1208606ef0>
+2024-12-13 03:07:53,006 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/test/l_search:<function SearchEndpoint.lsi_search at 0x7f1208606f80>
+2024-12-13 03:07:53,010 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/test/common_search:<function SearchEndpoint.common_search at 0x7f1208606e60>
+2024-12-13 03:07:53,014 | logs/ITSHelper_WebApplication.log | INFO | 139719623209408 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5005}
+2024-12-13 03:07:53,021 | asyncio | DEBUG | 139719623209408 | Using selector: EpollSelector
+2024-12-13 03:08:31,008 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_field_start with no data
+2024-12-13 03:08:31,008 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_field_name with data[0:10]
+2024-12-13 03:08:31,009 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_field_data with data[11:19]
+2024-12-13 03:08:31,009 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_field_end with no data
+2024-12-13 03:08:31,009 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_field_start with no data
+2024-12-13 03:08:31,010 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_field_name with data[20:28]
+2024-12-13 03:08:31,010 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_field_data with data[29:34]
+2024-12-13 03:08:31,010 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_field_end with no data
+2024-12-13 03:08:31,010 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_field_start with no data
+2024-12-13 03:08:31,010 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_field_name with data[35:43]
+2024-12-13 03:08:31,010 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_field_data with data[44:49]
+2024-12-13 03:08:31,010 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_field_end with no data
+2024-12-13 03:08:31,010 | python_multipart.multipart | DEBUG | 139719623209408 | Calling on_end with no data
+2024-12-13 03:08:31,037 | logs/ITSHelper_TokenController.log | DEBUG | 139715417327168 | fwdi.Presentation.DefaultControllers.token_controller:<fastapi.security.oauth2.OAuth2PasswordRequestForm object at 0x7f1207515960>
+2024-12-13 03:08:31,042 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139715417327168 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f12073cc370>
+2024-12-13 03:08:31,046 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139715417327168 | fwdi.Persistence.manager_db_context
+2024-12-13 03:08:31,049 | peewee | DEBUG | 139715417327168 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-12-13 03:08:31,050 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139715417327168 | [{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]
+2024-12-13 03:08:31,051 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin:admin
+2024-12-13 03:08:31,054 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin
+2024-12-13 03:08:31,055 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139715417327168 | {'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}
+2024-12-13 03:08:31,055 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:08:31,056 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:admin
+2024-12-13 03:08:31,338 | logs/ITSHelper_TokenController.log | DEBUG | 139715417327168 | username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:08:31,341 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139715417327168 | fwdi.Application.Usecase.user_repository:<fwdi.Persistence.manager_db_context.ManagerDbContextFWDI object at 0x7f12073a71c0>:admin@admin.ru
+2024-12-13 03:08:31,341 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139715417327168 | fwdi.Persistence.manager_db_context
+2024-12-13 03:08:31,341 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139715417327168 | fwdi.Persistence.manager_db_context
+2024-12-13 03:08:31,343 | peewee | DEBUG | 139715417327168 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1" WHERE ("t1"."email" = ?) LIMIT ? OFFSET ?', ['admin@admin.ru', 1, 0])
+2024-12-13 03:08:31,344 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139715417327168 | 1
+2024-12-13 03:08:31,344 | peewee | DEBUG | 139715417327168 | ('SELECT "t1"."id", "t1"."name" FROM "permissions" AS "t1" WHERE ("t1"."id" = ?) LIMIT ? OFFSET ?', [1, 1, 0])
+2024-12-13 03:08:31,346 | peewee | DEBUG | 139715417327168 | ('SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = ?)', [1])
+2024-12-13 03:08:31,348 | logs/ITSHelper_UserRepositoryFWDI.log | DEBUG | 139715417327168 | SELECT "t1"."id", "t1"."name", "t1"."description" FROM "scope" AS "t1" INNER JOIN "permissions_scope_through" AS "t2" ON ("t2"."scope_id" = "t1"."id") INNER JOIN "permissions" AS "t3" ON ("t2"."permissions_id" = "t3"."id") WHERE ("t2"."permissions_id" = 1)
+2024-12-13 03:08:31,349 | logs/ITSHelper_TokenController.log | DEBUG | 139715417327168 | ['admin']
+2024-12-13 03:08:31,350 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin']}:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f12073a70a0>
+2024-12-13 03:08:31,352 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4
+2024-12-13 03:08:31,352 | logs/ITSHelper_TokenController.log | DEBUG | 139715417327168 | Create token :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4
+2024-12-13 03:08:35,071 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7f1207515ff0>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4
+2024-12-13 03:08:35,072 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+2024-12-13 03:08:35,073 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f12073a70a0>
+2024-12-13 03:08:35,074 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734623311}
+2024-12-13 03:08:35,075 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+2024-12-13 03:08:35,075 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139715417327168 | fwdi.Persistence.manager_db_context
+2024-12-13 03:08:35,076 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-13 03:08:35,078 | peewee | DEBUG | 139715417327168 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-12-13 03:08:35,079 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:08:35,080 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:08:57,371 | logs/ITSHelper_ProjectEndpoint.log | INFO | 139715417327168 | Presentation.Endpoints.project_endpoint:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:09:53,699 | logs/ITSHelper_ProjectHandler.log | INFO | 139715417327168 | event :Application.Usecases.ProjectHandler.project_handler
+2024-12-13 03:10:35,051 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7f1207288e20>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4
+2024-12-13 03:10:35,052 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+2024-12-13 03:10:35,053 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4:<fwdi.Application.Configs.service_congif.ServiceConfig object at 0x7f12073a70a0>
+2024-12-13 03:10:35,054 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734623311}
+2024-12-13 03:10:35,055 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+2024-12-13 03:10:35,055 | logs/ITSHelper_ManagerDbContextFWDI.log | DEBUG | 139715417327168 | fwdi.Persistence.manager_db_context
+2024-12-13 03:10:35,056 | logs/ITSHelper_JwtToolsFWDI.log | DEBUG | 139715417327168 | fwdi.Utilites.jwt_tools:<Model: User>:admin@admin.ru
+2024-12-13 03:10:35,058 | peewee | DEBUG | 139715417327168 | ('SELECT "t1"."id", "t1"."username", "t1"."full_name", "t1"."email", "t1"."hashed_password", "t1"."disabled", "t1"."scopes_id" FROM "user" AS "t1"', [])
+2024-12-13 03:10:35,059 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:10:35,061 | logs/ITSHelper_JwtServiceFWDI.log | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:10:35,062 | logs/ITSHelper_ProjectEndpoint.log | INFO | 139715417327168 | Presentation.Endpoints.project_endpoint:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:10:46,167 | logs/ITSHelper_ProjectHandler.log | INFO | 139715417327168 | event :Application.Usecases.ProjectHandler.project_handler

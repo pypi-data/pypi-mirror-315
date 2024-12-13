@@ -1,0 +1,248 @@
+fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:01:07,681 | INFO | 140398334759360 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:01:07,683 | INFO | 140398334759360 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+Create dependency injection Persistence
+2024-12-13 03:01:07,686 | INFO | 140398334759360 | Create dependency injection Persistence
+Create dependency injection Application
+2024-12-13 03:01:07,690 | INFO | 140398334759360 | Create dependency injection Application
+Create dependency injection Infrastructure
+2024-12-13 03:01:07,692 | INFO | 140398334759360 | Create dependency injection Infrastructure
+fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7fb00ea58a00>>
+2024-12-13 03:01:07,798 | INFO | 140398334759360 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7fb00ea58a00>>
+fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7fb00ea3ecb0>
+2024-12-13 03:01:07,801 | INFO | 140398334759360 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7fb00ea3ecb0>
+fwdi.WebApp.web_application:/api/v1.0/document/add:<function DocumentEndpoint.add at 0x7fb0d24bcaf0>
+2024-12-13 03:01:07,845 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/document/add:<function DocumentEndpoint.add at 0x7fb0d24bcaf0>
+fwdi.WebApp.web_application:/api/v1.0/document/add_raw:<function DocumentEndpoint.add_raw at 0x7fb0d24bcee0>
+2024-12-13 03:01:07,849 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/document/add_raw:<function DocumentEndpoint.add_raw at 0x7fb0d24bcee0>
+fwdi.WebApp.web_application:/api/v1.0/document/list:<function DocumentEndpoint.list_document at 0x7fb0d24bcf70>
+2024-12-13 03:01:07,854 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/document/list:<function DocumentEndpoint.list_document at 0x7fb0d24bcf70>
+fwdi.WebApp.web_application:/api/v1.0/document/change:<function DocumentEndpoint.change at 0x7fb0d24bd000>
+2024-12-13 03:01:07,861 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/document/change:<function DocumentEndpoint.change at 0x7fb0d24bd000>
+fwdi.WebApp.web_application:/api/v1.0/document/delete:<function DocumentEndpoint.delete at 0x7fb0d24bd090>
+2024-12-13 03:01:07,865 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/document/delete:<function DocumentEndpoint.delete at 0x7fb0d24bd090>
+fwdi.WebApp.web_application:/api/v1.0/project/list:<function ProjectEndpoint.list_project at 0x7fb0d24be440>
+2024-12-13 03:01:07,871 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/list:<function ProjectEndpoint.list_project at 0x7fb0d24be440>
+fwdi.WebApp.web_application:/api/v1.0/project/prepare:<function ProjectEndpoint.prepare at 0x7fb0d24bf130>
+2024-12-13 03:01:07,873 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/prepare:<function ProjectEndpoint.prepare at 0x7fb0d24bf130>
+fwdi.WebApp.web_application:/api/v1.0/project/add_metrics:<function ProjectEndpoint.add_metric at 0x7fb0d24bf1c0>
+2024-12-13 03:01:07,879 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/add_metrics:<function ProjectEndpoint.add_metric at 0x7fb0d24bf1c0>
+fwdi.WebApp.web_application:/api/v1.0/project/proccessing:<function ProjectEndpoint.proccessing at 0x7fb0d24bf010>
+2024-12-13 03:01:07,885 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/proccessing:<function ProjectEndpoint.proccessing at 0x7fb0d24bf010>
+fwdi.WebApp.web_application:/api/v1.0/project/embedding:<function ProjectEndpoint.embedding at 0x7fb0d24bf0a0>
+2024-12-13 03:01:07,892 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/embedding:<function ProjectEndpoint.embedding at 0x7fb0d24bf0a0>
+fwdi.WebApp.web_application:/api/v1.0/project/create_vector:<function ProjectEndpoint.create_vector at 0x7fb0d24bf250>
+2024-12-13 03:01:07,895 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/create_vector:<function ProjectEndpoint.create_vector at 0x7fb0d24bf250>
+fwdi.WebApp.web_application:/api/v1.0/project/create_lsilda:<function ProjectEndpoint.create_lsi_lda at 0x7fb0d24bf2e0>
+2024-12-13 03:01:07,899 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/create_lsilda:<function ProjectEndpoint.create_lsi_lda at 0x7fb0d24bf2e0>
+fwdi.WebApp.web_application:/api/v1.0/project/upload:<function ProjectEndpoint.upload_to_service at 0x7fb0d24bedd0>
+2024-12-13 03:01:07,904 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/upload:<function ProjectEndpoint.upload_to_service at 0x7fb0d24bedd0>
+fwdi.WebApp.web_application:/api/v1.0/project/delete:<function ProjectEndpoint.delete at 0x7fb0d24bee60>
+2024-12-13 03:01:07,909 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/delete:<function ProjectEndpoint.delete at 0x7fb0d24bee60>
+fwdi.WebApp.web_application:/api/v1.0/project/get_db:<function ProjectEndpoint.get_db at 0x7fb0d24beef0>
+2024-12-13 03:01:07,912 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/get_db:<function ProjectEndpoint.get_db at 0x7fb0d24beef0>
+fwdi.WebApp.web_application:/api/v1.0/project/get_dump:<function ProjectEndpoint.get_dump at 0x7fb0d24bef80>
+2024-12-13 03:01:07,917 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/project/get_dump:<function ProjectEndpoint.get_dump at 0x7fb0d24bef80>
+fwdi.WebApp.web_application:/api/v1.0/metric/list:<function MetricEndpoint.list at 0x7fb0d24bd1b0>
+2024-12-13 03:01:07,923 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/metric/list:<function MetricEndpoint.list at 0x7fb0d24bd1b0>
+fwdi.WebApp.web_application:/api/v1.0/metric/add:<function MetricEndpoint.add at 0x7fb0d24bd240>
+2024-12-13 03:01:07,927 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/metric/add:<function MetricEndpoint.add at 0x7fb0d24bd240>
+fwdi.WebApp.web_application:/api/v1.0/metric/update:<function MetricEndpoint.update at 0x7fb0d24bd2d0>
+2024-12-13 03:01:07,931 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/metric/update:<function MetricEndpoint.update at 0x7fb0d24bd2d0>
+fwdi.WebApp.web_application:/api/v1.0/metric/del:<function MetricEndpoint.delete at 0x7fb0d24bd360>
+2024-12-13 03:01:07,938 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/metric/del:<function MetricEndpoint.delete at 0x7fb0d24bd360>
+fwdi.WebApp.web_application:/api/v1.0/test/v_search:<function SearchEndpoint.vector_search at 0x7fb0d24be710>
+2024-12-13 03:01:07,945 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/test/v_search:<function SearchEndpoint.vector_search at 0x7fb0d24be710>
+fwdi.WebApp.web_application:/api/v1.0/test/l_search:<function SearchEndpoint.lsi_search at 0x7fb0d24be7a0>
+2024-12-13 03:01:07,951 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/test/l_search:<function SearchEndpoint.lsi_search at 0x7fb0d24be7a0>
+fwdi.WebApp.web_application:/api/v1.0/test/common_search:<function SearchEndpoint.common_search at 0x7fb0d24bf5b0>
+2024-12-13 03:01:07,955 | INFO | 140398334759360 | fwdi.WebApp.web_application:/api/v1.0/test/common_search:<function SearchEndpoint.common_search at 0x7fb0d24bf5b0>
+Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5005}
+2024-12-13 03:01:07,960 | INFO | 140398334759360 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5005}
+fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:04:15,608 | INFO | 139737232605632 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:04:15,609 | INFO | 139737232605632 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+Create dependency injection Persistence
+2024-12-13 03:04:15,610 | INFO | 139737232605632 | Create dependency injection Persistence
+Create dependency injection Application
+2024-12-13 03:04:15,611 | INFO | 139737232605632 | Create dependency injection Application
+Create dependency injection Infrastructure
+2024-12-13 03:04:15,611 | INFO | 139737232605632 | Create dependency injection Infrastructure
+fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f1621df0b80>>
+2024-12-13 03:04:15,668 | INFO | 139737232605632 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f1621df0b80>>
+fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f1621dd2e60>
+2024-12-13 03:04:15,671 | INFO | 139737232605632 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f1621dd2e60>
+fwdi.WebApp.web_application:/api/v1.0/document/add:<function DocumentEndpoint.add at 0x7f16e5888c10>
+2024-12-13 03:04:15,693 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/document/add:<function DocumentEndpoint.add at 0x7f16e5888c10>
+fwdi.WebApp.web_application:/api/v1.0/document/add_raw:<function DocumentEndpoint.add_raw at 0x7f16e5889000>
+2024-12-13 03:04:15,697 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/document/add_raw:<function DocumentEndpoint.add_raw at 0x7f16e5889000>
+fwdi.WebApp.web_application:/api/v1.0/document/list:<function DocumentEndpoint.list_document at 0x7f16e5889090>
+2024-12-13 03:04:15,702 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/document/list:<function DocumentEndpoint.list_document at 0x7f16e5889090>
+fwdi.WebApp.web_application:/api/v1.0/document/change:<function DocumentEndpoint.change at 0x7f16e5889120>
+2024-12-13 03:04:15,707 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/document/change:<function DocumentEndpoint.change at 0x7f16e5889120>
+fwdi.WebApp.web_application:/api/v1.0/document/delete:<function DocumentEndpoint.delete at 0x7f16e58891b0>
+2024-12-13 03:04:15,710 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/document/delete:<function DocumentEndpoint.delete at 0x7f16e58891b0>
+fwdi.WebApp.web_application:/api/v1.0/project/list:<function ProjectEndpoint.list_project at 0x7f16e588a560>
+2024-12-13 03:04:15,712 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/list:<function ProjectEndpoint.list_project at 0x7f16e588a560>
+fwdi.WebApp.web_application:/api/v1.0/project/prepare:<function ProjectEndpoint.prepare at 0x7f16e588b250>
+2024-12-13 03:04:15,714 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/prepare:<function ProjectEndpoint.prepare at 0x7f16e588b250>
+fwdi.WebApp.web_application:/api/v1.0/project/add_metrics:<function ProjectEndpoint.add_metric at 0x7f16e588b2e0>
+2024-12-13 03:04:15,718 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/add_metrics:<function ProjectEndpoint.add_metric at 0x7f16e588b2e0>
+fwdi.WebApp.web_application:/api/v1.0/project/proccessing:<function ProjectEndpoint.proccessing at 0x7f16e588b130>
+2024-12-13 03:04:15,721 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/proccessing:<function ProjectEndpoint.proccessing at 0x7f16e588b130>
+fwdi.WebApp.web_application:/api/v1.0/project/embedding:<function ProjectEndpoint.embedding at 0x7f16e588b1c0>
+2024-12-13 03:04:15,726 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/embedding:<function ProjectEndpoint.embedding at 0x7f16e588b1c0>
+fwdi.WebApp.web_application:/api/v1.0/project/create_vector:<function ProjectEndpoint.create_vector at 0x7f16e588b370>
+2024-12-13 03:04:15,729 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/create_vector:<function ProjectEndpoint.create_vector at 0x7f16e588b370>
+fwdi.WebApp.web_application:/api/v1.0/project/create_lsilda:<function ProjectEndpoint.create_lsi_lda at 0x7f16e588b400>
+2024-12-13 03:04:15,731 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/create_lsilda:<function ProjectEndpoint.create_lsi_lda at 0x7f16e588b400>
+fwdi.WebApp.web_application:/api/v1.0/project/upload:<function ProjectEndpoint.upload_to_service at 0x7f16e588aef0>
+2024-12-13 03:04:15,734 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/upload:<function ProjectEndpoint.upload_to_service at 0x7f16e588aef0>
+fwdi.WebApp.web_application:/api/v1.0/project/delete:<function ProjectEndpoint.delete at 0x7f16e588af80>
+2024-12-13 03:04:15,739 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/delete:<function ProjectEndpoint.delete at 0x7f16e588af80>
+fwdi.WebApp.web_application:/api/v1.0/project/get_db:<function ProjectEndpoint.get_db at 0x7f16e588b010>
+2024-12-13 03:04:15,745 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/get_db:<function ProjectEndpoint.get_db at 0x7f16e588b010>
+fwdi.WebApp.web_application:/api/v1.0/project/get_dump:<function ProjectEndpoint.get_dump at 0x7f16e588b0a0>
+2024-12-13 03:04:15,749 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/project/get_dump:<function ProjectEndpoint.get_dump at 0x7f16e588b0a0>
+fwdi.WebApp.web_application:/api/v1.0/metric/list:<function MetricEndpoint.list at 0x7f16e58892d0>
+2024-12-13 03:04:15,755 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/metric/list:<function MetricEndpoint.list at 0x7f16e58892d0>
+fwdi.WebApp.web_application:/api/v1.0/metric/add:<function MetricEndpoint.add at 0x7f16e5889360>
+2024-12-13 03:04:15,757 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/metric/add:<function MetricEndpoint.add at 0x7f16e5889360>
+fwdi.WebApp.web_application:/api/v1.0/metric/update:<function MetricEndpoint.update at 0x7f16e58893f0>
+2024-12-13 03:04:15,760 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/metric/update:<function MetricEndpoint.update at 0x7f16e58893f0>
+fwdi.WebApp.web_application:/api/v1.0/metric/del:<function MetricEndpoint.delete at 0x7f16e5889480>
+2024-12-13 03:04:15,763 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/metric/del:<function MetricEndpoint.delete at 0x7f16e5889480>
+fwdi.WebApp.web_application:/api/v1.0/test/v_search:<function SearchEndpoint.vector_search at 0x7f16e588a830>
+2024-12-13 03:04:15,767 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/test/v_search:<function SearchEndpoint.vector_search at 0x7f16e588a830>
+fwdi.WebApp.web_application:/api/v1.0/test/l_search:<function SearchEndpoint.lsi_search at 0x7f16e588a8c0>
+2024-12-13 03:04:15,771 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/test/l_search:<function SearchEndpoint.lsi_search at 0x7f16e588a8c0>
+fwdi.WebApp.web_application:/api/v1.0/test/common_search:<function SearchEndpoint.common_search at 0x7f16e588b6d0>
+2024-12-13 03:04:15,775 | INFO | 139737232605632 | fwdi.WebApp.web_application:/api/v1.0/test/common_search:<function SearchEndpoint.common_search at 0x7f16e588b6d0>
+Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5005}
+2024-12-13 03:04:15,779 | INFO | 139737232605632 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5005}
+fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:06:18,356 | INFO | 139878844080576 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:06:18,358 | INFO | 139878844080576 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+Create dependency injection Persistence
+2024-12-13 03:06:18,360 | INFO | 139878844080576 | Create dependency injection Persistence
+Create dependency injection Application
+2024-12-13 03:06:18,361 | INFO | 139878844080576 | Create dependency injection Application
+Create dependency injection Infrastructure
+2024-12-13 03:06:18,362 | INFO | 139878844080576 | Create dependency injection Infrastructure
+fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f3719820be0>>
+2024-12-13 03:06:18,464 | INFO | 139878844080576 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f3719820be0>>
+fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f371a9f6e60>
+2024-12-13 03:06:18,467 | INFO | 139878844080576 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f371a9f6e60>
+fwdi.WebApp.web_application:/api/v1.0/document/add:<function DocumentEndpoint.add at 0x7f37de3c8c10>
+2024-12-13 03:06:18,503 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/document/add:<function DocumentEndpoint.add at 0x7f37de3c8c10>
+fwdi.WebApp.web_application:/api/v1.0/document/add_raw:<function DocumentEndpoint.add_raw at 0x7f37de3c9000>
+2024-12-13 03:06:18,508 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/document/add_raw:<function DocumentEndpoint.add_raw at 0x7f37de3c9000>
+fwdi.WebApp.web_application:/api/v1.0/document/list:<function DocumentEndpoint.list_document at 0x7f37de3c9090>
+2024-12-13 03:06:18,512 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/document/list:<function DocumentEndpoint.list_document at 0x7f37de3c9090>
+fwdi.WebApp.web_application:/api/v1.0/document/change:<function DocumentEndpoint.change at 0x7f37de3c9120>
+2024-12-13 03:06:18,516 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/document/change:<function DocumentEndpoint.change at 0x7f37de3c9120>
+fwdi.WebApp.web_application:/api/v1.0/document/delete:<function DocumentEndpoint.delete at 0x7f37de3c91b0>
+2024-12-13 03:06:18,519 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/document/delete:<function DocumentEndpoint.delete at 0x7f37de3c91b0>
+fwdi.WebApp.web_application:/api/v1.0/project/list:<function ProjectEndpoint.list_project at 0x7f37de3ca560>
+2024-12-13 03:06:18,523 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/list:<function ProjectEndpoint.list_project at 0x7f37de3ca560>
+fwdi.WebApp.web_application:/api/v1.0/project/prepare:<function ProjectEndpoint.prepare at 0x7f37de3cb250>
+2024-12-13 03:06:18,526 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/prepare:<function ProjectEndpoint.prepare at 0x7f37de3cb250>
+fwdi.WebApp.web_application:/api/v1.0/project/add_metrics:<function ProjectEndpoint.add_metric at 0x7f37de3cb2e0>
+2024-12-13 03:06:18,531 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/add_metrics:<function ProjectEndpoint.add_metric at 0x7f37de3cb2e0>
+fwdi.WebApp.web_application:/api/v1.0/project/proccessing:<function ProjectEndpoint.proccessing at 0x7f37de3cb130>
+2024-12-13 03:06:18,536 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/proccessing:<function ProjectEndpoint.proccessing at 0x7f37de3cb130>
+fwdi.WebApp.web_application:/api/v1.0/project/embedding:<function ProjectEndpoint.embedding at 0x7f37de3cb1c0>
+2024-12-13 03:06:18,543 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/embedding:<function ProjectEndpoint.embedding at 0x7f37de3cb1c0>
+fwdi.WebApp.web_application:/api/v1.0/project/create_vector:<function ProjectEndpoint.create_vector at 0x7f37de3cb370>
+2024-12-13 03:06:18,547 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/create_vector:<function ProjectEndpoint.create_vector at 0x7f37de3cb370>
+fwdi.WebApp.web_application:/api/v1.0/project/create_lsilda:<function ProjectEndpoint.create_lsi_lda at 0x7f37de3cb400>
+2024-12-13 03:06:18,550 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/create_lsilda:<function ProjectEndpoint.create_lsi_lda at 0x7f37de3cb400>
+fwdi.WebApp.web_application:/api/v1.0/project/upload:<function ProjectEndpoint.upload_to_service at 0x7f37de3caef0>
+2024-12-13 03:06:18,555 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/upload:<function ProjectEndpoint.upload_to_service at 0x7f37de3caef0>
+fwdi.WebApp.web_application:/api/v1.0/project/delete:<function ProjectEndpoint.delete at 0x7f37de3caf80>
+2024-12-13 03:06:18,561 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/delete:<function ProjectEndpoint.delete at 0x7f37de3caf80>
+fwdi.WebApp.web_application:/api/v1.0/project/get_db:<function ProjectEndpoint.get_db at 0x7f37de3cb010>
+2024-12-13 03:06:18,565 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/get_db:<function ProjectEndpoint.get_db at 0x7f37de3cb010>
+fwdi.WebApp.web_application:/api/v1.0/project/get_dump:<function ProjectEndpoint.get_dump at 0x7f37de3cb0a0>
+2024-12-13 03:06:18,569 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/project/get_dump:<function ProjectEndpoint.get_dump at 0x7f37de3cb0a0>
+fwdi.WebApp.web_application:/api/v1.0/metric/list:<function MetricEndpoint.list at 0x7f37de3c92d0>
+2024-12-13 03:06:18,574 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/metric/list:<function MetricEndpoint.list at 0x7f37de3c92d0>
+fwdi.WebApp.web_application:/api/v1.0/metric/add:<function MetricEndpoint.add at 0x7f37de3c9360>
+2024-12-13 03:06:18,578 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/metric/add:<function MetricEndpoint.add at 0x7f37de3c9360>
+fwdi.WebApp.web_application:/api/v1.0/metric/update:<function MetricEndpoint.update at 0x7f37de3c93f0>
+2024-12-13 03:06:18,582 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/metric/update:<function MetricEndpoint.update at 0x7f37de3c93f0>
+fwdi.WebApp.web_application:/api/v1.0/metric/del:<function MetricEndpoint.delete at 0x7f37de3c9480>
+2024-12-13 03:06:18,587 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/metric/del:<function MetricEndpoint.delete at 0x7f37de3c9480>
+fwdi.WebApp.web_application:/api/v1.0/test/v_search:<function SearchEndpoint.vector_search at 0x7f37de3ca830>
+2024-12-13 03:06:18,592 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/test/v_search:<function SearchEndpoint.vector_search at 0x7f37de3ca830>
+fwdi.WebApp.web_application:/api/v1.0/test/l_search:<function SearchEndpoint.lsi_search at 0x7f37de3ca8c0>
+2024-12-13 03:06:18,595 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/test/l_search:<function SearchEndpoint.lsi_search at 0x7f37de3ca8c0>
+fwdi.WebApp.web_application:/api/v1.0/test/common_search:<function SearchEndpoint.common_search at 0x7f37de3cb6d0>
+2024-12-13 03:06:18,598 | INFO | 139878844080576 | fwdi.WebApp.web_application:/api/v1.0/test/common_search:<function SearchEndpoint.common_search at 0x7f37de3cb6d0>
+Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5005}
+2024-12-13 03:06:18,602 | INFO | 139878844080576 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5005}
+fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:07:52,816 | INFO | 139719623209408 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+2024-12-13 03:07:52,817 | INFO | 139719623209408 | fwdi.WebApp.web_application:{'name': 'Data proccessing service', 'debug': 'False'}
+Create dependency injection Persistence
+2024-12-13 03:07:52,819 | INFO | 139719623209408 | Create dependency injection Persistence
+Create dependency injection Application
+2024-12-13 03:07:52,820 | INFO | 139719623209408 | Create dependency injection Application
+Create dependency injection Infrastructure
+2024-12-13 03:07:52,821 | INFO | 139719623209408 | Create dependency injection Infrastructure
+fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f1207422140>>
+2024-12-13 03:07:52,898 | INFO | 139719623209408 | fwdi.WebApp.web_application:/home:<bound method Controller.index of <fwdi.Presentation.DefaultControllers.home_controller.Controller object at 0x7f1207422140>>
+fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f1208607b50>
+2024-12-13 03:07:52,901 | INFO | 139719623209408 | fwdi.WebApp.web_application:/token:<function TokenController.post at 0x7f1208607b50>
+fwdi.WebApp.web_application:/api/v1.0/document/add:<function DocumentEndpoint.add at 0x7f1208606320>
+2024-12-13 03:07:52,932 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/document/add:<function DocumentEndpoint.add at 0x7f1208606320>
+fwdi.WebApp.web_application:/api/v1.0/document/add_raw:<function DocumentEndpoint.add_raw at 0x7f12086063b0>
+2024-12-13 03:07:52,937 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/document/add_raw:<function DocumentEndpoint.add_raw at 0x7f12086063b0>
+fwdi.WebApp.web_application:/api/v1.0/document/list:<function DocumentEndpoint.list_document at 0x7f1208606440>
+2024-12-13 03:07:52,941 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/document/list:<function DocumentEndpoint.list_document at 0x7f1208606440>
+fwdi.WebApp.web_application:/api/v1.0/document/change:<function DocumentEndpoint.change at 0x7f12086064d0>
+2024-12-13 03:07:52,944 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/document/change:<function DocumentEndpoint.change at 0x7f12086064d0>
+fwdi.WebApp.web_application:/api/v1.0/document/delete:<function DocumentEndpoint.delete at 0x7f1208606560>
+2024-12-13 03:07:52,947 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/document/delete:<function DocumentEndpoint.delete at 0x7f1208606560>
+fwdi.WebApp.web_application:/api/v1.0/project/list:<function ProjectEndpoint.list_project at 0x7f12086065f0>
+2024-12-13 03:07:52,951 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/list:<function ProjectEndpoint.list_project at 0x7f12086065f0>
+fwdi.WebApp.web_application:/api/v1.0/project/prepare:<function ProjectEndpoint.prepare at 0x7f12086069e0>
+2024-12-13 03:07:52,955 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/prepare:<function ProjectEndpoint.prepare at 0x7f12086069e0>
+fwdi.WebApp.web_application:/api/v1.0/project/add_metrics:<function ProjectEndpoint.add_metric at 0x7f1208606a70>
+2024-12-13 03:07:52,959 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/add_metrics:<function ProjectEndpoint.add_metric at 0x7f1208606a70>
+fwdi.WebApp.web_application:/api/v1.0/project/proccessing:<function ProjectEndpoint.proccessing at 0x7f12086068c0>
+2024-12-13 03:07:52,964 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/proccessing:<function ProjectEndpoint.proccessing at 0x7f12086068c0>
+fwdi.WebApp.web_application:/api/v1.0/project/embedding:<function ProjectEndpoint.embedding at 0x7f1208606950>
+2024-12-13 03:07:52,969 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/embedding:<function ProjectEndpoint.embedding at 0x7f1208606950>
+fwdi.WebApp.web_application:/api/v1.0/project/create_vector:<function ProjectEndpoint.create_vector at 0x7f1208606b00>
+2024-12-13 03:07:52,972 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/create_vector:<function ProjectEndpoint.create_vector at 0x7f1208606b00>
+fwdi.WebApp.web_application:/api/v1.0/project/create_lsilda:<function ProjectEndpoint.create_lsi_lda at 0x7f1208606b90>
+2024-12-13 03:07:52,975 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/create_lsilda:<function ProjectEndpoint.create_lsi_lda at 0x7f1208606b90>
+fwdi.WebApp.web_application:/api/v1.0/project/upload:<function ProjectEndpoint.upload_to_service at 0x7f1208606680>
+2024-12-13 03:07:52,979 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/upload:<function ProjectEndpoint.upload_to_service at 0x7f1208606680>
+fwdi.WebApp.web_application:/api/v1.0/project/delete:<function ProjectEndpoint.delete at 0x7f1208606710>
+2024-12-13 03:07:52,981 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/delete:<function ProjectEndpoint.delete at 0x7f1208606710>
+fwdi.WebApp.web_application:/api/v1.0/project/get_db:<function ProjectEndpoint.get_db at 0x7f12086067a0>
+2024-12-13 03:07:52,984 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/get_db:<function ProjectEndpoint.get_db at 0x7f12086067a0>
+fwdi.WebApp.web_application:/api/v1.0/project/get_dump:<function ProjectEndpoint.get_dump at 0x7f1208606830>
+2024-12-13 03:07:52,988 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/project/get_dump:<function ProjectEndpoint.get_dump at 0x7f1208606830>
+fwdi.WebApp.web_application:/api/v1.0/metric/list:<function MetricEndpoint.list at 0x7f1208606c20>
+2024-12-13 03:07:52,991 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/metric/list:<function MetricEndpoint.list at 0x7f1208606c20>
+fwdi.WebApp.web_application:/api/v1.0/metric/add:<function MetricEndpoint.add at 0x7f1208606cb0>
+2024-12-13 03:07:52,993 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/metric/add:<function MetricEndpoint.add at 0x7f1208606cb0>
+fwdi.WebApp.web_application:/api/v1.0/metric/update:<function MetricEndpoint.update at 0x7f1208606d40>
+2024-12-13 03:07:52,996 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/metric/update:<function MetricEndpoint.update at 0x7f1208606d40>
+fwdi.WebApp.web_application:/api/v1.0/metric/del:<function MetricEndpoint.delete at 0x7f1208606dd0>
+2024-12-13 03:07:53,000 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/metric/del:<function MetricEndpoint.delete at 0x7f1208606dd0>
+fwdi.WebApp.web_application:/api/v1.0/test/v_search:<function SearchEndpoint.vector_search at 0x7f1208606ef0>
+2024-12-13 03:07:53,003 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/test/v_search:<function SearchEndpoint.vector_search at 0x7f1208606ef0>
+fwdi.WebApp.web_application:/api/v1.0/test/l_search:<function SearchEndpoint.lsi_search at 0x7f1208606f80>
+2024-12-13 03:07:53,006 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/test/l_search:<function SearchEndpoint.lsi_search at 0x7f1208606f80>
+fwdi.WebApp.web_application:/api/v1.0/test/common_search:<function SearchEndpoint.common_search at 0x7f1208606e60>
+2024-12-13 03:07:53,010 | INFO | 139719623209408 | fwdi.WebApp.web_application:/api/v1.0/test/common_search:<function SearchEndpoint.common_search at 0x7f1208606e60>
+Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5005}
+2024-12-13 03:07:53,014 | INFO | 139719623209408 | Run service:fwdi.WebApp.web_application:{'host': '0.0.0.0', 'port': 5005}

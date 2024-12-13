@@ -1,0 +1,72 @@
+fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin:admin
+2024-12-13 03:01:23,364 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin:admin
+Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:01:23,365 | INFO | 140394126587456 | Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7fb00d838df0>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0
+2024-12-13 03:01:33,695 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7fb00d838df0>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0
+fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+2024-12-13 03:01:33,695 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734622883}
+2024-12-13 03:01:33,697 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734622883}
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+2024-12-13 03:01:33,697 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:01:33,700 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:01:33,701 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7fb00ce877f0>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0
+2024-12-13 03:01:51,845 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7fb00ce877f0>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIyODgzfQ.tySl5zjzLoIMyiV3CoeXqWp35F_J6TvYbQaK-VDuwB0
+fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+2024-12-13 03:01:51,846 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734622883}
+2024-12-13 03:01:51,849 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734622883}
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+2024-12-13 03:01:51,849 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:01:51,852 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:01:51,853 | INFO | 140394126587456 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin:admin
+2024-12-13 03:04:27,745 | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin:admin
+Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:04:27,747 | INFO | 139733023446592 | Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7f1621cf4d30>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMDY4fQ.KiQ7jKKpATM2C95RkHXuz0DZOX4FeAvPR14lE1C4_5g
+2024-12-13 03:04:32,313 | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7f1621cf4d30>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMDY4fQ.KiQ7jKKpATM2C95RkHXuz0DZOX4FeAvPR14lE1C4_5g
+fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+2024-12-13 03:04:32,314 | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734623068}
+2024-12-13 03:04:32,315 | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734623068}
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+2024-12-13 03:04:32,316 | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:04:32,319 | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:04:32,320 | INFO | 139733023446592 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin:admin
+2024-12-13 03:08:31,051 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:[{'username': 'admin', 'hashed_password': '$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42', 'email': 'admin@admin.ru'}]:admin:admin
+Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:08:31,055 | INFO | 139715417327168 | Auth:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7f1207515ff0>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4
+2024-12-13 03:08:35,071 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7f1207515ff0>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4
+fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+2024-12-13 03:08:35,072 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734623311}
+2024-12-13 03:08:35,074 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734623311}
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+2024-12-13 03:08:35,075 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:08:35,079 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:08:35,080 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7f1207288e20>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4
+2024-12-13 03:10:35,051 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:<fastapi.security.oauth2.SecurityScopes object at 0x7f1207288e20>:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJzY29wZXMiOlsiYWRtaW4iXSwiZXhwIjoxNzM0NjIzMzExfQ.aPWKw2UxNJoQJQJO4IrhT3ULEjCHbH1cmj8RvNChEa4
+fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+2024-12-13 03:10:35,052 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:Bearer scope="admin"
+fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734623311}
+2024-12-13 03:10:35,054 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:{'sub': 'admin', 'email': 'admin@admin.ru', 'scopes': ['admin'], 'exp': 1734623311}
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+2024-12-13 03:10:35,055 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' scopes=['admin'] email='admin@admin.ru'
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:10:35,059 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:10:35,061 | INFO | 139715417327168 | fwdi.Infrastructure.JwtService.jwt_service:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'

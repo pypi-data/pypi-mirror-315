@@ -1,0 +1,4 @@
+Presentation.Endpoints.project_endpoint:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:08:57,371 | INFO | 139715417327168 | Presentation.Endpoints.project_endpoint:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+Presentation.Endpoints.project_endpoint:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
+2024-12-13 03:10:35,062 | INFO | 139715417327168 | Presentation.Endpoints.project_endpoint:username='admin' email='admin@admin.ru' full_name=None disabled=None hashed_password='$2b$12$AEdeAbTmF3d0/fH0yPazz.KVSLBAezwlQc7uVXie.xFRNOOfi9Q42'
