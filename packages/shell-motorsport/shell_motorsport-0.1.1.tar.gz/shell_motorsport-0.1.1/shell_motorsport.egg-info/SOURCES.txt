@@ -1,0 +1,10 @@
+README.md
+setup.py
+shell_motorsport.egg-info/PKG-INFO
+shell_motorsport.egg-info/SOURCES.txt
+shell_motorsport.egg-info/dependency_links.txt
+shell_motorsport.egg-info/requires.txt
+shell_motorsport.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_shell_motorsport.py
