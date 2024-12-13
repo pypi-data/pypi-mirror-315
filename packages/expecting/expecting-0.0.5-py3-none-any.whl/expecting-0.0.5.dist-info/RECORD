@@ -1,0 +1,12 @@
+expecting/__init__.py,sha256=SAL3JoaSOPXtjog5SgXNAMY7f35WFlKBpjcm7qKlpJg,106
+expecting/core.py,sha256=-8y_GVGc05J7j-lW5xSDh4obcqopIZX-qzdhtdnkoIg,245
+expecting/dict/__init__.py,sha256=bcrIUIxxf4Q3mJRBjKeyicipCxuFSKQTmQMYizvmId8,757
+expecting/list/__init__.py,sha256=Q5KyuASHo1alu3afN3U-i9SD09UbbF_u1UnFISpnag8,1824
+expecting/number/__init__.py,sha256=gASbpuHfuRyxUOD4Fxk5-kbkjlNn6MkdohNGnf8uT4w,1878
+expecting/string/__init__.py,sha256=bVDmXqMDeRnJLt2ngTHdmq32VHwh_8dspvlg7dkSAtg,72
+expecting/string/datetime.py,sha256=15KoC-45nYBNOiof_1GTp5Srt5yPyg1DhiOQvnv1pGY,1185
+expecting/string/uuid.py,sha256=rinmr6Y_NzDXKzbCl75yf_nrNjjneIIZuFXXqCIWPS4,1073
+expecting-0.0.5.dist-info/LICENSE,sha256=iPSTq9H2ezKeC1fmww-O3fX_-WJ9MLqVAH5MjC4BItk,1066
+expecting-0.0.5.dist-info/METADATA,sha256=aDVLRSeBv9Dy-_Ua68w4cltSAW8HPjYFaALyH9kaKEU,2567
+expecting-0.0.5.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+expecting-0.0.5.dist-info/RECORD,,
