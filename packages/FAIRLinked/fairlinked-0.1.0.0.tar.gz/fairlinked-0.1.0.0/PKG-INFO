@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: FAIRLinked
+Version: 0.1.0.0
+Summary: Transform research data into FAIR-compliant RDF using the RDF Data Cube Vocabulary. Align your datasets with MDS-Onto and convert them into Linked Data, enhancing interoperability and reusability for seamless data integration. See the README or vignette for more information. This tool is used by the SDLE Research Center at Case Western Reserve University.
+Author: Balashanmuga Priyan Rajamohan, Kai Zheng, Benjamin Pierce, Erika I. Barcelos, Roger H. French
+Author-email: rxf131@case.edu
+License: BSD-2-Clause
+Requires-Python: >=3.9.18
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: rdflib>=7.0.0
+Requires-Dist: typing-extensions>=4.0.0
+Requires-Dist: pyarrow>=11.0.0
+Requires-Dist: openpyxl>=3.0.0
+Requires-Dist: pandas>=1.0.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+
+------------------
+FAIRLinked
+------------------
+
+**Authors:**  
+**Balashanmuga Priyan Rajamohan**, Kai Zheng, Benjamin Pierce, Yinghui Wu, Laura Bruckman, Erika I. Barcelos, Roger H. French
+
+**Affiliation:**  
+Materials Data Science for Stockpile Stewardship Center of Excellence,  
+Cleveland, OH 44106, USA
+
+
+**Python Installation:**
+
+```bash
+pip install FAIRLinked
+```
+
+**Package Usage:**
+
+```bash
+FAIRLinked
+```
+
+```mermaid
+  graph TD;
+    A[User Input] --> B{Existing Data Cube File?};
+    B -->|Yes| C[Parse RDF to DataFrame];
+    B -->|No| D{Running Experiment?};
+    D -->|Yes| E[Experiment Workflow];
+    D -->|No| F[Standard Workflow];
+
+    C --> G{Save as CSV?};
+    G -->|Yes| H[Save CSV];
+    G -->|No| I[End];
+
+    E --> J{Has Ontology Files?};
+    J -->|Yes| K[Analyze Ontologies];
+    J -->|No| L[Generate Default Templates];
+    K --> M[Generate Templates];
+    L --> M;
+    M --> N[Create Namespace Excel];
+    M --> O[Create Data Excel];
+
+    F --> P[Process Input Files];
+    P --> Q[Parse Namespace];
+    P --> R[Read Data Template];
+    Q --> S[Convert to RDF];
+    R --> S;
+    S --> T[Output Files];
+```
+
+
+# Acknowledgment:
+This work was supported by the U.S. Department of Energy’s Office of Energy Efficiency and Renewable Energy (EERE) under the Solar Energy Technologies Office (SETO) Agreement Numbers DE-EE0009353 and DE-EE0009347; the Department of Energy (National Nuclear Security Administration) under Award Number DE-NA0004104 and Contract Number B647887; and the U.S. National Science Foundation under Award Number 2133576.
