@@ -1,0 +1,16 @@
+nygrid/__init__.py,sha256=ckKXrFvr91oi9X78UVOJzlqBhlAytswf1n7N9yC_XAo,42
+nygrid/allocate.py,sha256=wp_ph1fD0emVjR_J8IPH0X0zd6laXZqs_asCQAQ50sQ,6562
+nygrid/gen_params.py,sha256=kWfUedXEwmyzT_emiyqatRzUQviKNKkBh6BOrCHhbXc,18037
+nygrid/nygrid.py,sha256=flTFJOXzRTLDkQlApuj_nuLS3Zcsh_HlvUFxt6ltkMQ,64936
+nygrid/optimizer.py,sha256=yer_su-0hCtU8Pximj00IzGXoEI2JK2G_725az9HmK0,31748
+nygrid/plots.py,sha256=7ZB8uCLgzIfW14h3kRVVSSIxXadYkmVFjEeouRztmJ4,840
+nygrid/postprocessing.py,sha256=CPdKYRnRMa36qZUEjCjYqZZZbODK9vqw8RUrI5nxlBY,12353
+nygrid/ppc_idx.py,sha256=Vk8QosF2wM2pBBdCcthNSfIQ3DoHW4XB_tZjWKE5Il0,1236
+nygrid/preprocessing.py,sha256=kVSsN3RfJjqT_CCfaJZjsryl2s_m_m0tsgAbYzUpSuQ,8302
+nygrid/run_nygrid.py,sha256=v8aas4zLVFsxhdMSK1uIS0iiSe3lq7q_bJlUPzLICko,27619
+nygrid/utils.py,sha256=uP9xizRzq48Q60q1fx_Xt9dVPPe9RTATBepfVE3dkl4,1056
+nygrid-0.1.2.dist-info/LICENSE,sha256=MtRFTnC73ySQDhKXiv0bYvRiyT18bPhPPV_X6wYpV3Q,1064
+nygrid-0.1.2.dist-info/METADATA,sha256=fkTZfyEjCmvnWxgsNrUW6KMSw5Tu5_PuarzpXUH7IH8,4343
+nygrid-0.1.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+nygrid-0.1.2.dist-info/top_level.txt,sha256=JRjZRh9oKSK4Vyo_qnIjcrb1KE5qzK9LqYTzgD-kFso,7
+nygrid-0.1.2.dist-info/RECORD,,
