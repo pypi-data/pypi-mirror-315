@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pretty-html"
+version = "0.9.1"
+description = "This code can refactor your html in pretty dict"
+authors = ["dima-on <sinica911@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "Pretty-HTML"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+bs4 = "^0.0.2"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
