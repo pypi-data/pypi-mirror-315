@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tests/test_load_datasets.py
+wqdab/__init__.py
+wqdab/data.py
+wqdab/metrics.py
+wqdab.egg-info/PKG-INFO
+wqdab.egg-info/SOURCES.txt
+wqdab.egg-info/dependency_links.txt
+wqdab.egg-info/requires.txt
+wqdab.egg-info/top_level.txt
