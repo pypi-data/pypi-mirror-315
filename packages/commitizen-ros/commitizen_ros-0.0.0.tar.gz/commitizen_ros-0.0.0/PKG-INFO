@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: commitizen_ros
+Version: 0.0.0
+Summary: A ROS Version Provider for Commitizen
+Author-email: Michael Stinger <mvstinger@gmail.com>
+Maintainer-email: Michael Stinger <mvstinger@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Reports, https://github.com/pypa/sampleproject/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Say Thanks!, http://saythanks.io/to/example
+Project-URL: Source, https://github.com/pypa/sampleproject/
+Keywords: ROS,Commitizen,Version Provider
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Version Control
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: commitizen>=3.0.0
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+
+# Commitizen ROS
+
+A python package implementing a Commitizen Version Provider for ROS Package Manifests
+
+## Quick Start
+
+Install with `pip`...
+
+```bash
+python3 -m pip install commitizen-ros
+```
+
+...and add the provider to your Commitizen configuration:
+```toml
+[tool.commitizen]
+version_provider = [.., "commitizen_ros", ...]
+```
+
+## Description
+
+The Commitizen ROS package adds ROS 1 and 2 `project.xml` package manifests
+defined as per [REP127 (format 1)](https://ros.org/reps/rep-0127.html) and
+[REP140 (format 2)](https://www.ros.org/reps/rep-0140.html) as sources and
+targets for version data in
+[Commitizen](https://commitizen-tools.github.io/commitizen/).
+
+
+## Usage
+No configuration is required (beyond adding the provider to your Commitizen
+configuration) as the ROS `project.xml` name and location and contents are
+specified by REPs 127 and 140.
+
+
+## License
+This package is licensed under the MIT License
