@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pykolesky"
+version = "0.1.2"
+description = "A Python wrapper for the Julia package [KoLesky.jl](https://github.com/f-t-s/KoLesky.jl), which implements the sparse Cholesky decomposition algorithm described in the paper *\"Sparse Cholesky Factorization by Kullback-Leibler Minimization\"* by Florian Schäfer, Matthias Katzfuss, and Houman Owhadi."
+authors = ["Xianjin Yang"]
+license = "CC-BY-NC 4.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

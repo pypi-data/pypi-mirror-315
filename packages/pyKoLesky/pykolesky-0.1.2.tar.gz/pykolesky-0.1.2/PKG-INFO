@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pykolesky
+Version: 0.1.2
+Summary: A Python wrapper for the Julia package [KoLesky.jl](https://github.com/f-t-s/KoLesky.jl), which implements the sparse Cholesky decomposition algorithm described in the paper *"Sparse Cholesky Factorization by Kullback-Leibler Minimization"* by Florian Schäfer, Matthias Katzfuss, and Houman Owhadi.
+License: CC-BY-NC 4.0
+Author: Xianjin Yang
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+A Python wrapper for the Julia package [KoLesky.jl](https://github.com/f-t-s/KoLesky.jl), which implements the sparse Cholesky decomposition algorithm described in the paper *"Sparse Cholesky Factorization by Kullback-Leibler Minimization"* by Florian Schäfer, Matthias Katzfuss, and Houman Owhadi.
+
