@@ -1,0 +1,3 @@
+[submodule "sshsiglib"]
+	path = sshsiglib
+	url = ../sshsiglib

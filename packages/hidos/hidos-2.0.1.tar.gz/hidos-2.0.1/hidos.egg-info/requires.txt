@@ -1,0 +1,8 @@
+cryptography
+dulwich>=0.22.6
+platformdirs
+requests
+requests-cache
+
+[git]
+GitPython
