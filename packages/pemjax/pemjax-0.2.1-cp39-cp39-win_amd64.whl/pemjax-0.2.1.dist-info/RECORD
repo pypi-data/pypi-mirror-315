@@ -1,0 +1,12 @@
+pemja_core.cp39-win_amd64.dll,sha256=PgDg5zAoIlrssLwpUII6BCqn-cjUR-A4YCEHEEk0ui4,83968
+pemja_core.cp39-win_amd64.pyd,sha256=PgDg5zAoIlrssLwpUII6BCqn-cjUR-A4YCEHEEk0ui4,83968
+pemja_utils.cp39-win_amd64.dll,sha256=GI-h9EB6CPYtGLW-KwsibrZ3-Pb4S5HP5hi5UXezx54,10752
+pemja_utils.cp39-win_amd64.pyd,sha256=GI-h9EB6CPYtGLW-KwsibrZ3-Pb4S5HP5hi5UXezx54,10752
+pemja/__init__.py,sha256=jRm-3MFYLa_nM1BrRSnm6Qfi4KUoZ-taJnMzSZvpHnQ,846
+pemja/redirect_stream.py,sha256=GlIbRFKbXOz1vxQNRxVFuAjqI1JGeu6-Vah-yeUHBHI,1432
+pemja/version.py,sha256=sQbST9ZTtU03pIPaIX60K-mknqZyKiCrIU84oprOZqQ,808
+pemjax-0.2.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pemjax-0.2.1.dist-info/METADATA,sha256=sQtuIpUpQ-BFkWGpIqn-rAIjJlKDqATUCpfGGzwr30g,4675
+pemjax-0.2.1.dist-info/WHEEL,sha256=EfPXSsrLwp9clrn29v9vbmPfEm-IfFzseSJd0ZtI9XA,99
+pemjax-0.2.1.dist-info/top_level.txt,sha256=OOlNGh--QZB0yQIp1Kns0_9mkVZOXCITULMc3530trE,29
+pemjax-0.2.1.dist-info/RECORD,,
