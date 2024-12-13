@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+elpipenv/__init__.py
+elpipenv/pipe.py
+elpipenv.egg-info/PKG-INFO
+elpipenv.egg-info/SOURCES.txt
+elpipenv.egg-info/dependency_links.txt
+elpipenv.egg-info/top_level.txt
