@@ -1,0 +1,19 @@
+site_name: wbcore
+
+nav:
+  - Metadata:
+    - Concept: metadata/concept.md
+    - Getting started: metadata/getting_started.md
+    - Configs:
+      - Fields: metadata/configs/fields.md
+      - Filter Fields: metadata/configs/filter_fields.md
+      - Ordering Fields: metadata/configs/ordering_fields.md
+      - Search Fields: metadata/configs/search_fields.md
+      - Pagination: metadata/configs/pagination.md
+      - Identifiers : metadata/configs/identifiers.md
+      - Type: metadata/configs/type.md
+      - Titles: metadata/configs/titles.md
+      - Endpoints: metadata/configs/endpoints.md
+      - Buttons: metadata/configs/buttons.md
+      - Display: metadata/configs/display.md
+      - Primary Key: metadata/configs/primary_key.md

@@ -1,0 +1,29 @@
+deploy-example-app:
+  image: ubuntu
+  stage: deploy
+  variables:
+    GIT_DEPTH: 0
+  only:
+    refs:
+      - dev
+    changes:
+      - "modules/wbcore/**/*"
+      - "modules/wbcore/*"
+  before_script:
+    - apt-get update -y && apt-get install openssh-client git -y
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan example.stainly.com >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - git config --global user.email "admin@stainly.com"
+    - git config --global user.name "Gitlab Runner"
+    - git config --global init.defaultBranch dev
+  script:
+    - cd modules/wbcore
+    - git init
+    - git add .
+    - git commit -m "initial commit"
+    - git remote add dokku dokku@example.stainly.com:example
+    - git push dokku $CI_COMMIT_REF_NAME --force
