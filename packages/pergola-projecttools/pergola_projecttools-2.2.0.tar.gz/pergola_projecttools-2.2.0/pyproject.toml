@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pergola-projecttools"
+version = "2.2.0"
+dependencies = [
+    'psutil'
+]
+description = "Helpful tools and utils for applications running inside of Pergola Cloud"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License"
+]
+readme = "README.md"
+keywords = ["pergola", "util", "tool", "utils", "tools"]
+requires-python = ">=3.9"
+authors = [
+    { name="Datasophie GmbH", email="contact@datasophie.de" },
+    { name="Dennis Hauser", email="dennis.hauser@brandcompete.com" }
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pergolaprojecttools", "pergolaprojecttools.*"]
+
+[project.urls]
+Pergola-Login = "https://console.pergola.cloud"
+Documentation = "https://docs.pergola.cloud"
+Homepage = "https://pergola.cloud"
+Source = "https://github.com/datasophie/pergola-projecttools-python"
