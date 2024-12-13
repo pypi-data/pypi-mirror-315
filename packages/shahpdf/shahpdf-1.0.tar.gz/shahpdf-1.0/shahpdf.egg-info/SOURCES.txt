@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+shahpdf.egg-info/PKG-INFO
+shahpdf.egg-info/SOURCES.txt
+shahpdf.egg-info/dependency_links.txt
+shahpdf.egg-info/top_level.txt
