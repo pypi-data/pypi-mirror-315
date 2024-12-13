@@ -1,0 +1,10 @@
+/src/build
+/build
+/dist
+/msvc
+/notebooks/.ipynb_checkpoints
+/mybuild
+/PyCEGO.egg-info
+/doxy
+/bld
+/**/.DS_Store

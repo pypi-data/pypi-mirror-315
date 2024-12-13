@@ -1,0 +1,30 @@
+name: build and run tests
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v2
+    - name: checkout submodules
+      run: git submodule update --init --recursive
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: mkdir
+      run: mkdir -p build
+    - name: Python build
+      run: ${{env.pythonLocation}}/python setup.py build
+    - name: cmake config
+      run: cd build && cmake .. -DCMAKE_BUILD_TYPE=Release -DCEGO_ALL=ON -DCEGO_NO_PYTHON=ON
+    - name: cmake make
+      run: cd build && cmake --build . --config Release
+    - name: run Catch tests
+      run: cd build && ctest --verbose
