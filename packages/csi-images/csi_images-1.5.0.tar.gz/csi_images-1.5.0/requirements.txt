@@ -1,0 +1,20 @@
+-e .[all]
+
+pandas
+numpy
+tables
+PyYAML
+aicspylibczi
+tifffile
+imagecodecs
+scikit-image
+opencv-python
+pyreadr
+
+pytest
+pytest-cov
+coverage
+genbadge[tests,coverage]
+hatchling
+build
+twine
