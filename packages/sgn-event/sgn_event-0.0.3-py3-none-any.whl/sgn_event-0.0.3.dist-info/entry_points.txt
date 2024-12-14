@@ -1,0 +1,2 @@
+[console_scripts]
+sgnevent-dir-to-hop = sgnevent.bin.dir_to_hop:main
