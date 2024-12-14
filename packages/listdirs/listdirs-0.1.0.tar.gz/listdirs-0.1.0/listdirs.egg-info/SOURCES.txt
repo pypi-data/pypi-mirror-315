@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+listdirs/__init__.py
+listdirs/cli.py
+listdirs.egg-info/PKG-INFO
+listdirs.egg-info/SOURCES.txt
+listdirs.egg-info/dependency_links.txt
+listdirs.egg-info/entry_points.txt
+listdirs.egg-info/requires.txt
+listdirs.egg-info/top_level.txt

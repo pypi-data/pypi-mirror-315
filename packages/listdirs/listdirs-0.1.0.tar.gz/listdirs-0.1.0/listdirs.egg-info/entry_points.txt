@@ -1,0 +1,2 @@
+[console_scripts]
+listdirs = listdirs.cli:app
