@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+chapagol/__init__.py
+chapagol/cli.py
+chapagol/set_up.py
+uv_project.egg-info/PKG-INFO
+uv_project.egg-info/SOURCES.txt
+uv_project.egg-info/dependency_links.txt
+uv_project.egg-info/entry_points.txt
+uv_project.egg-info/requires.txt
+uv_project.egg-info/top_level.txt
