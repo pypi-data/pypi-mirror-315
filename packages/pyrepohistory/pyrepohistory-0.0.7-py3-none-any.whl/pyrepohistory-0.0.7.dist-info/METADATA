@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: pyrepohistory
+Version: 0.0.7
+Summary: Lightweight longitudinal repository data collector.
+Project-URL: Homepage, https://github.com/mjgaughan/repo-lifecycles
+Project-URL: Issues, https://github.com/mjgaughan/repo-lifecycles/issues
+Author-email: Matt Gaughan <mgaughan@proton.me>
+Maintainer-email: Matt Gaughan <mgaughan@proton.me>
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Requires-Dist: gitpython
+Requires-Dist: pandas
+Description-Content-Type: text/markdown
+
+small library to quickly get by-commit software repository history to facilitate modeling of project lifecycles.
+
+there are other vcs analysis tools. this is indended to be:
+- a lightweight, minimum viable data collection tool 
+- support longitudinal data collection out of the box 
+
+installation:
+
+```
+pip install pyrepohistory
+```
