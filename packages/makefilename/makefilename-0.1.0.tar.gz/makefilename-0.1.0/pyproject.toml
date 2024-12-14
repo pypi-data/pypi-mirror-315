@@ -1,0 +1,43 @@
+[project]
+name = "makefilename"
+version = "0.1.0"
+description = "Takes an input string + extension and turns it into a sanitized filename"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Robert Dusk", email = "robert@dusk.monster"}
+]
+maintainers = [
+    {name = "Robert Dusk", email = "robert@dusk.monster"}
+]
+keywords = ["filename", "sanitize"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13"
+]
+
+[project.urls]
+homepage = "https://github.com/RobertDusk/py-make-filename"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+]
