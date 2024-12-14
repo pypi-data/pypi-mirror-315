@@ -1,0 +1,17 @@
+# install packages
+# $ conda install --file requirements.txt
+
+# climate
+cdo
+climate-indices
+ddt
+nco
+
+# geo
+geopandas
+shapely
+rioxarray
+netcdf4
+
+# misc
+importlib-resources

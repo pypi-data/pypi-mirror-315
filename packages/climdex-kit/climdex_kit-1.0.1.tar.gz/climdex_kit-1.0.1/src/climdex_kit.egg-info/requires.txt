@@ -1,0 +1,17 @@
+cdo
+climate-indices
+geopandas
+importlib-resources
+netcdf4
+nco
+rioxarray
+shapely
+
+[docs]
+
+[interactive]
+jupyter
+matplotlib
+
+[tests]
+ddt
