@@ -1,0 +1,15 @@
+pybiocfilecache/__init__.py,sha256=kClwDkzgGPYAyDW-fuo5LI4lKCruYJhDHvw0lq9u4b0,652
+pybiocfilecache/cache.py,sha256=Ij8-3-_4sTWLlSmXRqyIZXIZpNqKL2_j1u14EVS261w,22135
+pybiocfilecache/config.py,sha256=hfknpMCzNk6wt84lTvbfH3Z0g66u_-2Fer3AftgDJBA,1040
+pybiocfilecache/exceptions.py,sha256=8jrnctFYF7Rc1xsITtLUwKKvx8GMoKbarucyc-4f2zI,706
+pybiocfilecache/models.py,sha256=A6BIrT78qqURxJoDvBjkDRBFV5cLdi3WKxreSCPB9tw,2125
+pybiocfilecache/utils.py,sha256=lBK4BmzT6Z7XCn4j8kmhz9BPQpWT-RYfWvWC7YNtIGM,2291
+pybiocfilecache/migrations/__init__.py,sha256=hGgAPQfmQKqZgGtEaB0FaHqDL3weTAPDTjewpUpZuEE,32
+pybiocfilecache/migrations/migration.py,sha256=v9YEcOH9-x-6FLM_P1yXg-0506zZ98TdCCPuu4QPulE,4693
+pybiocfilecache/migrations/migrationV0_5_0.py,sha256=yRoGmCmGQxAo7eZ3SLd64kCwovXWgU77NkxBMhzKVVA,3044
+pyBiocFileCache-0.5.2.dev1.dist-info/AUTHORS.md,sha256=ptvMLokf9Knfp0Ng-dHSgtEimkXWZhjZAR_o2aJm9bw,161
+pyBiocFileCache-0.5.2.dev1.dist-info/LICENSE.txt,sha256=bV5MJ4ezdCnC4yREyxU30iel5hFq8T8kGqobu4Kc-WM,1082
+pyBiocFileCache-0.5.2.dev1.dist-info/METADATA,sha256=kKv4GJRDnkS8sD7Floh5r1OrpBySIUtjQoj3GvoeC8Y,2996
+pyBiocFileCache-0.5.2.dev1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pyBiocFileCache-0.5.2.dev1.dist-info/top_level.txt,sha256=_A2QFmYMnsz6WoSRPk1EFMDr5mkQVGx9Xtz2RMv3aF4,16
+pyBiocFileCache-0.5.2.dev1.dist-info/RECORD,,
