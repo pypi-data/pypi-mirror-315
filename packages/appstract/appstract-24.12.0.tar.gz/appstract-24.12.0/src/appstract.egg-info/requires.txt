@@ -1,0 +1,7 @@
+
+[all]
+rich
+
+[test]
+pytest
+rich
