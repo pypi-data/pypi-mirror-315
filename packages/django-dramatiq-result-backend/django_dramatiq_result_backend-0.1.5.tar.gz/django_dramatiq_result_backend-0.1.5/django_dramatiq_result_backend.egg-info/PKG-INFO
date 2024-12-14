@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: django-dramatiq-result-backend
+Version: 0.1.5
+Summary: A Django-based result backend for Dramatiq.
+Author-email: Sunil <shrest4647+pip@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/Shrest4647/django-dramatiq-result-backend
+Project-URL: Documentation, https://github.com/Shrest4647/django-dramatiq-result-backend#readme
+Project-URL: Source Code, https://github.com/Shrest4647/django-dramatiq-result-backend
+Project-URL: Bug Tracker, https://github.com/Shrest4647/django-dramatiq-result-backend/issues
+Keywords: django,dramatiq,result-backend,async
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: django>=3.2
+Requires-Dist: dramatiq>=1.2
+Provides-Extra: dev
+Requires-Dist: pytest>=7.1; extra == "dev"
+Requires-Dist: pytest-cov>=3.0; extra == "dev"
+Requires-Dist: pytest-django>=4.5; extra == "dev"
+
+# Django Dramatiq Result Backend
+
+A Django-based ResultBackend for [Dramatiq](https://dramatiq.io/).
+
+## Features
+
+- Store and retrieve task results using Django's ORM.
+- Automatically handle result expiration.
+
+## Installation
+
+```bash
+pip install django-dramatiq-result-backend
+```
+
+## Usage
+
+### Configure Django
+
+Add `django_dramatiq_result_backend` to your `INSTALLED_APPS` in `settings.py`.
+
+### Configure Dramatiq Result Backend
+
+```python
+# settings.py
+
+DRAMATIQ_RESULT_BACKEND = {
+    "BACKEND": "django_dramatiq_result_backend.backends.DjangoDramatiqResultBackend",
+    "OPTIONS": {
+        "model": "django_dramatiq_result_backend.Result",
+        "expiration": 30 * 60 * 60 * 24,  # 30 days
+    },
+}
+
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
