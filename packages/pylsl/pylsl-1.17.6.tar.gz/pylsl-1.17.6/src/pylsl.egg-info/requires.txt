@@ -1,0 +1,4 @@
+numpy<3,>=1.21
+
+[examples]
+pyqtgraph>=0.13.7
