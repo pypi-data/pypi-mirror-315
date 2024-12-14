@@ -1,0 +1,8 @@
+setuptools_scm
+pandas
+numpy
+km3db>=v0.12.0
+scipy
+scikit-learn
+matplotlib
+tables
