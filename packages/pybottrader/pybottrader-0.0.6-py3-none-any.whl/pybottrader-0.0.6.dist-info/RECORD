@@ -1,0 +1,12 @@
+pybottrader/__init__.py,sha256=Cpmj9WwPcwsNoErsjf2J1t2SPtA3gH4mrUEgkbl6Yq4,845
+pybottrader/indicators.py,sha256=AbWTkZ96vF_TY_LDn6utSu9vcG-2x4M058D6PbeYvjc,7371
+pybottrader/portfolios.py,sha256=1N7xUXQL9HxdTM5zQ5YWhI2RV8Xw0-90jhtF_guzMTc,2520
+pybottrader/strategies.py,sha256=FC0DvxJ5f6FXU0judsyReLhik5RD1RvsvrOpR2OHJXQ,1040
+pybottrader/traders.py,sha256=QFrVimztEkWT0ej5OsijG6UjRUI_olrFAuGEj52U7lM,2694
+pybottrader/datastreamers/__init__.py,sha256=53dUD9RTgtOmiAEW5-BR5KwB7gtls4I18nSMx3AkONk,957
+pybottrader/datastreamers/yfinance.py,sha256=OcbRaDVESBpU4C6VbMU55AkZ3GIeVsB7LNemNtjYc2M,832
+pybottrader-0.0.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pybottrader-0.0.6.dist-info/METADATA,sha256=EV98C0hAJ9_RaczvciXQEtdiacNxX4w47S9SzLF2MsM,45080
+pybottrader-0.0.6.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pybottrader-0.0.6.dist-info/top_level.txt,sha256=UUNPSYLvGKSZCMsemaLxAFJSZTO3LlUhV54_XOn_Qpw,12
+pybottrader-0.0.6.dist-info/RECORD,,
