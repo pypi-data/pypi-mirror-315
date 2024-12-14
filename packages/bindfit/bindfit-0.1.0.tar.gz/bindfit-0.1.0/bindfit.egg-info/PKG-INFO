@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bindfit
+Version: 0.1.0
+Summary: A binding constant fitter library for Python
+Author-email: echus <varvara@echus.co>
+Project-URL: Homepage, https://github.com/open-datakit/bindfit
+Project-URL: Bug Tracker, https://github.com/open-datakit/bindfit/issues
+Requires-Python: >=3.11
+Requires-Dist: numpy<2.0,>=1.26.4
+Requires-Dist: scipy<2.0,>=1.13.0
+Requires-Dist: pandas<3.0,>=2.2
+Provides-Extra: development
+Requires-Dist: pre-commit; extra == "development"
+Requires-Dist: build; extra == "development"
+Provides-Extra: all
+Requires-Dist: bindfit[development]; extra == "all"

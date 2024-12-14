@@ -1,0 +1,37 @@
+[project]
+name = "bindfit"
+version = "0.1.0"
+description = "A binding constant fitter library for Python"
+requires-python = ">=3.11"
+authors = [
+    { name = "echus", email = "varvara@echus.co" },
+]
+dependencies = [
+    "numpy >= 1.26.4, < 2.0",
+    "scipy >= 1.13.0, < 2.0",
+    "pandas >= 2.2, < 3.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/open-datakit/bindfit"
+"Bug Tracker" = "https://github.com/open-datakit/bindfit/issues"
+
+[project.optional-dependencies]
+development = [
+    "pre-commit",
+    "build",
+]
+all = ["bindfit[development]"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+force-exclude = '''
+/(
+    \.git
+)/
+'''
