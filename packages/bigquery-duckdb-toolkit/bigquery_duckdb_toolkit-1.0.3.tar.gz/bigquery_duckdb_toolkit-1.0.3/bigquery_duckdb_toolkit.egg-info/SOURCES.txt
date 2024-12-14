@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+bigquery_duckdb_toolkit/__init__.py
+bigquery_duckdb_toolkit/bigquery_client.py
+bigquery_duckdb_toolkit/bigquery_to_pandas.py
+bigquery_duckdb_toolkit/interaction_service.py
+bigquery_duckdb_toolkit.egg-info/PKG-INFO
+bigquery_duckdb_toolkit.egg-info/SOURCES.txt
+bigquery_duckdb_toolkit.egg-info/dependency_links.txt
+bigquery_duckdb_toolkit.egg-info/requires.txt
+bigquery_duckdb_toolkit.egg-info/top_level.txt
