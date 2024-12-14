@@ -1,0 +1,7 @@
+setup.py
+dependance/__init__.py
+dependance/post_install.py
+utils_hex.egg-info/PKG-INFO
+utils_hex.egg-info/SOURCES.txt
+utils_hex.egg-info/dependency_links.txt
+utils_hex.egg-info/top_level.txt
