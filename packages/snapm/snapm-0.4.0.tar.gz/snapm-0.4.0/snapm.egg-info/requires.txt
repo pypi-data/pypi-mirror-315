@@ -1,0 +1,7 @@
+boom-boot>=1.6.4
+dbus-client-gen>=0.4
+dbus-python-client-gen>=0.7
+justbytes>=0.14
+packaging
+python-dateutil
+wcwidth
