@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+auto_scroller.egg-info/PKG-INFO
+auto_scroller.egg-info/SOURCES.txt
+auto_scroller.egg-info/dependency_links.txt
+auto_scroller.egg-info/requires.txt
+auto_scroller.egg-info/top_level.txt
