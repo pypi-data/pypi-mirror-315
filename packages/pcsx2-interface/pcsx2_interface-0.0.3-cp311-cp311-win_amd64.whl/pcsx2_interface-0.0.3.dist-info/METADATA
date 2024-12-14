@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pcsx2_interface
+Version: 0.0.3
+Summary: Exposes PS2 memory within a running instance of the PCSX2 emulator using the Pine IPC Protocol.
+Author-Email: William Becker <willvfs@gmail.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# pcsx2_interface
+Exposes PS2 memory within a running instance of the PCSX2 emulator using the Pine IPC Protocol.
