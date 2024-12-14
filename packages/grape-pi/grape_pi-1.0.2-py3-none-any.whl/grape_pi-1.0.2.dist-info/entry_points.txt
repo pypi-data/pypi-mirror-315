@@ -1,0 +1,4 @@
+[console_scripts]
+grapepi=grape_pi:main
+grapepi_train=main:main
+
