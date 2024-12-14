@@ -1,0 +1,8 @@
+cltrier_lib/__init__.py,sha256=6TQd00FHVp9vSas2D5PoRJh8Bnlp-Et71Zq-NmBV2YY,104
+cltrier_lib/classify/__init__.py,sha256=z1qQzyH2ZNfi--_QIU97hlHsBU63-sIn-Ev07M2jf5k,999
+cltrier_lib/classify/schemas.py,sha256=vHic6Gr5Da0OyGYHYZLWmjhVwSjyqQzfWC6wNglNOQU,571
+cltrier_lib/inference/__init__.py,sha256=ehrtLJ5S7mVMv9uP9YasygtRoJDzCESVd-DGuEDWVr4,1179
+cltrier_lib/inference/schemas.py,sha256=Z8mUT9BEGAq7-zt4_sPF1TClZGwFH7u3TI20CzvvQ7c,1608
+cltrier_lib-0.1.7.dist-info/METADATA,sha256=KulkcH_EBK0AWnO4bn-OptCsn15N5PmWAE5B0xKVgQw,670
+cltrier_lib-0.1.7.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+cltrier_lib-0.1.7.dist-info/RECORD,,
