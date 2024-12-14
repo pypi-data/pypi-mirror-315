@@ -1,0 +1,1 @@
+Change the quality report to plot and calculate the average of the Fried parameter only where the AO lock status is True.
