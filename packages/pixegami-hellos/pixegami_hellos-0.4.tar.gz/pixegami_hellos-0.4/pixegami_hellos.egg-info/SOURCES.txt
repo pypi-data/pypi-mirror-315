@@ -1,0 +1,17 @@
+setup.py
+pixegami_hellos/__init__.py
+pixegami_hellos/app.py
+pixegami_hellos/cam_db_config.py
+pixegami_hellos/cam_db_config2.py
+pixegami_hellos/get_secrets.py
+pixegami_hellos/main.py
+pixegami_hellos/organisations2.py
+pixegami_hellos/providers2.py
+pixegami_hellos.egg-info/PKG-INFO
+pixegami_hellos.egg-info/SOURCES.txt
+pixegami_hellos.egg-info/dependency_links.txt
+pixegami_hellos.egg-info/requires.txt
+pixegami_hellos.egg-info/top_level.txt
+pixegami_hellos/models/__init__.py
+pixegami_hellos/models/organizations.py
+pixegami_hellos/models/providers.py
