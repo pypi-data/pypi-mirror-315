@@ -1,0 +1,12 @@
+tear/FineTunedBertModule.py,sha256=bxyUVo9sajZq4_jxe9izGX4uVfvOkTOChH_zTKDnzGk,1249
+tear/__main__.py,sha256=D-bX3Z_1V9H8yb-k0nuQ4aqdePuDs_-L8NA4Js1goms,6171
+tear/earthquakeReport.py,sha256=7wPqUvJWJlV0I6vnqHok-ozHy469PTierMj08GN3i5M,1424
+tear/earthquake_data.py,sha256=XOni9zPZ0aBKy7wD722VKDyhLOXiXiVhA8utu2egN4I,9153
+tear/summarize.py,sha256=3UxPaFAFnj6AEQQdT8Au4oTQKC7lPIj-oVZMwrwRhrk,306
+tear/usgsModule.py,sha256=iUKLbLksIP57cBA0mSEOZkGF7zLBrdous7s0CEtbrA0,17010
+tear/website2text.py,sha256=amld2RSvv4AcPRyqUui8v3eZ3IzezKVj0F213Q_w6as,5438
+tear-0.0.2.dist-info/METADATA,sha256=dH9ecUg2pcHmvQ1ZfKB_TD6q3N5_g19zlYnCHpEmV8A,3767
+tear-0.0.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+tear-0.0.2.dist-info/entry_points.txt,sha256=JngOGESM8cUZwdBGr0m8a4Ng9VRFLXDxttGYhsCuTfk,44
+tear-0.0.2.dist-info/top_level.txt,sha256=7WErQ0kr34QYSj8c33kNw4G8aRz3EBJ7hxfEYuTeG6k,5
+tear-0.0.2.dist-info/RECORD,,
