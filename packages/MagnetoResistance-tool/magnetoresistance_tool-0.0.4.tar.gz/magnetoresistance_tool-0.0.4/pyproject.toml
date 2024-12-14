@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MagnetoResistance-tool"
+description = "Tool to create calibration matrix allowing to correct for magneto-resistance in resisitive sensors."
+version = "0.0.4"
+readme = "README.md"
+license = {text = "GPL-3.0-or-later"}
+authors = [
+    {name = "Nowa Ammerlaan"},
+    {email = "<nowa.ammerlaan@ru.nl>"}
+]
+maintainers = [
+    {name = "Nowa Ammerlaan"},
+    {email = "<nowa.ammerlaan@ru.nl>"}
+]
+keywords = [ "magneto-resistance" ]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas"
+]
+
+
+[project.urls]
+homepage = "https://gitlab.science.ru.nl/hfml/MRcalib"
+repository = "https://gitlab.science.ru.nl/hfml/MRcalib"
+
+[project.optional-dependencies]
+plot = ["matplotlib"]
+
+[project.scripts]
+MRcalib = "MRcalib:__main__.__main__"
