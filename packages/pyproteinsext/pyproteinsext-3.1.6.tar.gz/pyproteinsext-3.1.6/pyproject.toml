@@ -1,0 +1,15 @@
+[project]
+name = "pyproteinsext"
+version = "3.1.6"
+description = "'Extending pyproteins for bioinformatics tools&services'"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "biopython>=1.79",
+    "bs4>=0.0.1",
+    "pyproteins>=2.1.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
