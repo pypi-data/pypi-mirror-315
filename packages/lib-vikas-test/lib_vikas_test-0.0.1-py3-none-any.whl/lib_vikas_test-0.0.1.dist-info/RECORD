@@ -1,0 +1,9 @@
+lib_vikas_test/__init__.py,sha256=fE3o-7QN-8IYrDF92GpxDAb67IP2e37n5_--Eqpwtf8,31
+lib_vikas_test/__main__.py,sha256=ikfiCuPPnqnKXX7i84_m3jLIgJXeJFH7w5RxsK1LQ48,109
+lib_vikas_test/sub_dir/__init__.py,sha256=LqDszLS64Vx1PMVhHSa53asH8f6o96fgLpdfKm9Oqok,34
+lib_vikas_test/sub_dir/vikas_test.py,sha256=Hiis0y_sy4k3TlJgK0EyyUtmcls2l5Bpj_m3icbecAI,1986
+lib_vikas_test-0.0.1.dist-info/METADATA,sha256=CZyH96kbU3V5Jxr9q6K1vQlyMZSmqHQteMcEwAi1VoQ,804
+lib_vikas_test-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+lib_vikas_test-0.0.1.dist-info/entry_points.txt,sha256=S6H2S8Mmyt3nLtJOrRoM4S0iGaqn8yEqU0n0VHbnyCQ,101
+lib_vikas_test-0.0.1.dist-info/top_level.txt,sha256=PTO8-XrPJE64SbL0kD_dVYBmroXkvMhnVKznUMQxd1A,15
+lib_vikas_test-0.0.1.dist-info/RECORD,,
