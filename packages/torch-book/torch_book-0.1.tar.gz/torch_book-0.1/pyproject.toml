@@ -1,0 +1,108 @@
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.4,<4"]
+
+[project]
+authors = [{name = "xinetzone", email = "735613050@qq.com"}]
+dynamic = ["version", "description"]
+license = {file = "LICENSE"}
+name = "torch-book"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+  "d2py[dev]",
+  "invoke",
+  "onnx",
+  "onnxscript",
+  "onnxruntime",
+  "tables",
+  "imageio",
+]
+
+maintainers = [
+  {name = "xinetzone", email = "735613050@qq.com"},
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "Framework :: Sphinx",
+  "Framework :: Sphinx :: Theme",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Home = "https://github.com/xinetzone/torch-book"
+
+[project.optional-dependencies]
+doc = [
+  "myst-nb",
+  "sphinx",
+  "sphinx-book-theme",
+  "sphinxext-rediraffe",
+  "sphinx-copybutton",
+  "sphinxcontrib-mermaid",
+  "sphinx-design",
+  "sphinxcontrib-bibtex",
+  "sphinx-thebe",
+  "sphinx-comments",
+  "matplotlib",
+  "sphinx-automodapi",
+  "sphinx-plotly-directive",
+  "sphinx-sitemap",
+  "sphinx-proof",
+  # MMLab
+  "terminaltables",
+  "pycocotools",
+  "shapely",
+  "albumentations",
+  "numba",
+  "timm",
+  "av",
+  "click",  # required by mmagic/utils/io_utils.py
+  "captum",
+  "Flask-Compress",
+  "sphinx-autoapi",
+]
+
+coverage = [
+  "pytest-cov",
+  "pytest-regressions",
+  "codecov",
+]
+
+dev = [
+  "pre-commit",
+  "controlnet_aux",
+  "diffusers",
+  "einops",
+  "face-alignment",
+  "facexlib",
+  "lpips",
+  "mediapipe",
+  "numpy",
+  "opencv-python",
+  "pandas",
+  "Pillow",
+  "resize_right",
+  "tensorboard",
+  "transformers",
+  "accelerate",
+  "torch",
+  "tensorflow",
+  "onnx",
+  "scikit-learn",
+  "kaleido",
+]
+test = [
+  "pytest",
+]
+
+[tool.flit.module]
+name = "torch_book"
+
+[tool.flit.sdist]
+# include = ["docs/"]
+exclude = ['doc', '.git', '.github']
