@@ -1,0 +1,4 @@
+nltk>=3.5
+tqdm>=4.48.0
+txtai>=8.1.0
+txtmarker>=1.1.0
