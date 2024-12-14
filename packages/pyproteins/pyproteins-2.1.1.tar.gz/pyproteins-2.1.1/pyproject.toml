@@ -1,0 +1,14 @@
+[project]
+name = "pyproteins"
+version = "2.1.1"
+description = "General purpose bionformatics library"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "lxml>4.7.1",
+    "numpy>1.26.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
