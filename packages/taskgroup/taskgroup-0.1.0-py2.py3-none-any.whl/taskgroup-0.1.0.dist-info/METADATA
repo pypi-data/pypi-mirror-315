@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: taskgroup
+Version: 0.1.0
+Summary: backport of asyncio.TaskGroup, asyncio.Runner and asyncio.timeout
+Author-email: Thomas Grainger <taskgroup@graingert.co.uk>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: exceptiongroup
+Requires-Dist: typing_extensions>=4.12.2,<5
+Project-URL: Home, https://github.com/graingert/taskgroup
+
+backport of asyncio.TaskGroup, asyncio.Runner and asyncio.timeout
+
