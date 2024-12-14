@@ -1,0 +1,14 @@
+charla/__about__.py,sha256=l2zu6MV__xLiP90kGyJjeSyWnYXu90ItCOnGMXPhjNk,126
+charla/__init__.py,sha256=Hi18ekz_kKsIjEqVYaHHs-MVJlgZZ0iyoNBNbrYKseU,104
+charla/chat.py,sha256=wYlBNWvNk3sP9jFd3PGINa0MKHQI8ZVr3NbsuDlduD0,5370
+charla/cli.py,sha256=81Lbz1w6FREmy_EJJ1IeeLrn8fI12g5HRm0FWlvded8,1829
+charla/config.py,sha256=YKJm0lQNX59Q8FkOCD9gKjZ4QNYv2fsUj4EmIup0yiE,1722
+charla/ui.py,sha256=jbnOulWvjnYY7v1m8tBGZm-dsibCYtJkKA4USc03cf0,651
+charla/client/__init__.py,sha256=ZlC9krhhiOKVmDl9xN2Rjibg5zmD9Pmz_WTzS8tE5hA,636
+charla/client/github.py,sha256=C6MAFGmAKdW_XLmffe0lxHMs6fdt254oXKllPETmS-c,1811
+charla/client/ollama.py,sha256=Dbz-l9bVS2FsIVL0J4nNI06EO3V1kuGkfxaFH-jD1qc,1655
+charla-2.1.0.dist-info/METADATA,sha256=hLZzh8elTwCcepDEK3W8vgs-SnMxvsfYCXLYmTyK7W0,5801
+charla-2.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+charla-2.1.0.dist-info/entry_points.txt,sha256=tiU6hih4woARmY1PQ__iV2zJMXUCASiZv3UUZyjzhd0,43
+charla-2.1.0.dist-info/licenses/LICENSE.txt,sha256=xHAsOfDjwvLq-EgPUtcbXVleLyzpP-CoWJtpff97lcE,1096
+charla-2.1.0.dist-info/RECORD,,
