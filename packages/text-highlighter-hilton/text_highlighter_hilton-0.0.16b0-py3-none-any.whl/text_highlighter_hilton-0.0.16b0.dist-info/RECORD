@@ -1,0 +1,17 @@
+text_highlighter/__init__.py,sha256=dUcHY_sLvY68fmuvrLUMCVIEZzgPUZ8uikXfojtt79I,7421
+text_highlighter/frontend/.env,sha256=TwLhUGTTldPvT4nW3BBkrHy_3oFviYjbtJDmtEdbCXY,180
+text_highlighter/frontend/.prettierrc,sha256=qBUGXDB0ioCVFB3o4zVUnVlOHiqQqbQB9vFVKslWav0,67
+text_highlighter/frontend/package-lock.json,sha256=rzVBsQ0kpBNOFIpNVXYJlb9ECV3gOzPBc8PUuix5Qsk,1309779
+text_highlighter/frontend/package.json,sha256=7of0nn2TyCoH2bUnFzPFWFxPBr-H6Ao_9qxS4Tq6Bb8,1075
+text_highlighter/frontend/tsconfig.json,sha256=n1Nzg-pzBaCVhOQOX95xEpRpmF3owI5MyIZ-5TVggMA,459
+text_highlighter/frontend/public/bootstrap.min.css,sha256=iVS2A2q7TfT-Ts9Fo_EMVShZpwWWEPWp-0uUPETskRQ,197458
+text_highlighter/frontend/public/index.html,sha256=pd7UG_FaSF9p3dPQLDghzAmcNX2pYgJjxC4y2fzPCCA,894
+text_highlighter/frontend/src/TextHighlighter.tsx,sha256=bB54PlbsPCwudQY7KtyTUCmIUnW920FSolO1LmpKv2w,6256
+text_highlighter/frontend/src/index.tsx,sha256=EXdLnAC5qLLF7QfObG0mSVq5OuiuY1XUEbh_PiaPDjg,184
+text_highlighter/frontend/src/react-app-env.d.ts,sha256=V-2kxMBKHcpFxihXMmiCzpzJSMS1KXPA48O35MP6OZA,40
+text_highlighter/frontend/src/style.css,sha256=QHFnYgk7_ak3w1UDaTPymiL10A4XRGmfto5va-XmnGg,1138
+text_highlighter_hilton-0.0.16b0.dist-info/LICENSE,sha256=9VDWIUfeWnnobvVpN2KtC5cHaNpAmxhdjyF4LivEPNw,1063
+text_highlighter_hilton-0.0.16b0.dist-info/METADATA,sha256=5H9C-YJw5sQmBm0jCqFKtwlSQ7ZMk4LiztiTeKYGTy8,1916
+text_highlighter_hilton-0.0.16b0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+text_highlighter_hilton-0.0.16b0.dist-info/top_level.txt,sha256=Slod1VZJNJiKvQFIZI9ifw4NLUYCkKSGMdqJ9cVbgjw,17
+text_highlighter_hilton-0.0.16b0.dist-info/RECORD,,
