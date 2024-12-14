@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/python/annotateai/__init__.py
+src/python/annotateai/annotate.py
+src/python/annotateai.egg-info/PKG-INFO
+src/python/annotateai.egg-info/SOURCES.txt
+src/python/annotateai.egg-info/dependency_links.txt
+src/python/annotateai.egg-info/requires.txt
+src/python/annotateai.egg-info/top_level.txt
