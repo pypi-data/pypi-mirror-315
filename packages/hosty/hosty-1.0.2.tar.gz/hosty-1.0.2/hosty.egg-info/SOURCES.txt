@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+hosty.egg-info/PKG-INFO
+hosty.egg-info/SOURCES.txt
+hosty.egg-info/dependency_links.txt
+hosty.egg-info/entry_points.txt
+hosty.egg-info/requires.txt
+hosty.egg-info/top_level.txt
