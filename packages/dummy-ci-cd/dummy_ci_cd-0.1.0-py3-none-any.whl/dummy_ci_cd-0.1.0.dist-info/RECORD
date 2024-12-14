@@ -1,0 +1,6 @@
+lib_test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib_test/dummy.py,sha256=IQNO1VE-FFZ5p7e3QtKwMYWlTJuMD9TgBSMctE8jo-g,59
+dummy_ci_cd-0.1.0.dist-info/METADATA,sha256=8nt4PKGNNCCwokN6RyRP22s4aYvIvwJc8TKB9KC6_vM,1199
+dummy_ci_cd-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+dummy_ci_cd-0.1.0.dist-info/entry_points.txt,sha256=-RhhvDEg47hmoeM2BwJHKbOCn_VqCp7l9k9hr16CYIo,140
+dummy_ci_cd-0.1.0.dist-info/RECORD,,

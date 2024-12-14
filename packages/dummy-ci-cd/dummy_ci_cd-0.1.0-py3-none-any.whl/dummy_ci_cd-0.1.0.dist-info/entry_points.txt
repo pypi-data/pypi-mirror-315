@@ -1,0 +1,7 @@
+[console_scripts]
+format=black:main
+pre-commit=pre-commit:cli
+security=bandit.__main__:main
+test=pytest:main
+type-check=mypy.__main__:main
+

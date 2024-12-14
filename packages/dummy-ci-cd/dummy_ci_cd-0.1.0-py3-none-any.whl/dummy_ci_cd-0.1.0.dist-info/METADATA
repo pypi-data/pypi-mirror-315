@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: dummy-ci-cd
+Version: 0.1.0
+Summary: A CI/CD demo project
+Author: the-reacher-data
+Author-email: massivedatascope@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# Dummy CI/CD Repository
+
+Este repositorio está diseñado como un entorno de pruebas para configurar y experimentar con **CI/CD** en diferentes proyectos.
+
+## Propósito
+
+Usamos este repositorio para validar configuraciones de integración y despliegue continuo (CI/CD) antes de implementarlas en proyectos futuros.
+
+## Tecnologías empleadas
+
+- **Sphinx** para generar documentación.
+- **Poetry** como gestor de dependencias.
+- CI/CD configurado para validación de documentación automáticamente.
+
+## Cómo usar esta plantilla
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/dummy-ci-cd.git
+   ```
+2. Instala dependencias con Poetry:
+   ```bash
+   poetry install
+   ```
+
+¡Ahora estás listo para probar nuevas configuraciones de CI/CD!
+
