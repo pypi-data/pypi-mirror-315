@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cbd/__init__.py
+cbd/client.py
+cbd/server.py
+cbd.egg-info/PKG-INFO
+cbd.egg-info/SOURCES.txt
+cbd.egg-info/dependency_links.txt
+cbd.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cbd
+Version: 20241214
+Summary: Network Block Device, backed by S3 like Object Store
+Home-page: https://github.com/magicray/cbd
+Author: Bhupendra Singh
+Author-email: bhsingh@gmail.com
+Keywords: nbd,linux,s3,network,block,device
+License-File: LICENSE
+
+Network Block Device, backed by S3 like Object Store
