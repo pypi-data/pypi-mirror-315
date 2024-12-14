@@ -1,0 +1,13 @@
+minim/__init__.py,sha256=-01-yCU_fasNv8D_WusNzmq3MVtBA2_BoM-5hqZC3XI,1733
+minim/audio.py,sha256=YSk4AL5P9ohHP6qSUgt7Vg-9CgfMwS0ZnNedZoXexb0,65041
+minim/discogs.py,sha256=h7XGi0OmY9gvVfa-fFGBbhOteyS8Dn6emg45RnQr5HY,154990
+minim/itunes.py,sha256=oBItaCcT45ufRD82cIVLZ4X8mAqEonHrAQZHJByArdY,19186
+minim/qobuz.py,sha256=pwELpK-ztzzMH3uoNwE_bqX7STSvYOxSGeJL0Cm8VhU,109856
+minim/spotify.py,sha256=4488y1fsyzsoyDw2lrI1DxL8O4WG87KMCwAt71w4xBU,346749
+minim/tidal.py,sha256=GWhBmJt1eNCW8FIwLwxli3iIShDdX010nmWGlN3s8LM,290595
+minim/utility.py,sha256=pN7sLZp6PU_C0MM9eGjvfjQD-NCbaIdIzebyJURe3wk,4268
+minim-1.0.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+minim-1.0.0.dist-info/METADATA,sha256=ciab8vlriacFE9aMLaz1TEpLCVhEYmdCc-7XEtYUU5I,21571
+minim-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+minim-1.0.0.dist-info/top_level.txt,sha256=MbL6daffwrpO4uaIlfdvXQee8geMXBKjrCmDoqN_s3k,6
+minim-1.0.0.dist-info/RECORD,,
