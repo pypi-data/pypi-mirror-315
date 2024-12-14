@@ -1,0 +1,59 @@
+Starting sniffer...
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+	GET '/steve/websocket/CentralSystemService/CP_1' 
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+	GET '/steve/websocket/CentralSystemService/CP_1' 
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+	HTTP/1.1 '101' 
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+	HTTP/1.1 '101' 
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	WebSocket
+	Output data: b'[2,"718e5623-3aae-467e-b00f-6100fc574f59","BootNotification",{"chargePointModel":"CHANGEME","chargePointVendor":"TODO"}]'
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	WebSocket
+	Output data: b'[2,"718e5623-3aae-467e-b00f-6100fc574f59","BootNotification",{"chargePointModel":"CHANGEME","chargePointVendor":"TODO"}]'
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	WebSocket
+	Output data: b'[2,"46b5a592-31f4-4b87-88f2-cc9fa0f295cb","Authorize",{"idTag":"01234567890123456789"}]'
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	WebSocket
+	Output data: b'[2,"46b5a592-31f4-4b87-88f2-cc9fa0f295cb","Authorize",{"idTag":"01234567890123456789"}]'
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	WebSocket
+	Output data: b'[2,"23cf033f-0760-4e78-82ca-a287d575f415","FirmwareStatusNotification",{"status":"Installed"}]'
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	WebSocket
+	Output data: b'[2,"23cf033f-0760-4e78-82ca-a287d575f415","FirmwareStatusNotification",{"status":"Installed"}]'
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	WebSocket
+	Output data: b'[2,"a3deac2b-e747-404e-bc66-bc9584a43d72","DiagnosticsStatusNotification",{"status":"Uploading"}]'
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	WebSocket
+	Output data: b'[2,"a3deac2b-e747-404e-bc66-bc9584a43d72","DiagnosticsStatusNotification",{"status":"Uploading"}]'
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	WebSocket
+	Output data: b''
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	WebSocket
+	Output data: b''
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+Sniffed message: 127.0.0.1:58254->127.0.0.1:8180	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
+Sniffed message: 127.0.0.1:8180->127.0.0.1:58254	
