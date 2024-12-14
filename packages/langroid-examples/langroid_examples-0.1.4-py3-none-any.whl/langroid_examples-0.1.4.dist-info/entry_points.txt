@@ -1,0 +1,3 @@
+[console_scripts]
+chat = examples.basic.chat:cli
+completion = examples.basic.completion:cli
