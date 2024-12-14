@@ -1,0 +1,2 @@
+[console_scripts]
+cuv = cuv.cli:cuv
