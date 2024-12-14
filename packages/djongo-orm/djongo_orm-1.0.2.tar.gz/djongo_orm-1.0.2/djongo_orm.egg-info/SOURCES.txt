@@ -1,0 +1,11 @@
+LICENSE.TXT
+README.md
+setup.cfg
+setup.py
+djongo_orm/__init__.py
+djongo_orm/fields.py
+djongo_orm.egg-info/PKG-INFO
+djongo_orm.egg-info/SOURCES.txt
+djongo_orm.egg-info/dependency_links.txt
+djongo_orm.egg-info/requires.txt
+djongo_orm.egg-info/top_level.txt
