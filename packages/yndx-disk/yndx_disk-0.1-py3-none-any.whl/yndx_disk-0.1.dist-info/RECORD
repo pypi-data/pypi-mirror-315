@@ -1,0 +1,17 @@
+yndx_disk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yndx_disk/classes.py,sha256=no7gRcYNsb2pcBa3-xWNClolNzo92jxgHqO7-gRfdGo,678
+yndx_disk/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yndx_disk/api/disk.py,sha256=Mcnte9fOb42BNyBvLMsjcxh8DJxXAKIxhiREL0MjKRA,908
+yndx_disk/api/exceptions.py,sha256=54OlJbdlKoa3m1WxqwqZjOdp6mBVqCperchD5g4a5WU,49
+yndx_disk/api/operations.py,sha256=jYkWOntdlv_uCZRUqh9yTNuqCwdO0UXI70CDL8CKnoA,1107
+yndx_disk/api/public_resources.py,sha256=GRdC9ofttcsSSXDpENbTuvDIdxC3NnroSJ8PaUOAZVY,4853
+yndx_disk/api/resources.py,sha256=NrUApWZYtGpsFu4L84Yld67NYL-AL9a2G6G5GTQT42U,18976
+yndx_disk/api/trash_resources.py,sha256=KOXbWQi2RTCAf6kaB_9FEbGjXqhV3mIaxoeTnhciUao,4543
+yndx_disk/api/utils.py,sha256=xu6IrsliUm0bL1Yr0hGViWbAYms4qvcT_5Xu7QAJTf4,555
+yndx_disk/clients/__init__.py,sha256=McurXjBLgsNa63KtlOYg0nqU5wsg6Q7VGqS_C3nGVeE,102
+yndx_disk/clients/async_client.py,sha256=kXzViUj-48-xvC3Eh1Fp1m9ZDClR8BA4DoRTUjfXTWM,30857
+yndx_disk/clients/sync_client.py,sha256=JX52dGcXgE3WaEKw4Q8Dpc-fVQG2gTbRAfBF88x0nLM,2026
+yndx_disk-0.1.dist-info/METADATA,sha256=JbSnaxLKGdvwdFzzIoif8GKIjtIid6i6DIZhD_yA96c,451
+yndx_disk-0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+yndx_disk-0.1.dist-info/top_level.txt,sha256=gFBaU2Gyz3k9dlSIOL0gpBCh5QJcwMdeeg4E-_8WLd4,10
+yndx_disk-0.1.dist-info/RECORD,,
