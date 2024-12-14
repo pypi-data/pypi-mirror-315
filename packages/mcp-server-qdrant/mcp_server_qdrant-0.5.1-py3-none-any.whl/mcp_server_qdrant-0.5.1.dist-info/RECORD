@@ -1,0 +1,7 @@
+mcp_server_qdrant/__init__.py,sha256=68hUVaEzKqzAiqhd0CXx5VwefyENBAiLTEa_Yurc0lw,187
+mcp_server_qdrant/qdrant.py,sha256=Z5tcmjphbPucuNHTaKusko4oQ9tsH3BL8vHKpiFsVYc,1915
+mcp_server_qdrant/server.py,sha256=P3MKE7UxO5f9t_Anb2SSD44r0J9GjH0kxul8KEGYENs,5401
+mcp_server_qdrant-0.5.1.dist-info/METADATA,sha256=ysCl5TM6qG-9gPXSeWp_zYjdKSO5UdZOZU6M9i1vvzI,3481
+mcp_server_qdrant-0.5.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+mcp_server_qdrant-0.5.1.dist-info/entry_points.txt,sha256=m2ETFron_kuzy5Y5qgc0PAWCRtzr0uIyBcWaKo0iPeI,61
+mcp_server_qdrant-0.5.1.dist-info/RECORD,,
