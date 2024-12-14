@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+notebook_vcs.egg-info/PKG-INFO
+notebook_vcs.egg-info/SOURCES.txt
+notebook_vcs.egg-info/dependency_links.txt
+notebook_vcs.egg-info/requires.txt
+notebook_vcs.egg-info/top_level.txt
+notebook_vcs/static/main.js
+tests/test_core.py
