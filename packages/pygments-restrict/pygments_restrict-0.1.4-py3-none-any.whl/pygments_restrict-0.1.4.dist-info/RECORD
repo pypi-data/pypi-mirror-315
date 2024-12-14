@@ -1,0 +1,6 @@
+pygments_restrict/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygments_restrict/lexers.py,sha256=dymFuN6hTzeX7ghqIeprjuSO5Q4PIMzisUIg-QreSMU,8990
+pygments_restrict-0.1.4.dist-info/METADATA,sha256=wbOzGVAfSoz4F_11cvy4tvCEbyu5eYSCbXvr75Kdk5U,482
+pygments_restrict-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pygments_restrict-0.1.4.dist-info/entry_points.txt,sha256=ybDzuWrIprTjeOynZT2T0koWPe9OC2vbtK8-wv6z8E4,77
+pygments_restrict-0.1.4.dist-info/RECORD,,
