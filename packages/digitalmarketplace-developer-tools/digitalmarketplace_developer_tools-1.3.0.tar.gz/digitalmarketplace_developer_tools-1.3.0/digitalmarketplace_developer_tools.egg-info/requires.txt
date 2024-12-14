@@ -1,0 +1,9 @@
+colored>=2
+invoke>=2
+
+[dev]
+flake8
+black
+invoke>=1.5
+mypy
+pytest
