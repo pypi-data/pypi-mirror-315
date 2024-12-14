@@ -1,0 +1,17 @@
+bioplumber/.DS_Store,sha256=Chfs55yMLmGHBong93uQi4atpmbYI_ekmVBhqzNcdPo,6148
+bioplumber/__init__.py,sha256=c4iObJDE-mQwpwlqPsz-87b4Ry5CdN4VqiXA3MrBxYQ,105
+bioplumber/alignment.py,sha256=g8K8x0E6byrdp74DvqqwRleIQ1bzPIXg_So0ywhjgeA,22910
+bioplumber/assemble.py,sha256=6pwhNX4PT4xp7OTLwVkKkacfd4R0hcccybvWusYcCuY,3380
+bioplumber/bining.py,sha256=zO52cjkeRGpfiH6uafp0DoL2qxqHiR4EtE5n0k_-CA4,2766
+bioplumber/bioplumber.code-workspace,sha256=W27qtJloYJpVIXTjd0xYTMSkol5Ao57AQ_sgicvMpiE,85
+bioplumber/configs.py,sha256=qBoRZRrEPIVk_UXV_h6z0jzFbIJ6Z9o2hfpqhQJLz5s,882
+bioplumber/files.py,sha256=fqPcTSqQy3NmNyFU8kPpx2hKmDmjaJgm6lW1iHOxoa0,5457
+bioplumber/qc.py,sha256=wPR16xKmh4gFLkyIwyuqHjtZ0y07QCwpNmpYmLWgLx0,4545
+bioplumber/slurm.py,sha256=lemBsps45DLEMR3FNyhtaaz6Hv0z945jKWAGysU_-Ds,461
+bioplumber/slurm_template.txt,sha256=kkPt61EvSPgpmUMy3fAwPVxPI3J47mRU6i82vYPPuME,223
+bioplumber/tui.py,sha256=k22KzDfHNyPTA0nTC8VXBE-BJfq81JU9xQBeDciFB9Q,3900
+bioplumber/tui_css.tcss,sha256=X1d55yEPAvpayQZToInQ5sNY_fP_vzNqjtbLd7NugyI,31
+bioplumber-0.42.dist-info/entry_points.txt,sha256=HW5jAKtmdiYq-CbRctSeSSKq5Q-Pfa5GtBwA_28k83g,45
+bioplumber-0.42.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bioplumber-0.42.dist-info/METADATA,sha256=vDuXPCv1FasLzMOLN01-Soj5KI_5wPC3ZetLc-4QPxs,445
+bioplumber-0.42.dist-info/RECORD,,
