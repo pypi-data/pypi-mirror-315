@@ -1,0 +1,5 @@
+matplotlib
+numpy>=1.7.0
+oemof
+pandas>=0.18.0
+pvlib
