@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "upset"
+version = "0.0.0"
+description = "ʌpˈset - application's settings"
+authors = ["Lev Lybin <lev.lybin@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/llybin/upset"
+repository = "https://github.com/llybin/upset"
+keywords = []
+classifiers = []
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
