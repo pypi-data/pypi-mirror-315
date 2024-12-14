@@ -1,0 +1,15 @@
+pycolint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycolint/error_msgs.py,sha256=xEeOZEjkJxx2E7f1gYu87i1Ay-v4rwBHsS4e7kNx0Lo,2892
+pycolint/main.py,sha256=n3xqDAMmOwg8fHbhMP2oBkP_BYiBA185Qj2S432-80A,335
+pycolint/msg_types.py,sha256=y6USqHSnLbPV0o7P58hSKewABW10LEi3XJklJU3gz-w,128
+pycolint/parser.py,sha256=oqBoKb-EWzmYPEBUnOG_LkwnYqfQji7cJQDPxslHNrk,12486
+pycolint/problem_types.py,sha256=1WTn_GQ1B9bqI_Y8wxPd-yCb3aUDCaxbTWwFFpdJiNc,448
+pycolint/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycolint/tokenizer.py,sha256=JBqeFUZrggoIHySlTfQiY_HTD9x4vFuYHqKG8qv_6Gs,1781
+pycolint/newsfragments/+65461292.feature.md,sha256=Tb720B_GxPaW_6zzj8dTzNUvMEKdT6_alvV2tbmWjKw,65
+pycolint/newsfragments/+f4fd301e.feature.md,sha256=uP8AWZz18lwB-QiBSutm4p1kC6jZhtA904MK2-jhHno,38
+pycolint/newsfragments/.gitignore,sha256=kCpRPdl3S_jqYYZaOrc0-xa6-l3KqVjNRXc6jCkd_-Q,12
+pycolint-0.2.1rc10.dist-info/METADATA,sha256=o6vO5B25_oJAxzKC8nqO5idTb8lJ6wk_uUd_7pyH8II,1807
+pycolint-0.2.1rc10.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+pycolint-0.2.1rc10.dist-info/entry_points.txt,sha256=AZr_gCQIyakBpyiMkPzLFa_b5xQOg0hGZOUjTc_H5Us,48
+pycolint-0.2.1rc10.dist-info/RECORD,,
