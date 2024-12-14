@@ -1,0 +1,15 @@
+SimpleBattle/__init__.py,sha256=L9tQFaUSOICyxDvkQ80FbRVmW_BpWLtk1hfFi2_Ih2E,45
+SimpleBattle/main.py,sha256=mBp3uXQiAlQNjkuldJuccaTEurEWb3Fk6t18TfZGIb0,2063
+SimpleBattle/Character/__init__.py,sha256=aTivVwoFD6teQKkFUhTGBXZ_gFuz9g9AhN9F4CbiJ5I,48
+SimpleBattle/Character/character.py,sha256=UfsoHwoNQ1728zZ6TSWwb_JOn6pNN_VAf2-uKji5_s4,2986
+SimpleBattle/Character/npc.py,sha256=vrTFnV2ZfSkKoxsZQsfcGZPp-MxENnLVlomY9VDfN-Y,4513
+SimpleBattle/Character/player.py,sha256=oUnBDXwBF_od06BEvkleq1KtK2M3tVlLvkNJgJKMWqc,4445
+SimpleBattle/Gameplay/__init__.py,sha256=1GA7APcOXhbiAg0vbx6NiOcAhde9gHXmoP7DZpIzu_8,45
+SimpleBattle/Gameplay/combat.py,sha256=Q9x_e74861Ca4NEqJOj5ynvN_z1m8Nh6F9YX4olEiqc,5440
+SimpleBattle/Gameplay/events.py,sha256=k6dVGlGnpm5_Xe4IjKm2QXIKsSafF4LFa6Hps1x-_WU,4833
+SimpleBattle/Gameplay/interface.py,sha256=IFwg3RPfwrZrg8QV60ii6EyE5MaqlSqWBf68wqcGusQ,5048
+SimpleBattle-0.0.1.dist-info/LICENSE.txt,sha256=zrFMSGshiHpv22S1afQ0mEKSGsHuzDrFmYiRjdsJqDA,3918
+SimpleBattle-0.0.1.dist-info/METADATA,sha256=vXUsKSp8PPx-a9hDLLdwafvZhURlepRyxMTMevyM6Jc,5438
+SimpleBattle-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+SimpleBattle-0.0.1.dist-info/top_level.txt,sha256=zc-z7bMZZngd20rqZjfwrjnQPpW37bu43wOMMidMHXU,13
+SimpleBattle-0.0.1.dist-info/RECORD,,
