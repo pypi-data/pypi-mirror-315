@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jasim_chatbot
+Version: 0.1.0
+Summary: A simple chatbot package using Hugging Face.
+Author: Jasim Jamil
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+Requires-Dist: transformers
+Requires-Dist: torch
+
+This chatbot uses Hugging Face models to generate AI responses.

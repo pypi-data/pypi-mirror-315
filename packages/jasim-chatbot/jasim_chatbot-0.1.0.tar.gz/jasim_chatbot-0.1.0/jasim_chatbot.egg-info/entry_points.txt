@@ -1,0 +1,2 @@
+[console_scripts]
+jasim_chatbot = jasim_chatbot:main

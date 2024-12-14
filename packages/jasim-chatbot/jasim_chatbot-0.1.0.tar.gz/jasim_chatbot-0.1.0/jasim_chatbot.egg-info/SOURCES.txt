@@ -1,0 +1,8 @@
+jasim_chatbot.py
+setup.py
+jasim_chatbot.egg-info/PKG-INFO
+jasim_chatbot.egg-info/SOURCES.txt
+jasim_chatbot.egg-info/dependency_links.txt
+jasim_chatbot.egg-info/entry_points.txt
+jasim_chatbot.egg-info/requires.txt
+jasim_chatbot.egg-info/top_level.txt
