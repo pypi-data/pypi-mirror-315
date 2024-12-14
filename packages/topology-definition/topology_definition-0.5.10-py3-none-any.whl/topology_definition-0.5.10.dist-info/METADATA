@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: topology-definition
+Version: 0.5.10
+Summary: topology-definition
+Home-page: UNKNOWN
+Author: cyberrangecz
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: yamlize>=0.6
+Requires-Dist: structlog>=19.2
+Requires-Dist: netaddr>=0.7
+
+## Usage example
+
+```toml
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[requires]
+python_version = "3.6"
+```
+
