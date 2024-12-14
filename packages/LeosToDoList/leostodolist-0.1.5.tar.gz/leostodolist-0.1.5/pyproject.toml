@@ -1,0 +1,90 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+ignore-vcs = true
+
+[project]
+name = "LeosToDoList"
+version = "0.1.5"
+description = 'to-do-list manager'
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = " >= 3.10"
+authors = [
+  { name = "Leo Iwanetzki"}, 
+  { email = "leo@iwanetzki.de"},
+  ]
+  dependencies = [
+    "tkcalendar >= 1.6.1",
+    "babel >= 2.16.0",
+  ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["LeosToDoList"]
+
+[project.scripts]
+LeosToDoList = "LeosToDoList.main:main"
+
+
+[tool.ruff]
+line-length = 125
+indent-width = 4
+target-version = "py312"
+
+lint.select = [
+  "E",
+  "F",
+  "W",
+  "C90",
+  "I",
+  "N",
+  "B",
+  "PYI",
+  "PL",
+  "UP",
+  "A",
+  "C4",
+  "DTZ",
+  "ISC",
+  "ICN",
+  "INP",
+  "PIE",
+  "T20",
+  "PYI",
+  "PT",
+  "RSE",
+  "RET",
+  "SIM",
+  "RUF"
+]
+
+lint.ignore = [
+    "D100", # Missing docstring in public module
+    "D101", # Missing docstring in public class
+    "D102", # Missing docstring in public method
+    "D104", # Missing docstring in public package | these are mostly empty __init__
+    "D107", # Missing docstring in `__init__`
+    "T201", #print-Befehl
+
+    # List of rules that should stay inactive
+    "D206", # Checks for docstrings that are indented with tabs	(potential conflict with formatter)
+    "ISC001", # Implicitly concatenated string literals on one line	(potential conflict with formatter)
+    "W191", # Indentation as tabs (potential conflict with formatter)
+    "DTZ007", # Naive datetime constructed using
+    
+    "N999", # Invalid module name "FareGoData"
+    "B904", # Within an `except` clause, raise exceptions with `raise ... from err`
+    "PLR2004", # Magic value used in comparison
+
+    # These are all code complexity measures and are difficult to fix and should also stay inactive
+    # You may deactivate these if you are bored and fix some offending functions
+    "PLR0913", # Too many arguments in function 
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401","F403"]#Unused import error and star import error, these are okay in __init__
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"  # Accepts: "google", "numpy", or "pep257".
