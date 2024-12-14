@@ -1,0 +1,2 @@
+# Requirements for running examples.
+flask-login
