@@ -1,0 +1,5 @@
+haystack_integrations/components/retrievers/snowflake/__init__.py,sha256=oPdoDTZaVWDj4SZR3921aDGxjfIcD-9gW_0eRCBapg8,213
+haystack_integrations/components/retrievers/snowflake/snowflake_table_retriever.py,sha256=YgkBJpKPfLDDnpYW3I5AiCXdInft4lSlcOtfvcBkJ4k,11190
+snowflake_haystack-0.0.3.dist-info/METADATA,sha256=6CXy4l84J8nAPpzuYRSfbrPm4ryHVvQIES7-XF_ay2U,1942
+snowflake_haystack-0.0.3.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+snowflake_haystack-0.0.3.dist-info/RECORD,,
