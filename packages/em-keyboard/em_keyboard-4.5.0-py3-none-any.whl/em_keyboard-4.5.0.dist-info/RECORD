@@ -1,0 +1,10 @@
+em_keyboard/__init__.py,sha256=CKtdPvDiypa2pA6lxjd7V-29zh_BPKgjz3MuJ1ukNWY,4753
+em_keyboard/_version.py,sha256=I5uQZ6yQmsQW0yfVSTwXL6ZPKKGV3P0cUL8M8YePi2s,411
+em_keyboard/emoji-en-US.json,sha256=HDeA_0WOaiNMTalC54U5uhTFZErEe3SOaDEstU8I32E,263739
+em_keyboard/emojis.json,sha256=zhafumN-vgZJF-EGfRh_ntmcHjffS0s1-0wFgO4dYrE,194449
+em_keyboard-4.5.0.dist-info/METADATA,sha256=dqrU5X5rKoyCgCLJek1dPbJqpwA6NJj4leinruobIjk,3610
+em_keyboard-4.5.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+em_keyboard-4.5.0.dist-info/entry_points.txt,sha256=MK2PuKf02PeRoySi7N0F4vDhCdaRSCHbME2cSmVksrU,39
+em_keyboard-4.5.0.dist-info/licenses/LICENSE,sha256=x2e6gQtBT0byktQwLp4Yy7jX2Wf3qRwF0KqHZDKiMC8,754
+em_keyboard-4.5.0.dist-info/licenses/NOTICE,sha256=s6Y5Dm2nKdnP_OE0BcbuJ8NcbHJeAZrsA5iymlTFFQg,1086
+em_keyboard-4.5.0.dist-info/RECORD,,
