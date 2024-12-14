@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+flagger/__init__.py
+flagger/exceptions.py
+flagger/flagger.py
+simple_flagger_private.egg-info/PKG-INFO
+simple_flagger_private.egg-info/SOURCES.txt
+simple_flagger_private.egg-info/dependency_links.txt
+simple_flagger_private.egg-info/top_level.txt
+tests/__init__.py
+tests/test_flagger.py
