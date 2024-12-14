@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: C41811.Config
+Version: 0.1.0
+Summary: A useful config module.
+Author-email: C418____11 <553515788@qq.com>
+License: MIT License
+        
+        Copyright (c) 2024 C418____11
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Bug Tracker, https://github.com/C418-11/C41811_Config/issues
+Project-URL: Source Code, https://github.com/C418-11/C41811_Config
+Project-URL: Documentation, https://C41811Config.readthedocs.io
+Keywords: config,yaml,toml,json
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic~=2.10.3
+Requires-Dist: wrapt~=1.17.0
+Requires-Dist: pyrsistent~=0.20.0
+Provides-Extra: docs
+Requires-Dist: sphinx~=8.1.3; extra == "docs"
+Requires-Dist: sphinx-autoapi~=3.4.0; extra == "docs"
+Requires-Dist: furo==2024.8.6; extra == "docs"
+Provides-Extra: dev
+Requires-Dist: PyYAML~=6.0.2; extra == "dev"
+Requires-Dist: ruamel.yaml~=0.18.6; extra == "dev"
+Requires-Dist: toml~=0.10.2; extra == "dev"
+Provides-Extra: test
+Requires-Dist: tox~=4.23.2; extra == "test"
+Requires-Dist: pytest~=8.3.4; extra == "test"
+Requires-Dist: pytest-cov~=6.0.0; extra == "test"
+Requires-Dist: pytest-html~=4.1.1; extra == "test"
+Provides-Extra: pyyamlsl
+Requires-Dist: PyYAML~=6.0.2; extra == "pyyamlsl"
+Provides-Extra: ruamelyamlsl
+Requires-Dist: ruamel.yaml~=0.18.6; extra == "ruamelyamlsl"
+Provides-Extra: tomlsl
+Requires-Dist: toml~=0.10.2; extra == "tomlsl"
+
+# C41811.Config
+
+[English](README_EN.md) | 中文
+
+---
+
+[![PyPi version](https://badgen.net/pypi/v/c41811.config/)](https://pypi.org/project/C41811.Config)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/c41811.config.svg)](https://pypi.python.org/pypi/C41811.Config/)
+[![Documentation Status](https://readthedocs.org/projects/c41811config/badge/?version=latest)](https://C41811Config.readthedocs.io)
+[![PyPi license](https://badgen.net/pypi/license/c41811.config/)](https://pypi.org/project/C41811.Config/)
+[![PyPI download month](https://img.shields.io/pypi/dm/c41811.config.svg)](https://pypi.python.org/pypi/C41811.Config/)
+[![made-with-sphinx-doc](https://img.shields.io/badge/Made%20with-Sphinx-1f425f.svg)](https://www.sphinx-doc.org/)
+[![Python CI](https://github.com/C418-11/C41811_Config/actions/workflows/python-ci.yml/badge.svg?branch=develop)](https://github.com/C418-11/C41811_Config/actions/workflows/python-ci.yml)
+
+| 文档   | https://C41811Config.readthedocs.io      |
+|------|------------------------------------------|
+| PyPI | https://pypi.org/project/C41811.Config   |
+| 源码   | https://github.com/C418-11/C41811_Config |
+
+## 简介
+
+C41811.Config 是一个功能强大且易于使用的配置管理包，旨在简化配置文件的读取和写入操作。它支持多种流行的配置格式，
+包括 JSON、YAML、TOML 和 Pickle，满足不同项目的需求。通过模块化的设计，C41811.Config 提供了可靠的配置处理解决方案，
+帮助开发者快速构建和维护高质量的应用程序。
+
+## 安装
+
+```commandline
+pip install C41811.Config
+```
+
+## 一个简单的示例
+
+``` python
+from C41811.Config import JsonSL
+from C41811.Config import requireConfig
+from C41811.Config import saveAll
+
+JsonSL().register_to()
+
+cfg = requireConfig(
+    '', "Hello World.json",
+    {
+        "Hello": "World",
+        "foo": dict,  # 包含foo下的所有键
+        "foo\\.bar": {  # foo.bar仅包含baz键
+            "baz": "qux"
+        }
+    }
+).check()
+saveAll()
+
+print(cfg)
+print()
+print(f"{cfg["Hello"]=}")
+print(cfg.foo)
+print(cfg["foo"]["bar"])
+print(cfg.foo.bar.baz)
+
+```
