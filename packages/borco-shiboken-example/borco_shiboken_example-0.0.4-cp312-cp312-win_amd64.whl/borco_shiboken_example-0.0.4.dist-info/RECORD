@@ -1,0 +1,8 @@
+borco_shiboken_example/__init__.py,sha256=IfeZhw-feeUBbGhA8PW4nDI2Ad-7pPhof-dy3Z_FRv0,140
+borco_shiboken_example/borco_shiboken_example.pyd,sha256=W9slKN8u6-WzuZogo8ijFIbFDbAkrIYfhlaMAIAw7eI,49152
+borco_shiboken_example/core_lib.lib,sha256=PMkiZ8r3eFqckuQhDzxeHUHKTM8L7VTv0KO2mP7mqxQ,202340
+borco_shiboken_example/shiboken6.abi3.dll,sha256=nEGaSXWmObBec5e79IZH3CiT3pEirgv4EJeDSd14hS8,370328
+borco_shiboken_example-0.0.4.dist-info/METADATA,sha256=aaT5wS_GbexmxOxBhCuzndtDHndeLFLM-EJpeVx7Vow,1125
+borco_shiboken_example-0.0.4.dist-info/WHEEL,sha256=GgB_RydHGtp7zP9kXrVRu7kuGtdM7WtO3JhH95Vv87o,106
+borco_shiboken_example-0.0.4.dist-info/licenses/LICENSE.md,sha256=fkbVMzfWK4lWb61tMsauYezmaupWb3sdGoi5I9gBvUE,1091
+borco_shiboken_example-0.0.4.dist-info/RECORD,,
