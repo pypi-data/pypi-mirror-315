@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/secret_duck/__init__.py
+src/secret_duck/__main__.py
+src/secret_duck/secret.py
+src/secret_duck.egg-info/PKG-INFO
+src/secret_duck.egg-info/SOURCES.txt
+src/secret_duck.egg-info/dependency_links.txt
+src/secret_duck.egg-info/entry_points.txt
+src/secret_duck.egg-info/requires.txt
+src/secret_duck.egg-info/top_level.txt
+tests/test_secret.py
