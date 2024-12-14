@@ -1,0 +1,34 @@
+Metadata-Version: 2.3
+Name: add_psd_layer
+Version: 0.1.0
+Summary: A CLI tool to add an image as a new layer to a PSD file
+Project-URL: Homepage, https://github.com/ilya-kudravets/add_image_as_layer_to_psd
+Project-URL: Bug Tracker, https://github.com/ilya-kudravets/add_image_as_layer_to_psd/issues
+Author-email: Ilya Kudravets <ilya.kudravets@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: cairosvg
+Requires-Dist: pillow
+Requires-Dist: psd-tools
+Description-Content-Type: text/markdown
+
+# PSD Converter Tool
+
+A CLI tool to add an image as a new layer to a PSD file. This tool supports both SVG and PNG image formats.
+
+## Prerequisites
+
+- Python 3.11 or higher
+- pip (Python package installer)
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ilya-kudravets/add_image_as_layer_to_psd
+   cd add_image_as_layer_to_psd
+   pip install .
+   add-psd-layer -h

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "add_psd_layer"
+version = "0.1.0"
+authors = [
+  { name="Ilya Kudravets", email="ilya.kudravets@gmail.com" },
+]
+description = "A CLI tool to add an image as a new layer to a PSD file"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "psd-tools",
+    "Pillow",
+    "cairosvg",
+]
+
+[project.scripts]
+add-psd-layer = "add_psd_layer.add_image_as_layer:main"
+
+[project.urls]
+"Homepage" = "https://github.com/ilya-kudravets/add_image_as_layer_to_psd"
+"Bug Tracker" = "https://github.com/ilya-kudravets/add_image_as_layer_to_psd/issues"
