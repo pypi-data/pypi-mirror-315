@@ -1,0 +1,2 @@
+[console_scripts]
+geospatial_analysis = geospatial_analysis.cli:main
