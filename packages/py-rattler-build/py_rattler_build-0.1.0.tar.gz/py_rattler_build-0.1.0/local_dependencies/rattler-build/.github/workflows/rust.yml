@@ -1,0 +1,272 @@
+on:
+  push:
+    branches: [main]
+    tags:
+      - "v*.*.*"
+  pull_request:
+    paths:
+      - "src/**"
+      - "Cargo.*"
+  workflow_dispatch:
+
+name: CI
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  RUST_LOG: info
+  RUST_BACKTRACE: 1
+  RUSTFLAGS: "-D warnings"
+  CARGO_TERM_COLOR: always
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: "1.80.0"
+          components: clippy,rustfmt
+      - uses: Swatinem/rust-cache@v2
+      - name: Check
+        run: cargo check
+      - name: Build
+        run: cargo build --verbose
+      - name: Run tests
+        run: cargo test --features=tui,recipe-generation --verbose -- --nocapture
+      - name: Format
+        run: cargo fmt --all -- --check
+      - uses: giraffate/clippy-action@v1
+        with:
+          reporter: "github-pr-check"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          clippy_flags: "--all-targets --workspace"
+
+  build:
+    name: Build ${{ matrix.target }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - target: x86_64-unknown-linux-musl
+            os: ubuntu-22.04
+          - target: aarch64-unknown-linux-musl
+            os: ubuntu-22.04
+            use-cross: true
+          # - target: powerpc64le-unknown-linux-musl
+          #   os: ubuntu-22.04
+          #   use-cross: true
+          - target: powerpc64le-unknown-linux-gnu
+            os: ubuntu-22.04
+            use-cross: true
+          - target: x86_64-apple-darwin
+            os: macos-13
+          - target: aarch64-apple-darwin
+            os: macos-13
+          - target: x86_64-pc-windows-gnu
+            os: windows-2022
+          - target: x86_64-pc-windows-msvc
+            os: windows-2022
+    env:
+      #
+      # These are some environment variables that configure the build so that the binary size is reduced.
+      # Inspiration was taken from this blog: https://arusahni.net/blog/2020/03/optimizing-rust-binary-size.html
+      # They're only enable it on main and releases.
+      #
+
+      # Enable Link Time Optimization (LTO) for our release builds. This increases link time but drastically reduces
+      # binary size.
+      CARGO_PROFILE_RELEASE_LTO: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')) && 'true' || 'false' }}
+
+      # Use a single code gen unit, this effectively disables parallel linking but ensures that everything is linked
+      # together in a single unit which reduces the file-size at the cost of link time.
+      # Default for a release build is 16
+      CARGO_PROFILE_RELEASE_CODEGEN_UNITS: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')) && 1 || 16 }}
+
+      # Strip the binaries. This reduces the filesize of the final release.
+      CARGO_PROFILE_RELEASE_STRIP: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')) && 'symbols' || 'false' }}
+
+      # Optimize the binary for size. This reduces the filesize at the cost of a slower binary.
+      CARGO_PROFILE_OPT_LEVEL: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')) && 's' || '0' }}
+
+      # Sets the default features which are always used also when `--no-default` is used.
+      REQUIRED_FEATURES: recipe-generation
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Extract version
+        shell: bash
+        id: metadata
+        run:
+          | # also call this step outside of $(...) to make sure the status code is propagated
+          ${{ startsWith(matrix.os, 'windows') && 'choco install yq' || '' }}
+          yq '.package.version' Cargo.toml
+          echo "project-version=$(yq '.package.version' Cargo.toml)" >> $GITHUB_OUTPUT
+
+      - name: Assert version in release
+        if: startsWith(github.ref, 'refs/tags/v')
+        shell: bash
+        run: |
+          if [[ "v${{ steps.metadata.outputs.project-version }}" != "${{ github.ref_name }}" ]]; then
+            echo ::error file=Cargo.toml::"Version mismatch: Cargo.toml: v${{ steps.metadata.outputs.project-version }} != ${{ github.ref_name }}"
+            exit 1
+          fi
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: "1.80.0"
+          targets: ${{ matrix.target }}
+
+      - name: Install musl-gcc
+        if: matrix.target == 'x86_64-unknown-linux-musl'
+        run: sudo apt install musl-tools
+
+      - name: Install gnu-openssl
+        if: matrix.target == 'powerpc64le-unknown-linux-gnu'
+        run: sudo apt install libssl-dev
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Install cross
+        if: matrix.use-cross
+        uses: taiki-e/install-action@v2
+        with:
+          tool: cross
+
+      - name: Add macOS cross build capability
+        if: matrix.target == 'aarch64-apple-darwin'
+        run: |
+          echo "SDKROOT=$(xcrun -sdk macosx --show-sdk-path)" >> $GITHUB_ENV
+          echo "MACOSX_DEPLOYMENT_TARGET=$(xcrun -sdk macosx --show-sdk-platform-version)" >> $GITHUB_ENV
+          rustup default stable-aarch64-apple-darwin
+
+      - name: Show version information (Rust, cargo, GCC)
+        run: |
+          gcc --version || true
+          rustup -V
+          rustup toolchain list
+          rustup default
+          cargo -V
+          rustc -V
+
+      - name: Set build options
+        id: options
+        shell: bash
+        run: |
+          unset CARGO_BUILD_OPTIONS
+          case ${{ matrix.target }} in
+            *-musl) CARGO_BUILD_OPTIONS="--no-default-features --features rustls-tls"  ;;
+            *) CARGO_BUILD_OPTIONS=""  ;;
+          esac
+          echo "cargo-build-options=${CARGO_BUILD_OPTIONS}" >> "$GITHUB_OUTPUT"
+
+          # test only library unit tests and binary for arm-type targets
+          unset CARGO_TEST_OPTIONS
+          case ${{ matrix.target }} in
+            arm-* | aarch64-*) CARGO_TEST_OPTIONS="--lib --bin rattler-build" ;;
+          esac
+          echo "cargo-test-options=${CARGO_TEST_OPTIONS}" >> $GITHUB_OUTPUT
+
+      - name: Build
+        run: >-
+          ${{ matrix.use-cross && 'cross' || 'cargo' }}
+          build
+          --locked
+          --release
+          --features ${{ env.REQUIRED_FEATURES }}
+          --target=${{ matrix.target }}
+          ${{ steps.options.outputs.cargo-build-options }}
+
+      - name: Run tests
+        shell: bash
+        if: matrix.target != 'aarch64-apple-darwin'
+        run: >-
+          ${{ matrix.use-cross && 'cross' || 'cargo' }}
+          test
+          --release
+          --locked
+          --features ${{ env.REQUIRED_FEATURES }}
+          --target=${{ matrix.target }}
+          ${{ steps.options.outputs.cargo-build-options }}
+          ${{ steps.options.outputs.cargo-test-options }}
+
+      - name: Create tarball
+        id: package
+        shell: bash
+        run: |
+          PKG_BASENAME=rattler-build-${{ matrix.target }}
+          PKG_NAME=${PKG_BASENAME}${{ contains(matrix.target, 'pc-windows') && '.zip' || '.tar.gz' }}
+
+          ARCHIVE_DIR="pkg/${PKG_BASENAME}"
+          mkdir -p "${ARCHIVE_DIR}"
+
+          cp "target/${{ matrix.target }}/release/rattler-build${{ contains(matrix.target, 'pc-windows') && '.exe' || '' }}" "$ARCHIVE_DIR"
+          cp README.md LICENSE "$ARCHIVE_DIR"
+
+          pushd pkg >/dev/null
+          case ${{ matrix.target }} in
+            *-pc-windows-*) 7z -y a "${PKG_NAME}" "${PKG_BASENAME}"/* | tail -2 ;;
+            *) tar czf "${PKG_NAME}" "${PKG_BASENAME}"/* ;;
+          esac;
+          popd >/dev/null
+
+          echo "pkg-name=${PKG_NAME}" >> $GITHUB_OUTPUT
+          echo pkg-path="${ARCHIVE_DIR}${{ contains(matrix.target, 'pc-windows') && '.zip' || '.tar.gz' }}" >> $GITHUB_OUTPUT
+
+          mkdir -p binaries
+          cp "target/${{ matrix.target }}/release/rattler-build${{ contains(matrix.target, 'pc-windows') && '.exe' || '' }}" "binaries/rattler-build-${{ matrix.target }}${{ contains(matrix.target, 'pc-windows') && '.exe' || '' }}"
+          echo "binary-path=binaries/rattler-build-${{ matrix.target }}${{ contains(matrix.target, 'pc-windows') && '.exe' || '' }}" >> $GITHUB_OUTPUT
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.package.outputs.pkg-name }}
+          path: ${{ steps.package.outputs.pkg-path }}
+
+      - name: Publish archives and packages
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/v')
+        with:
+          draft: true
+          files: |
+            ${{ steps.package.outputs.pkg-path }}
+            ${{ steps.package.outputs.binary-path }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create issue on failure
+        if: startsWith(github.ref, 'refs/tags/v') && failure()
+        uses: dacbd/create-issue-action@cdb57ab6ff8862aa09fee2be6ba77a59581921c2
+        with:
+          token: ${{ github.token }}
+          title: GitHub release failed
+          body: |
+            Creating a release failed. Please check the logs for more information.
+            [Failed Run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+  build-post:
+    name: Post-process
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set as latest release
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          gh release edit "${{ github.ref_name }}" --draft=false
+          gh release edit "${{ github.ref_name }}" --latest
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

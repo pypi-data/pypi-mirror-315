@@ -1,0 +1,16 @@
+---
+source: src/recipe/parser.rs
+expression: err
+---
+  × Failed to parse recipe
+
+Error: 
+  × Parsing: expected a scalar value.
+   ╭─[3:16]
+ 2 │         context:
+ 3 │           key: ["not-scalar"]
+   ·                ───────┬──────
+   ·                       ╰── here
+ 4 │ 
+   ╰────
+  help: `context` values must always be scalars (strings)
