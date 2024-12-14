@@ -1,0 +1,2 @@
+[console_scripts]
+lockdown_protocol_extra_bot = lockdown_protocol_extra_bot.main:main
