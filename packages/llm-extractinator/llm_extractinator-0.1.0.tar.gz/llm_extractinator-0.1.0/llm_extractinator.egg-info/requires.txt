@@ -1,0 +1,9 @@
+pandas
+tqdm
+pydantic
+langchain-core
+langchain-huggingface
+langchain-chroma
+langchain-community
+langchain-ollama
+ollama
