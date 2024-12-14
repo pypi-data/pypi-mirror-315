@@ -1,0 +1,79 @@
+stages:
+  - install
+  - test
+  - build
+  - deploy
+
+# The install stage to set up Python and dependencies
+install_dependencies:
+  stage: install
+  image: python:3.11  # Adjust Python version as needed
+  script:
+    - python -m venv venv  # Create a virtual environment
+    - source venv/bin/activate  # Activate the virtual environment
+    - pip install --upgrade pip
+    - pip install .[dev]  # Install project with test dependencies
+  cache:
+    key: "$CI_COMMIT_REF_SLUG"
+    paths:
+      - .venv/  # Or wherever you install your dependencies
+      - ~/.cache/pip  # Cache pip downloads
+  artifacts:
+    paths:
+      - venv/  # Persist the virtual environment directory to use in other stages
+
+# The test stage to run the unit tests
+run_tests:
+  stage: test
+  image: python:3.11
+  script:
+    - source venv/bin/activate  # Activate the virtual environment
+    - pip install --upgrade pip
+    - pip install .[dev]  # Install project with test dependencies (but only the first time)
+    - pytest tests/ --maxfail=5 --disable-warnings --tb=short # Run tests and log output
+    - pytest tests/ --maxfail=5 --disable-warnings --tb=short --junitxml=reports/report.xml  # Generate XML output
+  dependencies:
+    - install_dependencies
+  artifacts:
+    paths:
+      - reports/report.xml  # Upload test results as artifacts
+    reports:
+      junit: reports/report.xml # Display on GitLab
+    when: always
+  only:
+    - main  # Adjust for your branch strategy
+
+# The build stage to create the distribution package
+build:
+  stage: build
+  image: python:3.11  # Use Python 3.11 or the version you're working with
+  script:
+    - source venv/bin/activate  # Activate the virtual environment
+    - pip install --upgrade pip setuptools wheel twine build
+    - python -m build  # Builds the package based on pyproject.toml
+  artifacts:
+    paths:
+      - dist/*  # Store the built package as an artifact
+      - venv/  # Persist virtual environment for deploy stage
+
+# The deploy stage to upload the package to PyPI
+deploy:
+  stage: deploy
+  image: python:3.11  # Use the appropriate Python version
+  script:
+    - |
+      source venv/bin/activate
+      export PACKAGE_VERSION=$(echo "$CI_COMMIT_TAG" | sed 's/^v//')
+      echo "Deploying version $PACKAGE_VERSION"
+      python -m twine upload dist/* --repository-url https://upload.pypi.org/legacy/
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      when: always
+    - if: '$CI_COMMIT_TAG'
+      when: always
+    - when: never
+  environment:
+    name: production
+  variables:
+    TWINE_USERNAME: $TWINE_USERNAME
+    TWINE_PASSWORD: $TWINE_PASSWORD
