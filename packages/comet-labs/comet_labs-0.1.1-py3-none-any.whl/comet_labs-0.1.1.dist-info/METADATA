@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: comet-labs
+Version: 0.1.1
+Summary: A Python package for comet-related functionalities
+Author: Sahil
+Author-email: sahil85.10s@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
