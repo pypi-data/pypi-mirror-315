@@ -1,0 +1,180 @@
+[build-system]
+requires = ["hatchling==1.26.3"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+# In the sdist, what do we want to exclude?
+exclude = [".github/", ".devcontainer/"]
+
+[tool.hatch.build.targets.wheel]
+# In wheel, what do we want to include and exclude?
+packages = ["fastfem"]
+
+[tool.hatch.version]
+path = "fastfem/__init__.py"
+
+[project]
+dependencies = [
+    "jax==0.4.35",
+    "numpy==2.2.0",
+    "matplotlib==3.9.3",
+    "gmsh==4.13.1",
+    "pyvista[all]==0.44.2",
+]
+authors = [
+    { name = 'Sina Atalay', email = 'dev@atalay.biz' },
+    { name = "Kentaro Hanson" },
+    { name = "Sacha Escudier" },
+]
+name = 'fastfem'
+description = 'A Python package for solving PDEs with the finite element method and automatic differentiation'
+license = "Apache-2.0"
+readme = "README.md"
+requires-python = '>=3.12,<3.13'
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3.12",
+    # "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+] # Go to https://pypi.org/classifiers/ to see all classifiers
+dynamic = ["version"]
+
+[project.urls]
+Source = 'https://github.com/fastfem/fastfem'
+Documentation = 'https://fastfem.com/'
+Changelog = 'https://fastfem.com/changelog'
+
+# ======================================================================================
+# Virtual Environments Below ===========================================================
+# ======================================================================================
+
+[tool.hatch.envs.default]
+installer = "uv"
+python = "3.12"
+# Dependencies to be installed in the `default` virtual environment.
+dependencies = [
+    "ruff",       # to lint the code
+    "black",      # to format the code
+    "ipython",    # for ipython shell
+    "pyright",    # to check the types
+    "pytest",     # to run the tests
+    "coverage",   # to measure the test coverage
+    "pre-commit", # to run the pre-commit hooks
+]
+path = ".venv"
+[tool.hatch.envs.default.scripts]
+# Format all the code with `black`:
+format = "ruff check --fix && black fastfem tests" # hatch run format
+# Lint the code with `ruff`:
+lint = "ruff check fastfem" # hatch run lint
+# lint = "ruff check fastfem tests" # hatch run lint
+# Check types with `pyright`:
+check-types = "pyright fastfem" # hatch run check-types
+# Run the pre-commit hooks:
+precommit = "pre-commit run --files fastfem/**" # hatch run pre-commit
+# Run the tests:
+test = "pytest" # hatch run tests
+# Run the tests and generate the coverage report as HTML:
+test-and-report = "coverage run -m pytest --verbose && coverage report && coverage html --show-contexts" # hatch run tests-and-coverage
+
+
+[tool.hatch.envs.docs]
+installer = "uv"
+python = "3.12"
+# Dependencies to be installed in the `docs` virtual environment.
+dependencies = [
+    "mkdocs-material==9.5.39",     # docs engine and theme
+    "mkdocstrings-python==1.11.1", # to build reference documentation from docstrings
+    "mkdocs-macros-plugin==1.2.0", # to be able to have dynamic content in the documentation
+    "mkdocs-caption==1.2.0",       # for captions and cross-references
+    "mkdocs-bibtex==2.16.2",       # for citations with BibTeX
+]
+path = ".venv-docs"
+[tool.hatch.envs.docs.scripts]
+# Build the documentation with `mkdocs`:
+build = "mkdocs build --clean --strict" # hatch run docs:build
+# Start the development server for the documentation with `mkdocs`:
+serve = "mkdocs serve" # hatch run docs:serve
+
+# ======================================================================================
+# Virtual Environments Above ===========================================================
+# ======================================================================================
+
+[tool.ruff]
+output-format = "github"
+line-length = 88
+exclude = [
+    "report/**"
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+extend-select = [
+    "B",   # flake8-bugbear
+    "I",   # isort
+    "ARG", # flake8-unused-arguments
+    "C4",  # flake8-comprehensions
+    "EM",  # flake8-errmsg
+    "ICN", # flake8-import-conventions
+    "ISC", # flake8-implicit-str-concat
+    "G",   # flake8-logging-format
+    "PGH", # pygrep-hooks
+    "PIE", # flake8-pie
+    "PL",  # pylint
+    "PT",  # flake8-pytest-style
+    "PTH", # flake8-use-pathlib
+    "RET", # flake8-return
+    "RUF", # Ruff-specific
+    "SIM", # flake8-simplify
+    "T20", # flake8-print
+    "UP",  # pyupgrade
+    "YTT", # flake8-2020
+    "EXE", # flake8-executable
+    "NPY", # NumPy specific rules
+    "PD",  # pandas-vet
+]
+ignore = [
+    "PLR",    # Design related pylint codes
+    "ISC001", # Conflicts with formatter
+    "UP007",  # Allow `Optional` type
+    "PGH003", # Allow type: ignore comments
+    "C417",   # Causes errors
+]
+flake8-unused-arguments.ignore-variadic-names = true
+
+[tool.black]
+line-length = 88 # maximum line length
+preview = true # to allow enable-unstable-feature
+enable-unstable-feature = [
+    "string_processing",
+] # to break strings into multiple lines
+
+[tool.pyright]
+# No options are needed for `pyright` for now.
+
+[tool.coverage.run]
+source = ['fastfem'] # The source to measure during execution
+
+# Use relative paths instead of absolute paths, this is useful for combining coverage
+# reports from different OSes:
+relative_files = true
+
+[tool.coverage.report]
+# Don't include these lines in the coverage report:
+exclude_lines = [
+    "if __name__ == .__main__.:",
+    "return __all__",
+    "raise NotImplementedError",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "-ra",              # Show extra test summary info for all tests
+    "--strict-markers", # Don't allow unknown markers
+    "--strict-config",  # Always fail if there are unknown configuration options
+]
+testpaths = ["tests"]
