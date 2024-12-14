@@ -1,0 +1,68 @@
+{
+    "device_automation": {
+        "action_type": {
+            "close": "Zatvori {entity_name}",
+            "close_tilt": "Zatvori {entity_name} nagib",
+            "open": "Otvori {entity_name}",
+            "open_tilt": "Otvorite {entity_name} nagib",
+            "set_position": "Podesi {entity_name} poziciju",
+            "set_tilt_position": "Podesi {entity_name} nagib",
+            "stop": "Zaustavi {entity_name}"
+        },
+        "condition_type": {
+            "is_closed": "{entity_name} je zatvorena",
+            "is_closing": "{entity_name} se zatvara",
+            "is_open": "{entity_name} je otvorena",
+            "is_opening": "{entity_name} se otvara",
+            "is_position": "Trenutna {entity_name} pozicija je",
+            "is_tilt_position": "Trenutna {entity_name} pozicija nagiba je"
+        },
+        "trigger_type": {
+            "closed": "{entity_name} zatvorena",
+            "closing": "{entity_name} zatvaranje",
+            "opened": "{entity_name} otvorena",
+            "opening": "{entity_name} otvaranje",
+            "position": "{entity_name} promena pozicije",
+            "tilt_position": "{entity_name} promena nagiba"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "state": {
+                "closed": "Zatvorena",
+                "closing": "Zatvaranje",
+                "open": "Otvorena",
+                "opening": "Otvaranje",
+                "stopped": "Zaustavljena"
+            },
+            "state_attributes": {
+                "current_position": {
+                    "name": "Pozicija"
+                }
+            }
+        },
+        "awning": {
+            "name": "Tenda"
+        },
+        "door": {
+            "name": "Vrata"
+        },
+        "gate": {
+            "name": "Kapija"
+        },
+        "window": {
+            "name": "Prozor"
+        }
+    },
+    "services": {
+        "close_cover_tilt": {
+            "name": "Zatvori nagib"
+        },
+        "open_cover": {
+            "name": "Otvorena"
+        },
+        "set_cover_position": {
+            "name": "Postavi poziciju"
+        }
+    }
+}
