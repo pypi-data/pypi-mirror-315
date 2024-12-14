@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: atlaz
+Version: 0.2.1
+Summary: Atlaz Python SDK for API interaction
+Home-page: https://github.com/tabasco73/atlaz
+Author: Rasmus Bjersing
+Author-email: rasmus.bjersing@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: tiktoken
+
+# atlaz
+
+First test
+
+## Installation
+
+```bash
+pip install atlaz
+```
+
