@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: AFS_file_validator
+Version: 1.1.4
+Summary: 测试AFS文件签名
+Author-Email: funcdefmain <741132517@qq.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: pefile>=2023.2.7
+Requires-Dist: tqdm>=4.66.4
+Description-Content-Type: text/markdown
+
+# AFS_File_Validator
+```python
+# 使用方法
+from afs_file_validator import fv
+
+res = fv.scan_file_dir(r"D:\AutoTest\install_path\version_com", **fv.hitpaw_params)
+print(res)
+assert len(res) == 0
+```
