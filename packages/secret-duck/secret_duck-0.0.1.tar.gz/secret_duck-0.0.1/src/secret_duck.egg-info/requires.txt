@@ -1,0 +1,6 @@
+pykeepass==4.*
+
+[test]
+pytest
+flake8
+black
