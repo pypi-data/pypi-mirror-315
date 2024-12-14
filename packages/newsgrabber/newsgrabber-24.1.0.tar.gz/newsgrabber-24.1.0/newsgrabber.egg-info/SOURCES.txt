@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+pyproject.toml
+newsgrabber/__init__.py
+newsgrabber/exceptions.py
+newsgrabber/network_manager.py
+newsgrabber/parser.py
+newsgrabber/utils.py
+newsgrabber.egg-info/PKG-INFO
+newsgrabber.egg-info/SOURCES.txt
+newsgrabber.egg-info/dependency_links.txt
+newsgrabber.egg-info/requires.txt
+newsgrabber.egg-info/top_level.txt
+newsgrabber/models/__init__.py
+newsgrabber/models/news_url.py
+tests/test1.py
