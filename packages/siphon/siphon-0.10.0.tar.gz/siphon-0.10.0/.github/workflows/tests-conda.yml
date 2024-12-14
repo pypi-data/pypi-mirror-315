@@ -1,0 +1,78 @@
+name: Conda Tests
+
+# We don't want pushes (or PRs) to gh-pages to kick anything off
+on:
+  push:
+    branches:
+      - main
+      - '[0-9]+.[0-9]+.x'
+  pull_request:
+    branches:
+      - main
+      - '[0-9]+.[0-9]+.x'
+
+concurrency:
+  group: ${{ github.workflow}}-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  #
+  # Run all tests on Conda on both Windows and macOS
+  #
+  CondaTests:
+    name: ${{ matrix.os }} ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', 3.13]
+        os: [macOS, Windows]
+        include:
+          - python-version: 3.11
+            os: Windows
+          - python-version: 3.12
+            os: macOS
+
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 150
+        fetch-tags: true
+
+    - name: Install from Conda
+      uses: Unidata/MetPy/.github/actions/install-conda@main
+      with:
+        type: 'test'
+        python-version: ${{ matrix.python-version }}
+
+    - name: Run tests
+      uses: Unidata/MetPy/.github/actions/run-tests@main
+      with:
+        run-doctests: 'false'
+        key: conda-${{ matrix.python-version }}-${{ runner.os }}
+        pytest-args: ''
+
+  codecov:
+    name: CodeCov Upload
+    needs: CondaTests
+    runs-on: ubuntu-latest
+    environment:
+      name: CodeCov
+    timeout-minutes: 2
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Download coverage artifacts
+        uses: actions/download-artifact@v4
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v5
+        with:
+          name: Conda
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}

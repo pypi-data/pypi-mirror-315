@@ -1,0 +1,9 @@
+#
+# Configures file ignores for Quantified Code
+#
+
+# Ignore generated protobuf files
+src/siphon/cdmr/*_pb2.py
+
+# Don't scan sphinx config
+docs/source/conf.py
