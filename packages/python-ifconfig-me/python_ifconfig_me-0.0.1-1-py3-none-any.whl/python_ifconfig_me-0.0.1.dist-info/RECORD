@@ -1,0 +1,14 @@
+python_ifconfig_me/__init__.py,sha256=JhYY0PvkjpvS6E4UCQ-7Kd1ynLSbSrtEhGPPjBz4c9w,3237
+python_ifconfig_me/cli.py,sha256=GxC9duOLdVJeY297jfdzhmifL6z3Vip3ktIQT5oSJXI,3530
+python_ifconfig_me/ipretriever/IPRetriever.py,sha256=MgjcwSoVkIIDPFeroSWqtEAf5BL3fQX4cJ_dI4uLP84,896
+python_ifconfig_me/ipretriever/callbackIPRetriever.py,sha256=-sq-JemZYWaf0Y0n6NZpZyHe3ekN1m1Ly73XWAUn2UA,1150
+python_ifconfig_me/ipretriever/simpleTextIPRetriever.py,sha256=Qm816-7rz4uYamRpgFr-SRX7ovFEj-U2zQWb74ofmBA,366
+python_ifconfig_me/utils/__init__.py,sha256=JYgNDS-svG6dK3P7Lc-_62TN9sDy8pzGi2V8tf_kAhI,502
+python_ifconfig_me/utils/async_.py,sha256=9y8wCpEeKeIAAu5yZ__2QCwbFLtl00frOE-NYYLay1A,687
+python_ifconfig_me/vote/statisticsInformationItem.py,sha256=m-1eoaOPbQe38OMi9WA5DqHQdMvXgVYN0JTEjtckKkI,857
+python_ifconfig_me/vote/votingStrategy.py,sha256=Qn9Voocm7SeJXpnwf5dAuUXDbZaRMpzIJl2ThvT5du4,2465
+python_ifconfig_me-0.0.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+python_ifconfig_me-0.0.1.dist-info/METADATA,sha256=s8pHBVEvBb9U5h28VcQN6qYmD4pv0qzxt1UkIkHHYyI,3947
+python_ifconfig_me-0.0.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+python_ifconfig_me-0.0.1.dist-info/entry_points.txt,sha256=vK69V7XSQqoMIcCFjmq0zQTEoDytjwTYHTF7iSuGfEk,59
+python_ifconfig_me-0.0.1.dist-info/RECORD,,

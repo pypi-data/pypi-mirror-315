@@ -1,0 +1,3 @@
+[console_scripts]
+ifconfig-me=python_ifconfig_me.cli:main
+
