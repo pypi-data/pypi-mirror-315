@@ -1,0 +1,12 @@
+sgnevent/base/__init__.py,sha256=9opTUw5KPiY9irQQZfJzQGbjxZTAYuXRUYiSKOZJKS0,8525
+sgnevent/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sgnevent/bin/dir_to_hop.py,sha256=NMfDMixQR791Se8KIZBMBoRMFupdfPBjJ-2Uhe8Wv5Y,2075
+sgnevent/sinks/__init__.py,sha256=BFR401ENoPcKu2ZQ4YUZFaIQe3y35fPoW0urOMO2N7A,33
+sgnevent/sinks/hop.py,sha256=-vgN0GwijWD2SJQwhaJSdkj0Bd_g95ik5SGCYHTrKkE,646
+sgnevent/sources/__init__.py,sha256=d5I5Saatkxq0f8KAvOjLvVDLOAdMX99ed5V_R2v7MNE,41
+sgnevent/sources/directory.py,sha256=qUCuHpIbPRlQakrotlWRjkAWDsVf3IyFI8Rdhvdqt_A,2034
+sgn_event-0.0.3.1.dist-info/METADATA,sha256=xu9KG5kQ4Sjzjh-4BQ9joNWb5HB_AnI7iYCpFlpsxL8,6784
+sgn_event-0.0.3.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+sgn_event-0.0.3.1.dist-info/entry_points.txt,sha256=MdgtzgDCKdXPYiMtiJ1LhH--0M6wj1RNZ8QEShXWgEg,69
+sgn_event-0.0.3.1.dist-info/top_level.txt,sha256=ebN8Ailno3fp61KXd_8YMSwUO9WUlEQyZpGpQObokE0,9
+sgn_event-0.0.3.1.dist-info/RECORD,,
