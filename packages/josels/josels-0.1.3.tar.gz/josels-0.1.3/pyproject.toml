@@ -1,0 +1,12 @@
+[project]
+name = "josels"
+version = "0.1.3"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "typer>=0.15.1",
+]
+
+[project.scripts]
+josels = "josels.cli:app"

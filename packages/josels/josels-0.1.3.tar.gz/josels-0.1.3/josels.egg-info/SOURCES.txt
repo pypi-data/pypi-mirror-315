@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+josels/__init__.py
+josels/cli.py
+josels.egg-info/PKG-INFO
+josels.egg-info/SOURCES.txt
+josels.egg-info/dependency_links.txt
+josels.egg-info/entry_points.txt
+josels.egg-info/requires.txt
+josels.egg-info/top_level.txt
