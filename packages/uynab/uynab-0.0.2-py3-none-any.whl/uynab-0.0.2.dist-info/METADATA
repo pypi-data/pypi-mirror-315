@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: uynab
+Version: 0.0.2
+Summary: Micro YNAB - a small SDK for YNAB budgeting app
+Author-email: Adam Walkiewicz <aj.walkiewicz@gmail.com>
+Requires-Python: >=3.10
+Requires-Dist: pydantic>=2.10.3
+Requires-Dist: requests>=2.32.3
+Description-Content-Type: text/markdown
+
+# Micro YNAB
+
+Lorem ipsum
