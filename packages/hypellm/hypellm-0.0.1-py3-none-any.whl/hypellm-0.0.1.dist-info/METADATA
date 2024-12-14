@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: hypellm
+Version: 0.0.1
+Summary: A toolkit for LLM data augmentation
+Author-email: Cyrus Nouroozi <cyrus@zenbase.ai>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# hypellm
+
+Describe your project here.
