@@ -1,0 +1,8 @@
+README.md
+setup.py
+wodnjs/__init__.py
+wodnjs/wodnjs.py
+wodnjspackage.egg-info/PKG-INFO
+wodnjspackage.egg-info/SOURCES.txt
+wodnjspackage.egg-info/dependency_links.txt
+wodnjspackage.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: wodnjspackage
+Version: 0.3.0
+Summary: A sample Python package
+Home-page: https://github.com/yourusername/my_package
+Author: Your Name
+Author-email: your_email@example.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+for test!!
