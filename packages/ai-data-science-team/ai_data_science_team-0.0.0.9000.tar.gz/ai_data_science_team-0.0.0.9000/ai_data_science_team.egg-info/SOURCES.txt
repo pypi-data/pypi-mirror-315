@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ai_data_science_team/__init__.py
+ai_data_science_team/_version.py
+ai_data_science_team/agents.py
+ai_data_science_team/orchestration.py
+ai_data_science_team.egg-info/PKG-INFO
+ai_data_science_team.egg-info/SOURCES.txt
+ai_data_science_team.egg-info/dependency_links.txt
+ai_data_science_team.egg-info/requires.txt
+ai_data_science_team.egg-info/top_level.txt
