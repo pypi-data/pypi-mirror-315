@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./pycallshot/__init__.py
+./pycallshot/dice_tower.py
+./pycallshot/roll.py
+pycallshot/__init__.py
+pycallshot/dice_tower.py
+pycallshot/roll.py
+pycallshot.egg-info/PKG-INFO
+pycallshot.egg-info/SOURCES.txt
+pycallshot.egg-info/dependency_links.txt
+pycallshot.egg-info/top_level.txt
