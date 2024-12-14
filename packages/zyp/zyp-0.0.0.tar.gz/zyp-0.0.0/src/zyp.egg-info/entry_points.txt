@@ -1,0 +1,2 @@
+[console_scripts]
+zyp = zyp.cli:cli

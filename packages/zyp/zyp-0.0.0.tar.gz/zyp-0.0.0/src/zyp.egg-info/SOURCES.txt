@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/zyp/__init__.py
+src/zyp/__main__.py
+src/zyp/cli.py
+src/zyp/py.typed
+src/zyp.egg-info/PKG-INFO
+src/zyp.egg-info/SOURCES.txt
+src/zyp.egg-info/dependency_links.txt
+src/zyp.egg-info/entry_points.txt
+src/zyp.egg-info/requires.txt
+src/zyp.egg-info/top_level.txt
