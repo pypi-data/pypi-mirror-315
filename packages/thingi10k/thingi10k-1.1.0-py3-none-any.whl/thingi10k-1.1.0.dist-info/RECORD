@@ -1,0 +1,12 @@
+thingi10k/Thingi10K.py,sha256=c9Y44RSPIcsZznUyhlVrrvDnA6sNoCxidZ6cJjuhewE,8904
+thingi10k/__init__.py,sha256=M9F2qFjxDG8moF7VLg13pKLPGM0H0jBxJSYuafyEMeA,593
+thingi10k/_logger.py,sha256=bcCctLQmoUm7phsSWAiY7_OvjAH2i32-SQVG3fe279o,1204
+thingi10k/_utils.py,sha256=mNQukHGjU38g6PgtnAfsRBn2kUy6DU99yZ9cqn938Do,6836
+thingi10k/metadata/contextual_data.csv,sha256=Dx3Sxq7p0XtAdEaImfbk3__01zruKYMIAsZCuMjXtHA,240499
+thingi10k/metadata/geometry_data.csv,sha256=sSyNIokSWg068_NEpMXc-iEU1nqVExJQXpQhDRz9vC8,3578491
+thingi10k/metadata/input_summary.csv,sha256=GR4PjBtCPw0kOoruXk17rkO3EMG0LscVrcaaoxqBVM8,1847537
+thingi10k/metadata/tag_data.csv,sha256=SYG7r73nKuzzCFzGz5d14RNfbSr4HYceJCxe4Gb9pWY,212024
+thingi10k-1.1.0.dist-info/LICENSE,sha256=hr3V2vq3dFEES2_W0u-rI-NBDOZY6wl_BMBPT1Su1i8,11335
+thingi10k-1.1.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+thingi10k-1.1.0.dist-info/METADATA,sha256=juZf2oyQRQAA5r1y0HBfIt946CiD9Qpr4NlvAqpxoRw,3161
+thingi10k-1.1.0.dist-info/RECORD,,
