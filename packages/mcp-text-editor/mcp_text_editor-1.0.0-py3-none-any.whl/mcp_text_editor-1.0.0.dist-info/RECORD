@@ -1,0 +1,10 @@
+mcp_text_editor/__init__.py,sha256=dY8CaufS0-Yl9HZjG7OSt_3z_KbVte3NMy1zM0Mdlv4,167
+mcp_text_editor/models.py,sha256=nXrfItD0HFey_QT_iXsfpZvVBFEqBydR-O2lYm4tcys,2745
+mcp_text_editor/server.py,sha256=2JNr9SsA7oyCr_1aGnOiTtq8eO47O3HeV8H2GzTo46A,11653
+mcp_text_editor/service.py,sha256=T_JOXW0NZ-9vE7fsEh2G1ISdYSPp2ur032tUCydPtOc,4248
+mcp_text_editor/text_editor.py,sha256=WqoH93jB67YsiUBcLY6yKBskqSFCThm6sbGELB0o0XQ,11529
+mcp_text_editor/version.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+mcp_text_editor-1.0.0.dist-info/METADATA,sha256=Zr1oWUsSnm5LJJBuHOgSEpCbdd8hcmWePubSji6G2so,10121
+mcp_text_editor-1.0.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+mcp_text_editor-1.0.0.dist-info/entry_points.txt,sha256=rCFQ7GsIKSCu3CxddARIvi95oj-mOhPzmsUue4O9DwE,56
+mcp_text_editor-1.0.0.dist-info/RECORD,,
