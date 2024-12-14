@@ -1,0 +1,12 @@
+[package]
+edition = "2021"
+name = "xray-atlas-python"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib"]
+name = "xray_atlas_python"
+
+[dependencies]
+pyo3 = "0.22.0"
