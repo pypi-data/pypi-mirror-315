@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: go-hotspot-socks-proxy
+Version: 1.1.8
+Summary: SOCKS proxy for routing traffic through WiFi interface
+Author-email: tadeasf <business@tadeasfort.com>
+Requires-Python: >=3.12
+Requires-Dist: prompt-toolkit>=3.0.48
+Requires-Dist: psutil>=6.1.0
+Requires-Dist: rich>=13.9.4
+Requires-Dist: typer>=0.15.1
+Description-Content-Type: text/markdown
+
+# go-hotspot-socks-proxy
+
+Describe your project here.
