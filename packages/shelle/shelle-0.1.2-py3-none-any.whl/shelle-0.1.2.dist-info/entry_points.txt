@@ -1,0 +1,2 @@
+[console_scripts]
+combot-installer = combot_installer.__main__:install
