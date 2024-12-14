@@ -1,0 +1,72 @@
+[project]
+name = "python-strtobool"
+dynamic = ["version"]
+description = "str_to_bool function for Python"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Sassan Haradji", email = "me@sassanh.com" }]
+maintainers = [{ name = "Sassan Haradji", email = "me@sassanh.com" }]
+readme = "README.md"
+requires-python = ">=3.0"
+keywords = ['str_to_bool', 'strtobool', 'str2bool']
+
+[tool.poe.tasks]
+lint = "uvx ruff check"
+typecheck = "uvx --with pytest pyright -p pyproject.toml ."
+test = "uvx --with pytest-cov --with . pytest --cov --cov-report=term-missing --cov-report=html --cov-report=xml"
+sanity = ["typecheck", "lint", "test"]
+
+[project.urls]
+homepage = 'https://github.com/sassanh/python-strtobool/'
+repository = 'https://github.com/sassanh/python-strtobool/'
+documentation = 'https://github.com/sassanh/python-strtobool/'
+changelog = 'https://github.com/sassanh/python-strtobool/blob/main/CHANGELOG.md'
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "str_to_bool/_version.py"
+
+[tool.hatch.version.raw-options]
+local_scheme = "setup_scm_schemes:local_scheme"
+
+[tool.hatch.build]
+packages = ["str_to_bool"]
+
+[tool.hatch.build.targets.sdist]
+packages = ["str_to_bool"]
+
+[tool.ruff]
+target-version = 'py38'
+
+[tool.ruff.lint]
+select = ['ALL']
+ignore = ['INP001', 'PLR0911', 'D203', 'D213']
+fixable = ['ALL']
+unfixable = []
+
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "single"
+multiline-quotes = "double"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101", "PLR0915", "PLR2004"]
+
+[tool.ruff.format]
+quote-style = 'single'
+
+[tool.isort]
+profile = "black"
+
+[tool.pyright]
+exclude = ['typings', '.venv']
+filterwarnings = 'error'
+
+[tool.pytest.ini_options]
+log_cli = 1
+log_cli_level = 'ERROR'
