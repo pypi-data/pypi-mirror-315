@@ -1,0 +1,12 @@
+
+
+# Include all text files in the root of the project
+# include *.txt
+include mk1pass.1 mk1pass.1.gz
+
+# Include all markdown files in the docs directory
+# recursive-include docs *.md
+
+# Exclude specific files or directories
+# exclude secret_file.txt
+# recursive-exclude temp *
