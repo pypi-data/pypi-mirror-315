@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: keymaster-sdk
+Version: 0.1.0
+Summary: Keymaster is a client library for the MDIP
+Author-email: David McFadzean <david@selfid.com>, Peter Bushnell <peter@selfid.com>
+License: MIT License
+        
+        Copyright (c) 2024 MDIP
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/KeychainMDIP/kc/
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests==2.32.0
+
+# MDIP Keymaster
+
+Keymaster is a client library for the MDIP.  It manages a wallet with any number of identities.
+
+### Installation
+
+```bash
+pip install keymaster-sdk
+```
+
+### Requirements
+
+- Running keymaster instance
+
+### Usage
+
+```python
+import keymaster_sdk as keymaster
+
+# Optional: URL defaults to http://localhost:4226 and can also
+# be set using the environment variable KC_KEYMASTER_URL
+keymaster.set_url('http://example.com:4226')
+
+ready = keymaster.is_ready()
+print(f'Keymaster is ready: {ready}')
+```
