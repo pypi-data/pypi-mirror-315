@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: secret_santa_handler
+Version: 0.0.2
+Summary: A simple Secret Santa name matcher
+Author: Atharva Rasane
+Author-email: rratharva@gmail.com
+Keywords: python,secret santa,random name matcher
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+# Secret Santa Name Matcher
+
+A simple Python package to randomly assign Secret Santa pairs from a list of participants.
+
+## Features
+
+- Randomly shuffles a list of names to create Secret Santa pairs.
+- Ensures each participant is assigned to another, with the last person assigned to the first, forming a complete loop.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install secret-santa-handler
