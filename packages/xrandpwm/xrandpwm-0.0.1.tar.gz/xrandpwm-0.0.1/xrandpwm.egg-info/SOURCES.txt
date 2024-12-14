@@ -1,0 +1,11 @@
+setup.py
+xrandpwm/__init__.py
+xrandpwm/monitorbundle.py
+xrandpwm/monitorstate.py
+xrandpwm/screenstate.py
+xrandpwm/utils.py
+xrandpwm.egg-info/PKG-INFO
+xrandpwm.egg-info/SOURCES.txt
+xrandpwm.egg-info/dependency_links.txt
+xrandpwm.egg-info/requires.txt
+xrandpwm.egg-info/top_level.txt
