@@ -1,0 +1,3 @@
+[console_scripts]
+thehunter-rwn=thehunter_rwn.main:app
+
