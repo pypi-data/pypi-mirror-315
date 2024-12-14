@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pramanpatram/__init__.py
+pramanpatram/pramanpatram.py
+pramanpatram.egg-info/PKG-INFO
+pramanpatram.egg-info/SOURCES.txt
+pramanpatram.egg-info/dependency_links.txt
+pramanpatram.egg-info/requires.txt
+pramanpatram.egg-info/top_level.txt
+tests/test_pramanpatram.py

@@ -1,0 +1,27 @@
+[project]
+name = "pramanpatram"
+version = "1.0.0"
+authors = [
+  { name="Aryan Karamtoth", email="aryankmmiv@outlook.com" },
+]
+description = "A Python Library to generate event certificates"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas",
+    "PIL",
+    "pillow",
+    "textwrap"
+]
+
+[project.urls]
+Homepage = "https://github.com/SpaciousCoder78/pramanpatram-lib"
+Issues = "https://github.com/SpaciousCoder78/pramanpatram-lib/issues"
+
+[project.license]
+text = "MIT License"
