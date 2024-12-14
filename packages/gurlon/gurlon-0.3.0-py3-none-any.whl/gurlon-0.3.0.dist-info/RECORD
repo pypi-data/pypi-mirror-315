@@ -1,0 +1,10 @@
+gurlon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gurlon/dynamodb.py,sha256=kqOIQ0TlS5-TN2t2PeFq6efsb8IGOpZf7xXf5ali3Ko,2853
+gurlon/processor.py,sha256=tUK8u2LigRaqJ_P7eMvsDLKPUU0RMQk2mIFm8IYjC7Y,8085
+gurlon/py.typed,sha256=GjOxDGJKYrw145PNJzjX4PfE4w2B7KGtxVZHYWYjeSI,36
+gurlon/s3.py,sha256=W8PAQc1e9PUDSqM7JLe6YxJWFWLtRi7YYkDbqxlJp4c,4081
+gurlon-0.3.0.dist-info/METADATA,sha256=rCyIJNvoR4IoD-VO6DBe2JzXukcXjDOhw9nOKXkG050,1178
+gurlon-0.3.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+gurlon-0.3.0.dist-info/entry_points.txt,sha256=pcJocW78Y8MNOg18MPPDdMIGVj1An0CI0zMAqAET4rg,39
+gurlon-0.3.0.dist-info/licenses/LICENSE,sha256=ffUnFhy8QaYJY5K5pe2hGCvwlRw9ZZqIysPbU6ceHVw,1067
+gurlon-0.3.0.dist-info/RECORD,,
