@@ -1,0 +1,9 @@
+epcis_dummy_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epcis_dummy_generator/companies.py,sha256=0-2zhGBcMGWIx-BVOMkLZPRaPmO0Wws5kx6a-5EIf3k,425
+epcis_dummy_generator/items.py,sha256=zScXv458UvvAyOrUCT6fUuDiTrdbxxzrF3OngcYbLwI,2404
+epcis_dummy_generator/locations.py,sha256=Hs2ua0wx_nU8s52WehRQdxlNu91XyLmamioI9XBFywU,1847
+epcis_dummy_generator/utils.py,sha256=heOcwHzcFXm2dQOYOHtHEwHwC6jd2iqygcl86R8sULM,463
+epcis_dummy_generator-0.0.2.dist-info/METADATA,sha256=KTbJ1As_HkKObQP9QtenX4FZaW1maNbfLSU1Dw1AQGM,3653
+epcis_dummy_generator-0.0.2.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+epcis_dummy_generator-0.0.2.dist-info/licenses/LICENSE,sha256=frg_MWsSFMHX-Qj8HqRABLW5v9tH0Hab49FqatZ57Z4,1092
+epcis_dummy_generator-0.0.2.dist-info/RECORD,,
