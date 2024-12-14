@@ -1,0 +1,8 @@
+setup.py
+lomefaire/__init__.py
+lomefaire/main.py
+lomefaire.egg-info/PKG-INFO
+lomefaire.egg-info/SOURCES.txt
+lomefaire.egg-info/dependency_links.txt
+lomefaire.egg-info/requires.txt
+lomefaire.egg-info/top_level.txt
