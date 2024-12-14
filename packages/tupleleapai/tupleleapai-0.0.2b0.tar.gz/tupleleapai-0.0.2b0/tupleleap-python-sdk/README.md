@@ -1,0 +1,94 @@
+#### Python bindings for TupleLeap
+
+```python
+>>> import asyncio
+>>> from tupleleap_python_sdk import pdf_parse_async
+>>> async def main():
+...     res = await pdf_parse_async("/Users/test_data/sample.pdf")
+...     print(res)
+...
+>>> asyncio.run(main())
+```
+
+
+
+===============================================================================
+### Steps to build python bindings
+
+1. [Optional]Create a virtual env for pyo3
+```bash
+pyenv virtualenv 3.10.15 pyo3-dev
+```
+
+2. Activate virtual env.
+```bash
+pyenv activate pyo3-dev
+```
+
+3. [Optional]Install maturin if not installed
+
+4. [Optional, only for new projects] Init maturin
+```bash
+maturin init
+>> choose pyo3
+```
+
+5. Generate Wheel , install the wheel for python developement
+```bash
+maturin develop  #- wheel is generated.
+python
+>>> import tupleleap_python_sdk
+>>> tupleleap_python_sdk.sum_as_string(3,4)
+'7'
+>>>
+
+```
+
+6. Create a Wheel
+```bash
+maturin build
+```
+This command builds the wheel.
+
+7. To publish it please create an API token in pypi https://pypi.org/manage/account/
+Run the below command
+```bash
+maturin publish
+```
+Enter the user name as `__token__`
+For the password enter the api token that has been generated.
+
+8. To publish it to testpypi create an API token in testpypi https://test.pypi.org/manage/account
+Run the below command
+```bash
+maturin publish --repository testpypi
+```
+Enter the user name as `__token__`
+For the password enter the api token that has been generated.
+
+
+
+##Note:##
+1. Steps 5 and 6 are automated in CI.yml and will generated python bindings for all architectures.
+
+2. Async RUST functions to asyncio in Python mapping
+
+sum_as_string_async() is an async RUST function. The python binding of it can be invoked as follows
+```python
+import asyncio
+from tupleleap_python_sdk import sum_as_string_async
+
+async def main():
+    res = await sum_as_string_async(3,4)
+    print(res)
+
+asyncio.run(main())
+```
+
+
+### Steps to build and invoke RUST code directly.
+
+1. This code invokes the main.rs
+```bash
+RUST_LOG=info cargo run --bin server
+```
