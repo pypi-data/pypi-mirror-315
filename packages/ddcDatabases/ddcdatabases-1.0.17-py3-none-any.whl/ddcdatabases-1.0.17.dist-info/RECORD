@@ -1,0 +1,12 @@
+ddcDatabases/.env.example,sha256=ugLruw34ZkrzeQhGn9yFM9dsjKnesBAl6D-rD9Vywb4,430
+ddcDatabases/__init__.py,sha256=5IGdilZ0KjIUBl83vetWK1KjWWWTRbb2Qs1tXJfw9ag,1332
+ddcDatabases/db_utils.py,sha256=kMNuwFD7aUHkcmElOAwnfnN2aoZHu_85mdxVCUoFf4g,9648
+ddcDatabases/exceptions.py,sha256=9LjKPbkeUOVpxOlt0qB24ulfPuYx4KVS0frDPg4qyY8,624
+ddcDatabases/mssql.py,sha256=vB8nNYRZxC87id5jEZihzz1PkDjMGioX2NzD9vqeKKw,3518
+ddcDatabases/postgresql.py,sha256=aFHDeu8vnNwaysi8xII_63j9dfoHccbeUpAo7XDxK2Q,1773
+ddcDatabases/settings.py,sha256=ahbYROK_3ezfTv_HeB399JeUq0PWbUljxKnQzvxNOM4,1999
+ddcDatabases/sqlite.py,sha256=Ix1vh7SgEqcdEVbIr2n7nTT1FkD3sb-sj0UMGfYCwV4,2133
+ddcdatabases-1.0.17.dist-info/LICENSE,sha256=3fEBeO1ARuqTVV1QJzrGVVmXZz_okGweH0a-MeA0Qpc,1068
+ddcdatabases-1.0.17.dist-info/METADATA,sha256=hYhGG-k0Xsnmbthv7m2klyoZ6ylC9NHchYjsmXS8yao,7765
+ddcdatabases-1.0.17.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+ddcdatabases-1.0.17.dist-info/RECORD,,
