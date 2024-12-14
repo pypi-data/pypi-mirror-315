@@ -1,0 +1,12 @@
+pyshiftsla/__init__.py,sha256=D_t-lDFMrtMP2UET4jcB_T8oW3RLG0yP5zNZchFrtLo,63
+pyshiftsla/common_daysoff.py,sha256=ddsySXR0P1mdmtdkJdThV4W-DDDBXhns5gaOmKU1EHk,554
+pyshiftsla/daily_shifts.py,sha256=RrLbEshvHmfvDnHZjO71sTGJZKWOs0DfKNHDS-GTyGs,5839
+pyshiftsla/daterange.py,sha256=J2bnrw8yiCeerV474N0qET53MQ-VCpZabnF8qJqtFGQ,2893
+pyshiftsla/datetime_utilities.py,sha256=aw8ak2qoeR9gt2W_giJ7fxhmuV7rz6U8m3LwP4ZjvHY,1772
+pyshiftsla/shift.py,sha256=o5q-pxrsoA7-jw-uKyBoKwIHz7BJh4-cgWdO5SbO8T4,8738
+pyshiftsla/shiftrange.py,sha256=aTgGt-BZW1Nme-dSmvE80cRHGrLTJ_eBCxigT1eo6us,5021
+pyshiftsla/shifts_builder.py,sha256=kE9JyeHzzlOsbJlD5yJ4xJRlgpu4L9EuJp4lkq-c2sI,6883
+pyshiftsla-0.5.0.dist-info/LICENSE.md,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+pyshiftsla-0.5.0.dist-info/METADATA,sha256=nciDvPRdlFRSlJ65JN3sS2ZMfO6y8WId9RjGTceXIXo,6264
+pyshiftsla-0.5.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pyshiftsla-0.5.0.dist-info/RECORD,,
