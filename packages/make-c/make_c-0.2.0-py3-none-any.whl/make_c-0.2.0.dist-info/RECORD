@@ -1,0 +1,13 @@
+make_c/__about__.py,sha256=-Fw9IYp3rSntjycNX5Vmgqv9AuM2F4fpEandVt8YFX8,453
+make_c/__init__.py,sha256=KzjixyX05M6EN95Ck7bflSuK-06c9VtXxLIHo3WXgnw,255
+make_c/editors.py,sha256=OQpipp1DPs5Wmd91upb4Hxp0reg75FA0jzFmrxvQLQQ,4952
+make_c/environment.py,sha256=jTz2GpiKk3FsPWaYyp961Lat3axgdDlm2HmhIqa-STA,575
+make_c/make_c.py,sha256=Sm_aFDTcK7BtNCH3istS91eDaPz3sb-oMvHSnvmMtlk,2520
+make_c/meta.py,sha256=hfhnEGejje207Bxv2g7wQzsd6wkr1h7GDbTn6AShW10,811
+make_c/version.py,sha256=eLPeLYvSi9N81Po_rI_8-HSSOyoVa7dOFCCTFwTlAUQ,169
+make_c-0.2.0.dist-info/LICENSE,sha256=1g3_o1Yhj5VLSkxCCPT4-l2rZTmviprLUqnYD2cu-dQ,1064
+make_c-0.2.0.dist-info/METADATA,sha256=AYsYp5-Pdk-il3yDG5JkG85AItvI4cTmLC9eHZEIank,3382
+make_c-0.2.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+make_c-0.2.0.dist-info/entry_points.txt,sha256=KpkhO35XitJ04Kx0NJj4qSu_ZEdvCg7Rp9pFSCdv1ZE,46
+make_c-0.2.0.dist-info/top_level.txt,sha256=7nmko4ftE4eaHQLotk5ivYbA9X7y3D1VfyF3fKrxKWA,7
+make_c-0.2.0.dist-info/RECORD,,
