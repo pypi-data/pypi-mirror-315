@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+recommend_games/__init__.py
+recommend_games/data.py
+recommend_games/graph.py
+recommend_games/prints.py
+recommend_games/recommend_games.py
+recommend_games.egg-info/PKG-INFO
+recommend_games.egg-info/SOURCES.txt
+recommend_games.egg-info/dependency_links.txt
+recommend_games.egg-info/top_level.txt
