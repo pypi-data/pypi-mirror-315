@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+josedemo/__init__.py
+josedemo/cli.py
+josedemo.egg-info/PKG-INFO
+josedemo.egg-info/SOURCES.txt
+josedemo.egg-info/dependency_links.txt
+josedemo.egg-info/entry_points.txt
+josedemo.egg-info/requires.txt
+josedemo.egg-info/top_level.txt
