@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jst-django-core
+Version: 1.0.0
+Summary: 
+Author: A'zamov Samandar
+Author-email: JscorpTech@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: celery (>=5.4.0,<6.0.0)
+Requires-Dist: django (>=4.1.4,<5.0.0)
+Requires-Dist: djangorestframework (>=3.14.0,<4.0.0)
+Requires-Dist: unfold (>=0.42.0,<0.43.0)
+Description-Content-Type: text/markdown
+
+# JST-DJANGO
+## [Docs](https://docs.jscorp.uz)
+## Yordam uchun: [Telegram Guruh](https://t.me/Jscorptech_support/6/)
