@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+stardew_wiki/Stardew_Valley_Wiki.egg-info/PKG-INFO
+stardew_wiki/Stardew_Valley_Wiki.egg-info/SOURCES.txt
+stardew_wiki/Stardew_Valley_Wiki.egg-info/dependency_links.txt
+stardew_wiki/Stardew_Valley_Wiki.egg-info/top_level.txt
+stardew_wiki/livingthings/__init__.py
+stardew_wiki/livingthings/animals.py
+stardew_wiki/livingthings/crops.py
+stardew_wiki/livingthings/main.py
+stardew_wiki/livingthings/data/Animals.csv
+stardew_wiki/livingthings/data/Crops.csv
+stardew_wiki/recipes/__init__.py
+stardew_wiki/recipes/ingredient_search.py
+stardew_wiki/recipes/main.py
+stardew_wiki/recipes/recipe_search.py
+stardew_wiki/recipes/data/wiki.xlsx
