@@ -1,0 +1,10 @@
+django_request_approval/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_request_approval/apps.py,sha256=335ktboszo3EZNalvJiqNHHCRNy9Q0XvUIzMco18PD0,122
+django_request_approval/exceptions.py,sha256=SavRi-p8XUhICx1Cej3TGhqXe5zQhv6rD1YC8mLQfpU,54
+django_request_approval/forms.py,sha256=nn8FM0GEaolLM4vHJ8zdAHffqNU7XK8z5knoEyfPk8I,319
+django_request_approval/models.py,sha256=XiXVdgH7inmwwKaenNc38r-ieJQqZmlCxsAjxMXzSq4,4481
+django_request_approval/services.py,sha256=VbyFLbAs0Am7hxoB4_XjWtXhMatEDvW1Glsdd8R7KjY,3315
+django_request_approval-1.0.2.dist-info/METADATA,sha256=9U_3o4ReCqXUhFmfLsp2phc8ERlH2gNzEAb8aF-qBTI,1397
+django_request_approval-1.0.2.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+django_request_approval-1.0.2.dist-info/licenses/LICENSE,sha256=UhXs8Ftmla0OhtXOJazOx4qzPoeTwlVQsmE4GY4nKeA,1065
+django_request_approval-1.0.2.dist-info/RECORD,,
