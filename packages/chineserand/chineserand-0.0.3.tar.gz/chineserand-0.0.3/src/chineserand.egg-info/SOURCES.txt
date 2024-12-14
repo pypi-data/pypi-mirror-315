@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/chineserand/__init__.py
+src/chineserand/global_word.rst
+src/chineserand.egg-info/PKG-INFO
+src/chineserand.egg-info/SOURCES.txt
+src/chineserand.egg-info/dependency_links.txt
+src/chineserand.egg-info/top_level.txt

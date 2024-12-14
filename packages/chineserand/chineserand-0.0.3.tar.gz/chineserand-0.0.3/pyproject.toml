@@ -1,0 +1,23 @@
+[project]
+name = "chineserand"
+version = "0.0.3"
+authors = [
+  { name="chenzuoli", email="chenzuoli709@163.com" },
+]
+description = "随机生成中文字符工具包"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/chenzuoli/chineserand"
+Issues = "https://github.com/chenzuoli/chineserand/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+mypkg = ["*.txt", "*.rst"]
