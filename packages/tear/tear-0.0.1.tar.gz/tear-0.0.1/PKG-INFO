@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: tear
+Version: 0.0.1
+Summary: TExt Analytics for Reconnaissance.
+Author-email: STAIRlab <50180406+claudioperez@users.noreply.github.com>
+Project-URL: repository, http://github.com/claudioperez/tear
+Project-URL: documentation, https://claudioperez.github.io/tear
+Keywords: dynamics,integration,seismic,earthquake-engineering
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+Requires-Dist: opensees
+Requires-Dist: certifi==2020.6.20
+Requires-Dist: chardet==3.0.4
+Requires-Dist: idna==2.10
+Requires-Dist: newsapi==0.1.1
+Requires-Dist: newsapi-python==0.2.6
+Requires-Dist: numpy==1.19.1
+Requires-Dist: oauthlib==3.1.0
+Requires-Dist: pandas==1.1.0
+Requires-Dist: python-docx==0.8.11
+Requires-Dist: gensim==3.8.3
+Requires-Dist: huggingface-hub==0.0.16
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python==4.5.1.48
+Requires-Dist: pytesseract==0.3.8
+Requires-Dist: requests==2.26.0
+Requires-Dist: selenium==3.141.0
+Requires-Dist: transformers==4.10.0
+Requires-Dist: wheel==0.37.0
+Requires-Dist: tweepy==3.10.0
+Requires-Dist: bs4==0.0.1
+Requires-Dist: beautifulsoup4==4.8.2
+Requires-Dist: tzwhere==3.0.3
+Requires-Dist: webdriver-manager==3.4.2
+Requires-Dist: textract==1.6.4
+Requires-Dist: six==1.12.0
+Requires-Dist: nltk==3.6.2
+Requires-Dist: torch==1.9.0
+
+This version of code is refactored by Vedant Mathur
+
+# TAR Software Package Repository
+
+Code combining preprocessing, data collection, training and inference to generate automated disaster reports.
+
+## Key Files 
+* `tar_main.py` - File that consolidates relevant functions to produce a report 
+* date2template* - Files that do different collectiong/processing of USGIS data to be added to the briefings 
+* `classifiers.py` - Calls classifiers (regression, SVN, GAN, CNN) and runs a majority vote to determine the final classification for sentences according to 4 categories (buildings, infrastructure, resilience, other) 
+* `resilience_curve.py` - Generates resilience curves, and calculates t0 and t1 (to calculate recovery time for disaster) 
+* `config.ini` - Set of parameters to control briefing generation
+* data - Folder containing log of earthquakes, tweets and news articles
+
+## Usage
+**Generating a report**
+
+To generate a report, run 
+
+``` 
+python -m tear
+```
+
+This will iterate through earthquakes listed in the earthquake log and output a report to the "reports" directory. 
+
+### Generating a resilience curve
+
+To do this, call the `generateResilience` function in `resilience_curve.py`. It takes the following parameters - 
+
+* ruptureTime - Reference time to when the earthquake happened (e.g. 2021-02-24 02:05:59)
+* twitterFile - CSV with tweets for earthquake
+* keywords - keywords to filter tweets by
+
+
+An example call would be ```generateResilience("2021-02-24 02:05:59", "data/tweets/ArgentinaTweets.csv", ["electricity", "lights"])```
