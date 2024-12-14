@@ -1,0 +1,9 @@
+pyproject.toml
+jose2ls/__init__.py
+jose2ls/cli.py
+jose2ls.egg-info/PKG-INFO
+jose2ls.egg-info/SOURCES.txt
+jose2ls.egg-info/dependency_links.txt
+jose2ls.egg-info/entry_points.txt
+jose2ls.egg-info/requires.txt
+jose2ls.egg-info/top_level.txt
