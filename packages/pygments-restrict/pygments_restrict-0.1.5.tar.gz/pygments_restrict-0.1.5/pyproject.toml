@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pygments-restrict"
+version = "0.1.5"
+description = "Pygments syntax highlighter for the RESTrict Framework resource files"
+authors = ["Curtis Schlak <696163-realistschuckle@users.noreply.gitlab.com>"]
+readme = "README.md"
+packages = [{ include = "pygments_restrict" }]
+repository = "https://gitlab.com/restrict-framework/pygments-restrict"
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pygments = "^2.18.0"
+
+[tool.poetry.plugins."pygments.lexers"]
+restrict_lexer = "pygments_restrict.lexers:ResourceFileLexer"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
