@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: inkBoard
+Version: 0.1.0
+Summary: inkBoard aims to provide PSSM based dashboards in an easy, but flexible way
+Author: Slalamander
+Project-URL: Homepage, https://github.com/Slalamander/inkBoard
+Keywords: gui,pixels,interface,MaterialDesignIcon,mdi icons,dashboards,dashboarding
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML
+Requires-Dist: PythonScreenStackManager
