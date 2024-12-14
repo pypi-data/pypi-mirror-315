@@ -1,0 +1,13 @@
+teo-0.3.7.dist-info/METADATA,sha256=rFXD9AvTIvNW9AynXnqFxV9d09AgVqPTGkkXsb4usys,5665
+teo-0.3.7.dist-info/WHEEL,sha256=ScNuw07N6B0w3hWD8Vj5CwEOIHV9Ii4zQfWBQfEeUNQ,106
+teo-0.3.7.dist-info/entry_points.txt,sha256=o2q3ii7cRKw3dwifdwyQBipbxq_LRa_o3JJFIGN0__I,35
+teo-0.3.7.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+teo/test/__init__.py,sha256=U534QfOBGOZPVJ62t6XAJmVpnpzWBp1xDQGnJcDmQ-U,775
+teo/test/matchers.py,sha256=xQyVyMxwx7KnXFB6ELC1EKUa1MlotkwLkogE3YiCHHk,8449
+teo/__init__.pyi,sha256=SkARC9aAlvwQ5lzLW1BoY-UxX-6TfUEnCRA0HHH5nZs,32636
+teo/__init__.py,sha256=2VR6Iv6ttdM0n3cEayun3_mg1uoKoHJlppJAbEXVF1Q,18126
+teo/annotations/__init__.py,sha256=DTdaAn8ZkrHu-tHXgbAPmP22g0RBlie0Rocj_RRfnyQ,78
+teo/cli.py,sha256=IKEeFOaqCvTRD73O5fGxzkNc7ifVfsH9FiKhY1IJIFc,106
+teo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teo/teo.cpython-313-darwin.so,sha256=NhJTP2rhbnY3-MLpXRLfEnPeOqOMvXaNgfFUFxrcn5k,43758696
+teo-0.3.7.dist-info/RECORD,,
