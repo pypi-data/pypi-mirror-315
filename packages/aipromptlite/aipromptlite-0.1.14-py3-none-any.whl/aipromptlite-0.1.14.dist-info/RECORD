@@ -1,0 +1,17 @@
+aipromptlite/__init__.py,sha256=hhKWL_wlooXY0snQkCNY3H9VUXAKkbz04Jeq56qkWLs,904
+aipromptlite/claude/CLAUDE_SYS_PROMPT.md,sha256=ZtBtfcNwUuYmkHbHzh7KC8QN--SEqhUVtqiKdT2XkF0,10008
+aipromptlite/claude/__init__.py,sha256=SPtGh-mEF1ghM9Hmde_bN9gRORp-ntboOOZ10XmMu0U,566
+aipromptlite/code/CODE_EXPLANATION_CLAUDE_PROMPT.md,sha256=x1CExDOTts-y4hvIi4wa-yKuClbUXiMLiw62PPyPvkA,2977
+aipromptlite/code/__init__.py,sha256=SPtGh-mEF1ghM9Hmde_bN9gRORp-ntboOOZ10XmMu0U,566
+aipromptlite/education/TECHNICAL_EXPLANATIONS.md,sha256=8JQHEkjddX9upGhGs4lr3yfjbakKNgi12q54GESSPBQ,3815
+aipromptlite/education/__init__.py,sha256=SPtGh-mEF1ghM9Hmde_bN9gRORp-ntboOOZ10XmMu0U,566
+aipromptlite/language/PYTHON_CODER_PROMPT.md,sha256=SUnRXWBajNSfqM6xCaPwUZKy_WuLWym-fgnCRR_baZk,2862
+aipromptlite/language/__init__.py,sha256=SPtGh-mEF1ghM9Hmde_bN9gRORp-ntboOOZ10XmMu0U,566
+aipromptlite/personas/AI_TECH_LEAD_PROMPT.md,sha256=DcqoIKQ6xVj45TPb9JtLijHVXbHPgz0UZC1Cc0cpqAA,5804
+aipromptlite/personas/BRAINSTROM_BUDDY_PROMPT.md,sha256=VbOCIGf5q3Bpn0_ow_evIP8RoKPhdZJUDzQOj-jzkLo,1910
+aipromptlite/personas/__init__.py,sha256=SPtGh-mEF1ghM9Hmde_bN9gRORp-ntboOOZ10XmMu0U,566
+aipromptlite/reasoning/PREDICTIVE_QUESTION_REASONING_PROMPT.md,sha256=9T0iyo1Xuojb0xWDxvPP_ES6lOtW9Y8Xgv6xGGd6iWo,789
+aipromptlite/reasoning/__init__.py,sha256=SPtGh-mEF1ghM9Hmde_bN9gRORp-ntboOOZ10XmMu0U,566
+aipromptlite-0.1.14.dist-info/METADATA,sha256=cyp24hdqfLsBGWYEsdPNdNuWrcgH3BLpI0_dBNaccbA,553
+aipromptlite-0.1.14.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+aipromptlite-0.1.14.dist-info/RECORD,,
