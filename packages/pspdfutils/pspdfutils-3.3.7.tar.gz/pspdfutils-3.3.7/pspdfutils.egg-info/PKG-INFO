@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pspdfutils
+Version: 3.3.7
+Summary: pspdfutils is now psutils
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: psutils
+
+# pspdfutils is now psutils
+
+This package has been renamed. Use `pip install psutils` instead.
+
+New package: https://pypi.org/project/psutils/
