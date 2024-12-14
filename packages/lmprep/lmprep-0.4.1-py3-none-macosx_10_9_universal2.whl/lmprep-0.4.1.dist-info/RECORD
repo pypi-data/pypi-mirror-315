@@ -1,0 +1,12 @@
+lmprep-0.4.1.data/purelib/lmprep/__init__.py,sha256=kGLOwyGoiEGT-xh30RZTXCEKara5C7ruaUtoQmsGqnw,93
+lmprep-0.4.1.data/purelib/lmprep/cli.py,sha256=kMscgVbBQZTqYoBnewVbvvhdH9cpOgqBphYzgbF_J4c,4416
+lmprep-0.4.1.data/purelib/lmprep/default_config.yml,sha256=OMs2PZXj78zqi7gPVau8vwZXcTwGGhawSAdLDaLX-cc,376
+lmprep-0.4.1.data/purelib/lmprep/binaries/darwin_universal2/lm,sha256=ZsZzdnt8Ecvp9Jkuzpqh-4qv2omuFH3P3x3gTyuAGeU,6806336
+lmprep-0.4.1.data/purelib/lmprep/binaries/linux_x86_64/lm,sha256=wZ8034rBGPdpepBjO_bIIaA8ATgBDu4xvkHTlVS2cRc,3930248
+lmprep-0.4.1.data/purelib/lmprep/binaries/win_amd64/lm.exe,sha256=61foQMXTBXB9kRfKvuJ_u0vx6HLHWQReQqUucYqgTac,2964992
+lmprep-0.4.1.dist-info/LICENSE,sha256=CMSGmbr27u5tWziZUonj8ri3bH09LOOh8kQhIaUsEFw,1060
+lmprep-0.4.1.dist-info/METADATA,sha256=0NS_F13IhWmapNwe8JtL3i55s80S__H6etKduJ8aqMg,8468
+lmprep-0.4.1.dist-info/WHEEL,sha256=YNtoFHPwLIlC2o2YQ3imfQOJR1Kzl6_0DKYbamCs3aQ,111
+lmprep-0.4.1.dist-info/entry_points.txt,sha256=50Fol_ePWY53mLhGJ8dEBO6j-g3o4oYO8qblCsXiqro,39
+lmprep-0.4.1.dist-info/top_level.txt,sha256=hXq0vwx99_JEJ1LncQ33xFgfVAZw3j_nldTG1s5DM5k,7
+lmprep-0.4.1.dist-info/RECORD,,
