@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ducknotify/__init__.py
+ducknotify.egg-info/PKG-INFO
+ducknotify.egg-info/SOURCES.txt
+ducknotify.egg-info/dependency_links.txt
+ducknotify.egg-info/requires.txt
+ducknotify.egg-info/top_level.txt
+tests/test_ducknotify.py
