@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: good_password_generator
+Version: 0.0.7
+Summary: A small package thats used to generate strong passwords
+Author-email: KISEGERWA SAVIO <dsaviossentongo@gmail.com>
+Project-URL: Issues, https://github.com/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
