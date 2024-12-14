@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: ziggy-python
+Version: 0.0.1
+Summary: Python support for the Ziggy data serialization language
+Author-email: Louis Vignoli <louis.vignoli@gmail.com>
+Keywords: data format,serialization,ziggy
+Classifier: Topic :: File Formats
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.12
+Requires-Dist: tree-sitter-ziggy>=0.1.0
+Requires-Dist: tree-sitter>=0.23.2
+Description-Content-Type: text/markdown
+
+# ziggy-python
+
+Python support for the [Ziggy](https://ziggy-lang.io/) data serialization language.
+Ziggy schema is not supported.
