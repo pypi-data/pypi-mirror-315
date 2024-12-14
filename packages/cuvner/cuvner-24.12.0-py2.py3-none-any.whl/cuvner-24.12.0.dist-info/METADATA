@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: cuvner
+Version: 24.12.0
+Summary: A commanding (terminal) view of your test-coverage.
+Project-URL: Homepage, https://meejah.ca/projects/cuvner
+Author-email: meejah <meejah@meejah.ca>
+License: MIT
+Keywords: coverage,python
+Requires-Dist: ansicolors>=1.1.8
+Requires-Dist: click
+Requires-Dist: coverage
+Requires-Dist: incremental
+Requires-Dist: pygments
+Requires-Dist: six
+Requires-Dist: unidiff
+Requires-Dist: watchdog
+Provides-Extra: dev
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Requires-Dist: wheel; extra == 'dev'
+Description-Content-Type: text/x-rst
+
+cuv'ner
+=======
+
+See `cuv/README.rst <https://github.com/meejah/cuvner/blob/master/cuv/README.rst>`_
