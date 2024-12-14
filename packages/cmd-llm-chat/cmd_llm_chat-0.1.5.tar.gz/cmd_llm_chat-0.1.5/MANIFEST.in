@@ -1,0 +1,4 @@
+include README.md
+include requirements.txt
+recursive-include cmd_llm_chat/config.yaml
+recursive-include cmd_llm_chat/history.txt
