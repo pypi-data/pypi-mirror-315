@@ -1,0 +1,17 @@
+requests
+polars[all]==1.14.0
+sqlalchemy
+faker
+pandas==2.2.3
+psycopg
+pyyaml
+pymysql
+pyodbc
+pymssql
+mysql-connector-python
+alive-progress
+tabulate
+testcontainers==4.8.2
+pymongo==4.10.1
+cryptography
+psycopg2
