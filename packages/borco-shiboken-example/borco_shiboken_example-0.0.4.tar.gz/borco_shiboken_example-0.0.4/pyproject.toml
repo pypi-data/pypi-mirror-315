@@ -1,0 +1,80 @@
+[project]
+name = "borco-shiboken-example"
+version = "0.0.4"
+description = "Example creating a Python binding for Qt6 and C++ with shiboken"
+readme = "README.md"
+license = { text = "MIT License" }
+requires-python = ">=3.12"
+authors = [{ name = "Ioan Călin", email = "iborco@gmail.com" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: C++",
+    "Programming Language :: Python :: 3",
+    # "Typing :: Typed",
+]
+keywords = [
+    "c++",
+    "cmake",
+    "cpp",
+    "cxx",
+    "example",
+    "shiboken",
+    "pyside6",
+    "python",
+    "scikit-build-core",
+]
+dependencies = [
+    "shiboken6>=6.8.1",
+]
+
+# ---------------------------------------------------------------------------
+
+[project.urls]
+Homepage = "https://iborco-pyside.gitlab.io/demos/borco-shiboken-example/#/"
+# Documentation = ""
+Repository = "https://gitlab.com/iborco-pyside/demos/borco-shiboken-example"
+Issues = "https://gitlab.com/iborco-pyside/demos/borco-shiboken-example/-/issues"
+# Changelog = ""
+
+# ---------------------------------------------------------------------------
+
+[dependency-groups]
+dev = [
+    "pyside6>=6.8.1",
+    "pytest>=8.3.4",
+    "shiboken6>=6.8.1",
+    "shiboken6-generator>=6.8.1",
+]
+
+# ---------------------------------------------------------------------------
+
+[build-system]
+requires = [
+    "scikit-build-core",
+    "shiboken6>=6.8.1",
+    "shiboken6-generator>=6.8.1",
+]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build-core]
+wheel.py-api = "cp312"
+
+# ---------------------------------------------------------------------------
+
+[tool.pylint.main]
+extension-pkg-whitelist = ["PySide6", "borco_shiboken_example"]
+ignore-patterns = ["^.*_ui\\.py$", "^.*_rc\\.py$"]
+source-roots = ["src"]
+disable = [
+    "C0114", # missing-module-docstring
+]
+
+[tool.pylint.format]
+max-line-length = 120
+
+# ---------------------------------------------------------------------------
+
+[tool.pytest.ini_options]
+testpaths = ["tests/python"]

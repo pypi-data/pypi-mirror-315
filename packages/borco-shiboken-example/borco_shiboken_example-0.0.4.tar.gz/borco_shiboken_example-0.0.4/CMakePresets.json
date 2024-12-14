@@ -1,0 +1,56 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "default",
+            "displayName": "Default Config",
+            "description": "Default build using Ninja generator",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "BINDINGS_INSTALL_DIR": "${sourceDir}/build/install/${presetName}",
+                "_CPP_DEV_MODE": false
+            }
+        },
+        {
+            "inherits": "default",
+            "name": "venv",
+            "description": "Use Python3 installed in .venv with `uv sync`"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "venv",
+            "configurePreset": "venv",
+            "targets": "install"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "venv",
+            "configurePreset": "venv",
+            "output": {
+                "outputOnFailure": true
+            },
+            "execution": {
+                "noTestsAction": "error",
+                "stopOnFailure": true
+            }
+        }
+    ],
+    "workflowPresets": [
+        {
+            "name": "venv",
+            "steps": [
+                {
+                    "type": "configure",
+                    "name": "venv"
+                },
+                {
+                    "type": "build",
+                    "name": "venv"
+                }
+            ]
+        }
+    ]
+}
