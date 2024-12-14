@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyrepohistory.py
+setup.py
+pyrepohistory.egg-info/PKG-INFO
+pyrepohistory.egg-info/SOURCES.txt
+pyrepohistory.egg-info/dependency_links.txt
+pyrepohistory.egg-info/top_level.txt
