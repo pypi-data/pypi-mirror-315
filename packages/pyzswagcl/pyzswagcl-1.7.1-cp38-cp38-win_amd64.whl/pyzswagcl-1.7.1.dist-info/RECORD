@@ -1,0 +1,10 @@
+pyzswagcl/LICENSE.txt,sha256=82HFE2tG6k1v7YD065fi3PSy0tCuV68AM7WXaA4Y2Mc,1557
+pyzswagcl/__init__.py,sha256=PjufVr_MTFQZpsXoSMXOSvAacVpnsO4nscSiqqOTmac,24
+pyzswagcl/httpcl.lib,sha256=B2T0odHjDodyGAaZm9mkVIZVXORccd78E9aqp7wCDmE,3818456
+pyzswagcl/pyzswagcl.cp38-win_amd64.pyd,sha256=uUeZevSk0sP3unvcb9IJ3UFG63iq1D5cvoZ2Qror3wI,5490688
+pyzswagcl/speedyj.lib,sha256=QrrZMA6oAv5SGE8d_jsYNWgU-U0XDKE4yhHqL7S9cFw,99376
+pyzswagcl/zswagcl.dll,sha256=WJaqy5oJi52p576HO9O3sMt9NoqA5E1ihJgCdS3Iy0E,5269504
+pyzswagcl-1.7.1.dist-info/METADATA,sha256=YC7snuNJjIOi3-_FJmDV1vw2DLfR6HZ_ls2fHq65N7M,291
+pyzswagcl-1.7.1.dist-info/WHEEL,sha256=N6sQ21sT3WcdJJLEJNx13ERof8WaAHD2AD1HUbWJ67E,100
+pyzswagcl-1.7.1.dist-info/top_level.txt,sha256=68xZPCqJP4enWPpsst2_9GD8GiGgr8ImRsP5uHJO1jo,10
+pyzswagcl-1.7.1.dist-info/RECORD,,
