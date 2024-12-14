@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/xssecure/__init__.py
+src/xssecure/sanitize.py
+src/xssecure/whitelist_attributes.txt
+src/xssecure/whitelist_tags.txt
+src/xssecure.egg-info/PKG-INFO
+src/xssecure.egg-info/SOURCES.txt
+src/xssecure.egg-info/dependency_links.txt
+src/xssecure.egg-info/requires.txt
+src/xssecure.egg-info/top_level.txt
