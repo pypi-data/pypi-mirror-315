@@ -1,0 +1,17 @@
+[
+  {
+    "revisio": "4c50f1a83c9efaa91699e8ed7cd2111a8c59f35b",
+    "versio": "0.2",
+    "kuvaus": "Lis\u00e4tty `--no-isolation`-vipu"
+  },
+  {
+    "revisio": "36044677a2666a1bba0c55aa6d5342513217b1d1",
+    "versio": "0.1.1",
+    "kuvaus": "T\u00e4smennetty build-paketilta vaadittu versio"
+  },
+  {
+    "revisio": "fcc1dd9207dd66fb85f62f03df982cd325e8be6a",
+    "versio": "0.1",
+    "kuvaus": "Alustava toteutus"
+  }
+]
