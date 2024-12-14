@@ -1,0 +1,10 @@
+jaydee/__init__.py,sha256=0iqGLHfVH8oNF1SRoVVLwYHetZTN50APavcaUeuvSYE,318
+jaydee/crawler.py,sha256=6tdHg6lsww3WmSJ7pVNnxeTwMOO64uWRqLRdo6gHIus,9965
+jaydee/scraper.py,sha256=99MobbDKybq2H8iYIF9QVZCaJPijWXXgosmza1mw9T0,14900
+jaydee/utils.py,sha256=g0iSQWv7vhPaO9O65poDOjWFsy99q0Cmse0SUN_tFy8,2690
+jaydee/webscraper.py,sha256=k8tdvjZu692U-rPuqZ7_3l4v43iy4WBmbgw-DX4Cx_4,8119
+jaydee-0.1.3a0.dist-info/entry_points.txt,sha256=C9C2nSAq3BLddpqxzs-XzuoAaEzz6P4UoTNQdh4JnYs,158
+jaydee-0.1.3a0.dist-info/LICENSE,sha256=fFqFHJtXnI-eFP53CENxGeB3cQYTZVd55rGYh4YWp48,1068
+jaydee-0.1.3a0.dist-info/METADATA,sha256=oEqow74BB5Ld2RYWjBTin4cDaXdl0T2FuYSKdpBnQ-U,2098
+jaydee-0.1.3a0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+jaydee-0.1.3a0.dist-info/RECORD,,
