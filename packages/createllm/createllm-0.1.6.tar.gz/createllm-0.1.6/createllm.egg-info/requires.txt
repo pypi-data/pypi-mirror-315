@@ -1,0 +1,12 @@
+numpy
+torch
+torchvision
+dill
+dataclasses
+tqdm
+
+[all]
+createllm[extra]
+
+[extra]
+pandas

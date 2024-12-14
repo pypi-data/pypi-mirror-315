@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: createllm
+Version: 0.1.6
+Summary: A Python package that enables users to create and train their own Language Learning Models (LLMs) from scratch using custom datasets. This package provides a simplified approach to building, training, and deploying custom language models tailored to specific domains or use cases.
+Author-email: Khushal Jethava <khushaljethwa14@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/khushaljethava/createllm
+Keywords: createllm
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: dill
+Requires-Dist: dataclasses
+Requires-Dist: tqdm
+Provides-Extra: all
+Requires-Dist: createllm[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+
+# createllm
+
+
+[![image](https://img.shields.io/pypi/v/createllm.svg)](https://pypi.python.org/pypi/createllm)
+[![image](https://img.shields.io/conda/vn/conda-forge/createllm.svg)](https://anaconda.org/conda-forge/createllm)
+
+
+**A Python package that enables users to create and train their own Language Learning Models (LLMs) from scratch using custom datasets. This package provides a simplified approach to building, training, and deploying custom language models tailored to specific domains or use cases.**
+
+
+-   Free software: MIT License
+-   Documentation: https://khushaljethava.github.io/createllm
+    
+
+## Features
+
+-   TODO
