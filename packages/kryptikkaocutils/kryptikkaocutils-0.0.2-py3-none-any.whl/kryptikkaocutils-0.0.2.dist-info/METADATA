@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kryptikkaocutils
+Version: 0.0.2
+Summary: Basic aoc utils
+Author: Lars Junker
+Author-email: larsjunker92@gmail.com
+Keywords: python,aoc,aoc-utils
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Library for basic Advent of Code Utilities
