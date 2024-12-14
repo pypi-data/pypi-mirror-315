@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: learning_utils
+Version: 0.1.1
+Summary: 
+Author: Liam Hayes
+Author-email: liamcharleshayes@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+Python package to reduce iteration time for developing learning systems.
+
+Use this command to install:
+
+```
+pip install learning_utils
+```
+
+
