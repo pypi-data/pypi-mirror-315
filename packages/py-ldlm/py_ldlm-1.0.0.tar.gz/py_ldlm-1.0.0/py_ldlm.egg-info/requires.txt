@@ -1,0 +1,7 @@
+grpcio
+google-api-python-client
+
+[test]
+pytest
+pytest-asyncio
+frozendict
