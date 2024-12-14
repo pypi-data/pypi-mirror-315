@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+
+
+[project]
+name = "wordpca"
+dynamic = ["version"]
+description = "Principal Component Analysis adequate for bag of words representation"
+readme = "README.md"
+license = {text = "MIT License"}
+requires-python = ">=3.9"
+keywords = [
+        "python",
+        "count",
+        "data",
+        "count data",
+        "high dimension",
+        "bag of words",
+        "PLN",
+        ]
+authors = [
+  {name = "Bastien Batardiere", email = "bastien.batardiere@gmail.com"},
+]
+maintainers = [{name = "Bastien Batardière", email = "bastien.batardiere@gmail.com"}]
+classifiers = [
+        # How mature is this project? Common values are
+        #   3 - Alpha
+        #   4 - Beta
+        #   5 - Production/Stable
+        "Development Status :: 4 - Beta",
+        # Indicate who your project is intended for
+        "Intended Audience :: Developers",
+        # Pick your license as you wish (should match "license" above)
+        "License :: OSI Approved :: MIT License",
+        # Specify the Python versions you support here. In particular, ensure
+        # that you indicate whether you support Python 2, Python 3 or both.
+        "Programming Language :: Python",
+]
+dependencies = [
+"matplotlib",
+"nltk",
+"numpy",
+"pandas",
+"pyPLNmodels",
+"pyPLNmodels",
+"scikit_learn",
+"seaborn",
+]
+[project.optional-dependencies]
+tests = ["pytest","pytest_lazy_fixture"]
+build-doc = ["sphinx","sphinx_rtd_theme"]
+
+[project.urls]
+# Repository = "https://github.com/PLN-team/pyPLNmodels"
+# Documentation = "https://bbatardiere.pages.mia.inra.fr/pyplnmodels"
+
+
+[tool.setuptools]
+py-modules = ["wordpca"]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["wordpca", "wordpca.*"]
+namespaces = false

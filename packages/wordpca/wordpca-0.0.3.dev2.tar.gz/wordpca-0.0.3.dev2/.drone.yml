@@ -1,0 +1,10 @@
+kind: pipeline
+
+
+steps:
+  - name: black
+    image: "python:3.10"
+    commands::
+      - echo "version"
+      - echo black --version
+      - black --check --verbose -- .

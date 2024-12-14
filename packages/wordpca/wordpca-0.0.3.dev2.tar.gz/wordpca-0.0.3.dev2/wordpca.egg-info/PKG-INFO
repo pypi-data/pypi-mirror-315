@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: wordpca
+Version: 0.0.3.dev2
+Summary: Principal Component Analysis adequate for bag of words representation
+Author-email: Bastien Batardiere <bastien.batardiere@gmail.com>
+Maintainer-email: Bastien Batardière <bastien.batardiere@gmail.com>
+License: MIT License
+Keywords: python,count,data,count data,high dimension,bag of words,PLN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyPLNmodels
+Requires-Dist: pyPLNmodels
+Requires-Dist: scikit_learn
+Requires-Dist: seaborn
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest_lazy_fixture; extra == "tests"
+Provides-Extra: build-doc
+Requires-Dist: sphinx; extra == "build-doc"
+Requires-Dist: sphinx_rtd_theme; extra == "build-doc"

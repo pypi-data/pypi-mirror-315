@@ -1,0 +1,16 @@
+matplotlib
+nltk
+numpy
+pandas
+pyPLNmodels
+pyPLNmodels
+scikit_learn
+seaborn
+
+[build-doc]
+sphinx
+sphinx_rtd_theme
+
+[tests]
+pytest
+pytest_lazy_fixture
