@@ -1,0 +1,2 @@
+[console_scripts]
+version-system = version_system:main
