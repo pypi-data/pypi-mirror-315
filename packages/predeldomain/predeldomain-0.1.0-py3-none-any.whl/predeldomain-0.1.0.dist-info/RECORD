@@ -1,0 +1,13 @@
+predeldomain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+predeldomain/__main__.py,sha256=hK_p8h3ydUExYpgMJeiVqAlnQ3kPdEReH54iXU7G1FM,70
+predeldomain/predeldomain.py,sha256=_oW3Ld6QBNTkd5lSZfgM4t-1D9GKjDOncF3LHU_0keA,1322
+predeldomain/provider/entry.py,sha256=78yLXiwUJCt5fBSbxVGCebeOooXIWQyPI6ErQEtb9t8,3302
+predeldomain/provider/provider.py,sha256=N5ySQGE3to4QWEIEyvzTFhaayZjoS4jp8WwUtS3tRYU,5295
+predeldomain/provider/provider_cn.py,sha256=EYdq5QDAfg2VHhSJwsBEAEFQHukllxrrIC8ON3koX4c,2605
+predeldomain/provider/provider_top.py,sha256=vcungJi7aPDC7HluKUhIi4sPg2llcGvQZjgWro7shPI,2253
+predeldomain/provider/service.py,sha256=qHaIETQRG3SpeNbcuemk-1fuIPkvWfIwCFUG-oLAXRw,98
+predeldomain-0.1.0.dist-info/METADATA,sha256=Y5_PHPAyhBv-PeVDV-jWlvTA5k6Xmlr4iWlszFKF-R0,4305
+predeldomain-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+predeldomain-0.1.0.dist-info/entry_points.txt,sha256=O26uQGhDQ-_bbGId6JMFz_6wEu6S7ynOIFrKkoygSIY,64
+predeldomain-0.1.0.dist-info/licenses/LICENSE,sha256=1Y3bzgbso-Sk-oTiH8FCuwzI4kx13LBznUbN90txcYk,11366
+predeldomain-0.1.0.dist-info/RECORD,,
