@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pygments-restrict
+Version: 0.1.5
+Summary: Pygments syntax highlighter for the RESTrict Framework resource files
+Home-page: https://gitlab.com/restrict-framework/pygments-restrict
+Author: Curtis Schlak
+Author-email: 696163-realistschuckle@users.noreply.gitlab.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pygments (>=2.18.0,<3.0.0)
+Project-URL: Repository, https://gitlab.com/restrict-framework/pygments-restrict
+Description-Content-Type: text/markdown
+
+# Pygments Support for the Restrict Framework
+
