@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: davidkhala.purview
+Version: 0.0.2
+Summary: 
+Author: David Liu
+Author-email: david-khala@hotmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: databricks
+Provides-Extra: scan
+Requires-Dist: azure-identity
+Requires-Dist: azure-purview-catalog
+Requires-Dist: azure-purview-scanning ; extra == "scan"
+Requires-Dist: davidkhala-databricks[connect] ; extra == "databricks"
+Description-Content-Type: text/markdown
+
+# Python dependencies
+- `azure-purview-scanning`
+- `azure-purview-administration`
+- `azure-purview-catalog`
+- `azure-purview-account`
