@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+atmproccess.py
+setup.py
+BankingSystems.egg-info/PKG-INFO
+BankingSystems.egg-info/SOURCES.txt
+BankingSystems.egg-info/dependency_links.txt
+BankingSystems.egg-info/requires.txt
+BankingSystems.egg-info/top_level.txt

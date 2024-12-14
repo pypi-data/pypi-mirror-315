@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: BankingSystems
+Version: 0.0.2
+Summary: Basic ATM system with several features: deposit, withdrawal, transfer, balance checks
+Home-page: 
+Author: Ahriel, Fatim, Conner, Soto
+Author-email: ayoung08@rams.shepherd.edu
+License: MIT
+Keywords: banking system,ATM program
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+Requires-Dist: tkinter
+
+ATM Process System
+
+The ATM Process System is a Python package that provides the core functionalities of an automated teller machine (ATM). It is designed to simulate basic ATM operations such as withdrawals, deposits, balance inquiries, and transaction management.
+Features
+
+User-Friendly Interface: Supports both terminal-based and GUI (using tkinter) interfaces for interaction.
+Modular Design: Easily extensible and customizable for additional banking functionalities.
+Basic Transactions: Perform essential ATM operations:
+Withdraw money
+Deposit money
+Check account balance
+
+
+
+Change Log
+==========
+
+0.0.2 (12/13/24)
+----------------
+-Second Release 
