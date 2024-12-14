@@ -1,0 +1,11 @@
+
+
+
+[workspace]
+members = ["tupleleap-sdk", "async-tupleleapai", "tupleleap-python-sdk"]
+
+
+
+[workspace.dependencies]
+# Set the resolver version to 2
+resolver = "2"
