@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: ducknotify
+Version: 1.0.0
+Summary: **DuckNotify** is a lightweight, cross-platform Python library for sending desktop notifications effortlessly. It works on **Windows**, **macOS**, and **Linux**, providing a simple API to notify users with custom messages.
+Home-page: https://github.com/freeutka/DuckNotify
+Author: freeutka
+Author-email: freeutka@inbox.lv
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: osascript
+Requires-Dist: notify-send
+Requires-Dist: plyer
+
+HereвЂ™s the description for **DuckNotify**:
+
+---
+
+# DuckNotify
+
+**DuckNotify** is a lightweight, cross-platform Python library for sending desktop notifications effortlessly. It works on **Windows**, **macOS**, and **Linux**, providing a simple API to notify users with custom messages.
+
+---
+
+## Features
+- **Cross-Platform Support**: Works on Windows, macOS, and Linux.
+- **Custom Notifications**: Set a title, message, and optional icon for your notifications.
+- **Lightweight**: Minimal dependencies and easy to use.
+
+---
+
+## Installation
+Install DuckNotify using pip:
+
+```bash
+pip install ducknotify  
+```
+
+---
+
+## Usage
+HereвЂ™s how you can use DuckNotify to send notifications:
+
+```python
+import ducknotify
+
+# Send a simple notification
+ducknotify.notify("DuckNotify Alert", "This is your notification message!")
+
+# Send a notification with an icon (optional)
+ducknotify.notify("DuckNotify", "Message with an icon!", icon="icon.png")
+```
+
+---
+
+## Supported Platforms
+- **macOS**
+- **Linux**
+- **Windows**
+
+---
+
+## License
+DuckNotify is licensed under the MIT License, making it free and open-source for everyone.
