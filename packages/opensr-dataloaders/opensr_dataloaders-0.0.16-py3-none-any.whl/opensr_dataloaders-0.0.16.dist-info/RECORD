@@ -1,0 +1,15 @@
+opensr_dataloaders/S2NAIP_v4.py,sha256=6t7iLyHtrAvPsApoTOGWygSvPWMeNT6B1No6dql1z68,8754
+opensr_dataloaders/SEN2NAIP_final.py,sha256=agMC7enkyBNNyQ54e55-PZsdCeC2smbVJ8gOqLFxXCE,3994
+opensr_dataloaders/__init__.py,sha256=M8BfWj6MQ48gc_kRTkzMXU43QYqAe-K9GW6zraZs3Ls,492
+opensr_dataloaders/coco_dataset.py,sha256=y6FNPgTij0xnmIlqaJ7z10BpqmCRtLEPMrnpIl7xwEQ,9667
+opensr_dataloaders/custom_sen2.py,sha256=BwQJ0FiOZmpn30yF6I671wlySxvY954SKcvtXPqirXg,6400
+opensr_dataloaders/dataset_selector.py,sha256=BCUf1nn35-L65QithuaE3toTBsfDPtaoHHTrB2XyL6c,12369
+opensr_dataloaders/image_augmentations.py,sha256=wsIbJMx00X_RkqPunVzfYBxCc_S_U-n34k6JV1FURZY,6242
+opensr_dataloaders/linear_transform.py,sha256=SS5XHmc3ZQqQ9GIyX6MMO7ElXqKYtYKEIDiWs4iHRXI,2521
+opensr_dataloaders/linear_transforms.py,sha256=SS5XHmc3ZQqQ9GIyX6MMO7ElXqKYtYKEIDiWs4iHRXI,2521
+opensr_dataloaders/sen2_test.py,sha256=qRyy-3Gx4LQ84L-UiNwgi9t5y701mQH62Oay1XxVbx0,5514
+opensr_dataloaders-0.0.16.dist-info/LICENSE,sha256=69ydIZqA8HP0_M1LiuqmuTDYOKzltHlbxbidhNOEVj4,23
+opensr_dataloaders-0.0.16.dist-info/METADATA,sha256=vRiUaWzSOeQn4wWq7toQ0SJAXw-rQiBdo7a6bVCPkiY,797
+opensr_dataloaders-0.0.16.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+opensr_dataloaders-0.0.16.dist-info/top_level.txt,sha256=vcnNuQsgCDUUM1WEPqqKQdsQB3OT0tLe-FMHwr5Py7g,19
+opensr_dataloaders-0.0.16.dist-info/RECORD,,
