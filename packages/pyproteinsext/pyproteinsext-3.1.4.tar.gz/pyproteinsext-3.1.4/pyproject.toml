@@ -1,0 +1,13 @@
+[project]
+name = "pyproteinsext"
+version = "3.1.4"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pyproteins>=2.1.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
