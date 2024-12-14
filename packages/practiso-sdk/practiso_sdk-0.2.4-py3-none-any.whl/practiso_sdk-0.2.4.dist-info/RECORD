@@ -1,0 +1,9 @@
+practiso_sdk/__init__.py,sha256=JWsY88pDLXsVskeHUvsthXwiRCcx16I-f4h4palptGc,62
+practiso_sdk/archive.py,sha256=SdunGiOzhpvkDjE86MGRPPNMo5tzgtOLaV8C-1SAoKo,13443
+practiso_sdk/build.py,sha256=TNQgjfYqXFOkxePscXwAJ7F6G4UYaoJEuT_yzz3pdHo,8860
+practiso_sdk/google/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+practiso_sdk/google/ai.py,sha256=t278lWkVSlsPYWJlO65h_3E0q3fovJmwOg1mf1ExBK0,3918
+practiso_sdk-0.2.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+practiso_sdk-0.2.4.dist-info/METADATA,sha256=XEPx3CuZ163OLtOLdgZOKsnfK0SfSt0GQdIKn24gpvQ,2149
+practiso_sdk-0.2.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+practiso_sdk-0.2.4.dist-info/RECORD,,
