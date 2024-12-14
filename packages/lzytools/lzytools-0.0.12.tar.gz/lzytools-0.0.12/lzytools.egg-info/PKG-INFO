@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: lzytools
+Version: 0.0.12
+Summary: Python自用包
+Home-page: https://github.com/PPJUST/lzytools
+Author: PPJUST
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: filetype
+Requires-Dist: ImageHash
+Requires-Dist: numpy<2.0.0
+Requires-Dist: opencv_python
+Requires-Dist: Pillow
+Requires-Dist: pynput
+Requires-Dist: PySide6
+Requires-Dist: pywin32
+Requires-Dist: rarfile
+Requires-Dist: Send2Trash
+
+Python自用包
