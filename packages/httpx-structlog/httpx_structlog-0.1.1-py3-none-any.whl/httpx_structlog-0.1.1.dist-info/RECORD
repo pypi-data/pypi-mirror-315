@@ -1,0 +1,7 @@
+httpx_structlog/__init__.py,sha256=L5kI9SjqYRPqrSB1p382QvEIMgDS1-YJO200aQ3C9zU,118
+httpx_structlog/client.py,sha256=pxdgV3KD4EAT4g--eH0221SfTp-wG6fST_5w8emcVwA,2971
+httpx_structlog/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+httpx_structlog/transport.py,sha256=dTEK__LAMmWnf1KpKU377fAfuCKpRGnP8MN3xuMBqrs,2302
+httpx_structlog-0.1.1.dist-info/METADATA,sha256=M5JTjqWHgEeuYqMwL6eLU7AvKs9EcwZLAekSnSfpoXg,2442
+httpx_structlog-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+httpx_structlog-0.1.1.dist-info/RECORD,,
