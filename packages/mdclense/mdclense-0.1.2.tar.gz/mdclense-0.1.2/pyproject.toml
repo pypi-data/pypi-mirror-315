@@ -1,0 +1,34 @@
+[project]
+name = "mdclense"
+version = "0.1.2"
+authors = [
+  { name="Daniel Boadzie", email="boadziedaniel43@gmail.com" },
+]
+description = "A library for cleaning, stripping markdown and converting it to text"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+   
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mdclense"]
+
+[project.urls]
+"Homepage" = "https://github.com/boadzie/mdclense"
+"Bug Tracker" = "https://github.com/boadzie/mdclense/issues"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "src"
+]
