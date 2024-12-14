@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: plastinet
+Version: 0.1.9
+Summary: Plastinet is Python package for spatial transcriptomics.
+Home-page: https://github.com/izabellaleahz/plastinet
+Author: Izabella Zamora
+Author-email: zamora@broadinstitute.org
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: scanpy
+Requires-Dist: squidpy
+Requires-Dist: gudhi
+Requires-Dist: cmcrameri
