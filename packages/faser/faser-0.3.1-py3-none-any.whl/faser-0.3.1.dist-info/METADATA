@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: faser
+Version: 0.3.1
+Summary: Faser is a tool for vectorial psf simulation
+Author-email: Johannes Roos <jhnnsrs@gmail.com>
+Classifier: Framework :: napari
+Requires-Python: <3.13,>=3.9
+Requires-Dist: matplotlib>=3.9.2
+Requires-Dist: numpy<2
+Requires-Dist: psygnal>=0.11.1
+Requires-Dist: pydantic>2
+Requires-Dist: python-slugify>=8.0.4
+Requires-Dist: tifffile>=2024.8.30
+Provides-Extra: cli
+Requires-Dist: rich-click>=1.8.3; extra == 'cli'
+Provides-Extra: full
+Requires-Dist: pyqt5>=5.15.11; extra == 'full'
+Requires-Dist: rich-click>=1.8.3; extra == 'full'
+Provides-Extra: numba
+Requires-Dist: numba>=0.60.0; extra == 'numba'
+Description-Content-Type: text/markdown
+
+# faser
+
+Describe your project here.
