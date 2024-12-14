@@ -1,0 +1,63 @@
+from collections import defaultdict
+from typing import Tuple, List, Dict, Any
+from atlaz.visualization.model import Graph
+from atlaz.visualization.render import create_graph
+
+def map_cytoscape_to_graphviz_shape(shape: str) -> str:
+    shape_map = {
+        'ellipse': 'ellipse',
+        'circle': 'octagon',
+        'polygon': 'hexagon',
+        'egg': 'hexagon',
+        'box': 'rectangle',
+        'roundrectangle': 'rectangle'
+    }
+    return shape_map.get(shape, 'ellipse')
+
+def transform_graph(graph: Graph) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]], List[Dict[str, Any]]]:
+    # Transform Nodes: group by (shape, color)
+    node_clusters = defaultdict(lambda: {"nodes": [], "shape": None, "color": None})
+    for node in graph.nodes:
+        graphviz_shape = map_cytoscape_to_graphviz_shape(node.shape)
+        key = (graphviz_shape, node.color)
+        node_clusters[key]["shape"] = graphviz_shape
+        node_clusters[key]["color"] = node.color
+        node_clusters[key]["nodes"].append((node.id, node.label))
+
+    nodes_for_create_graph = list(node_clusters.values())
+
+    # Transform Edges into the final format that create_graph expects
+    # create_graph expects: a list of dicts with keys: color, arrowhead, edges
+    # and "edges" should be a list of (source, target, label) tuples.
+    edge_groups = defaultdict(lambda: defaultdict(list))
+    for e in graph.edges:
+        key = (e.color, e.arrowhead)
+        target_tuple = (e.target, e.label) if e.label else (e.target,)
+        edge_groups[key][e.source].append(target_tuple)
+
+    edges_for_create_graph = []
+    for (color, arrowhead), connections_dict in edge_groups.items():
+        flattened = []
+        for source, targets in connections_dict.items():
+            for t in targets:
+                if len(t) == 2:
+                    target, lbl = t
+                else:
+                    target = t[0]
+                    lbl = None
+                flattened.append((source, target, lbl))
+        edges_for_create_graph.append({
+            'color': color,
+            'arrowhead': arrowhead,
+            'edges': flattened
+        })
+
+    # Clusters
+    clusters_for_create_graph = [cluster.dict() for cluster in graph.clusters]
+
+    return nodes_for_create_graph, edges_for_create_graph, clusters_for_create_graph
+
+def visualize(graph: Graph, filename: str = "output_graph"):
+    # This function takes the Graph object directly, transforms it, and renders it
+    nodes, edges, clusters = transform_graph(graph)
+    create_graph(nodes, edges, clusters, filename)
