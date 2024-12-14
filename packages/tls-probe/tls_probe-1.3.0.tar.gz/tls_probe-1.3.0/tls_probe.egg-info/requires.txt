@@ -1,0 +1,3 @@
+cryptography>=42
+pyjarm<=0.1.0
+tabulate
