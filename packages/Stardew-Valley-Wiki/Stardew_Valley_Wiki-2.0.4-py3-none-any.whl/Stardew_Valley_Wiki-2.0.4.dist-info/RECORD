@@ -1,0 +1,15 @@
+livingthings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livingthings/animals.py,sha256=woh_EtEwnBjcV6Ywn0TBVRm4ZjHVt3yZnrjN85CxouM,5072
+livingthings/crops.py,sha256=SUIjoGOpvxQp0Zadxg-Fx6qmPF8_NR9dgPJ1VFAxXuA,4071
+livingthings/main.py,sha256=FiXvXRao87QSp6GbYVKiFBQO44RSO3jc2w3IcdVzrK0,652
+livingthings/data/Animals.csv,sha256=UvA-_U4pJt7FznnBicqIB8rphLGq-74Uvo8NEqNWOYg,606
+livingthings/data/Crops.csv,sha256=EA3Gy0wIv7RJfy1dafVaUoV2efY_rBVx1ddNR25Ttr4,1191
+recipes/__init__.py,sha256=IETS_0q6OFAbRoSldht0kydn9aoZdUb5RlSPhQi7vME,34
+recipes/ingredient_search.py,sha256=ZPvYyDut0O0j1iT5ngrv5IMhuOpz879rd1vvl19fGvo,5967
+recipes/main.py,sha256=fD5-zjlm57MW8jn4ObVGFhc8OeTILvaRzy77_ScZYDc,2005
+recipes/recipe_search.py,sha256=JRovM7QOh-8VAUsk4IFbs1p2LnvlUNR3c_hpIaslhyI,4925
+recipes/data/wiki.xlsx,sha256=8y6U8iTWY71c7zzcwy85nHKQs8dVELRQjGS-X9W9ilk,9908
+Stardew_Valley_Wiki-2.0.4.dist-info/METADATA,sha256=WeF6a0BC1Gl_4EXmz7VgRVn_ooHXKOCINNF04_SWW70,13058
+Stardew_Valley_Wiki-2.0.4.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+Stardew_Valley_Wiki-2.0.4.dist-info/top_level.txt,sha256=nr7UeatkytRSi55XHWLKQXMilUWt-yN5WpiPkXMFfNY,21
+Stardew_Valley_Wiki-2.0.4.dist-info/RECORD,,
