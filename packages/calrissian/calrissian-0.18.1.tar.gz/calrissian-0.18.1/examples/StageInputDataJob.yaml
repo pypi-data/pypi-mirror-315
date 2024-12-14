@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: stage-input-data
+spec:
+  template:
+    spec:
+      containers:
+      - name: stage-input-data
+        image: dukegcb/calrissian:latest
+        securityContext:
+          runAsUser: 1000
+          runAsGroup: 1000
+        command:
+        - "sh"
+        - "-c"
+        - "cp input-data/* /calrissian/input-data/"
+        volumeMounts:
+        - mountPath: /calrissian/input-data
+          name: calrissian-input-data
+      restartPolicy: OnFailure
+      volumes:
+      - name: calrissian-input-data
+        persistentVolumeClaim:
+          claimName: calrissian-input-data

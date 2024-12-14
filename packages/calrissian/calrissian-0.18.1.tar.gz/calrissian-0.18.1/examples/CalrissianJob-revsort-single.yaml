@@ -1,0 +1,51 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: calrissian-revsort-single
+spec:
+  template:
+    spec:
+      containers:
+      - name: calrissian
+        image: dukegcb/calrissian:latest
+        securityContext:
+          runAsUser: 1000
+          runAsGroup: 1000
+        command: ["calrissian"]
+        args:
+          - "--max-ram"
+          - "16G"
+          - "--max-cores"
+          - "8"
+          - "--tmp-outdir-prefix"
+          - "/calrissian/tmpout/"
+          - "--outdir"
+          - "/calrissian/output-data/"
+          - "/calrissian/input-data/revsort-single.cwl"
+          - "/calrissian/input-data/revsort-single-job.json"
+        volumeMounts:
+        - mountPath: /calrissian/input-data
+          name: calrissian-input-data
+          readOnly: true
+        - mountPath: /calrissian/tmpout
+          name: calrissian-tmpout
+        - mountPath: /calrissian/output-data
+          name: calrissian-output-data
+        env:
+        - name: CALRISSIAN_POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+      restartPolicy: Never
+      volumes:
+      - name: calrissian-input-data
+        persistentVolumeClaim:
+          claimName: calrissian-input-data
+          readOnly: true
+      - name: calrissian-tmpout
+        persistentVolumeClaim:
+          claimName: calrissian-tmpout
+      - name: calrissian-output-data
+        persistentVolumeClaim:
+          claimName: calrissian-output-data
