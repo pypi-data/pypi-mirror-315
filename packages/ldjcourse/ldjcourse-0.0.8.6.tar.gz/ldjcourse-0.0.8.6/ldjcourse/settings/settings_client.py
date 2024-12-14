@@ -1,0 +1,3 @@
+LDJ_KEY_ID = None
+LDJ_KEY_SECRET = None
+LDJ_BASE_URL = None
