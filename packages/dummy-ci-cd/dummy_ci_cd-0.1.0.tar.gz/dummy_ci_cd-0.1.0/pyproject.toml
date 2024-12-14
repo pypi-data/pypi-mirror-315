@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "dummy-ci-cd"
+version = "0.1.0"
+description = "A CI/CD demo project"
+authors = ["the-reacher-data <massivedatascope@gmail.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "lib_test", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+# === Development dependencies selectively used for validation, and testing dependencies ===
+black = "^24.10.0"                  # Code formatter for styling
+flake8 = "^7.1.1"                   # Python linter (optional alternative to Ruff)
+ruff = "^0.0.289"                   # Fast and lightweight linter
+pre-commit = "^4.0.1"               # Pre-commit hooks manager
+commitizen = "^3.31.0"              # Commit messages and changelog generator
+poetry-core = "^1.7.0"              # Package building dependencies
+pytest = "^7.3.1"                   # Test framework
+pytest-mock = "^3.10.0"             # Mocking support for pytest
+
+[tool.poetry.group.validate.dependencies]
+# === Static analysis for quality assurance ===
+pytest-cov = "^4.0.0"               # Test coverage plugin
+mypy = "^1.10.0"                    # Type-checker for Python types
+bandit = "^1.7.5"                   # Security scanner
+safety = "^2.3.0"                   # Dependency vulnerability checker
+
+[tool.poetry.group.docs.dependencies]
+# === For documentation building ===
+sphinx = "^8.1.3"                   # Documentation generator
+sphinx-autodoc-typehints = "^2.5.0" # Add type hints in docstring
+myst-parser = "^4.0.0"              # Markdown support for Sphinx
+sphinx-rtd-theme = "^3.0.2"         # Sphinx theme
+sphinx-autoapi = ">=3.4.0"          # Automatic API docs generation
+
+[tool.poetry.scripts]
+# Commands for pre-commit hooks
+pre-commit = "pre-commit:cli"
+
+# Custom scripts for validation
+format = "black:main"                           # Formats files with Black
+type-check = "mypy.__main__:main"                      # Runs Mypy type checker
+test = "pytest:main"                                   # Runs tests using pytest
+security = "bandit.__main__:main"                # Runs Bandit security linter
+
+[build-system]
+requires = ["poetry-core"]  # Core dependencies for Poetry management
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88           # Sets maximum line length for formatting
+target-version = ['py311'] # Uses Python 3.11 as the target version
+include = '\.pyi?$'        # Files that will be included
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "C"]
+fix = true
+
+[tool.commitizen]
+name = "cz_conventional_commits"  # Use conventional commits as standard
+version = "0.1.0"                # Default project version
+tag_format = "v$version"         # Tag format for version control
+
+[tool.commitizen.arguments]
+changelog = {message_template = ":newspaper: {message}\n{body}"}  # Template for CHANGELOG messages
