@@ -1,0 +1,10 @@
+tianshou>=0.5.1
+pygame>=2.6.1
+pygame-menu>=4.4.8
+pyyaml>=6.0.2
+matplotlib>=3.8.0
+
+[docs]
+sphinx
+sphinx-autodoc-typehints
+sphinx-rtd-theme
