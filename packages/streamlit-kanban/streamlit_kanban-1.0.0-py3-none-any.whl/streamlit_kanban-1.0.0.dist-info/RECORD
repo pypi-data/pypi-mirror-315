@@ -1,0 +1,13 @@
+streamlit_kanban/__init__.py,sha256=LCgBaq6FrDvqwIbXAKLavw8XkWmapXsKSzSmhelpbEI,2258
+streamlit_kanban/example.py,sha256=X6GZF_Lp9G-Ah0dmj4PIoWjM3lHe0dDRQHVCdy32PKU,1199
+streamlit_kanban/frontend/build/asset-manifest.json,sha256=BLWX2cCmmXCPQr4NBBK168TzW6CsQ41s6VPzXAavrI4,221
+streamlit_kanban/frontend/build/bootstrap.min.css,sha256=X9ITP3t3djkRs4SffIkA1Q2WMy-oYl6au5HFYTVShe0,206960
+streamlit_kanban/frontend/build/index.html,sha256=LjkK1G91DxxZ3dJsETmPjcnREXI2TqGQouCVeqGAw9M,492
+streamlit_kanban/frontend/build/static/js/main.aae672ad.js,sha256=7Rv2VX719rsZh5LMZBuxx4eROu8Cho4wG0uz8vtxivI,422339
+streamlit_kanban/frontend/build/static/js/main.aae672ad.js.LICENSE.txt,sha256=uJRPpXtA1Wzfw2dMAUGOPgwqYk2GvDcIafoGMMNLECQ,1539
+streamlit_kanban/frontend/build/static/js/main.aae672ad.js.map,sha256=1pzyigkZmQ-SyBhbMmsxr2YgmTITNYIAvd-l5LHAt4o,1757737
+streamlit_kanban-1.0.0.dist-info/LICENSE,sha256=SHkHX-qiNZt-ACArrZP67jppVYPvF8xuUDRjJw_E3L0,1082
+streamlit_kanban-1.0.0.dist-info/METADATA,sha256=X7H_BAVzgCaS2qJsSOn64cNoaQyHlXsjChPMDujZeRE,2064
+streamlit_kanban-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+streamlit_kanban-1.0.0.dist-info/top_level.txt,sha256=KXcjlgLVcgK7ttixVRfVaEPveTNBdA7VIeb-3l8yAUE,17
+streamlit_kanban-1.0.0.dist-info/RECORD,,
