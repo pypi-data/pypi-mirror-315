@@ -1,0 +1,10 @@
+bd_shape_history/__init__.py,sha256=Mecij58ovhv__QdkTndwOH5OBi28qMkTDNxWSMNTNnQ,110
+bd_shape_history/cli.py,sha256=fgPprzvjcqFwPNDvVpjZ_QOvyh9jzv1TGnUAlQZlhPs,1576
+bd_shape_history/shape_history.py,sha256=PQWgEGgjNWEHxJvYjs2u3EUxLSYSqfBlAbpp_OOEL-s,1264
+bd_shape_history/step.py,sha256=GkmqKjPVy5fWt7SzG4JmYHzw91YGPgLbYwPMZmjDC_w,2884
+bd_shape_history/types.py,sha256=wj8U1lOOtZak6X-gUseLu8bmyTjkQM_bqWXro1QvflU,250
+bd_shape_history-0.1.1.dist-info/LICENSE,sha256=YakVqtUDfb89Jc0ne5pWea84A69vPGEOVJ-s8LH5bqw,1084
+bd_shape_history-0.1.1.dist-info/METADATA,sha256=ln5ZNFQgRoi2HHQ0l39nemwgnAagC3NDqL7nfMxs0g4,2690
+bd_shape_history-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+bd_shape_history-0.1.1.dist-info/entry_points.txt,sha256=cz550r9_tWaCKitWn1TliKjelUy0PtzCrJZCiGdv53E,53
+bd_shape_history-0.1.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+ocp_diff=bd_shape_history.cli:run
+
