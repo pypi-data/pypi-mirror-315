@@ -1,0 +1,7 @@
+numpy
+
+[all]
+geospatial-analysis[extra]
+
+[extra]
+pandas
