@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mailos.app &#8212; MailOS  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=f6a572b4" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs"></script>
+    <script type="module">
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: 'default',
+        securityLevel: 'loose',
+    });
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs";
+window.addEventListener("load", () => mermaid.run());
+</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">MailOS</a></h1>
+
+
+
+<p class="blurb">AI-powered email monitoring and response system</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=tomatyss&repo=mailos&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../configuration.html">Configuration Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/tools.html">Tool Management Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/adding_vendors.html">Adding New LLM Vendors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/modules.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for mailos.app</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">MailOS Web Application Module.</span>
+
+<span class="sd">This module provides a web interface for managing email monitoring configurations</span>
+<span class="sd">using PyWebIO.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">uuid</span>
+<span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
+
+<span class="kn">from</span> <span class="nn">pywebio</span> <span class="kn">import</span> <span class="n">start_server</span>
+<span class="kn">from</span> <span class="nn">pywebio.output</span> <span class="kn">import</span> <span class="n">clear</span><span class="p">,</span> <span class="n">put_button</span><span class="p">,</span> <span class="n">put_markdown</span><span class="p">,</span> <span class="n">toast</span><span class="p">,</span> <span class="n">use_scope</span>
+<span class="kn">from</span> <span class="nn">pywebio.pin</span> <span class="kn">import</span> <span class="n">pin</span>
+
+<span class="kn">from</span> <span class="nn">mailos.check_emails</span> <span class="kn">import</span> <span class="n">init_scheduler</span>
+<span class="kn">from</span> <span class="nn">mailos.check_emails</span> <span class="kn">import</span> <span class="n">main</span> <span class="k">as</span> <span class="n">check_emails_main</span>
+<span class="kn">from</span> <span class="nn">mailos.ui.checker_form</span> <span class="kn">import</span> <span class="n">create_checker_form</span>
+<span class="kn">from</span> <span class="nn">mailos.ui.display</span> <span class="kn">import</span> <span class="n">display_checkers</span><span class="p">,</span> <span class="n">refresh_display</span>
+<span class="kn">from</span> <span class="nn">mailos.utils.config_utils</span> <span class="kn">import</span> <span class="n">load_config</span><span class="p">,</span> <span class="n">save_config</span>
+<span class="kn">from</span> <span class="nn">mailos.utils.logger_utils</span> <span class="kn">import</span> <span class="n">logger</span>
+<span class="kn">from</span> <span class="nn">mailos.vendors.config</span> <span class="kn">import</span> <span class="n">VENDOR_CONFIGS</span>
+
+<span class="n">scheduler</span> <span class="o">=</span> <span class="kc">None</span>
+
+
+<div class="viewcode-block" id="CheckerConfig">
+<a class="viewcode-back" href="../../api/modules.html#mailos.app.CheckerConfig">[docs]</a>
+<span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">CheckerConfig</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Email checker configuration.&quot;&quot;&quot;</span>
+
+    <span class="nb">id</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">monitor_email</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">password</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">imap_server</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">imap_port</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">llm_provider</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">model</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">system_prompt</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">enabled_tools</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span>
+    <span class="n">auto_reply</span><span class="p">:</span> <span class="nb">bool</span>
+    <span class="n">last_run</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;Never&quot;</span>
+
+<div class="viewcode-block" id="CheckerConfig.from_form">
+<a class="viewcode-back" href="../../api/modules.html#mailos.app.CheckerConfig.from_form">[docs]</a>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_form</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">checker_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;CheckerConfig&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Create CheckerConfig from form data.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="nb">id</span><span class="o">=</span><span class="n">checker_id</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()),</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">pin</span><span class="o">.</span><span class="n">checker_name</span><span class="p">,</span>
+            <span class="n">monitor_email</span><span class="o">=</span><span class="n">pin</span><span class="o">.</span><span class="n">monitor_email</span><span class="p">,</span>
+            <span class="n">password</span><span class="o">=</span><span class="n">pin</span><span class="o">.</span><span class="n">password</span><span class="p">,</span>
+            <span class="n">imap_server</span><span class="o">=</span><span class="n">pin</span><span class="o">.</span><span class="n">imap_server</span><span class="p">,</span>
+            <span class="n">imap_port</span><span class="o">=</span><span class="n">pin</span><span class="o">.</span><span class="n">imap_port</span><span class="p">,</span>
+            <span class="n">llm_provider</span><span class="o">=</span><span class="n">pin</span><span class="o">.</span><span class="n">llm_provider</span><span class="p">,</span>
+            <span class="n">model</span><span class="o">=</span><span class="n">pin</span><span class="o">.</span><span class="n">model</span><span class="p">,</span>
+            <span class="n">system_prompt</span><span class="o">=</span><span class="n">pin</span><span class="o">.</span><span class="n">system_prompt</span><span class="p">,</span>
+            <span class="n">enabled_tools</span><span class="o">=</span><span class="nb">getattr</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="s2">&quot;enabled_tools&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[],</span>
+            <span class="n">enabled</span><span class="o">=</span><span class="s2">&quot;Enable monitoring&quot;</span> <span class="ow">in</span> <span class="n">pin</span><span class="o">.</span><span class="n">features</span><span class="p">,</span>
+            <span class="n">auto_reply</span><span class="o">=</span><span class="s2">&quot;Auto-reply to emails&quot;</span> <span class="ow">in</span> <span class="n">pin</span><span class="o">.</span><span class="n">features</span><span class="p">,</span>
+        <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CheckerConfig.to_dict">
+<a class="viewcode-back" href="../../api/modules.html#mailos.app.CheckerConfig.to_dict">[docs]</a>
+    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Convert to dictionary for storage.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+            <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="s2">&quot;monitor_email&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">monitor_email</span><span class="p">,</span>
+            <span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">password</span><span class="p">,</span>
+            <span class="s2">&quot;imap_server&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">imap_server</span><span class="p">,</span>
+            <span class="s2">&quot;imap_port&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">imap_port</span><span class="p">,</span>
+            <span class="s2">&quot;llm_provider&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">llm_provider</span><span class="p">,</span>
+            <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">,</span>
+            <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">system_prompt</span><span class="p">,</span>
+            <span class="s2">&quot;enabled_tools&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">enabled_tools</span><span class="p">,</span>
+            <span class="s2">&quot;enabled&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">enabled</span><span class="p">,</span>
+            <span class="s2">&quot;auto_reply&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">auto_reply</span><span class="p">,</span>
+            <span class="s2">&quot;last_run&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_run</span><span class="p">,</span>
+        <span class="p">}</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="update_vendor_credentials">
+<a class="viewcode-back" href="../../api/modules.html#mailos.app.update_vendor_credentials">[docs]</a>
+<span class="k">def</span> <span class="nf">update_vendor_credentials</span><span class="p">(</span><span class="n">checker_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">vendor_config</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Update vendor-specific credentials in checker dictionary.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">vendor_config</span><span class="p">:</span>
+        <span class="k">return</span>
+
+    <span class="k">for</span> <span class="n">field</span> <span class="ow">in</span> <span class="n">vendor_config</span><span class="o">.</span><span class="n">fields</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">field</span><span class="o">.</span><span class="n">name</span><span class="p">):</span>
+            <span class="n">field_value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">field</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">field_value</span> <span class="ow">or</span> <span class="n">field</span><span class="o">.</span><span class="n">required</span><span class="p">:</span>
+                <span class="n">checker_dict</span><span class="p">[</span><span class="n">field</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">field_value</span></div>
+
+
+
+<div class="viewcode-block" id="save_checker">
+<a class="viewcode-back" href="../../api/modules.html#mailos.app.save_checker">[docs]</a>
+<span class="k">def</span> <span class="nf">save_checker</span><span class="p">(</span><span class="n">identifier</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Save or update an email checker configuration.&quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">config</span> <span class="o">=</span> <span class="n">load_config</span><span class="p">()</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Updating checker with identifier: </span><span class="si">{</span><span class="n">identifier</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Create checker config from form data</span>
+        <span class="n">checker_config</span> <span class="o">=</span> <span class="n">CheckerConfig</span><span class="o">.</span><span class="n">from_form</span><span class="p">(</span><span class="n">identifier</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Enabled tools from form: </span><span class="si">{</span><span class="n">checker_config</span><span class="o">.</span><span class="n">enabled_tools</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">identifier</span><span class="p">:</span>
+            <span class="c1"># Update existing checker</span>
+            <span class="k">for</span> <span class="n">checker</span> <span class="ow">in</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;checkers&quot;</span><span class="p">]:</span>
+                <span class="k">if</span> <span class="n">checker</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="n">identifier</span><span class="p">:</span>
+                    <span class="c1"># Convert to dictionary and update</span>
+                    <span class="n">checker_dict</span> <span class="o">=</span> <span class="n">checker_config</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+                    <span class="c1"># Add vendor-specific credentials</span>
+                    <span class="n">update_vendor_credentials</span><span class="p">(</span>
+                        <span class="n">checker_dict</span><span class="p">,</span> <span class="n">VENDOR_CONFIGS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">checker_config</span><span class="o">.</span><span class="n">llm_provider</span><span class="p">)</span>
+                    <span class="p">)</span>
+                    <span class="c1"># Preserve last_run if exists</span>
+                    <span class="k">if</span> <span class="s2">&quot;last_run&quot;</span> <span class="ow">in</span> <span class="n">checker</span><span class="p">:</span>
+                        <span class="n">checker_dict</span><span class="p">[</span><span class="s2">&quot;last_run&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">checker</span><span class="p">[</span><span class="s2">&quot;last_run&quot;</span><span class="p">]</span>
+                    <span class="c1"># Update checker</span>
+                    <span class="n">checker</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">checker_dict</span><span class="p">)</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Updated checker with ID: </span><span class="si">{</span><span class="n">identifier</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">break</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No checker found with ID: </span><span class="si">{</span><span class="n">identifier</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">return</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Create new checker dictionary</span>
+            <span class="n">new_checker</span> <span class="o">=</span> <span class="n">checker_config</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="c1"># Add vendor-specific credentials</span>
+            <span class="n">update_vendor_credentials</span><span class="p">(</span>
+                <span class="n">new_checker</span><span class="p">,</span> <span class="n">VENDOR_CONFIGS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">checker_config</span><span class="o">.</span><span class="n">llm_provider</span><span class="p">)</span>
+            <span class="p">)</span>
+            <span class="c1"># Add to config</span>
+            <span class="n">config</span><span class="p">[</span><span class="s2">&quot;checkers&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_checker</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Added new checker with ID: </span><span class="si">{</span><span class="n">new_checker</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Save configuration</span>
+        <span class="n">save_config</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+
+        <span class="c1"># Update UI</span>
+        <span class="n">clear</span><span class="p">(</span><span class="s2">&quot;edit_checker_form&quot;</span> <span class="k">if</span> <span class="n">identifier</span> <span class="k">else</span> <span class="s2">&quot;new_checker_form&quot;</span><span class="p">)</span>
+        <span class="n">refresh_display</span><span class="p">()</span>
+        <span class="n">toast</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Checker </span><span class="si">{</span><span class="s1">&#39;updated&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">identifier</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;added&#39;</span><span class="si">}</span><span class="s2"> successfully&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Run initial check for new checkers</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">identifier</span><span class="p">:</span>
+            <span class="n">check_emails_main</span><span class="p">()</span>
+            <span class="n">toast</span><span class="p">(</span><span class="s2">&quot;Initial check completed&quot;</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to save configuration: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">toast</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to save configuration: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;error&quot;</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="ensure_checker_ids">
+<a class="viewcode-back" href="../../api/modules.html#mailos.app.ensure_checker_ids">[docs]</a>
+<span class="k">def</span> <span class="nf">ensure_checker_ids</span><span class="p">(</span><span class="n">config</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Ensure all checkers have IDs.&quot;&quot;&quot;</span>
+    <span class="n">modified</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">for</span> <span class="n">checker</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;checkers&quot;</span><span class="p">,</span> <span class="p">[]):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">checker</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">):</span>
+            <span class="n">checker</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())</span>
+            <span class="n">modified</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="n">modified</span></div>
+
+
+
+<div class="viewcode-block" id="check_email_app">
+<a class="viewcode-back" href="../../api/modules.html#mailos.app.check_email_app">[docs]</a>
+<span class="k">def</span> <span class="nf">check_email_app</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Run the main web application.&quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">scheduler</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">scheduler</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Initializing scheduler...&quot;</span><span class="p">)</span>
+        <span class="n">scheduler</span> <span class="o">=</span> <span class="n">init_scheduler</span><span class="p">()</span>
+
+    <span class="n">put_markdown</span><span class="p">(</span><span class="s2">&quot;# MailOS&quot;</span><span class="p">)</span>
+    <span class="n">put_markdown</span><span class="p">(</span><span class="s2">&quot;Configure multiple email accounts to monitor&quot;</span><span class="p">)</span>
+
+    <span class="n">config</span> <span class="o">=</span> <span class="n">load_config</span><span class="p">()</span>
+
+    <span class="c1"># Ensure all checkers have IDs</span>
+    <span class="k">if</span> <span class="n">ensure_checker_ids</span><span class="p">(</span><span class="n">config</span><span class="p">):</span>
+        <span class="n">save_config</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Added IDs to existing checkers&quot;</span><span class="p">)</span>
+
+    <span class="k">with</span> <span class="n">use_scope</span><span class="p">(</span><span class="s2">&quot;checkers&quot;</span><span class="p">):</span>
+        <span class="n">display_checkers</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="n">save_checker</span><span class="p">)</span>
+
+    <span class="n">put_button</span><span class="p">(</span>
+        <span class="s2">&quot;Add New Checker&quot;</span><span class="p">,</span> <span class="n">onclick</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span> <span class="n">create_checker_form</span><span class="p">(</span><span class="n">on_save</span><span class="o">=</span><span class="n">save_checker</span><span class="p">)</span>
+    <span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="cli">
+<a class="viewcode-back" href="../../api/modules.html#mailos.app.cli">[docs]</a>
+<span class="k">def</span> <span class="nf">cli</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;CLI entry point for the application.&quot;&quot;&quot;</span>
+    <span class="kn">import</span> <span class="nn">click</span>
+
+    <span class="nd">@click</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+    <span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span>
+        <span class="s2">&quot;--log-level&quot;</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="n">click</span><span class="o">.</span><span class="n">Choice</span><span class="p">(</span>
+            <span class="p">[</span><span class="s2">&quot;DEBUG&quot;</span><span class="p">,</span> <span class="s2">&quot;INFO&quot;</span><span class="p">,</span> <span class="s2">&quot;WARNING&quot;</span><span class="p">,</span> <span class="s2">&quot;ERROR&quot;</span><span class="p">,</span> <span class="s2">&quot;CRITICAL&quot;</span><span class="p">],</span> <span class="n">case_sensitive</span><span class="o">=</span><span class="kc">False</span>
+        <span class="p">),</span>
+        <span class="n">default</span><span class="o">=</span><span class="s2">&quot;INFO&quot;</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Set the logging level&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">log_level</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Run the web application with specified log level.&quot;&quot;&quot;</span>
+        <span class="c1"># Set log level on root logger</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">()</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">logging</span><span class="p">,</span> <span class="n">log_level</span><span class="o">.</span><span class="n">upper</span><span class="p">()))</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Starting application with log level: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">log_level</span><span class="p">)</span>
+        <span class="n">init_scheduler</span><span class="p">()</span>
+        <span class="n">start_server</span><span class="p">(</span><span class="n">check_email_app</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8080</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">run</span><span class="p">()</span></div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">cli</span><span class="p">()</span>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &#169;2024, Ivan Iufriakov.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

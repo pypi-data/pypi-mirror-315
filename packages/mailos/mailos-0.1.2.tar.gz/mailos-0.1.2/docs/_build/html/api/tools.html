@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tools API Reference &#8212; MailOS  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=f6a572b4" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="API Reference" href="modules.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">MailOS</a></h1>
+
+
+
+<p class="blurb">AI-powered email monitoring and response system</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=tomatyss&repo=mailos&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration.html">Configuration Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/tools.html">Tool Management Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/adding_vendors.html">Adding New LLM Vendors</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Tools API Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mailos.vendors.models">Tool Base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#built-in-tools">Built-in Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mailos.tools">Tool Registry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mailos.utils.logger_utils">Tool Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#common-tool-patterns">Common Tool Patterns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#core-modules">Core Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#tool-system">Tool System</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">API Reference</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">API Reference</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="tools-api-reference">
+<h1>Tools API Reference<a class="headerlink" href="#tools-api-reference" title="Link to this heading">¶</a></h1>
+<p>This section provides detailed API documentation for the MailOS tool system.</p>
+</section>
+<section id="module-mailos.vendors.models">
+<span id="tool-base"></span><h1>Tool Base<a class="headerlink" href="#module-mailos.vendors.models" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="mailos.vendors.models.Tool">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mailos.vendors.models.</span></span><span class="sig-name descname"><span class="pre">Tool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameters</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.13)"><span class="pre">Callable</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">required_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.13)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mailos/vendors/models.html#Tool"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mailos.vendors.models.Tool" title="Link to this definition">¶</a></dt>
+<dd><p>Represents a tool or function that can be called by the LLM.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mailos.vendors.models.Tool.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></em><a class="headerlink" href="#mailos.vendors.models.Tool.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mailos.vendors.models.Tool.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></em><a class="headerlink" href="#mailos.vendors.models.Tool.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mailos.vendors.models.Tool.parameters">
+<span class="sig-name descname"><span class="pre">parameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></em><a class="headerlink" href="#mailos.vendors.models.Tool.parameters" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mailos.vendors.models.Tool.function">
+<span class="sig-name descname"><span class="pre">function</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.13)"><span class="pre">Callable</span></a></em><a class="headerlink" href="#mailos.vendors.models.Tool.function" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mailos.vendors.models.Tool.required_params">
+<span class="sig-name descname"><span class="pre">required_params</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.13)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#mailos.vendors.models.Tool.required_params" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mailos.vendors.models.Tool.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/mailos/vendors/models.html#Tool.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mailos.vendors.models.Tool.to_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Convert tool to a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mailos.vendors.models.Tool.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameters</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.13)"><span class="pre">Callable</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">required_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.13)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#mailos.vendors.models.Tool.__init__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="built-in-tools">
+<h1>Built-in Tools<a class="headerlink" href="#built-in-tools" title="Link to this heading">¶</a></h1>
+<section id="module-mailos.tools.weather">
+<span id="weather-tool"></span><h2>Weather Tool<a class="headerlink" href="#module-mailos.tools.weather" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="mailos.tools.weather.get_weather">
+<span class="sig-prename descclassname"><span class="pre">mailos.tools.weather.</span></span><span class="sig-name descname"><span class="pre">get_weather</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">city</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/mailos/tools/weather.html#get_weather"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mailos.tools.weather.get_weather" title="Link to this definition">¶</a></dt>
+<dd><p>Get current weather for a given city using OpenWeatherMap API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>city</strong> – Name of the city to get weather for</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing weather data or error message</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="mailos.tools.weather.weather_tool">
+<span class="sig-prename descclassname"><span class="pre">mailos.tools.weather.</span></span><span class="sig-name descname"><span class="pre">weather_tool</span></span><em class="property"><span class="w"> </span><span class="pre">=</span> <span class="pre">Tool</span> <span class="pre">instance</span> <span class="pre">for</span> <span class="pre">weather</span> <span class="pre">information</span></em><a class="headerlink" href="#mailos.tools.weather.weather_tool" title="Link to this definition">¶</a></dt>
+<dd><p>Represents a tool or function that can be called by the LLM.</p>
+</dd></dl>
+
+</section>
+<section id="module-mailos.tools.python_interpreter">
+<span id="python-interpreter"></span><h2>Python Interpreter<a class="headerlink" href="#module-mailos.tools.python_interpreter" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="mailos.tools.python_interpreter.execute_python">
+<span class="sig-prename descclassname"><span class="pre">mailos.tools.python_interpreter.</span></span><span class="sig-name descname"><span class="pre">execute_python</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/mailos/tools/python_interpreter.html#execute_python"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mailos.tools.python_interpreter.execute_python" title="Link to this definition">¶</a></dt>
+<dd><p>Execute Python code and return the output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>code</strong> – Python code to execute</p></li>
+<li><p><strong>timeout</strong> – Maximum execution time in seconds (default: 5)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict with execution status, output/error, and any printed output</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="mailos.tools.python_interpreter.python_interpreter_tool">
+<span class="sig-prename descclassname"><span class="pre">mailos.tools.python_interpreter.</span></span><span class="sig-name descname"><span class="pre">python_interpreter_tool</span></span><em class="property"><span class="w"> </span><span class="pre">=</span> <span class="pre">Tool</span> <span class="pre">instance</span> <span class="pre">for</span> <span class="pre">Python</span> <span class="pre">code</span> <span class="pre">execution</span></em><a class="headerlink" href="#mailos.tools.python_interpreter.python_interpreter_tool" title="Link to this definition">¶</a></dt>
+<dd><p>Represents a tool or function that can be called by the LLM.</p>
+</dd></dl>
+
+</section>
+<section id="module-mailos.tools.bash_command">
+<span id="bash-command"></span><h2>Bash Command<a class="headerlink" href="#module-mailos.tools.bash_command" title="Link to this heading">¶</a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="mailos.tools.bash_command.bash_command_tool">
+<span class="sig-prename descclassname"><span class="pre">mailos.tools.bash_command.</span></span><span class="sig-name descname"><span class="pre">bash_command_tool</span></span><em class="property"><span class="w"> </span><span class="pre">=</span> <span class="pre">Tool</span> <span class="pre">instance</span> <span class="pre">for</span> <span class="pre">bash</span> <span class="pre">command</span> <span class="pre">execution</span></em><a class="headerlink" href="#mailos.tools.bash_command.bash_command_tool" title="Link to this definition">¶</a></dt>
+<dd><p>Represents a tool or function that can be called by the LLM.</p>
+</dd></dl>
+
+</section>
+</section>
+<section id="module-mailos.tools">
+<span id="tool-registry"></span><h1>Tool Registry<a class="headerlink" href="#module-mailos.tools" title="Link to this heading">¶</a></h1>
+<dl class="py data">
+<dt class="sig sig-object py" id="mailos.tools.AVAILABLE_TOOLS">
+<span class="sig-prename descclassname"><span class="pre">mailos.tools.</span></span><span class="sig-name descname"><span class="pre">AVAILABLE_TOOLS</span></span><em class="property"><span class="w"> </span><span class="pre">=</span> <span class="pre">List</span> <span class="pre">of</span> <span class="pre">available</span> <span class="pre">tools</span></em><a class="headerlink" href="#mailos.tools.AVAILABLE_TOOLS" title="Link to this definition">¶</a></dt>
+<dd><p>Built-in mutable sequence.</p>
+<p>If no argument is given, the constructor creates a new empty list.
+The argument must be an iterable if specified.</p>
+</dd></dl>
+
+</section>
+<section id="module-mailos.utils.logger_utils">
+<span id="tool-utilities"></span><h1>Tool Utilities<a class="headerlink" href="#module-mailos.utils.logger_utils" title="Link to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="mailos.utils.logger_utils.setup_logger">
+<span class="sig-prename descclassname"><span class="pre">mailos.utils.logger_utils.</span></span><span class="sig-name descname"><span class="pre">setup_logger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mailos/utils/logger_utils.html#setup_logger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mailos.utils.logger_utils.setup_logger" title="Link to this definition">¶</a></dt>
+<dd><p>Set up logger for a given name (deprecated).</p>
+</dd></dl>
+
+</section>
+<section id="common-tool-patterns">
+<h1>Common Tool Patterns<a class="headerlink" href="#common-tool-patterns" title="Link to this heading">¶</a></h1>
+<section id="error-handling">
+<h2>Error Handling<a class="headerlink" href="#error-handling" title="Link to this heading">¶</a></h2>
+<p>Tools should follow this error handling pattern:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_tool_function</span><span class="p">(</span><span class="n">param</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Tool implementation</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;success&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">result</span>
+        <span class="p">}</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;error&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="response-format">
+<h2>Response Format<a class="headerlink" href="#response-format" title="Link to this heading">¶</a></h2>
+<p>Success Response:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;success&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="c1"># Tool-specific data</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Error Response:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;error&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Error description&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="tool-configuration">
+<h2>Tool Configuration<a class="headerlink" href="#tool-configuration" title="Link to this heading">¶</a></h2>
+<p>Tools can be configured using:</p>
+<ol class="arabic simple">
+<li><p>Environment variables</p></li>
+<li><p>Tool-specific configuration in email_config.json</p></li>
+<li><p>Runtime parameters passed to the tool function</p></li>
+</ol>
+<p>Example Configuration:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;checkers&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="s2">&quot;enabled_tools&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;weather&quot;</span><span class="p">,</span> <span class="s2">&quot;python_interpreter&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;tool_config&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;weather&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;default_units&quot;</span><span class="p">:</span> <span class="s2">&quot;metric&quot;</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;python_interpreter&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;timeout&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+                <span class="s2">&quot;max_memory&quot;</span><span class="p">:</span> <span class="mi">128</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &#169;2024, Ivan Iufriakov.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/api/tools.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
