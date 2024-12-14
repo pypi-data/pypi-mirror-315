@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: altikrity
+Version: 0.6
+Summary: Lightweight encryption library with multi-layer encryption features.
+Author: Abdullah
+Author-email: abdullah.alttikrity@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Altikrity Library
+
+Altikrity is a lightweight encryption library designed for encrypting Python code with multi-layer techniques. It allows encrypted code to be executed directly.
+
+## Features
+- Multi-layer encryption (zlib, marshal, base64).
+- Simple function for encrypting text.
+- Direct execution of encrypted Python code.
+
+## Installation
+To install the library locally:
+```bash
+pip install .
