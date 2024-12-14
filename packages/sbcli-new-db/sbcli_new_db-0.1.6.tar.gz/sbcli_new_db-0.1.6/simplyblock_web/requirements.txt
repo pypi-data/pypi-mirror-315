@@ -1,0 +1,5 @@
+flask
+py-cpuinfo
+kubernetes
+graypy
+ec2-metadata
