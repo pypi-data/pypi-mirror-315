@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: humiris-ai
+Version: 1.0.0
+Summary: Humiris is a library that allows developers to easily integrate AI capabilities into their applications.
+Home-page: https://github.com/joeai-tech-org/humiris-pip-package
+Author: Hilario Houmey
+Author-email: h.hilario@humiris.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Humiris Installation and Usage Guide
+
+## Prerequisite
+
+Please ensure you have Python (version 3.6 or higher) installed before proceeding.
+
+## Steps to Install and Run Humiris
+
+### Step 1: Install Humiris
+
+You can install Humiris using either npm or yarn:
+
+```bash
+# Using npm
+npm install humiris-ai
+
+# Using yarn
+yarn add humiris-ai
+
+```
+
+# Usage
+
+# moai = MoAi(api_key='your_api_key')
+
+# payload = UseMixtuningPayload(mix_tuning_id='id', messages=[], temperature=0.5, max_tokens=100)
+
+# response = moai.use_basic_mixtuning(payload)
+
+# print(response)
+
+## Documentation
+
+For more detailed information, please refer to the [Humiris Development Documentation](https://docs.humiris.ai/development).
