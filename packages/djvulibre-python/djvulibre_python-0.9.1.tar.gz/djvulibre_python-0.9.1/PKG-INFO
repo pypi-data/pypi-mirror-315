@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: djvulibre-python
+Version: 0.9.1
+Summary: Python support for the DjVu image format
+Home-page: https://github.com/FriedrichFroebel/python-djvulibre
+Author: Jakub Wilk, FriedrichFröbel (fork)
+License: GNU GPL 2
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Classifier: Topic :: Text Processing
+License-File: COPYING
+Provides-Extra: dev
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pep8-naming; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Provides-Extra: examples
+Requires-Dist: pycairo; extra == "examples"
+Requires-Dist: numpy; extra == "examples"
+
+*djvulibre-python* is a set of Python bindings for
+the `DjVuLibre <https://djvu.sourceforge.net/>`_ library,
+an open source implementation of `DjVu <http://djvu.org/>`_.
