@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+combot_installer/__init__.py
+combot_installer/__main__.py
+combot_installer/installer.py
+inst/Install.ps1
+inst/Install.sh
+shelle.egg-info/PKG-INFO
+shelle.egg-info/SOURCES.txt
+shelle.egg-info/dependency_links.txt
+shelle.egg-info/entry_points.txt
+shelle.egg-info/top_level.txt
