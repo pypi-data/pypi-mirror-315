@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+olca.egg-info/PKG-INFO
+olca.egg-info/SOURCES.txt
+olca.egg-info/dependency_links.txt
+olca.egg-info/entry_points.txt
+olca.egg-info/requires.txt
+olca.egg-info/top_level.txt
