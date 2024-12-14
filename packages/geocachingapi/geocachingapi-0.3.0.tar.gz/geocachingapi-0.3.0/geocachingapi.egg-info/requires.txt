@@ -1,0 +1,4 @@
+aiohttp<4,>=3.7.4
+backoff>=1.9.0
+yarl
+reverse_geocode==1.6.5
