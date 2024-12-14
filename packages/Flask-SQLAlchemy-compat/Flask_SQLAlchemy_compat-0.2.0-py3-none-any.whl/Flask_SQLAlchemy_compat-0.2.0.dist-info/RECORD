@@ -1,0 +1,15 @@
+flask_sqlalchemy_compat/__init__.py,sha256=GH3zbSFWFYM1MRh3szRw0jZlNwqGS7L2Yu0gZQPaYHQ,2036
+flask_sqlalchemy_compat/auto.py,sha256=mLIWAxSXAORy03-yEBsg3uiQEi4HzLr9rlPsSqy0cvU,10607
+flask_sqlalchemy_compat/backdict.py,sha256=LUtNp7KqTpov0aQ7zCthuICSzNH5Ut4t9J0twt2zDX8,9883
+flask_sqlalchemy_compat/backends.py,sha256=uFoNI2_BumGm79Bkdh5zxqKjscmQohlRAZ5vOm8XbuU,8363
+flask_sqlalchemy_compat/flask_sa_api.py,sha256=z1Se0fhqWxqL-QsDwqm2Xp-hxWcPMQbelc3DuCJsG9o,20824
+flask_sqlalchemy_compat/flask_sa_lite_api.py,sha256=n438NV2DKUG-PTt4sH-7H5y3joookDl2yxdvCJ7W8cQ,12431
+flask_sqlalchemy_compat/protocols.py,sha256=Z_jSHPp4yCwDFuvKyOzWrfvyNCHQugF2McKpv91oAV8,7275
+flask_sqlalchemy_compat/utilities.py,sha256=5iVWhs3H4EWK8aUbkyXovdt3YuLUUD4eUvC3-n3_PLg,13439
+flask_sqlalchemy_compat/version.py,sha256=XjM-tPRnrBUJVtjBRZ2S0XphHj5Fw2dFFEax4A2SHZA,264
+Flask_SQLAlchemy_compat-0.2.0.dist-info/LICENSE,sha256=thwlXHnYkjewJ5RD265g5nHmcuEJ64i9ojUa29OvEGk,1067
+Flask_SQLAlchemy_compat-0.2.0.dist-info/METADATA,sha256=glFae_o1xw0LajJlLXn1jBAsis2JJk-PyDMhzcfMHY0,10346
+Flask_SQLAlchemy_compat-0.2.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+Flask_SQLAlchemy_compat-0.2.0.dist-info/top_level.txt,sha256=fwnHxEt8ZWHa8siK8F5fH2IbBS9Ub-hFCcITiG9VhqQ,24
+Flask_SQLAlchemy_compat-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+Flask_SQLAlchemy_compat-0.2.0.dist-info/RECORD,,
