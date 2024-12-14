@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: makefilename
+Version: 0.1.1
+Summary: Takes an input string + extension and turns it into a sanitized filename
+Project-URL: homepage, https://github.com/RobertDusk/py-make-filename
+Author-email: Robert Dusk <robert@dusk.monster>
+Maintainer-email: Robert Dusk <robert@dusk.monster>
+Keywords: filename,sanitize
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# makefilename
+
+Takes an input string + extension and turns it into a sanitized filename.
+
+    from makefilename import make_filename
+
+    name_game = "Counter-Strike 2"
+
+    filename = make_filename(name_game, extension=".json")
+    # filename == "Counter_Strike_2.json"
