@@ -1,0 +1,16 @@
+jelka/__init__.py,sha256=_KnIkuV6vajcpkHFMvPikv0cywBrs4TAVJbOEgT2-I0,53
+jelka/jelka.py,sha256=so7iqALI7kFGgf3-ykJ3y_pAYyjKcY0DR4Mqs7DmFSc,7148
+jelka/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jelka/util.py,sha256=kC5Qv6OshJ6OVtyYa4AIE6oa_yTPkkOyNO9Htd5JzBA,292
+jelka/shapes/__init__.py,sha256=NN2CdM5aTrkyr2O83TRpYOf-UVeC6P7tmudB9QBFHBo,167
+jelka/shapes/path.py,sha256=Bjx4VJJ89-0rmJ7WOLjHQva7EaEqQHbPYlj9ajNdilc,1584
+jelka/shapes/plane.py,sha256=TyO2uDBxbESVUtvIthItFCtwqD60cf9HWb8oApYnGOc,364
+jelka/shapes/shape.py,sha256=EiRjaAen86CU8N4jWhGFQQGhi0y6qLggW0WG9DSWDvc,521
+jelka/shapes/sphere.py,sha256=CaLLRdTe24Ov6bQaSc1Mpq6gwt5OfcaHC4lWoM-xNeo,750
+jelka/types/__init__.py,sha256=aFMDJ-zYGERorhm7bqlKCcYOJEb-xNMDkLPoEtsPtoI,100
+jelka/types/color.py,sha256=jmarrlDnvGha5dNJ4IMe-N12UvNVFTGX9zCtyGiq1mM,3040
+jelka/types/position.py,sha256=2EGd4Yr_lqw_GTPkXeLEYUOdZF4eTKFMXqAS7PeLA3w,2103
+jelka-0.0.5.dist-info/METADATA,sha256=2Un73cB8Xqk35196BjrDrqbNtsjaMBPsvSkV2tTkWgE,1063
+jelka-0.0.5.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+jelka-0.0.5.dist-info/licenses/LICENSE,sha256=QyrQ1EkY0m3doZ2HCUxJN5Vt5FbgoNCmNVnH1ouNnJs,1066
+jelka-0.0.5.dist-info/RECORD,,
