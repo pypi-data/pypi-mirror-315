@@ -1,0 +1,5 @@
+django-cms
+django-meta-og~=1.0
+
+[test]
+freezegun
