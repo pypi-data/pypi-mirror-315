@@ -1,0 +1,9 @@
+createllm/__init__.py,sha256=Ju4jQnVFS2VVUdYzRNfRyoz4RV82k3vhjEF4fns73SU,137
+createllm/common.py,sha256=Si4ZvbkkaVGyKrOa7gmsVNWS2Abtji-V5nEsJhrIM3M,188
+createllm/createllm.py,sha256=wQQ8MH-Ww6edZnURWS6aR0J3RchG2Eli3vIDhmFqQOc,11928
+createllm-0.1.6.dist-info/LICENSE,sha256=hPSoL3jAtzRIcw6rO0Y7USDGOKiW3god_rrOYrUnTxc,1074
+createllm-0.1.6.dist-info/METADATA,sha256=6QUJQB0qqjjHz9vn2UPDXpXRLXrtQlSDZew_i2w4yvc,1883
+createllm-0.1.6.dist-info/WHEEL,sha256=pxeNX5JdtCe58PUSYP9upmc7jdRPgvT0Gm9kb1SHlVw,109
+createllm-0.1.6.dist-info/entry_points.txt,sha256=-mORaz_HnWudMx7lbDDXNxIURYItJcbZOinqGd-h7G0,49
+createllm-0.1.6.dist-info/top_level.txt,sha256=HjvVpkLLuYZNnBXqrLEUEwd-H1iZ3P5QvOMAmjQct44,10
+createllm-0.1.6.dist-info/RECORD,,
