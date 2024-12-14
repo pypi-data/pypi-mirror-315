@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+cmd_llm_chat/__init__.py
+cmd_llm_chat/chat.py
+cmd_llm_chat/config.yaml
+cmd_llm_chat/history.txt
+cmd_llm_chat/latex_plot.py
+cmd_llm_chat/utils.py
+cmd_llm_chat.egg-info/PKG-INFO
+cmd_llm_chat.egg-info/SOURCES.txt
+cmd_llm_chat.egg-info/dependency_links.txt
+cmd_llm_chat.egg-info/entry_points.txt
+cmd_llm_chat.egg-info/requires.txt
+cmd_llm_chat.egg-info/top_level.txt

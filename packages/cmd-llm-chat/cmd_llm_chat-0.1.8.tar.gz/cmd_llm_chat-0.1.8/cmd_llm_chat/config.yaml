@@ -1,0 +1,12 @@
+Kimi:
+  api_key: sk-lYQySmRp6fAp17T22TRM4kQgatGwK3MNM3V4njzDda8DL4jR
+  base_url: https://api.moonshot.cn/v1
+  model: moonshot-v1-8k
+ZhiPu:
+  api_key: 77d41e42e882a7180853e8965b570732.AI0FuvuxeXbo3RAj
+  base_url: https://open.bigmodel.cn/api/paas/v4/
+  model: glm-4
+Wenxinyiyan:
+  access_key: ALTAKDn8arPJ1ZjaQrWRL4XFGZ
+  secret_key: 46144896208845e0989e4fe4fabd8ea8
+  model: ERNIE-Lite-8K
