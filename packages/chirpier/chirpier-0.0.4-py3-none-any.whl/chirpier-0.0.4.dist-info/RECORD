@@ -1,0 +1,10 @@
+chirpier/.DS_Store,sha256=2JP-JgaIXGRh4Q9gGeb_3FhdjkQoF_ohQZ3j0kBcg6Q,6148
+chirpier/__init__.py,sha256=scU9ZLsMjbI9oRszUS7rH7sKBUI5aUf1Gs6vM9pWsfY,297
+chirpier/client.py,sha256=76A0t81p-2Bg4dMh2VucCMzfsviv8gT1CWFTdDb4N5k,6333
+chirpier/errors.py,sha256=cF2FkHjLcknPxlaizE-i1xQlYa3cxoBHlAh2AhGEBH0,450
+chirpier/event.py,sha256=5hM9gldp4_zcBD4qZQMwwjyPwYcriiYIjpHljCrghJs,1523
+chirpier/utils.py,sha256=dvm_OHRZJuPkCCA4l-eRcrdcXxIDaZoaBWLn8NuZiUE,1185
+chirpier-0.0.4.dist-info/LICENCE,sha256=uo4vZHmyWB8ma3tBau6qjo9_RrOlcpQ9WpnhBVWBPOE,1071
+chirpier-0.0.4.dist-info/METADATA,sha256=YfhaMO2VbPJ_OcHRc8b5QVjWxZKopXF6RLV7f70X-mc,3263
+chirpier-0.0.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+chirpier-0.0.4.dist-info/RECORD,,
