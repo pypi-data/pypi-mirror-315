@@ -1,0 +1,221 @@
+# Libraire python Lexfluent RevolutionAI
+*Auteur Jacques MASSA*
+*Créé le 2 décembre 2024*
+
+---
+
+## Présentation
+Cette librairie permet:
+- la classification de documents selon le modèle jupiterB0 
+- l'extraction de données contenu dans des documents de classes connues(Offre de prêts, IBAN, CNI, etc ...).
+
+
+## Installations Prérequises 
+
+``` 
+
+    pip install setuptools wheel 
+    pip install pdfplumber 
+    pip install spacy[cuda12x]
+    pip install tqdm 
+    pip install opencv-python
+    pip install pytesseract
+    pip install pdf2image
+    pip install pillow==10.0.1
+    pip install pandas
+    pip install scikit-learn
+    pip install matplotlib
+    pip install tensorflow==2.17.0
+    pip install tf-keras==2.17.0
+    pip install tensorflow_hub
+    pip install tensorrt
+    pip install langchain-community
+    pip install ocrmypdf
+
+```
+ 
+## Téléchargement modèles 
+### SPACY 
+
+``` python -m spacy download fr_core_news_lg ```
+
+## Update et installations requises
+``` 
+    apt-get update 
+    apt-get upgrade
+    apt install software-properties-common -y
+    apt-get install poppler-utils -y
+    add-apt-repository ppa:alex-p/tesseract-ocr5
+    apt-get install libc6 -y
+    apt-get install poppler-utils -y
+    apt-get install tesseract-ocr -y
+    apt-get install tesseract-ocr-fra -y
+    apt-get install tesseract-ocr-eng -y
+    apt-get install tesseract-ocr-ita -y
+    apt-get install tesseract-ocr-spa -y
+    apt-get install tesseract-ocr-deu -y
+    apt-get install tesseract-ocr-cos -y
+    apt-get install tesseract-ocr-lat -y
+    apt-get install automake libtool -y
+    apt-get install libleptonica-dev -y
+    apt-get install ffmpeg libsm6 libxext6  -y
+    apt-get install ocrmypdf -y    
+
+``` 
+
+## GPU issue 
+Si problème : Successful NUMA node read from SysFS had negative value (-1) 
+
+```
+for a in /sys/bus/pci/devices/*; do echo 0 |  tee -a $a/numa_node; done
+
+```
+
+# Exemples d'utilisation 
+
+## Classification  
+
+### Code 
+```
+import logging
+import sys
+
+from lxf.services.measure_time import measure_time_async
+from lxf.services.try_safe import try_safe_execute_asyncio
+
+
+
+from lxf.ai.classification.classifier import get_classification
+from lxf.domain.predictions import  Predictions
+
+import lxf.settings as settings 
+from lxf.settings import SET_LOGGING_LEVEL
+SET_LOGGING_LEVEL=logging.DEBUG
+###################################################################
+
+logger = logging.getLogger('test classifier')
+fh = logging.FileHandler('./logs/test_classifier.log')
+fh.setLevel(settings.SET_LOGGING_LEVEL)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fh.setFormatter(formatter)
+logger.setLevel(settings.SET_LOGGING_LEVEL)
+logger.addHandler(fh)
+#################################################################
+
+@measure_time_async
+async def do_test(file_name) -> Predictions :
+    """
+    """
+    return await get_classification(file_name=file_name,max_pages=10)
+
+
+if __name__ == "__main__":
+    sys.stdout.reconfigure(line_buffering=True) 
+    pdf_path = "data/ODP.pdf"
+    iban_pdf="data/RIBB.pdf"
+    result = try_safe_execute_asyncio(logger=logger,func=do_test,file_name=iban_pdf) #asyncio.run(do_test(iban_pdf))
+    print(result)    
+    result = try_safe_execute_asyncio(logger=logger,func=do_test,file_name=pdf_path) #asyncio.run(do_test(pdf_path))
+    print(result)
+
+```
+### Sortie
+```
+Chargement du modèle SPACY : fr_core_news_lg 
+2024-12-13 16:39:54.618256: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:485] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-12-13 16:39:54.629053: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:8454] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-12-13 16:39:54.632373: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1452] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-12-13 16:39:54.641558: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-12-13 16:39:55.653735: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Chargement inital de l'embedding universal-sentence-encoder-large/5 ...
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1734104399.893858  720092 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00:00:1734104399.894115  720092 cuda_executor.cc:1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-12-13 16:39:59.894649: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2343] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+Chargement inital de universal-sentence-encoder-large/5 terminé
+INFO:Measures:get_key_words executed in 0.1950 seconds 
+1/1 [==============================] - 0s 50ms/step
+INFO:Measures:do_test executed in 2.5797 seconds 
+EntityId='' Name='' ModelName='jupiterB0' PredictedAt='13/12/2024 16:40' BestPrediction='Finance_Banque_IBAN-RIB' BestPredictionConfidence=97.91420102119446 Results=[Prediction(Name='Finance_Banque_BPOP-PRET', Confidence=2.3788950898051553e-05), Prediction(Name='Finance_Facture_Fournisseur', Confidence=0.00020592028704413678), Prediction(Name='Finance_Banque_Mandat-Creancier', Confidence=2.0772411568614757e-09), Prediction(Name='Finance_Banque_Releve', Confidence=0.0010999989171978086), Prediction(Name='Finance_Facture_Honoraire', Confidence=0.20093333441764116), Prediction(Name='Finance_Facture_Client', Confidence=8.678339824541581e-07), Prediction(Name='Finance_Facture_Banque', Confidence=0.0023526177756139077), Prediction(Name='Finance_Banque_Mandat-Prélèvement', Confidence=1.3976189450204402e-05), Prediction(Name='Juridique_Acte_Vente', Confidence=1.7148859399185312e-05), Prediction(Name='Juridique_Acte_Certificat-Urbanisme', Confidence=6.58127774499917e-06), Prediction(Name='Finance_Banque_PRET', Confidence=0.0006939888862689259), Prediction(Name='Administratif_Ursaff_Déclaration-Sociale-Nominative', Confidence=0.0010716519682318904), Prediction(Name='Courrier_LRAR_Accuse', Confidence=0.00012485588740673847), Prediction(Name='Finance_Banque_IBAN-RIB', Confidence=97.91420102119446), Prediction(Name='Juridique_Acte_Procuration', Confidence=0.0011396345144021325), Prediction(Name='Familles_Administratif_EHF', Confidence=1.820598728954792), Prediction(Name='Administratif_Etat-Civil_Actes', Confidence=0.008789183630142361), Prediction(Name='Finance_Banque_Appel-de-Fond', Confidence=0.00016523656540812226), Prediction(Name='Juridique_Contrat_Accord-Confidentialité', Confidence=0.00012041090258207987), Prediction(Name='Technique_Expertise_Diagnostique', Confidence=0.0013864821085007861), Prediction(Name='Juridique_Statut_KBis', Confidence=0.0066789507400244474), Prediction(Name='Administratif_Etat-Civil_CNI', Confidence=0.0026779996915138327), Prediction(Name='Finance_Banque_AOP', Confidence=0.0022872309273225255), Prediction(Name='Juridique_Statut_Société', Confidence=0.016337975102942437), Prediction(Name='Juridique_Convention_Honoraire', Confidence=0.019085021631326526), Prediction(Name='Juridique_Acte_Certificat Urbanisme', Confidence=9.235207265589906e-07)]
+INFO:Measures:get_key_words executed in 2.7961 seconds 
+1/1 [==============================] - 0s 25ms/step
+INFO:Measures:do_test executed in 4.0054 seconds 
+EntityId='' Name='' ModelName='jupiterB0' PredictedAt='13/12/2024 16:40' BestPrediction='Finance_Banque_BPOP-PRET' BestPredictionConfidence=76.18862390518188 Results=[Prediction(Name='Finance_Banque_BPOP-PRET', Confidence=76.18862390518188), Prediction(Name='Finance_Facture_Fournisseur', Confidence=0.006680631486233324), Prediction(Name='Finance_Banque_Mandat-Creancier', Confidence=0.007872871356084943), Prediction(Name='Finance_Banque_Releve', Confidence=0.2688183216378093), Prediction(Name='Finance_Facture_Honoraire', Confidence=0.3389776451513171), Prediction(Name='Finance_Facture_Client', Confidence=1.3479593209922314), Prediction(Name='Finance_Facture_Banque', Confidence=0.01734876132104546), Prediction(Name='Finance_Banque_Mandat-Prélèvement', Confidence=0.00010649840760379448), Prediction(Name='Juridique_Acte_Vente', Confidence=12.88929432630539), Prediction(Name='Juridique_Acte_Certificat-Urbanisme', Confidence=0.005466067523229867), Prediction(Name='Finance_Banque_PRET', Confidence=8.668790757656097), Prediction(Name='Administratif_Ursaff_Déclaration-Sociale-Nominative', Confidence=0.02402032696409151), Prediction(Name='Courrier_LRAR_Accuse', Confidence=3.5851768775962967e-08), Prediction(Name='Finance_Banque_IBAN-RIB', Confidence=0.0201863469555974), Prediction(Name='Juridique_Acte_Procuration', Confidence=0.05112186772748828), Prediction(Name='Familles_Administratif_EHF', Confidence=0.0003044723598577548), Prediction(Name='Administratif_Etat-Civil_Actes', Confidence=7.168409155156041e-06), Prediction(Name='Finance_Banque_Appel-de-Fond', Confidence=0.010266309982398525), Prediction(Name='Juridique_Contrat_Accord-Confidentialité', Confidence=0.0001276171019526373), Prediction(Name='Technique_Expertise_Diagnostique', Confidence=0.0033991673262789845), Prediction(Name='Juridique_Statut_KBis', Confidence=4.877310288975423e-06), Prediction(Name='Administratif_Etat-Civil_CNI', Confidence=4.394506802896103e-06), Prediction(Name='Finance_Banque_AOP', Confidence=0.0001369537699247303), Prediction(Name='Juridique_Statut_Société', Confidence=0.1200003083795309), Prediction(Name='Juridique_Convention_Honoraire', Confidence=0.029474080656655133), Prediction(Name='Juridique_Acte_Certificat Urbanisme', Confidence=0.0010097804079123307)]
+```
+
+## Extraction de données 
+
+### Code 
+```
+import logging
+import asyncio
+import os
+import sys
+
+
+
+import lxf.settings as settings
+settings.SET_LOGGING_LEVEL=logging.DEBUG
+settings.enable_tqdm=False
+
+from lxf.domain.loan import Pret
+from lxf.extractors.finance import odp_extractor
+from lxf.extractors.finance import iban_extractor
+
+from lxf.services.try_safe import  try_safe_execute_async
+
+
+
+###################################################################
+
+logger = logging.getLogger('test_finance')
+fh = logging.FileHandler('./logs/test_finance.log')
+fh.setLevel(settings.SET_LOGGING_LEVEL)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fh.setFormatter(formatter)
+logger.setLevel(settings.SET_LOGGING_LEVEL)
+logger.addHandler(fh)
+#################################################################
+
+async def do_test_odp(file_path:str)->Pret:
+    result = await try_safe_execute_async(logger,odp_extractor.extract_data,file_path=file_path)
+    return result
+    
+async def do_test_iban(file_path:str)->str :
+    """
+    """
+    result = await try_safe_execute_async(logger,iban_extractor.extract_data,file_path=file_path)
+    return result
+
+if __name__ == "__main__":
+    sys.stdout.reconfigure(line_buffering=True) 
+    pdf_path = "data/ODP.pdf"
+    # pret:Pret=  asyncio.run(do_test_odp(file_path=pdf_path))
+    # if pret!=None:
+    #     print(pret.emprunteurs)
+    iban_pdf="data/rib pm.pdf"
+    txt = asyncio.run(do_test_iban(file_path=iban_pdf))
+    print(txt)
+    
+
+```
+
+### Sortie
+```
+Chargement du modèle SPACY : fr_core_news_lg 
+Angle à corriger -0.39474812150001526
+Facteur de correction d'angle retenue 0.8
+Angle finale retenue -0.31579849720001224
+Rotation
+Angle à corriger -0.39474812150001526
+Facteur de correction d'angle retenue 0.8
+Angle finale retenue -0.31579849720001224
+Rotation
+Angle à corriger -0.14542043209075928
+Facteur de correction d'angle retenue 0.8
+Angle finale retenue -0.11633634567260742
+Rotation
+[IbanCandidate(iban='FR76 XXXXXXXXXXXXXXXX', bic='XXXXX', branch='AG CORTE', bank='CRCAM DE LA CORSE', address='5 COURS PAOLI', city='CORTE', state=None, zip='20250', phone=None, fax=None, www=None, email=None, country='FRANCE', country_iso='FR', account='XXXXXXXXXX', bank_code='XXXXX', branch_code='00040', found='Yes', validation=True, error_msg='13/12/2024 16:46: IBAN.COM retourne le code de validation 001 => IBAN Check digit is correct'), IbanCandidate(iban='XXXXXXXXXX', bic='XXXXX', branch='AG CORTE', bank='CRCAM DE LA CORSE', address='5 COURS PAOLI', city='CORTE', state=None, zip='20250', phone=None, fax=None, www=None, email=None, country='FRANCE', country_iso='FR', account='XXXXXXX', bank_code='12006', branch_code='00040', found='Yes', validation=True, error_msg='13/12/2024 16:46: IBAN.COM retourne le code de validation 001 => IBAN Check digit is correct')]
+```
