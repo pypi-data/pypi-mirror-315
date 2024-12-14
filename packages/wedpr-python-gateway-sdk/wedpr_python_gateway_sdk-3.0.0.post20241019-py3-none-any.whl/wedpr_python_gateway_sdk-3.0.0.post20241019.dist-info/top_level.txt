@@ -1,0 +1,2 @@
+demo
+wedpr_python_gateway_sdk

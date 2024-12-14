@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wedpr-python-gateway-sdk
+Version: 3.0.0.post20241019
+Summary: wedpr-python-gateway-sdk: The gateway sdk for WeDPR
+Home-page: https://github.com/WeBankBlockchain/WeDPR-Component
+Author: WeDPR Development Team
+Author-email: wedpr@webank.com
+License: Apache-2.0
+Keywords: Interactive,Interpreter,Shell,Web
+Platform: Linux
+Platform: Mac OS X
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
