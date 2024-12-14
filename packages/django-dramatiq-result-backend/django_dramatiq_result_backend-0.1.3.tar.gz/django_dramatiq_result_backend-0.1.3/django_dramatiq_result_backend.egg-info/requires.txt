@@ -1,0 +1,7 @@
+django>=3.2
+dramatiq>=1.2
+
+[dev]
+pytest>=7.1
+pytest-cov>=3.0
+pytest-django>=4.5
