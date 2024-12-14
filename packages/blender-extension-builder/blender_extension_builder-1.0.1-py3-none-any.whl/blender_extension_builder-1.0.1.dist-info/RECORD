@@ -1,0 +1,8 @@
+build_blender_extension/__init__.py,sha256=ZwJr7I7a14Wgc-A-QXTrSNRI__1gtRaZsiH2SNmY8ho,3609
+build_blender_extension/__main__.py,sha256=5BjNuyet8AY-POwoF5rGt722rHQ7tJ0Vf0UFUfzzi-I,58
+blender_extension_builder-1.0.1.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+blender_extension_builder-1.0.1.dist-info/METADATA,sha256=oIqXCtCtpwoRTpIsOahh8JQ764pZj0dwDkgjFxz6jT0,43518
+blender_extension_builder-1.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+blender_extension_builder-1.0.1.dist-info/entry_points.txt,sha256=bhPec7hCJD475nJLP0aRvR2dJTYt9CvMaFC9iidNC3Y,73
+blender_extension_builder-1.0.1.dist-info/top_level.txt,sha256=R45g6VHcah4BV9JDbKPHh9h1zuLmFLfk1xPQHLm_3QI,24
+blender_extension_builder-1.0.1.dist-info/RECORD,,
