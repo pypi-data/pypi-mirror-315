@@ -1,0 +1,17 @@
+fast_point_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_point_api/app_factory.py,sha256=cs4MfzM0mkgOwiopEO349LGII3fsBjQrklqjU9YxqaM,1081
+fast_point_api/config.py,sha256=lw6jitBNIkMG_tN8IXU0ePskqbKSAVGRgIb05amDF5g,5290
+fast_point_api/crud.py,sha256=w8te7Upouc2JitW0HvorNUfK9Lz29zam6IdKeUlyr1w,1968
+fast_point_api/endpoints.py,sha256=TuOnxt8EAghqdnzflB7HENgVAKAHvY-Xl-2C4BXYPxA,16511
+fast_point_api/models.py,sha256=GvAqBm65YGLK4TCAwuVHMoe_4JLTFfymWiQjyLFYKWg,834
+fast_point_api/schemas.py,sha256=eT85t_aZ3dtI_PvAWIGAJh6_sTnPSt_k5OBOQvZbews,869
+fast_point_api/utils.py,sha256=U9jLi52iMuQiuE1TJxNUSTtlD9NH1EMDUEgOIgnN7wc,797
+fast_point_api/db_managers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_point_api/db_managers/couchdb_manager.py,sha256=qHvPGfbuCHVH9esJJmdXx5r20L1PYjRvsi-1_83IuPI,57
+fast_point_api/db_managers/mongo_manager.py,sha256=qHvPGfbuCHVH9esJJmdXx5r20L1PYjRvsi-1_83IuPI,57
+fast_point_api/db_managers/postgres_manager.py,sha256=iSsP6XM4vVj4rLBNuWlhzvJI1Amwcyp9HvTYdlUkpxU,58
+fast_point_api-1.0.0.dist-info/LICENSE,sha256=ZwIuHR1I4jOvZK1WBduLQsYVKLyAqj6UuezbygP5TEs,1193
+fast_point_api-1.0.0.dist-info/METADATA,sha256=EO40TtvxjM_HLAhYVo3F7KXfRzKZXFJNytMTR6tEB08,5055
+fast_point_api-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+fast_point_api-1.0.0.dist-info/top_level.txt,sha256=XAIBAENsYWNKRSo_nANazveHf6Nr1YLyndRBeND4hVc,15
+fast_point_api-1.0.0.dist-info/RECORD,,
