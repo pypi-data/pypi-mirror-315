@@ -1,0 +1,89 @@
+Metadata-Version: 2.3
+Name: environmental-risk-metrics
+Version: 0.1.0
+Summary: Calculate environmental risk metrics for a given polygon
+Author-email: Thimm <zwiener@gmail.com>
+Requires-Python: >=3.12
+Requires-Dist: azure-functions>=1.21.3
+Requires-Dist: azure-storage-blob>=12.24.0
+Requires-Dist: fastapi>=0.115.6
+Requires-Dist: geopandas>=1.0.1
+Requires-Dist: geopy>=2.4.1
+Requires-Dist: jupyter-cache>=1.0.1
+Requires-Dist: jupyter>=1.1.1
+Requires-Dist: leafmap>=0.42.5
+Requires-Dist: odc-algo>=0.2.3
+Requires-Dist: odc-stac>=0.3.10
+Requires-Dist: orjson>=3.10.12
+Requires-Dist: papermill>=2.6.0
+Requires-Dist: pint-pandas>=0.6.2
+Requires-Dist: planetary-computer>=1.0.0
+Requires-Dist: plotly>=5.24.1
+Requires-Dist: pyarrow>=18.1.0
+Requires-Dist: pydantic-pint>=0.1
+Requires-Dist: pygbif>=0.6.5
+Requires-Dist: pystac-client>=0.8.5
+Requires-Dist: rasterstats>=0.20.0
+Requires-Dist: rioxarray>=0.18.1
+Requires-Dist: scipy>=1.14.1
+Requires-Dist: supabase>=2.10.0
+Requires-Dist: uvicorn>=0.32.1
+Description-Content-Type: text/markdown
+
+# Environmental Risk Metrics
+
+This project is a Python package that calculates environmental risk metrics for a given polygon.
+
+## Installation
+
+```bash
+pip install environmental-risk-metrics
+```
+
+## Usage
+
+```python
+from environmental_risk_metrics import Sentinel2
+
+# Example usage
+polygon = {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -38.73370947430459,
+              -6.143308439590044
+            ],
+            [
+              -38.73370947430459,
+              -6.144138579435889
+            ],
+            [
+              -38.7327974681142,
+              -6.144138579435889
+            ],
+            [
+              -38.7327974681142,
+              -6.143308439590044
+            ],
+            [
+              -38.73370947430459,
+              -6.143308439590044
+            ]
+          ]
+        ],
+        "type": "Polygon"
+    }
+}
+
+sentinel2 = Sentinel2()
+sentinel2.load_ndvi_images(
+    start_date="2024-06-27",
+    end_date="2024-12-31",
+    polygon=polygon,
+    cropped_image_cloud_cover_threshold=80,
+    entire_image_cloud_cover_threshold=20,
+)
+```
