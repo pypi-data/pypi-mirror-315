@@ -1,0 +1,8 @@
+mcp2210/__init__.py,sha256=j-iwPNNIhgaP__W2djFBpSFB74Pjw184GzVABOgpG5k,229
+mcp2210/mcp2210.py,sha256=YirpsH50mIfQb9ZTA-zYpuqfrcehJKD2-B_6KYJBBqs,31016
+mcp2210/validated_dataclass.py,sha256=-LA361YHT8orLkmG80FMQhFsXsi17WDyg1GpdmzCIQ4,745
+mcp2210_python-1.0.8.dist-info/LICENSE,sha256=7cDRwDRrUXqXaofMGy5k4jbMv_CNAioM3fuUa0nabwg,1071
+mcp2210_python-1.0.8.dist-info/METADATA,sha256=hGe8SINmHkM6BcU_2-TQ3zG3YZnpC5qRM2y9lxK3FyU,732
+mcp2210_python-1.0.8.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+mcp2210_python-1.0.8.dist-info/top_level.txt,sha256=mPZgVXotd8SetkjD6tyQj0m7P6Kr3Bd6BpG0Qt1W3eY,8
+mcp2210_python-1.0.8.dist-info/RECORD,,
