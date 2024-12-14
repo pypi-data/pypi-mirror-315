@@ -1,0 +1,11 @@
+funcnodes_basic/__init__.py,sha256=qxQVn3gdrmJZH7jwmFnxBL5Q9p-y0PBegd6zlt4cydw,517
+funcnodes_basic/dicts.py,sha256=koNJEwIq9ryC7evBpnI-QmR7MBIbgUWqpPpwhB3M69Y,2507
+funcnodes_basic/lists.py,sha256=9kGnovK-oClFatslbIeYne27l2-EPEXZbr_6yQ1B1cY,5835
+funcnodes_basic/logic.py,sha256=SLA2ISn22or2YmuROM8lss_bGNImiWR_ljlcL8Q0zec,4244
+funcnodes_basic/math_nodes.py,sha256=PasNf-1wAvbJ_c-_qeiIDaUVfgPQEREJApeUcTS4FQg,10586
+funcnodes_basic/strings.py,sha256=O6rcxBQJ5eYd765w_tolaD6xMwsNmtBjiPgJ_69tKyA,16429
+funcnodes_basic-0.2.0.dist-info/LICENSE,sha256=21Lj2q2SYKHMY4768_a3pr3q0jY2VYamAHipoodhMDc,34273
+funcnodes_basic-0.2.0.dist-info/METADATA,sha256=SpomJcIAhnTrqOwVmCtVunBFyaYIG7oAx088Y4gQkts,2240
+funcnodes_basic-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+funcnodes_basic-0.2.0.dist-info/entry_points.txt,sha256=Y7-9Rw_0qbyg8MrdLG6zjiEmUYBug_K4TBdJz9MAKxA,76
+funcnodes_basic-0.2.0.dist-info/RECORD,,
