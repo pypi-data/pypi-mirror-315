@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+AlloySustainability.egg-info/PKG-INFO
+AlloySustainability.egg-info/SOURCES.txt
+AlloySustainability.egg-info/dependency_links.txt
+AlloySustainability.egg-info/requires.txt
+AlloySustainability.egg-info/top_level.txt
+AlloySustainability/data/gen_HTHEAs_vs_Ni_df.csv
+AlloySustainability/data/gen_RTHEAs_vs_Fe_df.csv

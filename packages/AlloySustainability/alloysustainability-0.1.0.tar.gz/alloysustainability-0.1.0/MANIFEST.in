@@ -1,0 +1,2 @@
+include AlloySustainability/data/gen_RTHEAs_vs_Fe_df.csv
+include AlloySustainability/data/gen_HTHEAs_vs_Ni_df.csv
