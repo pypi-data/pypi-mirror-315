@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: josels
+Version: 0.1.2
+Summary: Add your description here
+Author: José Schafer
+Author-email: joseignacio.schafer@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: typer>=0.15.1
