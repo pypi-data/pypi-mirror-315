@@ -1,0 +1,5 @@
+tensorflow_kmaddela/__init__.py,sha256=dz2qNU6GI6B6aQzhZ5yZyRC2Q8osEwMLquT_5lMi-FU,17
+tensorflow_kmaddela/tf.py,sha256=5uyBWqdP4rFPinwPNs_rX8G14IWCYltvuRGC1jD0oEk,142
+tensorflow_kmaddela-0.1.4.dist-info/METADATA,sha256=1qU0ZoLpdycf3fEUJk9sd7ZA6qILRhygBYZ5zTAaNfQ,710
+tensorflow_kmaddela-0.1.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+tensorflow_kmaddela-0.1.4.dist-info/RECORD,,
