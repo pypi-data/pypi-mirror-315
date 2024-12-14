@@ -1,0 +1,10 @@
+-r requirements.txt
+
+build
+pre-commit
+pyinstaller
+twine
+
+pytest~=8.3.3
+flake8==7.1.1
+pytest-cov==6.0.0
