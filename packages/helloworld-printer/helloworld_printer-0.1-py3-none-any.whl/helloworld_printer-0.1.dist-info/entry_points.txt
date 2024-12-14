@@ -1,0 +1,2 @@
+[console_scripts]
+helloworld = helloworld.main:helloworld

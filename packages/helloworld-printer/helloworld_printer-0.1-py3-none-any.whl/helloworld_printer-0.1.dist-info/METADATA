@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: helloworld-printer
+Version: 0.1
+Summary: helloworld("print")
+Home-page: https://github.com/kenchou2006/helloworld-print-py
+Author: kenchou2006
+Author-email: kenchou2006@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# helloworld("print")
+
+`helloworld-printer` is a simple Python package that allows you to print custom messages in the command line. It enables you to easily output any message or text in your Python program.
+
+## Features
+
+- Easily print any message from your Python program.
+- Provides a command-line tool that allows users to print messages directly from the terminal.
+
+## Usage
+
+### Import the function
+
+You can import and use the `helloworld` package in your Python program:
+```python
+from helloworld import *
+
+# Use the function to print a message
+helloworld("print")
+```
+
+This will output:
+```plaintext
+print
+```
+
+### Command-line Tool
+
+After installation, you can also use the `helloworld` command directly from the terminal to print a message:
+
+```bash
+helloworld "print"
+```
+
+This will output:
+```plaintext
+print
+``` 
