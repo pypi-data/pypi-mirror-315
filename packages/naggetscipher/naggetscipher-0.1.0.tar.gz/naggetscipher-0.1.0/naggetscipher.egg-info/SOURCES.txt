@@ -1,0 +1,8 @@
+README.md
+setup.py
+naggetscipher/__init__.py
+naggetscipher/cipher.py
+naggetscipher.egg-info/PKG-INFO
+naggetscipher.egg-info/SOURCES.txt
+naggetscipher.egg-info/dependency_links.txt
+naggetscipher.egg-info/top_level.txt
