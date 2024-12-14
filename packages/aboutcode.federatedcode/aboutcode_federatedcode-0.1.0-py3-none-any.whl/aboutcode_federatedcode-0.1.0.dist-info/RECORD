@@ -1,0 +1,16 @@
+aboutcode/__init__.py,sha256=Y5SSTX3zYhXJ2tWFhl-Kh-FkdFhpt1G8xVmMAfCFHic,436
+aboutcode/federatedcode/CHANGELOG.rst,sha256=JcuSgi5Tdn2Cgjad0pWe03rrcN_QYHivu_cbQzBge9c,144
+aboutcode/federatedcode/README.rst,sha256=7_vSilWZmYqFhL5ONaWz-_UMZZDXb4wiayzOSJ9DbOE,2554
+aboutcode/federatedcode/__init__.py,sha256=AQ-_6Bds8GiCIHAnvq6S7YFRufPul3xEAurVnOBSBak,391
+aboutcode/federatedcode/cli.py,sha256=ckErPXPw_bQwCADKSCJ7vGFzNfSYqiYX33O_bfQ3rDU,1355
+aboutcode/federatedcode/client/__init__.py,sha256=JapmIbMrpZFPWbYv_l4J3QgLxWDWmqi5S95KYqtPXic,3027
+aboutcode/federatedcode/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aboutcode/federatedcode/contrib/django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aboutcode/federatedcode/contrib/django/models.py,sha256=dBzgAZFSNfE5eUtiVLBMfsQrKGTkSHWU_BF10uM86fI,1101
+aboutcode/federatedcode/contrib/django/utils.py,sha256=SW_b49YcasuTFVjGgVh0C2gf6jF6sp6huscJ_BQARM4,1094
+aboutcode_federatedcode-0.1.0.dist-info/entry_points.txt,sha256=O4T-eHRsOCh8f_LuNaQsBTYmpwStuCA-mx9BKi2yW2I,69
+aboutcode_federatedcode-0.1.0.dist-info/WHEEL,sha256=5CC323EWxMIcr8TpN8l60qWiPABVmDOTYKdnRvWIfkw,81
+aboutcode_federatedcode-0.1.0.dist-info/METADATA,sha256=pfRMDaOcNVNZDBT8PD9QTLMpcDoZGFBya31Szscdqxg,3462
+aboutcode_federatedcode-0.1.0.dist-info/NOTICE,sha256=SM7ELF-ckyHeexaDSX7P2EqDbjYkb6S8c_CWcsdMyXM,752
+aboutcode_federatedcode-0.1.0.dist-info/apache-2.0.LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aboutcode_federatedcode-0.1.0.dist-info/RECORD,,

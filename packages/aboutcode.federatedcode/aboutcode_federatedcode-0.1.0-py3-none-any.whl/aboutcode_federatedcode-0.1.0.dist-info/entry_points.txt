@@ -1,0 +1,3 @@
+[console_scripts]
+federatedcode=aboutcode.federatedcode.cli:handler
+
