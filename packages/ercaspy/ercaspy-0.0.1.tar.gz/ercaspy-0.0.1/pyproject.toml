@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ercaspy"
+dynamic = ["version"]
+description = 'Python Library for Ercas Pay API'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Ifechukwu T. Ogidi", email = "ogidiifechukwu6@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/Ifechukwu T. Ogidi/ercaspy#readme"
+Issues = "https://github.com/Ifechukwu T. Ogidi/ercaspy/issues"
+Source = "https://github.com/Ifechukwu T. Ogidi/ercaspy"
+
+[tool.hatch.version]
+path = "src/ercaspy/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/ercaspy tests}"
+
+[tool.coverage.run]
+source_pkgs = ["ercaspy", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/ercaspy/__about__.py",
+]
+
+[tool.coverage.paths]
+ercaspy = ["src/ercaspy", "*/ercaspy/src/ercaspy"]
+tests = ["tests", "*/ercaspy/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
