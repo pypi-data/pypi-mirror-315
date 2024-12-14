@@ -1,0 +1,10 @@
+ercaspy/__about__.py,sha256=Q8raD6k02z4DoYniAz3iui5d6EdM1el95SMTLXJbeCA,18
+ercaspy/__init__.py,sha256=RGC0xqXeFZ1F3dIvSMd9SKElN705ui-p7u2caJFxcpM,104
+ercaspy/_api_call.py,sha256=8esP8xx-jw8gw9ON8al5ngWgj3bVagR4Rnx4bxPa2vQ,1551
+ercaspy/_checkout.py,sha256=_8wRHZPbHPr88ks5O0PWklE3KnNtdWWhSJmIprr2bPg,1580
+ercaspy/_config.py,sha256=L0mDrReN4fXsJyC6yJi0WVJ-5bvhyqPiflaZWHp5WgE,805
+ercaspy/error.py,sha256=BSuH8pNl3Etz8DOm2WJNaHWaRdmiAXX9EMwU6qcyjCY,987
+ercaspy-0.0.1.dist-info/METADATA,sha256=j8aWeCYZGked19hctYcBy-WdpZMFOAoFjx-rLR1LDKo,985
+ercaspy-0.0.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+ercaspy-0.0.1.dist-info/licenses/LICENSE,sha256=tjqa2MOHJu_LbrJ6AUyHIZ-IlrcyTv32rJRb5O_x-kc,1072
+ercaspy-0.0.1.dist-info/RECORD,,
