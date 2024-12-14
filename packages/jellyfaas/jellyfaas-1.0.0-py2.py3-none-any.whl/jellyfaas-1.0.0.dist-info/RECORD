@@ -1,0 +1,13 @@
+jellyfaas/__init__.py,sha256=om7n6Kbb8fEyaypYwkl5TpyGLPLAeCxidc_h79iFBxw,390
+jellyfaas/ai_client.py,sha256=Tm05tVlMAVFCPrQhWrS1MxjXPiqcspRwhccnbKNWlKk,11921
+jellyfaas/ai_config.py,sha256=Md2i1_mFm6gF7q3hdTUcwKasZ9L2kSUi396T0QJ3gmI,2397
+jellyfaas/ai_provider.py,sha256=yCCg1gNo3R4wUocII8hDyluUq55Qh0XOO5cjwIs_Nkk,64
+jellyfaas/client.py,sha256=I8fZjp18H2Lu8Czf51b4KAbV5YLxJXEd6g8aRzpryHU,15439
+jellyfaas/config.py,sha256=rOA6KEzDyyDiPagatMGlUluiSLq1GGqUcVluoSO_o3I,3143
+jellyfaas/exceptions.py,sha256=oMS53_pCZ4nyQT0L8skrWBMguoUNhrrRA1cgprsuGZ4,680
+jellyfaas/structs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jellyfaas/structs/function_requirements.py,sha256=_oh5GbLvd7OQTybP5p4lKzX4jEZPqVxOPo8CRnb3vZA,3318
+jellyfaas-1.0.0.dist-info/METADATA,sha256=fn8AabSg5znVlqrAht80FuWypghEXxMQYqSSaP4b2C4,2286
+jellyfaas-1.0.0.dist-info/WHEEL,sha256=aO3RJuuiFXItVSnAUEmQ0yRBvv9e1sbJh68PtuQkyAE,105
+jellyfaas-1.0.0.dist-info/licenses/LICENSE,sha256=_3SmTP4pJDOHgTFfBHodkwZ5xVDImGbRq6FT2sMqyBU,1071
+jellyfaas-1.0.0.dist-info/RECORD,,
