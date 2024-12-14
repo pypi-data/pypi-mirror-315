@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: langer-updater
+Version: 1.0.2
+Author: Ngone
+Author-email: ngone@gmail.com
+License: GPL-3
+Description-Content-Type: text/markdown
+
+# langer-update
+
+[![PyPI version](https://badge.fury.io/py/yourpackagename.svg)](https://badge.fury.io/py/yourpackagename)
+
+YourPackageName is a Python package designed to [describe the primary purpose of your package]. With this package, you can [list key features or functionalities].
+
+## Features
+
+- Feature 1: Brief description.
+- Feature 2: Brief description.
+- Feature 3: Brief description.
+
+## Installation
+
+Install YourPackageName using pip:
+
+```bash
+pip install yourpackagename
+```
+
+## Usage
+
+Here's a basic example to get started:
+
+```python
+from yourpackagename import YourMainClass
+
+# Initialize the class or function
+example = YourMainClass(parameters)
+
+# Use the functionality
+result = example.do_something()
+print(result)
+```
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out to [Your Email or GitHub Profile].
