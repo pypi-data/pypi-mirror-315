@@ -1,0 +1,8 @@
+bugbear-stubs/METADATA.toml,sha256=nRqfNprkEHvfbfBZQp8RP7VS2vvaiyJ_oT2alCAlE6I,149
+bugbear-stubs/__init__.pyi,sha256=3l2yS3sXsUhAi3zcOtEqfgi9jBW_e-MDxFCqzRuSSJY,848
+bugbear-stubs/py.typed,sha256=la67KBlbjXN-_-DfGNcdOcjYumVpKG_Tkw-8n5dnGB4,8
+types_flake8_bugbear-24.12.12.20241214.dist-info/LICENSE,sha256=KV-FOMlK5cMEMwHPfP8chS2ranhqjd7kceBhtA1eyr4,12657
+types_flake8_bugbear-24.12.12.20241214.dist-info/METADATA,sha256=e9OpJg74wfT1swFdHtVnUW7YFBGhrrGjgNXaBKC5pa4,2099
+types_flake8_bugbear-24.12.12.20241214.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+types_flake8_bugbear-24.12.12.20241214.dist-info/top_level.txt,sha256=EdgP8zRCntTX3Ri6aeUhvIEB5W62wEm_QMAdMLERyX4,14
+types_flake8_bugbear-24.12.12.20241214.dist-info/RECORD,,
