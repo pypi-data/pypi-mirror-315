@@ -1,0 +1,14 @@
+examples/main.py,sha256=0c9ZYAje5CVvYWqZ_B4KPtW_jCA66S0hYnCrKfdJIPQ,2165
+py_pg_notify/__init__.py,sha256=lUeMOzKBCkMpulbStyQgS3pZ3hWqlWezeTTckoYUY3E,123
+py_pg_notify/listener.py,sha256=LNbi69MLzR9RySMf1wth0nocwJ1LwY-jiOkRNwQYI5g,3085
+py_pg_notify/notifier.py,sha256=I1DpPNE8pr0MwOz0fudNXcA3vXxld_jYMgv5fLBDmxQ,7641
+py_pg_notify/pgmanager.py,sha256=9E6lgkMKGhvr-s4YwzXU-yQxtf_TPYfnUpFIoF9uSFA,3300
+py_pg_notify/utils.py,sha256=qrkM-G33cwVikjrqdNeQ1jFUa6u24w5HnVYEiLlVadw,1427
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_listener.py,sha256=fbduet5glNVo9LYLYHtrfdz8Nwp7NNsnbhRFA3V_Hj8,5409
+tests/test_notifier.py,sha256=60fW3Al63vV-KVSXSsvhm7N8K0gVZRAVgw6t2ghfgQ8,13293
+py_pg_notify-0.1.1.dist-info/LICENSE,sha256=zLUHYuisNSCXB2HPiXd8dbrLXUJWEnOZ37GliWcmhHo,1088
+py_pg_notify-0.1.1.dist-info/METADATA,sha256=lBY3zgjlJObkcfHwJb4so4Zwx_U2T2baVPHlWlW0Tpc,5531
+py_pg_notify-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+py_pg_notify-0.1.1.dist-info/top_level.txt,sha256=g_Z7sE07ig9GpkO03ngyW4JBZ8cCq_DPpRzshrCMbF4,28
+py_pg_notify-0.1.1.dist-info/RECORD,,
