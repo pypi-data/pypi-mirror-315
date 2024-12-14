@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+favicon.png
+my.zip
+setup.py
+langer_update.egg-info/PKG-INFO
+langer_update.egg-info/SOURCES.txt
+langer_update.egg-info/dependency_links.txt
+langer_update.egg-info/not-zip-safe
+langer_update.egg-info/top_level.txt
+resources/image1.png
