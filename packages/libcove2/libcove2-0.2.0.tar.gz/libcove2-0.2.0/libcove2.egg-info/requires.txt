@@ -1,0 +1,10 @@
+requests
+
+[dev]
+pytest
+black
+isort
+flake8
+mypy
+sphinx
+odsc-default-sphinx-theme
