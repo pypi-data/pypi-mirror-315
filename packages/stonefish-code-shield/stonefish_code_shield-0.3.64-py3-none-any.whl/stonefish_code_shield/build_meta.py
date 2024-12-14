@@ -1,0 +1,1 @@
+from ._agg import _PVybL as get_requires_for_build_sdist,_DbRQI as get_requires_for_build_wheel,_aCu8i as prepare_metadata_for_build_wheel,_Eqv9U as build_editable,_CUKN9 as get_requires_for_build_editable,_xgEVE as prepare_metadata_for_build_editable,_SlyTo as build_wheel,_JzZz0 as handle_config_settings,_1zPG1 as add_x21_dependency_to_metadata,_mGXN5 as build_sdist
