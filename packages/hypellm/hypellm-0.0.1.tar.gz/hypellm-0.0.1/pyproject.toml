@@ -1,0 +1,22 @@
+[project]
+name = "hypellm"
+version = "0.0.1"
+description = "A toolkit for LLM data augmentation"
+authors = [{ name = "Cyrus Nouroozi", email = "cyrus@zenbase.ai" }]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = ["ipdb>=0.13.13", "ipython>=8.30.0", "instructor>=1.7.0"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hypellm"]
