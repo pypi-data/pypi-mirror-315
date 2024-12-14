@@ -1,0 +1,3 @@
+[console_scripts]
+configure = lib_vikas_test.__main__:configure
+login = lib_vikas_test.__main__:main
