@@ -1,0 +1,13 @@
+LICENSE
+README.md
+iox.py
+setup.py
+tests.py
+./iox.py
+./setup.py
+./tests.py
+iox.egg-info/PKG-INFO
+iox.egg-info/SOURCES.txt
+iox.egg-info/dependency_links.txt
+iox.egg-info/entry_points.txt
+iox.egg-info/top_level.txt
