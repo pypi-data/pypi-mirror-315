@@ -1,0 +1,7 @@
+httpx[http2]>=0.27.2
+
+[dev]
+pytest
+pytest-asyncio
+pytest-cov
+ruff>=0.7
