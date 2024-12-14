@@ -1,0 +1,2 @@
+[console_scripts]
+chapagol = chapagol.cli:app
