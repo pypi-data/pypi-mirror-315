@@ -1,0 +1,9 @@
+xssecure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xssecure/sanitize.py,sha256=9TEzB3NsIhRSg7eZ1Zao8BfZUSt_ir9Yz1NFsG1rShk,885
+xssecure/whitelist_attributes.txt,sha256=_Q6sdf1PbQ6nL4purGp36q2-3LCh0vo5OmSxZuwTFz4,419
+xssecure/whitelist_tags.txt,sha256=wPqZc6bbeLIBo5ICyPArc51XeLteXqOJyxeWtu3ls5I,117
+xssecure-0.0.4.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+xssecure-0.0.4.dist-info/METADATA,sha256=nmVCWNllALHzG68uL9rjnPqivTzxaOIkukTByZoXl6w,603
+xssecure-0.0.4.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+xssecure-0.0.4.dist-info/top_level.txt,sha256=VELi8Q-EocFSg0ciEIWN_8sSwCxLNorNqsL7M5z-YkM,9
+xssecure-0.0.4.dist-info/RECORD,,
