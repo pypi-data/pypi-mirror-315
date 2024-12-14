@@ -1,0 +1,2 @@
+[jupyter_server.IdentityProviders]
+wedpr-identity-provider = authenticator.wedpr_identity_provider.WeDPRIdentityProvider

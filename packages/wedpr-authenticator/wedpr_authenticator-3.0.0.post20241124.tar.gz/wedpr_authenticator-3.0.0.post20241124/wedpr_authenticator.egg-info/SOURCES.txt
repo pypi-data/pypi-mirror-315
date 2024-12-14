@@ -1,0 +1,14 @@
+CHANGELOG.md
+MANIFEST.in
+requirements.txt
+setup.py
+authenticator/__init__.py
+authenticator/wedpr_identity_provider.py
+authenticator/wedpr_token_content.py
+authenticator/wedpr_user_information.py
+wedpr_authenticator.egg-info/PKG-INFO
+wedpr_authenticator.egg-info/SOURCES.txt
+wedpr_authenticator.egg-info/dependency_links.txt
+wedpr_authenticator.egg-info/entry_points.txt
+wedpr_authenticator.egg-info/requires.txt
+wedpr_authenticator.egg-info/top_level.txt
