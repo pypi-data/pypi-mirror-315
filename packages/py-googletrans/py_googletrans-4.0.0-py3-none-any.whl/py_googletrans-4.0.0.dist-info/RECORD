@@ -1,0 +1,13 @@
+googletrans/__init__.py,sha256=QVL2EAl4jLzCL4lSzeEbbKh5pwQrQWsIYA5HJSHgTnU,235
+googletrans/client.py,sha256=_hX8Pv0Er_X4OZWJbHB-tpkkVTUz346WARUMRt9mXNM,14628
+googletrans/constants.py,sha256=nlS1qy9XIc5BSEfKqevx4tsg4QjXUUYugRsaWMBOOuk,11649
+googletrans/gtoken.py,sha256=3qVzwLof-HS5PFFEraUDak0EdvUWHyolbiDypRheUVI,7770
+googletrans/models.py,sha256=s15w_CsEWhj6iD_G2PgsGoZ7DOzl4e63VJZob3w8_p8,1745
+googletrans/urls.py,sha256=UfmQF53791W-2rCx9mSTzGMUcc3NioblFKSA-dSGsDA,175
+googletrans/utils.py,sha256=Yi61cE7v33Aq9kfTvZVFh4am8KGNM_VntB1mE9pVC-8,2321
+py_googletrans-4.0.0.dist-info/LICENSE,sha256=WBM2Ad-P6SHHkQtDIQ1yTaFnUDezNlLZDd4QGp_NoZc,1077
+py_googletrans-4.0.0.dist-info/METADATA,sha256=UZk6UD1cxgzsE7sk2G31ODavgttHwuQF2w31ov9THAU,1190
+py_googletrans-4.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+py_googletrans-4.0.0.dist-info/entry_points.txt,sha256=KXGVUKn3JiLemEdcwAO5JhrOrXnt_HdjLN7MGkj7IU0,52
+py_googletrans-4.0.0.dist-info/top_level.txt,sha256=JFx8gV9qgBEuUBMSRlv2RvTCqCpHUD5JZ_rsHj8RL_A,12
+py_googletrans-4.0.0.dist-info/RECORD,,
