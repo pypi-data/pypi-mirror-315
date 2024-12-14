@@ -1,0 +1,5 @@
+PyYAML
+schema
+pyunifi
+urllib3
+prometheus-client

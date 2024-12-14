@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+src/unifi_backup/__init__.py
+src/unifi_backup/__main__.py
+src/unifi_backup/cli.py
+src/unifi_backup.egg-info/PKG-INFO
+src/unifi_backup.egg-info/SOURCES.txt
+src/unifi_backup.egg-info/dependency_links.txt
+src/unifi_backup.egg-info/entry_points.txt
+src/unifi_backup.egg-info/requires.txt
+src/unifi_backup.egg-info/top_level.txt
