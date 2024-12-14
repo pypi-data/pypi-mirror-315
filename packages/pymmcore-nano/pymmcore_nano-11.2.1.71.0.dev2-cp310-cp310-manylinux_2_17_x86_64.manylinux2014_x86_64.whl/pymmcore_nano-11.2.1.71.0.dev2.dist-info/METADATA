@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: pymmcore-nano
+Version: 11.2.1.71.0.dev2
+Summary: Alternative python bindings for MMCore, Micro-Manager's device control layer
+Author: Micro-Manager Team
+Author-Email: Mark Tsuchida <marktsuchida@gmail.com>, Talley Lambert <talley.lambert@gmail.com>
+License: LGPL-2.1-only
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: numpy>=1.25
+Description-Content-Type: text/markdown
+
+# pymmcore-nano
+
+[![License](https://img.shields.io/pypi/l/pymmcore-nano.svg?color=green)](https://github.com/pymmcore-plus/pymmcore-nano/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/pymmcore-nano.svg?color=green)](https://pypi.org/project/pymmcore-nano)
+[![Python Version](https://img.shields.io/pypi/pyversions/pymmcore-nano.svg?color=green)](https://python.org)
+[![CI](https://github.com/pymmcore-plus/pymmcore-nano/actions/workflows/ci.yml/badge.svg)](https://github.com/pymmcore-plus/pymmcore-nano/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/pymmcore-plus/pymmcore-nano/branch/main/graph/badge.svg)](https://codecov.io/gh/pymmcore-plus/pymmcore-nano)
+
+Experimental python bindings for CMMCore using nanobind.
+
+## Clone repo
+
+```sh
+git clone https://github.com/pymmcore-plus/pymmcore-nano.git
+git submodule update --init
+```
+
+## Setup dev environment (editable install)
+
+Make sure you have uv installed: <https://docs.astral.sh/uv/getting-started/installation/>
+
+This project uses `just` as a task runner.
+If you have `just` installed (e.g. `brew install just`), you can fully setup the project with:
+
+```sh
+just install
+```
+
+If you prefer not to install `just` globally, you can install it with the rest of the
+project dependencies using uv.  Then activate the environment and call `just install`
+
+```sh
+uv sync --no-install-project
+. .venv/bin/activate  # Windows: .venv\Scripts\activate
+just install
+```
+
+### test
+
+Regardless of whether the environment is active, you can run:
+
+```sh
+just test
+# or
+just test-cov
+```
+
+or, if the environment is active:
+
+```sh
+pytest
+```
