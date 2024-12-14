@@ -1,0 +1,6 @@
+pcsx2_interface/__init__.py,sha256=HOa5z-Y9A39WYB-2iElhRaOMxm35oa3R3ZdCCd1Wz6U,47
+pcsx2_interface/pcsx2_interface.cpython-310-x86_64-linux-gnu.so,sha256=jMutFASxq0Rh7iZJ86srYlFadhr7SGsLGDQO_QvrrTM,229344
+pcsx2_interface-0.0.3.dist-info/METADATA,sha256=56l1pxNHqfYOdX4dX-EgTlF9RnFexAB4LxcagQSMIBU,696
+pcsx2_interface-0.0.3.dist-info/RECORD,,
+pcsx2_interface-0.0.3.dist-info/WHEEL,sha256=1CrknVuqXKbY6aAmKspEzCcwf6ALg-Z5HpOWUItJRZc,156
+pcsx2_interface-0.0.3.dist-info/licenses/LICENSE,sha256=7jsqMQ1iQlHIawDqYPzGymXMcDKUuGwpM-mfrMRRBP0,1071
