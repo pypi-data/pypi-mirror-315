@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lib_vikas_test
+Version: 0.0.2
+Summary: Logs you into work
+Home-page: https://github.com/AeroVikas/lib_vikas_test.git
+Download-URL: https://github.com/AeroVikas/lib_vikas_test.git
+Author: Vikas Goel
+Author-email: vikas.aero@gmail.com
+Maintainer: Vikas Goel
+Maintainer-email: vikas.aero@gmail.com
+License: BSD
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Keywords: Furuness,Login,login,terminal
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: pynput
+Requires-Dist: pytest
