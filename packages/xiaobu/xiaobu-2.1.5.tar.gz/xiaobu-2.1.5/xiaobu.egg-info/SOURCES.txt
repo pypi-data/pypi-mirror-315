@@ -1,0 +1,16 @@
+setup.py
+test/test.py
+xiaobu/center_api.py
+xiaobu/xiaobu_center.py
+xiaobu/xiaobu_data.py
+xiaobu/xiaobu_erp.py
+xiaobu.egg-info/PKG-INFO
+xiaobu.egg-info/SOURCES.txt
+xiaobu.egg-info/dependency_links.txt
+xiaobu.egg-info/requires.txt
+xiaobu.egg-info/top_level.txt
+xiaobu/api/aftersale.py
+xiaobu/api/export.py
+xiaobu/api/shop.py
+xiaobu/api/user.py
+xiaobu/api/wave_check.py
