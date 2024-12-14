@@ -1,0 +1,2 @@
+[console_scripts]
+add-psd-layer = add_psd_layer.add_image_as_layer:main
