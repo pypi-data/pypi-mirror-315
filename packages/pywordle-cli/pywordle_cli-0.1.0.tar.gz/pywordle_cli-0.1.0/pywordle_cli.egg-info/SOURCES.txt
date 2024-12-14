@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+game-example.png
+setup.py
+pywordle_cli.egg-info/PKG-INFO
+pywordle_cli.egg-info/SOURCES.txt
+pywordle_cli.egg-info/dependency_links.txt
+pywordle_cli.egg-info/entry_points.txt
+pywordle_cli.egg-info/requires.txt
+pywordle_cli.egg-info/top_level.txt
+wordle/__init__.py
+wordle/wordle.py
+wordle/data/dictionary.json
