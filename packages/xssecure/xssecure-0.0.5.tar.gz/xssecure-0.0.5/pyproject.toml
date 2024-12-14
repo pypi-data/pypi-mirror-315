@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "bs4"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "xssecure"
+version = "0.0.5"
+authors = [
+  { name="Vasily Khromov, Anton Sazonov", email="vasyakhromov2010@gmail.com" },
+]
+description = "A library to sanitize HTML code"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "bs4==0.0.2",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.txt"]
+
+[project.urls]
+Homepage = "https://github.com/Zvezdo4et10/XSSecure"
+Issues = "https://github.com/Zvezdo4et10/XSSecure/issues"
