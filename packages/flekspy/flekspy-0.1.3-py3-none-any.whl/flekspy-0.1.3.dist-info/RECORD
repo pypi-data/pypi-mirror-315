@@ -1,0 +1,17 @@
+flekspy/__init__.py,sha256=XvJH2k694JlvR4grs7hZ_6HCghvwW1lnwbVHgN2pJdI,1324
+flekspy/flekspy.py,sha256=i7T9Ehy3KoOBGoBIVO-wnnVYVzfK86-2FNNETbZvrHU,60
+flekspy/idl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flekspy/idl/idl_format_data.py,sha256=mwjP4jEl9cLDOoQcWfwx2jtS0omMLahJQ3oz5VY-eHY,20780
+flekspy/plot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flekspy/plot/streamplot.py,sha256=2dWmN6U-rAgGpDfAkC7QYuiauyZcdjKVTiVtEuAipi0,22900
+flekspy/tp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flekspy/tp/test_particles.py,sha256=M8DnltUYvqkjOVIr80C7Vq8gvEKEy81ELMauU-eZG6A,14804
+flekspy/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flekspy/util/data_container.py,sha256=w585nUQBnynUY4aV81Aj0SeT99nO5lAGWPt-R0tykiQ,21934
+flekspy/util/utilities.py,sha256=tp86DYmydbk0V6vk7ZdRDixUKgNT-RAbS00JgpprUtk,3517
+flekspy/yt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flekspy/yt/yt_interface.py,sha256=wTHjWZEaI4MIeGl2NuxkG6fAObyCR8HNqzY4-iDqIgA,17230
+flekspy-0.1.3.dist-info/LICENSE.md,sha256=pjpXEVY9y0CLgvFAc4vYXFQsyzWoKZ-0fB6r-HkJbFs,1143
+flekspy-0.1.3.dist-info/METADATA,sha256=37PrqsTZmfKgB2xu1ddyvdx9GQLHPYLplzpUPS1cn7Y,1780
+flekspy-0.1.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+flekspy-0.1.3.dist-info/RECORD,,
