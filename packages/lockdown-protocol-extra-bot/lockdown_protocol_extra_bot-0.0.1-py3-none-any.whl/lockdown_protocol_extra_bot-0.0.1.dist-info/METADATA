@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: lockdown_protocol_extra_bot
+Version: 0.0.1
+Summary: Telegram bot for camera access. 
+Author-email: The220th <The220th@gmail.com>
+Project-URL: Homepage, https://github.com/The220th/lockdown_protocol_extra_bot
+Project-URL: Issues, https://github.com/The220th/lockdown_protocol_extra_bot/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ksupk
+Requires-Dist: telebot
+Requires-Dist: argparse
+
+ # lockdown_protocol_extra_bot
+ 
+Let u to add some extra challenges for players of lockdown protocol with telegram bot.

@@ -1,0 +1,13 @@
+lockdown_protocol_extra_bot/__init__.py,sha256=rQkzUVSDulem3B0vWndD6a8yzbfPdSfhn0GXvADVuys,39
+lockdown_protocol_extra_bot/distribute_challenges.py,sha256=PZXWqhT_ImEi1wZHe5rv851Wqsfk8h7Qfrp_cd-LR3k,1862
+lockdown_protocol_extra_bot/gen_challenges.py,sha256=hvJkUPzsFef-EutGNTCZvA0IKQ0NF3vCExhb0P5h1OI,14605
+lockdown_protocol_extra_bot/main.py,sha256=cNgqMd21eJ462qi2AcghcOxWfyxbQSH4sA_uCxFMNgs,576
+lockdown_protocol_extra_bot/parsing.py,sha256=2oUtYbRMdpOU9rM07Zm-H-2lQwdkUkmwpVoYNQqClWk,569
+lockdown_protocol_extra_bot/settings_handler.py,sha256=MuVPcn-TWJYIzAve29ydbkGrhh5nqJ2esjlc7GEnmsY,1457
+lockdown_protocol_extra_bot/telegram_bot.py,sha256=rsLZbzQOq0oV0on_k17lrt50dpj3mAZ5aCL7RqcUpR8,6454
+lockdown_protocol_extra_bot-0.0.1.dist-info/LICENSE,sha256=NUWzrphEGbv6cISGGsfMYsaldTYr9XMmvdbb_1apjB4,1065
+lockdown_protocol_extra_bot-0.0.1.dist-info/METADATA,sha256=NCC_pu79Ttb2TbISDssPR8w6BtEUshz456qHnBNWewc,740
+lockdown_protocol_extra_bot-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+lockdown_protocol_extra_bot-0.0.1.dist-info/entry_points.txt,sha256=huZsSmy7bre11HUH2u20eFP_mzmzydLnlrVLW0QeDNE,86
+lockdown_protocol_extra_bot-0.0.1.dist-info/top_level.txt,sha256=rbuOMwFcPaStc-OvNljFT6ZiVCTd9mzvExtdxI68HGA,28
+lockdown_protocol_extra_bot-0.0.1.dist-info/RECORD,,
