@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: xssecure
+Version: 0.0.5
+Summary: A library to sanitize HTML code
+Author-email: "Vasily Khromov, Anton Sazonov" <vasyakhromov2010@gmail.com>
+Project-URL: Homepage, https://github.com/Zvezdo4et10/XSSecure
+Project-URL: Issues, https://github.com/Zvezdo4et10/XSSecure/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4==0.0.2
+
+# XSSecure
+
+Library for sanitization of HTML
