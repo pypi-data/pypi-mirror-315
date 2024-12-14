@@ -1,0 +1,5 @@
+py_rattler_build-0.1.0.dist-info/METADATA,sha256=59yeE9i4O9BSEx3S6TrMzJaizpZy-LWADYDMWOYll6I,903
+py_rattler_build-0.1.0.dist-info/WHEEL,sha256=rJU396RCqZSpE8AgiCunijhJCV7l3GZLC4smu8bgGxg,119
+rattler_build/__init__.py,sha256=67Rjmk3EXQUhf_cy4NjxPV0tvG2yiZ70xmMJ8Q1C1a0,170
+rattler_build/rattler_build.abi3.so,sha256=Q19dIj97BGZiMnoXdbHJh-mf4a8rX89X6XME8oocPkA,454744
+py_rattler_build-0.1.0.dist-info/RECORD,,
