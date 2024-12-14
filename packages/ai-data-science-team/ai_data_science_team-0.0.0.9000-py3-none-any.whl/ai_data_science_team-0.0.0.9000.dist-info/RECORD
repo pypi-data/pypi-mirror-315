@@ -1,0 +1,9 @@
+ai_data_science_team/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai_data_science_team/_version.py,sha256=804c98kcVfACZVVhiq8Z8G5icGH_Swif7_kFpUgDlI8,26
+ai_data_science_team/agents.py,sha256=eYc2CFTZ9o4AKZwp_LmLRcm1PggMuKiaQijb2s93fs4,11922
+ai_data_science_team/orchestration.py,sha256=xiIFOsrLwPdkSmtme7wNCCGv8XopnMTNElNzlZokL-4,303
+ai_data_science_team-0.0.0.9000.dist-info/LICENSE,sha256=Xif0IRLdd2HGLATxV2EVp91aSY6KOuacRr_6BorKGzA,1084
+ai_data_science_team-0.0.0.9000.dist-info/METADATA,sha256=KQ-pwCfosLP-vHRBs2AJ8LqHaRi1OsjQ82sHDdnc7Rk,4770
+ai_data_science_team-0.0.0.9000.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ai_data_science_team-0.0.0.9000.dist-info/top_level.txt,sha256=CnoMgOphCoAdGTLueWdCVByVyjwOubaGiTB1lchdy4M,21
+ai_data_science_team-0.0.0.9000.dist-info/RECORD,,
