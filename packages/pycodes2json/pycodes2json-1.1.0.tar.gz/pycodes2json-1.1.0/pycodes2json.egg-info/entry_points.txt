@@ -1,0 +1,4 @@
+[console_scripts]
+json2py = py2json.main:main_json2py
+py2json = py2json.main:main_py2json
+
