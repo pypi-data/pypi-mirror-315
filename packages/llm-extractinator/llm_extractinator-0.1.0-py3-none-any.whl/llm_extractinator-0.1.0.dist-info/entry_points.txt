@@ -1,0 +1,2 @@
+[console_scripts]
+extractinate = your_package.main:extract_data
