@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pychnt
+Version: 0.1
+Summary: Thư viện lấy thông tin Instagram
+Author: hnt
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: instaloader>=4.7
+
+# PyChnt
+
+Thư viện Python để lấy thông tin người dùng Instagram.
+
+## Cài đặt
+
+```bash
+pip install pychnt
