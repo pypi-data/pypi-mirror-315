@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/xssource/__init__.py
+src/xssource/sanitize.py
+src/xssource.egg-info/PKG-INFO
+src/xssource.egg-info/SOURCES.txt
+src/xssource.egg-info/dependency_links.txt
+src/xssource.egg-info/top_level.txt
