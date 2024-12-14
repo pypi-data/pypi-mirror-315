@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+demo_project_et123.egg-info/PKG-INFO
+demo_project_et123.egg-info/SOURCES.txt
+demo_project_et123.egg-info/dependency_links.txt
+demo_project_et123.egg-info/requires.txt
+demo_project_et123.egg-info/top_level.txt
+package/__init__.py
+package/modul1.py
+package/modul2.py
