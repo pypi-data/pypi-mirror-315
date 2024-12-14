@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+
+  <!-- Table of contents -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-toc@1.0.0/dist/toc.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: "borco-shiboken-example",
+      repo: "https://gitlab.com/iborco-pyside/demos/borco-shiboken-example",
+      loadSidebar: true,
+      subMaxLevel: 6,
+      loadFooter: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+      },
+      count: {
+        countable: true,
+        position: "top",
+        margin: "10px",
+        float: "right",
+        fontsize: "0.9em",
+        color: "rgb(90,90,90)",
+        language: "english",
+        localization: {
+          words: "",
+          minute: ""
+        },
+        isExpected: true
+      },
+      plantuml: {
+        skin: "classic",
+      },
+    }
+  </script>
+
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+  <!-- Search bar -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+  <!-- Add word count for markdown files -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-count/dist/countable.min.js"></script>
+
+  <!-- Custom footer -->
+  <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer@1.0.0-0"></script>
+
+  <!-- Pagination (next/prev buttons) -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <!-- Copy button for code blocks -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@3.0.0"></script>
+
+  <!-- Fancy alerts -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts"></script>
+
+  <!-- Fancy terminal block -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-terminal-block@1.0.3"></script>
+
+  <!-- PlantUML -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
+
+  <!-- Mermaid -->
+  <script type="module">
+    import mermaid from "//cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true });
+    window.mermaid = mermaid;
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
+
+  <!-- Additional code block renderers using prism -->
+  <!-- https://prismjs.com/#supported-languages -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-batch.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-powershell.min.js"></script>
+</body>
+
+</html>
