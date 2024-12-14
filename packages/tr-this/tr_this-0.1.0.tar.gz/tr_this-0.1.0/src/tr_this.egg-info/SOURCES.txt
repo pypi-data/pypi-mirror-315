@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/tr_this/__init__.py
+src/tr_this/example.py
+src/tr_this.egg-info/PKG-INFO
+src/tr_this.egg-info/SOURCES.txt
+src/tr_this.egg-info/dependency_links.txt
+src/tr_this.egg-info/top_level.txt
