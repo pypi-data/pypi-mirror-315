@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-pg-notify"
+version = "0.1.0"
+description = "py-pg-notify is a Python library that simplifies listening to and sending notifications using PostgreSQL's `LISTEN/NOTIFY` functionality. This package leverages `asyncpg` for asynchronous communication with the database, making it ideal for real-time applications"
+authors = [
+    { name = "D S Sanjaya", email = "dssanjay55555@gmail.com" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+keywords = ["postgresql", "listen", "notify", "python", "database", "notification", "postgres"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "asyncpg==0.30.0",
+]
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/DSSanjaya5/py-pg-notify"
