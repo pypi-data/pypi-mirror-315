@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: chromatic-python
+Version: 0.1.1
+Summary: ANSI art image processing and colored terminal text
+Author: crypt0lith
+License: MIT License
+        
+        Copyright (c) 2024 crypt0lith
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Keywords: ansi,ascii,art,font,image,terminal,parser
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fonttools~=4.51.0
+Requires-Dist: networkx~=3.4.2
+Requires-Dist: numpy~=2.1.1
+Requires-Dist: opencv-python~=4.10.0.84
+Requires-Dist: pillow~=10.4.0
+Requires-Dist: scikit-image~=0.25.0rc1
+Requires-Dist: scikit-learn~=1.5.2
+Requires-Dist: scipy~=1.14.1
+
+# chromatic-python
+---
+🚧 docs currently under construction 🚧
+
+### Installation
+---
+Install the package using `pip`:
+```bash
+pip install chromatic-python
+```
+
+Confirm `chromatic` installed correctly:
+```pycon
+python -c "import chromatic; print chromatic.__version__"
+0.1.0
+```
