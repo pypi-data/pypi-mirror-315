@@ -1,0 +1,17 @@
+torch_book/__init__.py,sha256=ycOMHpqMqJ1FZTUgXymFrTJASOqV0GQ3_zsS1rD9S8g,43
+torch_book/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_book/data/cv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_book/data/cv/grid.py,sha256=dFA0L87AGDG56iB0ujI2M8PJGLJlNZspyPLcMD_uuY0,5934
+torch_book/data/cv/plot.py,sha256=WwwWQ7zSITFB3g-10YtYgkszOqDkcpdCO_-JDSx-DEI,3128
+torch_book/data/cv/zipfile.py,sha256=8UshTar20ECdqABK5cbdi3dnGXeElPFSh-Pjk3RH_sY,1163
+torch_book/datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_book/datasets/cv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_book/datasets/cv/div2k.py,sha256=rkDP2pwWBNjFG76-Gake1VKKweaX8LdR8zh0mdnS6WE,1579
+torch_book/metrics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_book/metrics/utils.py,sha256=5-FzGI7FUlXwYXEpILnmY2vDM24_LWWZb6_6ZeNSut8,435
+torch_book/web/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_book/web/stream.py,sha256=CsNJF3N2VLFGvvXvj-WQiKD6hh_JsAITEWG3fOL_WRM,813
+torch_book-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+torch_book-0.1.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+torch_book-0.1.dist-info/METADATA,sha256=20bm_P-WLBknj985C7N56gVVDX7KPtoMPXQYFBIHoaE,5854
+torch_book-0.1.dist-info/RECORD,,
