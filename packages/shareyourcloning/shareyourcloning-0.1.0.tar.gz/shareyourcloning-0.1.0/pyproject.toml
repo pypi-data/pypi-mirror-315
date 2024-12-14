@@ -1,0 +1,52 @@
+[tool.poetry]
+authors = ["Manuel Lera-Ramirez <manulera14@gmail.com>"]
+description = "Backend of ShareYourCloning, a web application to generate molecular cloning strategies in json format, and share them with others."
+license = "MIT"
+name = "shareyourcloning"
+version = "0.1.0"
+package-mode = true
+readme = "README.md"
+repository = "https://github.com/manulera/shareyourcloning_backend"
+
+[tool.poetry.dependencies]
+beautifulsoup4 = "^4.11.1"
+fastapi = "*"
+httpx = "^0.25.0"
+python = "^3.11"
+python-multipart = "*"
+uvicorn = "*"
+pydna = "^5.3"
+requests = "^2.31.0"
+regex = "^2023.10.3"
+pydantic = "^2.7.1"
+shareyourcloning-linkml = "0.1.11a0"
+pandas = "^2.2.3"
+openpyxl = "^3.1.5"
+pyyaml = "^6.0.2"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.4"
+flake8-bugbear = "^24.2.6"
+black = "^24.2.0"
+pre-commit = "^3.6.2"
+watchfiles = "^0.21.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+pre-commit = "^3.6.2"
+pytest-cov = "^4.1.0"
+pytest-rerunfailures = "^14.0"
+respx = "^0.21.1"
+
+
+[tool.poetry.group.ipython.dependencies]
+ipython = "^8.20.0"
+ipykernel = "^6.28.0"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.black]
+skip-string-normalization = true
+line-length = 119
