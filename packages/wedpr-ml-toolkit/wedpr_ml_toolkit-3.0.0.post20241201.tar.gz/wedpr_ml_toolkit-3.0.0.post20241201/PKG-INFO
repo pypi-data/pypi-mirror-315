@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: wedpr_ml_toolkit
+Version: 3.0.0.post20241201
+Summary: wedpr-ml-toolkit: The ML toolkit for WeDPR
+Home-page: https://github.com/WeBankBlockchain/WeDPR-Component
+Author: WeDPR Development Team
+Author-email: wedpr@webank.com
+License: Apache-2.0
+Keywords: Interactive,Interpreter,Shell,Web
+Platform: Linux
+Platform: Mac OS X
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools>=70.0.0
+Requires-Dist: hdfs>=2.7.2
+Requires-Dist: requests~=2.31.0
+Requires-Dist: requests_toolbelt==0.9.1
+Requires-Dist: requests_kerberos>=0.15.0
