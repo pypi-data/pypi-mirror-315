@@ -1,0 +1,2 @@
+[console_scripts]
+chat = cmd_llm_chat.chat:main
