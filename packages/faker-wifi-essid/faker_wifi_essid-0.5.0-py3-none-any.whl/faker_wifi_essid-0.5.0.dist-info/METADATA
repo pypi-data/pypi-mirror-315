@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: faker_wifi_essid
+Version: 0.5.0
+Summary: Faker provider for Wi-Fi ESSIDs.
+Author-email: Paul-Emmanuel Raoul <skyper@skyplabs.net>
+Project-URL: Bug Tracker, https://github.com/SkypLabs/faker-wifi-essid/issues
+Project-URL: Repository, https://github.com/SkypLabs/faker-wifi-essid
+Keywords: faker,faker-library,faker-provider,faker-generator,wifi,essid
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: <4,>=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Faker<34.0,>=4.1
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: Sphinx>=3.2; extra == "docs"
+Requires-Dist: sphinx_rtd_theme>=0.5.0; extra == "docs"
+Provides-Extra: tests
+Requires-Dist: tox; extra == "tests"
+
+=================
+Faker Wi-Fi ESSID
+=================
+
+|PyPI Package| |PyPI Downloads| |PyPI Python Versions| |Build Status|
+
+`Faker <https://github.com/joke2k/faker/>`__ provider for Wi-Fi ESSIDs.
+
+.. image:: docs/_static/img/faker_wifi_essid_demo.gif
+   :target: https://asciinema.org/a/191287
+   :alt: Faker Wi-Fi ESSID - Demo
+
+Usage
+=====
+
+.. code-block:: python
+
+   # Import Faker.
+   from faker import Faker
+   # Import the WifiESSID class from Faker Wi-Fi ESSID.
+   from faker_wifi_essid import WifiESSID
+
+   # Create an instance of Faker.
+   fake = Faker()
+   # Add Faker Wi-Fi ESSID to the Faker providers.
+   fake.add_provider(WifiESSID)
+
+   # Call 'wifi_essid()' to get a random fake Wi-Fi ESSID.
+   fake.wifi_essid()
+
+License
+=======
+
+This project is `MIT <https://opensource.org/license/MIT>`__ licensed.
+
+.. |Build Status| image:: https://github.com/SkypLabs/faker-wifi-essid/actions/workflows/test_and_publish.yml/badge.svg?branch=develop
+   :target: https://github.com/SkypLabs/faker-wifi-essid/actions/workflows/test_and_publish.yml?query=branch%3Adevelop
+   :alt: Build Status
+
+.. |PyPI Downloads| image:: https://img.shields.io/pypi/dm/faker-wifi-essid.svg?style=flat
+   :target: https://pypi.org/project/faker-wifi-essid/
+   :alt: PyPI Package Downloads Per Month
+
+.. |PyPI Package| image:: https://img.shields.io/pypi/v/faker-wifi-essid.svg?style=flat
+   :target: https://pypi.org/project/faker-wifi-essid/
+   :alt: PyPI Package Latest Release
+
+.. |PyPI Python Versions| image:: https://img.shields.io/pypi/pyversions/faker-wifi-essid.svg?logo=python&style=flat
+   :target: https://pypi.org/project/faker-wifi-essid/
+   :alt: PyPI Package Python Versions
