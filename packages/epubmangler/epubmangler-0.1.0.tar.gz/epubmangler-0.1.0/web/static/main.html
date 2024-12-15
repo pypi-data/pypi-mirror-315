@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="static/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="static/style.css" />
+<meta charset="utf-8" />
+<title>epubmangler</title>
+</head>
+<body>
+<form class="upload" action="/edit" enctype="multipart/form-data" method="POST">
+<input name="file" type="file" accept="application/epub+zip" required />
+<p>Drop an <em>.epub</em> file here; or click.</p>
+<button type="submit" disabled>Edit</button>
+</form>
+<p>Only use this tool on books you own! Uploaded files are deleted after <em>10</em> minutes!</p>
+<script>
+$(document).ready(function () {
+  $("form input").change(function () {
+    if (this.files.length) {
+      $("form p").html(`<em>${this.files[0].name}</em>`);
+      $("form button").attr("disabled", false);}
+    else {
+      $("form p").html("Drop an <em>.epub</em> file here; or click.");
+      $("form button").attr("disabled", true);}
+  });
+});
+</script>
+</body>
+</html>

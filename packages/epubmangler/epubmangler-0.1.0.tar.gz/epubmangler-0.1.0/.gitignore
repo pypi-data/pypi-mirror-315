@@ -1,0 +1,28 @@
+__pycache__/
+venv/
+build/
+dist/
+htmlcov/
+node_modules/
+*.py[cod]
+*.egg-info
+
+.venv/
+.jupyter/
+.ipynb_checkpoints/
+.coverage/
+.vscode/
+.idea/
+
+# Epub files for tests:
+books/
+
+# Test artifacts:
+test/
+web/upload/
+content.opf
+example/Frankenstein 2.epub
+test.epub
+
+# Credentials
+pypi_token
