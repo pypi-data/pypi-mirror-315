@@ -1,0 +1,82 @@
+Metadata-Version: 2.3
+Name: bitbucket-cloud-cli
+Version: 0.3.0
+Summary: Atlassian Bitbucket Cloud CLI
+Author-email: tjk <tkells@atlassian.com>
+Requires-Python: >=3.8
+Requires-Dist: arrow>=1.3.0
+Requires-Dist: click>=8.1.7
+Requires-Dist: ipdb>=0.13.13
+Requires-Dist: readchar>=4.1.0
+Requires-Dist: requests>=2.32.2
+Requires-Dist: rich>=13.7.1
+Requires-Dist: textual>=1.0.0
+Requires-Dist: tomli-w>=1.0.0
+Requires-Dist: tomli>=2.0.1
+Description-Content-Type: text/markdown
+
+# bb - Bitbucket Cloud CLI
+
+A modern command-line interface for interacting with Bitbucket Cloud.
+
+## Features
+
+- **Pull Request Management**
+  - List, create, and review pull requests
+  - Smart reviewer selection with CODEOWNERS and default reviewers integration
+- Rich terminal UI for PR reviews
+
+- **Configuration**
+  - User-defined command aliases
+  - TOML-based configuration
+
+## Installation
+
+```bash
+pipx install bitbucket-cloud-cli
+```
+
+## Quick Start
+
+1. Login to Bitbucket:
+```bash
+bb auth login
+```
+
+2. List your pull requests:
+```bash
+bb pr list --mine
+```
+
+3. Create a new pull request:
+```bash
+bb pr create
+```
+
+4. Review pull requests interactively:
+```bash
+bb pr review
+```
+
+Configuration is stored in `~/.config/bb/config.toml`:
+
+```toml
+[auth]
+username = "your-username"
+app_password = "your-app-password"
+
+# Optional aliases added through `bb alias`
+[alias]
+prm = "pr list --mine"
+prr = "pr list --reviewing"
+```
+
+## Dev
+
+```bash
+git clone git@github.com/systemsoverload/bb
+cd bb
+rye sync
+rye test
+pipx install -e ./ --force
+```
