@@ -1,0 +1,11 @@
+numpy
+plotly
+scipy
+kaleido
+tqdm
+pandas
+ipywidgets
+nbformat
+ipykernel
+matplotlib
+requests
