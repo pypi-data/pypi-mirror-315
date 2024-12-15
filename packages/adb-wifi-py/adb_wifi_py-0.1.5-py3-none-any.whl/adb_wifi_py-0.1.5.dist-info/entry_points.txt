@@ -1,0 +1,2 @@
+[console_scripts]
+adb-wifi = adb_wifi_py:main_cli
