@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: EasyMongoManager
+Version: 0.1
+Summary: A simple interface for MongoDB interactions
+Home-page: https://github.com/CREATIVE181/easy_mongodb
+Author: CREATIVE
+Author-email: sony.creative.tg1@gmail.com
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymongo
+
+# EasyMongoManager
+
+`EasyMongoManager` — это простой интерфейс для взаимодействия с MongoDB с использованием Python.
+
+## Установка
+
+```bash
+pip install EasyMongoManager
+
+## Пример использования
+
+from EasyMongoManager import MongoManager
+
+# Создаем подключение к базе данных
+db = MongoManager('my_database')
+
+# Вставляем данные
+db.insert('my_collection', {'name': 'John', 'age': 30})
+
+# Ищем данные
+docs = db.find('my_collection', {'name': 'John'})
+print(docs)

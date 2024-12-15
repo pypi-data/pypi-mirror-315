@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+EasyMongoManager/EasyMongoManager.py
+EasyMongoManager/__init__.py
+EasyMongoManager.egg-info/PKG-INFO
+EasyMongoManager.egg-info/SOURCES.txt
+EasyMongoManager.egg-info/dependency_links.txt
+EasyMongoManager.egg-info/requires.txt
+EasyMongoManager.egg-info/top_level.txt
