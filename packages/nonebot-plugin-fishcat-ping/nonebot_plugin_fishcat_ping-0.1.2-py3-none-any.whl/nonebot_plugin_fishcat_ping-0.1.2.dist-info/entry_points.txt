@@ -1,0 +1,7 @@
+[console_scripts]
+
+[gui_scripts]
+
+[nonebot.plugins]
+nonebot_plugin_fishcat_ping = nonebot_plugin_fishcat_ping
+
