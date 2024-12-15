@@ -1,0 +1,20 @@
+# Dockerfile
+
+FROM ghcr.io/astral-sh/uv:debian-slim
+
+LABEL maintainer="marvin8 <marvin8@tuta.io>"
+
+COPY entry-point.sh /run/
+
+# Install app and dependencies
+WORKDIR /run
+RUN uv --version
+RUN --mount=type=cache,target=/root/.cache uv venv -p 3.12.7
+RUN --mount=source=dist,target=/dist --mount=type=cache,target=/root/.cache uv pip install /dist/*.whl
+
+RUN chmod +x .venv/bin/activate
+
+VOLUME /config
+VOLUME /logging
+
+ENTRYPOINT ["/run/entry-point.sh"]
