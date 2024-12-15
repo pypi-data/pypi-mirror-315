@@ -1,0 +1,14 @@
+LICENSE,sha256=l7NP3ylnf5MXd7SyPWn7dGrXU6j4JaqPOaVzLOZomyc,1066
+candfans_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+candfans_client/async_client.py,sha256=9-T7RO4cCXsEkj469sruhRCUFb0lO2-E9IxmhC7bO-o,19032
+candfans_client/client.py,sha256=dCxESar6NYJ30I7MYyXiKm-LXGqQJy94HXpcDg5m1nw,18594
+candfans_client/exceptions.py,sha256=AobAR_7SvIPG4JLAmmAoc3_KJiEc7gwn6gQKyW6JXXw,84
+candfans_client/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+candfans_client/models/sales.py,sha256=egCoMJpXArfDoarADloY5duNVyKI-jMvNyhCSf94a2k,4824
+candfans_client/models/search.py,sha256=z_aTDIAm3AL0O5xoAcU8LA0jvy_YyG7wwJoxdjNJUoo,863
+candfans_client/models/timeline.py,sha256=9h6-WATvPtQE7ZdvxvIPeWaKji3j5ESdOtD3r3NJCnc,1930
+candfans_client/models/user.py,sha256=pCsjk4oz_B5GJGSwvQdDiYh2qomkwK91Jj96-JTC3GY,3533
+candfans_client-3.8.0.dist-info/LICENSE,sha256=l7NP3ylnf5MXd7SyPWn7dGrXU6j4JaqPOaVzLOZomyc,1066
+candfans_client-3.8.0.dist-info/METADATA,sha256=iOIJ7TAMNTcEi4DPm8Yy-GHIG1SAuOt53Obn2GIcgo0,2452
+candfans_client-3.8.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+candfans_client-3.8.0.dist-info/RECORD,,
