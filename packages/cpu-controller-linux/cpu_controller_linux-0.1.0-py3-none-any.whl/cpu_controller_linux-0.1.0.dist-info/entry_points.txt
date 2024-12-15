@@ -1,0 +1,2 @@
+[console_scripts]
+cpu-controller = cpu_controller_linux.main:main
