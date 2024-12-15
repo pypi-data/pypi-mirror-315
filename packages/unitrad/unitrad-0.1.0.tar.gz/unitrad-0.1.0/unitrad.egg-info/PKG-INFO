@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: unitrad
+Version: 0.1.0
+Summary: A WebSocket client for trading strategies
+Author: niexuan
+Author-email: 18595847674@163.com
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: PyYAML
+
+# Unitrade
+
+A WebSocket client for trading strategies.
+
+## Installation
+
+```bash
+pip install unitrade
+
+USAGE
+
+from unitrade import run_unitrade
+
+results = run_unitrade('path_to_your_config.yaml')
+print(results)
