@@ -1,0 +1,13 @@
+pydft/__init__.py,sha256=eESPBHGJ_0qCkokvpWQzJsyEVMZuo2mFQF4g_iUiaLA,200
+pydft/_version.py,sha256=x2pOclYRECzfJMAd4sw67W_FEUEXKPUoISgurYPhSRg,22
+pydft/angulargrid.py,sha256=GyjZOVj8NkA6IlT7jReYx2mGnOf7Ln5qRCj__7jNVoo,2352
+pydft/atomicgrid.py,sha256=KWNrdVbORVsYl7h0gcTgo2F9Kd-IsF41uvTJavQxf1Y,18252
+pydft/bragg_slater.py,sha256=OMT4FiExQSi5-eZoduxzaVmifQfiFAtryqlS8G1UL2U,853
+pydft/dft.py,sha256=SG0H1O1uEhFTpvR3zaMl3RfYVx03lDCqvrvcfSVT-Sc,19278
+pydft/moleculargrid.py,sha256=HA2dP2s8vMkKeKhmZhjJcIscVXxT43hxLIGNu2fKTN8,39433
+pydft/spherical_harmonics.py,sha256=wtfbWHRavZzx2NCv3_8UT2TMj9MBd1SOPLvFw-Hveto,1080
+pydft/xcfunctionals.py,sha256=7c8nKofzsr4N6p1esw4XHf-9il9uEtYbB4dyRObI3yc,7348
+pydft-0.7.1.dist-info/METADATA,sha256=DW0iV-wMSX0whwslOzd-HEKJlGh3EJNExUUBVDpB-j4,4735
+pydft-0.7.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pydft-0.7.1.dist-info/top_level.txt,sha256=x_iiH4xGzlW17THceAdD-bcP7D1-UZzO9H7pyWKdqy8,6
+pydft-0.7.1.dist-info/RECORD,,
