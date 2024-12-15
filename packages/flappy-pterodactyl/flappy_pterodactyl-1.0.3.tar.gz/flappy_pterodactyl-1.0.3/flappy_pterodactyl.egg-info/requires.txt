@@ -1,0 +1,10 @@
+pygame
+mediapipe
+pyglet
+screeninfo
+opencv-python
+openpyxl
+pandas
+pillow
+pyaudio
+playsound
