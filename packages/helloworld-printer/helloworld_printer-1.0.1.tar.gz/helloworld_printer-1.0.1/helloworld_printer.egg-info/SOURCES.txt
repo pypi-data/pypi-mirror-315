@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+helloworld/__init__.py
+helloworld/main.py
+helloworld_printer.egg-info/PKG-INFO
+helloworld_printer.egg-info/SOURCES.txt
+helloworld_printer.egg-info/dependency_links.txt
+helloworld_printer.egg-info/entry_points.txt
+helloworld_printer.egg-info/top_level.txt
