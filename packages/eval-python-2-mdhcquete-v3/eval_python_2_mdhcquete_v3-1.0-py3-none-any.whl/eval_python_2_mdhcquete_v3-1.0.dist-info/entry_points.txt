@@ -1,0 +1,2 @@
+[console_scripts]
+eval_python_2_mdhcquete_v3 = eval_python_2_mdhcquete_v3.main:main
