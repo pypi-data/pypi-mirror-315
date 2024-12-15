@@ -1,0 +1,4 @@
+include flappy/audio/*
+include flappy/images/*
+include flappy/mediapipe/modules/face_landmark/*
+include flappy/res/*
