@@ -1,0 +1,60 @@
+An attempt at comingling async-code and nonasync-code-in-a-thread in an argonomic way.
+
+*Latest release 20241215*:
+* @afunc: now uses asyncio.to_thread() instead of wrapping @agen, drop the decorator parameters since no queue or polling are now used.
+* @agen: nonpolling implementation - now uses asyncio.to_thread() for the next(genfunc) step, drop the decorator parameters since no queue or polling are now used.
+
+One of the difficulties in adapting non-async code for use in
+an async world is that anything asynchronous needs to be turtles
+all the way down: a single blocking synchronous call anywhere
+in the call stack blocks the async event loop.
+
+This module presently provides a pair of decorators for
+asynchronous generators and functions which dispatches them in
+a `Thread` and presents an async wrapper.
+
+## <a name="afunc"></a>`afunc(*da, **dkw)`
+
+A decorator for a synchronous function which turns it into
+an asynchronous function.
+
+Example:
+
+    @afunc
+    def func(count):
+        time.sleep(count)
+        return count
+
+    slept = await func(5)
+
+## <a name="agen"></a>`agen(*da, **dkw)`
+
+A decorator for a synchronous generator which turns it into
+an asynchronous generator.
+Exceptions in the synchronous generator are reraised in the asynchronous
+generator.
+
+Example:
+
+    @agen
+    def gen(count):
+        for i in range(count):
+            yield i
+            time.sleep(1.0)
+
+    async for item in gen(5):
+        print(item)
+
+# Release Log
+
+
+
+*Release 20241215*:
+* @afunc: now uses asyncio.to_thread() instead of wrapping @agen, drop the decorator parameters since no queue or polling are now used.
+* @agen: nonpolling implementation - now uses asyncio.to_thread() for the next(genfunc) step, drop the decorator parameters since no queue or polling are now used.
+
+*Release 20241214.1*:
+Doc update.
+
+*Release 20241214*:
+Initial release with @agen and @afunc decorators.
