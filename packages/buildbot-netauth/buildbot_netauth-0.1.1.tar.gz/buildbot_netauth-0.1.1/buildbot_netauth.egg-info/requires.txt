@@ -1,0 +1,5 @@
+netauth
+buildbot~=4.0
+
+[ci]
+ruff
