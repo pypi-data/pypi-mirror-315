@@ -1,0 +1,10 @@
+requests>=2.25.0
+
+[django]
+django>=3.2
+
+[fastapi]
+fastapi>=0.65.0
+
+[flask]
+flask>=2.0.0
