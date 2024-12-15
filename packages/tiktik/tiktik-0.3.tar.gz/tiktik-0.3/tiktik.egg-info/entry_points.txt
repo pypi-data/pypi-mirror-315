@@ -1,0 +1,3 @@
+[console_scripts]
+tiktik_kavya = tiktik.main:kavya
+tiktik_kokul = tiktik.main:kokul
