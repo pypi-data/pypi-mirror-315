@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: traced
+Version: 0.1.0
+Summary: A tracing library for Python functions with experiment tracking
+Home-page: https://github.com/pranav270-create/traced
+Author: Pranav Iyer
+Author-email: pranaviyer2@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Framework :: FastAPI
+Classifier: Framework :: AsyncIO
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Logging
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlalchemy>=2.0.0
+Requires-Dist: sqlalchemy[asyncio]>=2.0.0
+Requires-Dist: pydantic>=1.8.0
+Requires-Dist: typing-extensions>=4.0.0
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: termcolor>=2.0.0
+Requires-Dist: logging>=0.5.1.2
+Requires-Dist: gitpython>=3.1.0
+Requires-Dist: numpy>=1.21.0
+Provides-Extra: ui
+Requires-Dist: fastapi>=0.68.0; extra == "ui"
+Requires-Dist: uvicorn>=0.15.0; extra == "ui"
+Requires-Dist: websockets>=10.0; extra == "ui"
+Requires-Dist: python-multipart>=0.0.5; extra == "ui"
+Requires-Dist: click>=8.0.0; extra == "ui"
+Requires-Dist: aiohttp>=3.8.0; extra == "ui"
+Provides-Extra: postgresql
+Requires-Dist: asyncpg>=0.27.0; extra == "postgresql"
+Requires-Dist: psycopg2-binary>=2.9.0; extra == "postgresql"
+Provides-Extra: mysql
+Requires-Dist: aiomysql>=0.1.1; extra == "mysql"
+Requires-Dist: mysqlclient>=2.0.0; extra == "mysql"
+Provides-Extra: aws
+Requires-Dist: aioboto3>=11.0.0; extra == "aws"
+Provides-Extra: data
+Requires-Dist: numpy>=1.21.0; extra == "data"
+Requires-Dist: difflib3>=0.1.0; extra == "data"
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.14.0; extra == "dev"
+Requires-Dist: black>=21.0; extra == "dev"
+Requires-Dist: mypy>=0.900; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+Requires-Dist: flake8>=3.9.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.12.0; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx>=4.0.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=0.5.0; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints>=1.12.0; extra == "docs"
+Provides-Extra: full
+Requires-Dist: fastapi>=0.68.0; extra == "full"
+Requires-Dist: uvicorn>=0.15.0; extra == "full"
+Requires-Dist: websockets>=10.0; extra == "full"
+Requires-Dist: python-multipart>=0.0.5; extra == "full"
+Requires-Dist: click>=8.0.0; extra == "full"
+Requires-Dist: aiohttp>=3.8.0; extra == "full"
+Requires-Dist: asyncpg>=0.27.0; extra == "full"
+Requires-Dist: psycopg2-binary>=2.9.0; extra == "full"
+Requires-Dist: aiomysql>=0.1.1; extra == "full"
+Requires-Dist: aioboto3>=11.0.0; extra == "full"
+Requires-Dist: numpy>=1.21.0; extra == "full"
+Requires-Dist: difflib3>=0.1.0; extra == "full"
+
+# traced
+tracer. for all ur needs.
