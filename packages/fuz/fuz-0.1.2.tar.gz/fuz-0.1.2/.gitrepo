@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:viamiraia/fuz.git
+	branch = main
+	commit = ff09efdd2f75bcb833d096399bd2dc0cceda070a
+	method = merge
+	cmdver = 0.4.9
+	parent = 4bd660b941e7b50389f820e1b71e735cf0449cdc
