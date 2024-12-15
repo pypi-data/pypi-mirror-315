@@ -1,0 +1,13 @@
+ts_routes/__init__.py,sha256=vkE_Q0AUpFplfPxg-97ONp8eG0u6e_EHcHGJW6TUMQ8,62
+ts_routes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ts_routes/serializers.py,sha256=_ZJWwgqCFCoX2dSVl7_kxY6Wk4KLwxmbLalsx4JK-h4,5171
+ts_routes/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ts_routes/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ts_routes/management/commands/dump_routes_resolver.py,sha256=S3YyC_gCGjev_q3LBJ6vOCFdRRRiaL9B97gh1mYmxfE,1296
+ts_routes/templates/ts_routes/_dump/resolver.ts,sha256=094PG2yPNIYA06FkJrgEs9bUwdt0RIhnrFX0dYsmIMw,2258
+ts_routes/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ts_routes/utils/text.py,sha256=oSlHK9HHM36DtfPDtgYqHhf-V6dByJxljUDXxCOqHkY,529
+django_ts_routes-1.0.0.dist-info/METADATA,sha256=bot_kQzzQ7PN9Woc6JaPi7ef3VpsN3ePDIt2GsS-eHk,3827
+django_ts_routes-1.0.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+django_ts_routes-1.0.0.dist-info/licenses/LICENSE,sha256=k6TJocvhODTiDK04D9sINxk4fYOPfz1VbyUIwA4NjGk,1071
+django_ts_routes-1.0.0.dist-info/RECORD,,
