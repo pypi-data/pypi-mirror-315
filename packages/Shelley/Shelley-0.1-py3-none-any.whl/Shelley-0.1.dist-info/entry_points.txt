@@ -1,0 +1,2 @@
+[console_scripts]
+lingoshell = shelley.__main__:lingoshell
