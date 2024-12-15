@@ -1,0 +1,10 @@
+LICENSE
+README.md
+psp_parser.c
+psp_string.c
+pspparse.c
+setup.py
+pspparse.egg-info/PKG-INFO
+pspparse.egg-info/SOURCES.txt
+pspparse.egg-info/dependency_links.txt
+pspparse.egg-info/top_level.txt
