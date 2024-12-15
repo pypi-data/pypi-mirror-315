@@ -1,0 +1,96 @@
+---
+# GNU General Public License v3.0+ (see LICENSES/GPL-3.0-or-later.txt or
+# https://www.gnu.org/licenses/gpl-3.0.txt)
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-FileCopyrightText: 2023 Maxwell G <maxwell@gtmx.me
+
+name: nox
+'on':
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  # Run once per week (Monday at 03:00 UTC)
+  schedule:
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+env:
+  FORCE_COLOR: "1"
+
+jobs:
+  nox:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: antsibull-docutils
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - session: test
+            python-versions: "3.9, 3.10, 3.11, 3.12, 3.13"
+            codecov: true
+            packages: ""
+            docutils_version: ""
+
+          - session: test
+            python-versions: "3.9, 3.10, 3.11, 3.12, 3.13"
+            codecov: true
+            packages: ""
+            docutils_version: "0.20"
+
+          - session: test
+            python-versions: "3.9, 3.10, 3.11, 3.12, 3.13"
+            codecov: true
+            packages: ""
+            docutils_version: "0.19"
+
+          - session: test
+            python-versions: "3.9, 3.10, 3.11, 3.12, 3.13"
+            codecov: true
+            packages: ""
+            docutils_version: "0.18"
+
+          - session: lint
+            python-versions: "3.13"
+            codecov: false
+            packages: ""
+            docutils_version: ""
+    name: "Run nox ${{ matrix.session }} session (docutils ${{ matrix.docutils_version || 'latest'}})"
+    steps:
+      - name: Check out antsibull-docutils
+        uses: actions/checkout@v4
+        with:
+          path: antsibull-docutils
+          persist-credentials: false
+      - name: Install extra packages
+        if: "matrix.packages != ''"
+        run: |
+          sudo apt-get install -y ${{ matrix.packages }}
+      - name: Fix docutils version to ${{ matrix.docutils_version }}
+        if: "matrix.docutils_version != ''"
+        run: |
+          sed -i -e 's/"docutils"/"docutils == ${{ matrix.docutils_version }}"/g' pyproject.toml
+      - name: Setup nox
+        uses: wntrblm/nox@2024.10.09
+        with:
+          python-versions: "${{ matrix.python-versions }}"
+      - name: Set up nox environments
+        run: |
+          nox -v -e "${{ matrix.session }}" ${{ matrix.codecov && 'coverage' || '' }} --install-only
+      - name: "Run nox -e ${{ matrix.session }}"
+        run: |
+          nox -v -e "${{ matrix.session }}" --reuse-existing-virtualenvs --no-install
+      - name: Report coverage
+        if: ${{ matrix.codecov }}
+        run: |
+          nox -v -e coverage --reuse-existing-virtualenvs --no-install
+      - name: Upload coverage
+        if: ${{ matrix.codecov }}
+        uses: codecov/codecov-action@v5
+        with:
+          working-directory: antsibull-docutils
+          name: "${{ matrix.session }}"
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
