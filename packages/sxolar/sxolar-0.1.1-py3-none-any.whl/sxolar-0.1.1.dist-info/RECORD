@@ -1,0 +1,12 @@
+sxolar/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sxolar/_version.py,sha256=PKIMyjdUACH4-ONvtunQCnYE2UhlMfp9su83e3HXl5E,411
+sxolar/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sxolar/api/arxiv.py,sha256=MAUceiTsEOydGcnxNGRwrhE0K4LXdqQbi6zAyKgU_-Q,11330
+sxolar/api/search.py,sha256=4bXaOjWad3lSWYZiSYzFNYtEbuyCfTB3W4mP--OQo_M,5053
+sxolar/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sxolar/util/gmail.py,sha256=9nhuihDFWJrkyB9425jkfC8x5bIvJewOF3d_pI2tCDQ,1863
+sxolar-0.1.1.dist-info/LICENSE,sha256=-rauD5M8lMQ2FlHQ_4o2csuTwIlywbogLxdiyCxuur8,1073
+sxolar-0.1.1.dist-info/METADATA,sha256=TcWoS-QOSFHUv1JdSRJeGwINdVI4n_OHjXI5q8UOTLY,3305
+sxolar-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+sxolar-0.1.1.dist-info/top_level.txt,sha256=vYYe32euPfX7aVBulVMFdvCBqNShTfkJy7Lw0uRoCZ8,7
+sxolar-0.1.1.dist-info/RECORD,,
