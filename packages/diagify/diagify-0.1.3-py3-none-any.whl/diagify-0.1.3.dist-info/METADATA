@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: diagify
+Version: 0.1.3
+Summary: A tool to generate diagrams from natural language using Mingrammer.
+Home-page: https://github.com/alexminnaar/diagify
+Author: Alex Minnaar
+Author-email: minnaaralex@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+Requires-Dist: diagrams
+Requires-Dist: graphviz
+
+# Diagify
+
+Diagify is a tool that leverages OpenAI's LLM models and the Mingrammer diagrams library to 
+transform natural language descriptions into well-formatted technical diagram. 
