@@ -1,0 +1,11 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+wLpylib/__init__.py
+wLpylib.egg-info/PKG-INFO
+wLpylib.egg-info/SOURCES.txt
+wLpylib.egg-info/dependency_links.txt
+wLpylib.egg-info/top_level.txt

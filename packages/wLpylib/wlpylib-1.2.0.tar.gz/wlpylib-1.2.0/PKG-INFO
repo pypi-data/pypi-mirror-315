@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: wLpylib
+Version: 1.2.0
+Summary: wL lib for python
+Home-page: https://github.com/WWX-Team/wL/
+Author-email: wilhelm43 <wilhelmbismarck@tutanota.de>
+Project-URL: Homepage, https://github.com/WWX-Team/wL
+Project-URL: Issues, https://github.com/WWX-Team/wL/issues
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# wL
+
+**wL** is a *markup metalanguage* designed to store arbitrary data in a format that is both human-readable and machine-readable.
+
+The design goals of wL emphasize elementary simplicity, generality, stability, and usability across all programming language.
+Plus, wL format does not contain no data specialisation or typing, for a linear read.
+
+Consider checking the [GitHub rep](https://github.com/WWX-Team/wL/) to get a full documentation.
