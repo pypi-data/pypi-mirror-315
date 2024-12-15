@@ -1,0 +1,4 @@
+[console_scripts]
+chacha-decrypt = chacha.decrypt:main
+chacha-encrypt = chacha.encrypt:main
+chacha-view = chacha.view:main
