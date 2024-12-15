@@ -1,0 +1,2 @@
+[console_scripts]
+istalktrance-hello = istalktrance:example_function
