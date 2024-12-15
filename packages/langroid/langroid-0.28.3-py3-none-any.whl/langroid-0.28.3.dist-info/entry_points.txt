@@ -1,0 +1,7 @@
+[console_scripts]
+chat=examples.basic.chat
+chatdoc=examples.docqa.chat
+chatsearch=examples.docqa.chat-search
+chatsql=examples.data_qa.sql_chat.sql_chat
+completion=examples.basic.completion
+
