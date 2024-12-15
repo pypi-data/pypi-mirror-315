@@ -1,0 +1,191 @@
+Metadata-Version: 2.1
+Name: tesp_support
+Version: 1.3.6
+Summary: Python APIs for the Transactive Energy Simulation Platform
+Author-email: Trevor Hardy <trevor.hardy@pnnl.gov>
+Maintainer-email: Mitch Pelton <mitch.pelton@pnnl.gov>, Fred Rutz <fredrick.rutz@pnnl.gov>, Jessica Kerby <jessica.kerby@pnn.gov>, Nathan Gray <nathan.gray@pnnl.gov>, Trevor Hardy <trevor.hardy@pnnl.gov>
+License: TESP License
+        Version 1.0, April 2017
+        https://github.com/pnnl/tesp
+        
+        TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+        1. Battelle Memorial Institute (hereinafter Battelle) hereby grants
+           permission to any person or entity lawfully obtaining a copy of
+           this software and associated documentation files (hereinafter "the
+           Software") to redistribute and use the Software in source and
+           binary forms, with or without modification.  Such person or entity
+           may use, copy, modify, merge, publish, distribute, sublicense,
+           and/or sell copies of the Software, and may permit others to do so,
+           subject to the following conditions:
+           - Redistributions of source code must retain the above copyright
+             notice, this list of conditions and the following disclaimers.
+           - Redistributions in binary form must reproduce the above copyright
+             notice, this list of conditions and the following disclaimer in
+             the documentation and/or other materials provided with the
+             distribution.
+           - Other than as used herein, neither the name Battelle Memorial
+             Institute or Battelle may be used in any form whatsoever without
+             the express written consent of Battelle.
+        
+        2. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+           "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+           LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+           A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL BATTELLE OR
+           CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+           EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+           PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+           PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+           OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+           NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+           SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+        3. The Software was produced by Battelle under Contract No.
+           DE-AC05-76RL01830 with the Department of Energy.  The U.S. Government
+           is granted for itself and others acting on its behalf a nonexclusive,
+           paid-up, irrevocable worldwide license in this data to reproduce,
+           prepare derivative works, distribute copies to the public, perform
+           publicly and display publicly, and to permit others to do so.  The
+           specific term of the license can be identified by inquiry made to
+           Battelle or DOE.  Neither the United States nor the United States
+           Department of Energy, nor any of their employees, makes any warranty,
+           express or implied, or assumes any legal liability or responsibility
+           for the accuracy, completeness or usefulness of any data, apparatus,
+           product or process disclosed, or represents that its use would not
+           infringe privately owned rights.
+        
+        END TERMS AND CONDITIONS
+        
+        For interested users:  This software system was developed at PNNL with 
+        DOE funding [from the Office of Electricity], and PNNL also developed 
+        utility applications that are patent-protected and available for 
+        licensing for commercial use. More information can be found at PNNL’s 
+        Available Technologies site: http://availabletechnologies.pnnl.gov/ or by 
+        contacting peter.christensen@pnnl.gov
+Project-URL: Homepage, https://github.com/pnnl/tesp
+Project-URL: Documentation, https://tesp.readthedocs.io
+Project-URL: Repository, https://github.com/pnnl/tesp
+Keywords: power system,transactive,energy
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: importlib-resources~=6.4.5
+Requires-Dist: h5py~=3.12.1
+Requires-Dist: helics~=3.5.3
+Requires-Dist: pandas~=2.2.3
+Requires-Dist: numpy~=1.26.4
+Requires-Dist: scipy~=1.14.1
+Requires-Dist: matplotlib~=3.9.2
+Requires-Dist: networkx~=3.4.2
+Requires-Dist: pyjson5~=1.6.7
+Requires-Dist: PYPOWER==5.1.16
+Requires-Dist: pyutilib==6.0.0
+Requires-Dist: Pyomo==6.5.0
+
+============
+Introduction
+============
+
+Transactive Energy Simulation Platform (TESP) simulates 
+the electric power distribution grid with transactive control
+of loads and resources. Current features include:
+
+* GridLAB-D_ for the distribution system and residential loads
+* EnergyPlus_ for large buildings
+* MATPOWER_ or PYPOWER_ for the bulk power systems
+* Bindings for transactive agents in Python_, Java or C++
+
+The goal of TESP_ is that researchers can focus their work
+on the last item, to push advances in the field.
+
+Installation
+============
+
+tesp_support can be installed using pip_::
+
+  $ pip install tesp_support
+
+However, in order to be useful, tesp_support needs custom versions of 
+GridLAB-D and EnergyPlus.  It also requires Python 3.8 or later, with
+NumPy_, SciPy_, NetworkX_, Matplotlib_ and PYPOWER_.  There are 
+cross-platform installers of the complete TESP for Windows, Linux and Mac 
+OS X on GitHub.  A Docker_ version is also available for users.  
+
+Development Work Flow for tesp_support
+======================================
+
+* From this directory, 'pip install -e .' points Python to this cloned repository for any calls to tesp_support functions
+* See the https://github.com/pnnl/tesp/tree/master/src/tesp_support/tesp_support for a roadmap of existing Python source files, and some documentation.  Any changes or additions to the code need to be made in this directory.  
+* Run tests from any other directory on this computer
+* When ready, edit the tesp_support version number and dependencies in setup.py
+* To deploy follow the instructions in the Python Packaging Guide:
+    1. Create an account on PyPI if you haven't yet.
+    2. Install twine and build: pip install twine build
+    3. Create the source distribution, change to tesp_support directory execute: python3 -m build .
+    4. Check your distribution files for errors: twine check dist/*
+    5. (Optional) Upload to the PyPI test server first (note: separate user registration required): twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+    6. Upload to PyPI: twine upload dist/*
+* Any user gets the changes with 'pip install tesp_support --upgrade'
+* Use 'pip show tesp_support' to verify the version and location on your computer
+
+Using TESP
+==========
+
+This is a developer's platform for electric power grid research.  See 
+http://tesp.readthedocs.io/en/latest/ for user instructions, and 
+http://github.com/pnnl/tesp for source code.  
+
+Links to Dependencies
+=====================
+
+* Docker_
+* EnergyPlus_
+* GridLAB-D_
+* Matplotlib_
+* MATPOWER_
+* NetworkX_
+* NumPy_
+* Pandas_
+* pip_
+* PYPOWER_
+* Python_
+* SciPy_
+* TESP_
+
+Subdirectories
+==============
+
+- *tesp_support*; utilities for building and running using PYPOWER with or without FNCS/HELICS co-simulations.
+- *test*; scripts that support testing the package; not automated.
+
+License & Copyright
+===================
+
+- Copyright (c) 2017-2024 Battelle Memorial Institute
+- See LICENSE file at https://github.com/pnnl/tesp
+
+.. _Docker: https://www.docker.com
+.. _EnergyPlus: https://energyplus.net
+.. _GridLAB-D: http://gridlab-d.shoutwiki.com
+.. _Matplotlib: https://www.matplotlib.org
+.. _MATPOWER: https://www.matpower.org
+.. _NetworkX: https://www.networkx.org
+.. _NumPy: https://www.numpy.org
+.. _Pandas: https://pandas.pydata.org
+.. _pip: https://pip.pypa.io/en/stable
+.. _PYPOWER: https://github.com/rwl/PYPOWER
+.. _Python: https://www.python.org
+.. _SciPy: https://www.scipy.org
+.. _TESP: https://tesp.readthedocs.io/en/latest
