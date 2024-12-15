@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+ecr/__init__.py
+ecr.egg-info/PKG-INFO
+ecr.egg-info/SOURCES.txt
+ecr.egg-info/dependency_links.txt
+ecr.egg-info/requires.txt
+ecr.egg-info/top_level.txt
