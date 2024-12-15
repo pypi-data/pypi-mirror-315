@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: aerocaps
+Version: 0.0.0
+Summary: Toolkit for design of Class-A, parametric design of aerodynamic surfaces
+Author-email: Matthew G Lauer <mlauer2015@gmail.com>
+Keywords: aerodynamics,MDAO,MDO,parametric,airfoil system,surface modeling,surface design,NURBS,B-Spline
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pyvista
+Requires-Dist: pyiges
+Requires-Dist: shapely
+
+# AeroCaps
+Toolkit for design of Class-A, parametric design of aerodynamic surfaces
+
+## Installation
+
+For installation of `aerocaps` using the latest stable release, use
+
+```shell
+pip install aerocaps
+```
+
+To install the bleeding-edge version, use
+
+```shell
+git clone https://github.com/mlau154/aerocaps.git
+```
