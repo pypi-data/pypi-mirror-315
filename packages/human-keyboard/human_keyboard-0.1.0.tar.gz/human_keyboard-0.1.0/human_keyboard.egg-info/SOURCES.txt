@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+human_keyboard/__init__.py
+human_keyboard/human_keyboard.py
+human_keyboard.egg-info/PKG-INFO
+human_keyboard.egg-info/SOURCES.txt
+human_keyboard.egg-info/dependency_links.txt
+human_keyboard.egg-info/requires.txt
+human_keyboard.egg-info/top_level.txt
