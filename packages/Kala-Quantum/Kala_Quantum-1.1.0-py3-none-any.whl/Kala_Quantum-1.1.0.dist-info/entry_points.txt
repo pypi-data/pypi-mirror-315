@@ -1,0 +1,2 @@
+[console_scripts]
+kala-quantum = kala_quantum.cli:main
