@@ -1,0 +1,10 @@
+rich_logger/__init__.py,sha256=5zUBU-Hva-s4saAfegqvrqr4bFHmvFuW97TwOrqRVbU,345
+rich_logger/__main__.py,sha256=CbDNwNZ6vTOODMrBWSPAfwTaFf0tvcFw2SM-O8hifhQ,1332
+rich_logger/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rich_logger/sink.py,sha256=qyM0JRSHnyWisyZ5OIZ_hMiPdN8FK-HxhDIBrqvdVcU,3992
+rich_logger/logs/run.txt,sha256=X-zrZv_IbzjZUnhsbWlsecLbwjndTpG0ZynXOif7V-k,1
+rich_logger/logs/trace.log,sha256=pPIb-PeiTg-G2_yOAWz1alSu11KCgyw5tCDrjPzngzc,735
+rich_loguru_sink-0.0.1.dist-info/METADATA,sha256=FNgEks0BoNw-Ly8maP24XMs-4j0rr7EfgeaHFZc_H6k,397
+rich_loguru_sink-0.0.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+rich_loguru_sink-0.0.1.dist-info/entry_points.txt,sha256=cxa96FRQ0O4Z8ohiO9zcUn1BDBWzGEezksgNNPUgsF0,49
+rich_loguru_sink-0.0.1.dist-info/RECORD,,
