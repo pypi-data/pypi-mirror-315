@@ -1,0 +1,14 @@
+
+[develop]
+python-gmp[docs,tests]
+pre-commit
+
+[docs]
+sphinx
+
+[tests]
+pytest
+hypothesis
+
+[tests:platform_python_implementation != "PyPy"]
+gmpy2
