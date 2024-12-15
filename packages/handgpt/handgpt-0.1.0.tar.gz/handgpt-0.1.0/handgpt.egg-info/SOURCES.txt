@@ -1,0 +1,7 @@
+LICENSE
+README.md
+handgpt.egg-info/PKG-INFO
+handgpt.egg-info/SOURCES.txt
+handgpt.egg-info/dependency_links.txt
+handgpt.egg-info/requires.txt
+handgpt.egg-info/top_level.txt
