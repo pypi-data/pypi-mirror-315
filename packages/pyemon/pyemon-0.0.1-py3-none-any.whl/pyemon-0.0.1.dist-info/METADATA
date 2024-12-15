@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyemon
+Version: 0.0.1
+Summary: Python auxiliary tools
+Author-email: mskz-3110 <mskz.saito@gmail.com>
+Project-URL: Homepage, https://github.com/mskz-3110/pyemon
+Project-URL: Issues, https://github.com/mskz-3110/pyemon/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyemon
+Python auxiliary tools
