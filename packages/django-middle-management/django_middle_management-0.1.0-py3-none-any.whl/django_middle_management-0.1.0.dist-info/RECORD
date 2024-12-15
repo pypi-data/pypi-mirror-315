@@ -1,0 +1,11 @@
+middle_management/__init__.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+middle_management/apps.py,sha256=gMqbUEGSLgNypSAAWL5DIeAcL555nuao1XKZYD7UBns,213
+middle_management/urls.py,sha256=tbdS4IPMDPIio0T9tzBJgqvesVluDOgPYdU58kjf8wo,212
+middle_management/views.py,sha256=VsR8J7RlVY3GHv1OMZmsGiht4t3GDVFiHGbpGj1ByOE,849
+middle_management/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+middle_management/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+middle_management/management/commands/noop.py,sha256=z5QvTsZj5931wMTOQ4IOxKu7FzpgdKuRwreh5ARpRAo,175
+django_middle_management-0.1.0.dist-info/LICENSE.txt,sha256=K7o8ML_2JEOCM-Nfgky9cQ9vcHyoFIE5m6-xmNd-HSM,11344
+django_middle_management-0.1.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+django_middle_management-0.1.0.dist-info/METADATA,sha256=GKD7Xgr_5v_Wj9-yh0KSFozjOz84P3rJ0ZkMF8FipGE,688
+django_middle_management-0.1.0.dist-info/RECORD,,

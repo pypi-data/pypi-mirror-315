@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: django-middle-management
+Version: 0.1.0
+Summary: A Django app for remote execution of management commands.
+Author-email: klove <kennethlove@gmail.com>
+Requires-Python: >=3.11
+Requires-Dist: django
+Requires-Dist: flit<4,>=3.2
+Requires-Dist: interrogate ; extra == "development"
+Requires-Dist: ruff ; extra == "development"
+Requires-Dist: coverage ; extra == "testing"
+Requires-Dist: pytest ; extra == "testing"
+Requires-Dist: pytest-cov ; extra == "testing"
+Requires-Dist: pytest-django ; extra == "testing"
+Requires-Dist: pytest-randomly ; extra == "testing"
+Requires-Dist: pytest-xdist ; extra == "testing"
+Provides-Extra: development
+Provides-Extra: testing
