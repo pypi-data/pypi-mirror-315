@@ -1,0 +1,2 @@
+[console_scripts]
+threadfluent = threadfluent.winssl:main

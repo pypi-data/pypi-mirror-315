@@ -1,0 +1,10 @@
+requests
+pycryptodome
+chardet
+idna
+pywin32
+WMI
+psutil
+Pillow
+urllib3
+certifi
