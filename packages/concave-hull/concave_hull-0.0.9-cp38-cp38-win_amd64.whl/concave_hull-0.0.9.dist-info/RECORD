@@ -1,0 +1,7 @@
+concave_hull/__init__.py,sha256=YhleIT-66ChRYbaD4ZcrFKpcr2-ZdQvgotcaOanMBU4,2984
+concave_hull/_core.cp38-win_amd64.pyd,sha256=pmVsqT9L5ARg0iiOLnZ9rOVIuoPX6GlWAbDhAz_x8QI,169984
+concave_hull/_core.pyi,sha256=wSZ88RlEsH_69NWdYdIC2nSKjZS9ERNrgWVyntqbkIE,1917
+concave_hull-0.0.9.dist-info/METADATA,sha256=GodPQxhNQRy-dHJnEdZD6KEA2HuJnYFe0QpRTHN1xco,3824
+concave_hull-0.0.9.dist-info/WHEEL,sha256=kwS-TzWMc793MQ545g1AsDhyMUJrOZEAGChkok6pUJs,104
+concave_hull-0.0.9.dist-info/licenses/LICENSE,sha256=FAOIvIK_cXCBopKz2owBiieK4UoraUtMg6yLnNWpxzw,1097
+concave_hull-0.0.9.dist-info/RECORD,,
