@@ -1,0 +1,8 @@
+setup.py
+nixtee_client/__init__.py
+nixtee_client/client.py
+nixtee_client.egg-info/PKG-INFO
+nixtee_client.egg-info/SOURCES.txt
+nixtee_client.egg-info/dependency_links.txt
+nixtee_client.egg-info/requires.txt
+nixtee_client.egg-info/top_level.txt
