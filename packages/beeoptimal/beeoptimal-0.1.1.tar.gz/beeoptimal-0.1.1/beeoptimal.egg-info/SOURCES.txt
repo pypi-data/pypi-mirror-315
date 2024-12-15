@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+beeoptimal/__init__.py
+beeoptimal/abc.py
+beeoptimal/bee.py
+beeoptimal/benchmarks.py
+beeoptimal/plotting.py
+beeoptimal/utils.py
+beeoptimal.egg-info/PKG-INFO
+beeoptimal.egg-info/SOURCES.txt
+beeoptimal.egg-info/dependency_links.txt
+beeoptimal.egg-info/requires.txt
+beeoptimal.egg-info/top_level.txt
+beeoptimal/package_assets/BeeMarker.png
