@@ -1,0 +1,12 @@
+kcolors/__init__.py,sha256=T9FmL63wCeh_D5awSGmoLQu2jDB-ZmcOxRHLqoH57lQ,2846
+kcolors/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kcolors/irefs.py,sha256=vvzusl32u6KOHxHNjdtRaIHtz0qhwE60nG8G2IXIeOc,1595
+kcolors/refs.py,sha256=SQqpp-tIkbeT9WM-yZwPC--Ho6LtThtf5LBPYeut3L0,1588
+kcolors/utils.py,sha256=mUT_cQ0nkxGNQkUSoW3G-tUEWbX1kwrJXpejA0mll40,1288
+kcolors/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kcolors/src/colors.py,sha256=9X_PXUtoOBlLM7krSRzmGIhV_WCoANMuHA1Yp6uer2g,2529
+kcolors-0.1.1.7.dist-info/LICENSE,sha256=VAwxSqsVv9SdUJSYJpuLyU3ArEBwRn468WPZoTPMawQ,1068
+kcolors-0.1.1.7.dist-info/METADATA,sha256=LwdpZbmKL43-aXR7Z0gQHDw3QTzp8MhH-CWJnBNW2AY,510
+kcolors-0.1.1.7.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+kcolors-0.1.1.7.dist-info/top_level.txt,sha256=hBKj6xIsszWJSwJ6nFj9FkkReqh3TbnT50UCUm1QjW0,8
+kcolors-0.1.1.7.dist-info/RECORD,,
