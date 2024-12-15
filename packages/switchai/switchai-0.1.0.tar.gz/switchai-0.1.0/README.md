@@ -1,0 +1,62 @@
+# SwitchAI
+
+
+# Function Calling
+from pyexpat.errors import messages
+
+from src.switchai import SwitchAI
+
+if __name__ == "__main__":
+    # client = SwitchAI("gpt-4o-mini", 'sk-proj-dp0ZzYC8IvFbOq7nRWFwT3BlbkFJqyW0WROn28sTyOx5R1Bx')
+    # client = SwitchAI("mistral-small-latest", '2JflG1vbNRFEnoK8mSGXCf8kdNzGF4is')
+    # client = SwitchAI("grok-beta", "xai-ArfuFlafSw0ODUmjuq79YPmc3CnFX4XZe2aG7GE5jKqH1hHAzGASRh1pHpyiwCIGv0Kij2yTmUYQOUZu")
+    client = SwitchAI("claude-3-5-haiku-latest", "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")
+    # client = SwitchAI("models/text-embedding-004", "AIzaSyDYqWgtMzgNLB-xNJmJp36PsBEu8iYH2pU")
+
+    tools = [
+        {
+            "type": "function",
+            "function": {
+                "name": "get_weather",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "location": {"type": "string"}
+                    },
+                },
+            },
+        }
+    ]
+
+    messages = [
+        {"role": "user", "content": "What's the weather like in Paris today?"}
+    ]
+
+    response = client.chat(
+        messages=messages,
+        tools=tools,
+        max_tokens=1024
+    )
+
+    print(response)
+
+    tool_calls = response.choices[0].tool_calls
+    tool_call = tool_calls[0]
+
+    function_call_result_message = {
+        "role": "tool",
+        "content": "The weather in Paris today is 20°C and sunny.",
+        "tool_call_id": tool_call.id
+    }
+
+    messages.append(response.choices[0])
+    messages.append(function_call_result_message)
+
+    response = client.chat(
+        messages=messages,
+        max_tokens=1024,
+        tools=tools
+    )
+
+    print(response)
+
