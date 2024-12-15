@@ -1,0 +1,9 @@
+constellation:
+  label:
+    font_size: 38
+    font_weight: heavy
+  line:
+    width: 3.4
+star:
+  label:
+    font_size: 22
