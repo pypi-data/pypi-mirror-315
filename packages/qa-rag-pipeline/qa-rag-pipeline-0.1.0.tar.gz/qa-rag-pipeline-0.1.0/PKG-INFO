@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: qa-rag-pipeline
+Version: 0.1.0
+Summary: A QA pipeline with RAG capabilities using OpenAI and FAISS
+Home-page: UNKNOWN
+Author: Tarun
+Author-email: gangadhartarun21@gmail.com 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# QA RAG Pipeline
+
+A Python package that implements a Question-Answering Retrieval-Augmented Generation (RAG) pipeline using OpenAI, FAISS, and Sentence Transformers.
+
+## Features
+- Retrieve relevant context using FAISS.
+- Generate standalone questions using OpenAI's LLM.
+- Classify intent to block certain queries.
+
+## Installation
+```bash
+pip install .
+
+
+

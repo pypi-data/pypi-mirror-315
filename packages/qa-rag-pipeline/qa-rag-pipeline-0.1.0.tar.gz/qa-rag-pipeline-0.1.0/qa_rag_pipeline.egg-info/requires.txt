@@ -1,0 +1,7 @@
+sqlite3
+openai
+sentence-transformers
+numpy
+faiss-cpu
+datasets
+transformers

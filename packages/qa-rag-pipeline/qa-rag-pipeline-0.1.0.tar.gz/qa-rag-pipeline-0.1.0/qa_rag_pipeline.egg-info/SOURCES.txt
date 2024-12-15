@@ -1,0 +1,7 @@
+README.md
+setup.py
+qa_rag_pipeline.egg-info/PKG-INFO
+qa_rag_pipeline.egg-info/SOURCES.txt
+qa_rag_pipeline.egg-info/dependency_links.txt
+qa_rag_pipeline.egg-info/requires.txt
+qa_rag_pipeline.egg-info/top_level.txt
