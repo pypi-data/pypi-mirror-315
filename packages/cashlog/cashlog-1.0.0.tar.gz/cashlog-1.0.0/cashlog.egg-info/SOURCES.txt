@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cashlog/__init__.py
+cashlog/__main__.py
+cashlog/cli.py
+cashlog.egg-info/PKG-INFO
+cashlog.egg-info/SOURCES.txt
+cashlog.egg-info/dependency_links.txt
+cashlog.egg-info/entry_points.txt
+cashlog.egg-info/requires.txt
+cashlog.egg-info/top_level.txt
+test/test_cli.py
