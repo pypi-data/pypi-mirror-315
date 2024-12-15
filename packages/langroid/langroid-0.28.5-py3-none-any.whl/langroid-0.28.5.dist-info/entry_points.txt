@@ -1,0 +1,6 @@
+[console_scripts]
+chat=examples.basic.chat-local:main
+chatdoc=examples.docqa.chat:app
+chatsearch=examples.docqa.chat-search:main
+completion=examples.basic.completion:app
+
