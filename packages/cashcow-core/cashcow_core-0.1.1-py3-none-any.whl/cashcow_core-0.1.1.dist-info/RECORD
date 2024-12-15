@@ -1,0 +1,11 @@
+cashcow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cashcow/constants.py,sha256=b0Bh2nvuHjzb5i04oUNjzaIitOFzGYze5P2OlptN34o,767
+cashcow/models/__init__.py,sha256=xy4blYsQQe9KMKwkTlC9E9XlJigptMvECuZyyHuI8A8,176
+cashcow/models/account.py,sha256=_3jWYuI07fodLi3nFbmXI-lYLQCBH3xfRnPP2KGM4M0,2382
+cashcow/models/base.py,sha256=EuCn3wKtA26uDOa2n7VsK8_3kzRdj_Dwkk975QJbCD8,1620
+cashcow/models/connection.py,sha256=pR73TZQv4Bd6_EL3BVpMP56XYjRADe71lDYXLM4h3cA,1094
+cashcow/models/user.py,sha256=a-8hs4F1r3Kvg-ewIDKYzBOFL5aCNybLgFc55cphvtM,481
+cashcow_core-0.1.1.dist-info/LICENSE,sha256=arSqYthKy5G4CwMG55iSCa3CDKVTeqV6oJg5PkaskKc,1063
+cashcow_core-0.1.1.dist-info/METADATA,sha256=ssmW4uy5a6_H1AJn0Km2_wd36JIbulk8AKoTUxmIT3w,519
+cashcow_core-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+cashcow_core-0.1.1.dist-info/RECORD,,
