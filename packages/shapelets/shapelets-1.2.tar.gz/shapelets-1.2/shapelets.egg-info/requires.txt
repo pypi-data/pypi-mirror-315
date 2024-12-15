@@ -1,0 +1,7 @@
+astropy
+matplotlib
+numpy<2.0
+opencv-python
+pdoc
+sep
+scipy
