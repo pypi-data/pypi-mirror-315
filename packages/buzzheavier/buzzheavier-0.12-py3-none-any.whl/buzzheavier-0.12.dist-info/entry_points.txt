@@ -1,0 +1,3 @@
+[console_scripts]
+buzz = buzzheavier.__main__:usage
+buzzheavier = buzzheavier.__main__:usage

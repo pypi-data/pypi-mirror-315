@@ -1,0 +1,12 @@
+buzzheavier/__init__.py,sha256=7hI76NiN5trg6GV0u4JGnPHvPb4G7P5dEv9ndkb0UsM,19
+buzzheavier/__main__.py,sha256=vfGOjYg0tcT0jDCHpJ7VYF4qZfSXewkpCvLmCp2ldSI,60
+buzzheavier/buzz.py,sha256=G49KvsCd3E2LsyjbRFsLctrt-RU_LRX87_FGKJFnuDI,3224
+buzzheavier-0.12.data/data/LICENSE.md,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+buzzheavier-0.12.data/data/README.md,sha256=JK27c7rywMawnrDNKL-TTI0PlOBY6fw7PtctbA_9o-4,396
+buzzheavier-0.12.data/data/__version__.py,sha256=YN4ExLufhCajbivMaExuqdEgXu-DSzdzzVcKXas-ssI,16
+buzzheavier-0.12.dist-info/LICENSE.md,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+buzzheavier-0.12.dist-info/METADATA,sha256=HJAKZK51lVglW4gR4sTyvKKRcYHVWpvTRiOq2WjKiAo,1460
+buzzheavier-0.12.dist-info/WHEEL,sha256=UvcQYKBHoFqaQd6LKyqHw9fxEolWLQnlzP0h_LgJAfI,91
+buzzheavier-0.12.dist-info/entry_points.txt,sha256=dMHOdtyzEDaK-kikXqoOrFX1sLWdBCQr9mo_66-3QBg,93
+buzzheavier-0.12.dist-info/top_level.txt,sha256=NWDrrlHxULlu1v3PsVt0cCz7LlpAoh76YZTAPe7Uj2o,12
+buzzheavier-0.12.dist-info/RECORD,,
