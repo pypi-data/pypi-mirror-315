@@ -1,0 +1,10 @@
+# MANIFEST.in
+include LICENSE
+include README.md
+include requirements.txt
+include pyproject.toml
+include setup.cfg
+recursive-include frontend/build *
+recursive-include core *.py
+recursive-include cli *.py
+recursive-include backend *.py
