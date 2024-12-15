@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: flappy-pterodactyl
+Version: 1.0.1
+Summary: A Flappy Pterodactyl game using AR and face tracking
+Home-page: https://github.com/abhijitbhattacharjee/flappy
+Author: Abhijit Bhattacharjee
+Author-email: abhijit@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygame
+Requires-Dist: mediapipe
+Requires-Dist: pyglet
+Requires-Dist: screeninfo
+Requires-Dist: opencv-python
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: pillow
+Requires-Dist: pyaudio
+Requires-Dist: playsound
+
+# Flappy Pterodactyl
+
+**Flappy Pterodactyl** is an augmented reality (AR)-enabled Python game inspired by the classic **Flappy Bird**. It uses face-tracking technology to let players control a pterodactyl by tilting their heads, creating an immersive and fun gaming experience.
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Game Rules](#game-rules)
+- [Installation](#installation)
+- [How to Play](#how-to-play)
+- [Leaderboard](#leaderboard)
+- [Credits](#credits)
+- [License](#license)
+
+---
+
+## Features
+
+- **Augmented Reality Controls**: Use your head movements to control the pterodactyl.
+- **Dynamic Gameplay**: Avoid pipes as they get faster over time.
+- **Player Registration**: Separate leaderboards for Teachers, Parents, and Students.
+- **Leaderboard**: Compete with others and track scores by player type.
+- **Interactive Graphics and Sounds**: Includes a custom Jurassic Park theme song.
+- **2-Minute Timer**: Each game lasts for 2 minutes, challenging players to achieve the highest score.
+
+---
+
+## Game Rules
+
+1. **Objective**: 
+   - Avoid as many pipes as possible to achieve the highest score within 2 minutes.
+   
+2. **Controls**:
+   - Tilt your head up to make the pterodactyl rise.
+   - Tilt your head down to make the pterodactyl descend.
+   - Keep your head neutral to maintain altitude.
+   
+3. **Player Registration**:
+   - Enter your details (Player Type, Name, etc.) before starting.
+   - Students must provide their Grade and Section.
+   
+4. **Scoring**:
+   - Earn 1 point for every pipe successfully avoided.
+   
+5. **Difficulty Progression**:
+   - The game becomes harder as pipes appear faster over time.
+   
+6. **Game Over**:
+   - Collide with a pipe, and the game ends immediately.
+
+---
+
+## Installation
+
+To run **Flappy Pterodactyl**, follow these steps:
+
+### Prerequisites
+- Python 3.6 or higher
+- Pip (Python package manager)
+
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/itabhijitb/augmented-flappy-python.git
+cd augmented-flappy-python
+```
+
+### Step 2: Step 2: Install Dependencies
+```bash
+pip install -r requirements.txt
+python -m flappy.Flappy
+```
+
+### Step 3: Run the Game
+```bash
+python -m flappy.Flappy
+```
+
+## How to Play
+1. Run the game using the command above.
+2. Register as a Teacher, Parent, or Student.
+3. Use your head movements to control the pterodactyl:
+    * Tilt up to fly higher.
+    * Tilt down to descend.
+4. Avoid the pipes and aim for the highest score in 2 minutes.
+5. Check your score on the leaderboard after the game ends.
+
+## Leaderboard
+* Scores are categorized into three leaderboards:
+    * **Teacher Leaderboard**
+    * **Parent Leaderboard**
+    * **Student Leaderboard**
+* Leaderboards are saved in an Excel file (leaderboard.xlsx) and updated automatically after each game.
+
+## Credits
+* **Programmer**: Aditya Bhattacharjee
+* **Sponsor:** New Horizon Public School
+* **Mentors:** Lakhsmi Ma’am, Susan Ma’am
+* **Music Credit:** Jurassic Park Theme Song
+* **Inspiration:** Flappy Bird
+* **GitHub Repo:** itabhijitb/augmented-flappy-python
+
+## License
+This project is licensed under the **MIT License.**
+```
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+```
+
