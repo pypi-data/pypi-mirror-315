@@ -1,0 +1,34 @@
+Metadata-Version: 2.3
+Name: microwink
+Version: 0.0.1
+Summary: Lightweight instance segmentation model for card IDs
+Project-URL: Repository, https://github.com/cospectrum/microwink
+Author-email: cospectrum <severinalexeyv@gmail.com>
+License: Apache-2.0
+Requires-Python: >=3.10
+Requires-Dist: numpy>=2.2.0
+Requires-Dist: onnxruntime>=1.20.1
+Requires-Dist: opencv-python>=4.10.0.84
+Requires-Dist: pillow>=11.0.0
+Description-Content-Type: text/markdown
+
+# microwink
+Lightweight instance segmentation model for card IDs
+
+## Usage
+
+```python
+from microwink import SegModel
+from microwink.common import draw_mask
+from PIL import Image
+
+seg_model = SegModel.from_path("./models/seg_model.onnx")
+
+img = Image.open("...").convert("RGB")
+cards = seg_model.apply(img)
+
+for card in cards:
+    print(f"{card.score=}, {card.box=}")
+    img = draw_mask(img, card.mask > 0.5)
+img.save("result.png")
+```
