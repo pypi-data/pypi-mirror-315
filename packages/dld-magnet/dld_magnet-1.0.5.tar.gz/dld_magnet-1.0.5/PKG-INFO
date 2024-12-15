@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: dld-magnet
+Version: 1.0.5
+Summary: Magnet link downloader
+Author-email: tadeasf <business@tadeasfort.com>
+Requires-Python: >=3.12
+Requires-Dist: asyncio>=3.4.3
+Requires-Dist: qbittorrent-api>=2024.11.70
+Requires-Dist: rich>=13.9.4
+Requires-Dist: socks>=0
+Requires-Dist: typer>=0.15.1
+Description-Content-Type: text/markdown
+
+# dld-magnet
+
+Describe your project here.
