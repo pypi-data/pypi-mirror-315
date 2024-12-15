@@ -1,0 +1,8 @@
+pyspectrum/__init__.py,sha256=A14xQdXp6fW2dfSFCCJz3AnMSqR_3YXpB3V8xp26gto,232
+pyspectrum/data.py,sha256=ZBXfdqnyt-ZrrCaHW3fd005Utss5danO4UwWKhv-JwM,5252
+pyspectrum/errors.py,sha256=A5ujPhyPQk_tsG_2K2yFek-gu_GX8G4Prku-KGhJwaY,384
+pyspectrum/spectrometer.py,sha256=vmUdyP-eNdB7LGVUzsgaJf9JYmHf2jZ7_5YOxW24rug,15043
+pyspectrum/usb_device.cpython-311-x86_64-linux-gnu.so,sha256=JU-RZUgnU5r2l4CPQlJrQOUeKfgKDaFnopkUK_7flD8,499576
+libspectrum-0.0.2.dist-info/METADATA,sha256=_ksyzY28d_8UUbaXFN1Bn4iwz0pHOpELgOOT1LiiOPk,2548
+libspectrum-0.0.2.dist-info/WHEEL,sha256=nzj-72DNU_dguDYE-ZZi4vRNghzQlBGVGJj_yZF56AA,108
+libspectrum-0.0.2.dist-info/RECORD,,
