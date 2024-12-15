@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: email-smtp
+Version: 1.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/ouroboroscoding/email-smtp-python
+Author: Chris Nasr - Ouroboros Coding Inc.
+Author-email: chris@ouroboroscoding.com
+License: MIT
+Project-URL: Source, https://github.com/ouroboroscoding/email-smtp-python
+Project-URL: Tracker, https://github.com/ouroboroscoding/email-smtp-python/issues
+Keywords: json
+Platform: UNKNOWN
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Email SMTP
+Handles sending emails using SMTP
+
+# Install
+```
+pip install email-smtp
+```
+
+# Requires
+email-smtp requires python 3.10 or higher
+
+# Using
+
+```python
+from em import send, valid
+
+def send_email(to, subject, text, html):
+
+	if valid(to):
+		send(to, subject, {
+			'text': text,
+			'html': html
+		})
+```
+
+# Options
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| `attachments` | str[] \| {'body': str, 'filename'}[] | A list of attachments to add to the email |
+| `bcc` | str \| str[] | One or more e-mail addresses to send a blind carbon copy to |
+| `cc` | str \| str[] | One or more e-mail addresses to send a carbo copy to |
+| `from` | str | The e-mail address to show as having sent the e-mail |
+| `html` | str | The HTML version of the e-mail to send, this or `text` must be set |
+| `reply-to` | str | The e-mail address to mark as receiving any replies |
+| `text` | str | The text version of the e-mail to send, this or `html` must be set |
+| `unsubscribe` | str | The URL to add to the header for the receiver to be able to unsubscribe |
+
