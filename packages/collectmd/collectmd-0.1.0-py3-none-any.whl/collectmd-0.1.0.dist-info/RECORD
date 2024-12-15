@@ -1,0 +1,9 @@
+collectmd-0.1.0.dist-info/METADATA,sha256=VoO_OPx3pNsDSLPPW4ugC-T37jvNxiR3rsI3qZ1b5Nk,1222
+collectmd-0.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+collectmd-0.1.0.dist-info/entry_points.txt,sha256=W-1kEQyPes-RPrNhMJjTcVc0YHhWYbkzmbFNKULYDLQ,65
+collectmd-0.1.0.dist-info/licenses/LICENSE,sha256=d749H7FN4A9V7UR_RurGFCuC5oMndoAq6Dyiv8FETzM,1083
+collectmd/__init__.py,sha256=NMFL4bFxi3yvX8ZszCe3UbPs-U_Qq8-YvAs4jwsICRs,96
+collectmd/cli.py,sha256=Im4FVxtfd8kJ7NO98WuGZ85x4LSC_lViUeEBFDC8vzc,874
+collectmd/core.py,sha256=LG0jMQMhuR3tZ4LUgl_bXLqw4vmx20XlKAZsa4OsyuQ,781
+mymarkdown/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+collectmd-0.1.0.dist-info/RECORD,,
