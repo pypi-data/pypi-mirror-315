@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: agentic-fleet
+Version: 0.2.0
+Summary: A powerful agent framework for code generation and web interaction
+Author-email: Zachary BENSALEM <zachary@qredence.ai>
+License: MIT
+Project-URL: Homepage, https://github.com/qredence/agentic-fleet
+Project-URL: Repository, https://github.com/qredence/agentic-fleet.git
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: sqlmodel>=0.0.16
+Requires-Dist: openai>=1.0.0
+Requires-Dist: autogen-agentchat>=0.2.39
+Requires-Dist: playwright>=1.40.0
+Requires-Dist: openai[azure]>=1.0.0
+Requires-Dist: azure-identity>=1.15.0
+
+# Agentic Fleet
+
+A powerful agent framework for code generation and web interaction.
+
+## Features
+
+- Code generation capabilities
+- Web interaction tools
+- Extensible agent framework
+- Azure OpenAI integration
+
+## Installation
+
+```bash
+pip install agentic-fleet
+```
+
+## Quick Start
+
+```python
+from agentic_fleet import WebSearchExtension, CodeGenerationExtension
+
+# Initialize extensions
+web_search = WebSearchExtension()
+code_gen = CodeGenerationExtension()
+
+# Use the extensions
+results = web_search.search("python best practices")
+code = code_gen.generate("Create a simple FastAPI app")
+```
+
+## License
+
+MIT License
