@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sathurangam
+Version: 0.0.1
+Summary: OpennCV for everyone: A package for powerful and efficient image processing. Simplified version of OpenCV
+Home-page: UNKNOWN
+Author: sherinnishara
+Author-email: <sherinars2004@gmail.com>
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,video,stream,video stream,camera stream,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
