@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+venvwrapper.sh
+venvwrapper.egg-info/PKG-INFO
+venvwrapper.egg-info/SOURCES.txt
+venvwrapper.egg-info/dependency_links.txt
+venvwrapper.egg-info/top_level.txt
