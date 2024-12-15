@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: jwdhjwghjwgdhjghjghjgasjhghjefgdjhasgjhghja
+Version: 0.0.1
+Summary: Control your roblox character with pyrobloacc.
+Author: PyceBot
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Pyrobloxacc Documentation
+
+Here are some functions you can use with pyrobloxacc.
+pyrobloxacc.chat(str) -- Sends a chat message.
+pyrobloxacc.move(movement, duration) <-- Moves for duration seconds.
+
+-- Avaliable Movements --
+= forward
+= backward
+= left
+= right
+-------------------------
+
+pyrobloxacc.reset() <-- Resets your character.
