@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mathWiz"
+version = "0.1.1"
+description = "A python math module designed for complex math."
+readme = "README.md"
+authors = [
+    { name = "William E.", email = "williamemerick10@gmail.com" }
+]
+license = { text = "MIT" }
+dependencies = []
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+urls = {"Changelog" = "https://github.com/William-deg/mathWiz/blob/master/CHANGELOG.md"}
+[tool.setuptools]
+packages = ["mathWiz"]
+
+[tool.setuptools.package-dir]
+"" = "src"
