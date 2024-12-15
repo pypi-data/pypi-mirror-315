@@ -1,0 +1,9 @@
+buildbot_waterfall_view/VERSION,sha256=llB-EqUbob6UphT1sOqvaXXnSNdcUjZA2dEL0oKIcFY,5
+buildbot_waterfall_view/__init__.py,sha256=CSSVNDTxeG-fesoM23Ti6eqO4-hlJrqnH5BDaOGz-bk,869
+buildbot_waterfall_view/static/scripts.js,sha256=3vSiVR_nHJlgSkvFbweGr7FCd_Oj2I000XusTM-7YOA,89150
+buildbot_waterfall_view/static/styles.css,sha256=uIMM_r0r-HpEBElK0ogig_Vd4a7q8DqZR2tHCGRhM98,3116
+buildbot_waterfall_view-4.2.0.dist-info/METADATA,sha256=WpA1B65u9XmeX36nlT5wELNSj3GXJ7uBIaVPY7B9DaQ,269
+buildbot_waterfall_view-4.2.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+buildbot_waterfall_view-4.2.0.dist-info/entry_points.txt,sha256=4hzeUHGPBgdmCuXhna0wiSQzXNnEDjtzv3-dwm3wMUk,59
+buildbot_waterfall_view-4.2.0.dist-info/top_level.txt,sha256=o_LHUcbeIBierRiOdfTg7jhekxy1DJWYNYDF8LiIUQk,24
+buildbot_waterfall_view-4.2.0.dist-info/RECORD,,
