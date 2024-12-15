@@ -1,0 +1,11 @@
+Faker<34.0,>=4.1
+
+[dev]
+ruff
+
+[docs]
+Sphinx>=3.2
+sphinx_rtd_theme>=0.5.0
+
+[tests]
+tox

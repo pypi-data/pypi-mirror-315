@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+src/faker_wifi_essid/__init__.py
+src/faker_wifi_essid/common_essids.py
+src/faker_wifi_essid/wifi_essid.py
+src/faker_wifi_essid.egg-info/PKG-INFO
+src/faker_wifi_essid.egg-info/SOURCES.txt
+src/faker_wifi_essid.egg-info/dependency_links.txt
+src/faker_wifi_essid.egg-info/requires.txt
+src/faker_wifi_essid.egg-info/top_level.txt
+tests/test_wifi_essid.py
