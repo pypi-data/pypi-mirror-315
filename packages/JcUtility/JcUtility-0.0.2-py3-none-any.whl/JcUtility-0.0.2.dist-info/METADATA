@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: JcUtility
+Version: 0.0.2
+Summary: Utility library by JavaCommons Technologies
+Home-page: https://github.com/python-pkg/JcUtil
+Author: JavaCommons Technologies
+Author-email: javacommmons@gmail.com
+License: MIT
+Requires-Dist: bs4
+
+# JcUtility
+
+
