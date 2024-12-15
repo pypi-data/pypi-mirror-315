@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/dropletevaporationsimulation.egg-info/PKG-INFO
+src/dropletevaporationsimulation.egg-info/SOURCES.txt
+src/dropletevaporationsimulation.egg-info/dependency_links.txt
+src/dropletevaporationsimulation.egg-info/entry_points.txt
+src/dropletevaporationsimulation.egg-info/requires.txt
+src/dropletevaporationsimulation.egg-info/top_level.txt
