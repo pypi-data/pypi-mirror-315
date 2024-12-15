@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+package/ilyavtln_py.egg-info/PKG-INFO
+package/ilyavtln_py.egg-info/SOURCES.txt
+package/ilyavtln_py.egg-info/dependency_links.txt
+package/ilyavtln_py.egg-info/top_level.txt
