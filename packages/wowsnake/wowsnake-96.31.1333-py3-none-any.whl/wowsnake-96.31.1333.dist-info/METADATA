@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wowsnake
+Version: 96.31.1333
+Summary: import and play 🎃👻🍬
+Author: dclxviclan (dclxviclan)
+Author-email: <dclxviclan@gmail.com>
+Keywords: python,game,video,stream,video stream,camera stream,sockets
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: colorama
+
