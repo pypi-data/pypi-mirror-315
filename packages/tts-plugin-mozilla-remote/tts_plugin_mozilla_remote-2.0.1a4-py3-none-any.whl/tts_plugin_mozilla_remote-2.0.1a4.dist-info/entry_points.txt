@@ -1,0 +1,2 @@
+[ovos.plugin.tts]
+mozilla_remote = tts_plugin_mozilla_remote:MozillaRemoteTTS
