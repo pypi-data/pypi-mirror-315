@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+mkdocs_img2webp/__init__.py
+mkdocs_img2webp/plugin.py
+mkdocs_img2webp.egg-info/PKG-INFO
+mkdocs_img2webp.egg-info/SOURCES.txt
+mkdocs_img2webp.egg-info/dependency_links.txt
+mkdocs_img2webp.egg-info/entry_points.txt
+mkdocs_img2webp.egg-info/requires.txt
+mkdocs_img2webp.egg-info/top_level.txt

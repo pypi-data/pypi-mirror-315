@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mkdocs-img2webp
+Version: 0.1
+Home-page: https://github.com/hyj0824
+Download-URL: https://github.com/hyj0824/mkdocs-images-to-webp
+Author: hyj0824
+Author-email: admin@hyj.ac.cn
+Keywords: mkdocs,images,webp
+License-File: LICENSE
+Requires-Dist: mkdocs>=1.4.2
+Requires-Dist: pillow
+Requires-Dist: importlib-metadata; python_version == "3.8"
