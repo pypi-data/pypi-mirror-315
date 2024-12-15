@@ -1,0 +1,2 @@
+[console_scripts]
+aserehe = aserehe.__main__:app
