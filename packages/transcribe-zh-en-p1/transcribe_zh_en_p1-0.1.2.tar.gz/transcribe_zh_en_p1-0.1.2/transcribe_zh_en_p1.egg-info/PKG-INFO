@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: transcribe-zh-en-p1
+Version: 0.1.2
+Summary: This package is a part of a larger pipeline. This is package (PART:1). A package to convert Video containing spoken Chinese audio and Chinese written text and convert it into spoken English and English written text.
+Home-page: https://github.com/Abdulhamid97Mousa/transcribe_zh_en_p1
+Author: Mousa Abdulhamid
+Author-email: mousa.abdulhamid97@gmail.com
+License: UNKNOWN
+Description: # Transcribe-zh-en-p1
+        
+        # This package is a part of a larger pipeline. This is package (PART:1). A package to convert Video containing spoken Chinese audio and Chinese written text and convert it into spoken English and English written text.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8, <3.9
+Description-Content-Type: text/markdown

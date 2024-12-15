@@ -1,0 +1,12 @@
+demucs==4.0.1
+dill==0.3.4
+ffmpeg-python==0.2.0
+fsspec==2024.9.0
+multiprocess==0.70.12.2
+numpy==1.23.5
+opencv-python==4.6.0.66
+paddlepaddle-gpu==2.5.1
+paddlespeech==1.4.2
+torch==2.4.1
+typeguard==2.13.3
+urllib3<=2.0.0
