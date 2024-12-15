@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: django-cli-no-admin
+Version: 2024.12.1
+Summary: Use the Django CLI using "django" without typing "django-admin"
+Author-email: Jeff Triplett <jeff.triplett@gmail.com>
+Project-URL: Changelog, https://github.com/jefftriplett/django-cli-no-admin/releases
+Project-URL: Documentation, https://github.com/jefftriplett/django-cli-no-admin
+Project-URL: Fiscal support, https://github.com/sponsors/jefftriplett/
+Project-URL: Source, https://github.com/jefftriplett/django-cli-no-admin
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Classifier: Framework :: Django :: 5.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: django
+
+# django-cli-no-admin
+
+> Use the Django CLI using "django" without typing "django-admin".
