@@ -1,0 +1,2 @@
+[console_scripts]
+jianpian-dl = jianpian_downloader.movie_downloader:main
