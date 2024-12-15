@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cpu_controller_linux
+Version: 0.1.0
+Summary: Turn on/off CPU cores in Linux
+Author: Devansh Arora
+Author-email: hsnaved.reverse@gmail.com
+Keywords: python,linux,cpu,battery life,cpu cores
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A package that allows you to turn on/off CPU cores in Linux to increase battery life
