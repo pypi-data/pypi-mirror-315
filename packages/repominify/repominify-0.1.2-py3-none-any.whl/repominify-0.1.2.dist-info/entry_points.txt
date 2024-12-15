@@ -1,0 +1,2 @@
+[console_scripts]
+repominify = core.cli:main
