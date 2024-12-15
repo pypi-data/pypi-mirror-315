@@ -1,0 +1,9 @@
+Licence.txt
+README.md
+pyproject.toml
+setup.py
+nomad1/__init__.py
+nomad1.egg-info/PKG-INFO
+nomad1.egg-info/SOURCES.txt
+nomad1.egg-info/dependency_links.txt
+nomad1.egg-info/top_level.txt
