@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+xiaothink/__init__.py
+xiaothink.egg-info/PKG-INFO
+xiaothink.egg-info/SOURCES.txt
+xiaothink.egg-info/dependency_links.txt
+xiaothink.egg-info/requires.txt
+xiaothink.egg-info/top_level.txt
+xiaothink/openapi/__init__.py
+xiaothink/openapi/chatbot_old.py
+xiaothink/openapi/drawer.py
+xiaothink/openapi/set_conf.py
+xiaothink/openapi/writer.py
+xiaothink/openapi/yanzhi.py
