@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: devkit-math
+Version: 1.5.0a1
+Author: Pemrilect
+Author-email: retres243@outlook.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
