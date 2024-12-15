@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: rspyai
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: pydantic-ai-slim
+Requires-Dist: textual
+Requires-Dist: pip ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: pyright ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: maturin ; extra == 'dev'
+Provides-Extra: dev
+Requires-Python: >=3.12
