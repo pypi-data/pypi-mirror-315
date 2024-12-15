@@ -1,0 +1,48 @@
+import itertools
+from cs410_arena.matchmaker.base_matchmaker import BaseMatchmaker
+
+class EloMatchmaker(BaseMatchmaker):
+    def __init__(self, n_closest=3, k_factor=32, order_matters=False):
+        super().__init__()
+        self.n_closest = n_closest
+        self.k_factor = k_factor
+        self.order_matters = order_matters
+
+    def update_elo(self, winner, loser):
+        """Update ELO scores based on match results"""
+        winner_elo = self.bot_data[winner]["elo"]
+        loser_elo = self.bot_data[loser]["elo"]
+
+        # Expected scores
+        winner_expected = 1 / (1 + 10 ** ((loser_elo - winner_elo) / 400))
+        loser_expected = 1 - winner_expected
+
+        self.bot_data[winner]["elo"] += self.k_factor * (1 - winner_expected)
+        self.bot_data[loser]["elo"] += self.k_factor * (0 - loser_expected)
+        
+    
+    def get_elo(self, player): 
+        return self.bot_data[player]["elo"]
+
+    def add_new_bots(self, players):
+        """Add bots to the matchmaker with default ELO if they don't already exist"""
+        for bot in players:
+            if bot not in self.bot_data:
+                self.bot_data[bot] = {"elo": 1500}
+
+    def generate_matches(self, players):
+        """Generate matches for the closest n bots based on ELO"""
+        matches = []
+
+        for bot in players:
+            sorted_bots = sorted(
+                [p for p in players if p != bot],
+                key=lambda other: abs(self.bot_data[bot]["elo"] - self.bot_data[other]["elo"])
+            )
+
+            for opponent in sorted_bots[:self.n_closest]:
+                matches.append((bot, opponent))
+                if self.order_matters: 
+                    matches.append((opponent, bot))
+
+        return matches
