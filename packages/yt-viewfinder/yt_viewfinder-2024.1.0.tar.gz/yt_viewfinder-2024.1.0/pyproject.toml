@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yt_viewfinder"
+version = "2024.1.0"
+description = "A Python package that fetches YouTube video view counts by video titles and optional artists using async http requests."
+authors = [
+  { name = "Jaydin", email = "JaydinFreemanWork@gmail.com" }
+]
+license = {file = "LICENSE"}
+dependencies = [
+  "aiohttp"
+]
+requires-python = ">=3.8"
