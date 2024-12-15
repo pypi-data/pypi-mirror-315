@@ -1,0 +1,14 @@
+mamaduck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mamaduck/connectors/csv.py,sha256=O2oaI6fobNth5t-LYwKiYeygpsOjaT88McgBdJzBNIY,4658
+mamaduck/connectors/psql.py,sha256=IsJX3sFpO9DOgPIdQ4ZdiQ1_lRdC3iFaROVbVtMihN0,7663
+mamaduck/connectors/sqlite.py,sha256=zsnonHh7YV0oauYfRxcflxe0PE9QS2--oixs3qqpI8Y,6604
+mamaduck/database/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mamaduck/database/duckdb.py,sha256=t15X0rbEGa5hoUgO4L-kJ-p8_QSkkXbNOiGECZ-4zI4,3807
+mamaduck/kwak.py,sha256=4atojhhgxGTTj0tpUL0TcM_SjXRl17B83ZSbtfQqn3I,2764
+mamaduck/sink/to_csv.py,sha256=FtrswTndjTDEB_ogsSJl1czzRjZ6uf57gOGrIBiAQ0w,3357
+mamaduck/sink/to_psql.py,sha256=wp1563_tdVQcUpCpjuJGghUK1OFfKtNqAEZJwlhL-1o,6152
+mamaduck/sink/to_sqlite.py,sha256=NLR64qJVvu4JRkIjiYPpuHKWchVqSUSK4FfIKJzuBUg,5055
+mamaduck-1.0.2.dist-info/METADATA,sha256=xmCMOk05AtxTjTnCVvKQvtLqSwUXmfnn0TWxGUS9tQM,5442
+mamaduck-1.0.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+mamaduck-1.0.2.dist-info/entry_points.txt,sha256=CJyk42LONfhXLX2IyJHUSX3FzT4prgIlaQh-kvTdek8,47
+mamaduck-1.0.2.dist-info/RECORD,,
