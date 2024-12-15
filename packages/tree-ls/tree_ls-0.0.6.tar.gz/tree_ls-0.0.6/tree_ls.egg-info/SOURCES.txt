@@ -1,0 +1,9 @@
+README.md
+setup.py
+tree-ls/__init__.py
+tree-ls/tree-ls.py
+tree_ls.egg-info/PKG-INFO
+tree_ls.egg-info/SOURCES.txt
+tree_ls.egg-info/dependency_links.txt
+tree_ls.egg-info/entry_points.txt
+tree_ls.egg-info/top_level.txt
