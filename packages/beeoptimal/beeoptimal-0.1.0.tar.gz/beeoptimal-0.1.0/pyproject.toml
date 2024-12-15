@@ -1,0 +1,52 @@
+#------------------------------------------------------------------------------------------
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+#------------------------------------------------------------------------------------------
+[project]
+name            = "beeoptimal"
+version         = "0.1.0"
+license         = {file = "LICENSE"}
+description     = "A Python implementation of the Artificial Bee Colony (ABC) optimization algorithm"
+keywords        = ["metahueristic", "optimization", "artificial bee colony", "swarm intelligence"]
+readme          = "README.md"
+authors         = [{ name = "Giulio Fantuzzi", email = "giulio.fantuzzi01@gmail.com" }]
+requires-python = ">=3.12.1"
+dependencies    = [
+    "numpy   >= 1.26.4, <2.0.0",
+    "plotly  >= 5.24.1",
+    "tqdm    >= 4.66.4",
+    "pillow  >= 10.3.0",
+    "kaleido >= 0.2.1"
+]
+classifiers     = [
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+#------------------------------------------------------------------------------------------
+[project.optional-dependencies]
+docs = [
+    "sphinx>=4.0.0",
+    "sphinx-rtd-theme",
+    "nbsphinx",
+    "nbsphinx-link",
+    "sphinx-rtd-dark-mode"
+]
+tutorials = [
+    "ipython     >= 8.12.3",
+    "torchvision >= 0.18.1",
+    "matplotlib  >= 3.8.4",
+]
+#------------------------------------------------------------------------------------------
+[project.urls]
+Documentation = "https://readthedocs.org"     # TODO: Add the real link to the documentation
+Repository    = "https://github.com/giuliofantuzzi/BeeOptimal"
+Issues        = "https://github.com/giuliofantuzzi/BeeOptimal/issues"
+#------------------------------------------------------------------------------------------
+[tool.setuptools.packages]
+find = { include = ["beeoptimal"] }
+#------------------------------------------------------------------------------------------
+[tool.setuptools.package-data]
+beeoptimal = ["package_assets/*.png"]
+#------------------------------------------------------------------------------------------
