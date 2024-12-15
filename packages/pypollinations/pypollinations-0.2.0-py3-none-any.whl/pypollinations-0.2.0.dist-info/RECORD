@@ -1,0 +1,15 @@
+pypollinations/__init__.py,sha256=Blz1GDL6XttnMiL5z8HfdiXnb2_M6LJLsYMPhsQ5sIw,464
+pypollinations/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypollinations/client/base.py,sha256=aE_zvw_4ghq9nvtMoIJEyoYJvofAeWLtGJGNL1gPCd8,1603
+pypollinations/client/image.py,sha256=InRMmF12HK1ko87gCoCLLwGtc8DVCyo6JpZfMULGlMk,1770
+pypollinations/client/text.py,sha256=8Q7CcguSMqXg_m45fjX5x_k0h-EnaRxlmT2C52YTsZw,1756
+pypollinations/exceptions.py,sha256=tpnXzpFQ2w7TP-wHoT2fh4rMmMXj8zCk7BlwuQcpeqY,493
+pypollinations/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypollinations/models/base.py,sha256=GKYXsfPR31uS-2SmF_J-lZy_V8mRrPJwvfe5A3tYtxI,865
+pypollinations/models/image.py,sha256=-6aA53Ds1pVi5h75R6V1DNexeEktXU58d8MlyAMaAZQ,801
+pypollinations/models/text.py,sha256=-M8JaN3JDVtHZHXo42MUc1y5foE7iqiY3YTMcku8_x0,1103
+pypollinations/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypollinations-0.2.0.dist-info/LICENSE,sha256=ieknfadNxPGxl6bs7zO4b7VluVgZFakrIoGaghEhbaQ,10936
+pypollinations-0.2.0.dist-info/METADATA,sha256=lecmrVwKYvpEp9RljR8y5hxSHnOBwFqgFSBDx9CsbY8,6579
+pypollinations-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pypollinations-0.2.0.dist-info/RECORD,,
