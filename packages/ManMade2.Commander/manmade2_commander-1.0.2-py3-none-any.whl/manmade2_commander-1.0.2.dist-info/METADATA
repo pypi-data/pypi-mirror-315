@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: ManMade2.Commander
+Version: 1.0.2
+Project-URL: Documentation, https://github.com/ManMade2/commander#readme
+Project-URL: Issues, https://github.com/ManMade2/commander/issues
+Project-URL: Source, https://github.com/ManMade2/commander
+Author-email: ManMade2 <madskris@proton.me>
+License: MIT
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.12
+Requires-Dist: pydantic
+Description-Content-Type: text/markdown
+
+# commander
+
+[![PyPI - Version](https://img.shields.io/pypi/v/commander.svg)](https://pypi.org/project/commander)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/commander.svg)](https://pypi.org/project/commander)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install commander
+```
+
+## License
+
+`commander` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
