@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/yt_viewfinder_TheManWhoLikesToCode/__init__.py
+src/yt_viewfinder_TheManWhoLikesToCode/core.py
+src/yt_viewfinder_TheManWhoLikesToCode.egg-info/PKG-INFO
+src/yt_viewfinder_TheManWhoLikesToCode.egg-info/SOURCES.txt
+src/yt_viewfinder_TheManWhoLikesToCode.egg-info/dependency_links.txt
+src/yt_viewfinder_TheManWhoLikesToCode.egg-info/requires.txt
+src/yt_viewfinder_TheManWhoLikesToCode.egg-info/top_level.txt
