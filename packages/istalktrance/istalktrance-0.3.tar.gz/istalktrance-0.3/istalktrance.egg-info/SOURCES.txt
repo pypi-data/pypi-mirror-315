@@ -1,0 +1,9 @@
+README.md
+setup.py
+istalktrance/__init__.py
+istalktrance/main.py
+istalktrance.egg-info/PKG-INFO
+istalktrance.egg-info/SOURCES.txt
+istalktrance.egg-info/dependency_links.txt
+istalktrance.egg-info/requires.txt
+istalktrance.egg-info/top_level.txt
