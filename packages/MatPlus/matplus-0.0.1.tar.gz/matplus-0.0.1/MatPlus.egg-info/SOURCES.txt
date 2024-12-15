@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+MatPlus/__init__.py
+MatPlus.egg-info/PKG-INFO
+MatPlus.egg-info/SOURCES.txt
+MatPlus.egg-info/dependency_links.txt
+MatPlus.egg-info/requires.txt
+MatPlus.egg-info/top_level.txt
+tests/__init__.py
