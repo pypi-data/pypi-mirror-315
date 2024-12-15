@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: masterpiece_influx
+Version: 0.0.1
+Summary: Influx v3 timeseries plugin for `masterpiece` applications
+Author-email: J Meskanen <juham.api@gmail.com>
+Maintainer-email: "J. Meskanen" <juham.api@gmail.com>
+Project-URL: Homepage, https://gitlab.com/juham/masterpiece_influx
+Project-URL: Bug Reports, https://gitlab.com/juham/masterpiece
+Project-URL: Source, https://gitlab.com/juham/masterpiece_influx
+Project-URL: Say Thanks!, http://meskanen.com
+Keywords: influx,masterpiece,database,timeseries
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: masterpiece>=0.1.4
+Requires-Dist: pytz>=2024.1
+Requires-Dist: importlib-metadata
+Requires-Dist: influxdb3-python>=0.3.0
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
