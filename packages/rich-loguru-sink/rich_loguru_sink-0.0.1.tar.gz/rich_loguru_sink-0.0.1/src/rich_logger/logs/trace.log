@@ -1,0 +1,9 @@
+06:40:30.892 | Run 0 | <ipython-input-2-42fa9bbe524b> | Line 43 | INFO | Started
+06:40:30.899 | Run 0 | <ipython-input-2-42fa9bbe524b> | Line 44 | TRACE | Trace
+06:40:30.899 | Run 0 | <ipython-input-2-42fa9bbe524b> | Line 45 | DEBUG | Debug
+06:40:30.899 | Run 0 | <ipython-input-2-42fa9bbe524b> | Line 46 | INFO | Info
+06:40:30.902 | Run 0 | <ipython-input-2-42fa9bbe524b> | Line 47 | SUCCESS | Success
+06:40:30.905 | Run 0 | <ipython-input-2-42fa9bbe524b> | Line 48 | WARNING | Warning
+06:40:30.909 | Run 0 | <ipython-input-2-42fa9bbe524b> | Line 49 | ERROR | Error
+06:40:30.913 | Run 0 | <ipython-input-2-42fa9bbe524b> | Line 50 | CRITICAL | Critical
+06:40:30.918 | Run 0 | <ipython-input-2-42fa9bbe524b> | Line 53 | INFO | Finished

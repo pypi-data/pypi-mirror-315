@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: rich-loguru-sink
+Version: 0.0.1
+Summary: A loguru sink that uses rich to format log messages.
+Author-email: Max Ludden <dev@maxludden.com>
+Requires-Python: >=3.10
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: mypy>=1.11.2
+Requires-Dist: rich-gradient>=0.1.7
+Requires-Dist: rich>=13.8.1
+Description-Content-Type: text/markdown
+
+# rich-loguru-sink
+
+A rich sink for loguru.

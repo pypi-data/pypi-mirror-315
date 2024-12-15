@@ -1,0 +1,44 @@
+06:40:58.559 | Run 0 | __main__.py  | Line 43 | INFO | Started
+06:40:58.560 | Run 0 | __main__.py  | Line 44 | TRACE | Trace
+06:40:58.560 | Run 0 | __main__.py  | Line 45 | DEBUG | Debug
+06:40:58.560 | Run 0 | __main__.py  | Line 46 | INFO | Info
+06:40:58.561 | Run 0 | __main__.py  | Line 47 | SUCCESS | Success
+06:40:58.562 | Run 0 | __main__.py  | Line 48 | WARNING | Warning
+06:40:58.563 | Run 0 | __main__.py  | Line 49 | ERROR | Error
+06:40:58.564 | Run 0 | __main__.py  | Line 50 | CRITICAL | Critical
+06:40:58.567 | Run 0 | __main__.py  | Line 53 | INFO | Finished
+06:40:58.659 | Run 0 | __main__.py  | Line 35 | INFO | Run 0 Completed
+06:40:58.660 | Run 0 | __main__.py  | Line 35 | INFO | Run 1 Completed
+06:41:57.461 | Run 2 | __main__.py  | Line 43 | INFO | Started
+06:41:57.463 | Run 2 | __main__.py  | Line 44 | TRACE | Trace
+06:41:57.463 | Run 2 | __main__.py  | Line 45 | DEBUG | Debug
+06:41:57.463 | Run 2 | __main__.py  | Line 46 | INFO | Info
+06:41:57.465 | Run 2 | __main__.py  | Line 47 | SUCCESS | Success
+06:41:57.466 | Run 2 | __main__.py  | Line 48 | WARNING | Warning
+06:41:57.467 | Run 2 | __main__.py  | Line 49 | ERROR | Error
+06:41:57.469 | Run 2 | __main__.py  | Line 50 | CRITICAL | Critical
+06:41:57.472 | Run 2 | __main__.py  | Line 53 | INFO | Finished
+06:41:58.180 | Run 2 | __main__.py  | Line 35 | INFO | Run 2 Completed
+06:41:58.182 | Run 2 | __main__.py  | Line 35 | INFO | Run 3 Completed
+06:42:04.761 | Run 4 | __main__.py  | Line 43 | INFO | Started
+06:42:04.763 | Run 4 | __main__.py  | Line 44 | TRACE | Trace
+06:42:04.763 | Run 4 | __main__.py  | Line 45 | DEBUG | Debug
+06:42:04.763 | Run 4 | __main__.py  | Line 46 | INFO | Info
+06:42:04.764 | Run 4 | __main__.py  | Line 47 | SUCCESS | Success
+06:42:04.765 | Run 4 | __main__.py  | Line 48 | WARNING | Warning
+06:42:04.767 | Run 4 | __main__.py  | Line 49 | ERROR | Error
+06:42:04.769 | Run 4 | __main__.py  | Line 50 | CRITICAL | Critical
+06:42:04.773 | Run 4 | __main__.py  | Line 53 | INFO | Finished
+06:42:05.483 | Run 4 | __main__.py  | Line 35 | INFO | Run 4 Completed
+06:42:05.490 | Run 4 | __main__.py  | Line 35 | INFO | Run 5 Completed
+06:42:59.411 | Run 6 | __main__.py  | Line 43 | INFO | Started
+06:42:59.415 | Run 6 | __main__.py  | Line 44 | TRACE | Trace
+06:42:59.415 | Run 6 | __main__.py  | Line 45 | DEBUG | Debug
+06:42:59.415 | Run 6 | __main__.py  | Line 46 | INFO | Info
+06:42:59.416 | Run 6 | __main__.py  | Line 47 | SUCCESS | Success
+06:42:59.419 | Run 6 | __main__.py  | Line 48 | WARNING | Warning
+06:42:59.423 | Run 6 | __main__.py  | Line 49 | ERROR | Error
+06:42:59.426 | Run 6 | __main__.py  | Line 50 | CRITICAL | Critical
+06:42:59.428 | Run 6 | __main__.py  | Line 53 | INFO | Finished
+06:43:00.132 | Run 6 | __main__.py  | Line 35 | INFO | Run 6 Completed
+06:43:00.143 | Run 6 | __main__.py  | Line 35 | INFO | Run 7 Completed
