@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: cuttlepy
+Version: 0.1.1
+Summary: Typed python HTTP client wrapper for PRIMP
+Home-page: https://github.com/chanpreet3000/cuttlepy
+Author: Chanpreet Singh
+Author-email: chanpreet3000@gmail.com
+Project-URL: Bug Tracker, https://github.com/chanpreet3000/cuttlepy/issues
+Project-URL: Source Code, https://github.com/chanpreet3000/cuttlepy
+Keywords: http,client,wrapper,primp,requests,httpx,aiohhtp
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
