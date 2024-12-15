@@ -1,0 +1,2 @@
+[aioworkers]
+kafka = aioworkers_kafka
