@@ -1,0 +1,9 @@
+_pymimir.cpython-312-x86_64-linux-gnu.so,sha256=y19rAtn4UEJMJGwYAFXe5lar62d79_paN7l6x8WB9zw,7824896
+pymimir/__init__.py,sha256=fXBQ5waYLfkHmcqqrBTbwlsIBouqV54QfTIzZ5Oxjeo,5352
+pymimir/hints.py,sha256=ZbRaRYNXnRL0YTwtv6kUvO0HGhMeizwfJ4VuB7n6jtw,969
+pymimir/__init__.pyi,sha256=vxiW896_uPBtQFcA-6NkGqDHlbNn1YQbBRtwb-Tfdmc,180037
+pymimir-0.9.73.dist-info/top_level.txt,sha256=UBXk9m4OBSUdu2Npa83LNdck4m-ExzFvnzmxRMvR018,17
+pymimir-0.9.73.dist-info/RECORD,,
+pymimir-0.9.73.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pymimir-0.9.73.dist-info/METADATA,sha256=RpugzryRvsz3doIHe5LTL0riwEkaQ-2tBu7qwtmw2Wc,350
+pymimir-0.9.73.dist-info/WHEEL,sha256=tRzqFuK6eFjpbf2xTNvU7E3xL2y00S_NWJvyqxej3BA,151
