@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/WerkzeugSecurityCLI/__init__.py
+src/WerkzeugSecurityCLI.egg-info/PKG-INFO
+src/WerkzeugSecurityCLI.egg-info/SOURCES.txt
+src/WerkzeugSecurityCLI.egg-info/dependency_links.txt
+src/WerkzeugSecurityCLI.egg-info/entry_points.txt
+src/WerkzeugSecurityCLI.egg-info/requires.txt
+src/WerkzeugSecurityCLI.egg-info/top_level.txt
