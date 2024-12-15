@@ -1,0 +1,2 @@
+[console_scripts]
+py-wingrab = wingrab.__main__:main
