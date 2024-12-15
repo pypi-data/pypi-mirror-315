@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mindbotai
+Version: 0.1
+Summary: MindBot AI Functions Package
+Home-page: https://github.com/AetherMind-Ai/mindbotlibrary
+Author: Ahmed Helmy Ali Eletr
+Author-email: ahmedhelmyali.dev@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-generativeai
+Requires-Dist: httpx
+
+# MindBot AI Functions Package
+
+This package contains a set of functions for interacting with (MindBot) for tasks like generating content, summarizing videos, and more.
+
+## Installation
+
+To install the package, use pip:
+
+```bash
+pip install mindbotai
