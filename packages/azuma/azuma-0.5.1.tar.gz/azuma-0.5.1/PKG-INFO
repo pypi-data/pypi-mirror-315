@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: azuma
+Version: 0.5.1
+Summary: Yet another Sigma library for Python
+Project-URL: Homepage, https://github.com/ninoseki/azuma
+Project-URL: Repository, https://github.com/ninoseki/azuma
+Author-email: Manabu Niseki <manabu.niseki@gmail.com>
+License: MIT
+Requires-Python: <4.0,>=3.10
+Requires-Dist: lark[interegular]~=1.2
+Requires-Dist: loguru~=0.7
+Requires-Dist: pydantic~=2.10
+Requires-Dist: pyyaml~=6.0
+Requires-Dist: regex>=2024.11.6
+Requires-Dist: returns~=0.24
+Requires-Dist: senkawa~=0.1
+Requires-Dist: typer~=0.15
+Description-Content-Type: text/markdown
+
+# azuma
+
+[![PyPI version](https://badge.fury.io/py/azuma.svg)](https://badge.fury.io/py/azuma)
+[![Test](https://github.com/ninoseki/azuma/actions/workflows/test.yml/badge.svg)](https://github.com/ninoseki/azuma/actions/workflows/test.yml)
+
+Yet another [Sigma](https://github.com/SigmaHQ/sigma) library for Python.
+
+Note: This is a forked version of [CybercentreCanada/pysigma](https://github.com/CybercentreCanada/pysigma). Most of the things in this library come from their hard work.
+
+See [documentation](https://ninoseki.github.io/azuma/) for more details.
+
+## Alternatives
+
+- https://github.com/bradleyjkemp/sigma-go
+- https://github.com/markuskont/go-sigma-rule-engine
+- https://github.com/binalyze/tigma
