@@ -1,0 +1,13 @@
+pygobuildinfo/__init__.py,sha256=yRUaxm-L0PH7Rdqg7xYZ_HdWjxnMDQQ-5ylY5I9GKfE,4076
+pygobuildinfo/_pyGoBuildinfo.cp312-win_amd64.h,sha256=SXFmW4dr52B0ad3CitL-fS1iZXOQoYAtmaqJDz_RIVw,1808
+pygobuildinfo/_pyGoBuildinfo.cp312-win_amd64.pyd,sha256=oQLpV4OfuWmFbvS7OyCITkxRAUltVbNClRpGz_GWGnE,2655744
+pygobuildinfo/test_pyGoBuildInfo.py,sha256=V2C79aMMBMXfDIg5JaoKBLSEd2ZVoi_hODsOwumEyfU,2179
+pygobuildinfo/_pyinstaller/__init__.py,sha256=N0EI_KbVt9CmHm7OInytZ0F2ukqNPUH5tnYSZccQ4gA,1044
+pygobuildinfo/_pyinstaller/hook-pygobuildinfo.py,sha256=nRDhHRtOeuWgm9nWxM4vZF3NOO4_IUkY0cpxbJiYBnI,342
+pygobuildinfo-0.1.23.data/scripts/get_go_info,sha256=lOqXXVUKqUS4Seukq-baU-SomphwJolUpQppXRgtRzg,268
+pygobuildinfo-0.1.23.dist-info/LICENSE,sha256=wulyW7lLi84xBRDGlsblRX1LDuQLh6af7YOVbWqG-fs,1083
+pygobuildinfo-0.1.23.dist-info/METADATA,sha256=Lax2e8a_RKZI4JbM2vGJxp64tAEpHo0odIblpFlZDko,11301
+pygobuildinfo-0.1.23.dist-info/WHEEL,sha256=pWXrJbnZSH-J-PhYmKs2XNn4DHCPNBYq965vsBJBFvA,101
+pygobuildinfo-0.1.23.dist-info/entry_points.txt,sha256=_NthSXX6dDw1Uyk7D2dmQcKIdtHW4whIeu__PICZzXQ,126
+pygobuildinfo-0.1.23.dist-info/top_level.txt,sha256=5uMEubVS1IKI75BkjvSpN_lwra7ojQ-tip_KDS2ZzrA,14
+pygobuildinfo-0.1.23.dist-info/RECORD,,
