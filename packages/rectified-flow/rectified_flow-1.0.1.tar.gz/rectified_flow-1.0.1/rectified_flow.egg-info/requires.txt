@@ -1,0 +1,15 @@
+accelerate>=1.2.0
+openai-clip==1.0.1
+diffusers>=0.31.0
+matplotlib>=3.9.3
+numpy
+packaging
+Pillow
+plotly
+scikit_learn
+scipy
+sympy
+timm>=1.0.12
+torch>=2.5.0
+torchvision>=0.20.0
+tqdm
