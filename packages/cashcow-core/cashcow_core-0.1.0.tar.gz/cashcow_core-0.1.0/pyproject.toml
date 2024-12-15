@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "cashcow-core"
+version = "0.1.0"
+description = ""
+authors = ["Soju06 <qlskssk@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = true
+packages = [
+    { include = "cashcow" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlalchemy = "^2.0.36"
+asyncpg = "^0.30.0"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+format-jinja = """
+    {%- if distance == 0 -%}
+        {{ serialize_pep440(base, stage, revision) }}
+    {%- elif revision is not none -%}
+        {{ serialize_pep440(base, stage, revision + 1, dev=distance, metadata=[commit]) }}
+    {%- else -%}
+        {{ serialize_pep440(bump_version(base), stage, revision, dev=distance, metadata=[commit]) }}
+    {%- endif -%}
+"""
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
