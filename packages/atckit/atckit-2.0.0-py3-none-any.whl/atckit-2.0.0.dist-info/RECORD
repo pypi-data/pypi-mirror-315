@@ -1,0 +1,11 @@
+atckit/__init__.py,sha256=5cZPkUckPiJPkie8mE6t7X5ZGPBYDgxIQg-phSQIJwU,2932
+atckit/files.py,sha256=X5Bp0XnW5CRRGtXmgqfJl9LiQAZkaFBtL_HEsBLo12E,9374
+atckit/service.py,sha256=qwsdY2zqbtHhXIDpRFI9-mIqBKmUUN7RailSlLvTwwQ,6691
+atckit/signals.py,sha256=rMNhNkdtuvGnZOEh3tzom3BcBylDP62kpHR6S5-tiMc,2883
+atckit/subscriber.py,sha256=8a9mVHyRbPq6T6gJkG_BrlCESV2WMjqrz05Z5EYjphQ,1952
+atckit/version.py,sha256=S-VEVVZH2xg3AjjhpiwfzwvyRo-ynTYJc-mCVnzCBc8,13550
+atckit-2.0.0.dist-info/LICENSE.md,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+atckit-2.0.0.dist-info/METADATA,sha256=JRqekSTcgA8QdADlCbwCSxeuQX2ic6MrUorAaOQ3XLc,10034
+atckit-2.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+atckit-2.0.0.dist-info/top_level.txt,sha256=OeNXiuzTO0k0SWbd47U-D35vzeemWmGyAg9kuKyb_h0,7
+atckit-2.0.0.dist-info/RECORD,,
