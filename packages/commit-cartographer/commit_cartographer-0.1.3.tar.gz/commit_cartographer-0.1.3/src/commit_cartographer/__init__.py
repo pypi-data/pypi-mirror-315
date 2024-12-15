@@ -1,0 +1,1 @@
+from commit_cartographer.main import main
