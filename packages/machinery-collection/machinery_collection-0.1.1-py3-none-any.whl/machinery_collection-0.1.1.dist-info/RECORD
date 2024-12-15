@@ -1,0 +1,8 @@
+machinery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+machinery/helpers.py,sha256=vmJdtdePzv61aUyTObjWkTaeMCzMdWy6ypt9Hj9aw_g,50310
+machinery/test_helpers.py,sha256=rx6pabtsMWpRqE2BTDX9aL5jDldst_E7PBViTjtdMGQ,11397
+machinery/version.py,sha256=K4bqp4JdOs9KHYMltFboNleHcCgvR1V7uAJwB8wlYQw,18
+machinery_collection-0.1.1.dist-info/METADATA,sha256=XQYTyNNVncHZBaZ1YV1oCYV382P_CwIZhiwyc82M0SE,963
+machinery_collection-0.1.1.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+machinery_collection-0.1.1.dist-info/licenses/LICENSE,sha256=CbmBcHev6qkvLR65ZVb1jc86FzG6jyGaDBq6NJOrv7Y,1081
+machinery_collection-0.1.1.dist-info/RECORD,,
