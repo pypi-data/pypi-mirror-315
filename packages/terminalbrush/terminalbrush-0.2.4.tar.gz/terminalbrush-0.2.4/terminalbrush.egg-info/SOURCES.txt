@@ -1,0 +1,9 @@
+README.txt
+setup.py
+Terminalbrush/__init__.py
+Terminalbrush/main.py
+terminalbrush.egg-info/PKG-INFO
+terminalbrush.egg-info/SOURCES.txt
+terminalbrush.egg-info/dependency_links.txt
+terminalbrush.egg-info/requires.txt
+terminalbrush.egg-info/top_level.txt
