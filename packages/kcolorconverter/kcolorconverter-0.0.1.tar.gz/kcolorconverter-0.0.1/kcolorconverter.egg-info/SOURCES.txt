@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+kcolorconverter/__init__.py
+kcolorconverter/kcolorconverter.py
+kcolorconverter.egg-info/PKG-INFO
+kcolorconverter.egg-info/SOURCES.txt
+kcolorconverter.egg-info/dependency_links.txt
+kcolorconverter.egg-info/top_level.txt
