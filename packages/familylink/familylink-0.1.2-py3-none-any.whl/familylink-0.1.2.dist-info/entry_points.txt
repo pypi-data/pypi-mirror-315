@@ -1,0 +1,2 @@
+[console_scripts]
+familylink = familylink.cli:main
