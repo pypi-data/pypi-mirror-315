@@ -1,0 +1,10 @@
+# Include the README and LICENSE file
+include README.md
+include LICENSE
+
+# Include all Python files in the root directory and in the package subdirectory
+recursive-include rootsense *.py
+
+# If you have any other files to include (e.g., configuration files, etc.), add them here:
+# include paths/to/other/files/*.txt
+# include paths/to/other/files/*.json

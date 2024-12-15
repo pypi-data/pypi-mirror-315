@@ -1,0 +1,2 @@
+[console_scripts]
+rootsense = rootsense.__main__:main
