@@ -1,0 +1,9 @@
+pypi_notifier/__init__.py,sha256=mt5x5bA209TjpceL4xGV_zNKuAtQizL80F5rJySrm5Q,106
+pypi_notifier/config.py,sha256=LCgZWzEIyyj-q_Tthpz4ufsACK1R4_buuvXWDnJyLzw,808
+pypi_notifier/database.py,sha256=J9iduHK7MmGlS-DwkquijBWMYj1zZ6E7uRUPI5KpvWA,1427
+pypi_notifier/logger.py,sha256=-LbqnN6ALbOTeNrT6YDOUOxzuxtTQhhOTPYWhJBzxJE,732
+pypi_notifier/notifier.py,sha256=lII3eA2ClhXQRWphtVHuMQ3ruNAtOfMp2ByhY_PMl4Y,9036
+pypi_notifier-0.1.1.dist-info/LICENSE,sha256=dVCAU1Co0JlBwdL1aJ8xJSeCZtVzKfpY2nM-cPjqTUY,1091
+pypi_notifier-0.1.1.dist-info/METADATA,sha256=ZN45svXu4vp21bpDw0pf03AFUm6CshjNkT3O5z6UMkU,4073
+pypi_notifier-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pypi_notifier-0.1.1.dist-info/RECORD,,
