@@ -1,0 +1,2 @@
+[console-scripts]
+tiktik = tiktik:kavya
