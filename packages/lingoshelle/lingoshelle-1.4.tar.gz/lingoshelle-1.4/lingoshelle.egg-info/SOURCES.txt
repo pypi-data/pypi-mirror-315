@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+lingoshelle/__init__.py
+lingoshelle/__main__.py
+lingoshelle/installer.py
+lingoshelle.egg-info/PKG-INFO
+lingoshelle.egg-info/SOURCES.txt
+lingoshelle.egg-info/dependency_links.txt
+lingoshelle.egg-info/entry_points.txt
+lingoshelle.egg-info/requires.txt
+lingoshelle.egg-info/top_level.txt

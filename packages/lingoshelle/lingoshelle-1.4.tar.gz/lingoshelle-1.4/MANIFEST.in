@@ -1,0 +1,3 @@
+include README.md
+include inst/install.sh
+include inst/install.ps1
