@@ -1,0 +1,2 @@
+[console_scripts]
+traced = traced.cli.commands:cli
