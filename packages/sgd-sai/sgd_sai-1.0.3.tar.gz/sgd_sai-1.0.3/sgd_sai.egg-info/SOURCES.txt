@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sgd_sai/__init__.py
+sgd_sai/__version__.py
+sgd_sai/sgd_sai.py
+sgd_sai.egg-info/PKG-INFO
+sgd_sai.egg-info/SOURCES.txt
+sgd_sai.egg-info/dependency_links.txt
+sgd_sai.egg-info/top_level.txt
