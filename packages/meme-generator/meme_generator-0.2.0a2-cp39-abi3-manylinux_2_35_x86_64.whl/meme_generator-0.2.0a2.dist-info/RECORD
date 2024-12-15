@@ -1,0 +1,15 @@
+meme_generator-0.2.0a2.dist-info/METADATA,sha256=awTiChebKfTACGd1XOJbrSYIKXAcv78jf8WAgX7ovZw,489
+meme_generator-0.2.0a2.dist-info/WHEEL,sha256=GKhFFrwXerwUiFG2WCrQciXe0Nc9Ce5L6BBPNDaJpCE,106
+meme_generator.libs/libbrotlicommon-abf86ae9.so.1,sha256=BqmsRS4yjoOSO2jwmqA8BoN576XPMv0PJmp2BVppvM0,140137
+meme_generator.libs/libbrotlidec-db9dbda7.so.1,sha256=GIPk5Zeo_vL5emQo9dzx4PTDFBOFmOrRUhGVMa9yciI,58145
+meme_generator.libs/libcrypto-b24afd48.so.3,sha256=XeFCLxx27qN7-1MNCEFd4F5qxrm_T_LhTyUa0oANIV8,4611145
+meme_generator.libs/libfontconfig-7d688909.so.1,sha256=Ukxdip0sISIkUej47SH9eVXu7mBmgeE3c8IDyoY6aD0,313009
+meme_generator.libs/libfreetype-ccc6ae91.so.6,sha256=yxGLIkTXY_QEGjYAsPpWe7BmRQwojjwLqSFLzZ355NQ,828569
+meme_generator.libs/libpng16-210ba03c.so.16,sha256=Nt5Y6t24R2Hsxz2LXYy69bY4In36FVI-keomo9v9UwQ,246025
+meme_generator.libs/libssl-57118d4e.so.3,sha256=aYB7NSWX6hgMmrwAF1XclxqMuj6aA8vZa6kj8k4Xl6o,721753
+meme_generator.libs/libuuid-1c523104.so.1,sha256=Ri9o9g7jT1DY-xMBZsqwkXUuLcp-bKyCpaXnqQvx5Dk,33953
+meme_generator/__init__.py,sha256=OC_kzohV2-glEK9M2d8oSFWoLgQ9m97V1nZzjYXM4Aw,1301
+meme_generator/meme_generator.pyi,sha256=bdons-2oOR_cB0mm3957LXoct3hxieeMZYDWfG3aZYE,2519
+meme_generator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+meme_generator/meme_generator.abi3.so,sha256=7yswbzI5lvGhutZeh1bJOp7S88aljSHz9p9rYgoSN_8,23197465
+meme_generator-0.2.0a2.dist-info/RECORD,,
