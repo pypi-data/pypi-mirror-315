@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: hemline
+Version: 1.1.0
+Summary: A python library for printing framed text to the terminal.
+Author: Jonathan Herrera
+Author-email: jonathan.herrera@posteo.de
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: mkdocs (>=1.6.1,<2.0.0)
+Requires-Dist: tamal (>=0.1.3,<0.2.0)
+Project-URL: docs, https://jnthnhrrr.github.io/python-hemline
+Project-URL: issues, https://github.com/jnthnhrrr/python-hemline/issues
+Project-URL: source, https://github.com/jnthnhrrr/python-hemline
+Description-Content-Type: text/markdown
+
+This is yet another python library for creating frames around your terminal
+output.
+
+It creates a frame around text, wrapping the text to fit into the frame.
+
+The implementation follows clean code principles such as single responsibility
+principle, and dependency injection.
+
+
+# Install
+
+    pip install hemline
+
+# Documentation
+
+See [jnthnhrr.github.io/python-hemline](https://jnthnhrr.github.io/python-hemline)
+
+
+# Use
+
+```python3
+from hemline import Frame
+
+frame = Frame()
+text = "This is some text"
+framed = frame.format(text)
+```
+
+You will find more detailed examples in the documentation.
+
