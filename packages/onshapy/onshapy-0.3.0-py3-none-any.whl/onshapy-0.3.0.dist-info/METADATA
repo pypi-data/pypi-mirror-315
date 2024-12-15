@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: onshapy
+Version: 0.3.0
+Summary: 
+Home-page: https://github.com/cram42/onshapy
+License: GPL-3.0-or-later
+Keywords: onshape,stl
+Author: Grant Le Roux
+Author-email: cram42@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests-oauthlib (>=2.0.0,<3.0.0)
+Project-URL: Repository, https://github.com/cram42/onshapy
+Description-Content-Type: text/markdown
+
+# onshapy
+Python library for accessing OnShape API
+
