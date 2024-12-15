@@ -1,0 +1,33 @@
+[project]
+name = "adb-wifi-py"
+version = "0.1.0"
+description = "Add your description here"
+dependencies = [
+    "zeroconf>=0.136.2",
+    "qrcode>=8.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pyright]
+typeCheckingMode = "standard"
+
+[project.scripts]
+adb-wifi = "adb_wifi:main"
+
+[tool.rye.scripts]
+start = { call = "adb_wifi" }
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/adb_wifi_py"]

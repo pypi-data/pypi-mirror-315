@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: adb-wifi-py
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.8
+Requires-Dist: qrcode>=8.0
+Requires-Dist: zeroconf>=0.136.2
+Description-Content-Type: text/markdown
+
+# adb-wifi
+
+Describe your project here.
