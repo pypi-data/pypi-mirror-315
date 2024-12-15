@@ -1,0 +1,6 @@
+future
+numpy>1.22
+
+[dev]
+pytest
+cython>=3.0
