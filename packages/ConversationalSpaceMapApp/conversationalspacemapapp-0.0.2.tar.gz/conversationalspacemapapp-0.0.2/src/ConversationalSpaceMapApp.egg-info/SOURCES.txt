@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+pyproject.toml
+src/ConversationalSpaceMapApp.egg-info/PKG-INFO
+src/ConversationalSpaceMapApp.egg-info/SOURCES.txt
+src/ConversationalSpaceMapApp.egg-info/dependency_links.txt
+src/ConversationalSpaceMapApp.egg-info/requires.txt
+src/ConversationalSpaceMapApp.egg-info/top_level.txt
+src/conversationalspacemapapp/__init__.py
+src/conversationalspacemapapp/__main__.py
+src/conversationalspacemapapp/app.py
+src/conversationalspacemapapp/IconConverter/Converter.py
+src/conversationalspacemapapp/IconConverter/__init__.py
+src/conversationalspacemapapp/Parser/TranscriptParser.py
+src/conversationalspacemapapp/Parser/__init__.py
+src/conversationalspacemapapp/Plotter/PlotMap.py
+src/conversationalspacemapapp/Plotter/__init__.py
