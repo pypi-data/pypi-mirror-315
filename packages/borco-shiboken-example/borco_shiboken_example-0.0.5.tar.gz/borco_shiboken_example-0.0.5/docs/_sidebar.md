@@ -1,0 +1,8 @@
+- [Home](/)
+- For developers
+  - [overview](development.md)
+  - [building on windows](windows.md)
+  - [using qtcreator](qtcreator.md)
+  - [cmake](cmake.md)
+  - [uv](uv.md)
+  - [shiboken](shiboken.md)
