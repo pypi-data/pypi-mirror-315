@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+xml7shi/__init__.py
+xml7shi/xml7shi.py
+xml7shi.egg-info/PKG-INFO
+xml7shi.egg-info/SOURCES.txt
+xml7shi.egg-info/dependency_links.txt
+xml7shi.egg-info/top_level.txt
