@@ -1,0 +1,4 @@
+[console_scripts]
+chat = examples.basic.chat
+chatdoc = examples.docqa.chat
+completion = examples.basic.completion
