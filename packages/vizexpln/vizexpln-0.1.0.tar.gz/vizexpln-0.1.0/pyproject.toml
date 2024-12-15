@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "vizexpln"
+version = "0.1.0"
+description = "Seamlessly combine the power of Jupyter Notebooks and AI to visualize, and interpret your data. A low-code tool for data visualization and interpretation"
+authors = ["Nishanth <nishanthkc009@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+seaborn = "^0.13.2"
+ipywidgets = "^8.1.5"
+scikit-learn = "^1.5.2"
+google-generativeai = "^0.8.3"
+python-dotenv = "^1.0.1"
+pillow = "^11.0.0"
+langchain = "^0.3.11"
+langchain-community = "^0.3.11"
+langchain-google-genai = "^2.0.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
