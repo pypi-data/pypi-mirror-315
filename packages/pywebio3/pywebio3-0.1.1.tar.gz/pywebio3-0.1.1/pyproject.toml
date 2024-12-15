@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pywebio3"
+version = "0.1.1"
+description = "pywebio的国产化替代版本，用法和pywebio完全一样。PyWebIO提供了一系列命令式的交互函数来在浏览器上获取用户输入和进行输出，将浏览器变成了一个“富文本终端”，可以用于构建简单的Web应用或基于浏览器的GUI应用。 PyWebIO还可以方便地整合进现有的Web服务，让你不需要编写HTML和JS代码，就可以构建出具有良好可用性的应用。"
+authors = ["zhangdapeng <1156956636@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tornado = "^6.4.2"
+user-agents = "^2.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
