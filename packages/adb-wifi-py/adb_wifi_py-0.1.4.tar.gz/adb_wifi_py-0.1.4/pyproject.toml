@@ -1,0 +1,30 @@
+[project]
+name = "adb-wifi-py"
+version = "0.1.4"
+description = "A tool for pairing Android 11 and newer devices for wireless debugging directly through a terminal using QR code."
+dependencies = ["zeroconf>=0.136.2", "qrcode>=8.0"]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pyright]
+typeCheckingMode = "standard"
+
+[project.scripts]
+adb-wifi = "adb_wifi_py:main_cli"
+
+[tool.rye.scripts]
+start = { call = "adb_wifi_py" }
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/adb_wifi_py"]
