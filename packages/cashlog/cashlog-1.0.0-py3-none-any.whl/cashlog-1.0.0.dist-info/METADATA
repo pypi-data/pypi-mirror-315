@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: cashlog
+Version: 1.0.0
+Summary: Cash flow tracker
+Home-page: https://github.com/dmotte/cashlog
+Author: dmotte
+License: MIT
+Keywords: calculator csv command value cumulative cashlog tracker flow money tracking finance statistics monitor monitoring log analysis management cash track budgeting budget
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dateutil<2.10,>=2.9.0
+
+
+[![GitHub main workflow](https://img.shields.io/github/actions/workflow/status/dmotte/cashlog/main.yml?branch=main&logo=github&label=main&style=flat-square)](https://github.com/dmotte/cashlog/actions)
+[![PyPI](https://img.shields.io/pypi/v/cashlog?logo=python&style=flat-square)](https://pypi.org/project/cashlog/)
+
+**Cash** flow **tracker**.
+
+Please refer to the [GitHub repository](https://github.com/dmotte/cashlog) for more information.
