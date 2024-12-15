@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: machinery-collection
+Version: 0.1.1
+Summary: A collection of functionality
+Project-URL: repository, https://github.com/delfick/machinery
+Project-URL: changelog, https://machinery.readthedocs.io/en/latest/api/changelog.html
+Project-URL: docs, https://machinery.readthedocs.io
+Author-email: Stephen Moore <stephen@delfick.com>
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
+
+Machinery
+=========
+
+This is a collection of functionality.
+
+Docs found at https://machinery.readthedocs.io
