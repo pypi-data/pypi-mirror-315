@@ -1,0 +1,2 @@
+[console_scripts]
+dld-magnet = dld_magnet.__init__:app
