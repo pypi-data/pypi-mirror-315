@@ -1,0 +1,10 @@
+README.md
+setup.py
+tilia/__init__.py
+tilia/pyautogui_utils.py
+tilia/sap_utils.py
+tilia.egg-info/PKG-INFO
+tilia.egg-info/SOURCES.txt
+tilia.egg-info/dependency_links.txt
+tilia.egg-info/requires.txt
+tilia.egg-info/top_level.txt
