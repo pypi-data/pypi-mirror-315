@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+objwatch/__init__.py
+objwatch/core.py
+objwatch/logger.py
+objwatch/tracer.py
+objwatch/wrappers.py
+objwatch.egg-info/PKG-INFO
+objwatch.egg-info/SOURCES.txt
+objwatch.egg-info/dependency_links.txt
+objwatch.egg-info/not-zip-safe
+objwatch.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
