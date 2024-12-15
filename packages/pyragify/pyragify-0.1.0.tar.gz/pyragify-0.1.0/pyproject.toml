@@ -1,0 +1,33 @@
+[project]
+name = "pyragify"
+version = "0.1.0"
+description = "A tool for processing code repositories into semantic chunks for analysis with LLMs, especiallyNotebookLM."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    {name = "ThomasBury"}
+]
+license = {text = "The Unlicense"}
+keywords = ["code-processing", "chunking", "repository-analysis", "notebookLM"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "omegaconf>=2.3.0",
+    "pathspec>=0.12.1",
+    "pyyaml>=6.0.2",
+    "typer>=0.15.1"
+]
+
+[project.urls]
+homepage = "https://github.com/ThomasBury/pyragify"
+repository = "https://github.com/ThomasBury/pyragify"
+
+[project.scripts]
+pyragify = "pyragify.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
