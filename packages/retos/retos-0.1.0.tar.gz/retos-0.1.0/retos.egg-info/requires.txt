@@ -1,0 +1,13 @@
+mujoco
+mujoco-python-viewer
+pykos
+scipy
+numpy
+kscale-imu
+
+[dev]
+black
+darglint
+mypy
+pytest
+ruff

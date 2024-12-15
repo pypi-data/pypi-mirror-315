@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+retos/__init__.py
+retos/configs.py
+retos/py.typed
+retos.egg-info/PKG-INFO
+retos.egg-info/SOURCES.txt
+retos.egg-info/dependency_links.txt
+retos.egg-info/requires.txt
+retos.egg-info/top_level.txt
+tests/test_dummy.py
