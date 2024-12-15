@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lysine
+Version: 0.1.0
+Summary: Lysine templating engine
+Author-email: Brayden Regis <brayden.regis@gmail.com>
+Project-URL: Homepage, https://ctcl.lgbt/projects/lysine
+Project-URL: Issues, https://github.com/ctcl-bregis/lysine/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Lysine templating language 
+
+Currently a fork of Jinja
