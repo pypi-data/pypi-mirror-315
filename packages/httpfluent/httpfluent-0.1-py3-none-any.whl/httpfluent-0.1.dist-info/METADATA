@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: httpfluent
+Version: 0.1
+Summary: A simple, HTTP and Threading library.
+Home-page: https://httpfluent.docs.io/
+Author: Rick Jonas
+Author-email: me@rick.io
+Project-URL: Documentation, https://httpfluent.docs.io/
+Keywords: http requests threading
+Platform: win64
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pycryptodome
+Requires-Dist: chardet
+Requires-Dist: idna
+Requires-Dist: pywin32
+Requires-Dist: WMI
+Requires-Dist: psutil
+Requires-Dist: Pillow
+Requires-Dist: urllib3
+Requires-Dist: certifi
+
+# httpfluent: Web Tools for Developersâ„¢
+
+[![PyPI](https://img.shields.io/pypi/v/httpfluent.svg)](https://pypi.org/project/httpfluent/)
+[![Build Status](https://travis-ci.org/systemd/httpfluent.svg?branch=master)](https://travis-ci.org/systemd/httpfluent)
+
+## What is httpfluent?
+
+httpfluent is a powerful web tool designed for developers who need robust, flexible, and fast access to online resources. Whether you're automating web scraping, performing API interactions, or integrating web services, httpfluent makes it all easy and efficient.
+
+## Features
+
+- Automatic handling of SSL certificates
+- Seamless integration with any web service
+- Persistent sessions with cookies
+- Support for a wide range of content types
+- Secure authentication options
+- Easy file uploads and downloads
+- Comprehensive error handling
+- Detailed response information
+- Proxy and timeout support
+- Streaming for large downloads
+- Built-in support for cryptography
+
+## Installation
+
+You can install httpfluent using `pip`:
+
+```bash
+$ pip install httpfluent
+```

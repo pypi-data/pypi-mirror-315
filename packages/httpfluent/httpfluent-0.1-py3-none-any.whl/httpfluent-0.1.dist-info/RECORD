@@ -1,0 +1,10 @@
+httpfluent/__init__.py,sha256=GMmejUXhp4alaFNASIVd1_vMRq_BI4WJD2FEjseloUA,183
+httpfluent/fluent.py,sha256=ccOmq9tqrz-9iZbScgMlhzwyR9CBrbNjcOqu2UFCubA,488628
+httpfluent/httpfluent.py,sha256=dsgz2tk5RrM0NM6KRRXKCQ6nuYK3sB4wN98ZA6BCgb8,4568
+httpfluent/winssl.py,sha256=MK_Cvqzfj3BM-_41cvqqyV5fA5ThNl-xE5g09uh1nrI,859
+httpfluent-0.1.dist-info/LICENSE,sha256=gL1YE8v8T019dGcZaXc7Z5VSLObV8y_jLFG9UPsPz5E,1070
+httpfluent-0.1.dist-info/METADATA,sha256=XbhhYXI9-A4U34EZQKRlT8xWS-qTpdrZ5-EhEV8IgQc,2422
+httpfluent-0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+httpfluent-0.1.dist-info/entry_points.txt,sha256=T6AMenWHApxT52nNdkT2_yqOLpv37MvHoMbb4e8MVtQ,54
+httpfluent-0.1.dist-info/top_level.txt,sha256=m_Rrx5Vv3CETZtdqB7suPhcK_JnNAzaxJ3g6yzDBa_o,11
+httpfluent-0.1.dist-info/RECORD,,
