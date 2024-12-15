@@ -1,0 +1,9 @@
+rspyai-0.1.0.dist-info/METADATA,sha256=EbLoPz2kQoAyEcJOq-s_3LwXkUrV83ddvmojmmzZxbI,524
+rspyai-0.1.0.dist-info/WHEEL,sha256=CawcOvREJWKmvEHG7ZkSHBDDYnSeuuL3IP6crBp_X60,121
+rspyai-0.1.0.dist-info/entry_points.txt,sha256=5gUm0cyHdHur6X6X7ozl6NbKRXNo56pn6Ig7vLpCwdg,41
+rspyai/tui.py,sha256=a8J6ObBPma7oQ8K3-odKNPN1OxwaMhdTz4S_A8PSsHM,3911
+rspyai/__init__.py,sha256=ToP5Su1KtS5lWr0JwGjPsq8uCINWIA_-lfjAfr-0RmM,120
+rspyai/logging.py,sha256=22W1QD2q_3ZdW7lRmp4gHpXn8DVrVC0lQeXpr0PD6Tk,812
+rspyai/rspyai.pyi,sha256=v-1DlYDRigp-wFwctlGIYd4_Q3PPgDdk1UKIT1moRmY,152
+rspyai/rspyai.cpython-313-i386-linux-gnu.so,sha256=yldyYUR0MpN7F4tEtQDZurSm66VKTWiP9TF2pREtvrk,2654516
+rspyai-0.1.0.dist-info/RECORD,,
