@@ -1,0 +1,4 @@
+[console_scripts]
+int2rs = rs1101.cli:int2rs
+rs = rs1101.cli:rs
+rs2int = rs1101.cli:rs2int
