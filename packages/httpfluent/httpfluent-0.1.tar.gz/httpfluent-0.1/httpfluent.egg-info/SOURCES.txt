@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+httpfluent/__init__.py
+httpfluent/fluent.py
+httpfluent/httpfluent.py
+httpfluent/winssl.py
+httpfluent.egg-info/PKG-INFO
+httpfluent.egg-info/SOURCES.txt
+httpfluent.egg-info/dependency_links.txt
+httpfluent.egg-info/entry_points.txt
+httpfluent.egg-info/not-zip-safe
+httpfluent.egg-info/requires.txt
+httpfluent.egg-info/top_level.txt
