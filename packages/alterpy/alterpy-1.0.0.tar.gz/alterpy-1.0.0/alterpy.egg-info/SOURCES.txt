@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+alterpy/__init__.py
+alterpy/alias_dict.py
+alterpy/exception.py
+alterpy.egg-info/PKG-INFO
+alterpy.egg-info/SOURCES.txt
+alterpy.egg-info/dependency_links.txt
+alterpy.egg-info/requires.txt
+alterpy.egg-info/top_level.txt
+tests/test_alias_dict.py
