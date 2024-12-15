@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: thalesians.adiutor
+Version: 0.0.2
+Summary: A collection of general-purpose Python utilities designed for reuse across multiple projects
+Author-email: Paul Alexander Bilokon <paul@thalesians.com>, Abir Sridi <abir.sridi@thalesians.com>
+Project-URL: Homepage, https://github.com/thalesians/adiutor/
+Project-URL: Issues, https://github.com/thalesians/adiutor/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=2.2.0
+Requires-Dist: pytz>=2024.2
+Requires-Dist: unidecode>=1.3.8
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: scipy>=1.14.1
+Requires-Dist: sympy>=1.13.3
+Requires-Dist: jinja2>=3.1.4
+
+# thalesians.adiutor
+
+`thalesians.adiutor` is a collection of general-purpose Python utilities designed for reuse across multiple projects. It provides a variety of helper functions and classes to simplify common programming tasks, enhance code readability, and improve development efficiency. The utilities cover areas such as string manipulation, file handling, data processing, and more, making it a valuable toolkit for Python developers.
+
+## Authors
+
+- Paul Alexander Bilokon <paul@thalesians.com>
+- Abir Sridi <abir.sridi@thalesians.com>
+
