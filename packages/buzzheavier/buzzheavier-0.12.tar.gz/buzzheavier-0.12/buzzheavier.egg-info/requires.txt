@@ -1,0 +1,9 @@
+argparse
+rich
+configset
+ctraceback
+pydebugger
+requests
+bs4
+parserheader
+clipboard

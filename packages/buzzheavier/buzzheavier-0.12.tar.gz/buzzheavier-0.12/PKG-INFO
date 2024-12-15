@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: buzzheavier
+Version: 0.12
+Summary: Buzzheavier link generator
+Home-page: https://github.com/cumulus13/buzzheavier
+Author: Hadi Cahyadi LD
+Author-email: cumulus13@gmail.com
+Maintainer: cumulus13 Team
+Maintainer-email: cumulus13@gmail.com
+License: GPL
+Project-URL: Documentation, https://github.com/cumulus13/buzzheavier
+Project-URL: Code, https://github.com/cumulus13/buzzheavier
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: argparse
+Requires-Dist: rich
+Requires-Dist: configset
+Requires-Dist: ctraceback
+Requires-Dist: pydebugger
+Requires-Dist: requests
+Requires-Dist: bs4
+Requires-Dist: parserheader
+Requires-Dist: clipboard
+
+buzz
+-------------
+
+buzzheavier link generator
+
+author
+-----------
+[Hadi Cahyadi](mailto:cumulus13@gmail.com)
+
+[![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/cumulus13)
+[![Donate via Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/cumulus13)
+ [Support me on Patreon](https://www.patreon.com/cumulus13)
