@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+fight/__init__.py
+fight.egg-info/PKG-INFO
+fight.egg-info/SOURCES.txt
+fight.egg-info/dependency_links.txt
+fight.egg-info/requires.txt
+fight.egg-info/top_level.txt
