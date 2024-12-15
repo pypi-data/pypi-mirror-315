@@ -1,0 +1,10 @@
+capybaradb/__init__.py,sha256=uarWJAd4594u_XckY2m_xhXpwInCJEPwmdV2HxyAo0I,130
+capybaradb/capybaradb.py,sha256=h7Q2KLKB3NpTdJDhhmeNpqOEXwY5cNUoirjucXZDPfo,1690
+capybaradb/collection.py,sha256=1NNW2Ig_5aWl-AmzLR3vdqkcKks03ZWZDXkLlBafPUY,3794
+capybaradb/database.py,sha256=CF2dHvahJQTjd-E4CSQkoeSQzUWA6upSnQvT-ReuxEA,1123
+capybaradb/emb_json/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+capybaradb/emb_json/emb_text.py,sha256=N8qsEmK3cU52z8G3BpKyVwRcUbVuJAuH3HK2KE4lTIc,1484
+capybaradb-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+capybaradb-0.1.1.dist-info/METADATA,sha256=VrNP_xOim7v_BcA28faN-eeqWFLpkJbR7X6O2FpO81Y,689
+capybaradb-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+capybaradb-0.1.1.dist-info/RECORD,,
