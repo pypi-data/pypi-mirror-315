@@ -1,0 +1,6 @@
+setup.py
+origottlieb/__init__.py
+origottlieb.egg-info/PKG-INFO
+origottlieb.egg-info/SOURCES.txt
+origottlieb.egg-info/dependency_links.txt
+origottlieb.egg-info/top_level.txt
