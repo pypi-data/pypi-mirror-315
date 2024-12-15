@@ -1,0 +1,10 @@
+demucs<5.0.0,>=4.0.1
+dill>=0.3.9
+ffmpeg-python<0.3.0,>=0.2.0
+fsspec<=2024.9.0,>=2023.1.0
+multiprocess>=0.70.17
+numpy<1.25.0,>=1.23.5
+paddlepaddle-gpu<3.0.0,>=2.5.1
+paddlespeech<2.0.0,>=1.4.2
+torch<3.0.0,>=2.4.1
+typeguard>=4.0.1
