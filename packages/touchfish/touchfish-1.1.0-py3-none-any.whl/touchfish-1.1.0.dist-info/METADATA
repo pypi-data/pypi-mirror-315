@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: touchfish
+Version: 1.1.0
+Summary: python sdk for touchfish
+Author: yzjsswk
+Author-email: yzjsswk@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: yfunc
+Requires-Dist: requests
+
+0dc0a79b369714bc2de6fed5c001aeab2f539a14
