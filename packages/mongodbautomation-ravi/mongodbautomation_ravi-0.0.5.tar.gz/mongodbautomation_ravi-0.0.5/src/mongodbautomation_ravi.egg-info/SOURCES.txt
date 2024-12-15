@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mongodbautomation/__init__.py
+src/mongodbautomation/mongo_crud.py
+src/mongodbautomation_ravi.egg-info/PKG-INFO
+src/mongodbautomation_ravi.egg-info/SOURCES.txt
+src/mongodbautomation_ravi.egg-info/dependency_links.txt
+src/mongodbautomation_ravi.egg-info/requires.txt
+src/mongodbautomation_ravi.egg-info/top_level.txt
