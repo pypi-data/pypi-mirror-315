@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fastapi3
+Version: 0.1.0
+Summary: 
+Author: zhangdapeng
+Author-email: 1156956636@qq.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# fastapi3
+
+fastapi的国产化替代品，用法和fastapi完全一样！！！
+
+## 安装
+
+```shell
+pip install fastapi3
+```
+
+
