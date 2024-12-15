@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sha0-py"
+version = "0.0.2"
+authors = [
+  { name="nightxade", email="matthewcaieatsrice@gmail.com" },
+]
+description = "A package implementing the broken SHA-0 hash algorithm."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+    "Topic :: Security :: Cryptography",
+]
+keywords = ["sha0", "SHA-0", "hash"]
+
+[project.urls]
+homepage = "https://github.com/nightxade/sha0"
+issues = "https://github.com/nightxade/sha0/issues"
