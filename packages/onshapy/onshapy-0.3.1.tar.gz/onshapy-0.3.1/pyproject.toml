@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "onshapy"
+version = "0.3.1"
+description = ""
+authors = ["Grant Le Roux <cram42@users.noreply.github.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "https://github.com/cram42/onshapy"
+keywords = ["onshape", "stl"]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+requests-oauthlib = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.31.1"
+ruff = "^0.8.3"
+pyright = "^1.1.390"
+poetry-bumpversion = "^0.3.2"
+types-requests-oauthlib = "^2.0.0.20240417"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+target-version = "py311"
+
+[tool.ruff.lint]
+extend-select = ["B", "Q", "I"]
+
+[tool.pyright]
+include = ["src"]
+typeCheckingMode = "strict"
+pythonPlatform = "Windows"
+
+[tool.poe.tasks]
+lint-ruff        = "ruff check ."
+lint-ruff-format = "ruff format --check ."
+lint-pyright     = "pyright"
+format-imports   = "ruff check --select I . --fix"
+format-ruff      = "ruff format ."
+
+[tool.poe.tasks.lint]
+sequence = ["lint-ruff", "lint-ruff-format", "lint-pyright"]
+ignore_fail = "return_non_zero"
+
+[tool.poe.tasks.format]
+sequence = ["format-imports", "format-ruff"]
