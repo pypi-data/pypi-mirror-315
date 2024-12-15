@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: py_fast_agent
+Version: 0.1.0
+Summary: 快速构建智能体——兼容 OpenAI-API
+Author: DETeam
+Author-email: ldx@destudio.asia
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+
+# FastAgent
+快速构建智能体——基于 OpenAI-API
