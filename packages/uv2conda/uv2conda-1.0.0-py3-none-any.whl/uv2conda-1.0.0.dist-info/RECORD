@@ -1,0 +1,13 @@
+uv2conda/__init__.py,sha256=ALOCNgEdBcw8saqsBsu2QGnmj8piQPkbKWrnNy9m-ww,154
+uv2conda/__main__.py,sha256=wK4k-bSRn2vwEhcF2mFGUjFHGGi0yRoFax4dN1AMenM,49
+uv2conda/conda.py,sha256=UkkbXqN8ZOU5qscULMmCkygc5Fn_-ddmKlVs4jGM9eM,4924
+uv2conda/console.py,sha256=o_ju-0mAuEn5OH9cZV3X1gNPyXITYAe9_CxUcXvxrXs,233
+uv2conda/main.py,sha256=UElyF06L5EbQ6rWd27KhVENF6r1u1VgI7B3M75pfLNg,6580
+uv2conda/pip.py,sha256=cSHh1eQZ1kyM7sWqruMFmYm2FUO5v48P70cqx-LkMyc,831
+uv2conda/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uv2conda/python.py,sha256=MlRBA-JoZmbkXFAeSUFlEKUgXpEouwfkTNgj-NAYFJ8,1389
+uv2conda/uv.py,sha256=YA5nBX1mSdDTmW-ZW4KYRwcsnSw4bVEsY9elOKkJ40o,2252
+uv2conda-1.0.0.dist-info/METADATA,sha256=ASZRgWY6vrZbpYVPFh9sErMAc7eLiGbtfo5CUI9RJMk,1875
+uv2conda-1.0.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+uv2conda-1.0.0.dist-info/entry_points.txt,sha256=56fcksjiA5qL7GNLhqJTYac9D7tBERNGbGXyVZNlIH4,47
+uv2conda-1.0.0.dist-info/RECORD,,
