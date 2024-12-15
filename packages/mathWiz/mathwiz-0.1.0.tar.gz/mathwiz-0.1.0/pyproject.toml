@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mathWiz"
+version = "0.1.0"
+description = "This is a math module written in python, designed for math students or any programmers who wish to use complex math."
+readme = "README.md"
+authors = [
+    { name = "William E.", email = "williamemerick10@gmail.com" }
+]
+license = { text = "MIT" }
+dependencies = []
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[tool.setuptools]
+packages = ["mathWiz"]
+
+[tool.setuptools.package-dir]
+"" = "src"

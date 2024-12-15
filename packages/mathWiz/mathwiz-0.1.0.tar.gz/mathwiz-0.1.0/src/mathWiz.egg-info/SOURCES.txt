@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/mathWiz/__init__.py
+src/mathWiz/mathWiz.py
+src/mathWiz.egg-info/PKG-INFO
+src/mathWiz.egg-info/SOURCES.txt
+src/mathWiz.egg-info/dependency_links.txt
+src/mathWiz.egg-info/top_level.txt
