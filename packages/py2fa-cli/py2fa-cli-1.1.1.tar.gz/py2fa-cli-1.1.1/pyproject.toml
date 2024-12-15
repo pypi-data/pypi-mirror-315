@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py2fa-cli"
+dynamic = ["version"]
+dependencies = ["pyotp", "pyxdg"]
+requires-python = ">=3.7"
+
+authors = [{ name = "arcctgx", email = "arcctgx@o2.pl" }]
+
+description = "Command-line application for calculating one-time passwords for 2FA."
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { text = "GPLv3" }
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.scripts]
+py2fa = "py2fa.py2fa:main"
+
+[project.urls]
+Homepage = "https://github.com/arcctgx/py2fa-cli"
+Issues = "https://github.com/arcctgx/py2fa-cli/issues"
+
+[tool.setuptools.dynamic]
+version = { attr = "py2fa.VERSION" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pylint.basic]
+# Do not require docstrings for functions whose names begin with
+# underscores, or for main().
+no-docstring-rgx = "^(_|main$)"
+
+[tool.yapf]
+based_on_style = "pep8"
+column_limit = 100

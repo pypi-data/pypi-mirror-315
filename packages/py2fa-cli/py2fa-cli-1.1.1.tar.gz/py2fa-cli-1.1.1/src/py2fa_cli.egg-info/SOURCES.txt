@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/py2fa/__init__.py
+src/py2fa/config.py
+src/py2fa/py2fa.py
+src/py2fa_cli.egg-info/PKG-INFO
+src/py2fa_cli.egg-info/SOURCES.txt
+src/py2fa_cli.egg-info/dependency_links.txt
+src/py2fa_cli.egg-info/entry_points.txt
+src/py2fa_cli.egg-info/requires.txt
+src/py2fa_cli.egg-info/top_level.txt
