@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nixtee-client
+Version: 0.1.0
+Summary: A Python client library for the Nixtee API
+Home-page: https://github.com/nixtee/nixtee_client
+Author: Ales Jandera
+Author-email: ales@nixtee.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: PyJWT (>=2.3.0)
+
+UNKNOWN
+
+
