@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+requirements/requirements.txt
+requirements/test_requirements.txt
+tests/test_mtts.py
+tts_plugin_mozilla_remote/__init__.py
+tts_plugin_mozilla_remote/version.py
+tts_plugin_mozilla_remote.egg-info/PKG-INFO
+tts_plugin_mozilla_remote.egg-info/SOURCES.txt
+tts_plugin_mozilla_remote.egg-info/dependency_links.txt
+tts_plugin_mozilla_remote.egg-info/entry_points.txt
+tts_plugin_mozilla_remote.egg-info/requires.txt
+tts_plugin_mozilla_remote.egg-info/top_level.txt

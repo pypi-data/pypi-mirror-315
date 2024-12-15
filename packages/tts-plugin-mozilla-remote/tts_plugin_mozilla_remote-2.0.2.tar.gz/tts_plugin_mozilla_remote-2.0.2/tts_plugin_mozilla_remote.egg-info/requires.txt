@@ -1,0 +1,7 @@
+ovos-plugin-manager
+requests
+setuptools
+
+[test]
+ovos-core
+pytest
