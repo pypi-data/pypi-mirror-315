@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: lipsutils
+Version: 0.0.2
+Summary: Internal utilities shared by the Princeton LIPS group.
+Project-URL: Homepage, https://github.com/PrincetonLIPS/lipsutils
+Author-email: Nick Richardson <njkrichardson@princeton.edu>
+License: MIT
+Keywords: computational geometry,implicit differentiation,jax,optimization,topology optimization
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Requires-Dist: rich
+Requires-Dist: tyro
+Provides-Extra: jax
+Requires-Dist: chex>=0.1.87; extra == 'jax'
+Requires-Dist: jax>=0.4.30; extra == 'jax'
+Requires-Dist: jaxlib>=0.4.30; extra == 'jax'
+Requires-Dist: ml-dtypes>=0.5.0; extra == 'jax'
+Requires-Dist: numpy>=2.0.0; extra == 'jax'
+Requires-Dist: opt-einsum>=3.4.0; extra == 'jax'
+Requires-Dist: scipy>=1.13.1; extra == 'jax'
