@@ -1,0 +1,82 @@
+[tool.poetry]
+name = "oscilloscopy"
+description = "A Python package to parse oscilloscope data."
+authors = ["Erik van Weelderen", "erikvanweelderen@hotmail.nl"]
+version = "0.1.0"
+readme = "README.md"
+license = "LICENSE"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+homepage = "https://github.com/Magmoc/oscilloscopy"
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "*"
+pandas = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+ruff = "*"
+mypy = "*"
+pytest-cov = "*"
+build = "^1.2.2.post1"
+twine = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Testing
+[tool.poetry.group.test.dependencies]  
+pytest = "^8.2.0"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+pythonpath = "src/"
+testpaths = [
+    "tests/*",
+]
+
+
+# Typechecking
+[tool.mypy]
+python_version = "3.12"
+disallow_untyped_defs = true
+ignore_missing_imports = true
+warn_unreachable = true
+follow_imports = "silent"
+check_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+
+
+# Formatting and linting
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+# https://docs.astral.sh/ruff/rules
+select = [
+    "E", 
+    "W",
+    "F", 
+    "N",
+    "I",
+    ]
+
+ignore = [
+    "D106",
+    "D107",
+
+    "D203", # Had to choose between D203 and D211
+    "D213", # Had to choose between D212 and D213
+    ]
+
+[tool.ruff.lint.per-file-ignores]
+"src/*/tests.py" = ["D100"] # Ignore docstring for tests modules.
