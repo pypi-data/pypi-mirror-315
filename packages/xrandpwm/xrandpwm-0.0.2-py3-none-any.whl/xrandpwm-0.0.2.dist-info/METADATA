@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: xrandpwm
+Version: 0.0.2
+Summary: xrandr screen/monitors info collector classes (intended for bspwm)
+Home-page: https://github.com/kokaito-git/xrandpwm
+Author: kokaito
+Author-email: kokaito.git@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: kcolors
