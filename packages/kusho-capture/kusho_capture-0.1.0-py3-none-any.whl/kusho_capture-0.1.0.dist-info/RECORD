@@ -1,0 +1,8 @@
+sdk/__init__.py,sha256=AgBE6h6fUq7Wl7yDvp8JV1HK0i71xA8PTqTnUvHjb0g,158
+sdk/collector.py,sha256=CMzR9rodNWzyLh20mtct47rWMpYjBoC0CHXed75HlAc,3526
+sdk/middleware.py,sha256=eETIxN4cptMrJUrmjt2v1xp91BVzYTqkktgc_oAVhyc,5605
+kusho_capture-0.1.0.dist-info/LICENSE,sha256=RWuQQmhEdKcBFGwF_UXPSNladWa8POc426E2ZOOj7Vk,1063
+kusho_capture-0.1.0.dist-info/METADATA,sha256=DqP2zAvA28IahRiWWptiR5nau0s34PEE0d2xhAMtvyA,4501
+kusho_capture-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+kusho_capture-0.1.0.dist-info/top_level.txt,sha256=JuXS55gRP3EzGKmJgbLfVfUolO3cM_u69k3qvutnBuw,4
+kusho_capture-0.1.0.dist-info/RECORD,,
