@@ -1,0 +1,3 @@
+[console_scripts]
+kivy_mines = kivy_mines.__main__:main
+
