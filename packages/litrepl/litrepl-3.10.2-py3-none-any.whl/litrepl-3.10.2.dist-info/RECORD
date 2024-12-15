@@ -1,0 +1,14 @@
+litrepl/__init__.py,sha256=d-fLIxcgNLOmSqYaPkpYDB5iecW-z4A8-Xns6MfMmKQ,1260
+litrepl/base.py,sha256=aoyu35sIzgeFNe597nBN_ROuzFot2yfeKpr6wxGOdfw,30571
+litrepl/eval.py,sha256=06S37DVvKD5geNX5zuLKA-klYJhlPtuTN7wcKSvQlyE,14521
+litrepl/main.py,sha256=Au9JEabpBz2MINSQ2hyurojtfT8T5oBPXPFP-PcFC44,9935
+litrepl/revision.py,sha256=S44AFc6KJWa-QqRXI4RqptWMIZZ6mf8M7oSvM1VgwGk,88
+litrepl/semver.py,sha256=aoiurMCBavJSViyEF2RYBuL03KRl-3Nr3n1hKYFpk9U,52
+litrepl/types.py,sha256=9xmlnV9wDpzqmNoe-6LtbzeEzLl3XYybYUeVHSF0Na8,4494
+litrepl/utils.py,sha256=G1xMDeQZLuB_yff6nWom7ujmR8NBaY70yJfXk_1cJ3g,3125
+litrepl-3.10.2.data/scripts/litrepl,sha256=x-P4FJMV1ApCUQqRzXQk7wjmP9d4DwZFqa-QvmZ0VM0,76
+litrepl-3.10.2.dist-info/LICENSE.txt,sha256=UCNFkryaigkm2-bbmfJky8E5zOALkNXynbTP3mnJKiA,1514
+litrepl-3.10.2.dist-info/METADATA,sha256=gD09wbVS3ZPtoa6WHoqySbEJDTCgY8AeJ-GEfoHR_2A,44361
+litrepl-3.10.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+litrepl-3.10.2.dist-info/top_level.txt,sha256=B8LgH6I6XyqxllcC2VIcnjNlpyoF4rGC6iXRmSYfN2I,8
+litrepl-3.10.2.dist-info/RECORD,,
