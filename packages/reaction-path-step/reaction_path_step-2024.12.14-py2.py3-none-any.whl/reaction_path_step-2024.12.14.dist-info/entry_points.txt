@@ -1,0 +1,5 @@
+[org.molssi.seamm]
+Reaction Path = reaction_path_step:ReactionPathStep
+
+[org.molssi.seamm.tk]
+Reaction Path = reaction_path_step:ReactionPathStep
