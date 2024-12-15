@@ -1,0 +1,2 @@
+[console_scripts]
+repominify = repominify.core.cli:main
