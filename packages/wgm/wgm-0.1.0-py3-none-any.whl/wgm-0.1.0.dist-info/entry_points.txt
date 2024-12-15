@@ -1,0 +1,3 @@
+[console_scripts]
+wgm=wgm.console:main
+
