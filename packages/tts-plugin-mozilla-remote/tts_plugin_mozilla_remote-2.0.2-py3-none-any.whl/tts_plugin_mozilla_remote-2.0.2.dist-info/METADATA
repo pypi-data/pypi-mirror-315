@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: tts-plugin-mozilla_remote
+Version: 2.0.2
+Summary: A Mozilla/Coqui TTS plugin for Neon and OVOS
+Author-email: Neongecko/Oscillate Labs <mike@oscillatelabs.net>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/OscillateLabsLLC/tts-plugin-mozilla_remote
+Keywords: mycroft,ovos,neon,plugin,tts
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: ovos-plugin-manager
+Requires-Dist: requests
+Requires-Dist: setuptools
+Provides-Extra: test
+Requires-Dist: ovos-core; extra == "test"
+Requires-Dist: pytest; extra == "test"
+
+# Mozilla/Coqui TTS Plugin for OVOS or Neon
+
+TTS Plugin for Remote Mozilla or Coqui Text-to-Speech. Note that this module requires a local or remote API server to be available.
+
+Need to set up a Coqui server? Check out [this actively maintained Coqui fork](https://github.com/idiap/coqui-ai-TTS).
+
+Looking for a Coqui plugin that also loads the model? Check out [ovos-tts-plugin-coqui](https://github.com/OpenVoiceOS/ovos-tts-plugin-coqui)
+
+## Configuration
+
+using mycroft.conf
+
+```json
+"tts": {
+    "module": "mozilla_remote",
+    "mozilla_remote": {
+      "api_url": "http://0.0.0.0:5002/api/tts"
+    }
+}
+```
+
+Using neon.yaml
+
+```yaml
+tts:
+  module: mozilla_remote
+  mozilla_remote: { "api_url": "http://0.0.0.0:5002/api/tts" }
+```
+
+## Usage
+
+Standalone usage
+
+```python
+from tts_plugin_mozilla_remote import MozillaRemoteTTS
+
+engine = MozillaRemoteTTS(config={"api_url": "http://0.0.0.0:5002/api/tts"})
+engine.get_tts("hello world", "test.wav")
+```
