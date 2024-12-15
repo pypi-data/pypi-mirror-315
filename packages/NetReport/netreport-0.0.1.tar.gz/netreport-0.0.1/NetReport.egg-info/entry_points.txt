@@ -1,0 +1,2 @@
+[console_scripts]
+netcheck = net_check.__init__:main
