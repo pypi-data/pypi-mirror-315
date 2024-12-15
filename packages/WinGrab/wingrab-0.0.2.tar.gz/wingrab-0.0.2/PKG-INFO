@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: WinGrab
+Version: 0.0.2
+Summary: WinGrab: A simple tool to get the PID of the window under the cursor.
+Home-page: https://github.com/JezaChen/WinGrab
+Author: Jianzhang Chen
+Author-email: jezachen@163.com
+License: MIT
+Keywords: win32api windows gui
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# WinGrab
+A simple tool to get the PID of the window under the mouse cursor, implemented in **Python**.
+
+`wingrab` is implemented in the Python language, supports running directly and integrating into Python code, 
+and currently only supports Windows.
+
+## Installation
+### From pip
+
+```bash
+pip install wingrab
+```
+
+### From source code
+
+Download the [wingrab.py](wingrab%2Fwingrab.py) and [cursor.cur](wingrab%2Fcursor.cur) files and place them in your project directory, 
+ensuring the `cursor.cur` file is in the same location as `wingrab.py`.
+
+## Usage
+
+### Run directly in CLI
+
+**Ensure the `wingrab` package is installed via pip**, You can then run it directly in the CLI using:
+
+```bash
+py-wingrab
+```
+
+or
+
+```bash
+py-wingrab grab
+```
+
+You can run it together with some powershell commands like `Get-Process`:
+
+```bash
+Get-Process -Id $(py-wingrab)
+```
+
+If `wingrab` crashes, and the mouse cursor has changed to a cross, 
+run the `cleanup` command to try to restore the mouse cursor.
+
+```bash
+py-wingrab cleanup
+```
+
+### Integrate into your Python code
+
+It is very simple to integrate `wingrab` into your Python code,
+you just need to call the `grab` function in the `wingrab` package.
+
+```python
+from wingrab import wingrab
+
+pid = wingrab.grab()
+```
+
+The `grab` function returns the PID of the window under the cursor as an integer.
+
+Note that the `grab` will block the current thread until the user clicks the left mouse button,
+so if you want to use it in a GUI application,
+you had better call the `grab` function in a sub thread. (See examples below)
+
+**Note: `wingrab` can be used in both the main thread and the sub threads, 
+but if you want to use it in a sub thread, make sure to call `wingrab.grab()` in the main thread first.**
+
+To restore the global mouse cursor to the default when `wingrab` crashes, invoke the `cleanup` function.
+
+```python
+from wingrab import wingrab
+
+wingrab.cleanup()
+```
+
+## Examples
+
+`examples` directory contains several examples which demonstrate usage and integration methods. 
+You can run them directly after installing the package:
+
+- [pyqt5_example.py](examples%2Fpyqt5_example.py): An example of using `wingrab` in the main thread of a PyQt5 application.
+- [pyqt5_example_run_in_sub_thread.py](examples%2Fpyqt5_example_run_in_sub_thread.py): An example of using `wingrab` in the sub thread of a PyQt5 application.
+- [tkinter_example.py](examples%2Ftkinter_example.py): An example of using `wingrab` in a Tkinter application.
+- [run_in_sub_thread.py](examples%2Frun_in_sub_thread.py): An example of using `wingrab` in a sub thread of a console application.
