@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/tyilo/repos/z4/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20220828.0/
+Abs	z4.py	/^def Abs(x):$/;"	f
+BoolToInt	z4.py	/^def BoolToInt(x):$/;"	f
+ByteVec	z4.py	/^class ByteVec(BitVecRef):$/;"	c
+Sgn	z4.py	/^def Sgn(x):$/;"	f
+Tests	tests.py	/^class Tests(unittest.TestCase):$/;"	c
+TruncDiv	z4.py	/^def TruncDiv(a, b):$/;"	f
+Usage	README.md	/^## Usage$/;"	s	chapter:z4
+Z3CounterExample	z4.py	/^class Z3CounterExample(Z3SolveException):$/;"	c
+Z3SolveException	z4.py	/^class Z3SolveException(Exception):$/;"	c
+Z3Unknown	z4.py	/^class Z3Unknown(Z3SolveException):$/;"	c
+Z3Unsat	z4.py	/^class Z3Unsat(Z3SolveException):$/;"	c
+__getattr__	z4.py	/^    def __getattr__(self, attr):$/;"	m	class:ByteVec
+__getitem__	z4.py	/^    def __getitem__(self, i):$/;"	m	class:ByteVec
+__init__	z4.py	/^    def __init__(self, model: ModelRef):$/;"	m	class:Z3CounterExample
+__init__	z4.py	/^    def __init__(self, name, byte_count, ctx=None):$/;"	m	class:ByteVec
+__len__	z4.py	/^    def __len__(self):$/;"	m	class:ByteVec
+_original_bool_ref_mul	z4.py	/^_original_bool_ref_mul = BoolRef.__mul__$/;"	v
+`easy_prove`	README.md	/^### `easy_prove`$/;"	S	section:z4""Usage
+`easy_solve`	README.md	/^### `easy_solve`$/;"	S	section:z4""Usage
+`find_all_solutions`	README.md	/^### `find_all_solutions`$/;"	S	section:z4""Usage
+easy_prove	z4.py	/^def easy_prove(claim):$/;"	f
+easy_solve	z4.py	/^def easy_solve(constraints):$/;"	f
+find_all_solutions	z4.py	/^def find_all_solutions(constraints):$/;"	f
+test_bool_operations	tests.py	/^    def test_bool_operations(self):$/;"	m	class:Tests
+test_byte_vec	tests.py	/^    def test_byte_vec(self):$/;"	m	class:Tests
+test_rshift	tests.py	/^    def test_rshift(self):$/;"	m	class:Tests
+value	z4.py	/^    def value(self, model):$/;"	m	class:ByteVec
+z4	README.md	/^# z4$/;"	c

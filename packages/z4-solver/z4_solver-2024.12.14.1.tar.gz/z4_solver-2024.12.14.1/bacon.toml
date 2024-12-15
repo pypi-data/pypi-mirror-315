@@ -1,0 +1,16 @@
+[jobs.ruff]
+env.FORCE_COLOR = "1"
+command = [
+    "ruff", "check",
+]
+need_stdout = true
+analyzer = "python_ruff"
+watch = ["src", "tests", "pyproject.toml"]
+
+[jobs.pytest]
+command = [
+    "uv", "run", "pytest"
+]
+need_stdout = true
+analyzer = "python_pytest"
+watch = ["src", "tests", "pyproject.toml"]
