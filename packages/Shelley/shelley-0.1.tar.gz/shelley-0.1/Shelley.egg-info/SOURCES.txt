@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+Shelley.egg-info/PKG-INFO
+Shelley.egg-info/SOURCES.txt
+Shelley.egg-info/dependency_links.txt
+Shelley.egg-info/entry_points.txt
+Shelley.egg-info/top_level.txt
+inst/install.ps1
+inst/install.sh
+shelley/__init__.py
+shelley/__main__.py
+shelley/installer.py
