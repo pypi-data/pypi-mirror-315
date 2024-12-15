@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0d8b7dc-822d-445a-93d2-5e667b8755af" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OTSunWebApp/Tutorial_1_1e_OTSun_WebApp.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OTSunWebApp/Tutorial_2_1e_OTSun_WebApp.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OTSunWebApp/Tutorial_3_1e_OTSun_WebApp.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OTSunWebApp/Tutorial_4_1e_OTSun_WebApp.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OTSunWebApp/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Fig3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/dill.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/intro.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/make.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/modules.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/otsun.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo_OTSun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/otsun/__about__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/otsun/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/otsun/experiments.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/otsun/materials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/otsun/math.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/otsun/movements.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/otsun/optics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/otsun/outputs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/otsun/ray.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/otsun/scene.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/otsun/source.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AR-J.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ASTMG173-direct.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Ag_Yang.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Air_Ag_Air.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Al.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BK7_Schott.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EVA.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Fitxer_OTSun_Exp1a_theta0_90.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/MgF2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Perovskite_Leguy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Perovskite_Stack_200nm.FCStd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Reflector_Layer.FCStd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Si3N4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Si3N4Reflectancia.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Silicon.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Solar_Tower.FCStd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Spiro_.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/absorber_coating.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/mats.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/part_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/reflector_coating.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_LFR.FCStd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_PTC.FCStd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_Si_cell.FCStd" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;bielcardona&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:bielcardona/OTSun.git&quot;,
+    &quot;accountId&quot;: &quot;b2515bf2-e9e2-453e-9fa0-b0bcf0300c87&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2jvULqOT3OJSGvMuwRnfg4CwV9I" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.19072.16" />
+        <option value="bundled-python-sdk-8336bb23522e-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.19072.16" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0d8b7dc-822d-445a-93d2-5e667b8755af" name="Changes" comment="" />
+      <created>1722266990850</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722266990850</updated>
+      <workItem from="1722266991932" duration="1359000" />
+      <workItem from="1724224676708" duration="7165000" />
+      <workItem from="1725175981184" duration="5864000" />
+      <workItem from="1725280171878" duration="3000" />
+      <workItem from="1728917551740" duration="1995000" />
+      <workItem from="1733833489620" duration="1732000" />
+      <workItem from="1734084790287" duration="2857000" />
+      <workItem from="1734164520583" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
