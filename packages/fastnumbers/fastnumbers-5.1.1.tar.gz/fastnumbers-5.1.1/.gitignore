@@ -1,0 +1,46 @@
+*.py[co]
+_version.py
+
+# Packages
+*.egg
+*.egg-info
+*.so
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+doctest.py
+.python-version
+
+# We are using MANIFEST.in instead
+MANIFEST
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.hypothesis
+.coverage
+.tox
+.cache
+.pytest_cache
+.pytest
+.envrc
+.venv
+
+#Translations
+*.mo
+
+#Mr Developer
+.mr.developer.cfg
+
+# PyCharm
+.idea
+
+# VSCode
+.vscode
