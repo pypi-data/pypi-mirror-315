@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+descriptorlib/__init__.py
+descriptorlib/run_tests.py
+descriptorlib.egg-info/PKG-INFO
+descriptorlib.egg-info/SOURCES.txt
+descriptorlib.egg-info/dependency_links.txt
+descriptorlib.egg-info/requires.txt
+descriptorlib.egg-info/top_level.txt
