@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: meme_generator_contrib
+Version: 0.2.0a3
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Home-Page: https://github.com/MemeCrafters/meme-generator-rs
+Author: meetwq <meetwq@gmail.com>
+Author-email: meetwq <meetwq@gmail.com>
+License: MIT
+Requires-Python: >=3.9
+Project-URL: Source Code, https://github.com/MemeCrafters/meme-generator-rs
