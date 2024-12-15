@@ -1,0 +1,10 @@
+truecase
+string
+typing_extensions==4.4.0
+inflect
+nltk
+numpy==1.21.0
+spacy==3.2.0
+
+[spacy_models]
+en_core_web_sm

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sentence_concreteness/__init__.py
+sentence_concreteness/sentence_concreteness.py
+sentence_concreteness.egg-info/PKG-INFO
+sentence_concreteness.egg-info/SOURCES.txt
+sentence_concreteness.egg-info/dependency_links.txt
+sentence_concreteness.egg-info/requires.txt
+sentence_concreteness.egg-info/top_level.txt
