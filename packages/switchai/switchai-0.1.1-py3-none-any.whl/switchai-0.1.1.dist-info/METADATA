@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: switchai
+Version: 0.1.1
+Summary: A unified library for interacting with various AI APIs through a standardized interface.
+Home-page: https://github.com/yelboudouri/SwitchAI
+Author: Yassine El Boudouri
+Author-email: boudouriyassine@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SwitchAI
