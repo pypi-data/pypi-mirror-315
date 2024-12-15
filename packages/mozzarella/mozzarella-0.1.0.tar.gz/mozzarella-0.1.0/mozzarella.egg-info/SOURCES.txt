@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+mozzarella/__init__.py
+mozzarella.egg-info/PKG-INFO
+mozzarella.egg-info/SOURCES.txt
+mozzarella.egg-info/dependency_links.txt
+mozzarella.egg-info/top_level.txt
