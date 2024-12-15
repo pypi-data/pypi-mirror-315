@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: TensorflowImageHelperCD
+Version: 0.2.0
+Summary: Helper package for TensorFlow IMAGE CNN and DNN and Display image (dummy)
+Home-page: https://github.com/SA-Ahmed-W/TensorflowImageHelperCD
+Author: saaw
+Author-email: aasimahmedsiddiqui45666@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# TENSORFLOW IMAGE HELPER CNN AND DNN PACKAGE
