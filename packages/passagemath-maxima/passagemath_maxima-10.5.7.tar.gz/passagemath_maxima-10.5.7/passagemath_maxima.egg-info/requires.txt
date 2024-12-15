@@ -1,0 +1,4 @@
+passagemath-ecl~=10.5.7.0
+
+[test]
+passagemath-repl
