@@ -1,0 +1,8 @@
+README.md
+setup.py
+spips/__init__.py
+spips/spips.py
+spips.egg-info/PKG-INFO
+spips.egg-info/SOURCES.txt
+spips.egg-info/dependency_links.txt
+spips.egg-info/top_level.txt
