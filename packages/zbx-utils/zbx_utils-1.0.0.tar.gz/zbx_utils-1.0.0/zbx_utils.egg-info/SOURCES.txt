@@ -1,0 +1,11 @@
+README.rst
+pyproject.toml
+setup.py
+./zbx_utils/__init__.py
+./zbx_utils/zbxtags.py
+./zbx_utils/zbxtpls.py
+zbx_utils.egg-info/PKG-INFO
+zbx_utils.egg-info/SOURCES.txt
+zbx_utils.egg-info/dependency_links.txt
+zbx_utils.egg-info/requires.txt
+zbx_utils.egg-info/top_level.txt

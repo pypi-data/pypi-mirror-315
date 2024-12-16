@@ -1,0 +1,458 @@
+Metadata-Version: 2.1
+Name: zbx_utils
+Version: 1.0.0
+Summary: Zabbix 辅助与通用功能操作库。
+Home-page: https://github.com/gary714/zbx-utils
+Author: gary
+Author-email: mepmb@sina.com
+License: MIT
+Project-URL: Homepage, https://github.com/gary714/zbx-utils
+Project-URL: Documentation, https://github.com/gary714/zbx-utils
+Project-URL: Source, https://github.com/gary714/zbx-utils
+Keywords: Zabbix,Utilities
+Platform: Linux
+Platform: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+Requires-Dist: zabbix_api>=0.5.4
+
+zbx-utils: 简化 Zabbix API 操作的实用工具集
+===========================================
+
+简介
+----
+
+- 在现代 ``IT`` 企业中，监控系统是确保网络和应用程序高效运行的关键组件。
+
+- ``Zabbix`` 是一款广泛使用的开源监控软件，它允许企业对各种服务、网络设备和服务器进行实时监控。
+
+- 为了满足快速发展的业务需求， ``Zabbix API`` 提供了一个强大的接口来自动化监控任务，如批量获取主机信息、添加或更新监控项等。
+
+- 在日常使用中发现，重复性地调用 ``Zabbix API`` 进行相似任务处理既繁琐又低效。
+
+- 为了解决这个问题并优化操作流程，我们开发了 ``zbx-utils`` 工具集。
+
+- 此工具集旨在简化常见操作而不重复编写请求方法和过程，提高效率并减少错误。
+
+特点
+----
+
+- **易用性**：``zbx-utils`` 通过封装常见操作简化了与 ``Zabbix API`` 的交互。
+
+- **功能丰富**：支持主机标签管理、监控项配置以及模板操作等。
+
+- **兼容性**：支持从 ``Zabbix 5.0`` 以上版本开始的新特性，并兼容大多数历史版本。
+
+先决条件
+--------
+
+- **环境要求**：使用 ``zbx-utils`` 之前，请确保您的 ``Zabbix`` 版本至少为 ``5.0`` 或更高。不同功能模块可能有不同的版本要求，请根据需要查阅官方文档确认。
+
+- **依赖库**：本工具集通过利用第三方库 ``Zabbix_api`` 来与 ``Zabbix API`` 进行交互，因此需要预先安装该库。
+
+操作指南
+--------
+
+主机标签管理
+~~~~~~~~~~~~
+
+- 创建一个含有初始化标签信息的主机标签对象：
+
+  .. code:: 
+
+     tags = [
+         {
+             "tag": "webserver",
+             "value": "nginx",
+             "automatic": True
+         },
+         {
+             "tag": "database",
+             "value": "mysql"
+         },
+         {
+             "tag": "Application",
+             "value": "db"
+         }
+     ]
+     host_tags = HostTags(tags=tags)
+
+- 更新特定标签并打印其内容：
+
+  .. code:: 
+
+     import json
+
+     print(
+         json.dumps(
+             host_tags.update_tag(
+                 tag_name="webserver",
+                 tag_value="apache"
+             ),
+             ensure_ascii=False,
+             indent=4
+         )
+     )
+
+  - 结果展示：
+
+    .. code:: 
+
+       [
+           {
+               "tag": "webserver",
+               "value": "apache"
+           },
+           {
+               "tag": "database",
+               "value": "mysql"
+           },
+           {
+               "tag": "Application",
+               "value": "db"
+           }
+       ]
+
+- 批量更新标签（请确保键名和值一一对应）：
+
+  .. code:: 
+
+     import json
+
+     print(
+         json.dumps(
+             host_tags.update_tag(
+                 tag_name=["webserver", "database", "Application"],
+                 tag_value=["apache", "mariadb", "web&db"]
+             ),
+             ensure_ascii=False,
+             indent=4
+         )
+     )
+
+  - 结果展示：
+
+    .. code:: 
+
+       [
+           {
+               "tag": "webserver",
+               "value": "apache"
+           },
+           {
+               "tag": "database",
+               "value": "mariadb"
+           },
+           {
+               "tag": "Application",
+               "value": "web&db"
+           }
+       ]
+
+- 为主机添加一个新标签 ``cache``，不指定标签值：
+
+  .. code:: 
+
+     import json
+
+     print(
+         json.dumps(
+             host_tags.add_tag(
+                 tag_name="cache",
+                 tag_value=""
+             ),
+             ensure_ascii=False,
+             indent=4
+         )
+     )
+
+  - 结果展示：
+
+    .. code:: 
+
+       [
+           {
+               "tag": "webserver",
+               "value": "nginx"
+           },
+           {
+               "tag": "database",
+               "value": "mysql"
+           },
+           {
+               "tag": "Application",
+               "value": "db"
+           },
+           {
+               "tag": "cache",
+               "value": ""
+           }
+       ]
+
+- 支持批量添加多个标签及其对应值：
+
+  .. code:: 
+
+     import json
+
+     print(
+         json.dumps(
+             host_tags.add_tag(
+                 tag_name=["webserver", "database", "k1", "k2"],
+                 tag_value=["apache", "mysql", "v1", "v2"]
+             ),
+             ensure_ascii=False,
+             indent=4
+         )
+     )
+
+  - 结果展示：
+
+    .. code:: 
+
+       [
+           {
+               "tag": "webserver",
+               "value": "apache"
+           },
+           {
+               "tag": "database",
+               "value": "mysql"
+           },
+           {
+               "tag": "Application",
+               "value": "db"
+           },
+           {
+               "tag": "k1",
+               "value": "v1"
+           },
+           {
+               "tag": "k2",
+               "value": "v2"
+           }
+       ]
+
+- 最后便是针对于主机标签的删除操作，同样支持删除一个或多个标签，只需要传入标签名即可，如下所示：
+
+  .. code:: 
+
+     import json
+
+     print(
+         json.dumps(
+             host_tags.delete_tag(tag_name="webserver"),
+             ensure_ascii=False,
+             indent=4
+         )
+     )
+
+  - 结果展示：
+
+    .. code:: 
+
+       [
+           {
+               "tag": "database",
+               "value": "mysql"
+           },
+           {
+               "tag": "Application",
+               "value": "db"
+           }
+       ]
+
+- 注意：处理监控项标签与主机标签相同，因此不再详述。
+
+主机模板管理
+~~~~~~~~~~~~
+
+- 在 ``Zabbix`` 监控系统中，主机模板是一组预定义的监控项、触发器、图形等的集合，用于快速配置和部署监控策略。
+
+- 下面是如何通过 ``Zabbix API`` 来操作这些主机模板的步骤。
+
+- 首先，您需要创建一个与 ``Zabbix API`` 交互的初始化对象。
+
+- 这要求您提供 ``Zabbix`` 服务器的 ``URL``，以及相应的用户认证信息，包括用户名和密码。
+
+  .. code:: 
+
+     zbx = ZbxTpls(
+         server="your zabbix server url",
+         user="your zabbix username",
+         passwd="your zabbix username password"
+     )
+
+- 在进行主机模板相关操作之前，请确保您已经准备好了目标主机的名称（ ``host`` ），因为模板必须关联到特定的主机上。
+
+- 不同于标签（通常使用键值对来唯一标识），模板是通过它们的唯一 ``"id"`` 来识别和管理的。
+
+- 这样就需要通过 ``Zabbix API`` 进行查询和操作，因此在初始化时必须提供用户认证信息。
+
+- 以下是如何添加新模板到指定主机：
+
+  .. code:: 
+
+     import json
+
+     add_tpls = zbx.add_tpl(
+         host="ZabbixServer",
+         tpl_name="Docker by Zabbix agent 2"
+     )
+     print(
+         json.dumps(
+             add_tpls,
+             ensure_ascii=False,
+             indent=4
+         )
+     )
+
+  - 执行上述操作后，您应该会看到一个包含新添加模板信息的 ``JSON`` 结构响应：
+
+    .. code:: 
+
+       [
+           {
+               "host": "Linux by Zabbix agent",
+               "templateid": "10047"
+           },
+           {
+               "host": "Docker by Zabbix agent 2",
+               "templateid": "12723"
+           }
+       ]
+
+- 如果您想要移除某个已关联到主机上的模板，则可以使用以下代码：
+
+  .. code:: 
+
+     import json
+
+     clear_tpls = zbx.delete_tpl(
+         host="ZabbixServer",
+         tpl_name="Docker by Zabbix agent 2"
+     )
+     print(
+         json.dumps(
+             clear_tpls,
+             ensure_ascii=False,
+             indent=4
+         )
+     )
+
+  - 成功移除模板后，返回结果将不再显示已删除的条目：
+
+    .. code:: 
+
+       [
+           {
+               "host": "Linux by Zabbix agent",
+               "templateid": "10047"
+           }
+       ]
+
+- 如果您需要替换某个现有模板为另一个新模板，则应先删除既有模板，并添加新模版。以下示例展示了这一过程：
+
+  .. code:: 
+
+     import json
+
+     replace_tpls = zbx.replace_tpl(
+         host="ZabbixServer",
+         old_tpl_name="Linux by Zabbix agent",
+         new_tpl_name="Docker by Zabbix agent 2"
+     )
+     print(
+         json.dumps(
+             replace_tpls,
+             ensure_ascii=False,
+             indent=4
+         )
+     )
+
+  - 替换完成后，相关联主机将仅关联到新指定的模版，反映在返回结果中：
+
+    .. code:: 
+
+       [
+           {
+               "host": "Docker by Zabbix agent 2",
+               "templateid": "12723"
+           }
+       ]
+
+
+使用主机信息清单标签（Host Inventory Tags）
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 由于 ``Zabbix`` 监控系统的历史版本中不支持主机标签（ ``Host Tags`` ）功能，监控项的分类和组织是依靠 ``Application`` 实体来实现的。
+
+- 为了给主机添加类似 "标签" 或者 "分类" 的属性，可以利用 ``Host Inventory Tag`` （主机信息清单）功能。
+
+- 这一功能允许用户存储有关每个监控主机详细信息的键值对数据。
+
+- 以下是如何在低版本的 ``Zabbix`` 中借助 ``Host Inventory Tag`` 实现该功能的方法：
+
+  .. code:: 
+
+     - 创建 `InvTags` 对象：
+         >>> tags = InvTags(
+         >>>     "env=prod;region=east;"
+         >>> )
+         >>> print(tags)
+         "env=prod;region=east;"
+
+     - 添加新标签或修改现有标签：
+         >>> tags["new_key"] = "value"
+         >>> print(tags)
+         "env=prod;region=east;new_key=value;"
+
+     - 删除一个标签：
+         >>> del tags["env"]
+         >>> print(tags)
+         "region=east;new_key=value;"
+
+     - 若键值为 None，则只输出键名：
+         >>> tags["only_key"] = None
+         >>> print(tags)
+         "region=east;new_key=value;only_key;"
+
+     - 获取某个键对应的值：
+         >>> value = tags.get("region")
+         >>> print(value)
+         "east"
+
+     - 抛出 TypeError 异常，如果尝试设置非法类型作为 value：
+         >>> tags["invalid"] = 123
+         TypeError: 主机清单标签内容必须是字符串，但接收到: int。
+
+     - 当 `InvTags` 为空时, 返回空字符串：
+         >>> empty_tags = InvTags()
+         >>> print(empty_tags)
+
+
+高级用法：重复利用 ZabbixAPI 对象
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 在更复杂或高级的使用场景中，如操作主机模板时，我们通常会实例化模板对象并传入登录凭证（用户名和密码）。
+
+- 但如果在当前代码环境中已经存在一个由 ``Zabbix_api`` 库创建且正确初始化好用户认证信息的 ``ZabbixAPI`` 对象，则无需重新进行初始化。
+
+- 相反，可以直接将现有对象传递给要使用它进行进一步操作的构造函数或方法。
+
+- 例如：
+
+  .. code:: 
+
+     # 假设 `zapi` 是已经提前创建好的 `ZabbixAPI` 对象
+     zbx = ZbxTpls(zapi=zapi)
+
+- 在这种情况下，请确保传入构造函数或方法中的 ``ZabbixAPI`` 对象确实是从 ``zabbix-api Python`` 库创建出来，并且其会话仍然有效。
+
+- 这样做可以减少网络请求、避免不必要的资源消耗，并加快脚本执行速度。
+
+- 以上内容旨在提供一种优化代码、提高效率并确保与 ``Zabbix API`` 交互过程科学、专业和合理性方面建议。
