@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: test-evilaliv3
+Version: 0.0.5
+Summary: Ephemeral file system with secure temporary file handling
+Author: Giovanni Pellerano
+Author-email: giovanni.pellerano@globaleaks.org
+License: AGPL-3.0-or-later
+Project-URL: Homepage, https://github.com/globaleaks/globaleaks_ephemeral_fs
+Project-URL: Issues, https://github.com/globaleaks/globaleaks_ephemeral_fs
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: cryptography
+Requires-Dist: fusepy
