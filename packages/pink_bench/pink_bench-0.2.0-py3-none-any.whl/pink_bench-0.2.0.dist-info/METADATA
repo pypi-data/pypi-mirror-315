@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pink_bench
+Version: 0.2.0
+Summary: Library of robot motions with inverse kinematics and predictive control.
+Keywords: inverse,kinematics,pinocchio
+Author-email: Stéphane Caron <stephane.caron@normalesup.org>
+Maintainer-email: Stéphane Caron <stephane.caron@normalesup.org>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Robot Framework :: Library
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: loop-rate-limiters >=0.1.0
+Requires-Dist: matplotlib
+Requires-Dist: pin-pink >=3.1.0
+Requires-Dist: qpmpc >=2.6.3
+Requires-Dist: qpsolvers >=4.3.1
+Requires-Dist: quadprog >=0.1.11
+Requires-Dist: robot_descriptions >=1.13.0
+Project-URL: Changelog, https://github.com/stephane-caron/pink_bench/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://stephane-caron.github.io/pink_bench/
+Project-URL: Homepage, https://stephane-caron.github.io/pink_bench/
+Project-URL: Source, https://github.com/stephane-caron/pink_bench
+Project-URL: Tracker, https://github.com/stephane-caron/pink_bench/issues
+
+# pink\_bench
+
+A library of robot motions performed by inverse kinematics and model predictive control.
+
+## Installation
+
+For best compatibility we recommended installing the bench from Conda:
+
+```console
+conda install -c conda-forge pink_bench
+```
+
+You can also install it from PyPI:
+
+```console
+pip install pink_bench
+```
+
+## Usage
+
+To play a scenario from the library, simply call:
+
+```py
+pink_bench.play_scenario(
+    name="jaxon",
+    dt=0.005,  # seconds
+    qpsolver="proxqp",
+)
+```
+
+This will open a MeshCat tab in your web browser playing the scenario for its prescribed duration. You can also do the same from the command-line:
+
+```console
+$ ./examples/run_scenario.py jaxon --dt 0.005 --qpsolver proxqp
+```
+
