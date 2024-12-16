@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: kiss-ai-stack-client
+Version: 0.1.0a0
+Summary: KISS AI Stack's Python Client SDK - Simplify AI Agent Development
+Author: KISS AI Stack Python SDK, Lahiru Pathirage
+License: MIT
+Project-URL: Homepage, https://github.com/kiss-ai-stack
+Project-URL: Repository, https://github.com/kiss-ai-stack
+Project-URL: Documentation, https://github.com/kiss-ai-stack/kiss-ai-stack-core/main/README.md
+Keywords: ai,agent,machine-learning,llm,document-processing
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests~=2.32.3
+Requires-Dist: websockets~=14.1
+Requires-Dist: httpx~=0.28.0
+Requires-Dist: kiss-ai-stack-types~=0.1.0a2
+
+# kiss-ai-stack-python-sdk
+Python client stub for KISS AI stack server
