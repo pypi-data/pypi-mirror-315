@@ -1,0 +1,2 @@
+include fanpars/VAD/ERI_VAD.pth
+include fanpars/KWS/WideResNet12WithEMA.pth
