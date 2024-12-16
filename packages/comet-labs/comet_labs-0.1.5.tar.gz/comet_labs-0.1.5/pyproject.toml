@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "comet_labs"
+version = "0.1.5"
+description = "A Python package for comet-related functionalities"
+authors = ["Sahil <sahil85.10s@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/Sahilsingh0808/comet"
+repository = "https://github.com/Sahilsingh0808/comet"
+keywords = ["git", "ai", "commit-messages"]
+
+[tool.poetry.dependencies]
+python = "^3.8"                   # Python version compatibility
+textblob = "^0.17.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+comet-labs = "comet_labs.cli:main"  # Define your CLI entry point
