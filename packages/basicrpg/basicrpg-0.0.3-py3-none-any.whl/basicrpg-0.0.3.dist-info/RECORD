@@ -1,0 +1,11 @@
+basicrpg/__init__.py,sha256=YIKJ-dFbj7zBQaMGg8OgwZ6uiiBUO18j9y-0AAPh6WM,172
+basicrpg/basics.py,sha256=Q_pEIHcUCHkt4mI4bTAKoaDUr8GhLg21LNFJ-Y8KxpE,239
+basicrpg/components.py,sha256=CUv3Dcn6P6xFeadXeN32GYLxcyJec1XdgqcdK5qS65w,12930
+basicrpg/errors.py,sha256=2u4vQp2ZRNGUKqxNtDXOxMqZnc0iClWZdC8Wke-qzGA,240
+basicrpg/generators.py,sha256=AVITZakEr91BHxh7oa4q2-w48ebZY8cKTRnIJ_89stc,665
+basicrpg/items.py,sha256=-XJgKNnQdD5Ot_TIWrh_2SLPqN8l0o0zCAV0vElD4YA,3348
+basicrpg-0.0.3.dist-info/LICENSE,sha256=h9v8atxuCBla8Qiz3mkEmwsQh2dkGDmk51VSA_1Ho6I,1069
+basicrpg-0.0.3.dist-info/METADATA,sha256=cTCj6Kf2fddbIoUlkk2UAA1wYMBxyh5JefhJPdA368s,4532
+basicrpg-0.0.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+basicrpg-0.0.3.dist-info/top_level.txt,sha256=wgSz7pcRYRV7Do-taRVcPkrgaSzD2ev4_l0lVGPe2W0,9
+basicrpg-0.0.3.dist-info/RECORD,,
