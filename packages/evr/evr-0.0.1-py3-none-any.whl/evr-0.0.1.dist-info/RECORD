@@ -1,0 +1,13 @@
+evr/__init__.py,sha256=rvSnyVv0FZlZZDYd2hVRSNLlx7BejzVUevnb-QtviMs,70
+evr/__main__.py,sha256=9F7B-PC-CnmG-EjeWNRGbWsAnSYgufiYwoELZ9Duan4,295
+evr/api.py,sha256=RObR0N9bEeubOZEDy5Qz6du5LqeLaZKb6B7Cu3IikNg,5454
+evr/cli.py,sha256=4SJQ-kkin1UEyWHNZWQcCdt1pGkLYf_eB_xcgn_vZL8,702
+evr/model.py,sha256=dFlNzsDwQCtI_9ueyJ24eVprZS6AIfjVbV2Muw2F08I,2080
+evr/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+evr/venues.tsv,sha256=LkBMRQX5_7gc_Nkje8-4ZMcEAvKs0J5i8MAD3KOWKWI,590
+evr/version.py,sha256=utdJ6dApPaJYjqj_ky1sU1QGhzMX2WFR7JgkttuqCuM,937
+evr-0.0.1.dist-info/METADATA,sha256=dGHeSb9giXCz-uaZtsCt6T5sFF_lfoWx6TW75PEiuew,13505
+evr-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+evr-0.0.1.dist-info/entry_points.txt,sha256=zzT3s7Hm55wVd1EI6S7nhPSAJ22yJpnHCmviFB-bwAE,37
+evr-0.0.1.dist-info/top_level.txt,sha256=tj_P7Hq0Ab-QNGfZ-9QWtoU6N0bwaIEXz-Xn-t5YLME,4
+evr-0.0.1.dist-info/RECORD,,
