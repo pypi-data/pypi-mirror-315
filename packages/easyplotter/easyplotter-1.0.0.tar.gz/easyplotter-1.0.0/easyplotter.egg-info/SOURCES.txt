@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+easyplotter/__init__.py
+easyplotter.egg-info/PKG-INFO
+easyplotter.egg-info/SOURCES.txt
+easyplotter.egg-info/dependency_links.txt
+easyplotter.egg-info/top_level.txt

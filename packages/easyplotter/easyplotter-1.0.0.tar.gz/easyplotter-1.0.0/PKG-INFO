@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: easyplotter
+Version: 1.0.0
+Summary: A matplotlib wrapper designed to be easy to use
+Home-page: https://github.com/Blob2763/easyplotter
+Author: blob2763
+License-File: LICENSE
