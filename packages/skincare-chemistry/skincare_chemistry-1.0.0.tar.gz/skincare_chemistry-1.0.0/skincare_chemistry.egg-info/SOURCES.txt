@@ -1,0 +1,7 @@
+README.md
+setup.py
+skincare_chemistry.egg-info/PKG-INFO
+skincare_chemistry.egg-info/SOURCES.txt
+skincare_chemistry.egg-info/dependency_links.txt
+skincare_chemistry.egg-info/requires.txt
+skincare_chemistry.egg-info/top_level.txt
