@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+pshnb/__init__.py
+pshnb/_modidx.py
+pshnb/core.py
+pshnb.egg-info/PKG-INFO
+pshnb.egg-info/SOURCES.txt
+pshnb.egg-info/dependency_links.txt
+pshnb.egg-info/entry_points.txt
+pshnb.egg-info/not-zip-safe
+pshnb.egg-info/requires.txt
+pshnb.egg-info/top_level.txt

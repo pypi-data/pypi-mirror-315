@@ -1,0 +1,8 @@
+[console_scripts]
+pshnb_install = pshnb.core:create_ipython_config
+
+[ipython]
+pshnb = pshnb.core:load_ipython_extension
+
+[nbdev]
+pshnb = pshnb._modidx:d
