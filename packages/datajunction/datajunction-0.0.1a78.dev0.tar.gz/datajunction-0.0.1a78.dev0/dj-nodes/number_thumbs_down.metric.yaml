@@ -1,0 +1,8 @@
+display_name: 'Member: Number Thumbs Down'
+description: Number of thumbs down given per account during the test window, including
+  accounts with zero thumbs
+query: SELECT SUM(COALESCE(thumb_down,0)) FROM ${prefix}thumb
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

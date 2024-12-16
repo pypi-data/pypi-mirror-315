@@ -1,0 +1,50 @@
+display_name: 'Member: Download'
+description: ''
+query: |2-
+
+  SELECT
+      account_owner_id,
+      profile_id,
+      1 AS download_cnt,
+      event_utc_ms,
+      utc_date,
+      device_type_id,
+      CAST(track_id AS BIGINT) AS track_id,
+      end_reason,
+      download_type
+  FROM source.prodhive.dse.download_session_f
+columns:
+- name: end_reason
+  attributes:
+  - dimension
+- name: download_type
+  attributes:
+  - dimension
+primary_key: []
+dimension_links:
+- type: join
+  dimension_node: common.dimensions.xp.allocation_day
+  join_type: right
+  join_on: |2
+
+            ${prefix}download.account_owner_id = common.dimensions.xp.allocation_day.account_id
+            AND FLOOR(
+                (NF_TO_UNIXTIME_MS(${prefix}download.event_utc_ms) - common.dimensions.xp.allocation_day.alloc_utc_ms_ts) / 86400000.0
+            ) = common.dimensions.xp.allocation_day.days_since_allocation
+- type: join
+  dimension_node: common.dimensions.profile
+  join_type: left
+  join_on: ${prefix}download.profile_id = common.dimensions.profile.profile_id
+- type: join
+  dimension_node: common.dimensions.device_type
+  join_type: left
+  join_on: ${prefix}download.device_type_id = common.dimensions.device_type.device_type_id
+- type: join
+  dimension_node: common.dimensions.location
+  join_type: left
+  join_on: ${prefix}download.track_id = common.dimensions.location.location_id
+- type: join
+  dimension_node: common.dimensions.xp.measure_date
+  join_type: left
+  join_on: ${prefix}download.utc_date = common.dimensions.xp.measure_date.dateint
+tags: []

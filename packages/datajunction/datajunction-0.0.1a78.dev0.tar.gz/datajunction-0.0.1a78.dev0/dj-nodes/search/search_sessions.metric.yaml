@@ -1,0 +1,9 @@
+display_name: Search Sessions
+description: avg number of search sessions per account
+query: |-
+  SELECT  sum(num_search_sessions)
+   FROM ${prefix}search.search_session_profile_agg
+tags: []
+required_dimensions: []
+direction: neutral
+unit: unitless

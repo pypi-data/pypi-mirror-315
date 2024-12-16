@@ -1,0 +1,149 @@
+display_name: TVUI Homepage Account Counts Base
+description: The base transform that helps set up tvui counts at the account_id grain.
+query: "(SELECT  obs_window.observation_window,\n\talloc.test_id,\n\talloc.alloc_group_id,\n\
+  \talloc.test_cell_nbr,\n\talloc.account_id,\n\tIF(alloc.days_since_allocation >=\
+  \ obs_window.window_end - 1, 1, 0) AS is_window_complete,\n\tsesh.is_eclipse,\n\t\
+  sesh.is_eclipse_eligible,\n\tsesh.is_jfk_profile,\n\t1.0 * COUNT(profile_session_id)\
+  \ AS session_cnt,\n\tAVG(max_scroll_depth) AS avg_max_scroll_depth,\n\tSUM(qualified_play_cnt\
+  \ / impression_cnt) AS sum_pct_qualified_take_rate,\n\tSUM(total_titles_scrolled)\
+  \ AS total_titles_scrolled,\n\tSUM(dp_visits) AS dp_visits,\n\tSUM(section_1_dp_visits\
+  \ / eclipse_dp_visits) AS sum_pct_section_1_dp_visits,\n\tSUM(section_2_dp_visits\
+  \ / eclipse_dp_visits) AS sum_pct_section_2_dp_visits,\n\tSUM(section_3_dp_visits\
+  \ / eclipse_dp_visits) AS sum_pct_section_3_dp_visits,\n\tCOUNT(section_1_dp_visits\
+  \ / eclipse_dp_visits) AS count_pct_section_1_dp_visits,\n\tCOUNT(section_2_dp_visits\
+  \ / eclipse_dp_visits) AS count_pct_section_2_dp_visits,\n\tCOUNT(section_3_dp_visits\
+  \ / eclipse_dp_visits) AS count_pct_section_3_dp_visits,\n\tSUM(qualified_supplemental_play_cnt)\
+  \ AS qualified_supplemental_play_cnt,\n\tSUM(section_1_qualified_supplemental_play_cnt\
+  \ / eclipse_qualified_supplemental_play_cnt) AS sum_pct_section_1_qualified_supplemental_plays,\n\
+  \tSUM(section_2_qualified_supplemental_play_cnt / eclipse_qualified_supplemental_play_cnt)\
+  \ AS sum_pct_section_2_qualified_supplemental_plays,\n\tSUM(section_3_qualified_supplemental_play_cnt\
+  \ / eclipse_qualified_supplemental_play_cnt) AS sum_pct_section_3_qualified_supplemental_plays,\n\
+  \tCOUNT(section_1_qualified_supplemental_play_cnt / eclipse_qualified_supplemental_play_cnt)\
+  \ AS count_pct_section_1_qualified_supplemental_plays,\n\tCOUNT(section_2_qualified_supplemental_play_cnt\
+  \ / eclipse_qualified_supplemental_play_cnt) AS count_pct_section_2_qualified_supplemental_plays,\n\
+  \tCOUNT(section_3_qualified_supplemental_play_cnt / eclipse_qualified_supplemental_play_cnt)\
+  \ AS count_pct_section_3_qualified_supplemental_plays,\n\tSUM(section_1_dwell_time_ms\
+  \ / eclipse_dwell_time_ms) AS sum_pct_section_1_dwell,\n\tCOUNT(section_1_dwell_time_ms\
+  \ / eclipse_dwell_time_ms) AS count_pct_section_1_dwell,\n\tSUM(section_2_dwell_time_ms\
+  \ / eclipse_dwell_time_ms) AS sum_pct_section_2_dwell,\n\tCOUNT(section_2_dwell_time_ms\
+  \ / eclipse_dwell_time_ms) AS count_pct_section_2_dwell,\n\tSUM(section_3_dwell_time_ms\
+  \ / eclipse_dwell_time_ms) AS sum_pct_section_3_dwell,\n\tCOUNT(section_3_dwell_time_ms\
+  \ / eclipse_dwell_time_ms) AS count_pct_section_3_dwell,\n\tSUM(IF(dwell_time_ms\
+  \ / 1000.0 >= 10, 1.0, 0.0)) AS session_cnt_w_dwell_ge_10s,\n\tSUM(IF(dwell_time_ms\
+  \ / 1000.0 >= 35, 1.0, 0.0)) AS session_cnt_w_dwell_ge_35s,\n\tSUM(IF(dwell_time_ms\
+  \ / 1000.0 >= 135, 1.0, 0.0)) AS session_cnt_w_dwell_ge_135s,\n\tSUM(IF(session_has_reached_section_3,\
+  \ 1.0, 0.0)) AS sum_session_has_reached_section_3,\n\tCOUNT(session_has_reached_section_3)\
+  \ AS count_session_has_reached_section_3\n FROM source.prodhive.exp_data.allocation_core_d\
+  \ AS alloc CROSS JOIN common.dimensions.xp.observation_window obs_window\nLEFT JOIN\
+  \ (SELECT  account_id,\n\tprofile_session_id,\n\tsession_start_utc_ms,\n\tIF(is_eclipse,\
+  \ 1, 0) AS is_eclipse,\n\tIF(is_eclipse_eligible, 1, 0) AS is_eclipse_eligible,\n\
+  \tIF(experience_type = 'just_for_kids', 1, 0) AS is_jfk_profile,\n\tCOALESCE(SUM(dwell_time_ms),\
+  \ 0) AS dwell_time_ms,\n\tCOALESCE(SUM(impression_cnt), 0) AS impression_cnt,\n\t\
+  COALESCE(SUM(tv_entity_in_focus_cnt), 0) AS total_titles_scrolled,\n\tCOALESCE(SUM(qualified_play_cnt),\
+  \ 0) AS qualified_play_cnt,\n\tCOALESCE(MAX(row_num), 0) AS max_scroll_depth,\n\t\
+  SUM(CASE  merch_intent\n        WHEN 'featured' THEN open_video_display_page_cnt\n\
+  \        ELSE 0\n    END) AS section_1_dp_visits,\n\tSUM(CASE  merch_intent\n  \
+  \      WHEN 'recommendedForNow' THEN open_video_display_page_cnt\n        ELSE 0\n\
+  \    END) AS section_2_dp_visits,\n\tSUM(CASE  merch_intent\n        WHEN 'explore'\
+  \ THEN open_video_display_page_cnt\n        ELSE 0\n    END) AS section_3_dp_visits,\n\
+  \tSUM(CASE\n        WHEN merch_intent IN ('featured', 'recommendedForNow', 'explore')\
+  \ THEN open_video_display_page_cnt\n        ELSE 0\n    END) AS eclipse_dp_visits,\n\
+  \tSUM(COALESCE(open_video_display_page_cnt, 0)) AS dp_visits,\n\tSUM(CASE  merch_intent\n\
+  \        WHEN 'featured' THEN qualified_supplemental_play_cnt\n        ELSE 0\n\
+  \    END) AS section_1_qualified_supplemental_play_cnt,\n\tSUM(CASE  merch_intent\n\
+  \        WHEN 'recommendedForNow' THEN qualified_supplemental_play_cnt\n       \
+  \ ELSE 0\n    END) AS section_2_qualified_supplemental_play_cnt,\n\tSUM(CASE  merch_intent\n\
+  \        WHEN 'explore' THEN qualified_supplemental_play_cnt\n        ELSE 0\n \
+  \   END) AS section_3_qualified_supplemental_play_cnt,\n\tSUM(CASE\n        WHEN\
+  \ merch_intent IN ('featured', 'recommendedForNow', 'explore') THEN qualified_supplemental_play_cnt\n\
+  \        ELSE 0\n    END) AS eclipse_qualified_supplemental_play_cnt,\n\tSUM(qualified_supplemental_play_cnt)\
+  \ AS qualified_supplemental_play_cnt,\n\tSUM(CASE  merch_intent\n        WHEN 'featured'\
+  \ THEN tv_entity_in_focus_cnt\n        ELSE 0\n    END) AS section_1_titles_scrolled_cnt,\n\
+  \tSUM(CASE  merch_intent\n        WHEN 'recommendedForNow' THEN tv_entity_in_focus_cnt\n\
+  \        ELSE 0\n    END) AS section_2_titles_scrolled_cnt,\n\tSUM(CASE  merch_intent\n\
+  \        WHEN 'explore' THEN tv_entity_in_focus_cnt\n        ELSE 0\n    END) AS\
+  \ section_3_titles_scrolled_cnt,\n\tSUM(CASE\n        WHEN merch_intent IN ('featured',\
+  \ 'recommendedForNow', 'explore') THEN tv_entity_in_focus_cnt\n        ELSE 0\n\
+  \    END) AS eclipse_titles_scrolled_cnt,\n\tSUM(CASE  merch_intent\n        WHEN\
+  \ 'featured' THEN dwell_time_ms\n        ELSE 0\n    END) AS section_1_dwell_time_ms,\n\
+  \tSUM(CASE  merch_intent\n        WHEN 'recommendedForNow' THEN dwell_time_ms\n\
+  \        ELSE 0\n    END) AS section_2_dwell_time_ms,\n\tSUM(CASE  merch_intent\n\
+  \        WHEN 'explore' THEN dwell_time_ms\n        ELSE 0\n    END) AS section_3_dwell_time_ms,\n\
+  \tSUM(CASE\n        WHEN merch_intent IN ('featured', 'recommendedForNow', 'explore')\
+  \ THEN dwell_time_ms\n        ELSE 0\n    END) AS eclipse_dwell_time_ms,\n\tCAST(MAX(merch_intent\
+  \ = 'explore' AND tv_entity_in_focus_cnt >= 1) AS BOOLEAN) AS session_has_reached_section_3\n\
+  \ FROM source.prodhive.rpt.tvui_session_homepage_row_sum\n WHERE  session_has_homepage_visit\n\
+  \ GROUP BY  account_id, profile_session_id, session_start_utc_ms, IF(is_eclipse,\
+  \ 1, 0), IF(is_eclipse_eligible, 1, 0), IF(experience_type = 'just_for_kids', 1,\
+  \ 0)) sesh ON sesh.account_id = alloc.account_id AND FLOOR((sesh.session_start_utc_ms\
+  \ - alloc.alloc_utc_ms_ts) / 86400000.0) BETWEEN obs_window.window_start - 1 AND\
+  \ obs_window.window_end - 1\n WHERE  coalesce(alloc.is_tester, 0) = 0 AND alloc_properties['is_copied']\
+  \ IS NULL\n GROUP BY  obs_window.observation_window, alloc.test_id, alloc.alloc_group_id,\
+  \ alloc.test_cell_nbr, alloc.account_id, IF(alloc.days_since_allocation >= obs_window.window_end\
+  \ - 1, 1, 0), sesh.is_eclipse_eligible, sesh.is_eclipse, sesh.is_jfk_profile)\n\n\
+  UNION ALL\n(SELECT  obs_window.observation_window,\n\talloc.test_id,\n\talloc.alloc_group_id,\n\
+  \talloc.test_cell_nbr,\n\talloc.account_id,\n\tIF(alloc.days_since_allocation >=\
+  \ obs_window.window_end - 1, 1, 0) AS is_window_complete,\n\tNULL AS is_eclipse,\n\
+  \tNULL AS is_eclipse_eligible,\n\tNULL AS is_jfk_profile,\n\tNULL AS session_cnt,\n\
+  \tNULL AS avg_max_scroll_depth,\n\tNULL AS sum_pct_qualified_take_rate,\n\tNULL\
+  \ AS total_titles_scrolled,\n\tNULL AS dp_visits,\n\tNULL AS sum_pct_section_1_dp_visits,\n\
+  \tNULL AS sum_pct_section_2_dp_visits,\n\tNULL AS sum_pct_section_3_dp_visits,\n\
+  \tNULL AS count_pct_section_1_dp_visits,\n\tNULL AS count_pct_section_2_dp_visits,\n\
+  \tNULL AS count_pct_section_3_dp_visits,\n\tNULL AS qualified_supplemental_play_cnt,\n\
+  \tNULL AS sum_pct_section_1_qualified_supplemental_plays,\n\tNULL AS sum_pct_section_2_qualified_supplemental_plays,\n\
+  \tNULL AS sum_pct_section_3_qualified_supplemental_plays,\n\tNULL AS count_pct_section_1_qualified_supplemental_plays,\n\
+  \tNULL AS count_pct_section_2_qualified_supplemental_plays,\n\tNULL AS count_pct_section_3_qualified_supplemental_plays,\n\
+  \tNULL AS sum_pct_section_1_dwell,\n\tNULL AS count_pct_section_1_dwell,\n\tNULL\
+  \ AS sum_pct_section_2_dwell,\n\tNULL AS count_pct_section_2_dwell,\n\tNULL AS sum_pct_section_3_dwell,\n\
+  \tNULL AS count_pct_section_3_dwell,\n\tNULL AS session_cnt_w_dwell_ge_10s,\n\t\
+  NULL AS session_cnt_w_dwell_ge_35s,\n\tNULL AS session_cnt_w_dwell_ge_135s,\n\t\
+  NULL AS sum_session_has_reached_section_3,\n\tNULL AS count_session_has_reached_section_3\n\
+  \ FROM source.prodhive.exp_data.allocation_core_d AS alloc CROSS JOIN common.dimensions.xp.observation_window\
+  \ obs_window\n WHERE  coalesce(alloc.is_tester, 0) = 0 AND alloc_properties['is_copied']\
+  \ IS NULL)"
+columns: []
+primary_key:
+- test_id
+- account_id
+dimension_links:
+- type: join
+  dimension_node: common.dimensions.xp.ab_test_plan
+  join_type: left
+  join_on: ${prefix}eclipse.tvui_homepage_account_counts_base.alloc_group_id = common.dimensions.xp.ab_test_plan.group_id
+- type: join
+  dimension_node: common.dimensions.xp.ab_test
+  join_type: left
+  join_on: ${prefix}eclipse.tvui_homepage_account_counts_base.test_id = common.dimensions.xp.ab_test.test_id
+- type: join
+  dimension_node: common.dimensions.xp.ab_test_cell
+  join_type: left
+  join_on: ${prefix}eclipse.tvui_homepage_account_counts_base.test_cell_nbr = common.dimensions.xp.ab_test_cell.cell_id
+- type: join
+  dimension_node: common.dimensions.account
+  join_type: left
+  join_on: ${prefix}eclipse.tvui_homepage_account_counts_base.account_id = common.dimensions.account.account_id
+- type: join
+  dimension_node: common.dimensions.xp.observation_window
+  join_type: left
+  join_on: ${prefix}eclipse.tvui_homepage_account_counts_base.observation_window =
+    common.dimensions.xp.observation_window.observation_window
+- type: join
+  dimension_node: common.dimensions.xp.is_window_complete
+  join_type: left
+  join_on: ${prefix}eclipse.tvui_homepage_account_counts_base.is_window_complete =
+    common.dimensions.xp.is_window_complete.is_window_complete
+- type: join
+  dimension_node: ${prefix}is_jfk_profile
+  join_type: left
+  join_on: ${prefix}eclipse.tvui_homepage_account_counts_base.is_jfk_profile = ${prefix}is_jfk_profile.is_jfk_profile
+- type: join
+  dimension_node: ${prefix}eclipse_status
+  join_type: left
+  join_on: ${prefix}eclipse.tvui_homepage_account_counts_base.is_eclipse = ${prefix}eclipse_status.eclipse_status
+- type: join
+  dimension_node: ${prefix}eclipse_eligible_status
+  join_type: left
+  join_on: ${prefix}eclipse.tvui_homepage_account_counts_base.is_eclipse_eligible
+    = ${prefix}eclipse_eligible_status.eclipse_eligible_status
+tags:
+- xp.report

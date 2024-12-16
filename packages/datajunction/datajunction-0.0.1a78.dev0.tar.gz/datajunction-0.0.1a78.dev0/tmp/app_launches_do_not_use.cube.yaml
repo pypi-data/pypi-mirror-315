@@ -1,0 +1,27 @@
+description: |-
+  App Launch report for members.
+
+  Includes: 1) total app launches, 2) button app launches, 3) icon app launches, 4) partner UI app launches, a) preapp/discovery row, b) blended CW, 5) percent launched, a) total, b) from preapp row, c) from blended CW.
+dimensions:
+- common.dimensions.xp.ab_test.test_id
+- common.dimensions.xp.measure_date.dateint
+- common.dimensions.xp.max_observation_end.max_observation_end
+- users.lizzyg.applaunch.partner_name.partner_name
+- common.dimensions.xp.ab_test_cell.cell_id
+- ${prefix}app_launch_source_type.interaction_name
+- common.dimensions.xp.allocation_day.days_since_allocation
+- common.dimensions.xp.ab_test_plan.group_id
+- common.dimensions.device_type_rollup.device_category
+display_name: App Launches [Member Data Model]
+metrics:
+- ${prefix}allocation_count
+- ${prefix}total_app_launches
+- ${prefix}percent_launched
+- ${prefix}lst_27_app_launches
+- ${prefix}preapp_row_app_launches
+- ${prefix}lst_27_app_launches_remove_rows
+- ${prefix}percent_launched_from_preapp_row
+- ${prefix}icon_app_launches
+- ${prefix}button_app_launches
+- ${prefix}blended_cw_app_launches
+- ${prefix}percent_launched_from_blended_cw

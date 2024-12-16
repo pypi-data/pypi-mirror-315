@@ -1,0 +1,11 @@
+display_name: Accounts with Pre-launch Impressions (14D)
+description: '% Accounts with Pre-launch Impressions during 14-day pre-launch window
+  for the live title.'
+query: |-
+  SELECT  MAX(IF(COALESCE(live_imp_cnt_pre_launch_14d, 0) > 0, 1, 0))
+   FROM ${prefix}live.live_impressions_by_canvas_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

@@ -1,0 +1,16 @@
+display_name: live_show_titles_earliest_start_end_ts
+description: The first Live start and end timestamps for each show title id. it's
+  show title level for episodic shows. For example, all Dinner Time Live with David
+  Chang's episodes have the same show title id and therefore the same start and end
+  timestamp from this table.
+query: "SELECT  show_title_id,\n\tshow_desc,\n\tMIN(title_global_launch_utc_ts) AS\
+  \ title_global_launch_utc_ts,\n\tMIN(waiting_room_start_utc_ms_ts) AS waiting_room_start_utc_ms_ts,\n\
+  \tMIN(live_event_start_utc_ms_ts) AS live_event_start_utc_ms_ts,\n\tMIN(live_event_end_utc_ms_ts)\
+  \ AS live_event_end_utc_ms_ts\n FROM ${prefix}live.live_show_titles_start_end_ts\n\
+  \ GROUP BY  1, 2"
+columns: []
+primary_key:
+- show_title_id
+- show_desc
+dimension_links: []
+tags: []

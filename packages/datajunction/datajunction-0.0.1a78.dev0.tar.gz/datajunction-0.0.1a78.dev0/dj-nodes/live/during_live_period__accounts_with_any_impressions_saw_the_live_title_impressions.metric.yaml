@@ -1,0 +1,12 @@
+display_name: During Live Period, % Accounts with Any Impressions Saw the Live Title
+  Impressions
+description: During Live Period, % Accounts with Any Impressions Saw the Live Title
+  Impressions
+query: |-
+  SELECT  1.0 * MAX(IF(COALESCE(live_imp_cnt_during_live, 0) > 0, 1, 0)) / NULLIF(MAX(IF(COALESCE(total_imp_cnt_during_live, 0) > 0, 1, 0)), 0)
+   FROM ${prefix}live.live_impressions_by_canvas_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: higher_is_better
+unit: proportion

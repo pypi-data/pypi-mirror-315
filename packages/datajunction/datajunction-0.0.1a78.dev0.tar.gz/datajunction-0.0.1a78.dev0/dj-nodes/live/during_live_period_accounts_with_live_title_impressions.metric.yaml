@@ -1,0 +1,10 @@
+display_name: During Live Period, Accounts with Live Title Impressions
+description: ''
+query: |-
+  SELECT  MAX(IF(live_imp_cnt_during_live > 0, 1, 0))
+   FROM ${prefix}live.live_impressions_by_canvas_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

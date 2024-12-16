@@ -1,0 +1,12 @@
+description: ''
+dimensions:
+- common.dimensions.xp.ab_test.test_id
+- users.lizzyg.applaunch.app_launch_source_type.iid
+- common.dimensions.xp.ab_test_cell.cell_id
+- users.anhl.allocation_day.days_since_allocation
+- users.anhl.allocation_day.max_observation_end
+- common.dimensions.xp.ab_test_plan.group_id
+display_name: App Launches
+metrics:
+- ${prefix}member.total_app_launches
+- ${prefix}member.icon_app_launches

@@ -1,0 +1,10 @@
+display_name: Percent of Sessions Scrolled to Section 3
+description: ''
+query: |-
+  SELECT  1.0 * SUM(COALESCE(sum_session_has_reached_section_3, 0)) / NULLIF(SUM(COALESCE(count_session_has_reached_section_3, 0)), 0)
+   FROM ${prefix}eclipse.tvui_homepage_account_counts_base
+tags:
+- xp.report
+required_dimensions: []
+direction: lower_is_better
+unit: percentage

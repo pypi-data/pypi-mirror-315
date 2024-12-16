@@ -1,0 +1,9 @@
+display_name: Search Avg Query Length (Clicked)
+description: ''
+query: |-
+  SELECT  sum(total_interactive_query_length) / sum(num_interactive_queries)
+   FROM ${prefix}search.search_session_profile_agg
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

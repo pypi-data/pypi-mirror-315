@@ -1,0 +1,10 @@
+display_name: Total Allocations (focus_event_w_allocation)
+description: ''
+query: |-
+  SELECT  MAX(1)
+   FROM ${prefix}eclipse.focus_event_w_allocation
+tags:
+- xp.stats.descriptive.count
+required_dimensions: []
+direction: neutral
+unit: unitless

@@ -1,0 +1,9 @@
+display_name: Average Homepage Total Titles Scrolled Per Session
+description: Average number of titles scrolled on the Homepage per session.
+query: SELECT 1.0 * SUM(COALESCE(total_titles_scrolled, 0)) / NULLIF(SUM(COALESCE(session_cnt,
+  0)), 0) FROM ${prefix}eclipse.focus_event_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: neutral
+unit: unknown

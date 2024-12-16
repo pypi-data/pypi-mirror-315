@@ -1,0 +1,25 @@
+description: ''
+dimension_links: {}
+display_name: App Launches AB Annotated
+query: |-
+  SELECT
+    l.account_id,
+    ab.test_id,
+    ab.test_cell_nbr,
+    ab.allocation_plan_id,
+    ab.alloc_utc_date,
+    ab.alloc_country_iso_code,
+    ab.alloc_device_type_id,
+    ab.observation_window,
+    l.client_utc_epoch_ts,
+    l.app_launch_source_type,
+    l.det_feature,
+    l.is_det,
+    l.utc_date
+  FROM common.dimensions.xp.allocations ab
+  LEFT JOIN ${prefix}app_launches l
+    ON l.account_id = ab.account_id
+    AND l.utc_date BETWEEN NF_DATEADD(ab.allocation_start_date, 0) AND NF_DATEADD(ab.allocation_end_date, ab.tenure)
+    AND l.client_utc_epoch_ts >= ab.alloc_utc_ms_ts
+    -- remove this bc it fails for batch allocations
+    -- and l.device_type_id = ab.alloc_device_type_id

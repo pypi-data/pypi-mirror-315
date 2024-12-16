@@ -1,0 +1,7 @@
+display_name: 'Member: Percent Thumbs Users'
+description: Percent of accounts with at least one thumb given during the test window
+query: SELECT MAX(COALESCE(thumb,0)) FROM ${prefix}thumb
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

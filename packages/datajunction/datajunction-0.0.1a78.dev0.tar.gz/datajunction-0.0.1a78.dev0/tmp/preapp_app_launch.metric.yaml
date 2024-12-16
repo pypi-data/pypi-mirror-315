@@ -1,0 +1,7 @@
+description: log( preapp app launches + 1)
+display_name: preapp app launch
+query: |-
+  SELECT ln(count( DISTINCT CASE
+          WHEN coalesce(app_launch_source_type, -1) = 27 OR det_feature = 'Preapp' OR det_feature = 'Discovery' OR det_feature = 'ContinueWatching' THEN client_utc_epoch_ts
+          ELSE NULL
+      END) + 1) FROM ${prefix}app_launches_ab_annotated

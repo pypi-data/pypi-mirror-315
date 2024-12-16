@@ -1,0 +1,11 @@
+display_name: 'Member: Number Thumbs'
+description: |-
+  Number of thumbs per account during the test window, including accounts with zero thumbs
+  This only counts 1 thumb per show per profile per day and no removals
+  (i.e. if you thumb something, then remove the thumb, it's not counted)
+  See Number Thumbs Removed for the number of ratings removed during test
+query: SELECT SUM(COALESCE(thumb,0)) FROM ${prefix}thumb
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

@@ -1,0 +1,68 @@
+display_name: search_session_profile_agg
+description: This is a test to replicate SEM report with new Games metrics.
+query: "WITH\ntests AS (\nSELECT  test_id,\n\tmin(plan.start_utc_date) AS allocation_start_date,\n\
+  \tmax(plan.end_utc_date) AS allocation_end_date\n FROM source.prodhive.dse.ab_test_plan_d_v2\
+  \ plan\n WHERE  plan_action = 'ALLOCATE'\n GROUP BY  test_id\n)\n\nSELECT  a.test_id,\n\
+  \ta.test_cell_nbr,\n\ta.alloc_group_id,\n\ta.account_id,\n\ta.account_id AS alloc_account_id,\n\
+  \ta.snapshot_utc_date,\n\tT.observation_window,\n\tIF(a.days_since_allocation >=\
+  \ T.window_end - 1, 1, 0) AS is_window_complete,\n\tapp_name,\n\tcountry_iso_code,\n\
+  \tprofile_id,\n\tis_kids_profile,\n\tdevice_type_id,\n\tclient_name,\n\thw_category,\n\
+  \tinput_mode,\n\tnum_search_sessions,\n\tnum_clicks,\n\tnum_video_clicks,\n\tnum_game_clicks,\n\
+  \tnum_entity_clicks,\n\tnum_suggestion_clicks,\n\tnum_plays,\n\tnum_video_plays,\n\
+  \tnum_game_plays,\n\tnum_add_to_list,\n\tnum_success_plays,\n\tnum_success_video_plays,\n\
+  \tnum_approx_svf_video_plays,\n\tnum_success_game_plays,\n\tnum_game_installs,\n\
+  \ttotal_time_to_success_play,\n\tnum_queries,\n\ttotal_query_length,\n\tnum_interactive_queries,\n\
+  \ttotal_interactive_query_length,\n\tdevice_type_desc,\n\tui_version,\n\tutc_date\n\
+  \ FROM source.prodhive.exp_data.allocation_core_d a CROSS JOIN common.dimensions.xp.observation_window\
+  \ T\nJOIN users.yshang.latest_retention_snapshot_date s ON a.test_id = s.test_id\n\
+  LEFT JOIN tests ON tests.test_id = a.test_id AND a.snapshot_utc_date >= tests.allocation_start_date\n\
+  LEFT JOIN source.prodhive.search.session_profile_agg b ON a.account_id = b.account_id\
+  \ AND b.utc_date >= tests.allocation_start_date AND b.utc_date <= NF_DATEADD(tests.allocation_end_date,\
+  \ T.window_end) AND NF_DATEDIFF(a.alloc_utc_date, b.utc_date) BETWEEN T.window_start\
+  \ - 1 AND T.window_end - 1\n WHERE  coalesce(a.is_tester, 0) = 0 AND element_at(a.alloc_properties,\
+  \ 'is_copied') IS NULL AND COALESCE(b.search_session_type, 'default') != 'implicit'\
+  \ AND input_mode = 'all'"
+columns: []
+primary_key: []
+dimension_links:
+- type: join
+  dimension_node: common.dimensions.xp.ab_test
+  join_type: left
+  join_on: ${prefix}search.search_session_profile_agg.test_id = common.dimensions.xp.ab_test.test_id
+- type: join
+  dimension_node: common.dimensions.xp.ab_test_cell
+  join_type: left
+  join_on: ${prefix}search.search_session_profile_agg.test_cell_nbr = common.dimensions.xp.ab_test_cell.cell_id
+- type: join
+  dimension_node: common.dimensions.xp.ab_test_plan
+  join_type: left
+  join_on: ${prefix}search.search_session_profile_agg.alloc_group_id = common.dimensions.xp.ab_test_plan.group_id
+- type: join
+  dimension_node: common.dimensions.account
+  join_type: left
+  join_on: ${prefix}search.search_session_profile_agg.account_id = common.dimensions.account.account_id
+- type: join
+  dimension_node: common.dimensions.xp.measure_date
+  join_type: left
+  join_on: ${prefix}search.search_session_profile_agg.utc_date = common.dimensions.xp.measure_date.dateint
+- type: join
+  dimension_node: common.dimensions.xp.observation_window
+  join_type: left
+  join_on: ${prefix}search.search_session_profile_agg.observation_window = common.dimensions.xp.observation_window.observation_window
+- type: join
+  dimension_node: common.dimensions.xp.is_window_complete
+  join_type: left
+  join_on: ${prefix}search.search_session_profile_agg.is_window_complete = common.dimensions.xp.is_window_complete.is_window_complete
+- type: join
+  dimension_node: common.dimensions.source
+  join_type: left
+  join_on: ${prefix}search.search_session_profile_agg.app_name = common.dimensions.source.source
+- type: join
+  dimension_node: common.dimensions.geo_country
+  join_type: left
+  join_on: ${prefix}search.search_session_profile_agg.country_iso_code = common.dimensions.geo_country.country_iso_code
+- type: join
+  dimension_node: ${prefix}is_jfk_profile
+  join_type: left
+  join_on: ${prefix}search.search_session_profile_agg.is_kids_profile = ${prefix}is_jfk_profile.is_jfk_profile
+tags: []

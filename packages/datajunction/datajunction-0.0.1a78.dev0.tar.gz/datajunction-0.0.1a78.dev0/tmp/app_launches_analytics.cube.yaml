@@ -1,0 +1,20 @@
+description: ''
+dimensions:
+- common.dimensions.xp.measure_date.dateint
+- users.lizzyg.applaunch.partner_name.partner_name
+- ${prefix}applaunches_current_member.app_launch_source_type
+- common.dimensions.geo_country.country_iso_code
+- common.dimensions.device_type_rollup.device_category
+- common.dimensions.device_type_rollup.client_name
+display_name: App Launches [Analytics]
+metrics:
+- ${prefix}total_app_launches
+- ${prefix}percent_launched
+- ${prefix}lst_27_app_launches
+- ${prefix}preapp_row_app_launches
+- ${prefix}lst_27_app_launches_remove_rows
+- ${prefix}percent_launched_from_preapp_row
+- ${prefix}icon_app_launches
+- ${prefix}button_app_launches
+- ${prefix}blended_cw_app_launches
+- ${prefix}percent_launched_from_blended_cw

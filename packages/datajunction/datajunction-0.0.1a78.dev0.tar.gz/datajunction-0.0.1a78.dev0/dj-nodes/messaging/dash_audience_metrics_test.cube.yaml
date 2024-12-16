@@ -1,0 +1,18 @@
+display_name: dash_audience_metrics_test
+description: ''
+metrics:
+- ${prefix}messaging.push_eligible_profiles_test_
+- ${prefix}messaging.active_profiles
+dimensions:
+- ${prefix}messaging.audience_agg_layer_test.utc_date
+- ${prefix}messaging.audience_agg_layer_test.signup_country_iso_code
+- ${prefix}messaging.audience_agg_layer_test.is_in_member_cnt
+- ${prefix}messaging.audience_agg_layer_test.is_in_paid_member_cnt
+- ${prefix}messaging.audience_agg_layer_test.paying_plan_rollup_id
+columns:
+- name: member.messaging.audience_agg_layer_test.utc_date
+  partition:
+    format: yyyyMMdd
+    granularity: day
+    type_: temporal
+tags: []

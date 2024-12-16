@@ -1,0 +1,111 @@
+display_name: live_impressions_by_canvas_w_allocation
+description: ''
+query: "(SELECT  obs_window.observation_window,\n\talloc.test_id,\n\talloc.alloc_group_id,\n\
+  \talloc.test_cell_nbr,\n\talloc.account_id,\n\tIF(alloc.days_since_allocation >=\
+  \ obs_window.window_end - 1, 1, 0) AS is_window_complete,\n\timp.utc_date AS dateint,\n\
+  \timp.filtered_show_title_id,\n\timp.filtered_show_desc,\n\timp.impression_location_desc,\n\
+  \timp.region_rollup_desc,\n\tSUM(IF(is_during_any_live_period = 1, all_show_impression_cnt,\
+  \ 0)) AS total_imp_cnt_during_live,\n\tSUM(IF(is_during_any_live_period = 1, all_show_impression_with_play_cnt,\
+  \ 0)) AS total_imp_w_play_cnt_during_live,\n\tSUM(IF(is_during_show_live_period\
+  \ = 1, live_show_impression_cnt, 0)) AS live_imp_cnt_during_live,\n\tSUM(IF(is_during_show_live_period\
+  \ = 1, live_show_impression_with_play_cnt, 0)) AS live_imp_w_play_cnt_during_live,\n\
+  \tCAST(SUM(IF(coalesce(is_during_show_live_period, 0) = 0 AND (nf_datediff('hour',\
+  \ nf_dateadd('hour', utc_hour, nf_timestamp(utc_date)), nf_from_unixtime(coalesce(lst.waiting_room_start_utc_ms_ts,\
+  \ lst.title_global_launch_utc_ts))) BETWEEN 0 AND 336), live_show_impression_cnt,\
+  \ 0)) AS BIGINT) AS live_imp_cnt_pre_launch_14d,\n\tCAST(SUM(IF(coalesce(is_during_show_live_period,\
+  \ 0) = 0 AND (nf_datediff('hour', nf_dateadd('hour', utc_hour, nf_timestamp(utc_date)),\
+  \ nf_from_unixtime(coalesce(lst.waiting_room_start_utc_ms_ts, lst.title_global_launch_utc_ts)))\
+  \ >= 0), live_show_impression_cnt, 0)) AS BIGINT) AS live_imp_cnt_pre_launch_any_window,\n\
+  \tCAST(SUM(IF(coalesce(is_during_show_live_period, 0) = 0 AND (nf_datediff('hour',\
+  \ nf_from_unixtime(lst.live_event_end_utc_ms_ts), nf_dateadd('hour', utc_hour, nf_timestamp(utc_date)))\
+  \ BETWEEN 0 AND 336), live_show_impression_cnt, 0)) AS BIGINT) AS live_imp_cnt_post_launch_14d,\n\
+  \tCAST(SUM(IF(coalesce(is_during_show_live_period, 0) = 0 AND (nf_datediff('hour',\
+  \ nf_from_unixtime(lst.live_event_end_utc_ms_ts), nf_dateadd('hour', utc_hour, nf_timestamp(utc_date)))\
+  \ >= 0), live_show_impression_cnt, 0)) AS BIGINT) AS live_imp_cnt_post_launch_any_window\n\
+  \ FROM source.prodhive.exp_data.allocation_core_d AS alloc CROSS JOIN common.dimensions.xp.observation_window\
+  \ AS obs_window\nINNER JOIN source.prodhive.rpt.live_data_explorer_impressions_sum\
+  \ AS imp ON imp.account_id = alloc.account_id AND FLOOR((nf_to_unixtime_ms(NF_DATEADD('hour',\
+  \ imp.utc_hour, NF_TIMESTAMP(imp.utc_date))) - alloc.alloc_utc_ms_ts) / 86400000.0)\
+  \ BETWEEN obs_window.window_start - 1 AND obs_window.window_end - 1\nLEFT JOIN ${prefix}live.live_show_titles_earliest_start_end_ts\
+  \ AS lst ON imp.filtered_show_title_id = lst.show_title_id\n WHERE  coalesce(alloc.is_tester,\
+  \ 0) = 0 AND alloc_properties['is_copied'] IS NULL AND imp.live_show_impression_cnt\
+  \ > 0\n GROUP BY  obs_window.observation_window, alloc.test_id, alloc.alloc_group_id,\
+  \ alloc.test_cell_nbr, alloc.account_id, IF(alloc.days_since_allocation >= obs_window.window_end\
+  \ - 1, 1, 0), imp.utc_date, imp.filtered_show_title_id, imp.filtered_show_desc,\
+  \ imp.impression_location_desc, imp.region_rollup_desc)\n\nUNION ALL\n(SELECT  obs_window.observation_window,\n\
+  \talloc.test_id,\n\talloc.alloc_group_id,\n\talloc.test_cell_nbr,\n\talloc.account_id,\n\
+  \tIF(alloc.days_since_allocation >= obs_window.window_end - 1, 1, 0) AS is_window_complete,\n\
+  \timp.utc_date AS dateint,\n\timp.filtered_show_title_id,\n\timp.filtered_show_desc,\n\
+  \timp.impression_location_desc,\n\timp.region_rollup_desc,\n\tSUM(imp.all_show_impression_cnt)\
+  \ AS total_imp_cnt_during_live,\n\tSUM(imp.all_show_impression_with_play_cnt) AS\
+  \ total_imp_w_play_cnt_during_live,\n\tSUM(0) AS live_imp_cnt_during_live,\n\tSUM(0)\
+  \ AS live_imp_w_play_cnt_during_live,\n\tSUM(0) AS live_imp_cnt_pre_launch_14d,\n\
+  \tSUM(0) AS live_imp_cnt_pre_launch_any_window,\n\tSUM(0) AS live_imp_cnt_post_launch_14d,\n\
+  \tSUM(0) AS live_imp_cnt_post_launch_any_window\n FROM source.prodhive.exp_data.allocation_core_d\
+  \ AS alloc CROSS JOIN common.dimensions.xp.observation_window AS obs_window\nINNER\
+  \ JOIN source.prodhive.rpt.live_data_explorer_impressions_sum AS imp ON imp.account_id\
+  \ = alloc.account_id AND FLOOR((nf_to_unixtime_ms(NF_DATEADD('hour', imp.utc_hour,\
+  \ NF_TIMESTAMP(imp.utc_date))) - alloc.alloc_utc_ms_ts) / 86400000.0) BETWEEN obs_window.window_start\
+  \ - 1 AND obs_window.window_end - 1\n WHERE  coalesce(alloc.is_tester, 0) = 0 AND\
+  \ alloc_properties['is_copied'] IS NULL AND imp.is_during_any_live_period = 1 AND\
+  \ imp.live_show_impression_cnt = 0\n GROUP BY  obs_window.observation_window, alloc.test_id,\
+  \ alloc.alloc_group_id, alloc.test_cell_nbr, alloc.account_id, IF(alloc.days_since_allocation\
+  \ >= obs_window.window_end - 1, 1, 0), imp.utc_date, imp.filtered_show_title_id,\
+  \ imp.filtered_show_desc, imp.impression_location_desc, imp.region_rollup_desc)\n\
+  \nUNION ALL\n(SELECT  obs_window.observation_window,\n\talloc.test_id,\n\talloc.alloc_group_id,\n\
+  \talloc.test_cell_nbr,\n\talloc.account_id,\n\tIF(alloc.days_since_allocation >=\
+  \ obs_window.window_end - 1, 1, 0) AS is_window_complete,\n\tNULL AS dateint,\n\t\
+  NULL AS filtered_show_title_id,\n\tNULL AS filtered_show_desc,\n\tNULL AS impression_location_desc,\n\
+  \tNULL AS region_rollup_desc,\n\tNULL AS total_imp_cnt_during_live,\n\tNULL AS total_imp_w_play_cnt_during_live,\n\
+  \tNULL AS live_imp_cnt_during_live,\n\tNULL AS live_imp_w_play_cnt_during_live,\n\
+  \tNULL AS live_imp_cnt_pre_launch_14d,\n\tNULL AS live_imp_cnt_pre_launch_any_window,\n\
+  \tNULL AS live_imp_cnt_post_launch_14d,\n\tNULL AS live_imp_cnt_post_launch_any_window\n\
+  \ FROM source.prodhive.exp_data.allocation_core_d AS alloc CROSS JOIN common.dimensions.xp.observation_window\
+  \ AS obs_window\n WHERE  COALESCE(alloc.is_tester, 0) = 0 AND alloc.alloc_properties['is_copied']\
+  \ IS NULL)"
+columns:
+- name: filtered_show_title_id
+  attributes:
+  - dimension
+- name: filtered_show_desc
+  attributes:
+  - dimension
+- name: impression_location_desc
+  attributes:
+  - dimension
+- name: region_rollup_desc
+  attributes:
+  - dimension
+primary_key:
+- account_id
+- filtered_show_title_id
+dimension_links:
+- type: join
+  dimension_node: common.dimensions.xp.observation_window
+  join_type: left
+  join_on: ${prefix}live.live_impressions_by_canvas_w_allocation.observation_window
+    = common.dimensions.xp.observation_window.observation_window
+- type: join
+  dimension_node: common.dimensions.xp.ab_test
+  join_type: left
+  join_on: ${prefix}live.live_impressions_by_canvas_w_allocation.test_id = common.dimensions.xp.ab_test.test_id
+- type: join
+  dimension_node: common.dimensions.xp.ab_test_plan
+  join_type: left
+  join_on: ${prefix}live.live_impressions_by_canvas_w_allocation.alloc_group_id =
+    common.dimensions.xp.ab_test_plan.group_id
+- type: join
+  dimension_node: common.dimensions.xp.ab_test_cell
+  join_type: left
+  join_on: ${prefix}live.live_impressions_by_canvas_w_allocation.test_cell_nbr = common.dimensions.xp.ab_test_cell.cell_id
+- type: join
+  dimension_node: common.dimensions.account
+  join_type: left
+  join_on: ${prefix}live.live_impressions_by_canvas_w_allocation.account_id = common.dimensions.account.account_id
+- type: join
+  dimension_node: common.dimensions.xp.is_window_complete
+  join_type: left
+  join_on: ${prefix}live.live_impressions_by_canvas_w_allocation.is_window_complete
+    = common.dimensions.xp.is_window_complete.is_window_complete
+tags:
+- xp.report

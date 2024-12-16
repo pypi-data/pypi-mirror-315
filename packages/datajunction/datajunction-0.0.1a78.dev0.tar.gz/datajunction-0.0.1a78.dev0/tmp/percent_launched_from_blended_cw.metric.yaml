@@ -1,0 +1,3 @@
+description: Percent of total allocation that launched through blended CW.
+display_name: Percent Launched from Blended CW
+query: SELECT SUM(blended_cw_app_launch) FROM ${prefix}applaunches_current_member

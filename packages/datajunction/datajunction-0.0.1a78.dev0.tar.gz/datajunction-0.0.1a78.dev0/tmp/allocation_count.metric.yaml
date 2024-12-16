@@ -1,0 +1,5 @@
+description: Allocation count
+display_name: Allocation Count
+query: |-
+  SELECT  count(1)
+   FROM ${prefix}applaunches_current_member

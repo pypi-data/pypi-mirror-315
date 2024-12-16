@@ -1,0 +1,9 @@
+display_name: Search Session Click Through Rate (Video)
+description: ''
+query: |-
+  SELECT  sum(num_video_clicks) * 1.0 / sum(num_search_sessions)
+   FROM ${prefix}search.search_session_profile_agg
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

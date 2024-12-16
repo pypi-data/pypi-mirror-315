@@ -1,0 +1,10 @@
+display_name: Search Sessions with a Qualified Play
+description: a session with a play of over 6 mins (previously known as a successful
+  play)
+query: |-
+  SELECT  1.0 * SUM(num_success_plays)
+   FROM ${prefix}search.search_session_profile_agg
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

@@ -1,0 +1,8 @@
+display_name: 'Member: Pct Users Who Completed Download'
+description: ''
+query: SELECT IF(SUM(IF(end_reason = 'COMPLETE', download_cnt, 0)) > 0, 1, 0) FROM
+  ${prefix}download
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

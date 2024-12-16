@@ -1,0 +1,11 @@
+display_name: 'Member: Number Thumbs Removed'
+description: |-
+  Number of thumbs removed per account during the test window, including accounts with zero thumbs,
+  A thumb removed appears if 1) a profile rates and then unrates a title on the same day, in this case the
+  initial rating will _not_ appear in the tally, or 2) a profile unrates a title rated on a prior day, in this case
+  both the initial thumb and the subsequent removal appear in the total thumbs tally
+query: SELECT SUM(COALESCE(thumb_removed,0)) FROM ${prefix}thumb
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

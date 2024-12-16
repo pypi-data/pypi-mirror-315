@@ -1,0 +1,10 @@
+display_name: Homepage Dwell Time Greater Than 135 Seconds
+description: '% of sessions with homepage dwell time >= 135 seconds'
+query: |-
+  SELECT  1.0 * SUM(COALESCE(session_cnt_w_dwell_ge_135s, 0)) / NULLIF(SUM(COALESCE(session_cnt, 0)), 0)
+   FROM ${prefix}eclipse.tvui_homepage_account_counts_base
+tags:
+- xp.report
+required_dimensions: []
+direction: neutral
+unit: percentage

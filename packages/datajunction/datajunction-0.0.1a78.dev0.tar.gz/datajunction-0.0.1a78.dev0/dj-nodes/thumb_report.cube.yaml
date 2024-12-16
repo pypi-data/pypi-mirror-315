@@ -1,0 +1,30 @@
+display_name: 'Member: Thumb Report'
+description: This report is created from a DataJunction cube. Make edits at https://datajunction.prod.netflix.net/nodes/member.thumb_report
+metrics:
+- ${prefix}percent_thumbs_users
+- ${prefix}number_thumbs
+- ${prefix}number_double_thumbs_up
+- ${prefix}number_thumbs_up
+- ${prefix}number_double_thumbs_up_and_thumbs_up
+- ${prefix}number_thumbs_down
+- ${prefix}number_thumbs_removed
+- ${prefix}number_thumbs_from_thumbers
+- ${prefix}number_double_thumbs_up_from_thumbers
+- ${prefix}number_thumbs_up_from_thumbers
+- ${prefix}number_double_thumbs_up_and_thumbs_up_from_thumbers
+- ${prefix}number_thumbs_down_from_thumbers
+- ${prefix}number_thumbs_removed_from_thumbers
+- ${prefix}fraction_double_thumbs_up
+- ${prefix}fraction_thumbs_up
+- ${prefix}fraction_double_thumbs_up_and_thumbs_up
+- ${prefix}fraction_thumbs_down
+dimensions:
+- common.dimensions.xp.ab_test_cell.cell_id
+- common.dimensions.device_type.client_name
+- common.dimensions.device_type.hw_category
+- common.dimensions.xp.allocation_day.account_days_since_allocation
+- common.dimensions.xp.ab_test_plan.group_id
+- common.dimensions.xp.allocation_day.account_observation_day
+columns: []
+tags:
+- xp.report

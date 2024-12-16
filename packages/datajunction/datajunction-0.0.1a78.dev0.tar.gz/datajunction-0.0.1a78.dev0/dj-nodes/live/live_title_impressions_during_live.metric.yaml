@@ -1,0 +1,10 @@
+display_name: Live Title Impressions During Live
+description: Number of Live Title Impressions During Live Period.
+query: |-
+  SELECT  SUM(coalesce(live_imp_cnt_during_live, 0))
+   FROM ${prefix}live.live_impressions_by_canvas_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

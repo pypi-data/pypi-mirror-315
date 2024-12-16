@@ -1,0 +1,10 @@
+display_name: Percent of Sessions With a Qualified Play in 1 Min
+description: ''
+query: |-
+  SELECT  1.0 * SUM(COALESCE(session_cnt_w_a_qp_in_1_min, 0)) / NULLIF(SUM(COALESCE(session_cnt, 0)), 0)
+   FROM ${prefix}eclipse.first_qualified_play_event_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

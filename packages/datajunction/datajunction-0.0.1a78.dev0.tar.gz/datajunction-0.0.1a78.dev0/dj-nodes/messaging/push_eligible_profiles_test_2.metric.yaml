@@ -1,0 +1,10 @@
+display_name: push_eligible_profiles_test_2
+description: ''
+query: |-
+  SELECT COUNT(DISTINCT CASE WHEN (Email_WatchRecommendations_allowed = 1 AND Email_WhatYouWatch_allowed = 1)
+                        OR (Push_WatchRecommendations_allowed = 1 AND Push_WhatYouWatch_allowed = 1)
+                   THEN profile_id END) AS eligible_profiles FROM ${prefix}messaging.audience_agg_layer_test_v2
+tags: []
+required_dimensions: []
+direction: null
+unit: null

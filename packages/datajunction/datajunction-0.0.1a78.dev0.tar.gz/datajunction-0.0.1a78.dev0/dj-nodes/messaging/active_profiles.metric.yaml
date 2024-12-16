@@ -1,0 +1,9 @@
+display_name: active_profiles
+description: |-
+  Active Profiles
+  [#TODO: add official definition of active profiles]
+query: SELECT SUM(active_profiles) FROM ${prefix}messaging.audience_agg_layer_test
+tags: []
+required_dimensions: []
+direction: null
+unit: null

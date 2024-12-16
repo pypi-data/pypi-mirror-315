@@ -1,0 +1,94 @@
+display_name: focus_event_w_allocation
+description: ''
+query: "(SELECT  obs_window.observation_window,\n\talloc.test_id,\n\talloc.alloc_group_id,\n\
+  \talloc.test_cell_nbr,\n\talloc.account_id,\n\tIF(alloc.days_since_allocation >=\
+  \ obs_window.window_end - 1, 1, 0) AS is_window_complete,\n\tsesh.is_eclipse_eligible,\n\
+  \tsesh.is_eclipse,\n\tsesh.is_jfk_profile,\n\tCOUNT(profile_session_id) AS session_cnt,\n\
+  \tSUM(IF(session_has_sections, 1, 0)) AS sum_sessions_with_sections,\n\tSUM(title_scroll_cnt)\
+  \ AS total_titles_scrolled,\n\tSUM(section_1_titles_scrolled_cnt / eclipse_titles_scrolled_cnt)\
+  \ AS sum_pct_section_1_titles_scrolled,\n\tSUM(section_2_titles_scrolled_cnt / eclipse_titles_scrolled_cnt)\
+  \ AS sum_pct_section_2_titles_scrolled,\n\tSUM(section_3_titles_scrolled_cnt / eclipse_titles_scrolled_cnt)\
+  \ AS sum_pct_section_3_titles_scrolled,\n\tCOUNT(section_1_titles_scrolled_cnt /\
+  \ eclipse_titles_scrolled_cnt) AS count_pct_section_1_titles_scrolled,\n\tCOUNT(section_2_titles_scrolled_cnt\
+  \ / eclipse_titles_scrolled_cnt) AS count_pct_section_2_titles_scrolled,\n\tCOUNT(section_3_titles_scrolled_cnt\
+  \ / eclipse_titles_scrolled_cnt) AS count_pct_section_3_titles_scrolled,\n\t1.0\
+  \ * SUM(IF(session_has_reached_section_3, 1, 0)) AS num_sessions_that_reached_section_3,\n\
+  \tSUM(pct_non_cw_row_w_horizontal_scroll) AS sum_pct_non_cw_row_w_horizontal_scroll,\n\
+  \tCOUNT(pct_non_cw_row_w_horizontal_scroll) AS count_pct_non_cw_row_w_horizontal_scroll\n\
+  \ FROM source.prodhive.exp_data.allocation_core_d AS alloc CROSS JOIN common.dimensions.xp.observation_window\
+  \ obs_window\nLEFT JOIN (SELECT  account_id,\n\tprofile_session_id,\n\tsession_start_utc_ms,\n\
+  \tIF(is_eclipse_eligible, 1, 0) AS is_eclipse_eligible,\n\tIF(is_eclipse, 1, 0)\
+  \ AS is_eclipse,\n\tIF(experience_type = 'just_for_kids', 1, 0) AS is_jfk_profile,\n\
+  \tCOUNT(location_merch_intent) >= 1 AS session_has_sections,\n\tSUM(row_rank_cnt)\
+  \ AS title_scroll_cnt,\n\tSUM(CASE  location_merch_intent\n        WHEN 'featured'\
+  \ THEN row_rank_cnt\n        ELSE 0\n    END) AS section_1_titles_scrolled_cnt,\n\
+  \tSUM(CASE  location_merch_intent\n        WHEN 'recommendedForNow' THEN row_rank_cnt\n\
+  \        ELSE 0\n    END) AS section_2_titles_scrolled_cnt,\n\tSUM(CASE  location_merch_intent\n\
+  \        WHEN 'explore' THEN row_rank_cnt\n        ELSE 0\n    END) AS section_3_titles_scrolled_cnt,\n\
+  \tSUM(CASE\n        WHEN location_merch_intent IN ('featured', 'recommendedForNow',\
+  \ 'explore') THEN row_rank_cnt\n        ELSE 0\n    END) AS eclipse_titles_scrolled_cnt,\n\
+  \tCOUNT_IF(row_rank_cnt >= 1 AND location_merch_intent = 'explore') >= 1 AS session_has_reached_section_3,\n\
+  \t1.0 * COUNT_IF(row_rank_cnt > 1) / COUNT(*) AS pct_non_cw_row_w_horizontal_scroll\n\
+  \ FROM source.prodhive.rpt.tvui_session_homepage_row_focus_sum\n WHERE  session_has_focus_event\
+  \ AND location_row_desc != 'Continue Watching'\n GROUP BY  account_id, profile_session_id,\
+  \ session_start_utc_ms, IF(is_eclipse_eligible, 1, 0), IF(is_eclipse, 1, 0), IF(experience_type\
+  \ = 'just_for_kids', 1, 0)) AS sesh ON sesh.account_id = alloc.account_id AND FLOOR((sesh.session_start_utc_ms\
+  \ - alloc.alloc_utc_ms_ts) / 86400000.0) BETWEEN obs_window.window_start - 1 AND\
+  \ obs_window.window_end - 1\n WHERE  coalesce(alloc.is_tester, 0) = 0 AND alloc_properties['is_copied']\
+  \ IS NULL\n GROUP BY  obs_window.observation_window, alloc.test_id, alloc.alloc_group_id,\
+  \ alloc.test_cell_nbr, alloc.account_id, IF(alloc.days_since_allocation >= obs_window.window_end\
+  \ - 1, 1, 0), sesh.is_eclipse_eligible, sesh.is_eclipse, sesh.is_jfk_profile)\n\n\
+  UNION ALL\n(SELECT  obs_window.observation_window,\n\talloc.test_id,\n\talloc.alloc_group_id,\n\
+  \talloc.test_cell_nbr,\n\talloc.account_id,\n\tIF(alloc.days_since_allocation >=\
+  \ obs_window.window_end - 1, 1, 0) AS is_window_complete,\n\tNULL AS is_eclipse_eligible,\n\
+  \tNULL AS is_eclipse,\n\tNULL AS is_jfk_profile,\n\tNULL AS session_cnt,\n\tNULL\
+  \ AS total_titles_scrolled,\n\tNULL AS sum_pct_section_1_titles_scrolled,\n\tNULL\
+  \ AS sum_pct_section_2_titles_scrolled,\n\tNULL AS sum_pct_section_3_titles_scrolled,\n\
+  \tNULL AS count_pct_section_1_titles_scrolled,\n\tNULL AS count_pct_section_2_titles_scrolled,\n\
+  \tNULL AS count_pct_section_3_titles_scrolled,\n\tNULL AS sum_sessions_with_sections,\n\
+  \tNULL AS num_sessions_that_reached_section_3,\n\tNULL AS sum_pct_non_cw_row_w_horizontal_scroll,\n\
+  \tNULL AS count_pct_non_cw_row_w_horizontal_scroll\n FROM source.prodhive.exp_data.allocation_core_d\
+  \ AS alloc CROSS JOIN common.dimensions.xp.observation_window obs_window\n WHERE\
+  \  coalesce(alloc.is_tester, 0) = 0 AND alloc_properties['is_copied'] IS NULL)"
+columns: []
+primary_key:
+- account_id
+dimension_links:
+- type: join
+  dimension_node: common.dimensions.account
+  join_type: left
+  join_on: ${prefix}eclipse.focus_event_w_allocation.account_id = common.dimensions.account.account_id
+- type: join
+  dimension_node: common.dimensions.xp.ab_test
+  join_type: left
+  join_on: ${prefix}eclipse.focus_event_w_allocation.test_id = common.dimensions.xp.ab_test.test_id
+- type: join
+  dimension_node: common.dimensions.xp.ab_test_cell
+  join_type: left
+  join_on: ${prefix}eclipse.focus_event_w_allocation.test_cell_nbr = common.dimensions.xp.ab_test_cell.cell_id
+- type: join
+  dimension_node: ${prefix}eclipse_status
+  join_type: left
+  join_on: ${prefix}eclipse.focus_event_w_allocation.is_eclipse = ${prefix}eclipse_status.eclipse_status
+- type: join
+  dimension_node: ${prefix}eclipse_eligible_status
+  join_type: left
+  join_on: ${prefix}eclipse.focus_event_w_allocation.is_eclipse_eligible = ${prefix}eclipse_eligible_status.eclipse_eligible_status
+- type: join
+  dimension_node: ${prefix}is_jfk_profile
+  join_type: left
+  join_on: ${prefix}eclipse.focus_event_w_allocation.is_jfk_profile = ${prefix}is_jfk_profile.is_jfk_profile
+- type: join
+  dimension_node: common.dimensions.xp.observation_window
+  join_type: left
+  join_on: ${prefix}eclipse.focus_event_w_allocation.observation_window = common.dimensions.xp.observation_window.observation_window
+- type: join
+  dimension_node: common.dimensions.xp.is_window_complete
+  join_type: left
+  join_on: ${prefix}eclipse.focus_event_w_allocation.is_window_complete = common.dimensions.xp.is_window_complete.is_window_complete
+- type: join
+  dimension_node: common.dimensions.xp.ab_test_plan
+  join_type: left
+  join_on: ${prefix}eclipse.focus_event_w_allocation.alloc_group_id = common.dimensions.xp.ab_test_plan.group_id
+tags:
+- xp.report

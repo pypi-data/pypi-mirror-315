@@ -1,0 +1,3 @@
+description: log (button app launches + 1)
+display_name: Button App Launches
+query: SELECT SUM(button_app_launch) FROM ${prefix}applaunches_current_member

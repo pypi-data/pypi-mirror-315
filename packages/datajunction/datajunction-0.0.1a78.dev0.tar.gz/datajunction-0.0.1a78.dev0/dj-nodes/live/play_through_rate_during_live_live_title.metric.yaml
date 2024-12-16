@@ -1,0 +1,10 @@
+display_name: Play Through Rate During Live (Live Title)
+description: Play Through Rate During Live period for Live titles.
+query: |-
+  SELECT  1.0 * SUM(coalesce(total_imp_w_play_cnt_during_live, 0)) / NULLIF(SUM(COALESCE(live_imp_cnt_during_live, 0)), 0)
+   FROM ${prefix}live.live_impressions_by_canvas_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: higher_is_better
+unit: proportion

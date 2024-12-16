@@ -1,0 +1,66 @@
+description: ''
+dimension_links:
+  alloc_id:
+    dimension: common.dimensions.account
+display_name: App Launches [Current Member]
+query: |-
+  SELECT
+    al.account_id,
+    al.account_id AS alloc_id,
+    COALESCE(
+      CASE WHEN (id.iid_lst IS NOT NULL) THEN id.iid_lst
+      ELSE al.app_launch_source_type END,
+      -1
+    ) AS app_launch_source_type,
+    al.det_features_array[1] AS det_feature,
+    COALESCE(al.is_det, 0) AS is_det,
+    al.utc_date,
+    al.client_utc_epoch_ts,
+    al.device_type_id,
+    -- measures
+    CASE
+        WHEN coalesce(app_launch_source_type, -1) IN (1, 19) THEN 1
+        ELSE 0
+    END as button_app_launch,
+    CASE
+        WHEN coalesce(app_launch_source_type, -1) IN (2, 28) THEN 1
+        ELSE 0
+    END AS icon_app_launch,
+    CASE
+        WHEN coalesce(app_launch_source_type, -1) = 27 THEN 1
+        ELSE 0
+    END AS lst_app_launch,
+    CASE
+        WHEN coalesce(app_launch_source_type, -1) = 27 AND (det_feature != 'Preapp' AND det_feature != 'Discovery' AND det_feature != 'ContinueWatching') THEN 1
+        ELSE 0
+    END AS lst_remove_rows_app_launch,
+    CASE
+        WHEN client_utc_epoch_ts IS NOT NULL THEN 1
+        ELSE 0
+    END AS total_app_launch,
+    CASE
+        WHEN client_utc_epoch_ts IS NOT NULL AND (det_feature = 'Preapp' OR det_feature = 'Discovery') AND account_id IS NOT NULL THEN 1
+        ELSE 0
+    END AS preapp_row_app_launch,
+    CASE
+        WHEN det_feature = 'Preapp' OR det_feature = 'Discovery' THEN 1
+        ELSE 0
+    END AS preapp_discovery_row_app_launch,
+    CASE
+        WHEN client_utc_epoch_ts IS NOT NULL AND (det_feature = 'ContinueWatching') AND account_id IS NOT NULL THEN 1
+        ELSE 0
+    END AS blended_cw_app_launch
+  FROM source.prodhive.dse.app_launch_event_f al
+  LEFT JOIN users.lizzyg.applaunch.app_launch_source_type id USING(iid)
+  WHERE 1 = 1
+    AND al.client_utc_epoch_ts is not null
+    AND al.app_launch_derived_type = 'User Initiated'
+    AND COALESCE( -- remove suspend launches
+        CASE WHEN (id.iid_lst IS NOT NULL)
+              THEN id.iid_lst
+              ELSE al.app_launch_source_type END, -1) NOT IN (22, 23, 32, 99)
+               -- 99 = testing
+               -- 22 = suspend at power on
+               -- 23 = suspend after app restart
+               -- 32 = pre app background launch
+    AND COALESCE(al.visitor_state, 'NM') IN ('CURRENT_MEMBER')

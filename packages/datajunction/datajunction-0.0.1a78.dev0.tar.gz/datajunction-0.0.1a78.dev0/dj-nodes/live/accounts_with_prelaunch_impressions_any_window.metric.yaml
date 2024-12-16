@@ -1,0 +1,11 @@
+display_name: Accounts with Pre-launch Impressions (Any Window)
+description: '% Accounts with Pre-launch Impressions during an unbounded pre-launch
+  window for the live title.'
+query: |-
+  SELECT  MAX(IF(COALESCE(live_imp_cnt_pre_launch_any_window, 0) > 0, 1, 0))
+   FROM ${prefix}live.live_impressions_by_canvas_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

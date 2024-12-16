@@ -1,0 +1,8 @@
+description: |-
+  log(app launches from LST 27 + 1)
+
+  LST 27 includes:
+
+  Preapp, ContinueWatching, Discovery, Categories, Search, VideoEntity, Impression, Promotion.
+display_name: LST 27 App Launches
+query: SELECT SUM(lst_app_launch) FROM ${prefix}applaunches_current_member

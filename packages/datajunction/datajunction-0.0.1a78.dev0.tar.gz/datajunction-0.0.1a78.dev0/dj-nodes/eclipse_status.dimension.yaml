@@ -1,0 +1,18 @@
+display_name: Eclipse Status
+description: Whether the session uses Eclipse experience
+query: |-
+  SELECT
+      eclipse_status, eclipse_status_label
+  FROM
+      VALUES
+          (0, 'eclipse'),
+          (1, 'not eclipse')
+  AS t (eclipse_status, eclipse_status_label);
+columns:
+- name: eclipse_status_label
+  attributes:
+  - label
+primary_key:
+- eclipse_status
+dimension_links: []
+tags: []

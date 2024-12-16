@@ -1,0 +1,12 @@
+display_name: Percent Non CW Rows With Horizontal Scroll
+description: |-
+  For each session, calculate % of Homepage Non-Continue Watching Rows Visited with Horizontal Scroll
+  For each account, average the above % across sessions
+query: |-
+  SELECT  1.0 * SUM(COALESCE(sum_pct_non_cw_row_w_horizontal_scroll, 0)) / NULLIF(SUM(COALESCE(count_pct_non_cw_row_w_horizontal_scroll, 0)), 0)
+   FROM ${prefix}eclipse.focus_event_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: neutral
+unit: percentage

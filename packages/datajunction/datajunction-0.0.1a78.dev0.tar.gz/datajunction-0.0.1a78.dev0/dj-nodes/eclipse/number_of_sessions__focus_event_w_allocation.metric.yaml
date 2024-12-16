@@ -1,0 +1,10 @@
+display_name: Number of Sessions  (focus_event_w_allocation)
+description: Number of Sessions
+query: |-
+  SELECT  SUM(COALESCE(session_cnt, 0))
+   FROM ${prefix}eclipse.focus_event_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: neutral
+unit: unitless

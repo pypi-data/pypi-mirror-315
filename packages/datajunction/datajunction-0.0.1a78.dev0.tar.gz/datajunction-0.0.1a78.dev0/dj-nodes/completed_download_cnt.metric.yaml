@@ -1,0 +1,7 @@
+display_name: 'Member: Completed Download Cnt'
+description: ''
+query: SELECT SUM(IF(end_reason = 'COMPLETE', download_cnt, 0)) FROM ${prefix}download
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

@@ -1,0 +1,9 @@
+display_name: 'Users: Anhl: Mylist Add Cnt'
+description: ''
+query: |-
+  SELECT  SUM(COALESCE(mylist_add_cnt, 0))
+   FROM ${prefix}mylist_add
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

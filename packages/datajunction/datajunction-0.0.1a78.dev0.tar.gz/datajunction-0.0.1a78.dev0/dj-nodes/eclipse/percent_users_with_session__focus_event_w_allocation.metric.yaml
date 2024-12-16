@@ -1,0 +1,10 @@
+display_name: Percent Users With Session  (focus_event_w_allocation)
+description: ''
+query: |-
+  SELECT  IF(SUM(COALESCE(session_cnt, 0)) > 0, 1, 0)
+   FROM ${prefix}eclipse.focus_event_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: neutral
+unit: percentage

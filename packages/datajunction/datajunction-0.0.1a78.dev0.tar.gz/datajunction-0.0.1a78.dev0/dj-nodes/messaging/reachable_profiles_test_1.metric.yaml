@@ -1,0 +1,8 @@
+display_name: reachable_profiles_test_1
+description: ''
+query: SELECT COUNT(DISTINCT CASE WHEN email_reachable = 1 OR verified_phone = 1 THEN
+  profile_id END) AS reachable_profiles  FROM ${prefix}messaging.audience_agg_layer_test_v2
+tags: []
+required_dimensions: []
+direction: null
+unit: null

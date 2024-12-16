@@ -1,0 +1,12 @@
+display_name: During Live Period, Accounts with Any Impressions
+description: During Live Period of any Live title, % of accounts with any impressions
+  from any canvas. This is a proxy for % of allocated accounts active during Live
+  period.
+query: |-
+  SELECT  MAX(IF(total_imp_cnt_during_live > 0, 1, 0))
+   FROM ${prefix}live.live_impressions_by_canvas_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: neutral
+unit: percentage

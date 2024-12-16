@@ -1,0 +1,3 @@
+description: ''
+display_name: Total App Launches
+query: SELECT ln(coalesce(count( DISTINCT client_utc_epoch_ts), 0) + 1) FROM ${prefix}applaunches_current_member

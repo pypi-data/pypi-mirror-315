@@ -1,0 +1,18 @@
+display_name: Latest Allocation Snapshot Date
+description: |
+  The latest allocation snapshot date partition for tests
+
+  This is a "hack" so that we can filter the allocation table to use the latest snapshot only. Ideally this is not accomplished via a dimensional join (which is unclear whether Spark can turn into partition filtering), but via a direct date partition filter on the allocation table.
+query: |-
+  SELECT
+    test_id,
+    MAX(snapshot_utc_date) as latest_allocation_snapshot_date
+  FROM
+    source.prodhive.exp_data.allocation_core_d
+  GROUP BY
+    test_id
+columns: []
+primary_key:
+- test_id
+dimension_links: []
+tags: []

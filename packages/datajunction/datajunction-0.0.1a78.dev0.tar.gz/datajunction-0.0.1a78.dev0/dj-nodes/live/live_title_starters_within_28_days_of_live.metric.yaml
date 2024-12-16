@@ -1,0 +1,11 @@
+display_name: Live Title Starters Within 28 Days of Live
+description: For a given live title, % of allocated accounts that are Live title starter
+  within 28 days of Live stream end timestamp.
+query: |-
+  SELECT  SUM(IF(COALESCE(live_plus_28d_content_viewing_secs, 0) >= 120, 1, 0))
+   FROM ${prefix}live.live_starters_viewing_secs_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

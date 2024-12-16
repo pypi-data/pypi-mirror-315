@@ -1,0 +1,9 @@
+display_name: Percent of Titles Scrolled From Section 1
+description: Percent of Titles Scrolled From Section 1 of Eclipse
+query: SELECT 1.0 * SUM(COALESCE(sum_pct_section_1_titles_scrolled, 0)) / NULLIF(SUM(COALESCE(count_pct_section_1_titles_scrolled,
+  0)), 0) FROM ${prefix}eclipse.focus_event_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: neutral
+unit: percentage

@@ -1,0 +1,19 @@
+display_name: live_show_titles_start_end_ts
+description: Get show title id, title id, show description, and start, end timestamps
+  for each live show. Excluding test titles.
+query: "SELECT  td.title_id,\n\ttd.show_title_id,\n\ttd.show_desc,\n\ttd.title_desc,\n\
+  \ttd.title_global_launch_utc_ts,\n\twaiting_room_utc_ms_ts AS waiting_room_start_utc_ms_ts,\n\
+  \tstart_marker_utc_ms_ts AS live_event_start_utc_ms_ts,\n\tend_marker_utc_ms_ts\
+  \ AS live_event_end_utc_ms_ts,\n\tCEILING(waiting_room_utc_ms_ts / (60 * 1000))\
+  \ * (60 * 1000) AS waiting_room_start_minute,\n\tCEILING(start_marker_utc_ms_ts\
+  \ / (60 * 1000)) * (60 * 1000) AS live_event_start_minute,\n\tCEILING(end_marker_utc_ms_ts\
+  \ / (60 * 1000)) * (60 * 1000) AS live_event_end_minute\n FROM source.prodhive.dse.live_title_d\
+  \ AS live INNER JOIN source.prodhive.dse.ttl_title_d AS td ON live.title_id = td.title_id\n\
+  \ WHERE  live.is_test_title = 0 AND NOT REGEXP_LIKE(LOWER(live.title_desc), 'test')\
+  \ AND NOT REGEXP_LIKE(live.title_desc, 'Love Is Blind')"
+columns: []
+primary_key:
+- title_id
+- show_title_id
+dimension_links: []
+tags: []

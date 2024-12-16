@@ -1,0 +1,9 @@
+display_name: Total Allocations (Accounts)
+description: Accounts allocated
+query: |-
+  SELECT  count( DISTINCT account_id)
+   FROM ${prefix}search.search_session_profile_agg
+tags: []
+required_dimensions: []
+direction: neutral
+unit: unitless

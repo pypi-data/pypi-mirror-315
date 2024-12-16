@@ -1,0 +1,4 @@
+description: |
+  log( total app launches + 1)
+display_name: total_al
+query: SELECT ln(count(DISTINCT client_utc_epoch_ts) + 1) FROM ${prefix}app_launches_ab_annotated

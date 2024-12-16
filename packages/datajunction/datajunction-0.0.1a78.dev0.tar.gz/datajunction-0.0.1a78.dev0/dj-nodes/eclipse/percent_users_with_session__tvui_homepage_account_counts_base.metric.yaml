@@ -1,0 +1,10 @@
+display_name: Percent Users With Session  (tvui_homepage_account_counts_base)
+description: Percentage of users with any sessions
+query: |-
+  SELECT  IF(SUM(COALESCE(session_cnt, 0)) > 0, 1, 0)
+   FROM ${prefix}eclipse.tvui_homepage_account_counts_base
+tags:
+- xp.report
+required_dimensions: []
+direction: neutral
+unit: percentage

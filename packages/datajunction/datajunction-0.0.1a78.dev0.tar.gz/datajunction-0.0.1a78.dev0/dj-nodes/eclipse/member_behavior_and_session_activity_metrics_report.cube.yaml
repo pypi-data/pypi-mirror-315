@@ -1,0 +1,53 @@
+display_name: Member Behavior and Session Activity Metrics Report
+description: Homepage metrics and measurements of user session activity.
+metrics:
+- ${prefix}eclipse.total_allocations
+- ${prefix}eclipse.number_of_sessions
+- ${prefix}eclipse.pct_users_with_sessions
+- ${prefix}eclipse.sessions_w_a_qp
+- ${prefix}eclipse.pct_of_sessions_w_a_qp_in_1_min
+- ${prefix}eclipse.pct_of_sessions_w_a_qp_in_2_min
+- ${prefix}eclipse.percent_of_sessions_with_a_qualified_play_in_5_min
+- ${prefix}eclipse.percent_of_sessions_with_a_qualified_play_in_10_min
+- ${prefix}eclipse.percent_of_sessions_with_a_qualified_play_in_20_min
+- ${prefix}eclipse.total_allocations_focus_event_w_allocation
+- ${prefix}eclipse.number_of_sessions__focus_event_w_allocation
+- ${prefix}eclipse.percent_users_with_session__focus_event_w_allocation
+- ${prefix}eclipse.pct_non_cw_rows_w_horizontal_scroll
+- ${prefix}eclipse.total_allocations__tvui_homepage_account_counts_base
+- ${prefix}eclipse.number_of_sessions__tvui_homepage_account_counts_base
+- ${prefix}eclipse.percent_users_with_session__tvui_homepage_account_counts_base
+- ${prefix}eclipse.average_homepage_dp_visits_per_session
+- ${prefix}eclipse.average_homepage_qualified_supplemental_plays_per_session
+- ${prefix}eclipse.average_homepage_scroll_depth
+- ${prefix}eclipse.average_homepage_total_titles_scrolled_per_session
+- ${prefix}eclipse.homepage_qualified_take_rate
+- ${prefix}eclipse.homepage_dwell_time_greater_than_10_seconds
+- ${prefix}eclipse.homepage_dwell_time_greater_than_35_seconds
+- ${prefix}eclipse.homepage_dwell_time_greater_than_135_seconds
+- ${prefix}eclipse.percent_of_homepage_dwell_from_section_1
+- ${prefix}eclipse.percent_of_homepage_dwell_from_section_2
+- ${prefix}eclipse.percent_of_homepage_dwell_from_section_3
+- ${prefix}eclipse.percent_of_homepage_detail_page_visits_from_section_1
+- ${prefix}eclipse.percent_of_homepage_detail_page_visits_from_section_2
+- ${prefix}eclipse.percent_of_homepage_detail_page_visits_from_section_3
+- ${prefix}eclipse.percent_of_qualified_supplemental_views_from_section_1
+- ${prefix}eclipse.percent_of_qualified_supplemental_views_from_section_2
+- ${prefix}eclipse.percent_of_qualified_supplemental_views_from_section_3
+- ${prefix}eclipse.percent_of_titles_scrolled_from_section_1
+- ${prefix}eclipse.percent_of_titles_scrolled_from_section_2
+- ${prefix}eclipse.percent_of_titles_scrolled_from_section_3
+- ${prefix}eclipse.percent_of_sessions_scrolled_to_section_3
+dimensions:
+- common.dimensions.account.account_id
+- common.dimensions.xp.observation_window.observation_window
+- ${prefix}eclipse_eligible_status.eclipse_eligible_status
+- ${prefix}eclipse_status.eclipse_status
+- ${prefix}is_jfk_profile.is_jfk_profile
+- common.dimensions.xp.is_window_complete.is_window_complete
+- common.dimensions.xp.ab_test.test_id
+- common.dimensions.xp.ab_test_cell.cell_id
+- common.dimensions.xp.ab_test_plan.group_id
+columns: []
+tags:
+- xp.report

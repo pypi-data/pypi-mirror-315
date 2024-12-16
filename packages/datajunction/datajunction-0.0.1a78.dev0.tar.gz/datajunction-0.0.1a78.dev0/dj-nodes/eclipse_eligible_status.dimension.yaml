@@ -1,0 +1,18 @@
+display_name: Eclipse Eligible Status
+description: Whether the device is Eclipse-eligible
+query: |-
+  SELECT
+      eclipse_eligible_status, eclipse_eligible_status_label
+  FROM
+      VALUES
+          (0, 'not eclipse eligible'),
+          (1, 'eclipse eligible')
+  AS t (eclipse_eligible_status, eclipse_eligible_status_label);
+columns:
+- name: eclipse_eligible_status_label
+  attributes:
+  - label
+primary_key:
+- eclipse_eligible_status
+dimension_links: []
+tags: []

@@ -1,0 +1,27 @@
+display_name: Live - Starters Report
+description: |-
+  f.k.a. Live Member Engagement Report
+
+  go/live-metrics-ablaze
+  Live title starters metrics. Include starters during live period, 4d, 7d, and 28d since livestream ended.
+metrics:
+- ${prefix}live.total_allocations
+- ${prefix}live.is_starter_during_live
+- ${prefix}live.is_starter_within_4d_of_live
+- ${prefix}live.pct_starters_started_during_live
+- ${prefix}live.live_title_starters_within_7_days_of_live
+- ${prefix}live.pct_7d_starters_started_during_live
+- ${prefix}live.live_title_starters_within_28_days_of_live
+- ${prefix}live.pct_28d_starters_started_during_live
+dimensions:
+- common.dimensions.xp.ab_test.test_id
+- common.dimensions.xp.is_window_complete.is_window_complete
+- common.dimensions.xp.observation_window.observation_window
+- common.dimensions.xp.ab_test_cell.cell_id
+- ${prefix}live.live_starters_viewing_secs_w_allocation.title_id
+- ${prefix}live.live_starters_viewing_secs_w_allocation.show_desc
+- common.dimensions.xp.ab_test_plan.group_id
+columns: []
+tags:
+- xp.reports.stable
+- xp.report

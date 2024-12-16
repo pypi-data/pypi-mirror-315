@@ -1,0 +1,11 @@
+display_name: Live Title Starters During Live Period
+description: For a given title, % of allocated accounts are live title starters during
+  Live period.
+query: |-
+  SELECT  SUM(IF(COALESCE(live_content_viewing_secs, 0) >= 120, 1, 0))
+   FROM ${prefix}live.live_starters_viewing_secs_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

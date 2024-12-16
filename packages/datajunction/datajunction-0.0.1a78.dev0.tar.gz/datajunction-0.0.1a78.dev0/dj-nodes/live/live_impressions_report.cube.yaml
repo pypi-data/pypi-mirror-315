@@ -1,0 +1,33 @@
+display_name: Live - Impressions Report
+description: |-
+  go/live-metrics-ablaze
+  Live Impressions (During Live, Pre-launch, Post-launch) metrics for Ablaze Report.
+metrics:
+- ${prefix}live.total_allocations_live_impressions
+- ${prefix}live.during_live_period_accounts_with_live_title_impressions
+- ${prefix}live.during_live_period__accounts_with_any_impressions_saw_the_live_title_impressions
+- ${prefix}live.play_through_rate_during_live_any_title
+- ${prefix}live.live_title_impressions_during_live
+- ${prefix}live.play_through_rate_during_live_live_title
+- ${prefix}live.accounts_with_prelaunch_impressions_14d
+- ${prefix}live.accounts_with_prelaunch_impressions_any_window
+- ${prefix}live.live_title_prelaunch_impressions_14d
+- ${prefix}live.live_title_prelaunch_impressions_any_window
+- ${prefix}live.accounts_with_postlaunch_impressions_14d
+- ${prefix}live.accounts_with_postlaunch_impressions_any_window
+- ${prefix}live.live_title_postlaunch_impressions_14d
+- ${prefix}live.live_title_postlaunch_impressions_any_window
+dimensions:
+- common.dimensions.xp.ab_test.test_id
+- common.dimensions.xp.is_window_complete.is_window_complete
+- common.dimensions.xp.observation_window.observation_window
+- common.dimensions.xp.ab_test_cell.cell_id
+- ${prefix}live.live_impressions_by_canvas_w_allocation.filtered_show_title_id
+- common.dimensions.xp.ab_test_plan.group_id
+- ${prefix}live.live_impressions_by_canvas_w_allocation.filtered_show_desc
+- ${prefix}live.live_impressions_by_canvas_w_allocation.impression_location_desc
+- ${prefix}live.live_impressions_by_canvas_w_allocation.region_rollup_desc
+columns: []
+tags:
+- xp.report
+- xp.reports.stable

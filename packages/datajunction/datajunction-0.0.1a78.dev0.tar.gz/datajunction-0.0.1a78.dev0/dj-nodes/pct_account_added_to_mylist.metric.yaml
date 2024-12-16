@@ -1,0 +1,9 @@
+display_name: 'Users: Anhl: Pct Account Added To Mylist'
+description: ''
+query: |-
+  SELECT  IF(SUM(COALESCE(mylist_add_cnt, 0)) > 0, 1, 0)
+   FROM ${prefix}mylist_add
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

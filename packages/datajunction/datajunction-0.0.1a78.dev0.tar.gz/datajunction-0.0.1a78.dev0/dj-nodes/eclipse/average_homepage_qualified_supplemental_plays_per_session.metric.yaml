@@ -1,0 +1,11 @@
+display_name: Average Homepage Qualified Supplemental Plays Per Session
+description: Average number of qualified supplemental plays from Homepage per session.
+  Qualified Supplemental View is defined by those >= 20 seconds.
+query: |-
+  SELECT  1.0 * SUM(COALESCE(qualified_supplemental_play_cnt, 0)) / NULLIF(SUM(COALESCE(session_cnt, 0)), 0)
+   FROM ${prefix}eclipse.tvui_homepage_account_counts_base
+tags:
+- xp.report
+required_dimensions: []
+direction: neutral
+unit: unknown

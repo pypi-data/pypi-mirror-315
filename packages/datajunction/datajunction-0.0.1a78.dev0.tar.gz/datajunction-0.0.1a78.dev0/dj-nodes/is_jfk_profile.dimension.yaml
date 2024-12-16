@@ -1,0 +1,18 @@
+display_name: Is JFK Profile
+description: JFK profile = Just for Kids profile = (more commonly) Kids profile
+query: |-
+  SELECT
+      is_jfk_profile, is_jfk_profile_label
+  FROM
+      VALUES
+          (0, 'adult profile'),
+          (1, 'kids profile')
+  AS t (is_jfk_profile, is_jfk_profile_label)
+columns:
+- name: is_jfk_profile_label
+  attributes:
+  - label
+primary_key:
+- is_jfk_profile
+dimension_links: []
+tags: []

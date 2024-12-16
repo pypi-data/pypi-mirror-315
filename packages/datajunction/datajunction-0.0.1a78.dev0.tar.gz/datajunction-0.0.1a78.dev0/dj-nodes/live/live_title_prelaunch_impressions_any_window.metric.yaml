@@ -1,0 +1,10 @@
+display_name: Live Title Pre-launch Impressions (Any Window)
+description: Live Title Pre-launch Impressions with an unbounded pre launch window.
+query: |-
+  SELECT  SUM(coalesce(live_imp_cnt_pre_launch_any_window, 0))
+   FROM ${prefix}live.live_impressions_by_canvas_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

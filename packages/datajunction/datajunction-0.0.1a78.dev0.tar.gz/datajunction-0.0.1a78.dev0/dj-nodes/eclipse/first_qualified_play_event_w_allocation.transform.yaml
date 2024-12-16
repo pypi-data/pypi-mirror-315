@@ -1,0 +1,78 @@
+display_name: first_qualified_play_event_w_allocation
+description: ''
+query: "(SELECT  obs_window.observation_window,\n\talloc.test_id,\n\talloc.alloc_group_id,\n\
+  \talloc.test_cell_nbr,\n\talloc.account_id,\n\tIF(alloc.days_since_allocation >=\
+  \ obs_window.window_end - 1, 1, 0) AS is_window_complete,\n\tIF(is_eclipse_eligible,\
+  \ 1, 0) AS is_eclipse_eligible,\n\tIF(is_eclipse, 1, 0) AS is_eclipse,\n\tIF(experience_type\
+  \ = 'just_for_kids', 1, 0) AS is_jfk_profile,\n\tCOUNT(profile_session_id) AS session_cnt,\n\
+  \tCOUNT_IF(sesh.session_has_qualified_play) AS session_cnt_w_a_qp,\n\tCOUNT_IF(sesh.time_to_play_ms\
+  \ / (60 * 1000.0) < 1) AS session_cnt_w_a_qp_in_1_min,\n\tCOUNT_IF(sesh.time_to_play_ms\
+  \ / (60 * 1000.0) < 2) AS session_cnt_w_a_qp_in_2_min,\n\tCOUNT_IF(sesh.time_to_play_ms\
+  \ / (60 * 1000.0) < 5) AS session_cnt_w_a_qp_in_5_min,\n\tCOUNT_IF(sesh.time_to_play_ms\
+  \ / (60 * 1000.0) < 10) AS session_cnt_w_a_qp_in_10_min,\n\tCOUNT_IF(sesh.time_to_play_ms\
+  \ / (60 * 1000.0) < 20) AS session_cnt_w_a_qp_in_20_min\n FROM source.prodhive.exp_data.allocation_core_d\
+  \ AS alloc CROSS JOIN common.dimensions.xp.observation_window obs_window\nLEFT JOIN\
+  \ source.prodhive.rpt.tvui_session_first_qualified_play_f AS sesh ON sesh.account_id\
+  \ = alloc.account_id AND FLOOR((sesh.session_start_utc_ms - alloc.alloc_utc_ms_ts)\
+  \ / 86400000.0) BETWEEN obs_window.window_start - 1 AND obs_window.window_end -\
+  \ 1\n WHERE  coalesce(alloc.is_tester, 0) = 0 AND alloc_properties['is_copied']\
+  \ IS NULL\n GROUP BY  obs_window.observation_window, alloc.test_id, alloc.alloc_group_id,\
+  \ alloc.test_cell_nbr, alloc.account_id, IF(alloc.days_since_allocation >= obs_window.window_end\
+  \ - 1, 1, 0), IF(is_eclipse_eligible, 1, 0), IF(is_eclipse, 1, 0), IF(experience_type\
+  \ = 'just_for_kids', 1, 0))\n\nUNION ALL\n(SELECT  obs_window.observation_window,\n\
+  \talloc.test_id,\n\talloc.alloc_group_id,\n\talloc.test_cell_nbr,\n\talloc.account_id,\n\
+  \tIF(alloc.days_since_allocation >= obs_window.window_end - 1, 1, 0) AS is_window_complete,\n\
+  \tNULL AS is_eclipse_eligible,\n\tNULL AS is_eclipse,\n\tNULL AS is_jfk_profile,\n\
+  \tNULL AS session_cnt,\n\tNULL AS session_cnt_w_a_qp,\n\tNULL AS sessions_cnt_w_a_qp_in_1_min,\n\
+  \tNULL AS sessions_cnt_w_a_qp_in_2_min,\n\tNULL AS sessions_cnt_w_a_qp_in_5_min,\n\
+  \tNULL AS sessions_cnt_w_a_qp_in_10_min,\n\tNULL AS sessions_cnt_w_a_qp_in_20_min\n\
+  \ FROM source.prodhive.exp_data.allocation_core_d AS alloc CROSS JOIN common.dimensions.xp.observation_window\
+  \ obs_window\n WHERE  coalesce(alloc.is_tester, 0) = 0 AND alloc_properties['is_copied']\
+  \ IS NULL)"
+columns: []
+primary_key: []
+dimension_links:
+- type: join
+  dimension_node: common.dimensions.xp.ab_test
+  join_type: left
+  join_on: ${prefix}eclipse.first_qualified_play_event_w_allocation.test_id = common.dimensions.xp.ab_test.test_id
+- type: join
+  dimension_node: common.dimensions.xp.ab_test_cell
+  join_type: left
+  join_on: ${prefix}eclipse.first_qualified_play_event_w_allocation.test_cell_nbr
+    = common.dimensions.xp.ab_test_cell.cell_id
+- type: join
+  dimension_node: common.dimensions.account
+  join_type: left
+  join_on: ${prefix}eclipse.first_qualified_play_event_w_allocation.account_id = common.dimensions.account.account_id
+- type: join
+  dimension_node: ${prefix}eclipse_status
+  join_type: left
+  join_on: ${prefix}eclipse.first_qualified_play_event_w_allocation.is_eclipse = ${prefix}eclipse_status.eclipse_status
+- type: join
+  dimension_node: ${prefix}eclipse_eligible_status
+  join_type: left
+  join_on: ${prefix}eclipse.first_qualified_play_event_w_allocation.is_eclipse_eligible
+    = ${prefix}eclipse_eligible_status.eclipse_eligible_status
+- type: join
+  dimension_node: ${prefix}is_jfk_profile
+  join_type: left
+  join_on: ${prefix}eclipse.first_qualified_play_event_w_allocation.is_jfk_profile
+    = ${prefix}is_jfk_profile.is_jfk_profile
+- type: join
+  dimension_node: common.dimensions.xp.observation_window
+  join_type: left
+  join_on: ${prefix}eclipse.first_qualified_play_event_w_allocation.observation_window
+    = common.dimensions.xp.observation_window.observation_window
+- type: join
+  dimension_node: common.dimensions.xp.is_window_complete
+  join_type: left
+  join_on: ${prefix}eclipse.first_qualified_play_event_w_allocation.is_window_complete
+    = common.dimensions.xp.is_window_complete.is_window_complete
+- type: join
+  dimension_node: common.dimensions.xp.ab_test_plan
+  join_type: left
+  join_on: ${prefix}eclipse.first_qualified_play_event_w_allocation.alloc_group_id
+    = common.dimensions.xp.ab_test_plan.group_id
+tags:
+- xp.report

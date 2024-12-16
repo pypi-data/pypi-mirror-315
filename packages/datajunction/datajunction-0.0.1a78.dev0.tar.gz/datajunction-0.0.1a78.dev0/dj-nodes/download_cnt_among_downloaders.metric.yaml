@@ -1,0 +1,7 @@
+display_name: 'Member: Download Cnt Among Downloaders'
+description: ''
+query: SELECT SUM(download_cnt) FROM ${prefix}download
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

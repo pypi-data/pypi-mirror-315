@@ -1,0 +1,13 @@
+description: Use this to get unified app launch source type
+dimension_links: {}
+display_name: App Launch Source Type
+primary_key:
+- iid_lst
+query: |-
+  SELECT
+    interaction_id AS iid,
+    app_launch_source_type AS iid_lst,
+    FIRST(interaction_name) AS interaction_name
+  FROM source.prodhive.dse.ptr_interaction_id_d
+  WHERE is_latest = 1
+  GROUP BY 1,2

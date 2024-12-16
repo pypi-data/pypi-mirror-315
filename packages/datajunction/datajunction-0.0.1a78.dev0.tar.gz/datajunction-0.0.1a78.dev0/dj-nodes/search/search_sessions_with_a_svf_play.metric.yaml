@@ -1,0 +1,9 @@
+display_name: Search Sessions with a Svf Play
+description: ''
+query: |-
+  SELECT  sum(num_approx_svf_video_plays)
+   FROM ${prefix}search.search_session_profile_agg
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

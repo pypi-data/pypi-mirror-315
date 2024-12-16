@@ -1,0 +1,9 @@
+display_name: Unique Queries Per Account (Clicked)
+description: ''
+query: |-
+  SELECT  sum(num_interactive_queries)
+   FROM ${prefix}search.search_session_profile_agg
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

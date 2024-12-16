@@ -1,0 +1,8 @@
+display_name: 'Member: Number Thumbs Up From Thumbers'
+description: Number of thumbs up per account during the test window, of accounts with
+  at least one thumb
+query: SELECT SUM(IF(thumb=1,thumb_up,NULL)) FROM ${prefix}thumb
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

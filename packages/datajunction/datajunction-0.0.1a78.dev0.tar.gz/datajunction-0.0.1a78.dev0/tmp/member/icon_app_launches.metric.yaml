@@ -1,0 +1,7 @@
+description: ''
+display_name: Icon App Launches
+query: |-
+  SELECT ln(coalesce(count( DISTINCT CASE
+          WHEN coalesce(app_launch_source_type, -1) IN (2, 28) THEN client_utc_epoch_ts
+          ELSE NULL
+      END), 0) + 1) FROM ${prefix}applaunches_current_member

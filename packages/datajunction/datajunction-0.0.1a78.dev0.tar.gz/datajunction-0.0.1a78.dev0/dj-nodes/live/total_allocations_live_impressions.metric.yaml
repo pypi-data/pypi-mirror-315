@@ -1,0 +1,10 @@
+display_name: Total Allocations (Live Impressions)
+description: ''
+query: |-
+  SELECT  MAX(1)
+   FROM ${prefix}live.live_impressions_by_canvas_w_allocation
+tags:
+- xp.stats.descriptive.count
+required_dimensions: []
+direction: neutral
+unit: unitless

@@ -1,0 +1,12 @@
+display_name: Play Through Rate During Live (Any Title)
+description: '(Do NOT filter on title!). Play Through Rate of all impressions during
+  Live period for all titles with impressions. It''s the ratio of (# impressions with
+  plays / # of impressions) during a live period of any Live title.'
+query: |-
+  SELECT  1.0 * SUM(COALESCE(total_imp_w_play_cnt_during_live, 0)) / NULLIF(SUM(COALESCE(total_imp_cnt_during_live, 0)), 0)
+   FROM ${prefix}live.live_impressions_by_canvas_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: higher_is_better
+unit: proportion

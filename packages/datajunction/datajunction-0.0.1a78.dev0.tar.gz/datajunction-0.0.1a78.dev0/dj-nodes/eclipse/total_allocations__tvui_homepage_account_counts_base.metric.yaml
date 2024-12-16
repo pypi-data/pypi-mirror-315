@@ -1,0 +1,10 @@
+display_name: Total Allocations  (tvui_homepage_account_counts_base)
+description: Total number of allocations
+query: |-
+  SELECT  MAX(1)
+   FROM ${prefix}eclipse.tvui_homepage_account_counts_base
+tags:
+- xp.stats.descriptive.count
+required_dimensions: []
+direction: neutral
+unit: unitless

@@ -1,0 +1,12 @@
+display_name: 'Member: Download Report'
+description: Report created from a DataJunction cube. Make edits at https://datajunction.prod.netflix.net/nodes/member.download_report
+metrics:
+- ${prefix}completed_download_cnt
+- ${prefix}pct_users_who_completed_download
+dimensions:
+- common.dimensions.xp.allocation_day.account_days_since_allocation
+- common.dimensions.xp.ab_test_plan.group_id
+- common.dimensions.xp.allocation_day.account_observation_day
+columns: []
+tags:
+- xp.report

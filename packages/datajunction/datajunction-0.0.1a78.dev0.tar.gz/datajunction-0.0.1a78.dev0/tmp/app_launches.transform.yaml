@@ -1,0 +1,27 @@
+description: ''
+dimension_links: {}
+display_name: App Launches
+query: |
+  SELECT
+    account_id,
+    COALESCE(
+      CASE WHEN (iid_lst IS NOT NULL)
+        THEN iid_lst
+        ELSE app_launch_source_type END,
+      -1
+    ) AS app_launch_source_type,
+    client_utc_epoch_ts,
+    det_features_array[1] AS det_feature,
+    COALESCE(is_det, 0) AS is_det,
+    utc_date
+  FROM source.prodhive.dse.app_launch_event_f
+  LEFT JOIN ${prefix}app_launch_source_type USING(iid)
+  WHERE
+    COALESCE(visitor_state, 'NM') IN ('CURRENT_MEMBER')
+    AND app_launch_derived_type = 'User Initiated'
+    AND COALESCE( -- remove suspend and resume launches
+      CASE WHEN (iid_lst IS NOT NULL)
+        THEN iid_lst
+        ELSE app_launch_source_type END,
+      -1
+    ) NOT IN (33, 34, 22, 23)

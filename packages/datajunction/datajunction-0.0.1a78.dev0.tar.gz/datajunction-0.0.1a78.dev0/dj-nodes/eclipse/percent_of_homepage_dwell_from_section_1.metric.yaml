@@ -1,0 +1,10 @@
+display_name: Percent of Homepage Dwell From Section 1
+description: Percent of Homepage Dwell From Section 1 of Eclipse
+query: |-
+  SELECT  1.0 * SUM(COALESCE(sum_pct_section_1_dwell, 0)) / NULLIF(SUM(COALESCE(count_pct_section_1_dwell, 0)), 0)
+   FROM ${prefix}eclipse.tvui_homepage_account_counts_base
+tags:
+- xp.report
+required_dimensions: []
+direction: neutral
+unit: percentage

@@ -1,0 +1,8 @@
+display_name: 'Member: Total Thumbs'
+description: Total number of thumbs
+query: SELECT SUM(COALESCE(double_thumb_up,0)+COALESCE(thumb_up,0)+COALESCE(thumb_down,0))
+  FROM ${prefix}thumb
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: unitless

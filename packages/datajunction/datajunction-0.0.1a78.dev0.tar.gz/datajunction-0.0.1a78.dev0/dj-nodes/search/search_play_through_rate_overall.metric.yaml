@@ -1,0 +1,9 @@
+display_name: Search Play Through Rate (Overall)
+description: ''
+query: |-
+  SELECT  sum(num_plays) * 1.0 / sum(num_search_sessions)
+   FROM ${prefix}search.search_session_profile_agg
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

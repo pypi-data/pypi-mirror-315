@@ -1,0 +1,12 @@
+display_name: '% of live title starters (within 28d) that started during live'
+description: '% of live title starters (within 28d of title launch) that started during
+  live. It''s the ratio of (live title starters during live) / (live title starters
+  within 28d of title launch).'
+query: |-
+  SELECT  1.0 * SUM(IF(COALESCE(live_content_viewing_secs, 0) >= 120, 1, 0)) / NULLIF(SUM(IF(COALESCE(live_plus_28d_content_viewing_secs, 0) >= 120, 1, 0)), 0)
+   FROM ${prefix}live.live_starters_viewing_secs_w_allocation
+tags:
+- xp.report
+required_dimensions: []
+direction: higher_is_better
+unit: proportion

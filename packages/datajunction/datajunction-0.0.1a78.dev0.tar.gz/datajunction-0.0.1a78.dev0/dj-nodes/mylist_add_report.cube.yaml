@@ -1,0 +1,17 @@
+display_name: 'Member: My List Add Report'
+description: User engagement with the My List Add feature
+metrics:
+- ${prefix}mylist_add_cnt
+- ${prefix}pct_account_added_to_mylist
+dimensions:
+- common.dimensions.xp.ab_test_cell.cell_id
+- common.dimensions.location.location_page_desc
+- common.dimensions.device_type.client_name
+- common.dimensions.device_type.hw_category
+- common.dimensions.location.location_row_desc
+- common.dimensions.xp.allocation_day.account_days_since_allocation
+- common.dimensions.xp.ab_test_plan.group_id
+- common.dimensions.xp.allocation_day.account_observation_day
+columns: []
+tags:
+- xp.report

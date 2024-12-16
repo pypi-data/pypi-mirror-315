@@ -1,0 +1,9 @@
+display_name: 'Member: Fraction Double Thumbs Up And Thumbs Up'
+description: Of accounts that gave a thumb, the fraction of thumbs that were double
+  thumbs up and thumbs up during the test window
+query: SELECT IF(SUM(COALESCE(thumb,0))>0,CAST(SUM(COALESCE(double_thumb_up,0))+SUM(COALESCE(thumb_up,0))
+  AS DOUBLE)/CAST(SUM(COALESCE(thumb,0)) AS DOUBLE),NULL) FROM ${prefix}thumb
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

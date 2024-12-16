@@ -1,0 +1,7 @@
+display_name: Search Session Click Through Rate (Overall)
+description: Without suggestion clicks, the new definition (old definition is Legacy)
+query: SELECT sum(num_entity_clicks) * 1.0 / sum(num_search_sessions) FROM ${prefix}search.search_session_profile_agg
+tags: []
+required_dimensions: []
+direction: higher_is_better
+unit: percentage

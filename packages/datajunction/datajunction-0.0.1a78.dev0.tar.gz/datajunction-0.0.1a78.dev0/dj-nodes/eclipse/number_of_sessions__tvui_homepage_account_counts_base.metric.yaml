@@ -1,0 +1,10 @@
+display_name: Number of Sessions  (tvui_homepage_account_counts_base)
+description: Number of Sessions
+query: |-
+  SELECT  SUM(COALESCE(session_cnt, 0))
+   FROM ${prefix}eclipse.tvui_homepage_account_counts_base
+tags:
+- xp.report
+required_dimensions: []
+direction: neutral
+unit: unitless
