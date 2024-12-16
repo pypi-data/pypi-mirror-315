@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: easynetsim
+Version: 0.1.1
+Summary: A simple network simulator for testing ping and routing
+Home-page: https://github.com/yourusername/network_simulator
+License: MIT
+Author: Ihor Savenko
+Author-email: csigorek@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: networkx (>=3.4.2,<4.0.0)
+Project-URL: Repository, https://github.com/yourusername/network_simulator
+Description-Content-Type: text/markdown
+
+
