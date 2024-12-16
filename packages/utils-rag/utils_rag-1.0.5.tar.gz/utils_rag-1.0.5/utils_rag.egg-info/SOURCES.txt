@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+test/test.py
+utils_rag/EnhancedLocalEmbeddings.py
+utils_rag/__init__.py
+utils_rag.egg-info/PKG-INFO
+utils_rag.egg-info/SOURCES.txt
+utils_rag.egg-info/dependency_links.txt
+utils_rag.egg-info/top_level.txt
