@@ -1,0 +1,12 @@
+biliass-2.2.0.dist-info/METADATA,sha256=x_W_Xsaj-92IAdDkW-88piDu0uKSvldXUfPPPEBwHR0,3529
+biliass-2.2.0.dist-info/WHEEL,sha256=_plVEhq66EMrLOR5dKkIdeN8MdC9FvNHlOOEi46ntLY,90
+biliass-2.2.0.dist-info/entry_points.txt,sha256=jgRKxw_VG_xDOE18aeYko6EhL5cradbA-fXJBmjSXd4,48
+biliass-2.2.0.dist-info/licenses/LICENSE,sha256=Ox_PkXzlRELmrldsnH0Ef1qGaDm0QDo3j3-UD-SllPk,35799
+biliass/biliass.py,sha256=VDlnj1EtBmNwR8kXAzGXD7m5yr_TPFb1vfH2LnT-1Uw,1786
+biliass/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biliass/_core.pyi,sha256=2zdC4yT2-uVatCUr_HtNmG-g8gH4uNlEhGBpVYiCFN8,1077
+biliass/__init__.py,sha256=_SIq1AqoHT2ZT0oul9XATgddx5lAwaXWj71I73q40q0,265
+biliass/__main__.py,sha256=Tl2I35Q_DTyH6c8nO7AaxksLQFCMNng-kuLa1nH2Iz8,4938
+biliass/__version__.py,sha256=g-8q_H_0YndYxRwsEF3lDaN5zL4xFOSz7XGpPq_uwvs,57
+biliass/_core.pyd,sha256=KO-YfLo2qpbjTf9n_TPrG8DpmRjpDjIW9QiBaTA08ds,1429504
+biliass-2.2.0.dist-info/RECORD,,
