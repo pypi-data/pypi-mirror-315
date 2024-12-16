@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+komlos_optimal.egg-info/PKG-INFO
+komlos_optimal.egg-info/SOURCES.txt
+komlos_optimal.egg-info/dependency_links.txt
+komlos_optimal.egg-info/requires.txt
+komlos_optimal.egg-info/top_level.txt
+tests/__init__.py
+tests/test_benchmarks.py
+tests/test_core.py
