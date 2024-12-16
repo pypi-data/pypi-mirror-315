@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+msvproperties.egg-info/PKG-INFO
+msvproperties.egg-info/SOURCES.txt
+msvproperties.egg-info/dependency_links.txt
+msvproperties.egg-info/requires.txt
+msvproperties.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core.py
