@@ -1,0 +1,13 @@
+ArticleAnalyst/__init__.py,sha256=vetCJGcYCHjJSk7oNpPfSOeRAIUjk7s-y0AheZcvH50,142
+ArticleAnalyst/articleAnalyst.py,sha256=cpfUEyHzFz9zTtEfHSEYTFiD0l1yzT8iRyvAdE1g13s,31861
+ArticleAnalyst/settings.py,sha256=3Jl69eik7E3lruf4P466uHgSmCpanWOVFi7vMUwb7I8,502
+ArticleAnalyst/function/__init__.py,sha256=iEY4Kk74dyv4F-LLKnCOp9vwwACZNWfFHReUVFaVK18,198
+ArticleAnalyst/function/annotation.py,sha256=MHr6zx8fOQgZVAs_aBN9mcQBM40JQayy89ZdpjBNOjw,4785
+ArticleAnalyst/function/article.py,sha256=NzZOja5zgcn-EIo0SCM5AJThz1kbqUVG8wXJJOO7Yfs,11589
+ArticleAnalyst/function/document.py,sha256=y3zMC0RJXELhDwYPfhZbAT1Bu7ZGpcXhbOMyPjMYzpU,10880
+ArticleAnalyst/function/downloader.py,sha256=dtWWZyAVzU07tmHO19X6K82ALGM1eB7cgPW7_N4gx8o,8361
+ArticleAnalyst/function/meshAnalyst.py,sha256=KeeWK1uF_POz1FLCJb29nb2xq89LvakKXQaQX5tV-aI,13934
+articleanalyst-0.0.4.dist-info/METADATA,sha256=Jix1zQ7nYGhcLW8GhxVsIy9b8GdLVcEM9-4SySYFiMY,1377
+articleanalyst-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+articleanalyst-0.0.4.dist-info/licenses/LICENSE,sha256=XWEXVrvbIq2yXBPNdE1gYpER-zgK2QqdastrPKUjc54,1520
+articleanalyst-0.0.4.dist-info/RECORD,,
