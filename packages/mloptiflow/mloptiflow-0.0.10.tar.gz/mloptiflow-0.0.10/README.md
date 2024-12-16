@@ -1,0 +1,88 @@
+# mloptiflow
+
+Python framework and library with an integrated CLI, designed to streamline ML lifecycle management by automating project inception, real-time model monitoring, and adaptive canary deployment processes. The library facilitates automated project setup across various configurable ML paradigms (whether it is a Random Forest classification, XGBoost regression, T5-based time-series forecasting, encoder-only / encoder-decoder / decoder-only transformer-based NLP downstream tasks, or practically any other configurable ML paradigm) with optimized directories, subdirectories and configuration files adhering to recommended practices in ML development. The library features a plugin architecture for extensibility, allowing integration with other core components / packages, such as real-time model monitoring with anomaly detection mechanisms, adaptive canary deployment architectures, and integrated UI for monitoring and deployment control. Model monitoring is implemented using high-throughput, low-latency data streaming tool Apache Kafka. Deployed ML models act as Kafka producers, emitting real-time inference data and performance metrics serialized with Apache Avro for schema enforcement and efficiency. Model monitoring is accompanied with anomaly, data, and concept drift detection mechanisms via techniques like PSI, Isolation Forests, or LSTM auto-encoders. Adaptive canary deployment architectures and strategies are implemented specifically for ML models using Kubernetes for container orchestration and Istio as a service mesh for traffic management and routing between baseline and canary versions at granular levels. Integrated UI for monitoring and deployment control is implemented using Vanilla JavaScript and Bootstrap on the client-side, and FastAPI / LitServe on the server-side.
+
+
+## Installation
+
+1. create a new virtual environment
+
+2. install mloptiflow:
+
+```bash
+pip install mloptiflow
+```
+
+3. initialize a new project and choose a name and paradigm (currently supported paradigms are: `tabular_regression`, `tabular_classification`):
+
+```bash
+mloptiflow init <your-project-name> --paradigm=<paradigm-name>
+```
+
+4. `cd` into your project directory and (if using `poetry`) update `name` field in `pyproject.toml` file:
+
+```bash
+cd <your-project-name>
+```
+
+```toml
+[tool.poetry]
+name = "<your-project-name>"
+```
+
+5. install dependencies:
+
+```bash
+poetry install
+```
+
+or if using `pip`:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+1. run the application:
+
+```bash
+streamlit run app.py
+```
+
+or:
+
+```bash
+poetry run streamlit run app.py
+```
+
+2. optionally, adjust `Dockerfile` to your needs if you want to run the inference application in a containerized environment:
+
+```dockerfile
+# mainly the WORKDIR
+WORKDIR /<your-project-name>
+```
+
+3. build the container image:
+
+```bash
+docker build -t <your-project-name> .
+```
+
+4. run the container image:
+
+```bash
+docker run -p 8501:8501 <your-project-name>
+```
+
+## Support
+- TBA
+
+## Roadmap
+- TBA
+
+## Contributing
+- TBA
+
+
+## License
+MIT
