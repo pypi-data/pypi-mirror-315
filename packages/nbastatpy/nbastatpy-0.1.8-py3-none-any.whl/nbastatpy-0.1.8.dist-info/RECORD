@@ -1,0 +1,11 @@
+nbastatpy/__init__.py,sha256=LhTkEQMCuJU5UMrQliKi4z3HtuMxxDY5_79ZJ0IB5PU,18
+nbastatpy/game.py,sha256=RSUgATPk6xBj6kFqtQ74IfnjdwMUuRhaZWEflO84Qjk,4631
+nbastatpy/player.py,sha256=NHa0WTuw9301mfPSSsXTWg87_xGS8GjP1Fh1JYkTK8s,17311
+nbastatpy/season.py,sha256=0zEWb_iBcsKe42wsU9ISxbUl6HU2Tbt1DISRJXFyj_A,19732
+nbastatpy/team.py,sha256=gjjIJc4JoYAjmJII9Mw1FDrDMl0AJjFMgVeIEvPnNNg,15250
+nbastatpy/utils.py,sha256=mFH1SqQUWR_Vpl154urgvOZWf5HtflIrlj1eGNzhCeY,2739
+nbastatpy-0.1.8.dist-info/LICENSE,sha256=TZeVWgOOMmZI_Puv-mvmD8h35JL78SyVE5A6JVISLV0,1078
+nbastatpy-0.1.8.dist-info/METADATA,sha256=7p3Saayif4kMazgXKzNge6K6piwHE2Y0HHqMq-OcNZ4,1831
+nbastatpy-0.1.8.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+nbastatpy-0.1.8.dist-info/top_level.txt,sha256=PglfKWLerpCzEQgumDHwodzwYZe22wfRjzs-XEXu2J0,10
+nbastatpy-0.1.8.dist-info/RECORD,,
