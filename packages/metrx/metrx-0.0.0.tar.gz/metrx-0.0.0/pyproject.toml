@@ -1,0 +1,7 @@
+[project]
+name = "metrx"
+version = "0.0.0"
+authors =[{name= "Kay Pompetzki", email="kay.hansel@tu-darmstadt.de"},
+    {name="Theo Gruner", email="theo_sunao.gruner@tu-darmstadt.de"},
+    {name="Firas Al-Hafez", email="fi.alhafez@gmail.com"}]
+description = '"A library containing a collection of distance and similarity measures to compare time series data. Coming soon!"'
