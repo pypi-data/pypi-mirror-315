@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: aitutor_assessmentkit
+Version: 0.1.5
+Summary: AITutor-AssessmentKit is the first open-source toolkit designed to evaluate the pedagogical performance of AI tutors in student mistake remediation tasks. With the growing capabilities of large language models (LLMs), this library provides a systematic approach to assess their teaching potential across multiple dimensions in educational dialogues.
+Home-page: https://github.com/kaushal0494/aitutor-assessmentkit
+Author: Kaushal Kumar Maurya
+Author-email: Kaushal.Maurya@mbzuai.ac.ae
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# **`AITutor-AssessmentKit:` An Open-Source Library to Measure Pedagogical Ability of AI Tutors in Educational Dialogues**
+
+---
+
+The `AITutor-AssessmentKit` is the *first* open-source library to enable the pedagogical abilities assessment of large language model (LLM)-powered AI tutors in educational dialogues. This unified framework:
+
+- **Evaluates AI tutor responses** across eight comprehensive dimensions in the context of student error remediation tasks in mathematics.
+- **Offers a pluggable and customizable interface** for integrating models and LLM releases from the community.
+
+By providing an efficient, scalable alternative to costly and subjective human evaluations, `AITutor-AssessmentKit` facilitates *on-the-fly* assessment of AI tutors.
+
+---
+
+## 📥 **Installation**
+
+To install `AITutor-AssessmentKit` with `pip`, type:
+
+```bash
+pip install aitutor-assessmentkit
+```
+
+---
+
+## 📚 **Overview of the `AITutor-AssessmentKit`**
+
+The library comprises three modular components:
+
+1. **`autoeval`**: For automated evaluation.
+2. **`llmeval`**: For LLM-based evaluation.
+3. **`visualizer`**: For visualization and interpretation of evaluation scores.
+
+![](/home/kaushal.maurya/AITutor_AssessmentKit/outputs/AITutor-assessmentKit-Main_vf3.png)
+
+---
+
+## 📖 **Tutorials**
+
+We provide several resources to help you get started:
+
+1. [Tutorial Notebook-I: Automated Evaluation with AITutor-AssessmentKit](#)
+2. [Tutorial Notebook-II: LLM-Based Evaluation with AITutor-AssessmentKit](#)
+3. [Tutorial Notebook-III: Visualizing AI Tutor Performance with AITutor-AssessmentKit](#)
+
+For a quick overview, check out our [Demo Notebook](#).
+
+---
+
+## 🚀 **Next Steps**
+
+Here are the upcoming milestones for the project:
+
+1. Create and release detailed documentation.
+2. Publish a longer tutorial video.
+3. Develop a GUI-friendly interaction mode.
+
+---
+
+## 📜 **Citation**
+
+If you use `AITutor-AssessmentKit` in your research, please cite us:
+
+```bibtex
+@inproceedings{maurya2024aitutorassessmentkit,
+  title={AITutor-AssessmentKit: An Open-Source Library to Measure Pedagogical Ability of AI Tutors in Educational Dialogues},
+  author={Kaushal Kumar Maurya and Ekaterina Kochmar},
+  year={2024}
+}
+```
+
+---
+
+## 📧 **Contact**
+
+For any questions or support, feel free to reach out:
+
+📧 **Kaushal Kumar Maurya**: Kaushal.Maurya@mbzuai.ac.ae
+
+---
