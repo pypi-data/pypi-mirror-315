@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/mongodb_connect/__init__.py
+src/mongodb_connect/connect.py
+src/mongodb_connect/mongo_crud.py
+src/mongopy_conn.egg-info/PKG-INFO
+src/mongopy_conn.egg-info/SOURCES.txt
+src/mongopy_conn.egg-info/dependency_links.txt
+src/mongopy_conn.egg-info/requires.txt
+src/mongopy_conn.egg-info/top_level.txt

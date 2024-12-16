@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mongopy_conn
+Version: 0.0.1
+Summary: A small package for mongodb connection
+Home-page: https://github.com/SAMANTA1401/mongodb_connector
+Author: SAMANTA1401
+Author-email: psamanta1401@gmail.com
+License: "MIT"
+Project-URL: Bug Tracker, https://github.com//SAMANTA1401/mongodb_connector/issues
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: ensure==1.0.2
+Requires-Dist: py-youtube==1.1.7
+Provides-Extra: testing
+Requires-Dist: pytest>=7.1.3; extra == "testing"
+Requires-Dist: mypy>=0.971; extra == "testing"
+Requires-Dist: flake8>=5.0.4; extra == "testing"
+Requires-Dist: tox>=3.25.1; extra == "testing"
