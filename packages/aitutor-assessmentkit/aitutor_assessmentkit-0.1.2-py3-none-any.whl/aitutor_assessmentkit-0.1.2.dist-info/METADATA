@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: aitutor-assessmentkit
+Version: 0.1.2
+Summary: Welcome to the `AITutor-AssessmentKit`! With the remarkable advancements in large language models (LLMs), there is growing interest in leveraging these models as AI-powered tutors. However, the field lacks robust evaluation methodologies and tools to systematically assess the pedagogical capabilities of such systems. The `AITutor-AssessmentKit` is the first open-source toolkit specifically designed to evaluate the pedagogical performance of AI tutors in *Student Mistake Remediation* tasks.
+Home-page: https://github.com/kaushal0494/aitutor-assessmentkit
+Author: Kaushal Kumar Maurya
+Author-email: Kaushal.Maurya@mbzuai.ac.ae
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: scipy
+Requires-Dist: nltk
+Requires-Dist: transformers
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+# AITutor-AssessmentKit
+
+A toolkit for evaluating AI-based tutoring systems. This package includes various evaluation metrics and methods to assess the performance of language models as tutors.
+
+## Installation
+
+To install the package, use:
+
+```bash
+pip install aitutor-assessmentkit
