@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/geneticanalyzer/GeneticAnalyzer.py
+src/geneticanalyzer/__init__.py
+src/geneticanalyzer.egg-info/PKG-INFO
+src/geneticanalyzer.egg-info/SOURCES.txt
+src/geneticanalyzer.egg-info/dependency_links.txt
+src/geneticanalyzer.egg-info/requires.txt
+src/geneticanalyzer.egg-info/top_level.txt
