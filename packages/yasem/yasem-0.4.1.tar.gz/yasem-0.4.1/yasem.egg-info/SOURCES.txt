@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+tests/test_splade_embedder.py
+yasem/__init__.py
+yasem/splade_embedder.py
+yasem.egg-info/PKG-INFO
+yasem.egg-info/SOURCES.txt
+yasem.egg-info/dependency_links.txt
+yasem.egg-info/requires.txt
+yasem.egg-info/top_level.txt
