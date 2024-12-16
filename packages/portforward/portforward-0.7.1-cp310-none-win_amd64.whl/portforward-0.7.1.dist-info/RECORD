@@ -1,0 +1,9 @@
+portforward-0.7.1.dist-info/METADATA,sha256=1Q77pCX6xMyQxnr07RCxzHMCCoxHE656NAx39xOsGAs,3845
+portforward-0.7.1.dist-info/WHEEL,sha256=-PuAQKhWk4Rq8-gidZtX5jsMnCkejTgnWqEYioAwMzo,97
+portforward-0.7.1.dist-info/license_files/LICENSE,sha256=_-nf_xCZIwUkKBXXiYR-fjbXGhmx6V-7b3jSKoolnO4,1096
+portforward-0.7.1.dist-info/license_files/AUTHORS.rst,sha256=mskf9O-AvJL9NxWUYX0nJRuLfBw7SH-T-H-pPYLW-xI,176
+portforward/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+portforward/_portforward.pyi,sha256=UDGuRjzq4fFH2vyVMKGpsBQvYq8MK0LfFsM1FxljTX4,353
+portforward/__init__.py,sha256=XvIOYJ8iCV9tgefojXHItQ_-doS9bFhVpbsXJ_9XLH0,7125
+portforward/_portforward.cp310-win_amd64.pyd,sha256=wYa5Y9lgKKev64ekGCY9W0nLlOBftywi7OGsnjchDgk,8174080
+portforward-0.7.1.dist-info/RECORD,,
