@@ -1,0 +1,109 @@
+.. include:: /../docs/shared/include/defs.rst
+.. _cosi.changes.2019:
+
+============
+Changes 2019
+============
+
+.. Note: Changes are grouped by date. Every new day gives a new
+   heading. If a release deserves separate release notes, we create a separate
+   document and this file will have a link to it.
+
+.. contents::
+  :local:
+
+2019-09-18
+==========
+Remove the service product type. 
+
+
+2019-08-07
+==========
+
+.. currentmodule:: lino_xl.lib.accounting
+
+Fixed a bug in :mod:`lino_xl.lib.accounting` : when the
+:attr:`Account.common_account` was updated via the web interface, Lino did not
+"realize" this until the server process was restarted.
+
+Fixed : :class:`lino_xl.lib.vat.InvoicesByJournal` did not display the right
+sorting order. It was using ['-id'] instead of the order defined in
+:class:`lino_xl.lib.accounting.ByJournal`.
+
+
+2019-07-24
+==========
+
+The detail view to :class:`lino_cosi.lib.contacts.Partners` was there,
+but there was no detail link in combo boxes on partner fields.
+
+2019-07-22
+==========
+
+Added a detail view to :class:`lino_cosi.lib.contacts.Partners`.  While this
+view is irritating in applications without accounting, for :ref:`cosi` it is
+irritating to *not* have it.
+
+The chooser for :attr:`lino_xl.lib.vat.VatDocument.vat_regime` had a typo bug
+causing a :message:`TypeError: get_vat_regime_choices() takes from 0 to 2
+positional arguments but 3 were given` when user tried to change the vat regime
+of a voucher.
+
+Using :kbd:`Ctrl+x` on a voucher to run
+:meth:`lino_xl.lib.accounting.Voucher.toggle_state` changed the voucher state but
+did not actually register the voucher (i.e. create movements, compute totals,
+...).
+
+
+2019-04-15
+==========
+
+Show the field vat_id in the "Accounting" Panel for partner and company.
+
+2019-04-11
+==========
+Add a new 'partner_ref' field for  :class:`lino.modlib.contacts.Company` to
+store how this partner refers to us. And add this field to the "Accounting"
+Panel.
+
+Released Lino Cosi 19.4.0 to PyPI.
+
+2019-03-19
+==========
+Released Lino Cosi 19.3.0 to PyPI.
+
+2019-03-17
+==========
+
+A :ref:`cosi` application no longer has a default VAT declaration plugin.  To
+get VAT declarations, you must add something like the following to your local
+:xfile:`settings.py` file::
+
+    def get_installed_plugins(self):
+        yield super(Site, self).get_installed_plugins()
+        yield 'lino_xl.lib.eevat'
+
+The :mod:`lino_book.projects.cosi2` project now has no VAT declarations at
+all. :mod:`lino_book.projects.cosi1` has standard Belgian and
+:mod:`lino_book.projects.cosi3` standard Estonian declarations. Simplified
+Belgian VAT declarations is in :mod:`lino_book.projects.tera1` demo project.
+
+
+2019-03-16
+==========
+
+The :attr:`vat_regime` field was missing in the detail layout of persons and
+organizations.
+
+2019-02-12 (v 19.2.0)
+=====================
+
+We released :doc:`19.2.0`.
+
+2019-01-21
+==========
+
+Products now inherit from :class:`lino.mixins.refs.Referrable`. Because at
+least previous TIM users want a :attr:`ref` field per product.  And I imagine
+that other users might do so as well.  The field is not yet visible in the
+detail view.
