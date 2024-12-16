@@ -1,0 +1,8 @@
+ibm_db-stubs/METADATA.toml,sha256=cW5mpxo-roK32QNrfY3xgHeD6uIvVhlKWNT30VaPOyw,80
+ibm_db-stubs/__init__.pyi,sha256=Ep5Lq5D4GQCQmQmHrOxQW3USOQerIOW4Ny9JBKiBrro,12734
+ibm_db-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_ibm_db-3.2.4.20241216.dist-info/LICENSE,sha256=KV-FOMlK5cMEMwHPfP8chS2ranhqjd7kceBhtA1eyr4,12657
+types_ibm_db-3.2.4.20241216.dist-info/METADATA,sha256=UXOpxu4s-cKXdJzLUttd4qOwB7Px2laLwTq8xOE7wkU,1820
+types_ibm_db-3.2.4.20241216.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+types_ibm_db-3.2.4.20241216.dist-info/top_level.txt,sha256=TgOOTds-FqMceDjYNmo_h8G3WqkOIbkE0BFwkVN6Ru8,13
+types_ibm_db-3.2.4.20241216.dist-info/RECORD,,
