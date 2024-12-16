@@ -1,0 +1,11 @@
+.gitignore
+README.md
+pyproject.toml
+setup.py
+src/opal_trino_fetcher/__init__.py
+src/opal_trino_fetcher/provider.py
+src/opal_trino_fetcher.egg-info/PKG-INFO
+src/opal_trino_fetcher.egg-info/SOURCES.txt
+src/opal_trino_fetcher.egg-info/dependency_links.txt
+src/opal_trino_fetcher.egg-info/requires.txt
+src/opal_trino_fetcher.egg-info/top_level.txt
