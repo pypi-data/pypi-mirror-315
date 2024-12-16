@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: downdoc
+Version: 1.0.0
+Summary: You tried to install "downdoc". The correct package name is "Pydowndoc".
+Author-email: Matt Norton <matt@carrotmanmatt.com>
+Classifier: Development Status :: 7 - Inactive
+Requires-Dist: pydowndoc
