@@ -1,0 +1,6 @@
+
+[dev]
+coverage>=7.0.0
+mypy>=1.0.0
+pillow>=10.0.0
+pytest>=8.0.0
