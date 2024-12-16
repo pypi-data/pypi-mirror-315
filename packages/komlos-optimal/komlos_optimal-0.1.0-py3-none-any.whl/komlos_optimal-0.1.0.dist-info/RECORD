@@ -1,0 +1,8 @@
+tests/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+tests/test_benchmarks.py,sha256=TZM-9nRWp7tzkRlv_scuTBGY_Kk1a9q3lTdnIoVNG6Q,275
+tests/test_core.py,sha256=JwkfcyqURx7hhWnOq93I39efrH9c5CBHBw4xVYBGLKs,641
+komlos_optimal-0.1.0.dist-info/LICENSE,sha256=UU9POk5po_COpupdiYaNxxsf1HVJU5dT7FIHUAAqk1c,1095
+komlos_optimal-0.1.0.dist-info/METADATA,sha256=eRE0ukHaHnVSHt3D5mj-pkgiW2m1k3ep3lHEcy2jq3E,500
+komlos_optimal-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+komlos_optimal-0.1.0.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+komlos_optimal-0.1.0.dist-info/RECORD,,
