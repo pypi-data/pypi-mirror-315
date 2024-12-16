@@ -1,0 +1,16 @@
+funfile/__init__.py,sha256=R6Tz6yxX-_7-w0TRViI4F8hSZ8wrxgcO1JOapn9x1os,178
+funfile/funos.py,sha256=0OIHFoVnh04couTLB51Cdpnc1YqFTbpMnVW7wjrSv2M,217
+funfile/compress/__init__.py,sha256=z3Sbpwo7RIX1iD1v9-Nrakn0vsWFkoOphUGv-_MOMN0,84
+funfile/compress/allfile.py,sha256=EIqIR-wPmJAT5wmGsXg0fuSHcvvAkH9UXYW_xIWcMVw,368
+funfile/compress/tarfile.py,sha256=RCJ7otBfDG5pIiHUGbNARHZxEOjH5X46Z9uI0VMHKYs,3839
+funfile/compress/utils.py,sha256=JLsqpRAFZ9Muyb-90fHkdQkq_CQzkWDEkVgyCF3cyDE,827
+funfile/compress/zipfile.py,sha256=DZexJ-tv05FgM2tu-pjM2knevz5cK04iFsh8HMrjIcI,183
+funfile/file/__init__.py,sha256=j1z19wQkVnVvQsaP9OELFx4hquLFERWdFR3OF1rwA7g,100
+funfile/file/concurrent.py,sha256=AX8nRSjXKOrLuMZgSVDesTc_ZVvr62HagO_6URlkmeQ,3354
+funfile/file/core.py,sha256=4XRh9h5-3ZVJm0yYz10_I70iLazjtkXNfZDHjI1T0Fk,84
+funfile/pickle/__init__.py,sha256=s_T_2MuvRjlIsZGlRDmkSTjimljB32K588fPWrBbIgw,89
+funfile/pickle/core.py,sha256=PWmIfrk__OWaNn_7k1G65bb2oXPZMhMUZ0hU0vr3c34,277
+funfile-1.0.13.dist-info/METADATA,sha256=kk-1SUfJmq97jCa7RiW5ijEDCg9cs15j2Pp_AdXafbo,727
+funfile-1.0.13.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+funfile-1.0.13.dist-info/top_level.txt,sha256=-VmQ4cW074o8zCif2Md6i09IIsA6OQlLdiwMa5JW7kU,8
+funfile-1.0.13.dist-info/RECORD,,
