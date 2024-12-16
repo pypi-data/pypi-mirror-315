@@ -1,0 +1,11 @@
+README.md
+setup.py
+matrix_disk_cache/__init__.py
+matrix_disk_cache/disk_cache.py
+matrix_disk_cache.egg-info/PKG-INFO
+matrix_disk_cache.egg-info/SOURCES.txt
+matrix_disk_cache.egg-info/dependency_links.txt
+matrix_disk_cache.egg-info/requires.txt
+matrix_disk_cache.egg-info/top_level.txt
+matrix_disk_cache/tests/__init__.py
+matrix_disk_cache/tests/test_cache.py
