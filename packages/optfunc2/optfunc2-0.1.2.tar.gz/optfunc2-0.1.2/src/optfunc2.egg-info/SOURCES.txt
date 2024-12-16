@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/test.py
+src/optfunc2/__init__.py
+src/optfunc2/parser.py
+src/optfunc2.egg-info/PKG-INFO
+src/optfunc2.egg-info/SOURCES.txt
+src/optfunc2.egg-info/dependency_links.txt
+src/optfunc2.egg-info/requires.txt
+src/optfunc2.egg-info/top_level.txt

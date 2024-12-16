@@ -1,0 +1,2 @@
+optfunc2
+test
