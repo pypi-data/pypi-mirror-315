@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/js-stubs/__init__.pyi
+src/webtypy.egg-info/PKG-INFO
+src/webtypy.egg-info/SOURCES.txt
+src/webtypy.egg-info/dependency_links.txt
+src/webtypy.egg-info/not-zip-safe
+src/webtypy.egg-info/requires.txt
+src/webtypy.egg-info/top_level.txt
