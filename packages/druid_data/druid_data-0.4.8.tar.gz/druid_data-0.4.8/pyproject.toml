@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "druid_data"
+version = "0.4.8"
+description = "A library to store and retrieve python objects in a DynamoDB database. It supports the basic CRUD operations"
+authors = ["Druid"]
+maintainers = ["Fernando Magalhaes <fmagalhaes@druid.com.br>", "Geyson <geyson.ferreira@druid.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/druid-rio/druid-data"
+repository = "https://github.com/druid-rio/druid-data.git"
+documentation = "https://github.com/druid-rio/druid-data"
+keywords = [
+    "Poetry",
+    "Virtual Environments",
+    "Tutorial",
+    "Packages",
+    "Packaging",
+    "Druid"
+]
+packages = [{include = "druid_data"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+boto3 = "^1.35.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.4"
+black = "^24.10.0"
+flake8 = "^7.1.1"
+flake8-black = "^0.3.6"
+flake8-builtins = "^2.5.0"
+flake8-comprehensions = "^3.16.0"
+flake8-debugger = "^4.1.2"
+flake8-fixme = "^1.1.1"
+flake8-isort = "^6.1.1"
+flake8-variables-names = "^0.0.6"
+isort = "^5.13.2"
+pytest-cov = "^6.0.0"
+pytest-mock = "^3.14.0"
+flake8-eradicate = "^1.5.0"
+flake8-bugbear = "^24.12.12"
+python-semantic-release = "^9.15.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -vv"
+testpaths = "./tests"
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+
+[tool.semantic_release]
+version_variable = "druid_data/__init__.py:__version__"
+version_source = "commit"
+upload_to_pypi = "false"
+patch_without_tag = "true"
