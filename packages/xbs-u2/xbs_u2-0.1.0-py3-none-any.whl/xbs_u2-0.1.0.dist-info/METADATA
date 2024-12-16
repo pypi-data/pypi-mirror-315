@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xbs-u2
+Version: 0.1.0
+Summary: rewrite uiautomator2
+Home-page: https://github.com/ll6566/xbs_uiautomatro
+Author: 65
+Author-email: 18974710587@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.0.0
+Description-Content-Type: text/markdown
+Requires-Dist: uiautomator2==2.16.25
+
+20241216_V0.1.0
+
