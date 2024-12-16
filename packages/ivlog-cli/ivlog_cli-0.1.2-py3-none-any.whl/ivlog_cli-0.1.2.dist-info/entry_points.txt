@@ -1,0 +1,3 @@
+[console_scripts]
+ivlog=ivlog_cli.arg_praser:run
+

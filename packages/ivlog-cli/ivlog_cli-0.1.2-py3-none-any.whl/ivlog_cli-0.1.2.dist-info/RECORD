@@ -1,0 +1,10 @@
+ivlog_cli/__init__.py,sha256=WNSg0LPHulGRbvhmDgYtLQNFxPZ-F_kYJarYfVUIB70,66
+ivlog_cli/arg_praser.py,sha256=WqBbdiP7ZF6h6qjpjqkFS4ZaKyk9FaodvbwQ9Rl6ayo,2338
+ivlog_cli/list_tb.py,sha256=Bx_q2v8F2CwgAB2ldrAFla4GDOyRnDo1fH3rxd5QkpI,725
+ivlog_cli/new_ivlog_project.py,sha256=Stmi_iqYocOWQJ9j_s_cTl4pyFC0KcXSI4zOZmVvsuk,735
+ivlog_cli/run_iverilog.py,sha256=16J6X7a8HTbsZhARvAOEwK2NCF-CO4cIYJWu9TCHvlU,2382
+ivlog_cli/tb_manager.py,sha256=q8oO0eqn_tfU1xTbITj9CZsG1PMATGpLyW-frxE6Rhk,739
+ivlog_cli-0.1.2.dist-info/entry_points.txt,sha256=kesGw5Zi1MUU4ohq_XJjz5LIJ0rj_Z3X8oEmHyjDkwk,50
+ivlog_cli-0.1.2.dist-info/METADATA,sha256=5ayNgJFf6OKH1KiI-u_vGXsEsNfClUxwY7dn25yEjsw,616
+ivlog_cli-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ivlog_cli-0.1.2.dist-info/RECORD,,
