@@ -1,0 +1,2 @@
+[console_scripts]
+mcp2serial = mcp2serial:main
