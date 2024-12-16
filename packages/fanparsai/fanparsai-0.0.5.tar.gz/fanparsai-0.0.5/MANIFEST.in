@@ -1,0 +1,2 @@
+include fanparsai/fpvad/pyannote_v2.json
+include fanparsai/fpvad/ERI_VAD.pth
