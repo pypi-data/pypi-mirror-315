@@ -1,0 +1,2 @@
+[console_scripts]
+zpypro = zpypro.main:main

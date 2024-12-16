@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tests/__init__.py
+tests/test_module1.py
+zpypro/__init__.py
+zpypro/logging_config.yaml
+zpypro/main.py
+zpypro/module1.py
+zpypro.egg-info/PKG-INFO
+zpypro.egg-info/SOURCES.txt
+zpypro.egg-info/dependency_links.txt
+zpypro.egg-info/entry_points.txt
+zpypro.egg-info/top_level.txt
