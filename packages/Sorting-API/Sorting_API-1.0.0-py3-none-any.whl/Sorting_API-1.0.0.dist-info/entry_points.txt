@@ -1,0 +1,2 @@
+[console_scripts]
+sorting_api = sorting_api.main:main

@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: Sorting-API
+Version: 1.0.0
+Author: Andrea Broccoletti, Simone Lesinigo
+Requires-Dist: uvicorn
+Requires-Dist: fastapi
+Requires-Dist: pysort
+
+
+# Sorting API
+
+  
+
+Sorting API espone degli endpoint per:
+
+  
+
+- Effettuare l'ordinamento, crescente o decrescente, di un array attraverso un algoritmo di sorting tra quelli disponibili: Bubblesort, Insertionsort, Selectionsort, Mergesort
+
+- Disordinare un array, ridisponendo i suoi elementi in modo casuale
+
+  
+
+## Uso
+
+  
+
+Per lanciare l'API, usare il comando `python -m sorting_api`.
+
+Sono disponibili i seguenti argomenti da linea di comando:
+
+-  `--port <port>` Porta su cui eseguire il server. Default: 8000
+
+-  `--host <host>` Host su cui eseguire il server. Default: 127.0.0.1
+
+-  `--help` Stampa ulteriori informazioni sull'utilizzo dell'API da riga di comando
+
+  
+
+## Documentazione delle API
+
+  
+
+Consultare la documentazione, una volta avviate le API, raggiungibile dall'endpoint `/docs` (e.g. `http://localhost:8000/docs`.
+
+  
+
+## Autori
+
+  
+
+API realizzare da Andrea Broccoletti e Simone Lesinigo, nell'ambito di un progetto universitario.
