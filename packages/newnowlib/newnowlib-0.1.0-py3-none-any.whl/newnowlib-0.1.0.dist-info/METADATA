@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: newnowlib
+Version: 0.1.0
+Summary: NEWNOW Data Analysis Library
+Home-page: https://github.com/newnowgroup/newnow_library
+Author: NewNow Group Data Science Team
+License: MIT
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: scikit-learn
+Requires-Dist: plotly
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
