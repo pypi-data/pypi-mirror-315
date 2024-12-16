@@ -1,0 +1,24 @@
+current_version = "2024.12.15"
+
+[[files]]
+path = "pyproject.toml"
+
+search = "version = \"{{current_version}}\""
+replace = "version = \"{{new_version}}\""
+
+[[files]]
+path = "src/atsphinx/toybox/__init__.py"
+
+search = "version = \"{{current_version}}\""
+replace = "version = \"{{new_version}}\""
+
+[[files]]
+path = ".github/release-body.md"
+search = "Release atsphinx-toybox v{{ current_version }}"
+replace = "Release atsphinx-toybox v{{ new_version }}"
+
+[[files]]
+path = ".github/release-body.md"
+regex = true
+search = "Changelog is .+"
+replace = "Changelog is https://github.com/atsphinx/toybox/compere/v{{ current_version }}...v{{ new_version }}"
