@@ -1,0 +1,2 @@
+[console_scripts]
+evr = evr.cli:main
