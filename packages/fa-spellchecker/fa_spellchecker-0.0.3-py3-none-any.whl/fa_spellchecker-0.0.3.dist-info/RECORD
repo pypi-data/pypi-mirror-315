@@ -1,0 +1,13 @@
+docs/source/conf.py,sha256=JQft2MgUQovyFKB_Y2esfRwW5lbvzYd1jBsSzLzpCrc,1555
+faspellchecker/__init__.py,sha256=yHaC0ckQRCtoMMSpI4n1smpbAE0bSW2aub3XXUXBMME,579
+faspellchecker/exceptions.py,sha256=mKVnsxB7O9S2dhgBiUe5hfDMuX5_4hc118qVoWm14FI,294
+faspellchecker/fa-vocabulary.json.gz,sha256=Mwb5JLkc6sLlKyAUlZ8AcNiHeg9ddpZUbp6OMfi5Od4,792637
+faspellchecker/spellchecker.py,sha256=ynxDpPoi-EXyLayVz-VJG4Qiw047Yywm_MR0fra66co,4362
+faspellchecker/vocabulary.py,sha256=zua9neaP42mz57sqryGXz6r91xnd0S5QgpEVBPq4mvo,6726
+tests/spellchecker_test.py,sha256=ml8c1-320IGnQrSsxcy0xSHhYRaAKK70nv1o8nYp9xE,1753
+tests/vocabulary_test.py,sha256=JUQ26DkCiR25wh8LXFiBHNly_TnLBY1Lx3eYgcsjlFo,1508
+fa_spellchecker-0.0.3.dist-info/LICENSE,sha256=UEFvIZlJ3lk92MaILnYj2q-3lhxUfKUhMEqqmFQfEdc,1060
+fa_spellchecker-0.0.3.dist-info/METADATA,sha256=abRR8hzQvTZM8_WF4QMr7Qus6uxAmMXnl4CscorsfiI,4001
+fa_spellchecker-0.0.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+fa_spellchecker-0.0.3.dist-info/top_level.txt,sha256=WJYuQH7aJDMwuAS_73KbziwQRdYU1-kZDR7-53qjzBM,26
+fa_spellchecker-0.0.3.dist-info/RECORD,,
