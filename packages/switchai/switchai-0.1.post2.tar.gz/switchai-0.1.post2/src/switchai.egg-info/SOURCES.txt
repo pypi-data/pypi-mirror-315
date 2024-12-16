@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/switchai/__init__.py
+src/switchai/_client.py
+src/switchai/_response.py
+src/switchai.egg-info/PKG-INFO
+src/switchai.egg-info/SOURCES.txt
+src/switchai.egg-info/dependency_links.txt
+src/switchai.egg-info/requires.txt
+src/switchai.egg-info/top_level.txt
