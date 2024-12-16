@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gj-unitrad
+Version: 0.0.3
+Summary: unitrad打包
+Author: yin
+Author-email: 2018209921@qq.com
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml==6.0.2
+Requires-Dist: aiohttp==3.11.10
+
+删除多余测试日志
