@@ -1,0 +1,18 @@
+API Reference
+=============
+
+Core Module
+-----------
+
+.. automodule:: chunking_pandas.core
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Gradio Interface
+----------------
+
+.. automodule:: chunking_pandas.gradio_interface
+   :members:
+   :undoc-members:
+   :show-inheritance: 
