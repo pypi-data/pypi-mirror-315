@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: easynetsim
+Version: 0.1.2
+Summary: A simple network simulator for testing ping and routing
+Home-page: https://github.com/denver-code/easynetsim
+License: MIT
+Author: Ihor Savenko
+Author-email: csigorek@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: networkx (>=3.4.2,<4.0.0)
+Project-URL: Repository, https://github.com/denver-code/easynetsim
+Description-Content-Type: text/markdown
+
+# Easy Network Simulator
+
+A simple network simulator for testing ping and routing between nodes.
+
+## Installation
+
+To install this package, run:
+
+```bash
+pip install easynetsim
+```
+
+## Usage
+```python
+from easynetsim import load_network, ping
+
+# Define the network configuration
+network_data = {
+    "nodes": [
+        {"hostname": "node1", "ip": "192.168.1.1"},
+        {"hostname": "node2", "ip": "192.168.1.2"},
+        {"hostname": "node3", "ip": "192.168.1.3"},
+    ],
+    "links": [
+        {"source": "node1", "destination": "node2", "latency": 20},
+        {"source": "node2", "destination": "node3", "latency": 20},
+    ],
+}
+
+# Load the network
+load_network(network_data)
+
+# Ping a node
+result = ping("node1", "192.168.1.3")
+print(result)
+```
