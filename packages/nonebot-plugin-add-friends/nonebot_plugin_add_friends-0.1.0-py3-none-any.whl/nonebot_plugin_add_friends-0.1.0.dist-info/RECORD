@@ -1,0 +1,8 @@
+nonebot_plugin_add_friends/__init__.py,sha256=w1gjW7693k1c9f5znjwyXrNqkj_kAXWTUlC0eFmaIA4,867
+nonebot_plugin_add_friends/config.py,sha256=e10Tusz9JPU7nY30A-X7WaWhtcY9bZ8FSDCamcNfviU,881
+nonebot_plugin_add_friends/event.py,sha256=lA7-IxlL-k5MfnKqGnaBLrcLVO8gJHXAwC-b_vrPW0U,1930
+nonebot_plugin_add_friends/matcher.py,sha256=tDtVD1izNmT-Ycp0hNdNwxoqE4nm88URoQbeBxzoI10,10989
+nonebot_plugin_add_friends-0.1.0.dist-info/LICENSE,sha256=kkEyJ-Mz54XV7OzDJ0ne07wE0ND4Z415amisyLKV2YA,1125
+nonebot_plugin_add_friends-0.1.0.dist-info/METADATA,sha256=p2yknFzp3FecPjitTXLQKBie6xbnx_nRDZKxdDt7QG8,3922
+nonebot_plugin_add_friends-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+nonebot_plugin_add_friends-0.1.0.dist-info/RECORD,,
