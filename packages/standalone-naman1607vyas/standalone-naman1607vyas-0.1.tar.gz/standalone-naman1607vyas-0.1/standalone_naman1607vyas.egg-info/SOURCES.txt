@@ -1,0 +1,16 @@
+README.md
+setup.py
+standalone_naman1607vyas/__init__.py
+standalone_naman1607vyas/config.py
+standalone_naman1607vyas/conversation.py
+standalone_naman1607vyas/main.py
+standalone_naman1607vyas/memory.py
+standalone_naman1607vyas/retriever.py
+standalone_naman1607vyas.egg-info/PKG-INFO
+standalone_naman1607vyas.egg-info/SOURCES.txt
+standalone_naman1607vyas.egg-info/dependency_links.txt
+standalone_naman1607vyas.egg-info/entry_points.txt
+standalone_naman1607vyas.egg-info/requires.txt
+standalone_naman1607vyas.egg-info/top_level.txt
+tests/__init__.py
+tests/test_main.py
