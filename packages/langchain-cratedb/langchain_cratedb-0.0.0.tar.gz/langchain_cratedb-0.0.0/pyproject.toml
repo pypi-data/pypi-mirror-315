@@ -1,0 +1,126 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "langchain-cratedb"
+version = "0.0.0"
+description = "Integration package connecting CrateDB and LangChain"
+authors = []
+readme = "README.md"
+repository = "https://github.com/crate/langchain-cratedb"
+license = "MIT"
+keywords = [
+  "cratedb",
+  "embeddings",
+  "embedding-vectors",
+  "langchain",
+  "llm",
+  "vdbms",
+  "vector database",
+  "vector store",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX",
+  "Operating System :: Unix",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Communications",
+  "Topic :: Database",
+  "Topic :: Internet",
+  "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+  "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+  "Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Application Frameworks",
+  "Topic :: System :: Archiving",
+  "Topic :: Text Processing",
+  "Topic :: Utilities",
+]
+
+[tool.mypy]
+disallow_untyped_defs = "True"
+ignore_missing_imports = "True"
+
+[tool.poetry.urls]
+"Source Code" = "https://github.com/crate/langchain-cratedb"
+"Release Notes" = "https://github.com/crate/langchain-cratedb/releases"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+langchain-community = "<0.4"
+langchain-core = "<0.4"
+langchain-postgres = "==0.0.12"
+sqlalchemy-cratedb = ">=0.40.1"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "T201"]
+
+[tool.coverage.run]
+omit = [
+    "langchain_cratedb/retrievers.py",
+    "tests/*",
+]
+
+[tool.pytest.ini_options]
+addopts = """
+  --strict-markers --strict-config --durations=5
+  --cov --cov-report=term-missing --cov-report=xml
+"""
+markers = [
+    "compile: mark placeholder test used to compile integration tests without running them",
+]
+asyncio_mode = "auto"
+log_level = "DEBUG"
+log_cli_level = "DEBUG"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.codespell]
+optional = true
+
+[tool.poetry.group.test_integration]
+optional = true
+
+[tool.poetry.group.lint]
+optional = true
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+
+[tool.poetry.group.test.dependencies]
+pytest = "<9"
+langchain-tests = "==0.3.7"
+pytest-asyncio = "<0.26"
+pytest-mock = "<4"
+pytest-rerunfailures = "<16"
+pytest-socket = "<0.8"
+pytest-watcher = "<0.5"
+pytest-cov = "<7"
+
+[tool.poetry.group.codespell.dependencies]
+codespell = "<2.4"
+
+[tool.poetry.group.test_integration.dependencies]
+
+[tool.poetry.group.lint.dependencies]
+ruff = "<0.9"
+
+[tool.poetry.group.typing.dependencies]
+mypy = "<1.14"
