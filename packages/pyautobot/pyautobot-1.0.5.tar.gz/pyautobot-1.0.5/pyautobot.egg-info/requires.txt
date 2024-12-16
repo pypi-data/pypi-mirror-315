@@ -1,0 +1,6 @@
+opencv-python
+pyautogui
+pyperclip
+selenium
+sympy
+lazy_loader
