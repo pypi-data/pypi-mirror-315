@@ -1,0 +1,15 @@
+kiss_ai_stack_client/__init__.py,sha256=KuQ2EgnYAm5y1VAuu8HFHUHcI72Y6-mh96tE0etdWws,125
+kiss_ai_stack_client/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kiss_ai_stack_client/clients/rest_client.py,sha256=0lFLPjWR4eVmDTwq-k61x0KT_vkdonX0uSxV2x7sOzw,3047
+kiss_ai_stack_client/clients/ws_client.py,sha256=JKMRaWDH5KNcWgQ9opkvRJmDqwEnGjDLLA-7Q_QeWnI,3526
+kiss_ai_stack_client/events/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kiss_ai_stack_client/events/event_abc.py,sha256=BspQylMuP2sFv8y1kuqTUPDOWrYyqmlxp8nrjdfnCsE,906
+kiss_ai_stack_client/events/rest_event.py,sha256=pepaFRulM5fwTXBCg1EnJgY7SLONLWPH0WkmqAW0iwI,7007
+kiss_ai_stack_client/events/ws_event.py,sha256=NlbjbbyEkI5bzztCFbXjcrHRSCOUS4zo2kNc_aXzAu0,6723
+kiss_ai_stack_client/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kiss_ai_stack_client/utils/logger.py,sha256=U5cq-ZS7jIjOFGuHX9xWDfz00zh7aKAuLcJNVHZrJW4,777
+kiss_ai_stack_client-0.1.0a2.dist-info/LICENSE,sha256=V7ddCLNIsyNC2J6_uoI8HsAI6OkzhC3I6UWo-s0byI8,1070
+kiss_ai_stack_client-0.1.0a2.dist-info/METADATA,sha256=cGNuVLLW9RXX_1IwIbRuJhpGZYYmW8cmnCirHrqjvnQ,2920
+kiss_ai_stack_client-0.1.0a2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+kiss_ai_stack_client-0.1.0a2.dist-info/top_level.txt,sha256=VwMSZx7M73Vu0_z6JSbKC2RqSEJdEoNGeJGYCUlP2GY,21
+kiss_ai_stack_client-0.1.0a2.dist-info/RECORD,,
