@@ -1,0 +1,197 @@
+from dataclasses import dataclass, field
+from datetime import datetime
+
+from lotion.properties.phone_number import PhoneNumber
+from lotion.properties.email import Email
+from lotion.base_operator import BaseOperator
+from lotion.block import Block
+from lotion.page.page_id import PageId
+from lotion.properties.checkbox import Checkbox
+from lotion.properties.cover import Cover
+from lotion.properties.date import Date
+from lotion.properties.icon import Icon
+from lotion.properties.multi_select import MultiSelect
+from lotion.properties.number import Number
+from lotion.properties.properties import Properties
+from lotion.properties.property import Property
+from lotion.properties.relation import Relation
+from lotion.properties.select import Select
+from lotion.properties.status import Status
+from lotion.properties.text import Text
+from lotion.properties.title import Title
+from lotion.properties.url import Url
+from lotion.properties.formula import Formula
+from lotion.properties.rollup import Rollup
+from lotion.properties.unique_id import UniqueId
+
+
+class NotCreatedError(Exception):
+    pass
+
+
+class NotFoundPropertyError(Exception):
+    def __init__(self, class_name: str, prop_name: str):
+        super().__init__(f"{class_name} property not found. name: {prop_name}")
+
+
+@dataclass
+class BasePage:
+    properties: Properties
+    block_children: list[Block] = field(default_factory=list)
+    id_: PageId | str | None = None
+    url: str | None = None
+    created_time: datetime | None = None
+    last_edited_time: datetime | None = None
+    _created_by: BaseOperator | None = None
+    _last_edited_by: BaseOperator | None = None
+    cover: Cover | None = None
+    icon: Icon | None = None
+    archived: bool | None = False
+    parent: dict | None = None
+    object = "page"
+
+    @staticmethod
+    def create(properties: list[Property] | None = None, blocks: list[Block] | None = None) -> "BasePage":
+        return BasePage(
+            id_=None,
+            url=None,
+            created_time=None,
+            last_edited_time=None,
+            _created_by=None,
+            _last_edited_by=None,
+            properties=Properties(values=properties or []),
+            cover=None,
+            icon=None,
+            archived=False,
+            parent=None,
+            block_children=blocks or [],
+        )
+
+    def get_slack_text_in_block_children(self) -> str:
+        # FIXME: block_childrenをBlocks型にしたうえで、メソッドをBlocksに移動する
+        if not self.block_children or len(self.block_children) == 0:
+            return ""
+        return "\n".join([block.to_slack_text() for block in self.block_children])
+
+    def get_title(self) -> Title:
+        return self.properties.get_title()
+
+    def get_title_text(self) -> str:
+        return self.get_title().text
+
+    @property
+    def title(self) -> str:
+        return self.get_title_text()
+
+    @property
+    def created_at(self) -> datetime:
+        if self.created_time is None:
+            raise NotCreatedError("created_at is None.")
+        return self.created_time
+
+    @property
+    def updated_at(self) -> datetime:
+        if self.last_edited_time is None:
+            raise NotCreatedError("created_at is None.")
+        return self.last_edited_time
+
+    def get_status(self, name: str) -> Status:
+        return self._get_property(name=name, instance_class=Status)  # type: ignore
+
+    def get_text(self, name: str) -> Text:
+        return self._get_property(name=name, instance_class=Text)  # type: ignore
+
+    def get_date(self, name: str) -> Date:
+        return self._get_property(name=name, instance_class=Date)  # type: ignore
+
+    def get_select(self, name: str) -> Select:
+        return self._get_property(name=name, instance_class=Select)  # type: ignore
+
+    def get_multi_select(self, name: str) -> MultiSelect:
+        return self._get_property(name=name, instance_class=MultiSelect)  # type: ignore
+
+    def get_relation(self, name: str) -> Relation:
+        return self._get_property(name=name, instance_class=Relation)  # type: ignore
+
+    def get_checkbox(self, name: str) -> Checkbox:
+        return self._get_property(name=name, instance_class=Checkbox)  # type: ignore
+
+    def get_url(self, name: str) -> Url:
+        return self._get_property(name=name, instance_class=Url)  # type: ignore
+
+    def get_number(self, name: str) -> Number:
+        return self._get_property(name=name, instance_class=Number)  # type: ignore
+
+    def get_email(self, name: str) -> Email:
+        return self._get_property(name=name, instance_class=Email)  # type: ignore
+
+    def get_phone_number(self, name: str) -> PhoneNumber:
+        return self._get_property(name=name, instance_class=PhoneNumber)  # type: ignore
+
+    def get_formula(self, name: str) -> Formula:
+        return self._get_property(name=name, instance_class=Formula)  # type: ignore
+
+    def get_rollup(self, name: str) -> Rollup:
+        return self._get_property(name=name, instance_class=Rollup)  # type: ignore
+
+    def get_unique_id(self, name: str) -> UniqueId:
+        return self._get_property(name=name, instance_class=UniqueId)  # type: ignore
+
+    def _get_property(self, name: str, instance_class: type) -> Property:
+        result = self.properties.get_property(name=name, instance_class=instance_class)
+        if result is None:
+            raise NotFoundPropertyError(class_name=instance_class.__name__, prop_name=name)
+        return result
+
+    def get_parant_database_id(self) -> str | None:
+        """未実装。削除すべきかも"""
+        if self.parent is None or "database_id" not in self.parent:
+            return None
+        return self.parent["database_id"]
+
+    def update_id_and_url(self, page_id: str, url: str) -> None:
+        self.id_ = page_id
+        self.url = url
+
+    def title_for_slack(self) -> str:
+        """Slackでの表示用のリンクつきタイトルを返す"""
+        return f"<{self.url}|{self.get_title_text()}>"
+
+    def title_for_markdown(self) -> str:
+        """Markdownでの表示用のリンクつきタイトルを返す"""
+        return f"[{self.get_title_text()}]({self.url})"
+
+    @property
+    def id(self) -> str | None:
+        if isinstance(self.id_, str):
+            return self.id_
+        return self.id_.value if self.id_ is not None else None
+
+    @property
+    def page_id(self) -> PageId:
+        if self.id_ is None:
+            raise NotCreatedError("page_id is None.")
+        return PageId(self.id_) if isinstance(self.id_, str) else self.id_
+
+    def is_created(self) -> bool:
+        return self.id is not None
+
+    def get_id_and_url(self) -> dict[str, str]:
+        if self.id is None or self.url is None:
+            raise NotCreatedError("id or url is None")
+        return {
+            "id": self.id,
+            "url": self.url,
+        }
+
+    @property
+    def created_by(self) -> BaseOperator:
+        if self._created_by is None:
+            raise NotCreatedError("created_by is None.")
+        return self._created_by
+
+    @property
+    def edited_by(self) -> BaseOperator:
+        if self._last_edited_by is None:
+            raise NotCreatedError("created_by is None.")
+        return self._last_edited_by

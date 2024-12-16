@@ -1,0 +1,61 @@
+name: Run Pytest  # ワークフローの名前
+
+on:
+  push:
+    branches:
+      - main  # mainブランチへのpushで実行
+  pull_request:
+    branches:
+      - main  # mainブランチへのPRが対象
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+permissions:
+  contents: read  
+  pull-requests: write  
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # テストは最新のUbuntu環境で実行
+
+    env:  # すべてのステップで使える環境変数を定義
+      NOTION_SECRET: ${{ secrets.NOTION_SECRET }}
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v4  # リポジトリのコードをチェックアウトする
+
+      - name: Set up Python
+        uses: actions/setup-python@v4  # Pythonのセットアップを行う
+        with:
+          python-version: 3.11  # ここではPython 3.12を指定
+
+      - name: Cache Pipenv dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.local/share/virtualenvs  # Pipenvの仮想環境が保存されるディレクトリ
+          key: ${{ runner.os }}-pipenv-${{ hashFiles('Pipfile.lock') }}  # Pipfile.lockのハッシュを使ってキャッシュのキーを作成
+          restore-keys: |
+            ${{ runner.os }}-pipenv-
+
+      - name: Install Pipenv
+        run: |
+          python -m pip install --upgrade pip  # pipのアップグレード
+          pip install pipenv  # pipenvをインストール
+
+      - name: Install dependencies
+        run: |
+          pipenv install --dev  # Pipfileのすべての依存関係（開発用依存関係も）をインストール
+
+      - name: Build coverage file
+        run: |
+          pipenv run pytest -m all -n auto --dist=loadfile --junitxml=pytest.xml --cov-report=term-missing:skip-covered --cov=lotion test/ | tee pytest-coverage.txt
+
+      - name: Pytest coverage comment
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: MishaKav/pytest-coverage-comment@main
+        with:
+          pytest-coverage-path: ./pytest-coverage.txt
+          junitxml-path: ./pytest.xml
