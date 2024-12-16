@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+pyvichan/__init__.py
+pyvichan/board.py
+pyvichan/file.py
+pyvichan/post.py
+pyvichan/thread.py
+pyvichan/url.py
+pyvichan/util.py
+pyvichan.egg-info/PKG-INFO
+pyvichan.egg-info/SOURCES.txt
+pyvichan.egg-info/dependency_links.txt
+pyvichan.egg-info/requires.txt
+pyvichan.egg-info/top_level.txt
