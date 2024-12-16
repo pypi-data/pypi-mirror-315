@@ -1,0 +1,13 @@
+LICENSE.LGPLv3
+MANIFEST.in
+README.md
+pyproject.toml
+pygbs/analysys.cp311-win_amd64.pyd
+pygbs/core.cp311-win_amd64.pyd
+pygbs/interpolate.cp311-win_amd64.pyd
+pygbs/tools.cp311-win_amd64.pyd
+pygbs/pygbs.egg-info/PKG-INFO
+pygbs/pygbs.egg-info/SOURCES.txt
+pygbs/pygbs.egg-info/dependency_links.txt
+pygbs/pygbs.egg-info/requires.txt
+pygbs/pygbs.egg-info/top_level.txt
