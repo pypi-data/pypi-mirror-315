@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: textutilsSohaib
+Version: 0.1.0
+Summary: A simple library for text transformations
+Home-page: https://github.com/yourusername/textutils
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# textutils
+
+`textutils` is a simple Python library for performing basic text transformations.
+
+## Features
+- Reverse text
+- Convert text to uppercase
+- Convert text to lowercase
+
+## Installation
+```bash
+pip install textutils

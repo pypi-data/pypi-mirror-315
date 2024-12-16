@@ -1,0 +1,8 @@
+README.md
+setup.py
+textutils/__init__.py
+textutils/transformations.py
+textutilsSohaib.egg-info/PKG-INFO
+textutilsSohaib.egg-info/SOURCES.txt
+textutilsSohaib.egg-info/dependency_links.txt
+textutilsSohaib.egg-info/top_level.txt
