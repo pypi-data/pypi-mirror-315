@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: comet_labs
+Version: 0.1.2
+Summary: A Python package for comet-related functionalities
+Home-page: https://github.com/Sahilsingh0808/comet
+License: MIT
+Keywords: git,ai,commit-messages
+Author: Sahil
+Author-email: sahil85.10s@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Repository, https://github.com/Sahilsingh0808/comet
+Description-Content-Type: text/markdown
+
+# comet
+An AI-powered tool that transforms your Git workflow by generating concise, intelligent commit messages and seamlessly integrating with Jira for enhanced productivity and streamlined collaboration.
+
