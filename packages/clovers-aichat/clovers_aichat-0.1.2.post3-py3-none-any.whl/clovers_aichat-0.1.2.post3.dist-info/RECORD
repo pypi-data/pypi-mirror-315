@@ -1,0 +1,11 @@
+clovers_AIchat/__init__.py,sha256=W_GPjpkPwb8Qgjv3EjDdP-M2I1u9p11BzZ_W-oqbk6I,2165
+clovers_AIchat/ai/gemini.py,sha256=DuH9AWfpk3V87LICF17Hjb-o1kZohbb4a7s6Rl8195o,2154
+clovers_AIchat/ai/hunyuan.py,sha256=EGNcnfraKcCZsJBGeC-TU7kMgoGVES5Jo_laeQWtK9k,3330
+clovers_AIchat/ai/main.py,sha256=WrHW1ColVlqD1ofNITuzdQ0dbcet-fugBcm4SI4naqk,2629
+clovers_AIchat/ai/mix.py,sha256=DEpZxZJmLffeKjQJDZfy85_YcrLSuPfjqEV8WPy2az0,2841
+clovers_AIchat/ai/qwen.py,sha256=Gr83X0WOvH1pERnZ7OUNP00di5AfwN3vq_teoPAEHQ0,1661
+clovers_AIchat/clovers.py,sha256=c5-KqFo160XZ9JGMbPs39JVvdLxS1W5E4bQNaMP3NnQ,709
+clovers_AIchat/config.py,sha256=wQ2uUiWtO_9wemQ4AMpwWTlIdbz0N6ksqKeN2V4GCQE,2601
+clovers_aichat-0.1.2.post3.dist-info/METADATA,sha256=fE7H60hiINw8Hi8Vcz7OKO4k34BR64301IBkyL4ak-s,5014
+clovers_aichat-0.1.2.post3.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+clovers_aichat-0.1.2.post3.dist-info/RECORD,,
