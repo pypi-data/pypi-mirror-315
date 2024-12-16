@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: kala_quantum
+Version: 1.1.1
+Summary: A library for quantum-enhanced AI
+Home-page: https://github.com/username/kala_quantum
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: termcolor
+Requires-Dist: torch
+Requires-Dist: tqdm
+
+# Kala_Quantum
+Kala_Quantum is a Python library for integrating quantum computation with AI, enabling tasks such as quantum optimization, quantum-enhanced machine learning, and quantum chatbot training.
+
+## Features
+- **Quantum Gates**: Define and apply standard quantum gates (Hadamard, Pauli gates, RX, RY, RZ, etc.).
+- **Quantum State Management**: Normalize, measure, and manipulate quantum state vectors.
+- **Quantum Circuit Simulation**: Build multi-qubit circuits and simulate their execution.
+- **Quantum AI Training**: Train quantum-based models for tasks such as chatbot response prediction and optimization.
+- **Integration with PyTorch**: Train hybrid quantum-classical models with PyTorch support.
+
+## Installation
+Install Kala_Quantum using pip:
+```bash
+pip install kala_quantum
+```
+
+## Getting Started
+### Example Usage
+#### 1. Define a Quantum Circuit
+## Beter to use Kala-Qubits for QuantumSocket Programing you can use Kala_Quantum also but Kala-Qubits is made for Qunantumsockets
+```bash
+  pip install Kala-Qubits
+```  
+----  
+```python
+from Kala_Quantum import QuantumCircuit, QuantumGates
+
+# Create a quantum circuit with 3 qubits
+qc = QuantumCircuit(num_qubits=3)
+
+# Apply Hadamard gate to the first qubit
+qc.apply_gate(QuantumGates.H, qubit=0)
+
+# Apply CNOT gate between the first and second qubits
+qc.apply_gate(QuantumGates.tensor_gate(QuantumGates.X, num_qubits=3, target_qubit=1), qubit=1)
+
+# Measure the final state
+result = qc.measure()
+print(f"Measurement outcome: {result}")
+```
+
+#### 2. Train a Quantum AI Model
+```python
+from Kala_Quantum import QuantumState, QuantumTrainer
+
+# Define the initial quantum state
+initial_state = QuantumState([1, 0, 0, 0])
+
+# Training data (JSON format)
+training_data = {
+    "intents": [
+        {"patterns": ["Hello", "Hi"], "responses": ["Hello there!", "Hi, how can I assist?"]}
+    ]
+}
+
+# Initialize QuantumTrainer
+trainer = QuantumTrainer(initial_state, training_data=training_data)
+
+# Train the model
+target_state = [0, 1, 0, 1]
+trainer.train(target_state, epochs=500, learning_rate=0.1)
+
+# Predict a response
+query = "Hello"
+response = trainer.predict(query)
+print(f"Response: {response}")
+```
