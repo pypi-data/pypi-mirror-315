@@ -1,0 +1,14 @@
+setup.py
+graphai/__init__.py
+graphai/analyzer.py
+graphai/plotter.py
+graphai/recommender.py
+graphai/themes.py
+tests/test_analyzer.py
+tests/test_plotter.py
+tests/test_recommender.py
+timeanalisespro.egg-info/PKG-INFO
+timeanalisespro.egg-info/SOURCES.txt
+timeanalisespro.egg-info/dependency_links.txt
+timeanalisespro.egg-info/requires.txt
+timeanalisespro.egg-info/top_level.txt

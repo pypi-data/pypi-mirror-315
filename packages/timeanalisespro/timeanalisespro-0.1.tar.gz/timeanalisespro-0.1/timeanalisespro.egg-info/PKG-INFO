@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: timeanalisespro
+Version: 0.1
+Summary: A Python library to generate AI-driven charts
+Home-page: https://github.com/seuusuario/graphai
+Author: Seu Nome
+Author-email: seu.email@example.com
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: seaborn
