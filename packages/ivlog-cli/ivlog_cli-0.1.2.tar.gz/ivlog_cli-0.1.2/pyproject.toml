@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ivlog-cli"
+version = "0.1.2"
+description = "iverilog tools"
+authors = ["zhao-leo <zhao@zhaocloud.work>"]
+readme = "README.md"
+# homepage = "https://github.com/Asdil/impute_test"
+# repository = "https://github.com/Asdil/impute_test"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+toml = "^0.10.2"
+
+[tool.poetry.scripts]
+ivlog = 'ivlog_cli.arg_praser:run'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
