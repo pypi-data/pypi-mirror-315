@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+pyjson2dataclass.egg-info/PKG-INFO
+pyjson2dataclass.egg-info/SOURCES.txt
+pyjson2dataclass.egg-info/dependency_links.txt
+pyjson2dataclass.egg-info/entry_points.txt
+pyjson2dataclass.egg-info/top_level.txt
