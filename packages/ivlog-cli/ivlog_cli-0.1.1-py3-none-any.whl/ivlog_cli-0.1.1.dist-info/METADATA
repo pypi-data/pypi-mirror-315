@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ivlog-cli
+Version: 0.1.1
+Summary: iverilog tools
+License: MIT
+Author: zhao-leo
+Author-email: zhao@zhaocloud.work
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/markdown
+
+# CLI 工具
+
+支持 新建项目，新建testbench，运行仿真，列出当前仿真四个简单功能
+
+主要也是测试一次poetry的script能否正常工作
+
+```bash
+poetry config pypi-token.pypi <token>
+```
