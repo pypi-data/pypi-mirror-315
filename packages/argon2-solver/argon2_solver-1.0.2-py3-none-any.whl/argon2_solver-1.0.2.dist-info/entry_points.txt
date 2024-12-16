@@ -1,0 +1,2 @@
+[console_scripts]
+argon2-solver = argon2_solver.main:main
