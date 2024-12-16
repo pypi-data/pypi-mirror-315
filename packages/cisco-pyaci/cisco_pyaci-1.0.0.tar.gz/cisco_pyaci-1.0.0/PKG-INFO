@@ -1,0 +1,59 @@
+Metadata-Version: 2.4
+Name: cisco-pyaci
+Version: 1.0.0
+Summary: Python Bindings for Cisco ACI REST API
+Project-URL: Homepage, https://github.com/datacenter/pyaci
+Project-URL: Issues, https://github.com/datacenter/pyaci/issues
+Author-email: Praveen Kumar <praveek6@cisco.com>, Camillo Rossi <camrossi@cisco.com>
+License-File: LICENSE
+License-File: NOTICE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: cryptography==38.0.4
+Requires-Dist: flask<=3.0.3
+Requires-Dist: lxml
+Requires-Dist: paramiko
+Requires-Dist: parse
+Requires-Dist: pyopenssl==22.0.0
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: scp
+Requires-Dist: six
+Requires-Dist: websocket-client
+Requires-Dist: xmltodict
+Description-Content-Type: text/x-rst
+
+PyACI: Python Bindings for Cisco ACI REST API
+=============================================
+
+.. image:: https://api.codacy.com/project/badge/Grade/3f99112bec114ef88a7c61090606cffb
+   :alt: Codacy Badge
+   :target: https://app.codacy.com/app/kprav33n/pyaci?utm_source=github.com&utm_medium=referral&utm_content=datacenter/pyaci&utm_campaign=badger
+
+.. image:: https://circleci.com/gh/datacenter/pyaci.svg?style=shield&circle-token=:circle-token
+   :alt: circleci status
+   :target: https://circleci.com/gh/datacenter/pyaci
+
+.. image:: https://travis-ci.org/datacenter/pyaci.svg?branch=master
+   :alt: Travis CI status
+   :target: https://travis-ci.org/datacenter/pyaci
+
+.. image:: https://codecov.io/gh/datacenter/pyaci/branch/master/graph/badge.svg
+   :alt: codecov status
+   :target: https://codecov.io/gh/datacenter/pyaci
+
+.. image:: https://readthedocs.org/projects/pyaci/badge/?version=latest&style=plastic
+   :alt: Doc Status
+   :target: http://pyaci.readthedocs.io/en/latest/
+
+Documentation
+-------------
+
+Documentation is available at http://pyaci.readthedocs.io/en/latest/
+
+Examples
+--------
+
+Jupyter Notebook based examples can be found in `examples <examples>`_ directory.
