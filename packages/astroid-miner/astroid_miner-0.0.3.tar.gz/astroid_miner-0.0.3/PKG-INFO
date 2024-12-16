@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: astroid-miner
+Version: 0.0.3
+Summary: A library to help in code analysis
+Project-URL: Homepage, https://github.com/jocassid/astroid-miner
+Project-URL: Issues, https://github.com/jocassid/astroid-miner/issues
+Author-email: John Cassidy <jocassid@gmail.com>
+License-File: LICENSE
+Keywords: ast,astroid,code analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# astroid-miner
+Wrapper around the [astroid](https://pypi.org/project/astroid/) library to aid 
+in static code analysis.  I'm planning on using the astroid library to parse 
+Python source files and navigate class and function definitions.  Here's the
+features that I'm working on implementing:
+
+## Generic Code Analysis
+
+* call_diagram: Given a target function or method, find the 
+functions/methods called by and/or lead to the target being called.
+* show_path: Display the PYTHONPATH based on `sys.path` and path append or 
+substitute command line arguments
+
+## Django-specific features (these will be moved into separate package)
+
+* url_to_view: Given a url in a django project identify the class or function
+providing the view and identify the file and line number where that view is 
+defined.
+

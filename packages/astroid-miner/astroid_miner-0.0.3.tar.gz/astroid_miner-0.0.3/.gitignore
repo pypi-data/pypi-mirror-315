@@ -1,0 +1,4 @@
+.idea/
+**.pyc
+.ipynb_checkpoints
+astroid_miner.log
