@@ -1,0 +1,2 @@
+[console_scripts]
+json2dataclass = pyjson2dataclass.__main__:main
