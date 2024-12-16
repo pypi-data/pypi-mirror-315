@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Rocket_simple_Trajectory_Project
+Version: 0.1.0
+Summary: Un projet Python de démonstration
+Author: Clément Bouguyon
+Author-email: clement.bouguyon@estaca.eu
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: coveralls (>=3.0,<4.0)
+Requires-Dist: matplotlib (>=3.4.3,<4.0.0)
+Requires-Dist: numpy (>=1.21.0,<2.0.0)
+Requires-Dist: pytest (>=7.0,<8.0)
+Requires-Dist: pytest-cov (>=3.0,<4.0)

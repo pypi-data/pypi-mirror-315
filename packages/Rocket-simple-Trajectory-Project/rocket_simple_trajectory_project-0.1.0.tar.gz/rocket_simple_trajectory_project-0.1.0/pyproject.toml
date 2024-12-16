@@ -1,0 +1,26 @@
+# pyproject.toml
+
+[tool.poetry]
+name = "Rocket_simple_Trajectory_Project"
+version = "0.1.0"
+description = "Un projet Python de démonstration"
+authors = ["Clément Bouguyon <clement.bouguyon@estaca.eu>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.21.0"
+matplotlib = "^3.4.3"
+pytest = "^7.0"
+pytest-cov = "^3.0"
+coveralls = "^3.0"
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+
+[tool.pytest.ini_options]
+addopts = "--maxfail=3 --disable-warnings -q --cov=src --cov-report=term-missing --cov-report=xml"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
