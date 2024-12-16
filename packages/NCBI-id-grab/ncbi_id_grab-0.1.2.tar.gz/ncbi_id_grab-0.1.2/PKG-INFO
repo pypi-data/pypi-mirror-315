@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: NCBI_id_grab
+Version: 0.1.2
+Summary: A small package for converting bacterial names into NCBI IDs
+Author-email: Cong Pham <phamleminhcong34@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# MyPackage
+
+This is an example Python package.
+
+## Installation
+
+```bash
+pip install NCBI_id_grab
+```
+
+## Usage
+
+```python
+from NCBI_ID_grab import IDfind
+
+IDfind.NCBI_ID
+```
+"""
