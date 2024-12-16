@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+unit_openapi_python_sdk.egg-info/PKG-INFO
+unit_openapi_python_sdk.egg-info/SOURCES.txt
+unit_openapi_python_sdk.egg-info/dependency_links.txt
+unit_openapi_python_sdk.egg-info/requires.txt
+unit_openapi_python_sdk.egg-info/top_level.txt
