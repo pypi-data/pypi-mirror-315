@@ -1,0 +1,8 @@
+disk_cache/__init__.py,sha256=ihARKxuNUXMkGdV9po7hDa8NT43uCfQaAH6mzqLx5yA,33
+disk_cache/disk_cache.py,sha256=tKgRf9ozb7u4SWtutgYOTCxv2MgDgE20kXTE_-r8Kfw,3917
+disk_cache/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+disk_cache/tests/test_cache.py,sha256=kvr10wYfBko-dlAp33UVRVY0q6Wdw48KahN37FwXBT4,2983
+matrix_disk_cache-0.1.0.dist-info/METADATA,sha256=oRAs2JSI8M1BXxuN-31zL6f880oUuXpHxZ7FcfuNE90,3776
+matrix_disk_cache-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+matrix_disk_cache-0.1.0.dist-info/top_level.txt,sha256=26LXY3uw7zBqGIi1gnZbuH6WloOkdcFxE4hFghE1MYM,11
+matrix_disk_cache-0.1.0.dist-info/RECORD,,
