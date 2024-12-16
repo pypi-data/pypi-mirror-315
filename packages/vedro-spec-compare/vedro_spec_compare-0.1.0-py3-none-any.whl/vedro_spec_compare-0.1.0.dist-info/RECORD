@@ -1,0 +1,13 @@
+vedro_spec_compare/__init__.py,sha256=WPbMVHrBJCu2m_oglxroYhJ2QPES7eUgXUNkPtvWa18,52
+vedro_spec_compare/command.py,sha256=eQFmLkFCw7Cn8ez4QK29kZvx4vCUdo3Dq6gDKiRGfsA,771
+vedro_spec_compare/coverage.py,sha256=D_GDpXyzo4-PKqsP7VJ8FLxMHvsrW4B8JR9ijkELGJA,946
+vedro_spec_compare/differ.py,sha256=kyZrSxdRvkoj2VsGTLGBa5zeG6DDfKSevmM77GAp_6A,5952
+vedro_spec_compare/generator.py,sha256=LA4S-9QJmwX5Nwus7guxzyNPAhQ9q7vEW9w8B3uHQIE,1189
+vedro_spec_compare/parser.py,sha256=Ev6I2LcKx7Lu8BUvFbJpAyjyNdtQLrXQnuGiwWypC_w,2089
+vedro_spec_compare/templates/coverage.html.j2,sha256=vvlx2rkyavU899A0AA_MRRCqsMPEjF30TNxtaEE92io,5032
+vedro_spec_compare-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vedro_spec_compare-0.1.0.dist-info/METADATA,sha256=vZE6hmt_4JphfK97UaOGU3tD-fro87uXKUf3BuDnS7c,2411
+vedro_spec_compare-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+vedro_spec_compare-0.1.0.dist-info/entry_points.txt,sha256=KplNWAkA3YWctfj9G9Hzm_kplbKleCipqXbfUgmRBNg,51
+vedro_spec_compare-0.1.0.dist-info/top_level.txt,sha256=7lbBKVhIS1Ujqf2cbvKcFR-aW8su_WEazfs6vCesqfc,19
+vedro_spec_compare-0.1.0.dist-info/RECORD,,
