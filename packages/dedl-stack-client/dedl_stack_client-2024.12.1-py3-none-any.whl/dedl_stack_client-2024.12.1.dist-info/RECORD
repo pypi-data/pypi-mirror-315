@@ -1,0 +1,7 @@
+dedl_stack_client/__init__.py,sha256=_1JxktKDpCBMQRPa6k0kPRAjeT8EByXS9gvT4RSjP98,583
+dedl_stack_client/authn.py,sha256=2MVtVT4lMefs92shY6Z8OJ86EezBRUO3a689Ts2QF64,2624
+dedl_stack_client/dask.py,sha256=YVsy84ToWXNKMEu1n8L2m7RuhmCE_uUN1DivmpINcGI,3219
+dedl_stack_client-2024.12.1.dist-info/LICENSE,sha256=c7p036pSC0mkAbXSFFmoUjoUbzt1GKgz7qXvqFEwv2g,10273
+dedl_stack_client-2024.12.1.dist-info/METADATA,sha256=nhL5MO_Q3_jPV3E3AUlmy87A_xEulO9q_NlvAg4XbCw,2232
+dedl_stack_client-2024.12.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+dedl_stack_client-2024.12.1.dist-info/RECORD,,
