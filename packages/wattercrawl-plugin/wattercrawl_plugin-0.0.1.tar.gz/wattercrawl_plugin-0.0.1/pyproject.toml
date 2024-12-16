@@ -1,0 +1,18 @@
+[project]
+name = "wattercrawl-plugin"
+version = "0.0.1"
+authors = [
+  { name="AmirMohsen Asaran", email="info@wattercrawl.ai" },
+]
+description = "This project used for writing wattercrawl plugin for scrapy"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/wattercrawl/wattercrawl-plugin"
+Issues = "https://github.com/wattercrawl/wattercrawl/issues"
