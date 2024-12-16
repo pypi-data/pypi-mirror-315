@@ -1,0 +1,8 @@
+setup.py
+seqmats/__init__.py
+seqmats/seqmats.py
+seqmats.egg-info/PKG-INFO
+seqmats.egg-info/SOURCES.txt
+seqmats.egg-info/dependency_links.txt
+seqmats.egg-info/requires.txt
+seqmats.egg-info/top_level.txt
