@@ -1,0 +1,13 @@
+descriptorlib/__init__.py,sha256=M_Zr687YsbX5Of_r9xBarvh_YKLR7bYmT6Wd74KQJP8,216
+descriptorlib/run_tests.py,sha256=BCaD_B-jk5TUqm0w4Qw8qZECYwEixda3cis2NDoTGu8,390
+descriptorlib/monomer/MonomerPropertyDescriptor.py,sha256=XRH9pV1kSn-qGCALHzXdpKrsRtiZwhTXCCLVFDw5NeQ,13473
+descriptorlib/monomer/__init__.py,sha256=sgQbYSY-bNmtunlu5CVSBdPgsfkeUbT-RmqfKMa10Qk,418
+descriptorlib/monomer/base.py,sha256=8bN7jWm8aA7fcEx72Umy7sqYnJYAoiuogQGeoGfTQTo,1077
+descriptorlib/tests/__init__.py,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+descriptorlib/tests/test_Monomer.py,sha256=iV5UbRpjj0bG22FRkjwrS3MSff3yE8NBIW_aJrWy0wY,18114
+descriptorlib/tests/test_libException.py,sha256=6mCOShcFlbnxKPVi4NK2dZGRTOYO6AbbqHaCwebEbfI,5236
+descriptorlib-0.1.3.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+descriptorlib-0.1.3.dist-info/METADATA,sha256=1IPjZOtHuiHHZICJFhBxc1VXs8ansFipfl6n8DdFdWw,33678
+descriptorlib-0.1.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+descriptorlib-0.1.3.dist-info/top_level.txt,sha256=42lMaGgFz3q0AANlGb7RPnhFjGjRIGbi7q20culkojo,14
+descriptorlib-0.1.3.dist-info/RECORD,,
