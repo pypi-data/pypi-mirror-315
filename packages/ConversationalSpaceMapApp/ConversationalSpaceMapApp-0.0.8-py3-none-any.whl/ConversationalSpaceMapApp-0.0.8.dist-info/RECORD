@@ -1,0 +1,15 @@
+conversationalspacemapapp/__init__.py,sha256=aPQWbY49IMMhIHehe47QJanbNRLYqLTOUmPjBBTmJsU,81
+conversationalspacemapapp/__main__.py,sha256=yDg0NXq9dqQuaKeTqALK15-I-4jKpULxMJExj5k-ze0,98
+conversationalspacemapapp/app.py,sha256=s0M0x1LpV_m3JM-EcE4tBREM__4SnXvYMB_31RyD2VY,7222
+conversationalspacemapapp/IconConverter/Converter.py,sha256=zvb8nSh3mnIaRGyQkkuIz5ApX1apEcSuPCdvgNxSVtY,176
+conversationalspacemapapp/IconConverter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conversationalspacemapapp/Parser/TranscriptParser.py,sha256=1RlvSKo9EJV5Pr86w8HQInps6GvN6ie9OixkopHfR-M,1952
+conversationalspacemapapp/Parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conversationalspacemapapp/Plotter/PlotMap.py,sha256=JxNTgB7Tc08k6DgtyV44fHWTv1_Osy3Eq65Rh2k8uuA,1494
+conversationalspacemapapp/Plotter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ConversationalSpaceMapApp-0.0.8.dist-info/LICENSE,sha256=eY_x6LFOU_Rqt8kfaFjUTeX1Rdn8j_heNcJPVqS1Tz8,1490
+ConversationalSpaceMapApp-0.0.8.dist-info/METADATA,sha256=vDvI40vWFc-dLPQLjBuVbNmye9orP5ZoCmQ6JckQu3w,3423
+ConversationalSpaceMapApp-0.0.8.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ConversationalSpaceMapApp-0.0.8.dist-info/entry_points.txt,sha256=A790ysLqoF0rrIKr3us9EvA-f4wNbOhBE3rQlxnXYNE,54
+ConversationalSpaceMapApp-0.0.8.dist-info/top_level.txt,sha256=CAIOR90PWg-yrb2MCiFPZoY3zE4pQmWyUV0qf0CkHeI,26
+ConversationalSpaceMapApp-0.0.8.dist-info/RECORD,,
