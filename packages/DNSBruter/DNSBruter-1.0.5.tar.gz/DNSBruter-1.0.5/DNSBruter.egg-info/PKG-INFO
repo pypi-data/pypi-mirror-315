@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: DNSBruter
+Version: 1.0.5
+Summary: dnsbruter is a powerfull tool for asynchronous dns brutforcing and fuzzing with wildcard detection
+Home-page: https://github.com/RevoltSecurities/Dnsbruter
+Author: D.Sanjai Kumar @RevoltSecurities
+Author-email: bughunterz0047@gmail.com
+License-File: LICENSE
