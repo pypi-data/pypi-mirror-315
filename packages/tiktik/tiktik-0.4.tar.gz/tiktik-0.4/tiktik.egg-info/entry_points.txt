@@ -1,0 +1,23 @@
+[console_scripts]
+tiktik_appleornotcandi = tiktik.main:appleornotcandi
+tiktik_appleornotnaive = tiktik.main:appleornotnaive
+tiktik_backwardimage = tiktik.main:backwardimage
+tiktik_candsunnyorrain = tiktik.main:candsunnyorrain
+tiktik_carpreferencesfinds = tiktik.main:carpreferencesfinds
+tiktik_dbscan = tiktik.main:dbscan
+tiktik_diabetes_logistic = tiktik.main:diabetes_logistic
+tiktik_diabeteshmm = tiktik.main:diabeteshmm
+tiktik_enjoysportfinds = tiktik.main:enjoysportfinds
+tiktik_finds = tiktik.main:finds
+tiktik_heirarchialclust = tiktik.main:heirarchialclust
+tiktik_heirarkmeansexam = tiktik.main:heirarkmeansexam
+tiktik_hmmrainy = tiktik.main:hmmrainy
+tiktik_id3 = tiktik.main:id3
+tiktik_kmeanscluster = tiktik.main:kmeanscluster
+tiktik_knniris = tiktik.main:knniris
+tiktik_kokul = tiktik.main:kokul
+tiktik_naiveposorneg = tiktik.main:naiveposorneg
+tiktik_naivespamornot = tiktik.main:naivespamornot
+tiktik_naivetsampletext = tiktik.main:naivetsampletext
+tiktik_orangeorapple = tiktik.main:orangeorapple
+tiktik_svmiris = tiktik.main:svmiris

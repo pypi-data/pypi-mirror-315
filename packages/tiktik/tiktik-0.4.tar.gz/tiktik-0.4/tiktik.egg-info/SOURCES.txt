@@ -1,0 +1,9 @@
+README.md
+setup.py
+tiktik/__init__.py
+tiktik/main.py
+tiktik.egg-info/PKG-INFO
+tiktik.egg-info/SOURCES.txt
+tiktik.egg-info/dependency_links.txt
+tiktik.egg-info/entry_points.txt
+tiktik.egg-info/top_level.txt
