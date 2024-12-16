@@ -1,0 +1,14 @@
+
+[:python_version <= "3.12"]
+pyodbc>=5
+sqlalchemy>=1.4
+
+[:python_version >= "3.12"]
+pandas[sql-other]>=2.2
+
+[:python_version >= "3.13"]
+pyodbc>=5.2
+sqlalchemy>=2.0.31
+
+[:python_version >= "3.9" and python_version <= "3.11"]
+pandas[sql-other]<2.2,>=2.1.2
