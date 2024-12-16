@@ -1,0 +1,9 @@
+License
+setup.py
+upicmedia/API.py
+upicmedia/__init__.py
+upicmedia/upicmedia.py
+upicmedia.egg-info/PKG-INFO
+upicmedia.egg-info/SOURCES.txt
+upicmedia.egg-info/dependency_links.txt
+upicmedia.egg-info/top_level.txt
