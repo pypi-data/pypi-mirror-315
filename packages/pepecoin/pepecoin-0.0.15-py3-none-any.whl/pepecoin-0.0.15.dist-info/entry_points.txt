@@ -1,0 +1,8 @@
+[console_scripts]
+pepecoin-install-service = pepecoin.cli:install_service
+pepecoin-monitor = pepecoin.cli:monitor_node
+pepecoin-setup = pepecoin.cli:setup_node
+pepecoin-setup-macos = pepecoin.cli:setup_node_macos
+pepecoin-setup-vm = pepecoin.cli:setup_vm
+pepecoin-test = pepecoin.cli:run_setup_test
+pepecoin-transfer-test = pepecoin.cli:run_transfer_test
