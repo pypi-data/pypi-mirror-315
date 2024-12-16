@@ -1,0 +1,3 @@
+anthropic~=0.40.0
+mistralai~=1.2.5
+openai~=1.57.4
