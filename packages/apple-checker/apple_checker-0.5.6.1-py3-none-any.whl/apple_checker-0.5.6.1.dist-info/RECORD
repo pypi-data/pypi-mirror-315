@@ -1,0 +1,8 @@
+checker/__init__.py,sha256=8iQarIaJRCbxel2nmK9bk5xzx9VEnKNpV178SkUzCQo,10633
+checker/country_flags.py,sha256=K2YWkX1OigRzKvFq9QYa5m3Y7xl8Ck3PCsScm_H3yHo,8575
+checker/entitlements.py,sha256=mihxT21LHiljcZT5E5EDRuqWJ8k552dlIZf0i3cG9TQ,5643
+checker/errors.py,sha256=CdH5qsDHTFwxGAfUIpr1acre4XLcxZx2WthK7C9keew,51
+apple_checker-0.5.6.1.dist-info/METADATA,sha256=nwAPP5x_qjvpuAbdzN5s487ExylHFz6QEfnt_9dN4zg,395
+apple_checker-0.5.6.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+apple_checker-0.5.6.1.dist-info/top_level.txt,sha256=1JuOQc-4s3Z5yyq8d7rWQCOWgXfRQp8_MnpXbXeRplE,8
+apple_checker-0.5.6.1.dist-info/RECORD,,
