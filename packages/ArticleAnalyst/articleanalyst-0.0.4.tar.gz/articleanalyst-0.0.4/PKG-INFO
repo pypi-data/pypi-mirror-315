@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: ArticleAnalyst
+Version: 0.0.4
+Summary: This is a package to process large-scale article data downloaded from PubMed.
+Project-URL: Homepage, https://github.com/shi4712shi/ArticleAnalyst/
+Project-URL: Issues, https://github.com/shi4712shi/ArticleAnalyst/issues
+Author-email: shi4712 <shi4712@genetics.ac.cn>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: biodag>=0.0.4
+Requires-Dist: biopython>=1.81
+Requires-Dist: nltk>=3.6.7
+Requires-Dist: scipy>=1.7.3
+Requires-Dist: statsmodels>=0.13.5
+Description-Content-Type: text/markdown
+
+# ArticleAnalyst
+
+This is a package to process large-scale article data downloaded from PubMed.
+
+## DESCRIPTION
+___
+### Article
+There are some contents to introduce workflow and functions for Article
+
+### ArticleAnalyst
+There are some contents to introduce workflow and functions for Article
+
+### Release Notes
+___
+#### version 0.02
+<ul>
+    <li>Optimize logic for downloader creation </li>
+</ul>
+
+#### Version 0.04
+<ul>
+    <li>Fix bugs in MeshAnalyst.returnIsInArticles</li>
+    <li>Fix bugs in ArticleAnalyst.__init__</li>
+    <li>Allow pass a MeSHDAG object when setMeSHDAG with meshAnalyst</li>
+    <li>Fix bugs in functions.downloader.__eLink</li>
+</ul>
