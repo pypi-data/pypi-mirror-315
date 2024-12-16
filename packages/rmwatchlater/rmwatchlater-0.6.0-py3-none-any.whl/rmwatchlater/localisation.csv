@@ -1,0 +1,4 @@
+stringname,en,de
+PROMT,Are you logged into your Google Account? ([{yes}]es/[{no}o]),Sind Sie in ihrem Google Account angemeldet? ([{yes}]a/[{no}ein])
+YES,y,j
+NO,n,n
