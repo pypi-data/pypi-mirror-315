@@ -1,0 +1,3 @@
+[console_scripts]
+kbuild = KmerDecon.build_data_structure:main
+kdecon = KmerDecon.decontaminate_reads:main
