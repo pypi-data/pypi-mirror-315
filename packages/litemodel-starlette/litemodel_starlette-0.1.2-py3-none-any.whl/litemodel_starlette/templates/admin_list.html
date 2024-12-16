@@ -1,0 +1,45 @@
+{% extends "_model_base.html" %}
+{% block title %}List{% endblock %}
+{% block main %}
+<h1>{{table}}</h1>
+<a class="btn btn-primary" href="/{{table}}/new" role="button">new {{table}}</a>
+<nav>
+    <ul class="pagination justify-content-end">
+      <li class="page-item {{'disabled' if current_page == 1 else ''}}">
+        <a class="page-link" href="/{{table}}?page={{previous_page}}">previous</a>
+      </li>
+        <li class="page-item"><a class="page-link disabled" href="/{{table}}?page={{current_page}}">{{current_page}}</a></li>
+      <li class="page-item {{'disabled' if rows|length < 20 else ''}}">
+        <a class="page-link" href="/{{table}}?page={{next_page}}">Next</a>
+      </li>
+    </ul>
+</nav>
+<div class="table-responsive w-100">
+    <table class="table table-striped">
+        <thead>
+            <th>edit</th>
+            <th>delete</th>
+            <th>id</th>
+            {% for header in headers %}
+                {% if header != "id" %}
+                <th>{{header}}</th>
+                {% endif %}
+            {% endfor %}
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td><a class="row-link" href="{{row.edit_link}}">edit</a></td>
+                <td><a class="row-link" href="{{row.delete_link}}">delete</a></td>
+                <td><a class="row-link" href="{{row.detail_link}}">{{row.id}}</a></td>
+                {% for header in row.fields.keys() %}
+                {% if header != "id" %}
+                <td>{{row[header] | string | truncate(30)}}</td>
+                {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
