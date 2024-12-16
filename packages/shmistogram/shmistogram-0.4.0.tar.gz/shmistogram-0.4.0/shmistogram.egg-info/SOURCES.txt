@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+shmistogram/__init__.py
+shmistogram/shmistogram.py
+shmistogram/tabulation.py
+shmistogram/utils.py
+shmistogram.egg-info/PKG-INFO
+shmistogram.egg-info/SOURCES.txt
+shmistogram.egg-info/dependency_links.txt
+shmistogram.egg-info/requires.txt
+shmistogram.egg-info/top_level.txt
+tests/test_binning.py
