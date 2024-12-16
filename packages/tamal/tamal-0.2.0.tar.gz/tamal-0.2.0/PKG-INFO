@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: tamal
+Version: 0.2.0
+Summary: A library for wrapping text
+Author: Jonathan Herrera
+Author-email: jonathan.herrera@posteo.de
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: bugs, https://github.com/jnthnhrrr/python-tamal/issues
+Project-URL: docs, https://jnthnhrrr.github.io/python-tamal
+Project-URL: source, https://github.com/jnthnhrrr/python-tamal
+Description-Content-Type: text/markdown
+
+This is a python library for breaking and wrapping text.
+
+The library provides three functions, `wrap`, `chunk`, and `break_lines`.
+
+`chunk` breaks a string once, using whitespace, existing hyphens or soft
+hyphens, or by forcing a hyphen at a given maximum width, returning the head and
+the tail (as a `tuple[str, str]`, with the second slot of the tuple potentially
+being an empty string).
+
+`break_lines` breaks a string into lines of a given maximum width, returning
+the resulting lines as a `list[str]`.
+
+`wrap` wraps a text.
+
+
+# Install
+
+    pip install tamal
+
+
+# Documentation
+
+See [jnthnhrrr.github.io/python-tamal](https://jnthnhrrr.github.io/python-tamal)
+
