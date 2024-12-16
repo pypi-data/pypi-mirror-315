@@ -1,0 +1,10 @@
+mailstream/__init__.py,sha256=sPdaxy_Ti8meuVPBJbOvsVrLm86cAqTY3VziVkamry4,487
+mailstream/client.py,sha256=MCDjL9FWrtI3J50j_hWBj9EPYCj-mF8u2kedx5a6n_Q,5825
+mailstream/context.py,sha256=IauCBWZCvV9XkZTQ40704TAZAJC0aN1sdAKEvPsIZUk,329
+mailstream/exceptions.py,sha256=S7grYvWlXasRulObVy2EzlNBcBSdgr7CC_ymA8mXx44,444
+mailstream/mail.py,sha256=QRoEHpDvlV-9PGwi3_BYAxDmzDf0U84f6eEOkfSoztk,844
+mailstream-0.1.5.dist-info/LICENSE,sha256=vie3S9MDSCMs2QXeci56yAtf4wsXycV4AMwmpJkV97E,1079
+mailstream-0.1.5.dist-info/METADATA,sha256=4ikJ5_KJs5Yi1CkJImi38PbYziGgMnvSnzMrR27s2MQ,3376
+mailstream-0.1.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+mailstream-0.1.5.dist-info/top_level.txt,sha256=Sfv3tthh6eCEmYSX_ZWxN2CBwsQEV-pkDDp_LHli6H4,11
+mailstream-0.1.5.dist-info/RECORD,,
