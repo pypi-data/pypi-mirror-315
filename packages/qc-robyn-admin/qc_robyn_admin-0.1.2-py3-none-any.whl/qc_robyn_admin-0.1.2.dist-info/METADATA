@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: qc-robyn-admin
+Version: 0.1.2
+Summary: A backend framework based on Robyn and Tortoise-ORM
+Home-page: https://github.com/0x7eQiChen/robyn-admin
+Author: 0x7eQiChen
+Author-email: 0x7eQiChen <1356617750@qq.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Robyn Admin
+
+A simple yet powerful admin interface for Robyn framework.
+
+orm use Tortoise ORM
+
+read more info in [en_doc](https://qc-robyn-admin.readthedocs.io/en/latest/en/)
+
+
+## Installation
+
+You can install robyn-admin via pip:
+
+```
+bash
+pip install qc_robyn_admin
+
+pip install git+https://github.com/0x7eQiChen/qc_robyn_admin.git
+```
+
