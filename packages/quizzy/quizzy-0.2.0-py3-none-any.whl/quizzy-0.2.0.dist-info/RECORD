@@ -1,0 +1,10 @@
+quizzy/__init__.py,sha256=IILIKzO2OO60Rhsh3SqhdKHDf7XI_RLRwzztBGZZmHY,78
+quizzy/__main__.py,sha256=TxTz5dT__4--aF49xzShPppphmYLCNYKMraPhp6scIc,117
+quizzy/app.py,sha256=QP4pZsIYXlzvyd_laf-VhlQzy1Lw8rRIc-UDnoi8PLY,7693
+quizzy/models.py,sha256=JrAc2IvtXByIKNg_lX7uQMK19zwi2WsYcNbttXccbOs,1265
+quizzy/quizzy.tcss,sha256=ixFfm8pT_JLdL0XZ-4n8u0fs3l9lAHWQa3-q9d4bRRU,1455
+quizzy-0.2.0.dist-info/METADATA,sha256=GGo2imhK6FbqVeaA83L-i8E-ook8d2rBKN0E6FQWLLg,1590
+quizzy-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+quizzy-0.2.0.dist-info/entry_points.txt,sha256=2RiVMgcS4h7TM59u9dyBQFm53cG6Eyekmb8fqZ5rXHM,48
+quizzy-0.2.0.dist-info/licenses/LICENSE,sha256=JWN3MACgsucm6y_rlL_2MUzst0-wNh-Wab3XkxtfVzM,1070
+quizzy-0.2.0.dist-info/RECORD,,
