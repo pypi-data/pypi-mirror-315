@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: toolsmaximum
+Version: 0.1.0
+Summary: The best tools in all of python (py discord to give recommendations at @!)
+Home-page: https://github.com/Python-Best-Coder/toolsmax/blob/main/
+Author: Python-Best-Coder
+Author-email: mqrshymelio@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+thebest package u ever seen
