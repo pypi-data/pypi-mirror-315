@@ -1,0 +1,8 @@
+CODE_OF_CONDUCT.md,sha256=0B4az6maBNE7cUpWGzbAX2PPS9qRTOTxPcDIMsRSaHg,5220
+LICENSE.rst,sha256=RSBAnIRAp_YORPKNmPANiZV0nJ0gOA0Vr8wntFuhWKE,30809
+file_clerk/__init__.py,sha256=4whrnfXNFgcoKW4XcmAQ7EqMN8D-fHNeU2kl5JAsbKk,192
+file_clerk/clerk.py,sha256=PvTeV3gRB2GHH4B8_VlN32JuyRK3CDIR_lAn1EBIyCg,9387
+file_clerk-1.1.7.dist-info/LICENSE.rst,sha256=RSBAnIRAp_YORPKNmPANiZV0nJ0gOA0Vr8wntFuhWKE,30809
+file_clerk-1.1.7.dist-info/METADATA,sha256=DP9A1cly0FZ8u9CWzgc7I3y4uY_RoDwxtI78cH8-5EU,3127
+file_clerk-1.1.7.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+file_clerk-1.1.7.dist-info/RECORD,,
