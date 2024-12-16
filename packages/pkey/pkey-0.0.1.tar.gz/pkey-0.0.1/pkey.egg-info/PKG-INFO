@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pkey
+Version: 0.0.1
+Summary: A simple Python implementation to generate private keys for your applications.
+Home-page: https://github.com/JustAnEric/pkey
+Author: JustAnEric
+Author-email: ericmuzyk@icloud.com
+License: GPL-3.0
+Keywords: key authentication
+Classifier: Topic :: Utilities
+
+# pkey
+A quick tool/module for Python to generate Private Authentication Keys at a server's discretion.
