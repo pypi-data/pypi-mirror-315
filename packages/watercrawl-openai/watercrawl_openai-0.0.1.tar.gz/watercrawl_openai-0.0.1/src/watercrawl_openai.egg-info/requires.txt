@@ -1,0 +1,2 @@
+watercrawl-plugin>=0.0.1
+openai==1.57.4
