@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+gitscout.egg-info/PKG-INFO
+gitscout.egg-info/SOURCES.txt
+gitscout.egg-info/dependency_links.txt
+gitscout.egg-info/requires.txt
+gitscout.egg-info/top_level.txt

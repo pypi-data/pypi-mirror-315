@@ -1,0 +1,15 @@
+[project]
+name = "gitscout"
+version = "0.2.0"
+description = "gitscout is now repo-guide"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 7 - Inactive"
+]
+dependencies = [
+    "repo-guide"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

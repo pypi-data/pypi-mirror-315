@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gitscout
+Version: 0.2.0
+Summary: gitscout is now repo-guide
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: repo-guide
+
+# gitscout is now repo-guide
+
+This package has been renamed. Use `pip install repo-guide` instead.
+
+New package: https://pypi.org/project/repo-guide/
