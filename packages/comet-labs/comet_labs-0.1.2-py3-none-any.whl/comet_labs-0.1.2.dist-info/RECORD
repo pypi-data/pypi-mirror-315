@@ -1,0 +1,11 @@
+comet_labs/__init__.py,sha256=_-SrkUkr8z2ZS6oy44X0gujBEain-2PJLV2Dwt3uGTs,77
+comet_labs/ai_helpers.py,sha256=KDJJeEy-zi1fIRYMOFq357-i5M5gZbMeUi-HhbWUKVE,14400
+comet_labs/cli.py,sha256=kAdFIhCRmyk4OQfHuHwJwR56HtBUt4TTX_fsPIf9cRQ,11656
+comet_labs/jira.py,sha256=LYqSgpwJYy2DJkZ1yyGXvR_R7TarGrbxnmbkOmNDios,3850
+comet_labs/prompts.py,sha256=8p2Z0WLfrxGFdFCTlI8eHQJ8S4mPl85hh4HUtlP-aqw,3714
+comet_labs/utils.py,sha256=Upeebwifr2xgpm8bYwhcWDKoB8u0p8InkwEPZdHuXN8,1018
+comet_labs-0.1.2.dist-info/LICENSE,sha256=GEmNV_nlePCfSPj4wpZBOOSfj2Rlh7-rugDi4ACesSk,1068
+comet_labs-0.1.2.dist-info/METADATA,sha256=7fvgZ0Vy53azn3RPCMlwecLAkzSXRbVZhc58XMdy2bU,1005
+comet_labs-0.1.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+comet_labs-0.1.2.dist-info/entry_points.txt,sha256=_5unio0RK8BIIJEFLSYIKMKAiH9FeJpBTUzy2QZZ_xY,50
+comet_labs-0.1.2.dist-info/RECORD,,
