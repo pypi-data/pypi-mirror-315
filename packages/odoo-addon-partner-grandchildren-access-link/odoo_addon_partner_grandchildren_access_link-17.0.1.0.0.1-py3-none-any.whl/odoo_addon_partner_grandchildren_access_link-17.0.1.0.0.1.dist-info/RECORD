@@ -1,0 +1,14 @@
+odoo/addons/partner_grandchildren_access_link/README.rst,sha256=2DW8AsZ8wu3apNtlIXshMCvfygEGBen94_VCYhURxb4,2591
+odoo/addons/partner_grandchildren_access_link/__init__.py,sha256=FNlMPDojEQpwvHZlf1L1FiQCxOYOu7R3lMKD6aozhvU,65
+odoo/addons/partner_grandchildren_access_link/__manifest__.py,sha256=eDof7OO2F7dv2kNFksw5HDw3bAJqi7Nt5VX0yDieJvw,674
+odoo/addons/partner_grandchildren_access_link/i18n/es.po,sha256=nfBgVxPw43I4snWoUDDGQn6oaZZKODXCgdE2m6VTDa8,673
+odoo/addons/partner_grandchildren_access_link/readme/CONTRIBUTORS.md,sha256=vdTcwM0_6IuPK1jIEMuLS9tYXVdeqoRcW38GgFp2UV8,136
+odoo/addons/partner_grandchildren_access_link/readme/DESCRIPTION.md,sha256=_DgKzRPOgcrrO8psJESxDZJM6bkPGndRXnW0mYYlM3s,179
+odoo/addons/partner_grandchildren_access_link/readme/USAGE.md,sha256=Q-dtlx1b9mlOL0rp9C7qlgZV5a53_oLt0dxw3IIqcuc,171
+odoo/addons/partner_grandchildren_access_link/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/partner_grandchildren_access_link/static/description/index.html,sha256=3fC7r1Z8QIiDPtNPDA3vbtPoHp1L_XWxvCyr7lTuya8,12095
+odoo/addons/partner_grandchildren_access_link/views/res_partner.xml,sha256=U3mp9EMmf9o4X5w36uLx5gNFexau9LIQ-h4mlTC4QKk,1196
+odoo_addon_partner_grandchildren_access_link-17.0.1.0.0.1.dist-info/METADATA,sha256=Pf0MhtA44wZJUjN-RV-Fnn_X_MVYpHyx3fAv7066KjM,3314
+odoo_addon_partner_grandchildren_access_link-17.0.1.0.0.1.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_partner_grandchildren_access_link-17.0.1.0.0.1.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_partner_grandchildren_access_link-17.0.1.0.0.1.dist-info/RECORD,,
