@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+postgres_chat/__init__.py
+postgres_chat/postgres_chat.py
+postgres_chat.egg-info/PKG-INFO
+postgres_chat.egg-info/SOURCES.txt
+postgres_chat.egg-info/dependency_links.txt
+postgres_chat.egg-info/requires.txt
+postgres_chat.egg-info/top_level.txt
