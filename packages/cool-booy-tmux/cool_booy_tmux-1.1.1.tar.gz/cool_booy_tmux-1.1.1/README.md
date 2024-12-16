@@ -1,0 +1,69 @@
+![Coolbooy's Logo](https://imgur.com/zPUylZh.jpeg)
+
+# cool-booy-tmux
+
+**cool-booy-tmux** is a simple yet powerful tool to set up and enhance your tmux configuration with a pre-defined status bar and useful system information. This tool is specially designed for Android (Termux) and Linux users to improve their terminal experience.
+
+---
+
+## 🚀 Features
+
+- **Automated tmux Setup**  
+  Easily configure tmux with status bar settings such as:
+  - 📅 Date and Time
+  - 🔋 Battery Percentage
+  - ⚙️ System Uptime and Load Average
+
+- **Beginner-Friendly**  
+  A simple command-line interface with options for setup, help, and version display.
+
+- **Cross-Platform Compatibility**  
+  Fully compatible with Termux (Android) and Linux environments.
+
+- **Custom tmux Theme**  
+  Automatically generates a `.tmux.conf` with beautiful themes and enhanced usability.
+
+---
+
+## 💻 Installation
+
+### Prerequisites
+
+Before using **cool-booy-tmux**, make sure your environment meets the following requirements:
+
+- **Python 3.6+**  
+  Ensure Python is installed on your system.
+
+- **Termux or Linux Environment**  
+  Works seamlessly on both platforms.
+
+- **colorama Library**  
+  Install the `colorama` package by running:
+  ```bash
+  pkg install tmux  
+  pip install colorama
+  pip install cool-booy-tmux  
+  ## 📋 Usage
+
+To use **cool-booy-tmux**, use the following options:
+
+### Options:
+- **-h**, **--help**  
+  Show this help message.
+  
+- **-s**, **--setup**  
+  Set up the tmux configuration.
+  
+- **-v**, **--version**  
+  Show the version of the tool.
+
+### Example:
+```bash
+cool-booy-tmux -h
+cool-booy-tmux -s
+cool-booy-tmux -v
+  
+  ## ✅ Developed By:
+
+SL Android Official ™ 🇱🇰 Team
+We are proud to present this tool created by IM COOL BOOY

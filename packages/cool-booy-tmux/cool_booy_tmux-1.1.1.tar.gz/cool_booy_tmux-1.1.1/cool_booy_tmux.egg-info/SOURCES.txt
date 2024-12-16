@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+cool_booy_tmux/__init__.py
+cool_booy_tmux/config.py
+cool_booy_tmux/main.py
+cool_booy_tmux/my_tmux_config.py
+cool_booy_tmux/utils.py
+cool_booy_tmux/version.py
+cool_booy_tmux.egg-info/PKG-INFO
+cool_booy_tmux.egg-info/SOURCES.txt
+cool_booy_tmux.egg-info/dependency_links.txt
+cool_booy_tmux.egg-info/entry_points.txt
+cool_booy_tmux.egg-info/requires.txt
+cool_booy_tmux.egg-info/top_level.txt
