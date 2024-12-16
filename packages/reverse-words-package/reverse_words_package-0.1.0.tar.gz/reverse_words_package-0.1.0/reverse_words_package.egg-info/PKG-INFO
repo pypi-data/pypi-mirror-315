@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: reverse-words-package
+Version: 0.1.0
+Summary: A Python package to reverse words in a string while preserving non-alphabetic characters.
+Home-page: https://github.com/your_username/reverse_words_package
+Author: Ваше Ім'я
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# reverse-words-package
+
+РџР°РєРµС‚ Python РґР»СЏ РїРµСЂРµРІРµСЂС‚Р°РЅРЅСЏ СЃР»С–РІ Сѓ СЂСЏРґРєСѓ Р·С– Р·Р±РµСЂРµР¶РµРЅРЅСЏРј РЅРµР°Р»С„Р°РІС–С‚РЅРёС… СЃРёРјРІРѕР»С–РІ.
+
+## Installation
+
+```bash
+pip install reverse-words-package

@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+reverse_words/__init__.py
+reverse_words/reverse.py
+reverse_words_package.egg-info/PKG-INFO
+reverse_words_package.egg-info/SOURCES.txt
+reverse_words_package.egg-info/dependency_links.txt
+reverse_words_package.egg-info/top_level.txt
+tests/__init__.py
+tests/test_reverse.py
