@@ -1,0 +1,3 @@
+
+class SMessage:
+    pass
