@@ -1,0 +1,11 @@
+taskgroup/__init__.py,sha256=5yoAJZIKnHT5wAGpvt2WqBoPQcotDvTg4AOCF7OdyNk,294
+taskgroup/install.py,sha256=xVhA9vF6c-Xz6fcCT_dBPv_xNGnvypI7iwvx5cV_JUQ,3347
+taskgroup/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taskgroup/runners.py,sha256=k3ZvWil4ivGM5Xq-25D6fIUkEzWAMJgpy1hjwAiAiFU,8333
+taskgroup/taskgroups.py,sha256=NdUj_cHV8er8q9m8czNvF01Z7uAEancl3sk7NfjLrao,13626
+taskgroup/tasks.py,sha256=Bv7Y7WGcVRWBFjfPR60_XqYtxhXvdal1NOdIZOPhL5c,2917
+taskgroup/timeouts.py,sha256=JPvxebqbsRarodYmXI7BBukRJnNAGQKQNzlb9z6Q9uE,6441
+taskgroup-0.2.0.dist-info/LICENSE,sha256=Et7Rm8VNckzL84zplf1943hG90TtdI_u4sqg053T9Vo,1082
+taskgroup-0.2.0.dist-info/WHEEL,sha256=ssQ84EZ5gH1pCOujd3iW7HClo_O_aDaClUbX4B8bjKY,100
+taskgroup-0.2.0.dist-info/METADATA,sha256=YE2C9w2e6XDGoV2sdM04dURfb1XjspJwRW4bISgWwqo,3555
+taskgroup-0.2.0.dist-info/RECORD,,
