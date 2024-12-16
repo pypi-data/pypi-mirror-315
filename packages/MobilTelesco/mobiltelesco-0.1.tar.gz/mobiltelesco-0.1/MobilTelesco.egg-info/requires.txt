@@ -1,0 +1,7 @@
+numpy
+opencv-python
+tifffile
+pytest
+imageio
+pyexiv2
+pandas
