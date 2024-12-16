@@ -1,0 +1,8 @@
+reverse_words/__init__.py,sha256=OUsnyYbBWe954KUa51DyU0fqlGvaENW7emoI7kSHekM,34
+reverse_words/reverse.py,sha256=5JPMpi96yhacb_5CScjRAjRrjPFdnUrOFnjKACoy9_Q,1856
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_reverse.py,sha256=hR6KK3V4mNMVs6aXQOoeC4WVcDfZYZ-HqYOSARFd6es,764
+reverse_words_package-0.1.1.dist-info/METADATA,sha256=2CQESCXbs0mAqDRNLRwemD7p4AzlgWpVKahNzEpOaMA,887
+reverse_words_package-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+reverse_words_package-0.1.1.dist-info/top_level.txt,sha256=cwePa7Djx7vYdzd4MPrpFHmpO7a6xCy-9V22saFkGCo,20
+reverse_words_package-0.1.1.dist-info/RECORD,,
