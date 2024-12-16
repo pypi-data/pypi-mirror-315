@@ -1,0 +1,9 @@
+logging_with_context/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logging_with_context/adapters.py,sha256=oB7T-ao1993uK8JiJOuzb9HtbMLU604JiTi1eRBIpzA,2616
+logging_with_context/filters.py,sha256=tUi0H94WP1Ld9TTFtIyVmUVVQqYtKMCPQ0Ei6XoymKg,858
+logging_with_context/formatters.py,sha256=MpgbIgJIH17ft3uaa9wbmV6GFQnNFdzCbK69cyMyquQ,3747
+logging_with_context/global_context.py,sha256=w1hqqO6xWuI87mCsmXM70pRO2tDR52rMWHUZ_PG3Q5g,2961
+logging_with_context/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logging_with_context-0.1.0.dist-info/METADATA,sha256=ZoC5DhELpx51cwZ6wwLKoT95okMWZArlhx_QT3bSOJI,6798
+logging_with_context-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+logging_with_context-0.1.0.dist-info/RECORD,,
