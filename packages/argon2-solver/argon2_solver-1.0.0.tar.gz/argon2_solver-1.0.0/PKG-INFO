@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: argon2-solver
+Version: 1.0.0
+Summary: A solver for Argon2-based challenges.
+Home-page: https://github.com/Klez2003/argon2-solver
+Author: Klez
+Author-email: klez@cock.li
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Argon2 Solver
+
+### A Python package to solve Argon2-based challenges.
+
+### **Installation**:
+    ```sh
+    pip3 install .
+    ```
+### **Usage**:
+    Run the script using:
+    ```sh
+    argon2-solver "memory_cost:time_cost:salt:difficulty"
+    ```
