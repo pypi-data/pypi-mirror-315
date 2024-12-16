@@ -1,0 +1,8 @@
+Sitemap: https://structures.live/sitemap.xml
+
+User-Agent: *
+Disallow: /inventory/*/*/
+
+User-agent: GPTBot
+Disallow: /
+
