@@ -1,0 +1,226 @@
+Metadata-Version: 2.1
+Name: FoxitPDFSDKPython3
+Version: 10.1.0
+Summary: Foxit PDF SDK For Python3
+Home-page: https://developers.foxit.com
+Author: Foxit Software Inc.
+Author-email: support@foxitsoftware.com
+License: Other/Proprietary License (Commercial)
+Keywords: PDF SDK,PDF Library,PDF render,PDF view,PDF print,PDF Edit,PDF convert
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/plain
+License-File: legal.txt
+
+Foxit PDF SDK v10.1.0  Release Date: 16 Dec. 2024
+==================================================================
+
+New Features and Enhancements
+----------------------------------
+**PDF3D**
+- Support for retrieve and preset 3D views.
+- Support for default view reset.
+  New APIs:
+  - `GetPresetViewList()`
+  - `ApplyPresetView()`
+  - `ResetDefaultView()`
+
+**Compliance**
+- Introduced preflight functionality supporting PDF/E and PDF/X standards.
+  New Classes:
+  - `Preflight`
+  - `PDFXCompliance`
+  - `PDFECompliance`
+
+**Page Analyzer**
+- Detect scanned pages.
+  New API:
+  - `PDFPage::IsScanned()`
+
+**OCR**
+- Enhanced OCR configuration options, including image-based text extraction mode, skew correction, image denoising, and CPU core usage mode.
+  New Class:
+  - `foxit::addon::ocr::OCRConfig`
+  Updated API:
+  - `Initialize(...is_shared_cpu_cores_mode)`
+
+**Annotation**
+- Support for executing JavaScript-based sub-actions in link annotations.
+- Added separate transparency settings for border and fill colors.
+- Added the ability to retrieve annotations by unique IDs.
+  Updated API:
+  - `ExecuteJavaScriptAction(JavaScriptAction)`
+
+  New APIs:
+  - `SetBorderOpacity()`, `GetBorderOpacity()`
+  - `SetFillOpacity()`, `GetFillOpacity()`
+  - `GetAnnotsByIdArray()`
+
+**Images**
+- Retrieve image orientation.
+- Image object creation from Type3 text object.
+- Clone 1bpp bitmap from the page image object.
+  New API:
+  - `GetOrientation()`
+  - `ImageObject::CreateFromType3TextObject()`
+  - `ImageObject::CloneBitmap (page,graphics_objects)`
+
+**Fonts**
+- Improved font mapping with an overloaded callback for font family names
+  New API:
+  - `FontMapperCallback::MapFont()`
+
+**Rendering**
+- Render PDF to PDF print devices on Linux.
+- Support for rendering PDF pages to 1bpp bitmap.
+  New API:
+  - `Renderer(print_param,dest_pdf_path)`
+
+**Search**
+- TextSearch supports regular expressions.
+  Updated API:
+  - `TextSearch::SetPattern(key_words,is_regex_search)`
+
+**Text**
+- Calculate the required PDF Rect size for strings in RichTextStyle before adding text.
+- RichTextStyle allows negative values for char_space and word_space in .
+  New API:
+  - `PDFPage::CalculateNewRectForText()`
+
+  Updated API:
+  - `Page::AddText RichTextStyle`
+
+**Watermark**
+- Added tiled watermark behavior flags, including printing/display settings.
+  Updated API:
+  - `TiledWatermarkSettings(flags)`
+
+**PrintManager**
+- Enhanced margin handling for print jobs.
+  New APIs:
+  - `SetJobPrintUnitType()`, `GetJobPrintUnitType()`
+  - `SetJobLeftMargin()`, `GetJobLeftMargin()`
+  - `SetJobRightMargin()`, `GetJobRightMargin()`
+  - `SetJobTopMargin()`, `GetJobTopMargin()`
+  - `SetJobBottomMargin`, `GetJobBottomMargin()`
+
+**DWG2PDF**
+- Track conversion progress and control output logs.
+- Support for color conversion policies.
+  New Class:
+  - `DWG2PDFProgressCallback`
+  Updated API:
+  - `DWG2PDFSettingData::is_output_progress`
+  - `DWG2PDFSettingData::progress_callback`
+  - `DWG2PDFSettingData::color_policy`
+
+**LibreOffice2pdf**
+- Support for multi-threaded conversion via binary engine on Linux.
+  Updated APIs:
+  - `Convert::From[Word][Excel][PowerPoint](...fx_binary_engine_path, LibreOffice_User_Profile)`
+
+**Foxit PDF2Office**
+- Support for library initialization using a binary program for improved conversion flexibility.
+- Introduced more conversion options such as insert page breaks, remove trailing spaces, and output images.
+- Support for restricted PDF files conversion.
+  Updated APIs:
+  - `PDF2Office::Initialize(library_path,fx_binary_program_path)`
+  - `PDF2WordSettingData(...enable_generate_page_rendered_break)`
+  - `PDF2OfficeSettingData (...enable_trailing_space,include_images,)`
+
+  New Class and API:
+  - `ConvertCheckCallback`
+  - `SetConvertCheckCallback(convert_check_callback)`
+
+**Foxit Office2PDF**
+- Officially integrated Foxit Office2PDF as an add-on.
+- Support for outline conversion in Word2PDF.
+- Introduced wordbook conversion options in Excel2PDF.
+  
+  New Class:
+  - `Word2PDFConfig`
+  - `Excel2PDFConfig`
+
+**API Performance Improvements**
+- Significantly improved the Optimizer's performance for documents with a large number of paths. Processing time for the same document has been reduced from 7 minutes to 1 second.
+- Greatly enhanced the efficiency of importing files with AcroForms using StartImportPagesFromFilePath. For a 1000-page AcroForm file, the processing time has been reduced from nearly 14 hours to about 20 seconds.
+	
+Deprecated Features
+---------------------------------------------------------------
+- Deprecated `ImageObject::CloneBitmap (Graphics_Objects)` API.		
+
+BugFixes
+---------------------------------------------------------------
+**Table-related**
+- Fixed an issue where merging cells with `AddTableToPage()` caused errors.
+- Resolved a problem where the fill color did not cover the entire cell when inserting tables using `insertTablePagesToDocument`.
+
+**Page Operations and Importing**
+- Fixed an issue where splitting pages with `StartImportPages()` resulted in scrambled content.
+- Resolved a data import failure caused by incorrect XML file format detection when using `ImportFromXML()`.
+- Fixed a bug where form data remained after removing AcroForm pages with `RemovePage()`.
+- Addressed an issue where inserting new PDF pages failed due to inconsistent handling of `CropBox`.
+
+**Text Processing**
+- Fixed an issue where extracting text with Chinese characters using `GetPageText()` resulted in errors.
+- Resolved text extraction order issues with `GetPageText()` by optimizing the text extraction algorithm.
+- Fixed display errors when adding Arabic text using `AddText()`.
+- Corrected the RTL display order issue when setting Arabic text with `SetText()`.
+
+**Form Handling**
+- Fixed an issue where `PDFPage::Flatten()` failed to flatten static XFA form field data.
+- Resolved an issue where dynamic XFA form fields did not retain their state correctly when flattened to PDF.
+- Fixed a problem where dynamic XFA documents could not be loaded after triggering certain callback events.
+- Addressed an issue where insufficient integer precision led to incorrect form field calculations.
+
+**Search Functionality**
+- Fixed an issue where incorrect search results were returned due to the wrong calculation of search keyword order.
+- Resolved an exception issue when calling `ReplaceNext()`.
+
+**Rendering and Display**
+- Fixed an issue where dashed lines were displayed incorrectly in prepress previews by properly handling fill and stroke colors.
+- Resolved prepress preview anomalies caused by separating annotation and page rendering.
+- Optimized rendering to fix display issues with background images in paths with soft mask pattern fills.
+- Fixed an issue where images inserted via `AddImage()` were mirrored due to missing rotation handling.
+- Corrected the problem where graphics object became invisible after calling `SetMatrix()` due to ignored clipping paths.
+
+**Crash Fixes**
+- Fixed a crash when opening PDF files containing 3D elements.
+- Resolved a crash caused by batch conversion of PDF to PostScript using the `Renderer` class.
+- Fixed a crash on Linux when creating new `PDFDoc` objects due to concurrent access.
+
+**Annotations and Watermarks**
+- Fixed an issue where annotations in PDF files with missing destination (Dest) information could not retrieve annotation actions correctly.
+- Fixed a problem where watermarks were not written to extracted pages after calling `StartExtractPages()`.
+
+**Printing-related**
+- [Demo] Fixed an issue in the `pdfprint` demo where printing PDFs with soft masks in the background caused memory issues.
+- [PrintManager] Corrected the "Unknown" status display when using the demo print function by adjusting `GetJobStatus()`.
+- [PrintManager] Fixed an issue where print tasks were waiting or unable to complete due to the printer failing to call the `GetJob()` function.
+
+**Optimizer and Performance**
+- Fixed data loss during optimization due to incorrect font stream handling.
+- Resolved garbled text issues during DWG to PDF conversion by supplementing missing font resources, to esnure font integrity.
+- Adjusted CMYK image handling to fix color inconsistencies caused by forced conversion to RGB in TIFF images.
+- Resolved content loss during TIFF to PDF conversion by improving TIFF data writing.
+- Fixed data loss and exceptions in the verification results by improving the `LTVVerifier::Verify()` logic.
+- Fixed table recognition error by enhancing the layout recognition engine.
+
+
+
