@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-toolhouse = mcp_server_toolhouse:main
