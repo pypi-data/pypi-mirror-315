@@ -1,0 +1,17 @@
+mdns_client/__init__.py,sha256=hkUhvMxAY7PjIgmvq9cm4O2EtiB7vT1t7mAaoZmGQcI,60
+mdns_client/client.py,sha256=FU_m1Z6uwukGs6Xg4fPE6ZZNtB3BLTJnFp3-pVqcSgs,9028
+mdns_client/constants.py,sha256=Bmv-R6XBb0rJnvDAnt-YMQmqKj368K0BN5ea7WiMV_Y,712
+mdns_client/parser.py,sha256=SyEb0V-8HZ-z1MV_O7l6o5wtwbd0bF3YfM_reNRXdgg,6641
+mdns_client/responder.py,sha256=y--s4ptmLR_ALIgSSj46qu_b_UMxuL1Ybzyr-_1xzfo,9095
+mdns_client/structs.py,sha256=JKRqhSnd8Q2gDFGHQ-9O4zwd1mJkTEIge8dpQ62wuoU,5739
+mdns_client/util.py,sha256=ahfa8UkCzUwkTLA-f7YelzNUn2ful04KKo0d1mrTqBM,4477
+mdns_client/service_discovery/__init__.py,sha256=EOmnjQ2kucr-ViOZNZ5t05Cw59KySLCwiT2I5_Lntbk,166
+mdns_client/service_discovery/discovery.py,sha256=2eKtNNywl7m4A33gfb8ZUGdfMwp1khRqnvlvv7ApdI4,11224
+mdns_client/service_discovery/service_monitor.py,sha256=l_RdwlfnOQxNcMenJCXbcCgL6rEeIEm1AORNvTqO6NY,402
+mdns_client/service_discovery/service_response.py,sha256=g77p9lvpDSzCO9XuaswBf7mSvb2-D51lQ4lc51rPQ8A,2542
+mdns_client/service_discovery/txt_discovery.py,sha256=aISEFSjbuY-i1k7_0D-SlV8zZl49tWlqC5a76LAaobg,1375
+micropython_mdns-1.5.1.dist-info/METADATA,sha256=zjhpmQD1rfzZkBx994ByHNE7Kg4we8Bjq-ExG2NJr4I,5923
+micropython_mdns-1.5.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+micropython_mdns-1.5.1.dist-info/top_level.txt,sha256=pGLRq4FH0Hwwwcmi7llDVzA_VXoqWoU5l9TBEa-xL5U,17
+micropython_mdns-1.5.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+micropython_mdns-1.5.1.dist-info/RECORD,,
