@@ -1,0 +1,17 @@
+# Project specific excludes
+outputs/
+
+# Editor files
+.idea/
+.vscode/
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
