@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+python_sphinx_doc.egg-info/PKG-INFO
+python_sphinx_doc.egg-info/SOURCES.txt
+python_sphinx_doc.egg-info/dependency_links.txt
+python_sphinx_doc.egg-info/requires.txt
+python_sphinx_doc.egg-info/top_level.txt
+python_sphinx_doc.egg-info/zip-safe
+sphinx_doc/__init__.py
+sphinx_doc/autodoc.py
+sphinx_doc/py.typed

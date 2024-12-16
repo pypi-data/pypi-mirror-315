@@ -1,0 +1,4 @@
+json_strong_typing
+pysqlsync
+sphinx
+sphinx-design
