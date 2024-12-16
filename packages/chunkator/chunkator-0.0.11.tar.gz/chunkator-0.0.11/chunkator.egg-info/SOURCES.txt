@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chunkator/__init__.py
+chunkator/split.py
+chunkator.egg-info/PKG-INFO
+chunkator.egg-info/SOURCES.txt
+chunkator.egg-info/dependency_links.txt
+chunkator.egg-info/top_level.txt
