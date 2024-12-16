@@ -1,0 +1,9 @@
+README.md
+setup.py
+semantic_chunking/__init__.py
+semantic_chunking/main.py
+semantic_chunking.egg-info/PKG-INFO
+semantic_chunking.egg-info/SOURCES.txt
+semantic_chunking.egg-info/dependency_links.txt
+semantic_chunking.egg-info/requires.txt
+semantic_chunking.egg-info/top_level.txt
