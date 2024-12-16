@@ -1,0 +1,152 @@
+Metadata-Version: 2.1
+Name: toexcel
+Version: 1.0.3
+Summary: 多场景数据转换至 Excel 表格工具。
+Home-page: https://github.com/gary714/toexcel
+Author: gary
+Author-email: mepmb@sina.com
+License: MIT
+Project-URL: Homepage, https://github.com/gary714/toexcel
+Project-URL: Documentation, https://github.com/gary714/toexcel
+Project-URL: Source, https://github.com/gary714/toexcel
+Keywords: Execl
+Platform: Linux
+Platform: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+Requires-Dist: openpyxl==3.0.9
+Requires-Dist: pandas==1.1.5
+Requires-Dist: numpy==1.19.5
+Requires-Dist: xlwt>=1.3.0
+Requires-Dist: XlsxWriter>=3.0.1
+
+Excel 数据导出工具 toexcel
+==========================
+
+- 在数据分析和报告制作中，将数据导出到 ``Excel`` 表格是一种常见需求。
+
+- 与控制台输出相比，``Excel`` 表格提供了更加直观和易于操作的界面。
+
+- 在一些特定场景下，如需要对数据进行进一步编辑或提交给他人时，将数据以 ``Excel`` 格式呈现是非常必要的。
+
+功能特性
+--------
+
+- **支持直接生成 ``Excel`` 表格**。依托 ``Openpyxl`` 库作为底层实现，可灵活处理 ``Excel`` 文件的生成与编辑。
+
+- **结合 ``Pandas`` 强大的数据处理能力**。在处理大量数据时，通过 ``Pandas`` 进行快速操作，并可以直接导出至 ``Excel`` 文件中。
+
+使用场景举例
+------------
+
+- **自动设置列宽**：根据内容自动调整单元格的列宽，以适应不同长度的数据显示需求。
+
+- **数据格式化**：预先定义好单元格样式和格式，确保导出后的数据符合阅读习惯和美观标准。
+
+- **个性化定制**：支持通过简单配置来满足具体的文件命名、表格布局等个性化需求。
+
+开始使用
+--------
+
+一般场景生成 Excel 表格
+~~~~~~~~~~~~~~~~~~~~~~~
+
+- 如果您想要创建一个开头直接是数据行不包含字段名（即没有表头）的 ``Excel`` 文件，可以按照以下示例操作：
+
+  .. code:: bash
+
+     from toexcel.pyxl import create_excel
+
+     create_excel(
+         filename="test.xlsx",
+         rows=[
+             [0, 1, 2],
+             [3, 4, 5],
+             [6, 7, 8]
+         ]
+     )
+
+- 上述代码会生成一个如图所示的无表头 ``Excel`` 文件。
+
+- 若需要在数据上方添加一行作为字段名或称作表头，可参照下面代码示例进行操作：
+
+  .. code:: bash
+
+     from toexcel.pyxl import create_excel
+
+     create_excel(
+         filename="test.xlsx",
+         field_names=["num1", "num2", "num3"],
+         rows=[
+             [0, 1, 2],
+             [3, 4, 5],
+             [6, 7, 8]
+         ]
+     )
+
+- 以这种方式生成的 ``Excel`` 文件将会包含您指定的字段名。
+
+- 若需创建后缀名为 ``.xls`` 的 ``Excel`` 表格，您需要更改导入的模块名，并按照如下方式调用函数：
+
+  .. code:: bash
+
+     from toexcel.pyxlwt import create_excel
+
+     create_excel(
+         filename="test.xls",
+         field_names=["num1", "num2", "num3"],
+         rows=[
+             [0, 1, 2],
+             [3, 4, 5],
+             [6, 7, 8]
+         ]
+     )
+
+- 请注意，在调用函数时，确保文件名参数 ``filename`` 的后缀与所需的格式相匹配。
+
+使用 pandas2excel 函数将 DataFrame 导出到 Excel 文件
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- 在数据分析和数据管理的过程中，经常需要将处理后的结果以表格形式呈现和共享。
+
+- ``Pandas`` 是 ``Python`` 中一个强大的数据处理工具集，它提供了简洁的 ``API`` 来处理和分析结构化数据。
+
+- 在某些情况下，特别是当涉及到大规模数据集时，我们可能需要将 ``Pandas`` 数据框（ ``DataFrame`` ）导出到 ``Excel`` 格式以便进一步的分享和使用。
+
+- 以下是一个使用 ``Pandas`` 将数据导出为 ``Excel`` 表格的示例。
+
+- 此示例演示了如何创建一个包含个人信息（姓名、年龄、城市）的简单数据集，并利用自定义函数 ``pandas2excel()`` 将其写入 ``Excel`` 文件中：
+
+  .. code:: 
+
+     import pandas as pd
+     from toexcel.pd2xl import pandas2excel
+
+     data = {
+         "Name": ["Alice", "Bob", "Charlie"],
+         "Age": [24, 27, 22],
+         "City": ["New York New York New York", "Los Angeles", "Chicago"]
+     }
+
+     df = pd.DataFrame(data)
+     pandas2excel(
+         filename="test.xlsx",
+         df=df,
+         header=False,
+         engine="xlsxwriter"
+     )
+
+注意事项
+--------
+
+- 确保在使用本工具前已正确安装了所有必要的依赖库。
+
+- 在传递给函数的数据中，字段名称和每一行数据都应以列表形式提供。
+
+- 如果遇到任何问题或需要技术支持，请参阅相关文档或联系我们。
+
+- 通过遵循上述说明，您可以轻松地根据自己的需求生成标准格式的 ``Excel`` 表格。我们致力于持续优化用户体验，并欢迎任何形式的反馈和建议。
