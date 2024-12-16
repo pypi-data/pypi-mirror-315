@@ -1,0 +1,3 @@
+[console_scripts]
+_mmt = lightning_sdk.cli.mmt:main_cli
+lightning = lightning_sdk.cli.entrypoint:main_cli
