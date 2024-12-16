@@ -1,0 +1,10 @@
+pyproject.toml
+llm4shell/__init__.py
+llm4shell/llm.py
+llm4shell/utils.py
+llm4shell.egg-info/PKG-INFO
+llm4shell.egg-info/SOURCES.txt
+llm4shell.egg-info/dependency_links.txt
+llm4shell.egg-info/entry_points.txt
+llm4shell.egg-info/requires.txt
+llm4shell.egg-info/top_level.txt
