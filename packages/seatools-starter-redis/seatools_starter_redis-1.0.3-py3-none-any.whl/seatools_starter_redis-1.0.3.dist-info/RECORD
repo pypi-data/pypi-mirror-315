@@ -1,0 +1,7 @@
+seatools/ioc/starters/redis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seatools/ioc/starters/redis/redis.py,sha256=R_7OrC3LvujoXISXR3RFTnesY-OF6tMWVwrnJ7FtuOM,1165
+seatools_starter_redis-1.0.3.dist-info/LICENSE,sha256=c9ELyC2TG-Upe7XFGE3HWMLC0mibnbM04JfDTzHQ5cs,1089
+seatools_starter_redis-1.0.3.dist-info/METADATA,sha256=CHoaqxDBoUsvY_tQXb6AQzSClt2taueSsk0pQkn5RO8,650
+seatools_starter_redis-1.0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+seatools_starter_redis-1.0.3.dist-info/top_level.txt,sha256=RzPcP50xO2ucDJY7n5WSFeZKlGG_qfYUB-cBoOo2DPE,9
+seatools_starter_redis-1.0.3.dist-info/RECORD,,
