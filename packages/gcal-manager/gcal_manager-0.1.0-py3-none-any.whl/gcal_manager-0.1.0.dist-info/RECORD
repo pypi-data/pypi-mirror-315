@@ -1,0 +1,10 @@
+gcal_manager/__init__.py,sha256=_0-k14xl_vaKfUxY5y5CBawoTLD5FdPE-3XY-ZM_ED0,61
+gcal_manager/account.py,sha256=lBVyhn3l27qERzGjqxtJAiBl9p_ne94VSxozN8Oq9ak,429
+gcal_manager/calendar.py,sha256=tvu85SeYN9stsDU3p7JVG5Okl0PmC7zEPxNjZSuYhKI,463
+gcal_manager/context.py,sha256=39Wupo8UK5LmVWUUcG3PPnSEGCP_5hrjwj6n2tmQw_o,404
+gcal_manager/event.py,sha256=hwsGwCRAcCdZku_IJdE3wOvJ22LMIdjGw7IShSt5cyo,461
+gcal_manager/task.py,sha256=-mxv6O3aAeZCkMR95cXNdojjhzgMmlOypZE3vj_zmV4,471
+gcal_manager-0.1.0.dist-info/LICENSE,sha256=32PpI869oF8YxUdoj2z_tEgw6Y7y5hauCxav2mhFuXQ,1067
+gcal_manager-0.1.0.dist-info/METADATA,sha256=JhwitTFwsQI_rFBfpoXYM1VDbnOD3AIKUN4nO9gSdB0,514
+gcal_manager-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+gcal_manager-0.1.0.dist-info/RECORD,,
