@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "th3n1c3l1b"
+version = "0.1.2.02"
+description = "Common library for Th3N1c3Guy"
+authors = ["Th3N1c3Guy <vineetverma.it@gmail.com>"]
+
+[tool.poetry.dependencies]
+breeze-connect = "*"
+fastapi = "*"
+fastapi_utils = "*"
+numpy = "<2"
+pandas = "*"
+psycopg2-binary = "*"
+pyotp = "*"
+python = "^3.11"
+redis = "*"
+retry = "*"
+selenium = "*"
+sqlalchemy = "*"
+tqdm = "*"
+urllib3 = "<2"
+uvicorn = { extras = ["standard"], version = "*" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
