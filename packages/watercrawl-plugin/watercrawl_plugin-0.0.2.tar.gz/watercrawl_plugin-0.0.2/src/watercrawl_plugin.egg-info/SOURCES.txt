@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/watercrawl_plugin/__init__.py
+src/watercrawl_plugin/base.py
+src/watercrawl_plugin/pipeline.py
+src/watercrawl_plugin.egg-info/PKG-INFO
+src/watercrawl_plugin.egg-info/SOURCES.txt
+src/watercrawl_plugin.egg-info/dependency_links.txt
+src/watercrawl_plugin.egg-info/top_level.txt
