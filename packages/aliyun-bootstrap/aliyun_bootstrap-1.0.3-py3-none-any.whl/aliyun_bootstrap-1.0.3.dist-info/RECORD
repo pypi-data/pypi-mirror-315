@@ -1,0 +1,11 @@
+aliyun/bootstrap/__init__.py,sha256=QitKgDQ31w7e09hFmoeAhfECH9rZK50MYg1DLvk_ZEI,7120
+aliyun/bootstrap/acm.py,sha256=1DU6DfIH5aGr9Kn7Lu-vnjX-9CK6ezD_fpS7ZoEG8_M,5403
+aliyun/bootstrap/bootstrap_gen.py,sha256=vTSWfE3GLGLoXfpcWL0lO6T3o-EgK2_FuqaSsOiG4RI,8510
+aliyun/bootstrap/envs.py,sha256=UZTRPVYQhUfy-gnvHpaSbRt_Zjcs0k54H5g-uoTQKkA,3681
+aliyun/bootstrap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyun/bootstrap/utils.py,sha256=CRzJ0yiXVHuHdLgXgN1_OaX-yurAd4uk3cICFpvLC24,1298
+aliyun/bootstrap/version.py,sha256=KN4k0kK4upAUrEisVmuMiS4i-Q-eoiMSO2Mn6LMXR3s,600
+aliyun_bootstrap-1.0.3.dist-info/METADATA,sha256=eIMOn2_QYLFZBPzF2d1D3pd1h5METIj9rjehfs-1-_s,1130
+aliyun_bootstrap-1.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+aliyun_bootstrap-1.0.3.dist-info/entry_points.txt,sha256=yw8FfggYIHDMS9wtH-J4GECB8HKpT9AleNU3Jp77a6w,58
+aliyun_bootstrap-1.0.3.dist-info/RECORD,,
