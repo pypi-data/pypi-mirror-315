@@ -1,0 +1,24 @@
+[project]
+name = "cstation"
+version = "0.1.20"
+description = "Managing PerfectWork Platform Infrastracture"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "auto-click-auto>=0.1.5",
+    "click>=8.1.7",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+]
+
+[pypi]
+  username = "__token__"
+  password = "pypi-AgEIcHlwaS5vcmcCJGQ4NWIxMjc3LTQ2ODgtNDM1NS05MWU4LTZmOWYyYThlYWM1NgACEFsxLFsiY3N0YXRpb24iXV0AAixbMixbImJlNDQ1NTcwLTEwMWQtNDI0NC05NGM0LWNjMzk2ZTI1ODMyZCJdXQAABiA_1-giU82cjllkdzLoxZ2KL_WbsMjxyh2poh_NJSXEkg"
+
+[cstation]
+  repository = "https://upload.pypi.org/legacy/"
+  username = "__token__"
+  password = "pypi-AgEIcHlwaS5vcmcCJGQ4NWIxMjc3LTQ2ODgtNDM1NS05MWU4LTZmOWYyYThlYWM1NgACEFsxLFsiY3N0YXRpb24iXV0AAixbMixbImJlNDQ1NTcwLTEwMWQtNDI0NC05NGM0LWNjMzk2ZTI1ODMyZCJdXQAABiA_1-giU82cjllkdzLoxZ2KL_WbsMjxyh2poh_NJSXEkg"

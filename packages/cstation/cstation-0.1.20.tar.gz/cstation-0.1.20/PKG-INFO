@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: cstation
+Version: 0.1.20
+Summary: Managing PerfectWork Platform Infrastracture
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: auto-click-auto>=0.1.5
+Requires-Dist: click>=8.1.7
