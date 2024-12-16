@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+src/tonellishanks/__init__.py
+src/tonellishanks/tonellishanks.py
+src/tonellishanks.egg-info/PKG-INFO
+src/tonellishanks.egg-info/SOURCES.txt
+src/tonellishanks.egg-info/dependency_links.txt
+src/tonellishanks.egg-info/requires.txt
+src/tonellishanks.egg-info/top_level.txt
