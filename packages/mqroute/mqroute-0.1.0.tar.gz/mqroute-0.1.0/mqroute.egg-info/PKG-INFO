@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mqroute
+Version: 0.1.0
+Summary: MQRoute is a Python library designed to simplify working with MQTT
+Home-page: https://github.com/ehyde74/mqroute
+Author: ehyde74
+Author-email: 
+License: MIT License
+Project-URL: Homepage, https://github.com/ehyde74/mqroute
+Keywords: mqtt,asyncio,decorators
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paho-mqtt>=2.1.0
+Requires-Dist: typeguard>=4.4.1
+Requires-Dist: pytest>=8.3.4
