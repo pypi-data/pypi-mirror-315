@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: airbyte-databricks-cache
+Version: 0.0.0
+Summary: 
+Author: ossmht
+Author-email: ossmht@gmail.com
+Requires-Python: >=3.11,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: airbyte (>=0.21.0,<0.22.0)
+Requires-Dist: databricks-sql-connector (>=3.6.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# airbyte_databricks_cache
+
+Databricks cache implementation for PyAirbyte
+
+```sh
+# build via github actions
+
+# release
+git fetch --tags origin
+gh release create v0.1.2 --target master --generate-notes
+
+
+
+## manual addons
+# check long desc for pypi
+twine check dist/*
+```
+
