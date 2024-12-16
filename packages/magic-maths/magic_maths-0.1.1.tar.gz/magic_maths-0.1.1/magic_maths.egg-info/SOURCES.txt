@@ -1,0 +1,8 @@
+LICENSE
+README.md
+magic_math.py
+pyproject.toml
+magic_maths.egg-info/PKG-INFO
+magic_maths.egg-info/SOURCES.txt
+magic_maths.egg-info/dependency_links.txt
+magic_maths.egg-info/top_level.txt
