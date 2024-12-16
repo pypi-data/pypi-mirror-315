@@ -1,0 +1,2 @@
+[console_scripts]
+findprob = findprob.cli:app
