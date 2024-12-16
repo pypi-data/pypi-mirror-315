@@ -1,0 +1,10 @@
+pyproject.toml
+readme.md
+src/magiccionary/__init__.py
+src/magiccionary/magic.py
+src/magiccionary.egg-info/PKG-INFO
+src/magiccionary.egg-info/SOURCES.txt
+src/magiccionary.egg-info/dependency_links.txt
+src/magiccionary.egg-info/top_level.txt
+tests/test_magic_keep_keys.py
+tests/test_magic_remove_keys.py
