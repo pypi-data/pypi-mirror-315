@@ -1,0 +1,10 @@
+README.md
+setup.py
+stay_online/__init__.py
+stay_online/stay_online.py
+stay_online/word_file.txt
+stay_online.egg-info/PKG-INFO
+stay_online.egg-info/SOURCES.txt
+stay_online.egg-info/dependency_links.txt
+stay_online.egg-info/requires.txt
+stay_online.egg-info/top_level.txt
