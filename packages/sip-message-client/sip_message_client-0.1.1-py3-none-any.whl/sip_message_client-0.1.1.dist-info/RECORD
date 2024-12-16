@@ -1,0 +1,6 @@
+sip_message_client/__init__.py,sha256=rzrpMdunEdabEC70e-NBSKlz-wV1elKTH8GyInYwb8E,39
+sip_message_client/core/sip_message.py,sha256=BkOQaZUvlkaYi7SlwlpiDmsux6EQaMLtovHXyeqlm3Y,5578
+sip_message_client/core/sip_server_response.py,sha256=ZYU4J3xhD2VSaVlbLLlmOu460SarfX4GVge7eZtFbYc,1966
+sip_message_client-0.1.1.dist-info/METADATA,sha256=3zRVync0W8GfxdNAF1rmK1MEXNWSgSzTcWpfwbpcnuE,831
+sip_message_client-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sip_message_client-0.1.1.dist-info/RECORD,,
