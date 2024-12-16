@@ -1,0 +1,2 @@
+[console_scripts]
+des_run_simulation = main
