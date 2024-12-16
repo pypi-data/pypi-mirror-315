@@ -1,0 +1,13 @@
+nometa-0.1.1.dist-info/METADATA,sha256=TE-XCcqzLKPxTip_ZMMv9XUhptO4hy3vb1ug1ie5ODo,13398
+nometa-0.1.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+nometa-0.1.1.dist-info/entry_points.txt,sha256=MBxSilaazLuobE6s7eq9lCuBQOkLPsFcSsQ2_12gG08,64
+nometa-0.1.1.dist-info/licenses/LICENSE,sha256=hYrI1Ims-k43_iYP-j5nE6C5iyABBZWGH3Nj9HthZC8,9704
+nometa/__init__.py,sha256=ROx6UolAgF0h5j7Z04zzRCuBndYsYFAS7AbJLNpRpD8,3710
+nometa/__main__.py,sha256=_7wlvPAo7hr1ic1uV90UE47kUeAgufU3mm6BdzfV8Uo,3216
+nometa/properties/__init__.py,sha256=_J2QYtUlK4Ev4RsP44D6BfKg67Z2iWx04bVQ2Ir8WBw,2939
+nometa/properties/boolean.py,sha256=-K1rx1zxhw8TepQdDX79olFoViDtTKK-5QvzEtliB8A,2121
+nometa/properties/datetime.py,sha256=VY8m6McJ7KSwrS2AWc8oA_u5_bB5DOzOXAqvyAQQ-zs,1590
+nometa/properties/numeric.py,sha256=YLOmU868oh6u2dZOyBCdkOhL4mqOBK3tGf-m3pZ7gq8,1774
+nometa/properties/text.py,sha256=npQS-cl7_aTbAOxxpVYNOrpVe2GSAMO31oE6x21P6jI,1390
+nometa/sheet.py,sha256=X7oGrkqEV0UW1GKc8RMSOnr7IWy1UHk69F_DyVs7pP0,10655
+nometa-0.1.1.dist-info/RECORD,,
