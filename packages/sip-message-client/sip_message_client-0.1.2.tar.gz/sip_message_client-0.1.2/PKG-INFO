@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: sip-message-client
+Version: 0.1.2
+Summary: simple python socket app to send sms via sip server
+Author: Przemyslaw Bubas
+Author-email: bprzemys@cisco.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# sip_message
+sip client to send message to asterisk
+
+# example use
+
+```python
+sip_client = SipClient("10.0.0.15", 5060, "sipuser", "password")
+response = sip_client.message.send("+48555222111", "test message")
+```
+
+
+# command line install
+```
+cmd/install_command_line.sh
+```
+
+# command line usage 
+```
+sip_message --server=10.0.0.15 --username=sipuser --password=password --recipient=+48555222111 --message="test message"`
+```
+
+
