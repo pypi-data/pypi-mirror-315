@@ -1,0 +1,7 @@
+omproxy/__init__.py,sha256=C69ADlbQREQlR15trneyA2sk8x0-oH4rDAX5fsv19_U,22
+omproxy/cli.py,sha256=rKgp1sPLHOGAx7fKT9SvDZxtStOyRAFdveHmd4_qygM,1900
+omproxy/proxy.py,sha256=v4tGr9qFwsHbmEnSxm6Ggeeph7FFD1JImK2dpOqqR6w,7314
+omproxy-0.1.8.dist-info/METADATA,sha256=wd8gjncuGpv4zYjXoWu_Ljt0jfx628D1a9ecSQa_vvs,667
+omproxy-0.1.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+omproxy-0.1.8.dist-info/entry_points.txt,sha256=Pt74dCWcmo5ZgTJ6VQg8laQMVXe_dx-gJezP-AYVk60,45
+omproxy-0.1.8.dist-info/RECORD,,
