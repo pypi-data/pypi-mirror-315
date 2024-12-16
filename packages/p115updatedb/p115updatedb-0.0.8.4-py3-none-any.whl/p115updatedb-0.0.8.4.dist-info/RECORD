@@ -1,0 +1,16 @@
+LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+p115updatedb/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+p115updatedb/.query.py.swp,sha256=-hPm04QxECfyhibdT6-WBFVH-Vgj932wj75rpZVfT8Y,16384
+p115updatedb/.updatedb.py.swp,sha256=OGYvy_FcoRyHW2FkAi137_byBsn9IoijGwt4VRq6YEM,16384
+p115updatedb/__init__.py,sha256=euJzIALW2AEBV-n0hPQM-d--42iPFvDivDXOpmXoGCA,215
+p115updatedb/__main__.py,sha256=61c3z3sYS-itSUe1QibCCR-smHv0G8z6biui9CBnReg,3598
+p115updatedb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+p115updatedb/query.py,sha256=UdxCIfsXU7LgVqPBQ2sxd4l9IDH_s1wwpLu8Jl6dagc,26728
+p115updatedb/updatedb.py,sha256=O-CvjwwIPZkGyZgqeTCfcGEfywHPNzqSwAPC8BUi4ZI,31717
+p115updatedb/util.py,sha256=DNKFDo9HH1hWRz0ydR8u1c3ziGRwZQJJ0ziXjhhFfjI,1547
+p115updatedb-0.0.8.4.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+p115updatedb-0.0.8.4.dist-info/LICENSE_zh,sha256=q-myI00wQhoEr6FKz3tNdaQSXmUpfKM8we90pvvVGJM,28917
+p115updatedb-0.0.8.4.dist-info/METADATA,sha256=SHIemkXYjEUHoTnGLo6LK4jILrjRxWSNpR80mfwz63o,3810
+p115updatedb-0.0.8.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+p115updatedb-0.0.8.4.dist-info/entry_points.txt,sha256=JQdkGqVnJmmglUsy8HgDDrOcddoy9rKhwEd_AjJEZng,59
+p115updatedb-0.0.8.4.dist-info/RECORD,,
