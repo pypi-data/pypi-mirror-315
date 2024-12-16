@@ -1,0 +1,15 @@
+pyfiglet
+tqdm
+Faker
+mysql-connector-python
+requests
+signal
+shutil
+time
+os
+getpass
+sys
+subprocess
+logging
+argparse
+import_module
