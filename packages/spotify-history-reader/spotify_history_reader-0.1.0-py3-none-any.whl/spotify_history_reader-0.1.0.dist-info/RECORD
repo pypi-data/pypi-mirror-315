@@ -1,0 +1,7 @@
+spotify_history_reader/__init__.py,sha256=ouu-43o2p5zOUXCtYdUQ4ZMXWTUZ5cKpdULLhnBzBII,124
+spotify_history_reader/core.py,sha256=8yvJabA4TT2V_oH-1I-XjVGZdfsyYErmdhwshhjnIos,3955
+spotify_history_reader/reader.py,sha256=wqTrwBnpeESSmz2-ZccV4azc7u4ImQQZvrPAGIagclI,2210
+spotify_history_reader/token.txt,sha256=Ju1hE11g_O0kXt9J3pEvHKsSpQVTiEvRbNmJ_mZ1Llo,185
+spotify_history_reader-0.1.0.dist-info/METADATA,sha256=zQyptmfTYaOr8TisK1mgsVIN7a9ch28ejM2MKVIu6W8,1548
+spotify_history_reader-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+spotify_history_reader-0.1.0.dist-info/RECORD,,
