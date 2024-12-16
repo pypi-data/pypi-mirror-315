@@ -1,0 +1,13 @@
+pygrams/generators.py,sha256=j5toPw9dOpKRDO835PP8wJ2sYTYq9DN71MS-y6FJgg8,9688
+pygrams/getters.py,sha256=kpB12_V5Rp1UYEOb6lPtF5LEThrCi6d03OYjMZoC4_g,21466
+pygrams/haselements.py,sha256=clors3C_vynwM07f4MhglWfxt1xbo32ymG4zNIEhqKk,17186
+pygrams/issers.py,sha256=V57GIzNNQ516sH2noT5qocOiA-BwPljWpU_FpJtRN40,9044
+pygrams/others.py,sha256=IWbqn_-zUu-C5sjGqNhu6g2XB4B8XNoiX4hDo-3zNaA,5653
+pygrams/pygrams.py,sha256=ukwS94JQoegWPDeahyuSLdCvJ5XxhAlgxNJzxI2a2ZE,8390
+pygrams/searching.py,sha256=O9qjldNKpaycdfqgPmHQwsDvVFqzzfwNmBScMpCXEwI,4516
+pygrams/sorting.py,sha256=yvGcJywHGCUXGSsBma0WkVwseIxzTQzHXYBsrvE3Hr0,27458
+pygrams-0.0.22.dist-info/LICENSE,sha256=VQCry4x75obQrdTP-ygOYuMaj2pkE8NzWHMBUuAJ8vo,1084
+pygrams-0.0.22.dist-info/METADATA,sha256=AADOkE4514x8nAvRbZdrPxkcxCwlIzn-2BYfRmxEZoo,4582
+pygrams-0.0.22.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pygrams-0.0.22.dist-info/top_level.txt,sha256=t0UGdfsmk3H5NwyPJFNR2sVHnOs9ju7Cb_BpX2oKLi0,8
+pygrams-0.0.22.dist-info/RECORD,,
