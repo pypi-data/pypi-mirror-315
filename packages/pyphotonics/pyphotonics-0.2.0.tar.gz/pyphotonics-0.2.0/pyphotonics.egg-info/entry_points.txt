@@ -1,0 +1,3 @@
+[console_scripts]
+pyphotonics = pyphotonics.cli:execute_cli
+pyphotonics-incar = pyphotonics.cli:execute_incars
