@@ -1,0 +1,10 @@
+numpy>=1.9.0
+scipy>=1.4.0
+matplotlib
+pandas
+scikit-learn
+torch
+tqdm
+
+[docs]
+sphinx_bootstrap_theme
