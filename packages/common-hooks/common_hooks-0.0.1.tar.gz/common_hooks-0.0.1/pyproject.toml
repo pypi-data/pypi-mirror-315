@@ -1,0 +1,42 @@
+[project]
+name = "common-hooks"
+version = "0.0.1"
+description = "A simple way to create hooks (callbacks) to common packages and functions."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Fabian Peschke", email = "fabian-peschke@web.de" }
+]
+urls = { "Homepage" = "https://github.com/Fadope1/common-hooks" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+keywords = ["common-hooks", "callbacks", "python"]
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+httpx = ["httpx"]
+fastapi = ["fastapi"]
+all = ["httpx", "fastapi"]
+
+[tool.uv]
+default-groups = ["dev"]
+
+[tool.setuptools.packages.find]
+include = ["common_hooks", "common_hooks.*"]
+
+[dependency-groups]
+dev = [
+    "fastapi>=0.115.5",
+    "httpx>=0.28.0",
+    "pytest-httpx>=0.35.0",
+    "pytest>=8.3.4",
+    "uvicorn>=0.32.1",
+]
+

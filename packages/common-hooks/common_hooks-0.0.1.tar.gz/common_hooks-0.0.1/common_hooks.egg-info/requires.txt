@@ -1,0 +1,10 @@
+
+[all]
+httpx
+fastapi
+
+[fastapi]
+fastapi
+
+[httpx]
+httpx
