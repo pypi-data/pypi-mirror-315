@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: skyshapython
+Version: 0.1
+Summary: A Python library for utilities and wrappers for frequently used functionality.
+Home-page: https://github.com/skywalker94/skyshapython
+Author: Your Name
+Author-email: sharangdeo@protonmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
