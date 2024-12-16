@@ -1,0 +1,17 @@
+
+[kafka]
+aiokafka
+
+[postgres]
+asyncpg
+
+[pulsar]
+pulsar-client
+anyio
+
+[redis]
+asyncio-redis
+
+[test]
+pytest
+pytest-asyncio
