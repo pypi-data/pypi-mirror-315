@@ -1,0 +1,16 @@
+reCBZ/__init__.py,sha256=iN2sr-zJM6fh5IRRvu_LP5FRdXzzerlkEC_j0Sk9_jg,815
+reCBZ/__main__.py,sha256=sjUjb517zAutnV0GA80leiSy4AEk_yrB2DpfkZFyLzk,14201
+reCBZ/archive.py,sha256=je9tjGN6M8YU6R2M06Z1t-vqEQSnpnyEORREVOEZp2g,15622
+reCBZ/config.py,sha256=OiCjqnWuNxUqlwzkZivEZrBb9nDjiaITYMtqa6IZTSs,3045
+reCBZ/defaults.toml,sha256=hQvr9RbPWK1g2XyErWBoJlrZb6xInuRmiqO5oaCjZjo,1566
+reCBZ/epub.py,sha256=WNy58Mbiz3s_26tYtz3X1TW9tPuxL1oPbuOY7umWKjE,3863
+reCBZ/formats.py,sha256=UiRTMv7j_SEgplMpToWzdtwHCYgOOY-CBelTbnj5Pps,1574
+reCBZ/profiles.py,sha256=f8gdDKMiPExuYqkMjoMJInADG1kjxyn74bNSefeR6oM,2613
+reCBZ/util.py,sha256=07YiDQgQeQZfOF1SYzIa0NhJAv2OX_3i8z-9EIF-5JQ,4104
+reCBZ/wrappers.py,sha256=J3tzijKeiIwdsNqHG9shzzllpwdyZjlagT8mrbWsGms,7462
+reCBZ2-0.8.0.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+reCBZ2-0.8.0.dist-info/METADATA,sha256=QWnV8O3Qofqz7J-UgRIaAggR4kPUap8rzOMv6muIir0,8234
+reCBZ2-0.8.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+reCBZ2-0.8.0.dist-info/entry_points.txt,sha256=Lk-6PQQdhDYxkCLcJggFN8cs72W-zc7OZko7cyy2CE4,46
+reCBZ2-0.8.0.dist-info/top_level.txt,sha256=kF1LeF1iWjAVdJS5RVeTPEHNm43aqC_NzfsKImnagBI,6
+reCBZ2-0.8.0.dist-info/RECORD,,
