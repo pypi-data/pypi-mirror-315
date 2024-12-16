@@ -1,0 +1,6 @@
+mbapy>=0.10.2
+pyteomics
+pygame
+nicegui
+openbabel-wheel
+compas
