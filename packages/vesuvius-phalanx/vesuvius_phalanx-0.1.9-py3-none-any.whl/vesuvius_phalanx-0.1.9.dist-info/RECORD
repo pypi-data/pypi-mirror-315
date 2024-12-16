@@ -1,0 +1,15 @@
+assets/phalanx_banner.jpg,sha256=pPkFHfVJlX3EOvaK56P5y-GKHOKTCQvu3_rVKpJE6lY,983610
+phnx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phnx/cli.py,sha256=-eQwqufergw2APpaldm5jGJI9X8bWRIDD4XXRf3D130,1985
+phnx/downloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phnx/downloader/base.py,sha256=Ke3hYEpLKa9vBVzxEuuujD-I_DfWkRGi_vFuOWEo-zA,4467
+phnx/downloader/defaults.json,sha256=QExPQa8yJSEctQoRIw6F2pCJFfEbhntYvVNSRpsU6QM,124
+phnx/downloader/fragment_downloader.py,sha256=WsNPoIqlbXWHmDNwn4OO6J44IO8SwKfeEFoiOAa5K20,3136
+phnx/downloader/utils.py,sha256=0xVDFdhHQLP9o8SugIwMVL5BYyEuwR-9rY0H8NZRdis,8150
+phnx/downloader/volume_downloader.py,sha256=rKzkgoq1JF9_sKDlxDiU6CwSBLlWHdwWRmSE6nIw774,4203
+vesuvius_phalanx-0.1.9.dist-info/LICENSE,sha256=Mvc4TBoa1nEfEj-3NwbAG847ve8kpSdE176S2evn1ng,1101
+vesuvius_phalanx-0.1.9.dist-info/METADATA,sha256=16hb6IxTTPtDjgF7f-wSJ6gdLCpPuDLybcwRgKMMugE,4723
+vesuvius_phalanx-0.1.9.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+vesuvius_phalanx-0.1.9.dist-info/entry_points.txt,sha256=V3fIbmkuq4sXbTUJw8fJ3izdE2wcIiVLT_jx3BzMLl0,38
+vesuvius_phalanx-0.1.9.dist-info/top_level.txt,sha256=_htnQWrZMklXGDXYDM2akTF4heEK7dZH3mItQVc-bN8,5
+vesuvius_phalanx-0.1.9.dist-info/RECORD,,
