@@ -1,0 +1,2 @@
+[console_scripts]
+vectordb-server = mistral_vectordb.server.api:run_server
