@@ -1,0 +1,9 @@
+lmdeployv1/__init__.py,sha256=GYiLN3vdRqy5ibolukImWcjlNLgH0iMEDMniGmK51DQ,215
+lmdeployv1/api.py,sha256=-HJCOZLyChdx-6UdPUcJYMHVDDNQNiAbFEi6SL9kzyk,2365
+lmdeployv1/client.py,sha256=luz7vgqfdVZhECQltb-UoSBCIsc9CyCJRIeMjXkw4_M,9891
+lmdeployv1/example.py,sha256=7qs8ok3d2Jlp9wHto4PZbzaJk8yAfLrzY33ezyQ2w9o,1550
+lmdeployv1/setup.py,sha256=EpXfQ6NyNBsUwd5wotwx91-pWx7xcr_2xR0rjBDYTHc,243
+lmdeployv1-0.0.8.dist-info/METADATA,sha256=dufhkJ-t9O1Oi5cx_3acUhTXukKfUlWp4KBpamplwCw,618
+lmdeployv1-0.0.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+lmdeployv1-0.0.8.dist-info/top_level.txt,sha256=pRAPeD_6QdsTMnA5sqSNh7WDG7AfhanLviWWqVeWFws,11
+lmdeployv1-0.0.8.dist-info/RECORD,,
