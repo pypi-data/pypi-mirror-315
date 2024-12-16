@@ -1,0 +1,6 @@
+
+[gradio]
+gradio
+
+[torch]
+torch
