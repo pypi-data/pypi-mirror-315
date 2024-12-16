@@ -1,0 +1,11 @@
+anycrc/__init__.py,sha256=haNh9O0Wjfz8AE8FnB6EIxoP62UGsfnXKr6VpkKP2Qc,65
+anycrc/__main__.py,sha256=pYhkStmaSlPx07Q0Xax-zf267wDa5jX_HGfctRkVyJ0,528
+anycrc/crc.cp38-win32.pyd,sha256=ozCZyMjCExUKSZxgo--bHfXostAkiYQVaRs0I91Wm_A,152064
+anycrc/crc.pyx,sha256=BP-Ryzte4kQYT4V5UKBjW5jp4GTGPrQwD6NvFKwJZkc,5015
+anycrc/models.py,sha256=CN04cyi3vFh8fH2KdSl2oMmWCpfOoLT8CJlUhiOgkVA,16433
+anycrc/utils.py,sha256=ZaqLADU8gsXzBgImoLM_Ri_C5XLw4PmYHE8Dc2z4KZc,470
+anycrc-1.2.3.dist-info/LICENSE,sha256=uxkqUocH4qyFvXfwLLih1UygwH13VKb6uoYwQv7Z4wQ,890
+anycrc-1.2.3.dist-info/METADATA,sha256=VWz324w0agIs2WA405zCDipQgvSURPd4-3qDUIaQQhc,2969
+anycrc-1.2.3.dist-info/WHEEL,sha256=vBXc8Yz61rk4PXr558q4bsp34y-RMVJ3b9QU_ECAK-o,95
+anycrc-1.2.3.dist-info/top_level.txt,sha256=HbCFlOeYEx638RXhl-PI4tQtdbHhwyL9ObHhSuPNyaA,7
+anycrc-1.2.3.dist-info/RECORD,,
