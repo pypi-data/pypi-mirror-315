@@ -1,0 +1,13 @@
+mb_pandas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mb_pandas/aio.py,sha256=p50zewrROjznbAURUNOSGKHOvvA-lg7I3ifh3vEUBlM,3256
+mb_pandas/convert_data.py,sha256=riUlGFhsptPt_WyhTRhofJeCW5FwFWfHpg50ALO1AFE,6727
+mb_pandas/dfload.py,sha256=g0gJQTq0UbL6Lf86AJkuzMQQ-0-NuAarXcuwjWUCARY,5379
+mb_pandas/profiler.py,sha256=PvJnLk6RENognhy09i9YGnqOS4C-il3l0yJGPf0GN40,5921
+mb_pandas/transform.py,sha256=NF088356mdZuQDEJnSoycMoE-UfB-hZ5A0_VxCYETgI,10959
+mb_pandas/version.py,sha256=NG7gRVnIXelT8AS-NtYLCjdeQ9cag8SH1NfKOpmwVq0,207
+mb_pandas-1.1.12.data/scripts/df_profile,sha256=OIsI7_Xhdo9VvT9AipHlwv55_YS7cKVM-Jx7HBQbj24,1654
+mb_pandas-1.1.12.data/scripts/df_view,sha256=BbS_rNgrPl7Raz_zVmTBqw_dvyAhc3-KqS4W2LV0_yo,3683
+mb_pandas-1.1.12.dist-info/METADATA,sha256=8bql3H1yHnuxVo9FwAzot-O6p4nqGDuRXwmbtlj9iQo,145
+mb_pandas-1.1.12.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+mb_pandas-1.1.12.dist-info/top_level.txt,sha256=5JkDz2-6yNAp6GiwpeR4FpxqXVysaksS5MD1iAvfMgo,10
+mb_pandas-1.1.12.dist-info/RECORD,,
