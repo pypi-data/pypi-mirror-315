@@ -1,0 +1,3 @@
+from django33.shortcuts import render
+
+# 创建你的视图函数或者视图类
