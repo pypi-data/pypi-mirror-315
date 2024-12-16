@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: multiserialviewer
+Version: 24.12.0
+Summary: Shows multiple serial text streams in a single window with individual highlighting options.
+Home-page: https://github.com/shaag7967/multiserialviewer
+Author: shaag
+Project-URL: GitHub, https://github.com/shaag7967/multiserialviewer
+Keywords: serial,debug output,UART,MCU
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Terminals :: Serial
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyserial==3.5
+Requires-Dist: pyside6==6.8.1
+Requires-Dist: platformdirs==4.3.6
+
+# multiserialviewer
+Shows multiple serial text streams in a single window with individual highlighting options

@@ -1,0 +1,2 @@
+[console_scripts]
+multiserialviewer = multiserialviewer.__main__:main
