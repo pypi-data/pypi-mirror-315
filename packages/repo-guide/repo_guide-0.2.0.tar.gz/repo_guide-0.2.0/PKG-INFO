@@ -1,0 +1,70 @@
+Metadata-Version: 2.4
+Name: repo-guide
+Version: 0.2.0
+Summary: Uses AI to help understand repositories and their changes.
+Project-URL: Homepage, https://github.com/wolfmanstout/repo-guide
+Project-URL: Changelog, https://github.com/wolfmanstout/repo-guide/releases
+Project-URL: Issues, https://github.com/wolfmanstout/repo-guide/issues
+Project-URL: CI, https://github.com/wolfmanstout/repo-guide/actions
+Author: James Stout
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.11
+Requires-Dist: bleach-allowlist>=1.0.3
+Requires-Dist: bleach>=6.2.0
+Requires-Dist: click
+Requires-Dist: gitpython>=3.1.43
+Requires-Dist: llm-gemini>=0.5a0
+Requires-Dist: llm>=0.19a0
+Requires-Dist: mkdocs-material>=9.5.46
+Requires-Dist: mkdocs>=1.6.1
+Requires-Dist: tqdm>=4.67.1
+Description-Content-Type: text/markdown
+
+# repo-guide
+
+[![PyPI](https://img.shields.io/pypi/v/repo-guide.svg)](https://pypi.org/project/repo-guide/)
+[![Changelog](https://img.shields.io/github/v/release/wolfmanstout/repo-guide?include_prereleases&label=changelog)](https://github.com/wolfmanstout/repo-guide/releases)
+[![Tests](https://github.com/wolfmanstout/repo-guide/actions/workflows/test.yml/badge.svg)](https://github.com/wolfmanstout/repo-guide/actions/workflows/test.yml)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/wolfmanstout/repo-guide/blob/master/LICENSE)
+
+Uses AI to help understand repositories and their changes.
+
+NOTE: this has not yet been released and is still in active development.
+
+## Installation
+
+Install this tool using `pip` or `pipx`:
+
+```bash
+pip install repo-guide
+```
+
+## Usage
+
+For help, run:
+
+```bash
+repo-guide --help
+```
+
+You can also use:
+
+```bash
+python -m repo_guide --help
+```
+
+## Development
+
+To contribute to this tool, use uv. The following command will establish the
+venv and run tests:
+
+```bash
+uv run pytest
+```
+
+To run repo-guide locally, use:
+
+```bash
+uv run repo-guide
+```
