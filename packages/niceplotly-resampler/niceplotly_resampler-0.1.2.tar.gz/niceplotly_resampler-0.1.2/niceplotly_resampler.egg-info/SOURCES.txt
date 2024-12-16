@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+niceplotly_resampler/__init__.py
+niceplotly_resampler/event_handlers.py
+niceplotly_resampler/figure_resampler.py
+niceplotly_resampler.egg-info/PKG-INFO
+niceplotly_resampler.egg-info/SOURCES.txt
+niceplotly_resampler.egg-info/dependency_links.txt
+niceplotly_resampler.egg-info/requires.txt
+niceplotly_resampler.egg-info/top_level.txt
