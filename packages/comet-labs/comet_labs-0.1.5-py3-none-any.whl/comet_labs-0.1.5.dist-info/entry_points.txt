@@ -1,0 +1,3 @@
+[console_scripts]
+comet-labs=comet_labs.cli:main
+
