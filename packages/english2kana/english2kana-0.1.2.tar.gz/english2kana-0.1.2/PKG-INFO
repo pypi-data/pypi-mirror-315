@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: english2kana
+Version: 0.1.2
+Summary: A lightweight tool to convert English and romanized Japanese words into Katakana.
+License: MIT
+Author: yosuke KOBAYASHI
+Author-email: m7142yosuke@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: huggingface-hub (>=0.26.5,<0.27.0)
+Requires-Dist: mojimoji (>=0.0.13,<0.0.14)
+Requires-Dist: numpy (>=1.24.0,<2.0.0)
+Requires-Dist: tensorflow (>=2.18.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# english2kana
