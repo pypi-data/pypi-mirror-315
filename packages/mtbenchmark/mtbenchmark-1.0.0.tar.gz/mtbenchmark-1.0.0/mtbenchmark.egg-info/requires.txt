@@ -1,0 +1,4 @@
+torch>=1.10
+numpy>=1.18
+pandas>=1.2
+gdown>=5.0
