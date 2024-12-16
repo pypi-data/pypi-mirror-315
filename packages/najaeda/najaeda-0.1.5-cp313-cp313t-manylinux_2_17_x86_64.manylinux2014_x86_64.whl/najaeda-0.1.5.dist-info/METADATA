@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: najaeda
+Version: 0.1.5
+Summary: Naja EDA Python package
+Author-Email: Naja Authors <contact@keplertech.io>
+License: Apache License 2.0
+Project-URL: Homepage, https://github.com/najaeda/naja
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+
+Naja EDA Python Package
+=======================
+
+Naja EDA is a Python package that provides data structures and APIs for developing post-synthesis Electronic Design Automation (EDA) algorithms.
+It serves as the Python counterpart to the `Naja C++ project <https://github.com/najaeda/naja>`_.
+
+Installation
+------------
+
+Install Naja EDA using pip:
+
+.. code-block:: bash
+
+    pip install najaeda
+
+Examples
+--------
+
+Load a design from a liberty file and a Verilog file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Following snippet shows how to load primitive cells from a liberty file and
+a netlist from a Verilog file.
+
+.. code-block:: python
+
+    benchmarks = path.join('..','benchmarks')
+    liberty_files = [
+        'NangateOpenCellLibrary_typical.lib',
+        'fakeram45_1024x32.lib',
+        'fakeram45_64x32.lib'
+    ]
+    liberty_files = list(map(lambda p:path.join(benchmarks, 'liberty', p), liberty_files))
+        
+    netlist.load_liberty(liberty_files)
+    top = netlist.load_verilog([path.join(benchmarks, 'verilog', 'tinyrocket.v')])
+    
+    top.dump_verilog('.', 'tinyrocket_naja.v')
+
+Load a design with pre-existing libraries
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In FPGA design environments, Liberty files are often unavailable.
+To address this, the following example demonstrates how to load primitives
+without relying on Liberty files.
+
+najaeda comes with pre-configured libraries to simplify this process.
+Currently, it includes support for partial Xilinx primitives, but this can be
+easily extended in the future. Don't hesitate to reach out if you need help.
+
+.. code-block:: python
+
+    netlist.load_primitives('xilinx')
+    benchmarks = path.join('..','benchmarks')
+    top = netlist.load_verilog([path.join(benchmarks, 'verilog', 'arm_core_netlist.v')])
+
+Print all the instances in the netlist
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Next example shows how to browse all the netlist and print all its content recursively.
+
+.. code-block:: python
+
+    def print_netlist(instance):
+        for child_instance in instance.get_child_instances():
+            print(f"{child_instance}:{child_instance.get_model_name()}")
+            print_netlist(child_instance)
+
+Similar to the previous example, but utilizing an instance visitor.
+This approach allows you to perform operations on each instance while
+also defining conditions for stopping or continuing exploration.
+
+.. code-block:: python
+
+    def print_instance(instance):
+        print(f"{instance}:{instance.get_model_name()}")
+    visitor_config = instance_visitor.VisitorConfig(callback=print_instance)
+    instance_visitor.Visitor(top).visit(top, visitor_config)
+
+Documentation
+-------------
+najaeda is a work in progress, and the documentation is still under development.
+
+Naja documentation is available on the `Naja GitHub repository <https://github.com/najaeda/naja>`_.
+
+Support
+-------
+Please put up issues on the Delocate issue tracker.
+If you encounter any issues or have questions, please report them on the
+`Naja issue tracker <https://github.com/najaeda/naja/issues>`_.
+
+License
+-------
+This project is licensed under the Apache License 2.0.
+See the `LICENSE <https://github.com/najaeda/naja/blob/main/LICENSE>`_ file for details.
