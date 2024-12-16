@@ -1,0 +1,8 @@
+Tabs {
+    transition: none;
+}
+
+#io_buttons
+{
+    height: 10%;
+}
