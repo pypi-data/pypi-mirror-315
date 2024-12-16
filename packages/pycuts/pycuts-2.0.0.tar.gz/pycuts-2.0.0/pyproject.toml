@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycuts"
+version = "2.0.0"
+description = "A collection of shortcut functions for common operations across various libraries."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT License" }
+keywords = ["huggingface", "torch", "gradio", "utilities", "shortcuts"]
+authors = [
+  { name = "Daniel Ialcin Misser Westergaard" }
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+torch = ["torch"]
+gradio = ["gradio"]
+
+[project.urls]
+"Homepage" = "https://github.com/dwancin/pycuts"
+"Bug Tracker" = "https://github.com/dwancin/pycuts/issues"
+"Documentation" = "https://github.com/dwancin/pycuts#readme"
+"Hugging Face" = "https://huggingface.co/dwancin"
+"PyPI" = "https://pypi.org/user/dwancin"
