@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+fanparsai/__init__.py
+fanparsai.egg-info/PKG-INFO
+fanparsai.egg-info/SOURCES.txt
+fanparsai.egg-info/dependency_links.txt
+fanparsai.egg-info/requires.txt
+fanparsai.egg-info/top_level.txt
+fanparsai/KWS/KWS.py
+fanparsai/KWS/WideResNet12WithEMA.pth
+fanparsai/KWS/__init__.py
+fanparsai/VAD/ERI_VAD.pth
+fanparsai/VAD/VAD.py
+fanparsai/VAD/__init__.py
