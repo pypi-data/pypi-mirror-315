@@ -1,0 +1,28 @@
+[project]
+name = "DDDHtml"
+version = "0.1.0"
+authors = [
+  { name="Gina kunz", email="ginakunz445@gmail.com" },
+]
+description = "Helper package to build html pages"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/DonnieDarkDev/DDDHtml"
+Issues = "https://github.com/DonnieDarkDev/DDDHtml/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+include = ["DDDHtml/*.py"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["DDDHtml"]

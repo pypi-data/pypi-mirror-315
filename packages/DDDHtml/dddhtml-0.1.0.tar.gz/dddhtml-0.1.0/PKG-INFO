@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: DDDHtml
+Version: 0.1.0
+Summary: Helper package to build html pages
+Project-URL: Homepage, https://github.com/DonnieDarkDev/DDDHtml
+Project-URL: Issues, https://github.com/DonnieDarkDev/DDDHtml/issues
+Author-email: Gina kunz <ginakunz445@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+![alt text](C:\Users\Gina\Pictures\My Icon\Final\512.png)
+# DDDHtml
+ Helper to build html files
+# ChangeLog
+## 0.1.0
+```
+* Add basic element support
+* Add pip install support
+```
