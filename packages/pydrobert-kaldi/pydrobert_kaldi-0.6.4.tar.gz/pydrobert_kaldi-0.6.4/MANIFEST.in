@@ -1,0 +1,4 @@
+recursive-exclude .github *
+exclude .gitignore
+recursive-exclude recipe *
+recursive-include swig *

@@ -1,0 +1,12 @@
+[build-system]
+requires = [
+  "setuptools>=45",
+  "wheel",
+  "setuptools_scm>=6.2",
+  "numpy>=1.25",
+  "swig"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "src/pydrobert/kaldi/_version.py"
