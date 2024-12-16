@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dichback/Dichback.py
+dichback/__init__.py
+dichback.egg-info/PKG-INFO
+dichback.egg-info/SOURCES.txt
+dichback.egg-info/dependency_links.txt
+dichback.egg-info/not-zip-safe
+dichback.egg-info/top_level.txt
