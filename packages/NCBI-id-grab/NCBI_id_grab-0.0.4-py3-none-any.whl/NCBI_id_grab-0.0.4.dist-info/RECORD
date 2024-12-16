@@ -1,0 +1,7 @@
+NCBI_grab_package/NCBI_ID_grab.py,sha256=E9n89IMYuIbNmT8td3aO2RCCQngmYpxEwq0aQF6qgRs,2289
+NCBI_grab_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+NCBI_grab_package/data/Local_NCBI_db.csv,sha256=LlFv89ThXYcFpstpmAEjfAELiARPI6x_uifCEKg0hE8,151570
+NCBI_id_grab-0.0.4.dist-info/METADATA,sha256=ia04A9w_mBebqxBKJrJ-tiUrr-0Db13M9hdKK2YQBfI,648
+NCBI_id_grab-0.0.4.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+NCBI_id_grab-0.0.4.dist-info/top_level.txt,sha256=pOX4wrlm36tY5bf4UJyyV_oLkJe32R5fcUsu4ZQNbWk,18
+NCBI_id_grab-0.0.4.dist-info/RECORD,,
