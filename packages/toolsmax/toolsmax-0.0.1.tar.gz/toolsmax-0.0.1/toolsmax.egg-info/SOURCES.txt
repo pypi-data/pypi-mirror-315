@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+toolsmax.egg-info/PKG-INFO
+toolsmax.egg-info/SOURCES.txt
+toolsmax.egg-info/dependency_links.txt
+toolsmax.egg-info/top_level.txt
