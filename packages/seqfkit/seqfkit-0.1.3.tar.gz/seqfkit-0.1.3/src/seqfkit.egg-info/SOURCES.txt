@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/seqfkit/__init__.py
+src/seqfkit/glimpse.py
+src/seqfkit/utils.py
+src/seqfkit.egg-info/PKG-INFO
+src/seqfkit.egg-info/SOURCES.txt
+src/seqfkit.egg-info/dependency_links.txt
+src/seqfkit.egg-info/entry_points.txt
+src/seqfkit.egg-info/requires.txt
+src/seqfkit.egg-info/top_level.txt
+tests/test_utils.py

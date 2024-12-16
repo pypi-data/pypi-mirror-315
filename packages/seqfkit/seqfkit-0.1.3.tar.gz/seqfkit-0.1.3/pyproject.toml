@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seqfkit"
+version = "0.1.3"
+description = "Some useful tools to handle sequences (DNA/RNA/Protein)."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Zhang Yujian", email = "Chouuken@outlook.com" }
+]
+dependencies = [
+    "python>=3.10",
+    "click"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Chou-Uken/seqfkit"
+
+[project.scripts]
+glimpse = "seqfkit.glimpse:glimpse"
