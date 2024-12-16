@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: opennano
+Version: 0.1.1
+Summary: A Python package for processing NanoString GeoMx data.
+Home-page: https://github.com/Niamhck/opennano
+Author: Charalampos Anagnostakis, Laura Beltrame, Cristiano Cordì, and Niamh Callian Keenan
+Author-email: charalampos.anagnostakis@student.kuleuven.be, laura.beltrame@student.kuleuven.be
+License: MIT
+Project-URL: Documentation, https://opennano.pages.dev/
+Project-URL: Bug Tracker, https://github.com/Niamhck/opennano/issues
+Project-URL: Source Code, https://github.com/username/opennano
+Keywords: nanostring geomx spatial transcriptomics bioinformatics
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: matplotlib>=3.4.0
+Requires-Dist: seaborn>=0.11.0
+Requires-Dist: anndata>=0.8.0
+Requires-Dist: scipy>=1.6.0
+
+<div align="center">
+   <img src="OpenNano.png",
+   height=300>
+</div>
+
+## Open Nano
+
+Open Nano is a free open source python package developed to address a lack of python-based tools for analysing Nanostring GeoMx DSP data.
+
+From your dcc, pkc, and metadata files, you can:
+-  create an AnnData object of your data 
+-  perform quality control and normalisation steps
+-  do a differential gene expression analysis
+-  look at spatial autocorralation with Moran's I statistic
+-  perform UMAP and tSNE clustering
+
+Benchmarked against GeoMxTools R package and DESeq2.
+
+See 
+
+Created by Charalampos Anagostakis, Laura Beltrame, Cristiano Cordì, and Niamh Callian Keenan
+as part of the Integrated Bioinformatics Project for the MSc in Bioinformatics at KU Leuven, Belgium

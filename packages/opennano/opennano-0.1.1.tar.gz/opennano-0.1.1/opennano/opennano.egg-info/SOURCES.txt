@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+opennano/opennano.egg-info/PKG-INFO
+opennano/opennano.egg-info/SOURCES.txt
+opennano/opennano.egg-info/dependency_links.txt
+opennano/opennano.egg-info/requires.txt
+opennano/opennano.egg-info/top_level.txt
+tests/test_processor.py
+tests/test_qc.py
