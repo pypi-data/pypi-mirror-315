@@ -1,0 +1,11 @@
+turbotape/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turbotape/cache.py,sha256=Qr3TfNHfR7bZyR-bpMGF-mE32i99tX0xazqtOp1K-O8,12679
+turbotape/cli.py,sha256=m2KIGx8WSP5YNOuS7IROvkYNjiAb7GSCKvTLSppEvXw,6643
+turbotape/dataframe.py,sha256=W7A67zpur3zfvPlLdL2zjq4AE1NiYKZZJwQB0VHgFbk,1810
+turbotape/helpers.py,sha256=wf1_GvyDq1Mo452F_GWW9Hs1Y8scqbMNSTY_wESKiF4,9860
+turbotape/records.py,sha256=TomueXMe7XwwXtXV2y8cV6XzV5ANKOc8qLkYrbTBUBU,21953
+turbotape/session.py,sha256=jemr1IwhvmrW3obe6TGe1zJSbVa8xKLEGvavyjIMk5w,1659
+turbotape-0.0.4.dist-info/METADATA,sha256=eZLEOJW7Er46J2Fwx0TWgv1BQ4N9flx4OXsMMV_69g8,4945
+turbotape-0.0.4.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+turbotape-0.0.4.dist-info/licenses/LICENSE,sha256=1P1G-MTTflDvtt9FlHReGKuuedI9eOSRzQSvK8fMOnI,1067
+turbotape-0.0.4.dist-info/RECORD,,
