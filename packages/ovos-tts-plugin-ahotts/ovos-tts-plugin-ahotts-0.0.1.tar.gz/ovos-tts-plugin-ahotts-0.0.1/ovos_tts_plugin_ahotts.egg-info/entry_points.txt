@@ -1,0 +1,3 @@
+[mycroft.plugin.tts]
+ovos-tts-plugin-ahotts = ovos_tts_plugin_ahotts:AhoTTSPlugin
+
