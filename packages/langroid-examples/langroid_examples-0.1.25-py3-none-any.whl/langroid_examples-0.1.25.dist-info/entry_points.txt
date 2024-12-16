@@ -1,0 +1,5 @@
+[console_scripts]
+chat = examples.basic.chat:app
+chatdoc = examples.docqa.chat:app
+chatsearch = examples.docqa.chat_search:cli
+completion = examples.basic.completion:app
