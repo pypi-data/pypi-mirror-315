@@ -1,0 +1,10 @@
+subscriptionv1/__init__.py,sha256=0VfRw3xwJPZTzNlmWsGj7DxWECpQ2LOxFcTiwht0Bhc,189
+subscriptionv1/client/__init__.py,sha256=bDqzRps5eQ-RDOW01VPCtMdu_iO3HuHLgq2lpGEhLAM,218
+subscriptionv1/client/subscription_api.py,sha256=tVchy8HOiNPF50e5Z0Eqz-sqHe735uHATfCEvY7GqTg,650
+subscriptionv1/client/subscription_client.py,sha256=w6zMd00YDKICXDtv6I9WQihb6EPlZmoANCemq6yw6o8,1099
+subscriptionv1/middleware/__init__.py,sha256=SB0aw3D8gjIDmicg-nXE2h6ciGcAaWiXoxTrkwfN524,248
+subscriptionv1/middleware/middleware.py,sha256=sXtaa1K9U3vj8XYL8gYg5d0MNlWkXLwWq2dPSl7H2TI,3592
+yjsubscription-1.0.1.dist-info/METADATA,sha256=7w17k5HRmyltGlkrVhXBvkggulzMhjhi7AcBlh8yMWQ,730
+yjsubscription-1.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+yjsubscription-1.0.1.dist-info/top_level.txt,sha256=gS46QJnBhqcoucpzufkHjhwI3sYteTrxD7kb3_8WVbQ,15
+yjsubscription-1.0.1.dist-info/RECORD,,
