@@ -1,0 +1,2 @@
+[console_scripts]
+repo-guide = repo_guide.cli:cli
