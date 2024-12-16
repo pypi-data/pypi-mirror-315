@@ -1,0 +1,9 @@
+qrs_api_client/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+qrs_api_client/auth.py,sha256=hg2mBxIQPEsGdhB2_VmBQl2sBXxyEfgX-xt6YytRTRQ,3566
+qrs_api_client/client.py,sha256=UjnlOkdrTJHkRb7ZQMOa7oeiQG0VTx0tD2SttACcr4M,6678
+qrs_api_client/models.py,sha256=aJkpEc7V8vdsmpNLvx1vT2P54FpKf10SahjhEiQtUxw,26143
+qrs_api_client-2.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+qrs_api_client-2.0.0.dist-info/METADATA,sha256=1QhcuQeKtqXIh77jvki_U2ZvmPCdKP1HMPzfPxpdQaI,4574
+qrs_api_client-2.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+qrs_api_client-2.0.0.dist-info/top_level.txt,sha256=NJvIjcbU8GJZ5TjteKhaFOnKETWz6uQ3DakUeYjIyw0,15
+qrs_api_client-2.0.0.dist-info/RECORD,,
