@@ -1,0 +1,15 @@
+wgm/__init__.py,sha256=m7DCVYrfR8TIv1Hx-WsU3euabx5IVpm70tlIzJsIyIo,161
+wgm/__main__.py,sha256=S0N8agSrsI_3f9cm1QiKjPkepTXpsuLaYqYsX-z7Oqk,837
+wgm/__version__.py,sha256=uZsygMXMKRw-7qhWojAjnpm8GFPXU92xW6XA8O5GwFY,22
+wgm/command.py,sha256=k5HldJL96svUXp-IJVZC9JW4G7KQce1C-JT-h_vn69o,7517
+wgm/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wgm/commands/create.py,sha256=bcsnahxvyYxIhLk8gYCb07NZ9_vW3F_4Our9hbOICSM,3260
+wgm/commands/delete.py,sha256=Jm__e4oNKYekMpOQu6XeDdDOoFmTYV5PUyWzH6kq-r4,1098
+wgm/commands/list.py,sha256=wWZHpnt9p8ZDndG81WMmZ6wUfFjcmAy5_NO5Rz_GiFI,651
+wgm/commands/version.py,sha256=CAZA5SPveOhp1b3psvHRq5nj80BpZePobEQYtlYfXjY,248
+wgm/config.py,sha256=xjkCN-MErtNzXQ3y_jamqb-Qab0Spoe7wRCWjt63KVM,292
+wgm-0.1.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+wgm-0.1.3.dist-info/METADATA,sha256=TozCFkgPWw8go_K5lRuG6farwQPnohdLL-v5BB48dqc,2028
+wgm-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+wgm-0.1.3.dist-info/entry_points.txt,sha256=xIUEut9j21kyvdReMI1IjmYFfcA9KHQZKLBjOTKYq6I,41
+wgm-0.1.3.dist-info/RECORD,,
