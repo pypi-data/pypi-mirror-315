@@ -1,0 +1,2 @@
+[console_scripts]
+cool-booy-tmux = cool_booy_tmux:main
