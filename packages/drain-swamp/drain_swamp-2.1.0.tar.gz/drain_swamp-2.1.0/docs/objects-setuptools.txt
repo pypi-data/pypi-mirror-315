@@ -1,0 +1,7 @@
+# Sphinx inventory version 2
+# Project: setuptools 70.1.1
+# Version: 70.1.1
+# The remainder of this file is compressed using zlib.
+setuptools:pyprojecttoml:config std:label -1 userguide/pyproject_config.html pyproject.toml config
+setuptools:distribution-alter std:label -1 userguide/extension.html#customizing-distribution-options alter Distribution object
+setuptools:extension:customizing-commands std:label -1 userguide/extension.html#customizing-commands Command and sub-command classes

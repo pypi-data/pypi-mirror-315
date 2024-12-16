@@ -1,0 +1,21 @@
+# Licensed under the AGPLv3+ License: https://www.gnu.org/licenses/
+# For details: https://github.com/msftcangoblowm/drain-swamp/blob/master/NOTICE.txt
+
+##########
+# Careful! Affects two venvs. Nudges not a good idea here
+##########
+# pip>=24.2  # <-- conflicts with docs pip<24.2
+
+setuptools>=75.1.0
+pluggy               # plugin support in build backend and setuptools.finalize_distribution_options entrypoint
+setuptools-scm       # get current version, `python setup.py --version`
+drain-swamp-snippet  # update docs/conf.py
+
+# shared internals / DRY
+# installed by wreck.
+#    importlib-metadata>=8.5.0
+#    click           # entrypoints
+#    pip-tools       # lock requirements
+#    packaging
+#    pip-requirements-parser
+wreck
