@@ -1,0 +1,14 @@
+{% extends "_model_base.html" %}
+{% block title %}Edit{% endblock %}
+{% block main %}
+<form action="/admin/{{table}}/{{row.id}}/edit", method="post">
+    {% for col in row.fields.keys() %}
+    <div class="mb-3">
+        <label for="{{col}}" class="form-label">{{col}}</label>
+        <input type="text" class="form-control" id="{{col}}" name="{{col}}" value="{{row[col]}}">
+    </div>
+    <hr>
+    {% endfor %}
+    <input type="submit" value="Submit" class="btn btn-primary mb-3">
+</form>
+{% endblock %}
