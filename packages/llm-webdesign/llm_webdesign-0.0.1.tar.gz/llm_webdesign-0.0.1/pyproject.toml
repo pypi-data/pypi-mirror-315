@@ -1,0 +1,33 @@
+[project]
+name = "llm-webdesign"
+version = "0.0.1"
+description = "LLM Web Designer"
+readme = "README.md"
+authors = [
+  {name = "Lucas Rangel Cezimbra", email="lucas@cezimbra.tec.br"},
+]
+license = {text = "MIT"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm",
+]
+
+[project.urls]
+Homepage = "https://github.com/lucasrcezimbra/llm-webdesign"
+Changelog = "https://github.com/lucasrcezimbra/llm-webdesign/releases"
+Issues = "https://github.com/lucasrcezimbra/llm-webdesign/issues"
+CI = "https://github.com/lucasrcezimbra/llm-webdesign/actions"
+
+[project.entry-points.llm]
+webdesign = "llm_webdesign"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-mock"]
+
+
+[tool.ruff]
+select = ["A", "B", "BLE", "E", "F", "I", "RUF", "SIM", "W"]
+ignore = ["E501"]
+line-length = 88

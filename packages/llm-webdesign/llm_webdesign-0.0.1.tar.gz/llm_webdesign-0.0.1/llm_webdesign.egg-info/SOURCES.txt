@@ -1,0 +1,12 @@
+LICENSE
+README.md
+llm_webdesign.py
+pyproject.toml
+llm_webdesign.egg-info/PKG-INFO
+llm_webdesign.egg-info/SOURCES.txt
+llm_webdesign.egg-info/dependency_links.txt
+llm_webdesign.egg-info/entry_points.txt
+llm_webdesign.egg-info/requires.txt
+llm_webdesign.egg-info/top_level.txt
+tests/test_parse_response.py
+tests/test_prompt.py
