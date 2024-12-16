@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bogs"
+version = "0.1.9"
+description = "A short description of your project"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Your Name", email = "your_email@example.com" }
+]
+dependencies = [
+    "numpy>=1.21.0",        
+    "matplotlib>=3.4.0",     # Matplotlib for 2D plotting
+    "pandas>=1.3.0",         # Pandas for data analysis
+    "scipy>=1.7.0",          # SciPy for scientific computing
+    "folium>=0.12.0",     # Replace with your actual dependencies
+]
+requires-python = ">=3.6"
