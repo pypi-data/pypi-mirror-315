@@ -1,0 +1,9 @@
+alpaka/__init__.py,sha256=cTq45jbmpItstEtUoWr5Z06ws97pQqr6MFwAoqzF4ys,58
+alpaka/alpaka.py,sha256=PJQI3YNDp7aICOCWoe2JJWysMM-Ll4mMu4SymHAp75c,1096
+alpaka/arkitekt.py,sha256=DwwY-Dpiju9-lb6iyWEPXY4EYhGmbzEzYhy8R8qMMr0,1351
+alpaka/funcs.py,sha256=GdN9nHJr4rkIK5rdVMa3TnRiZeaSShQjbDhk7rQ-HJs,459
+alpaka/vars.py,sha256=vsQX6SgYy31UCLyFmnIzsTKHeJqNsIzpmryvN8JrKBc,220
+alpaka-0.1.17.dist-info/METADATA,sha256=YO2dMjrWcBT5WJ2bLlji7pJNNf2743NqNXUTJNaSr9Q,1236
+alpaka-0.1.17.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+alpaka-0.1.17.dist-info/entry_points.txt,sha256=cTlsweexPEeXlAmO9Az1AslhmPcpgfnInjSgPymQhAU,47
+alpaka-0.1.17.dist-info/RECORD,,
