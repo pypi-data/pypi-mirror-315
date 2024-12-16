@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: regex_enumerator
+Version: 0.3.1
+Summary: Enumerate all strings that match a given regex
+Home-page: https://github.com/Buba98/regex_enumerator
+Author: Vincenzo Greco
+Author-email: grecovincenzo98@gmail.com
+Keywords: regex,regex enumerator,regular-expression,enumerator,string-generation,exhaustive-matching,regex-testing,regex-tools,string-enumeration,data-generation
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
