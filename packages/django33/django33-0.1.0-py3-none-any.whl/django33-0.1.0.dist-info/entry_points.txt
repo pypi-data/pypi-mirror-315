@@ -1,0 +1,3 @@
+[console_scripts]
+django33-admin=django33.core.management:execute_from_command_line
+
