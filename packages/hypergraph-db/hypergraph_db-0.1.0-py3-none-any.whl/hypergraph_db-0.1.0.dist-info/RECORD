@@ -1,0 +1,8 @@
+hyperdb/__init__.py,sha256=vvgazZuIjSVTcVpv49Y27SSs2oQPyEZGwSpGXj2ZiR8,194
+hyperdb/_global.py,sha256=upcUvf7D5v6OGpSpjHl5x-KF41d0632U5if3keMMvhU,38
+hyperdb/base.py,sha256=e_HtZeO1PsdGuzJTfMnigTOAVmrfz6Pi5pW0SBGkylA,7963
+hyperdb/hypergraph.py,sha256=ZbguztgzXoy1H701rmCBbkSqW9bzPKRUAwR46C9V0fw,12276
+hypergraph_db-0.1.0.dist-info/LICENSE,sha256=eTgg5u-dsABr4R2jnxYu9BFhQH2ah0rKeVku_ayWXLE,11342
+hypergraph_db-0.1.0.dist-info/METADATA,sha256=VzGW2oE9cJ-T3YOyFCdgPWBSyKof08tnwFhmuNL7vmc,7518
+hypergraph_db-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+hypergraph_db-0.1.0.dist-info/RECORD,,
