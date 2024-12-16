@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: Kala_Qubits
+Version: 0.1.0
+Summary: A lightweight quantum circuit simulator with PyTorch backend
+Home-page: https://github.com/Kalasaikamesh944/Qubits
+Author: N V R K SAI KAMESH YADAVALLI
+Author-email: saikamesh.y@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: torch>=1.10.0
+
+# Qubits
+
+## Overview
+The **Qubits** is a Python-based library for simulating quantum circuits. It leverages PyTorch to efficiently represent and manipulate quantum states and gates. This library is designed for developers and researchers who want to prototype and experiment with quantum algorithms without needing access to actual quantum hardware.
+
+## Features
+- **Quantum Gates**: Includes common gates like Pauli-X, Pauli-Y, Pauli-Z, Hadamard, CNOT, and parameterized rotation gates (Rx, Ry, Rz).
+- **Quantum and Classical Registers**: Simulate quantum states and classical measurement storage.
+- **Gate Application**: Apply single- and multi-qubit gates on quantum circuits.
+- **Measurement**: Measure qubits and collapse the quantum state.
+- **Lightweight**: Minimal dependencies with a PyTorch backend.
+
+## Installation
+
+You can install the library using `pip` after cloning the repository:
+
+```bash
+pip install Kala_Qubits
+```
+
+## Usage
+
+### Import the Library
+```python
+from Qubits import Gate, QuantumCircuit
+```
+
+### Create a Quantum Circuit
+```python
+# Create a 2-qubit circuit with 2 classical bits
+qc = QuantumCircuit(2, 2)
+
+# Add gates
+qc.apply(Gate.hadamard(), [0])  # Apply Hadamard to qubit 0
+qc.apply(Gate.cnot(), [0, 1])  # Apply CNOT with qubit 0 as control and qubit 1 as target
+
+# Execute the circuit
+qc.execute()
+
+# Measure all qubits
+result = qc.measure_all()
+print(f"Measurement outcome: {result}")
+```
+
+### Add Custom Gates
+```python
+import numpy as np
+
+# Define a custom gate matrix
+custom_matrix = np.array([[1, 0], [0, -1]])
+custom_gate = Gate.custom(custom_matrix)
+
+# Apply the custom gate
+qc.apply(custom_gate, [0])
+```
+
+## API Reference
+
+### `Gate`
+
+#### Methods
+- `Gate.pauli_x()`
+- `Gate.pauli_y()`
+- `Gate.pauli_z()`
+- `Gate.hadamard()`
+- `Gate.cnot()`
+- `Gate.rotation_x(theta)`
+- `Gate.rotation_y(theta)`
+- `Gate.rotation_z(theta)`
+- `Gate.custom(matrix)`
+
+### `QuantumCircuit`
+
+#### Methods
+- `apply(gate, qubits)`
+- `measure(qubit, cbit)`
+- `measure_all()`
+- `execute()`
+
+### `QuantumRegister` and `ClassicalRegister`
+Used internally to manage quantum states and classical bits.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Submit a pull request with a detailed explanation of your changes.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Acknowledgments
+- Inspired by Qiskit and PyTorch.
+- Designed for educational and research purposes.
+
