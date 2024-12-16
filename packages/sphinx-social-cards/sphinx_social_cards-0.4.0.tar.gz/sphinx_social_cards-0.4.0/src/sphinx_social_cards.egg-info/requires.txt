@@ -1,0 +1,9 @@
+pydantic>=2.4
+pydantic-extra-types
+PySide6
+pyyaml
+requests
+sphinx
+
+[github]
+appdirs
