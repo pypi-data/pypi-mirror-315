@@ -1,0 +1,31 @@
+# Compiled python modules.
+*.pyc
+
+# Setuptools distribution folder.
+/dist/
+/build/
+
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+/*.egg
+
+# other
+*.npy
+*.spec
+.coverage
+.tox
+.idea
+/time_trials/best_time_data
+/time_trials/i_v_timetrials_data
+!/time_trials/welcome_message.txt
+/docs/make.bat
+/docs/_build
+/_build
+run_sphinx.sh
+venv/
+
+# coverage
+htmlcov
+junit
+coverage.xml

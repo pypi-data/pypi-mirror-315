@@ -1,0 +1,20 @@
+[run]
+branch = True
+source = .
+omit =
+    tests/*
+    .tox/*
+    setup.py
+    venv/*
+    time_trials/*
+    doctests.py
+
+[report]
+# Regexes for lines to exclude from consideration
+exclude_lines =
+    # Have to re-enable the standard pragma
+    pragma: no cover
+
+    # Don't complain if tests don't hit defensive assertion code:
+    raise AssertionError
+    raise NotImplementedError
