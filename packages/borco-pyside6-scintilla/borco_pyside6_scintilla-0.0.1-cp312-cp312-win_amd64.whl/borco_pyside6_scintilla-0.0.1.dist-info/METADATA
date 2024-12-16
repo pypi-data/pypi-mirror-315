@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: borco-pyside6-scintilla
+Version: 0.0.1
+Keywords: c++,cmake,cpp,cxx,example,pyside6,python,scikit-build-core,scintilla,shiboken,shiboken6
+Author-Email: =?utf-8?q?Ioan_C=C4=83lin?= <iborco@gmail.com>
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Project-URL: Homepage, https://iborco-pyside.gitlab.io/borco-pyside6-scintilla
+Project-URL: Repository, https://gitlab.com/iborco-pyside/borco-pyside6-scintilla
+Project-URL: Issues, https://gitlab.com/iborco-pyside/borco-pyside6-scintilla/-/issues
+Requires-Python: >=3.12
+Requires-Dist: shiboken6>=6.8.1
+Description-Content-Type: text/markdown
+Dynamic: description
+
+::include{file=docs/README.md}
