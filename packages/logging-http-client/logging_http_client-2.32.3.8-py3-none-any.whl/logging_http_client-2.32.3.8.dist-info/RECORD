@@ -1,0 +1,12 @@
+logging_http_client/__init__.py,sha256=DGkEJtjQ_fdw0s2axrCpiyHozyIsWLL0lkTWnGNfdF4,6163
+logging_http_client/http_headers.py,sha256=9EOAxlf8c1or-5gNZpqo8E58LIzjTBLt5nAMBaFkaPA,220
+logging_http_client/http_log_record.py,sha256=17KjH1uGxdZr3EUY52A6w9T8hVHRCKvw18FrvbeppsM,2792
+logging_http_client/http_session.py,sha256=XaopDFUDXqzKfMIj4EIVTqs7t4y9O-jsEX2JefA6GKE,4949
+logging_http_client/logging_default_hooks.py,sha256=DMyzQC12Edxw3Fu3FbdPVG0i68YT1DWZjR1YTC_F4K8,724
+logging_http_client/logging_http_client_class.py,sha256=5hJGZn3T_Akx-I-T7CVbdqagkGEBc0fJmShzDdb94bI,3784
+logging_http_client/logging_http_client_config.py,sha256=1ja0vpAWa5BpG1yS-K3eD5R1hfvJuuWKifBTfN1Kbws,6659
+logging_http_client/logging_http_client_config_globals.py,sha256=xHH1V0VhULtt2qRKlcd2Xlifa8Zr6beNSnNOJZUhn4M,3611
+logging_http_client-2.32.3.8.dist-info/LICENSE,sha256=d4ailw8Xsxqmf9K_MDuj1VvGoODXzF1JmGTQqwWha98,1063
+logging_http_client-2.32.3.8.dist-info/METADATA,sha256=FKTixI0xrUExQhyTI9uh4CgYqlPm6bdQxjQXtM5gu34,24330
+logging_http_client-2.32.3.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+logging_http_client-2.32.3.8.dist-info/RECORD,,
