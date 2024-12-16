@@ -1,0 +1,2 @@
+[console_scripts]
+thisgoeshardasfuck = thisgoeshardasfuck:__call__
