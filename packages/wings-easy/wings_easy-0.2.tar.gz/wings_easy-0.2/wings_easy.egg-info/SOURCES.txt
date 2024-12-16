@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+wings_easy.egg-info/PKG-INFO
+wings_easy.egg-info/SOURCES.txt
+wings_easy.egg-info/dependency_links.txt
+wings_easy.egg-info/top_level.txt
