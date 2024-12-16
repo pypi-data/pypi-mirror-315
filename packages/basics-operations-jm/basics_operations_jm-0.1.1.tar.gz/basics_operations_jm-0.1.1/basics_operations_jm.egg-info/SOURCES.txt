@@ -1,0 +1,6 @@
+README.md
+setup.py
+basics_operations_jm.egg-info/PKG-INFO
+basics_operations_jm.egg-info/SOURCES.txt
+basics_operations_jm.egg-info/dependency_links.txt
+basics_operations_jm.egg-info/top_level.txt
