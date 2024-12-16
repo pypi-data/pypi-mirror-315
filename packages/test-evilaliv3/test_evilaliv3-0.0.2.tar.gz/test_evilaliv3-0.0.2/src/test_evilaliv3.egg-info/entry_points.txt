@@ -1,0 +1,2 @@
+[console_scripts]
+mount-ephemeral-fs = globaleaks_ephemeral_fs.mount_ephemeral_fs:main
