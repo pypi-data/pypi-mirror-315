@@ -1,0 +1,8 @@
+tpass/__init__.py,sha256=lhvi-n2oAJJKziplI0VFmUqagF1aFlqM_qWGyAmOKts,2099
+tpass/totp.py,sha256=vJMtnhAHNs454OMcZAaVyroBIhHDqKnzFhle3VKWjc4,2120
+tpass-1.0a4.dist-info/LICENSE,sha256=oOLypFR0qmIk4N7Xgp7sGbyfxMzpEj80QClZsvfx3mA,1068
+tpass-1.0a4.dist-info/METADATA,sha256=Rtrd2vz6h0FfBWQan8ApA5mLPEkNkODyiZ3zCiLxOPQ,806
+tpass-1.0a4.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+tpass-1.0a4.dist-info/entry_points.txt,sha256=5Vn17xDwgcfzmJnW5ADIw-gLoW-Z3gLES5xHehDOpRA,37
+tpass-1.0a4.dist-info/top_level.txt,sha256=qvaSQjTFbEpjL8uK5fuc2-93KzSYzTPJtWtbEOgGOgs,6
+tpass-1.0a4.dist-info/RECORD,,
