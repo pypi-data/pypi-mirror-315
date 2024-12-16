@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+src/NCBI_grab_package/NCBI_ID_grab.py
+src/NCBI_grab_package/__init__.py
+src/NCBI_grab_package/__main__.py
+src/NCBI_grab_package/data/Local_NCBI_db.csv
+src/NCBI_id_grab.egg-info/PKG-INFO
+src/NCBI_id_grab.egg-info/SOURCES.txt
+src/NCBI_id_grab.egg-info/dependency_links.txt
+src/NCBI_id_grab.egg-info/entry_points.txt
+src/NCBI_id_grab.egg-info/top_level.txt
+tests/test_package.py
