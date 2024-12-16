@@ -1,0 +1,17 @@
+potx/__init__.py,sha256=e2IA2vA7DtW47iknIr9dUfLVMhfeLtZTat8Psudsl4Q,598
+potx/api/__init__.py,sha256=9wquFTyUdvPR43ItiwNHkxyCaflnOLHL81_7MsG5rIw,265
+potx/api/ocr.py,sha256=TPFS3kbDeSA_szxu0IJn6N3J7RWxP73g1bVlkzGVv1I,2297
+potx/api/ocr2excel.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+potx/core/OCR.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+potx/core/__init__.py,sha256=R6WX_cTmFHhsAQD-Y9NtbCZ7J6TPdjAxJ8hdTQIxzc8,223
+potx/lib/CommonUtils.py,sha256=FXhiy0f1ZJXmpGOvyPdGSPFIXBqDYms652hXmNHfw1A,1483
+potx/lib/Config.py,sha256=9nSfUPUBDXQAWFoBw9FuY6HpUbji1C2PnDHpoAC2Dvs,1172
+potx/lib/Const.py,sha256=8BCsh-EDechjKzu8NU63TA8alEqsTHyUi7MyEYQ4Inw,851
+potx/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+potx/lib/apig_sdk/__init__.py,sha256=fBxOE024wSJRtC9sbpsDeQqhDjjsSecJGOidp456s5M,22
+potx/lib/apig_sdk/signer.py,sha256=3xlWIT6RIwMze5JVva_VTCRtfUEtT7aKUaDo8YubjRs,7401
+potx_cloud-0.0.2.dist-info/LICENSE,sha256=GQ6XaGbsxl2OlUBlk1jLBtkHC8U1p6Bw9E1P1XqYAlU,1093
+potx_cloud-0.0.2.dist-info/METADATA,sha256=WRZdNHJ2kZ9B6vsP4FG7mLV4uOTJmVSR4oiFKBU-1Gg,3716
+potx_cloud-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+potx_cloud-0.0.2.dist-info/top_level.txt,sha256=P2I0EsasHyzp5WDnds-zXlNlQxOCuATuAeCue7_uh4o,5
+potx_cloud-0.0.2.dist-info/RECORD,,
