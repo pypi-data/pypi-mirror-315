@@ -1,0 +1,26 @@
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "extract_inner_function"
+version = "0.0.1"
+authors = [
+    { name="Liu Zuo Lin", email="zlliu246@gmail.com" },
+]
+description = "A simple package to extract inner functions from an outer function"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+
+]
+
+[project.urls]
+Homepage = "https://github.com/zlliu246/extract_inner_function"
+Issues = "https://github.com/zlliu246/extract_inner_function/issues"
