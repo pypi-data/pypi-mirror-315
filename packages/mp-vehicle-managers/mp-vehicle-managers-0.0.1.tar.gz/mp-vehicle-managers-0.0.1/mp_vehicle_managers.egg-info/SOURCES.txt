@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+managers/__init__.py
+managers/admin.py
+managers/forms.py
+managers/models.py
+managers/locale/uk/LC_MESSAGES/django.mo
+managers/locale/uk/LC_MESSAGES/django.po
+managers/migrations/0001_initial.py
+managers/migrations/0002_manager_is_active_alter_manager_id.py
+managers/migrations/__init__.py
+mp_vehicle_managers.egg-info/PKG-INFO
+mp_vehicle_managers.egg-info/SOURCES.txt
+mp_vehicle_managers.egg-info/dependency_links.txt
+mp_vehicle_managers.egg-info/top_level.txt
