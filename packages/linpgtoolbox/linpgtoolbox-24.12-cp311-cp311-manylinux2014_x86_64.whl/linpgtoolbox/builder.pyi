@@ -1,0 +1,26 @@
+from ._execute import execute_python as execute_python
+from .pyinstaller import PackageInstaller as PackageInstaller, PyInstaller as PyInstaller
+from collections import deque
+from typing import Final
+
+class Builder:
+    __PATH: Final[str]
+    __CACHE_NEED_REMOVE: Final[tuple[str, ...]]
+    CACHE_NEED_REMOVE: Final[deque[str]]
+    __DIST_DIR: Final[str]
+    @staticmethod
+    def remove(*path: str, cwd: str | None = None) -> None: ...
+    @classmethod
+    def copy(cls, files: tuple[str, ...], target_folder: str, move: bool = False) -> None: ...
+    @classmethod
+    def __clean_up(cls) -> None: ...
+    @classmethod
+    def __combine(cls, _dir_path: str) -> None: ...
+    @classmethod
+    def compile(cls, source_folder: str, target_folder: str = 'src', upgrade: bool = False, skip_compile: bool = False, show_success_message: bool = True) -> None: ...
+    @classmethod
+    def pack(cls, os_specific: bool = True) -> None: ...
+    @classmethod
+    def upload(cls, confirm: bool = True) -> None: ...
+    @classmethod
+    def release(cls) -> None: ...
