@@ -1,0 +1,9 @@
+dj_polyglot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_polyglot/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_polyglot/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_polyglot/management/commands/djp_pull_translations.py,sha256=pyPMQua9pTqaH8SXEh8vwRuvm0LwmpQXdgNV46VzJZ8,3778
+dj_polyglot/management/commands/djp_push_translations.py,sha256=tQyg0wIGD5F-qYdJYbobrswBq99IGG_tFJVcbFmmiYo,2353
+dj_polyglot-0.3.dist-info/METADATA,sha256=2c7xxmHlA6cR3nWf7oJsGdfhdlBUERRV2BCdBIdG9-U,245
+dj_polyglot-0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+dj_polyglot-0.3.dist-info/top_level.txt,sha256=5S35a8fDZc-k59TkQOqAQHhbQHC1q74_YCdFYv0lP70,12
+dj_polyglot-0.3.dist-info/RECORD,,
