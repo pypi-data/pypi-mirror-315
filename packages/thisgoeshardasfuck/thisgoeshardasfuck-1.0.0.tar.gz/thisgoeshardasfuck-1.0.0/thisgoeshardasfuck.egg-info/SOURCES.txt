@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_thisgoeshardasfuck.py
+thisgoeshardasfuck/__init__.py
+thisgoeshardasfuck.egg-info/PKG-INFO
+thisgoeshardasfuck.egg-info/SOURCES.txt
+thisgoeshardasfuck.egg-info/dependency_links.txt
+thisgoeshardasfuck.egg-info/entry_points.txt
+thisgoeshardasfuck.egg-info/top_level.txt

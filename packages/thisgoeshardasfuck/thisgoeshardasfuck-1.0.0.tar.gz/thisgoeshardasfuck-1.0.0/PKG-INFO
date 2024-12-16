@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: thisgoeshardasfuck
+Version: 1.0.0
+Summary: this goes hard as fuck.
+Author-email: Joel Yisrael <joel@highlyawear.com>
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# thisgoeshardasfuck
+
+this goes hard as fuck.
+
+![Groovy Motherfucker.](https://media-assets.grailed.com/prd/listing/temp/475038f0fd3e440f88333473e4cd06ac)
+
+## Usage
+
+```python
+import thisgoeshardasfuck
+
+thisgoeshardasfuck()
+```
