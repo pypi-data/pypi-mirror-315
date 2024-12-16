@@ -1,0 +1,13 @@
+cloudly/__init__.py,sha256=4plrPRwnl3TvsXn_UT9ckZBa-WiYQExpZPDYoEoZ9i0,139
+cloudly/gcp/__init__.py,sha256=tlxgjZ29ZFIHsZrv1vojkAoyq2CfSOeLJ5MT62LGdH4,34
+cloudly/gcp/auth.py,sha256=fyij9-mj9Vabr3FVBZ1ehfB6qEuMatKyAxEgo5ts56Y,4989
+cloudly/gcp/secretmanager.py,sha256=2ubksEwNSx_ZwcHcVaCZcPCWrRcq2pQLazWXaFXoEkI,450
+cloudly/util/__init__.py,sha256=X3h86a0YNPSEsmh0saf-QPD-iLw5DDvV4AJU64-2TPg,51
+cloudly/util/datetime.py,sha256=pCgXXw4EZ-yCmrtPLqroVIjRBZxTm_TEUjvni8bKL-Y,1428
+cloudly/util/docker.py,sha256=-pNL9nFRjOaBw8F1cVNB686Bj8XG4j34iXdcp2rgrCs,616
+cloudly/util/logging.py,sha256=SnRO8KmDXilLFsx4bc3KxWSdr7b4hk2ZLsJuOoIyZwc,7649
+cloudly/util/ratelimit.py,sha256=ZA1ZRQE3lAboZLyoz-9Io-fJm57l1ooNV5yK4zuXlCw,6047
+cloudly-0.0.4.dist-info/LICENSE,sha256=F1jdR0huymkR-1KYphIoAmIt9ngrPdy-IP2lUqw8XGc,1067
+cloudly-0.0.4.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+cloudly-0.0.4.dist-info/METADATA,sha256=E7O-8ADdG4RrLDTKnzZ4o3t0YN6AT7xh3O5_GaF8nUc,961
+cloudly-0.0.4.dist-info/RECORD,,
