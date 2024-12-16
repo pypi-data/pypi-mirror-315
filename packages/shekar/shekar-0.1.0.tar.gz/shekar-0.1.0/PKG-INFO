@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: shekar
+Version: 0.1.0
+Summary: Simplifying Persian NLP for Everyone
+Project-URL: Homepage, https://github.com/amirivojdan/shekar
+Project-URL: Repository, https://github.com/amirivojdan/shekar
+Author-email: Ahmad Amirivojdan <amirivojdan@gmail.com>
+License-Expression: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <img src="https://amirivojdan.io/shekar_logo.svg" alt="drawing" width="150"/>
+  <h2 align="center" >فارسی شکر است!</h2>
+</p>
+
+# Simplifying Persian NLP for Everyone
