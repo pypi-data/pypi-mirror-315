@@ -1,0 +1,9 @@
+pycrc32-0.3.0.dist-info/METADATA,sha256=BHy3ZYhVGb-l8B7X29qcs__60cLHoQ818hzD2DKWl6w,3822
+pycrc32-0.3.0.dist-info/WHEEL,sha256=9n-AnutjOFS46rD2NBJLY3baVG714CVhkZJmn8lZ4cM,108
+pycrc32-0.3.0.dist-info/licenses/LICENSE.txt,sha256=YdODsFuH14-U0pN-JYDM5HIm0XgjwEMPvK0JWWU3788,1097
+pycrc32.libs/libgcc_s-e52197c3.so.1,sha256=vkPW1Auw6CH9Bjk7frmX3hry_1H9c0tRI0Ncyg71WUI,724137
+pycrc32/tests/test_crc32.py,sha256=MgqQ9GJqeTYhKI6s5yDjMGZ36_zh9GigRnAapIRDv1I,2039
+pycrc32/__init__.py,sha256=Bpxsk0wep3ISv-ZcX_coax6S5m-74jepGlme0OFhv5I,35
+pycrc32/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycrc32/pycrc32.cpython-310-aarch64-linux-gnu.so,sha256=eezWnP2XuKR071HfWiGtPN51O3rjmrrUvQO4EwOlyM4,723409
+pycrc32-0.3.0.dist-info/RECORD,,
