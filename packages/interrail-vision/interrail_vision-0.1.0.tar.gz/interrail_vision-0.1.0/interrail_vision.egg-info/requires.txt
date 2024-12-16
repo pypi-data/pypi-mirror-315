@@ -1,0 +1,4 @@
+requests
+pillow
+pymupdf
+openai
