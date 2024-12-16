@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: metrx
+Version: 0.0.0
+Summary: "A library containing a collection of distance and similarity measures to compare time series data. Coming soon!"
+Author-email: Kay Pompetzki <kay.hansel@tu-darmstadt.de>, Theo Gruner <theo_sunao.gruner@tu-darmstadt.de>, Firas Al-Hafez <fi.alhafez@gmail.com>
