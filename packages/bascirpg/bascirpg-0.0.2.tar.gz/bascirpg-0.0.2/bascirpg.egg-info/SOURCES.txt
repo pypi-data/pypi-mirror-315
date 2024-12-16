@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bascirpg.egg-info/PKG-INFO
+bascirpg.egg-info/SOURCES.txt
+bascirpg.egg-info/dependency_links.txt
+bascirpg.egg-info/top_level.txt
+basicrpg/__init__.py
+basicrpg/basics.py
+basicrpg/components.py
+basicrpg/errors.py
+basicrpg/generators.py
+basicrpg/items.py
