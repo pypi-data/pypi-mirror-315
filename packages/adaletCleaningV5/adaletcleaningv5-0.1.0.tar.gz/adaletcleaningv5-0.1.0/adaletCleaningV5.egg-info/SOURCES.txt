@@ -1,0 +1,11 @@
+README.md
+setup.py
+adaletCleaningV5/__init__.py
+adaletCleaningV5/myfunctions.py
+adaletCleaningV5/utils.py
+adaletCleaningV5.egg-info/PKG-INFO
+adaletCleaningV5.egg-info/SOURCES.txt
+adaletCleaningV5.egg-info/dependency_links.txt
+adaletCleaningV5.egg-info/top_level.txt
+tests/__init__.py
+tests/test_myfunctions.py
