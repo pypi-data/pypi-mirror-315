@@ -1,0 +1,108 @@
+{
+  "rules": [
+    {
+      "type": "branch",
+      "parameters": {
+        "name": "main",
+        "pattern": "refs/heads/main",
+        "enforcement": "active",
+        "conditions": {
+          "ref_name": {
+            "include": ["refs/heads/main"],
+            "exclude": []
+          }
+        },
+        "rules": {
+          "required_status_checks": {
+            "strict": true,
+            "contexts": [
+              "test",
+              "benchmark",
+              "security-scan"
+            ]
+          },
+          "required_pull_request_reviews": {
+            "dismiss_stale_reviews": true,
+            "require_code_owner_reviews": true,
+            "required_approving_review_count": 1
+          },
+          "required_linear_history": true,
+          "required_signatures": true,
+          "required_conversation_resolution": true,
+          "pull_request": {
+            "dismisses_stale_reviews": true,
+            "requires_updated_branches": true
+          },
+          "block_force_pushes": true,
+          "block_deletions": true,
+          "creation": {
+            "requires_authorization": true
+          },
+          "merge_requirements": {
+            "merge_types": {
+              "allow_squash": true,
+              "allow_merge_commit": false,
+              "allow_rebase": true
+            }
+          },
+          "required_deployments": {
+            "required_deployment_environments": ["Publishing", "github-pages"]
+          },
+          "required_workflows": {
+            "workflows": [
+              ".github/workflows/test.yml",
+              ".github/workflows/security.yml",
+              ".github/workflows/benchmark.yml",
+              ".github/workflows/docs.yml",
+              ".github/workflows/release.yml"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "type": "tag",
+      "parameters": {
+        "name": "Pre-release Tags",
+        "pattern": "refs/tags/v0.*",
+        "enforcement": "active",
+        "conditions": {
+          "ref_name": {
+            "include": ["refs/tags/v0.*"],
+            "exclude": []
+          }
+        },
+        "rules": {
+          "creation": {
+            "requires_authorization": true
+          },
+          "required_signatures": true,
+          "block_deletions": true
+        }
+      }
+    },
+    {
+      "type": "pull_request",
+      "parameters": {
+        "name": "PR Requirements",
+        "enforcement": "active",
+        "conditions": {
+          "ref_name": {
+            "include": ["refs/heads/*"],
+            "exclude": []
+          }
+        },
+        "rules": {
+          "required_title_pattern": {
+            "pattern": "^(feat|fix|docs|style|refactor|test|chore)(\\([a-z]+\\))?: .+",
+            "message": "PR title must follow conventional commits format"
+          },
+          "required_body_pattern": {
+            "pattern": ".{20,}",
+            "message": "PR description must be meaningful and at least 20 characters"
+          }
+        }
+      }
+    }
+  ]
+}

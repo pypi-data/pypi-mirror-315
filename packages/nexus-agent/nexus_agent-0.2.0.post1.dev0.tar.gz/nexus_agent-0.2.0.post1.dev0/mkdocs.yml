@@ -1,0 +1,14 @@
+site_name: Nexus Agent
+site_description: Documentation for the Nexus Agent project
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Project Vision: project_vision.md
+  - Roadmap: roadmap.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences

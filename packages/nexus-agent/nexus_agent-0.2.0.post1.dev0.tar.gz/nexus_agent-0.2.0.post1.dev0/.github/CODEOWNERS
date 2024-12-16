@@ -1,0 +1,16 @@
+# Default owners for everything in the repo
+* @Yungshween
+
+# Specific ownership for core components
+/src/nexus_agent/tools/core/ @Yungshween
+/src/nexus_agent/tools/ai/ @Yungshween
+/src/nexus_agent/tools/dev/ @Yungshween
+/src/nexus_agent/tools/io/ @Yungshween
+/src/nexus_agent/tools/utils/ @Yungshween
+
+# Test files ownership
+/tests/ @Yungshween
+
+# Documentation ownership
+/docs/ @Yungshween
+*.md @Yungshween

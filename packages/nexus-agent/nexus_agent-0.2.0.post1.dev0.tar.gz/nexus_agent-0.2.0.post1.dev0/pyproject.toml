@@ -1,0 +1,117 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexus-agent"
+dynamic = ["version"]
+description = "An AI assistant with advanced tool integration capabilities"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Andrew Turner", email = "andrewturner28@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11"
+]
+dependencies = [
+    "aiohttp>=3.11.10",
+    "altair>=5.5.0",
+    "beautifulsoup4>=4.12.3",
+    "docker>=7.1.0",
+    "extra-streamlit-components>=0.1.56",
+    "matplotlib>=3.8.0",
+    "numpy>=2.2.0",
+    "openai>=1.57.4",
+    "pandas>=2.2.3",
+    "uvloop>=0.17.0",
+    "Pillow>=11.0.0",
+    "pydantic>=2.10.3",
+    "python-dotenv>=1.0.1",
+    "pytz>=2024.2",
+    "requests>=2.32.3",
+    "streamlit>=1.41.1",
+    "streamlit-custom-notification-box>=0.1.1",
+    "streamlit-option-menu>=0.3.6",
+    "playwright>=1.49.1",
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.11.1",
+    "pytest-xdist>=3.3.1",
+    "aioresponses>=0.7.4",
+    "responses>=0.23.1",
+    "coverage>=7.3.0",
+    "black>=23.10.0",
+    "pylint>=2.17.5",
+    "pre-commit>=3.3.3"
+]
+
+[project.urls]
+Source = "https://github.com/Yungshween/OpenRouter-Bot"
+Tracker = "https://github.com/Yungshween/OpenRouter-Bot/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["nexus_agent*"]
+namespaces = true
+
+[tool.setuptools_scm]
+write_to = "src/nexus_agent/_version.py"
+version_scheme = "no-guess-dev"
+local_scheme = "no-local-version"
+
+[tool.black]
+line-length = 120
+target-version = ["py311"]
+include = '\.pyi?$'
+extend-exclude = '''
+# A regex preceded with ^/ will apply only to files and directories
+# in the root of the project.
+^/docs
+'''
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --cov=nexus_agent --cov-report=term-missing"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["nexus_agent"]
+omit = [
+    "tests/*",
+    "setup.py"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "pass",
+    "raise ImportError"
+]
+
+[tool.flake8]
+max-line-length = 120
+extend-ignore = [
+    "E203",  # Whitespace before ':'
+    "E302",  # Expected 2 blank lines
+    "E303",  # Too many blank lines
+    "W291",  # Trailing whitespace
+    "W293"   # Blank line contains whitespace
+]
+exclude = [
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+    "*.egg-info"
+]
