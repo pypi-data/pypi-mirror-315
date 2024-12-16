@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: smsactivatepy
+Version: 1
+Summary: smsactivatepy is an Python module that provides functions for working with the API sms-activate.org
+Author: Gabriel Lima
+Author-email: gabrielmrts@yahoo.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# SMSActivatePy Library
+
+A Python library for interacting with the [SMSActivate API](https://sms-activate.org/api2). This tool allows you to integrate SMS activation services seamlessly into your projects.
+
+## Installation
+
+To install the library, run the following command:
+
+```sh
+pip install smsactivatepy
+```
+
+## Requirements
+
+- `requests`
+- `json`
+
+## Usage Example
+
+```python
+from smsactivatepy.api import SMSActivateAPI
+
+# Initialize the API with your key
+sa = SMSActivateAPI(APIKEY)
+
+# Enable debug mode (optional, for troubleshooting)
+sa.debug_mode = True
+```
+
+## Features
+
+This library provides an interface for accessing the SMSActivate service. You can use it for operations such as:
+- Requesting a virtual phone number
+- Managing SMS activations
+- Checking account balance
+
+Detailed functionality is described in the official [SMSActivate API documentation](https://sms-activate.org/api2).
+
+## Author
+
+Developed by Gabriel Lima  
+Email: [gabrielmrts@yahoo.com](mailto:gabrielmrts@yahoo.com)
