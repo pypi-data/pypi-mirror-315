@@ -1,0 +1,41 @@
+{% extends "sovtimer/base.html" %}
+
+{% load i18n %}
+
+{% block sovtimer_body %}
+    {% include "sovtimer/partials/dashboard/table.html" %}
+{% endblock %}
+
+{% block extra_css %}
+    {% include "bundles/datatables-css-bs5.html" %}
+    {% include "sovtimer/bundles/aa-sov-timer-css.html" %}
+{% endblock %}
+
+{% block extra_javascript %}
+    <script>
+        const sovtimerJsSettingsOverride = {
+            url: {
+                ajaxUpdate: '{% url "sovtimer:dashboard_data" %}'
+            },
+            dateformat: 'YYYY-MM-DD HH:mm:ss',
+            translation: {
+                dtFilter: {
+                    type: '{% translate "Type" %}',
+                    system: '{% translate "System" %}',
+                    constellation: '{% translate "Constellation" %}',
+                    region: '{% translate "Region" %}',
+                    owner: '{% translate "Owner / Defender" %}',
+                    activeCampaign: '{% translate "Active campaign" %}',
+                },
+                yes: '{% translate "Yes" %}',
+                no: '{% translate "No" %}',
+            },
+            upcomingTimerThreshold: 4 * 60 * 60 * 1000, // 4 hours in milliseconds
+        };
+    </script>
+
+    {% include "bundles/moment-js.html" with locale=True %}
+    {% include "bundles/datatables-js-bs5.html" %}
+    {% include "bundles/filterdropdown-js.html" %}
+    {% include "sovtimer/bundles/aa-sov-timer-js.html" %}
+{% endblock %}
