@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: interrail_vision
+Version: 0.1.2
+Summary: A package for reading images and PDFs via AI-powered vision
+Home-page: https://github.com/Shakh7/
+Author: ShakhCo
+Author-email: shakhzodbeksharipov@outlook.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pillow
+Requires-Dist: pymupdf
+Requires-Dist: openai
+
+# My Package
+
+A Python package for reading images and PDFs with AI-powered vision.
+
+## Installation
+
+```bash
+pip install interrail_vision
