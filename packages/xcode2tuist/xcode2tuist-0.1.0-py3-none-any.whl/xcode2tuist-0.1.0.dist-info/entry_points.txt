@@ -1,0 +1,2 @@
+[console_scripts]
+xcode2tuist = main:main
