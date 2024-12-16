@@ -1,0 +1,15 @@
+singler-0.4.0.dist-info/top_level.txt,sha256=PYHSQqj1Rq6aNFNFH7L4OBqMZyCl8trXj05XXyCLxnQ,8
+singler-0.4.0.dist-info/RECORD,,
+singler-0.4.0.dist-info/LICENSE.txt,sha256=_ZYy-yJu4VYJhg2bPkJCIRLxu40AyNFxUhWN80saVRc,1076
+singler-0.4.0.dist-info/METADATA,sha256=FWQ7xhVflKhnk7akg5JeDj46VSU--_wezF2dQ0WaWT0,7179
+singler-0.4.0.dist-info/WHEEL,sha256=9BFfIe-Zq441iQ0ehutX65O5faGDpmB1Uw3WaQGk4f0,151
+singler/_utils.py,sha256=Vncz8t5UY2EhMCM-_PsfBqyPlYxN385T5v2KAf9-qLE,3324
+singler/classify_integrated.py,sha256=ERnZrS_-FldMBiYa6F80o1viVx858HbbQY4eDGzJfwA,5207
+singler/annotate_integrated.py,sha256=PFqHwimYL93pdPdYHN3GgraFSid4AVw6zwvKZPV_3Lo,7855
+singler/train_integrated.py,sha256=aVljtdcuUwGj0OleyPtQ-MuTnrZ73LO-S6BK2kQMgVk,3046
+singler/train_single.py,sha256=KjdaXq0ufN8FurXUD3Fbv3ZSW6mbFRlI6pcQyQOtYCY,11915
+singler/__init__.py,sha256=C8UmWHQKDRUYUIsOKWMsBsWB9pvA0CE1iFI2_8l2Fpo,994
+singler/lib_singler.cpython-311-x86_64-linux-gnu.so,sha256=LvEGJiZX0nJfMyVhBDIEh-zODE69YFs1dj_nJPWDjJ8,393480
+singler/get_classic_markers.py,sha256=wVpv7WdCpMhtXGYm7RplkIl-dKwoeYECumjj9VVTNvs,7474
+singler/annotate_single.py,sha256=O3M6Eeoh2QnNRvfnWc3OEey-rMwWemlpZ4IApppkZxA,4927
+singler/classify_single.py,sha256=oVhv28wilnHr5WzaQrGPNVPN9KV9EUKFljyP5nxIuDM,3740
