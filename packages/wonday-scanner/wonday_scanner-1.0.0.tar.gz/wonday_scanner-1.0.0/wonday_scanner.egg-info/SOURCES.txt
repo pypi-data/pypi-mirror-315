@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+wonday_scanner.egg-info/PKG-INFO
+wonday_scanner.egg-info/SOURCES.txt
+wonday_scanner.egg-info/dependency_links.txt
+wonday_scanner.egg-info/entry_points.txt
+wonday_scanner.egg-info/requires.txt
+wonday_scanner.egg-info/top_level.txt
