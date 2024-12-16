@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: SDL3
+Version: 0.1.1b0
+Summary: Alias package for PySDL3.
+Author-email: Yusuf Rençber <aermoss.0@gmail.com>
+Project-URL: Repository, https://github.com/Aermoss/PySDL3
+Project-URL: Issues, https://github.com/Aermoss/PySDL3/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PySDL3
+
+# PySDL3 Alias
+This is an alias package for [PySDL3](https://github.com/Aermoss/PySDL3), please install [PySDL3](https://github.com/Aermoss/PySDL3) directly.

@@ -1,0 +1,12 @@
+.gitattributes
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/python-publish.yml
+SDL3.egg-info/PKG-INFO
+SDL3.egg-info/SOURCES.txt
+SDL3.egg-info/dependency_links.txt
+SDL3.egg-info/requires.txt
+SDL3.egg-info/top_level.txt
+sdl3_alias/__init__.py
