@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: gj-unitrad
+Version: 0.0.4
+Summary: unitrad打包
+Author: yin
+Author-email: 2018209921@qq.com
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+
+将相关函数添加到init文件中
