@@ -1,0 +1,13 @@
+README.md
+setup.py
+wowsnake/__init__.py
+wowsnake/debil.py
+wowsnake/launch.py
+wowsnake/main.py
+wowsnake/module_wowsnakes.py
+wowsnake/wowsnakes.py
+wowsnake.egg-info/PKG-INFO
+wowsnake.egg-info/SOURCES.txt
+wowsnake.egg-info/dependency_links.txt
+wowsnake.egg-info/requires.txt
+wowsnake.egg-info/top_level.txt
