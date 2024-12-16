@@ -1,0 +1,93 @@
+{
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_volt_ammeter.tex": [
+        "Voltage Measurement",
+        "Current Measurement",
+        "Circuit Analysis",
+        "Node Voltage Method",
+        "Series and Parallel Resistors",
+        "Effects of Connecting Meters in Circuits"
+    ],
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_ckts_intro.tex": [
+        "Node Voltage Method",
+        "Kirchhoff's Current Law (KCL)",
+        "Kirchhoff's Voltage Law (KVL)",
+        "Passive Sign Convention",
+        "Circuit Analysis"
+    ],
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_battery.tex": [
+        "Battery modeling",
+        "Power dissipation",
+        "Ohm's Law",
+        "Energy calculations",
+        "Current and voltage relationships",
+        "Charging time calculations"
+    ],
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_mech_circuits1.tex": [
+        "Circuit Analysis",
+        "Node Voltage Analysis (NVA)",
+        "Kirchhoff's Current Law (KCL)",
+        "Ohm's Law",
+        "Linear Systems"
+    ],
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_mech_circuits2_only_Vsource.tex": [
+        "Circuit Analysis",
+        "Kirchhoff's Laws",
+        "Node Voltage Method",
+        "Ohm's Law",
+        "Matrix Methods in Circuit Analysis"
+    ],
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_voltage_divider.tex": [
+        "Voltage Divider",
+        "Ohm's Law",
+        "Kirchhoff's Voltage Law (KVL)",
+        "Kirchhoff's Current Law (KCL)",
+        "Circuit Design"
+    ],
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_mech_circuits_2.tex": [
+        "Circuit Analysis",
+        "Node Voltage Analysis (NVA)",
+        "Kirchhoff's Current Law (KCL)",
+        "Ohm's Law",
+        "Linear Algebra in Circuit Analysis"
+    ],
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_power.tex": [
+        "Power Analysis",
+        "Passive Sign Convention",
+        "Nodal Analysis",
+        "Circuit Elements Power Calculation",
+        "Energy Conservation in Circuits"
+    ],
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_mechanical_resistance.tex": [
+        "Circuit Analysis",
+        "Kirchhoff's Laws",
+        "Ohm's Law",
+        "Node Voltage Method",
+        "Resistor Networks"
+    ],
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_traffic.tex": [
+        "Nullspace",
+        "Linear Algebra",
+        "Flow Conservation",
+        "Incidence Matrix",
+        "Linear Independence",
+        "Matrix Equations"
+    ],
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_notes.tex": [
+        "circuit analysis",
+        "voltage dividers",
+        "resistive touchscreens",
+        "signal conversion"
+    ],
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/figs/complex_flow_graph.tex": [
+        "Vector representation in 3-D space",
+        "Vector addition and subtraction",
+        "Graphical representation of vectors",
+        "Coordinate systems in R3"
+    ],
+    "../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/figs/simple_flow_graph.tex": [
+        "Vector representation in 3-D space",
+        "Vector addition",
+        "Geometric interpretation of vectors",
+        "Linear combinations of vectors"
+    ]
+}

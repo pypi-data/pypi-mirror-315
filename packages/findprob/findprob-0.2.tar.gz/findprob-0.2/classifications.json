@@ -1,0 +1,99 @@
+{
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/pokemon.txt": [
+        "Dictionaries",
+        "Key-Value Pairs",
+        "Membership Testing",
+        "Dictionary Methods"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/replaceall.txt": [
+        "dictionaries",
+        "iteration",
+        "value replacement"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/dictionarieswwpd.txt": [
+        "Dictionaries",
+        "Dictionary Mutation",
+        "Key-Value Pairs",
+        "Hashable Keys"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/counter.txt": [
+        "functions",
+        "dictionaries",
+        "counting occurrences",
+        "string manipulation"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/dictionarieswwpddisc.txt": [
+        "Dictionaries",
+        "Key-Value Pairs",
+        "Membership Testing",
+        "Length of Dictionary",
+        "Assignment in Dictionaries",
+        "Error Handling with Dictionaries"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/dicts.txt": [
+        "Dictionaries",
+        "Key-Value Pairs",
+        "Iteration over Dictionaries",
+        "Membership Testing in Dictionaries",
+        "Dictionary Methods"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/divide.txt": [
+        "dictionaries",
+        "list comprehension",
+        "modulus operator",
+        "iteration"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/medium/graphcycle.txt": [
+        "graph theory",
+        "directed graphs",
+        "cycle detection",
+        "recursion",
+        "depth-first search"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/medium/dictcomp.txt": [
+        "dictionary comprehension",
+        "tuples",
+        "absolute difference",
+        "pairwise comparison",
+        "iterating over nested structures"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/medium/fruit.txt": [
+        "recursion",
+        "dictionaries",
+        "combinatorial problem solving",
+        "function design",
+        "string manipulation"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/medium/groupby.txt": [
+        "dictionaries",
+        "higher-order functions",
+        "lambda functions",
+        "list manipulation"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/medium/dicttolst.txt": [
+        "dictionaries",
+        "tuples",
+        "sorting",
+        "lambda functions",
+        "iterating over collections"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/shakespeare/shakespeare.txt": [
+        "Dictionaries",
+        "Functions",
+        "Randomness",
+        "String Manipulation"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/text/shortintro.txt": [
+        "Dictionaries",
+        "Key-Value Pairs",
+        "Mutable and Immutable Types",
+        "Element Selection and Reassignment"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/text/introduction.txt": [
+        "Dictionaries",
+        "Dictionary Comprehensions",
+        "Key-Value Pairs",
+        "Accessing Dictionary Elements",
+        "Checking for Key Existence"
+    ]
+}

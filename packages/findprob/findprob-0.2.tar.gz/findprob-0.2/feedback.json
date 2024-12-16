@@ -1,0 +1,65 @@
+{
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/pokemon.txt": [
+        "dictionaries"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/replaceall.txt": [
+        "dictionaries",
+        "control",
+        "iterators and/or generators"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/dictionarieswwpd.txt": [
+        "dictionaries"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/counter.txt": [
+        "dictionaries",
+        "lists",
+        "control"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/dictionarieswwpddisc.txt": [
+        "dictionaries"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/dicts.txt": [
+        "dictionaries"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/easy/divide.txt": [
+        "dictionaries",
+        "lists",
+        "list comprehension"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/medium/graphcycle.txt": [
+        "graphs",
+        "recursion",
+        "dictionaries"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/medium/dictcomp.txt": [
+        "dictionaries",
+        "higher order functions and/or lambdas",
+        "lists",
+        "control"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/medium/fruit.txt": [
+        "dictionaries",
+        "recursion",
+        "higher order functions and/or lambdas"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/medium/groupby.txt": [
+        "dictionaries",
+        "higher order functions and/or lambdas"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/medium/dicttolst.txt": [
+        "dictionaries",
+        "higher order functions and/or lambdas",
+        "lists"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/shakespeare/shakespeare.txt": [
+        "dictionaries",
+        "functions",
+        "random"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/text/shortintro.txt": [
+        "dictionaries"
+    ],
+    "../searchable-content-database/datasets/cs61a/topics-combined/dictionaries/text/introduction.txt": [
+        "dictionaries"
+    ]
+}

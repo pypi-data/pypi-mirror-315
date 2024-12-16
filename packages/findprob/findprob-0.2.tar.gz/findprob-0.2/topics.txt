@@ -1,0 +1,14 @@
+control (if/else, loops)
+lists (data structure)
+dictionaries (data structure)
+higher order functions and/or lambdas
+environment diagrams (drawing diagrams to identify execution order)
+trees (data structure)
+linked lists (data structure)
+object oriented programming (classes, objects, and inheritance)
+recursion (including self reference)
+iterators and/or generators 
+time complexity (big O notation)
+scheme (programming language)
+structured query language (SQL)
+exceptions (try/except)

@@ -1,0 +1,6 @@
+../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_battery.tex
+../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_mech_circuits1.tex
+../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_mech_circuits2_only_Vsource.tex
+../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_voltage_divider.tex
+../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_mech_circuits_2.tex
+../searchable-content-database/datasets/eecs16a/questionBank-master/fa23_questionBank/hw/6/q_mechanical_resistance.tex
