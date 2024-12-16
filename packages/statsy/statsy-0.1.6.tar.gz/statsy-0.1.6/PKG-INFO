@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: statsy
+Version: 0.1.6
+Summary: A package of statistical functions and operations.
+License: Apache License 2.0
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Statsy
+![PyPI Version](https://img.shields.io/pypi/v/statsy.svg)
+
+** BEWARE: this package is under development **
+
+#### License
+Apache 2.0
