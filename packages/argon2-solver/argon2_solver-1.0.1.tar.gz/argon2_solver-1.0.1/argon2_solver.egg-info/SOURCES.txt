@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+argon2_solver/__init__.py
+argon2_solver/main.py
+argon2_solver.egg-info/PKG-INFO
+argon2_solver.egg-info/SOURCES.txt
+argon2_solver.egg-info/dependency_links.txt
+argon2_solver.egg-info/entry_points.txt
+argon2_solver.egg-info/top_level.txt
