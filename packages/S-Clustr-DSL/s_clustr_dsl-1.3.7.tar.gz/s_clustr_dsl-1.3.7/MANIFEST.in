@@ -1,0 +1,8 @@
+include clustr/*.py
+include clustr/*.conf
+recursive-include clustr *.py
+recursive-include clustr *.conf
+exclude clustr/Device
+exclude clustr/sccopt
+exclude clustr/Device/*
+exclude clustr/sccopt/*

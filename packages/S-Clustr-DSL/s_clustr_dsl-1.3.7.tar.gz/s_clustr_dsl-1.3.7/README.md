@@ -1,0 +1,446 @@
+<h1 align="center" style="color: #00FF00; font-family: 'Lucida Console', Monaco, monospace; text-shadow: 2px 2px 10px #FF0000, 4px 4px 20px #000000; font-size: 3em;">
+  S-Clustr (Shadow Cluster) Simple
+</h1>
+<p align="center">
+
+  <img src="https://img.shields.io/badge/Python-3.9-darkblue" alt="Python-3.9" style="margin-right: 10px;">
+  <img src="https://img.shields.io/badge/Tools-Hacker_tool-darkred" alt="Hacker_tool" style="margin-right: 10px;">
+  <img src="https://img.shields.io/badge/Team-S--H4CK13-darkmagenta" alt="S-H4CK13" style="margin-right: 10px;">
+  <img src="https://img.shields.io/badge/Threat-APT-darkorange" alt="APT" style="margin-right: 10px;">
+  <img src="https://img.shields.io/badge/Category-IOT-darkgrey" alt="IOT" style="margin-right: 10px;">
+  <img src="https://img.shields.io/badge/Category-OT-darkgrey" alt="OT" style="margin-right: 10px;">
+  <img src="https://img.shields.io/badge/Category-IT-darkgrey" alt="IT" style="margin-right: 10px;">
+  <img src="https://img.shields.io/badge/Threat-Botnet-darkred" alt="Botnet" style="margin-right: 10px;">
+  <img src="https://img.shields.io/badge/Brand-Siemens(PLC)-darkblue" alt="Siemens-PLC" style="margin-right: 10px;">
+</p>
+
+## Game Air Battle
+
+
+This is a game plugin that maps the game visuals to real-world lighting, allowing for malicious control to complete the game.
+
+Start the game server:
+
+`$ python3 game.py`
+
+![alt text](./pic/image_.png)
+
+Start the floor simulation client (if you are connecting to real devices, it must be a 5-column by 6-row building), input and connect to the shadow cluster server.
+
+![alt text](./pic/image-2.png)
+
+`$ python3 scctest.py`
+
+![alt text](./pic/image-1.png)
+
+Start the shadow cluster client and connect to the game server:
+
+`python3 S-Clustr_Client.py`  
+`set rhost 192.168.0.109`  
+`set key 038c97dac0397d783c078df6b6b07efb`  
+`game 192.168.0.104 10011`
+
+![alt text](./pic/image-3.png)
+
+After successfully connecting to the game server, the device will synchronize your game visuals in real time...  
+Perhaps playing this game on a displayed building would be even more fun...
+
+## Pseudo-compiler
+
+![alt text](./pic/image.png)
+
+
+
+
+
+`1. Write the pseudocode into the input box and compile it; a clustr package will be generated in the ./sccopt directory. `
+
+`2. Start the S-Clustr client and use the load command to execute the automation package. Example: load <key> <Path>`
+
+<img src="https://github.com/MartinxMax/MartinxMax/blob/main/Shadow.jpeg" alt="Description"/>
+
+
+
+| Type | Controlled Device | Wired | Wireless | 4G | Security Encryption | Protocol |
+| --- | ---- | --- | --- | --- | ---- | --- |
+| Embedded | Arduino | √ | × | √ | × | TCP/IP |
+| Embedded | Ai-Thinker AIR780E | × | × | √ | × | TCP/IP |
+| Embedded | ESP8266 | × | √ | × | × | TCP/IP |
+| Embedded | AT89C51 | × | × | √ | × | TCP/IP |
+| Embedded | STM32[103fc6t6] | × | × | √ | × | TCP/IP |
+| PLC | SIEMENS S7-1200 | √ | × | × | √ | TCP/IP |
+| PLC | SIEMENS S7-200 | √ | × | × | √ | TCP/IP |
+
+| Controlled PC Platform | Protocol | Security Encryption |
+| ------ | --- | ---- |
+| Windows | TCP/IP | Optional |
+| Linux | TCP/IP | Optional |
+| Mac OS | TCP/IP | Optional |
+
+| Server Files | Description |
+| ----- | --- |
+| S-Clustr_Server | Server |
+| S-Clustr_Client | Attacker Client |
+| DebugDevice | Simulates embedded device connecting to server |
+| Generate | One-click generation of embedded device programs |
+| Testpc | Windows host connecting to server |
+| blacklist.conf | Blacklist, marks IP groups that are prohibited from connecting |
+| Server.conf | Configuration parameters for the server |
+| Version.conf | Version information |
+| Linux_Installer.sh | Linux environment dependency installer |
+| Windows_Installer.bat | Windows environment dependency installer |
+| Parameter_Description-EN.xls | [English] Description of parameters in Server.conf |
+| Parameter_Description-ZH.xls | [Chinese] Description of parameters in Server.conf |
+
+
+# S-Clustr Embedded Device Side
+
+## Arduino
+
+### Wired LAN Control
+
+#### Prepare Materials
+
+1. Arduino UNO
+
+![Arduino UNO](https://image.3001.net/images/20231003/1696319500_651bc80cd29c5e6f7d8d1.png!small)
+
+2. ENC28J60
+
+![ENC28J60](https://image.3001.net/images/20231004/1696404809_651d15491408ad4740661.png!small)
+
+3. 1-channel Relay Module 5V
+
+![Relay Module](https://image.3001.net/images/20231003/1696320112_651bca7049ff6d0cfd7c8.png!small)
+
+4. Dupont Wires
+
+![Dupont Wires](https://image.3001.net/images/20231003/1696320323_651bcb43ea727fb6119ef.png!small)
+
+#### Wiring Diagram
+
+![Wiring Diagram](https://image.3001.net/images/20231004/1696404864_651d15804a8adde1b9379.png!small)
+
+![Wiring Diagram](https://image.3001.net/images/20231004/1696404881_651d1591885762a52c1a9.png!small)
+
+### 4G Wireless Public Network Control
+
+#### Prepare Materials
+
+1. Arduino UNO
+
+![Arduino UNO](https://image.3001.net/images/20231003/1696319500_651bc80cd29c5e6f7d8d1.png!small)
+
+2. SIM900A or SIM800A
+
+![SIM900A](https://image.3001.net/images/20231003/1696320095_651bca5fdbb3a6a2b1941.png!small)
+
+3. 1-channel Relay Module 5V
+
+![Relay Module](https://image.3001.net/images/20231003/1696320112_651bca7049ff6d0cfd7c8.png!small)
+
+4. Dupont Wires (Female to Female)
+
+![Dupont Wires](https://image.3001.net/images/20231003/1696320323_651bcb43ea727fb6119ef.png!small)
+
+5. Mobile SIM Card
+
+*Mobile SIM is required because SIM800A and SIM900A support only 2G networks from Mobile, not Telecom or Unicom... However, the Airm2m AIR780e module should work with Unicom, so SIM series may not be needed as it is internally integrated.*
+
+![Mobile SIM Card](https://image.3001.net/images/20231003/1696322442_651bd38a673737e609e44.png!small)
+
+#### Wiring Diagram
+
+Simulates controlling relay behavior upon receiving signal from Arduino.
+
+![Wiring Diagram](https://image.3001.net/images/20231003/1696321543_651bd0070660a10028e00.png!small)
+
+![Wiring Diagram](https://image.3001.net/images/20231003/1696321799_651bd107e606ad635d9d9.png!small)
+
+*Don’t know how to code?... Use Generate.py to generate Arduino code.*
+
+## ESP8266 (WIFI LAN Control)
+
+#### Prepare Materials
+
+1. ESP8266
+
+![ESP8266](https://image.3001.net/images/20231005/1696496352_651e7ae0eadb3f502abd5.png!small)
+
+2. 1-channel Relay Module 5V
+
+![Relay Module](https://image.3001.net/images/20231003/1696320112_651bca7049ff6d0cfd7c8.png!small)
+
+3. Dupont Wires
+
+![Dupont Wires](https://image.3001.net/images/20231003/1696320323_651bcb43ea727fb6119ef.png!small)
+
+#### Wiring Diagram
+
+![Wiring Diagram](https://image.3001.net/images/20231005/1696496713_651e7c4961e1f66469f91.png!small)
+
+## AIR780E (4G Wireless Public Network Control) [Recommended]
+
+### Notes
+
+1. This development board has been tested and indeed is faster and more stable than the SIM series.
+2. Install Luatools: For programming.
+[https://doc.openluat.com/wiki/37?wiki_page_id=4489]
+
+#### Prepare Materials
+
+1. Air780e Development Board
+
+*There is a SIM card slot on the back.*
+
+![Air780e Development Board](https://image.3001.net/images/20231014/1697255772_652a115c4d9c45ee325b8.png!small)
+
+![Air780e Development Board](https://image.3001.net/images/20231014/1697256035_652a1263e9098b9a5a733.png!small)
+
+2. 1-channel Relay Module 5V
+
+![Relay Module](https://image.3001.net/images/20231003/1696320112_651bca7049ff6d0cfd7c8.png!small)
+
+3. Dupont Wires
+
+![Dupont Wires](https://image.3001.net/images/20231003/1696320323_651bcb43ea727fb6119ef.png!small)
+
+#### Wiring Diagram
+
+![Wiring Diagram](https://image.3001.net/images/20231014/1697256413_652a13ddced9ee29cc759.png!small)
+
+#### Programming
+
+*Import the generated file into Luatools.*
+
+![Import File](https://image.3001.net/images/20231014/1697256986_652a161a395cbe1d00004.png!small)
+
+*Select the core, provided in our Output\AIR780E\LuatOS-SoC_V1103_EC618.soc.*
+
+![Select Core](https://image.3001.net/images/20231014/1697257233_652a1711a164adde8dc73.png!small)
+
+*Complete the programming according to the prompts. Note the three buttons on the board: Start, Reset, BOOT.*
+
+![Buttons](https://image.3001.net/images/20231014/1697257441_652a17e10a6eb5ce11d70.png!small)
+
+## AT89C51
+
+### Prepare Materials
+
+1. 51 Microcontroller Minimal System Development Board with CH340 Downloader
+
+![51 Microcontroller](https://image.3001.net/images/20231016/1697385869_652c0d8d827cba5a5f0b6.png!small)
+
+2. 1-channel Relay Module 5V
+
+![Relay Module](https://image.3001.net/images/20231003/1696320112_651bca7049ff6d0cfd7c8.png!small)
+
+3. Dupont Wires (Female to Female)
+
+![Dupont Wires](https://image.3001.net/images/20231003/1696320323_651bcb43ea727fb6119ef.png!small)
+
+4. SIM900A or SIM800A
+
+![SIM900A](https://image.3001.net/images/20231003/1696320095_651bca5fdbb3a6a2b1941.png!small)
+
+5. Mobile SIM Card
+
+![Mobile SIM Card](https://image.3001.net/images/20231003/1696322442_651bd38a673737e609e44.png!small)
+
+### Wiring Diagram
+
+![Wiring Diagram](https://image.3001.net/images/20231016/1697386548_652c1034eb77af75eea6b.png!small)
+
+
+## Generate一键生成烧录代码
+
+## Generate One-Click Programming Code
+
+Run the command:
+
+`python3 Generate.py`
+
+![Generate.py](https://image.3001.net/images/20231016/1697386581_652c10555cac89556f026.png!small)
+
+*Fill in the parameters. Note that 127.0.0.1 is incorrect; you should enter the public IP address of the server, which is the IP of the machine running S-Clustr_Server.py.*
+
+![Input Parameters](https://image.3001.net/images/20231003/1696321930_651bd18a964982b1d7c4d.png!small)
+
+*The output programming code will be located in the directory .\Device\Output\Model.*
+
+
+# S-Clustr Server
+
+**Note:**
+1. The server must be on a public network. If your server is on a private network, you can consider port forwarding. The hacker's service defaults to port 9999, and the device service defaults to port 10000.
+2. The server and hacker client communicate with full encryption throughout. Encryption services are mandatory and cannot be disabled. Additionally, you can configure in the Server.conf file whether to provide encryption services when embedded devices or controlled PCs connect.
+3. For parameters in the Server.conf file that you do not understand, please refer to the detailed manual documentation.
+4. Each time the server starts, it generates a random 12-character key for authentication between the hacker and the controlled device to prevent unauthorized access by other hackers. You can manually specify the key (python3 S-Clustr_Server.py -keyh Maptnh -keyv Maptnh). Here, there are two keys for both the hacker and the controlled device: the first is a plaintext key, and if you find it too sensitive, you can use the subsequent temporary TOKEN as a key, which effectively prevents plaintext key exposure.
+
+![Server Configuration](https://image.3001.net/images/20231003/1696323112_651bd6286aa926034bd61.png!small)
+*In this parameter, setting it to 1 enables encryption services for the controlled device, requiring the device to provide an authentication key for access; otherwise, access will be denied.*
+
+![Server Configuration Detail](https://image.3001.net/images/20231003/1696323168_651bd6608c798de5fd12d.png!small)
+
+5. This setup effectively prevents man-in-the-middle (MITM) sniffing of communication packets between the hacker client and the server, further preventing replay attacks and decryption of encrypted data.
+
+## Server Script Parameters
+
+`-lh`: Bind to a specified local IP address, default is 0.0.0.0
+`-lpv`: Set the local listening address for the device side, default port is 10000
+`-lph`: Set the local listening address for the hacker side, default port is 9999
+`-keyh`: Set the hacker side key, default is a randomly generated 12-character key
+`-keyv`: Set the device side key, default is a randomly generated 12-character key
+
+## Running the Server
+
+`python3 S-Clustr_Server.py`
+
+![Server Running](https://image.3001.net/images/20231003/1696323448_651bd778647c82aa08cf5.png!small)
+
+
+# S-Clustr Hacker Client
+
+**Note:**
+The client operates interactively, similar to the Metasploit penetration testing framework.
+
+## Hacker Client Script Parameters
+
+After entering, type `help` or `?` or `options` to view the required settings:
+`set rhosts <IP>`: Set the IP address of the server
+`set rport <Port>`: Set the port of the server
+`set id <number>`: Select the ID number of the device to control, 0 means select all devices
+`set pwr <state>`: Control device status: Start [1], Stop [2], Query status [3]
+
+## Connecting the Hacker Client to the Server
+
+`python3 S-Clustr_Client.py`
+
+![Hacker Client Screenshot](https://image.3001.net/images/20231003/1696323920_651bd950229e1881fffdc.png!small)
+
+*Query the current status of all devices*
+
+
+```
+S-Clustr(V1.0.0)> set rhost 127.0.0.1
+[*] rhost => 127.0.0.1
+S-Clustr(V1.0.0)> set id 0
+[*] id => 0
+S-Clustr(V1.0.0)> set pwr 3
+[*] pwr => 3
+```
+
+**PS:** You must provide the Key here, which determines whether you have permission to access the server. You can choose any key from the server.
+
+![image.png](https://image.3001.net/images/20231003/1696324886_651bdd16be48fe704fe63.png!small)
+
+```
+S-Clustr(V1.0.0)> set key cf5cdc4798a72283a4c0c0b1ef2ef5da
+[*] key => cf5cdc4798a72283a4c0c0b1ef2ef5da
+```
+
+## Querying the Status of All Devices
+
+```
+S-Clustr(V1.0.0)> set id 0
+[*] id => 0
+S-Clustr(V1.0.0)> set pwr 3
+[*] pwr => 3
+S-Clustr(V1.0.0)> run
+[*] Connecting to the server...
+[*] Attempting to authenticate to the server [127.0.0.1:9999]
+|   Device ID   |  Device Type  | Device State | Device Network |
+|:-------------:|:-------------:|:-------------:|:---------------:|
+|       1        |      None      |    Stopped     |   Disconnected   |
+|       2        |      None      |    Stopped     |   Disconnected   |
+|       3        |      None      |    Stopped     |   Disconnected   |
+|       4        |      None      |    Stopped     |   Disconnected   |
+|       5        |      None      |    Stopped     |   Disconnected   |
+|       6        |      None      |    Stopped     |   Disconnected   |
+|       7        |      None      |    Stopped     |   Disconnected   |
+|       8        |      None      |    Stopped     |   Disconnected   |
+|       9        |      None      |    Stopped     |   Disconnected   |
+|       10       |      None      |    Stopped     |   Disconnected   |
+|:-------------:|:-------------:|:-------------:|:---------------:|
+```
+
+*We can see that the connection to the server was successful, and authentication was successful.*
+
+*If we set an incorrect Key, the server will not authorize you.*
+
+![image.png](https://image.3001.net/images/20231003/1696325026_651bdda20a3ade75729c8.png!small)
+
+![image.png](https://image.3001.net/images/20231003/1696325038_651bddae4348ef54a6219.png!small)
+
+*Simulating controlled devices connecting to the server and controlling all devices through the hacker client.*
+
+![image.png](https://image.3001.net/images/20231003/1696325230_651bde6ea06aa09ce29dc.png!small)
+
+
+*All devices are online.*
+
+![image.png](https://image.3001.net/images/20231003/1696325329_651bded1da4510ff2bf07.png!small)
+
+## Starting All Devices
+
+```
+S-Clustr(V1.0.0)> set id 0
+[*] id => 0
+S-Clustr(V1.0.0)> set pwr 1
+[*] pwr => 1
+S-Clustr(V1.0.0)> run
+```
+
+![image.png](https://image.3001.net/images/20231003/1696325463_651bdf570f2bc9ff3a606.png!small)
+
+![image.png](https://image.3001.net/images/20231003/1696325476_651bdf6439c9cef5bf0ab.png!small)
+
+## Stopping All Devices
+
+```
+S-Clustr(V1.0.0)> set id 0
+[*] id => 0
+S-Clustr(V1.0.0)> set pwr 2
+[*] pwr => 2
+S-Clustr(V1.0.0)> run
+```
+
+![image.png](https://image.3001.net/images/20231003/1696325887_651be0ff5a3bff29a4fc3.png!small)
+
+### Case Study: Controlled Device Accesses `www.bing.com` and Opens Calculator
+
+**Scenario:**
+
+After receiving the command, the controlled device should:
+1. Access the website `www.bing.com`.
+2. Open the calculator application.
+
+#### 1. **Input the Controlled Device Key**
+
+![Image](https://image.3001.net/images/20231003/1696327337_651be6a9304ba513e44c1.png!small)
+
+Ensure that the correct key is entered for the controlled device.
+
+#### 2. **Successful Connection**
+
+![Image](https://image.3001.net/images/20231003/1696327393_651be6e18f1a83c55f71d.png!small)
+
+The device is successfully connected, and the hacker client has recognized it.
+
+#### 3. **Controlling the Device**
+
+The hacker client successfully queries the device and performs the desired actions.
+
+![Image](https://image.3001.net/images/20231003/1696328517_651beb45dd05d703258bc.gif)
+
+#### 4. **Manual Documents**
+
+For more information and detailed configuration parameters, refer to the following documents:
+
+- **[Parameter_Description-ZH.xls](link_to_document)**: Chinese version of the parameter description.
+
+  ![Image](https://image.3001.net/images/20231003/1696326111_651be1dfb5a553110354d.png!small)
+
+- **[Parameter_Description-EN.xls](link_to_document)**: English version of the parameter description.
+
+  ![Image](https://image.3001.net/images/20231003/1696326136_651be1f8121b3eaf709ac.png!small)
