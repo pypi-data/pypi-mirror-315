@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: stay_online
+Version: 0.1.3
+Summary: Simulate fake mouse and keyboard actions to fake staying online
+Project-URL: Homepage, https://github.com/Chiaope/stay_online
+Author: Chiaope
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pyautogui
+Requires-Dist: pynput
+Description-Content-Type: text/markdown
+
+"# stay_online" 
+Simulate fake mouse and keyboard actions to fake staying online
