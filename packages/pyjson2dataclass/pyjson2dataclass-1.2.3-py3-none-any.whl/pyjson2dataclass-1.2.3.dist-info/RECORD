@@ -1,0 +1,9 @@
+pyjson2dataclass/__init__.py,sha256=alIDGBnxWH4JvP-UW-7N99seBBi0r1GV1h8f1ERFBec,21
+pyjson2dataclass/__main__.py,sha256=i6G-MCIU2CVlopnGoKC63iczG8Sounp1y-d6oDcjJho,980
+pyjson2dataclass/test_dataclass.py,sha256=Kqi-VDHZBVBINq6-gSk9w0XD936kRTl-Vu-JXEXfG74,1207
+pyjson2dataclass/utils.py,sha256=9Fuh0tIFvxvY5s8yl8g6FP9OU-yQ09tveo3N2n8bxgw,13429
+pyjson2dataclass-1.2.3.dist-info/METADATA,sha256=f7Vh7Sc-TZC-xPNB0GV94c31qEc5szX3N0wyt9swNjw,3300
+pyjson2dataclass-1.2.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pyjson2dataclass-1.2.3.dist-info/entry_points.txt,sha256=jT4Dl0-cMxC9kWMxTtuRc7f-SJLiCztFfl-Q3t3Ryzc,66
+pyjson2dataclass-1.2.3.dist-info/top_level.txt,sha256=ceRCgPWRzbfOPdAbWLuKvyedTpWlevq7Cc_mxfXaLGk,17
+pyjson2dataclass-1.2.3.dist-info/RECORD,,
