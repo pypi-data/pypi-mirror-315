@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: erf-gui
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/John Fiocca/erf-gui#readme
+Project-URL: Issues, https://github.com/John Fiocca/erf-gui/issues
+Project-URL: Source, https://github.com/John Fiocca/erf-gui
+Author-email: John Fiocca <void@some.where>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Description-Content-Type: text/markdown
+
+# ERF GUI
+
+[![PyPI - Version](https://img.shields.io/pypi/v/erf-gui.svg)](https://pypi.org/project/erf-gui)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/erf-gui.svg)](https://pypi.org/project/erf-gui)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install erf-gui
+```
+
+## License
+
+`erf-gui` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

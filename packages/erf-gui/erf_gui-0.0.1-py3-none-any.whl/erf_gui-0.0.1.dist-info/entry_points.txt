@@ -1,0 +1,2 @@
+[console_scripts]
+erf-gui = erf_gui.cli:create_gui
