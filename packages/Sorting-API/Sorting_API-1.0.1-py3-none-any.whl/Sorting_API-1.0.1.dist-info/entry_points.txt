@@ -1,0 +1,2 @@
+[console_scripts]
+sorting_api = app.__main__:main

@@ -1,0 +1,17 @@
+sorting_api/__init__.py,sha256=mR87lsrGZfuXxhyCtSHgz2OpVDcruMua44I8Ax8WGXk,56
+sorting_api/__main__.py,sha256=u7lreecd-bT-Xx0Up7d2T0Gofqz_MSi7gDSCPsKsrQg,1427
+sorting_api/main.py,sha256=wOTPTfzih5E2I1AKo9JyeJrTzxmIE-73gBBq1YJX1QY,654
+sorting_api/routing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sorting_api/routing/router.py,sha256=5VKppEdLFAMjZGfV2Rh92ik2xocj7gmcLZNfaNx2DHA,246
+sorting_api/routing/endpoints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sorting_api/routing/endpoints/random.py,sha256=qID75z3XNdsSo3n520LeonEbm1fPEbK6yzb9iXTzESc,1403
+sorting_api/routing/endpoints/sort.py,sha256=ENeedjGT1u5FARUiojJrl9jgfHI8ekHGyNc_aKu_ckI,4649
+sorting_api/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sorting_api/static/sorting_algo.py,sha256=o6SgUtl38P2uePRt3qWPXgn7AIEfGUE0tn7krFkklEM,93
+sorting_api/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sorting_api/utils/body_validation.py,sha256=b84-S1oD4n9UFg6_DDhTqTwhjNSdbGG1WUcyWWy54f0,838
+Sorting_API-1.0.1.dist-info/METADATA,sha256=3nKt9R0KBKNljuDHcf3cyy7XXOB2Qyw3LjlVh-BcESI,1124
+Sorting_API-1.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+Sorting_API-1.0.1.dist-info/entry_points.txt,sha256=kauaVe35VLLWj26rZsCsZOZvKl76WmkD-FQWeZ9DFRE,50
+Sorting_API-1.0.1.dist-info/top_level.txt,sha256=Q2HVP5DyAj2FrlqO4W1S54IWkrci8hFp6DnIAp-N5sw,12
+Sorting_API-1.0.1.dist-info/RECORD,,
