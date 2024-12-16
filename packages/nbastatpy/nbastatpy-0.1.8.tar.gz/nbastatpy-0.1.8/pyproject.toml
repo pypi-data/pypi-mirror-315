@@ -1,0 +1,33 @@
+[project]
+name = "nbastatpy"
+version = "0.1.8"
+description = "An easy-to-use wrapper for nba_api to easily find data for a player, game, team, or season"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "bs4>=0.0.2",
+    "loguru>=0.7.3",
+    "nba-api>=1.6.1",
+    "pandas>=2.2.3",
+    "pillow>=11.0.0",
+    "requests>=2.32.3",
+    "rich>=13.9.4",
+]
+keywords = ["basketball", "data", "nba", "sports", "stats"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+]
+
+
+[tool.uv]
+dev-dependencies = [
+    "black>=24.10.0",
+    "ipykernel>=6.29.5",
+    "ruff>=0.8.2",
+    "pytest>=8.3.4",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
