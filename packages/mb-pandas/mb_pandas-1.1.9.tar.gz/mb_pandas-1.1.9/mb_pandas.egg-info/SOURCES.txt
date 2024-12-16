@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+mb_pandas/__init__.py
+mb_pandas/aio.py
+mb_pandas/convert_data.py
+mb_pandas/dfload.py
+mb_pandas/profiler.py
+mb_pandas/transform.py
+mb_pandas/version.py
+mb_pandas.egg-info/PKG-INFO
+mb_pandas.egg-info/SOURCES.txt
+mb_pandas.egg-info/dependency_links.txt
+mb_pandas.egg-info/top_level.txt
+scripts/df_profile
+scripts/df_view
