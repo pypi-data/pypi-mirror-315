@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: gutmetrics
+Version: 0.1.3
+Summary: Analysis of blood metabolome prediction of gut microbiome α-diversity in humans
+Home-page: https://github.com/yourusername/gutmetrics
+License: Apache-2.0
+Keywords: microbiome,metabolomics,bioinformatics
+Author: Trent Leslie
+Author-email: trent.leslie@phenomehealth.org
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: matplotlib (>=3.8.2,<4.0.0)
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: scikit-learn (>=1.3.2,<2.0.0)
+Requires-Dist: scipy (>=1.11.4,<2.0.0)
+Requires-Dist: seaborn (>=0.13.0,<0.14.0)
+Requires-Dist: statsmodels (>=0.14.1,<0.15.0)
+Project-URL: Repository, https://github.com/yourusername/gutmetrics
+Description-Content-Type: text/markdown
+
+# gutmetrics
+A Python package for predicting gut microbiome α-diversity from blood metabolomics data, based on the research published in Blood metabolome predicts gut microbiome α-diversity in humans.
+
