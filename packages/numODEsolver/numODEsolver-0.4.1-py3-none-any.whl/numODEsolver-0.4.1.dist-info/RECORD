@@ -1,0 +1,9 @@
+numODEsolver/__init__.py,sha256=_riAnUkq4KYJB1oRnKV8pRgW3aIkytj2H0ZmtL5YfSk,26
+numODEsolver/solver.py,sha256=jRGn75LEEqwMoCvevOhYtv35D23RVhpO534bIISB9D0,2011
+solver/__init__.py,sha256=_riAnUkq4KYJB1oRnKV8pRgW3aIkytj2H0ZmtL5YfSk,26
+solver/solver.py,sha256=qIdao9ATou9VwgX_KZUY7-NyLKaFiFQycHgr6IhDfmw,2273
+numODEsolver-0.4.1.dist-info/LICENSE,sha256=B1LP4xi1JhMSHUlkccB-_2VoeKE8r2jbuvGFUzqJ70Y,1065
+numODEsolver-0.4.1.dist-info/METADATA,sha256=CReyqtZOH8BmnZOQUt5M8fANF3UaMKLOizRxsWQO3tE,1639
+numODEsolver-0.4.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+numODEsolver-0.4.1.dist-info/top_level.txt,sha256=G-8gaHtECVQ5G30bl_5w1UUSZ7L380bwmNo-6_r74hc,13
+numODEsolver-0.4.1.dist-info/RECORD,,
