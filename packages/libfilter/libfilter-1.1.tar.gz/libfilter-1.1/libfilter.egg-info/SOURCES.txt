@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+libfilter/__init__.py
+libfilter.egg-info/PKG-INFO
+libfilter.egg-info/SOURCES.txt
+libfilter.egg-info/dependency_links.txt
+libfilter.egg-info/top_level.txt
