@@ -1,0 +1,3702 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>nf-core&sol;rnaseq&colon; Output</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+/* From extension bierner.markdown-preview-github-styles */
+html,
+body,
+.github-markdown-body {
+    padding: 0 !important;
+    max-width: auto !important;
+}
+
+.github-markdown-body {
+    background-color: var(--color-canvas-default);
+    color: var(--color-fg-default);
+}
+
+.github-markdown-body {
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100% !important;
+}
+
+.github-markdown-content {
+    padding: 32px !important;
+    max-width: 980px;
+    min-width: 200px;
+    margin: 0 auto;
+}
+
+
+.vscode-body.scrollBeyondLastLine {
+    margin-bottom: 0;
+}
+.vscode-body.scrollBeyondLastLine .github-markdown-body {
+    padding-bottom: calc(100vh + 10px) !important;
+}
+
+.github-markdown-body blockquote {
+    background-color: initial;
+}
+
+.github-markdown-body pre {
+    color: initial;
+    border: none;
+}
+
+.github-markdown-body code {
+    color: inherit;
+}
+
+.github-markdown-body pre code {
+    color: initial;
+}
+
+.github-markdown-body code > div {
+    background: none
+}
+
+.github-markdown-body.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.github-markdown-body p,
+.github-markdown-body blockquote,
+.github-markdown-body ul,
+.github-markdown-body ol,
+.github-markdown-body dl,
+.github-markdown-body table,
+.github-markdown-body pre {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+    border-left: 3px solid var(--color-fg-default);
+}
+.github-markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  color: var(--color-fg-default);
+  background-color: var(--color-canvas-default);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.github-markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.github-markdown-body h1:hover .anchor .octicon-link:before,
+.github-markdown-body h2:hover .anchor .octicon-link:before,
+.github-markdown-body h3:hover .anchor .octicon-link:before,
+.github-markdown-body h4:hover .anchor .octicon-link:before,
+.github-markdown-body h5:hover .anchor .octicon-link:before,
+.github-markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+  mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+}
+
+.github-markdown-body details,
+.github-markdown-body figcaption,
+.github-markdown-body figure {
+  display: block;
+}
+
+.github-markdown-body summary {
+  display: list-item;
+}
+
+.github-markdown-body [hidden] {
+  display: none !important;
+}
+
+.github-markdown-body a {
+  background-color: transparent;
+  color: var(--color-accent-fg);
+  text-decoration: none;
+}
+
+.github-markdown-body abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+.github-markdown-body b,
+.github-markdown-body strong {
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.github-markdown-body dfn {
+  font-style: italic;
+}
+
+.github-markdown-body h1 {
+  margin: .67em 0;
+  font-weight: var(--base-text-weight-semibold, 600);
+  padding-bottom: .3em;
+  font-size: 2em;
+  border-bottom: 1px solid var(--color-border-muted);
+}
+
+.github-markdown-body mark {
+  background-color: var(--color-attention-subtle);
+  color: var(--color-fg-default);
+}
+
+.github-markdown-body small {
+  font-size: 90%;
+}
+
+.github-markdown-body sub,
+.github-markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.github-markdown-body sub {
+  bottom: -0.25em;
+}
+
+.github-markdown-body sup {
+  top: -0.5em;
+}
+
+.github-markdown-body img {
+  border-style: none;
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: var(--color-canvas-default);
+}
+
+.github-markdown-body code,
+.github-markdown-body kbd,
+.github-markdown-body pre,
+.github-markdown-body samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+.github-markdown-body figure {
+  margin: 1em 40px;
+}
+
+.github-markdown-body hr {
+  box-sizing: content-box;
+  overflow: hidden;
+  background: transparent;
+  border-bottom: 1px solid var(--color-border-muted);
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--color-border-default);
+  border: 0;
+}
+
+.github-markdown-body input {
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.github-markdown-body [type=button],
+.github-markdown-body [type=reset],
+.github-markdown-body [type=submit] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+
+.github-markdown-body [type=checkbox],
+.github-markdown-body [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.github-markdown-body [type=number]::-webkit-inner-spin-button,
+.github-markdown-body [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.github-markdown-body [type=search]::-webkit-search-cancel-button,
+.github-markdown-body [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.github-markdown-body ::-webkit-input-placeholder {
+  color: inherit;
+  opacity: .54;
+}
+
+.github-markdown-body ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  appearance: button;
+  font: inherit;
+}
+
+.github-markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.github-markdown-body ::placeholder {
+  color: var(--color-fg-subtle);
+  opacity: 1;
+}
+
+.github-markdown-body hr::before {
+  display: table;
+  content: "";
+}
+
+.github-markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.github-markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.github-markdown-body td,
+.github-markdown-body th {
+  padding: 0;
+}
+
+.github-markdown-body details summary {
+  cursor: pointer;
+}
+
+.github-markdown-body details:not([open])>*:not(summary) {
+  display: none !important;
+}
+
+.github-markdown-body a:focus,
+.github-markdown-body [role=button]:focus,
+.github-markdown-body input[type=radio]:focus,
+.github-markdown-body input[type=checkbox]:focus {
+  outline: 2px solid var(--color-accent-fg);
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+.github-markdown-body a:focus:not(:focus-visible),
+.github-markdown-body [role=button]:focus:not(:focus-visible),
+.github-markdown-body input[type=radio]:focus:not(:focus-visible),
+.github-markdown-body input[type=checkbox]:focus:not(:focus-visible) {
+  outline: solid 1px transparent;
+}
+
+.github-markdown-body a:focus-visible,
+.github-markdown-body [role=button]:focus-visible,
+.github-markdown-body input[type=radio]:focus-visible,
+.github-markdown-body input[type=checkbox]:focus-visible {
+  outline: 2px solid var(--color-accent-fg);
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+.github-markdown-body a:not([class]):focus,
+.github-markdown-body a:not([class]):focus-visible,
+.github-markdown-body input[type=radio]:focus,
+.github-markdown-body input[type=radio]:focus-visible,
+.github-markdown-body input[type=checkbox]:focus,
+.github-markdown-body input[type=checkbox]:focus-visible {
+  outline-offset: 0;
+}
+
+.github-markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  line-height: 10px;
+  color: var(--color-fg-default);
+  vertical-align: middle;
+  background-color: var(--color-canvas-subtle);
+  border: solid 1px var(--color-neutral-muted);
+  border-bottom-color: var(--color-neutral-muted);
+  border-radius: 6px;
+  box-shadow: inset 0 -1px 0 var(--color-neutral-muted);
+}
+
+.github-markdown-body h1,
+.github-markdown-body h2,
+.github-markdown-body h3,
+.github-markdown-body h4,
+.github-markdown-body h5,
+.github-markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: var(--base-text-weight-semibold, 600);
+  line-height: 1.25;
+}
+
+.github-markdown-body h2 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  padding-bottom: .3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid var(--color-border-muted);
+}
+
+.github-markdown-body h3 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 1.25em;
+}
+
+.github-markdown-body h4 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 1em;
+}
+
+.github-markdown-body h5 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: .875em;
+}
+
+.github-markdown-body h6 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: .85em;
+  color: var(--color-fg-muted);
+}
+
+.github-markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.github-markdown-body blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: var(--color-fg-muted);
+  border-left: .25em solid var(--color-border-default);
+}
+
+.github-markdown-body ul,
+.github-markdown-body ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 2em;
+}
+
+.github-markdown-body ol ol,
+.github-markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.github-markdown-body ul ul ol,
+.github-markdown-body ul ol ol,
+.github-markdown-body ol ul ol,
+.github-markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.github-markdown-body dd {
+  margin-left: 0;
+}
+
+.github-markdown-body tt,
+.github-markdown-body code,
+.github-markdown-body samp {
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font-size: 12px;
+}
+
+.github-markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font-size: 12px;
+  word-wrap: normal;
+}
+
+.github-markdown-body .octicon {
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.github-markdown-body input::-webkit-outer-spin-button,
+.github-markdown-body input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.github-markdown-body .mr-2 {
+  margin-right: var(--base-size-8, 8px) !important;
+}
+
+.github-markdown-body::before {
+  display: table;
+  content: "";
+}
+
+.github-markdown-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.github-markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.github-markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.github-markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.github-markdown-body .absent {
+  color: var(--color-danger-fg);
+}
+
+.github-markdown-body .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.github-markdown-body .anchor:focus {
+  outline: none;
+}
+
+.github-markdown-body p,
+.github-markdown-body blockquote,
+.github-markdown-body ul,
+.github-markdown-body ol,
+.github-markdown-body dl,
+.github-markdown-body table,
+.github-markdown-body pre,
+.github-markdown-body details {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.github-markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.github-markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.github-markdown-body h1 .octicon-link,
+.github-markdown-body h2 .octicon-link,
+.github-markdown-body h3 .octicon-link,
+.github-markdown-body h4 .octicon-link,
+.github-markdown-body h5 .octicon-link,
+.github-markdown-body h6 .octicon-link {
+  color: var(--color-fg-default);
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.github-markdown-body h1:hover .anchor,
+.github-markdown-body h2:hover .anchor,
+.github-markdown-body h3:hover .anchor,
+.github-markdown-body h4:hover .anchor,
+.github-markdown-body h5:hover .anchor,
+.github-markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.github-markdown-body h1:hover .anchor .octicon-link,
+.github-markdown-body h2:hover .anchor .octicon-link,
+.github-markdown-body h3:hover .anchor .octicon-link,
+.github-markdown-body h4:hover .anchor .octicon-link,
+.github-markdown-body h5:hover .anchor .octicon-link,
+.github-markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.github-markdown-body h1 tt,
+.github-markdown-body h1 code,
+.github-markdown-body h2 tt,
+.github-markdown-body h2 code,
+.github-markdown-body h3 tt,
+.github-markdown-body h3 code,
+.github-markdown-body h4 tt,
+.github-markdown-body h4 code,
+.github-markdown-body h5 tt,
+.github-markdown-body h5 code,
+.github-markdown-body h6 tt,
+.github-markdown-body h6 code {
+  padding: 0 .2em;
+  font-size: inherit;
+}
+
+.github-markdown-body summary h1,
+.github-markdown-body summary h2,
+.github-markdown-body summary h3,
+.github-markdown-body summary h4,
+.github-markdown-body summary h5,
+.github-markdown-body summary h6 {
+  display: inline-block;
+}
+
+.github-markdown-body summary h1 .anchor,
+.github-markdown-body summary h2 .anchor,
+.github-markdown-body summary h3 .anchor,
+.github-markdown-body summary h4 .anchor,
+.github-markdown-body summary h5 .anchor,
+.github-markdown-body summary h6 .anchor {
+  margin-left: -40px;
+}
+
+.github-markdown-body summary h1,
+.github-markdown-body summary h2 {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.github-markdown-body ul.no-list,
+.github-markdown-body ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.github-markdown-body ol[type="a s"] {
+  list-style-type: lower-alpha;
+}
+
+.github-markdown-body ol[type="A s"] {
+  list-style-type: upper-alpha;
+}
+
+.github-markdown-body ol[type="i s"] {
+  list-style-type: lower-roman;
+}
+
+.github-markdown-body ol[type="I s"] {
+  list-style-type: upper-roman;
+}
+
+.github-markdown-body ol[type="1"] {
+  list-style-type: decimal;
+}
+
+.github-markdown-body div>ol:not([type]) {
+  list-style-type: decimal;
+}
+
+.github-markdown-body ul ul,
+.github-markdown-body ul ol,
+.github-markdown-body ol ol,
+.github-markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.github-markdown-body li>p {
+  margin-top: 16px;
+}
+
+.github-markdown-body li+li {
+  margin-top: .25em;
+}
+
+.github-markdown-body dl {
+  padding: 0;
+}
+
+.github-markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.github-markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.github-markdown-body table th {
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.github-markdown-body table th,
+.github-markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid var(--color-border-default);
+}
+
+.github-markdown-body table td>:last-child {
+  margin-bottom: 0;
+}
+
+.github-markdown-body table tr {
+  background-color: var(--color-canvas-default);
+  border-top: 1px solid var(--color-border-muted);
+}
+
+.github-markdown-body table tr:nth-child(2n) {
+  background-color: var(--color-canvas-subtle);
+}
+
+.github-markdown-body table img {
+  background-color: transparent;
+}
+
+.github-markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.github-markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.github-markdown-body .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: transparent;
+}
+
+.github-markdown-body span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+.github-markdown-body span.frame>span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border-default);
+}
+
+.github-markdown-body span.frame span img {
+  display: block;
+  float: left;
+}
+
+.github-markdown-body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: var(--color-fg-default);
+}
+
+.github-markdown-body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.github-markdown-body span.align-center>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.github-markdown-body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.github-markdown-body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.github-markdown-body span.align-right>span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.github-markdown-body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+.github-markdown-body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+
+.github-markdown-body span.float-left span {
+  margin: 13px 0 0;
+}
+
+.github-markdown-body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+
+.github-markdown-body span.float-right>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.github-markdown-body code,
+.github-markdown-body tt {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: var(--color-neutral-muted);
+  border-radius: 6px;
+}
+
+.github-markdown-body code br,
+.github-markdown-body tt br {
+  display: none;
+}
+
+.github-markdown-body del code {
+  text-decoration: inherit;
+}
+
+.github-markdown-body samp {
+  font-size: 85%;
+}
+
+.github-markdown-body pre code {
+  font-size: 100%;
+}
+
+.github-markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.github-markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.github-markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.github-markdown-body .highlight pre,
+.github-markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  color: var(--color-fg-default);
+  background-color: var(--color-canvas-subtle);
+  border-radius: 6px;
+}
+
+.github-markdown-body pre code,
+.github-markdown-body pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.github-markdown-body .csv-data td,
+.github-markdown-body .csv-data th {
+  padding: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.github-markdown-body .csv-data .blob-num {
+  padding: 10px 8px 9px;
+  text-align: right;
+  background: var(--color-canvas-default);
+  border: 0;
+}
+
+.github-markdown-body .csv-data tr {
+  border-top: 0;
+}
+
+.github-markdown-body .csv-data th {
+  font-weight: var(--base-text-weight-semibold, 600);
+  background: var(--color-canvas-subtle);
+  border-top: 0;
+}
+
+.github-markdown-body [data-footnote-ref]::before {
+  content: "[";
+}
+
+.github-markdown-body [data-footnote-ref]::after {
+  content: "]";
+}
+
+.github-markdown-body .footnotes {
+  font-size: 12px;
+  color: var(--color-fg-muted);
+  border-top: 1px solid var(--color-border-default);
+}
+
+.github-markdown-body .footnotes ol {
+  padding-left: 16px;
+}
+
+.github-markdown-body .footnotes ol ul {
+  display: inline-block;
+  padding-left: 16px;
+  margin-top: 16px;
+}
+
+.github-markdown-body .footnotes li {
+  position: relative;
+}
+
+.github-markdown-body .footnotes li:target::before {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -24px;
+  pointer-events: none;
+  content: "";
+  border: 2px solid var(--color-accent-emphasis);
+  border-radius: 6px;
+}
+
+.github-markdown-body .footnotes li:target {
+  color: var(--color-fg-default);
+}
+
+.github-markdown-body .footnotes .data-footnote-backref g-emoji {
+  font-family: monospace;
+}
+
+.github-markdown-body .pl-c {
+  color: var(--color-prettylights-syntax-comment);
+}
+
+.github-markdown-body .pl-c1,
+.github-markdown-body .pl-s .pl-v {
+  color: var(--color-prettylights-syntax-constant);
+}
+
+.github-markdown-body .pl-e,
+.github-markdown-body .pl-en {
+  color: var(--color-prettylights-syntax-entity);
+}
+
+.github-markdown-body .pl-smi,
+.github-markdown-body .pl-s .pl-s1 {
+  color: var(--color-prettylights-syntax-storage-modifier-import);
+}
+
+.github-markdown-body .pl-ent {
+  color: var(--color-prettylights-syntax-entity-tag);
+}
+
+.github-markdown-body .pl-k {
+  color: var(--color-prettylights-syntax-keyword);
+}
+
+.github-markdown-body .pl-s,
+.github-markdown-body .pl-pds,
+.github-markdown-body .pl-s .pl-pse .pl-s1,
+.github-markdown-body .pl-sr,
+.github-markdown-body .pl-sr .pl-cce,
+.github-markdown-body .pl-sr .pl-sre,
+.github-markdown-body .pl-sr .pl-sra {
+  color: var(--color-prettylights-syntax-string);
+}
+
+.github-markdown-body .pl-v,
+.github-markdown-body .pl-smw {
+  color: var(--color-prettylights-syntax-variable);
+}
+
+.github-markdown-body .pl-bu {
+  color: var(--color-prettylights-syntax-brackethighlighter-unmatched);
+}
+
+.github-markdown-body .pl-ii {
+  color: var(--color-prettylights-syntax-invalid-illegal-text);
+  background-color: var(--color-prettylights-syntax-invalid-illegal-bg);
+}
+
+.github-markdown-body .pl-c2 {
+  color: var(--color-prettylights-syntax-carriage-return-text);
+  background-color: var(--color-prettylights-syntax-carriage-return-bg);
+}
+
+.github-markdown-body .pl-sr .pl-cce {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-string-regexp);
+}
+
+.github-markdown-body .pl-ml {
+  color: var(--color-prettylights-syntax-markup-list);
+}
+
+.github-markdown-body .pl-mh,
+.github-markdown-body .pl-mh .pl-en,
+.github-markdown-body .pl-ms {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-markup-heading);
+}
+
+.github-markdown-body .pl-mi {
+  font-style: italic;
+  color: var(--color-prettylights-syntax-markup-italic);
+}
+
+.github-markdown-body .pl-mb {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-markup-bold);
+}
+
+.github-markdown-body .pl-md {
+  color: var(--color-prettylights-syntax-markup-deleted-text);
+  background-color: var(--color-prettylights-syntax-markup-deleted-bg);
+}
+
+.github-markdown-body .pl-mi1 {
+  color: var(--color-prettylights-syntax-markup-inserted-text);
+  background-color: var(--color-prettylights-syntax-markup-inserted-bg);
+}
+
+.github-markdown-body .pl-mc {
+  color: var(--color-prettylights-syntax-markup-changed-text);
+  background-color: var(--color-prettylights-syntax-markup-changed-bg);
+}
+
+.github-markdown-body .pl-mi2 {
+  color: var(--color-prettylights-syntax-markup-ignored-text);
+  background-color: var(--color-prettylights-syntax-markup-ignored-bg);
+}
+
+.github-markdown-body .pl-mdr {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-meta-diff-range);
+}
+
+.github-markdown-body .pl-ba {
+  color: var(--color-prettylights-syntax-brackethighlighter-angle);
+}
+
+.github-markdown-body .pl-sg {
+  color: var(--color-prettylights-syntax-sublimelinter-gutter-mark);
+}
+
+.github-markdown-body .pl-corl {
+  text-decoration: underline;
+  color: var(--color-prettylights-syntax-constant-other-reference-link);
+}
+
+.github-markdown-body g-emoji {
+  display: inline-block;
+  min-width: 1ch;
+  font-family: "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1em;
+  font-style: normal !important;
+  font-weight: var(--base-text-weight-normal, 400);
+  line-height: 1;
+  vertical-align: -0.075em;
+}
+
+.github-markdown-body g-emoji img {
+  width: 1em;
+  height: 1em;
+}
+
+.github-markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.github-markdown-body .task-list-item label {
+  font-weight: var(--base-text-weight-normal, 400);
+}
+
+.github-markdown-body .task-list-item.enabled label {
+  cursor: pointer;
+}
+
+.github-markdown-body .task-list-item+.task-list-item {
+  margin-top: 4px;
+}
+
+.github-markdown-body .task-list-item .handle {
+  display: none;
+}
+
+.github-markdown-body .task-list-item-checkbox {
+  margin: 0 .2em .25em -1.4em;
+  vertical-align: middle;
+}
+
+.github-markdown-body .contains-task-list:dir(rtl) .task-list-item-checkbox {
+  margin: 0 -1.6em .25em .2em;
+}
+
+.github-markdown-body .contains-task-list {
+  position: relative;
+}
+
+.github-markdown-body .contains-task-list:hover .task-list-item-convert-container,
+.github-markdown-body .contains-task-list:focus-within .task-list-item-convert-container {
+  display: block;
+  width: auto;
+  height: 24px;
+  overflow: visible;
+  clip: auto;
+}
+
+.github-markdown-body ::-webkit-calendar-picker-indicator {
+  filter: invert(50%);
+}
+
+.github-markdown-body .markdown-alert {
+  padding: var(--base-size-8) var(--base-size-16);
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid var(--color-border-default);
+}
+
+.github-markdown-body .markdown-alert>:first-child {
+  margin-top: 0;
+}
+
+.github-markdown-body .markdown-alert>:last-child {
+  margin-bottom: 0;
+}
+
+.github-markdown-body .markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: var(--base-text-weight-medium, 500);
+  align-items: center;
+  line-height: 1;
+}
+
+.github-markdown-body .markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-accent-emphasis);
+}
+
+.github-markdown-body .markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-accent-fg);
+}
+
+.github-markdown-body .markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-done-emphasis);
+}
+
+.github-markdown-body .markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-done-fg);
+}
+
+.github-markdown-body .markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-attention-emphasis);
+}
+
+.github-markdown-body .markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-attention-fg);
+}
+
+.github-markdown-body .markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-success-emphasis);
+}
+
+.github-markdown-body .markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-success-fg);
+}
+
+.github-markdown-body .markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-danger-emphasis);
+}
+
+.github-markdown-body .markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-danger-fg);
+}
+
+.github-markdown-body>*:first-child>.heading-element:first-child {
+  margin-top: 0 !important;
+}
+[data-color-mode=light][data-light-theme=light],
+[data-color-mode=dark][data-dark-theme=light],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=light],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=light] {
+  /*light*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #57606a;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #1F2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-success-fg: #1a7f37;
+  --color-success-emphasis: #1f883d;
+  --color-attention-fg: #9a6700;
+  --color-attention-emphasis: #9a6700;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+  --color-danger-emphasis: #cf222e;
+  --color-done-fg: #8250df;
+  --color-done-emphasis: #8250df;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=light] {
+  /*light*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #57606a;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #1F2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-success-fg: #1a7f37;
+  --color-success-emphasis: #1f883d;
+  --color-attention-fg: #9a6700;
+  --color-attention-emphasis: #9a6700;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+  --color-danger-emphasis: #cf222e;
+  --color-done-fg: #8250df;
+  --color-done-emphasis: #8250df;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=light] {
+  /*light*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #57606a;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #1F2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-success-fg: #1a7f37;
+  --color-success-emphasis: #1f883d;
+  --color-attention-fg: #9a6700;
+  --color-attention-emphasis: #9a6700;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+  --color-danger-emphasis: #cf222e;
+  --color-done-fg: #8250df;
+  --color-done-emphasis: #8250df;
+}
+}
+
+[data-color-mode=light][data-light-theme=light_colorblind],
+[data-color-mode=dark][data-dark-theme=light_colorblind],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=light_colorblind],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=light_colorblind] {
+  /*light_colorblind*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #57606a;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #b35900;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #8a4600;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6f3800;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #6f3800;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #b35900;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #6f3800;
+  --color-prettylights-syntax-markup-deleted-bg: #fff5e8;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #8a4600;
+  --color-prettylights-syntax-markup-changed-bg: #ffddb0;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-success-fg: #0969da;
+  --color-success-emphasis: #0969da;
+  --color-attention-fg: #9a6700;
+  --color-attention-emphasis: #9a6700;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #b35900;
+  --color-danger-emphasis: #b35900;
+  --color-done-fg: #8250df;
+  --color-done-emphasis: #8250df;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=light_colorblind] {
+  /*light_colorblind*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #57606a;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #b35900;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #8a4600;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6f3800;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #6f3800;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #b35900;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #6f3800;
+  --color-prettylights-syntax-markup-deleted-bg: #fff5e8;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #8a4600;
+  --color-prettylights-syntax-markup-changed-bg: #ffddb0;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-success-fg: #0969da;
+  --color-success-emphasis: #0969da;
+  --color-attention-fg: #9a6700;
+  --color-attention-emphasis: #9a6700;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #b35900;
+  --color-danger-emphasis: #b35900;
+  --color-done-fg: #8250df;
+  --color-done-emphasis: #8250df;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=light_colorblind] {
+  /*light_colorblind*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #57606a;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #b35900;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #8a4600;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6f3800;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #6f3800;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #b35900;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #6f3800;
+  --color-prettylights-syntax-markup-deleted-bg: #fff5e8;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #8a4600;
+  --color-prettylights-syntax-markup-changed-bg: #ffddb0;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-success-fg: #0969da;
+  --color-success-emphasis: #0969da;
+  --color-attention-fg: #9a6700;
+  --color-attention-emphasis: #9a6700;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #b35900;
+  --color-danger-emphasis: #b35900;
+  --color-done-fg: #8250df;
+  --color-done-emphasis: #8250df;
+}
+}
+
+[data-color-mode=light][data-light-theme=light_tritanopia],
+[data-color-mode=dark][data-dark-theme=light_tritanopia],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=light_tritanopia],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=light_tritanopia] {
+  /*light_tritanopia*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #57606a;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #a40e26;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #a40e26;
+  --color-prettylights-syntax-markup-changed-bg: #ffcecb;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-success-fg: #0969da;
+  --color-success-emphasis: #0969da;
+  --color-attention-fg: #9a6700;
+  --color-attention-emphasis: #9a6700;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #cf222e;
+  --color-danger-emphasis: #cf222e;
+  --color-done-fg: #8250df;
+  --color-done-emphasis: #8250df;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=light_tritanopia] {
+  /*light_tritanopia*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #57606a;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #a40e26;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #a40e26;
+  --color-prettylights-syntax-markup-changed-bg: #ffcecb;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-success-fg: #0969da;
+  --color-success-emphasis: #0969da;
+  --color-attention-fg: #9a6700;
+  --color-attention-emphasis: #9a6700;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #cf222e;
+  --color-danger-emphasis: #cf222e;
+  --color-done-fg: #8250df;
+  --color-done-emphasis: #8250df;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=light_tritanopia] {
+  /*light_tritanopia*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #57606a;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #a40e26;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #a40e26;
+  --color-prettylights-syntax-markup-changed-bg: #ffcecb;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-success-fg: #0969da;
+  --color-success-emphasis: #0969da;
+  --color-attention-fg: #9a6700;
+  --color-attention-emphasis: #9a6700;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #cf222e;
+  --color-danger-emphasis: #cf222e;
+  --color-done-fg: #8250df;
+  --color-done-emphasis: #8250df;
+}
+}
+
+[data-color-mode=light][data-light-theme=light_high_contrast],
+[data-color-mode=dark][data-dark-theme=light_high_contrast],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=light_high_contrast],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=light_high_contrast] {
+  /*light_high_contrast*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #4b535d;
+  --color-prettylights-syntax-constant: #023b95;
+  --color-prettylights-syntax-entity: #512598;
+  --color-prettylights-syntax-storage-modifier-import: #0e1116;
+  --color-prettylights-syntax-entity-tag: #024c1a;
+  --color-prettylights-syntax-keyword: #a0111f;
+  --color-prettylights-syntax-string: #032563;
+  --color-prettylights-syntax-variable: #702c00;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6e011a;
+  --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+  --color-prettylights-syntax-invalid-illegal-bg: #6e011a;
+  --color-prettylights-syntax-carriage-return-text: #ffffff;
+  --color-prettylights-syntax-carriage-return-bg: #a0111f;
+  --color-prettylights-syntax-string-regexp: #024c1a;
+  --color-prettylights-syntax-markup-list: #2e1800;
+  --color-prettylights-syntax-markup-heading: #023b95;
+  --color-prettylights-syntax-markup-italic: #0e1116;
+  --color-prettylights-syntax-markup-bold: #0e1116;
+  --color-prettylights-syntax-markup-deleted-text: #6e011a;
+  --color-prettylights-syntax-markup-deleted-bg: #fff0ee;
+  --color-prettylights-syntax-markup-inserted-text: #024c1a;
+  --color-prettylights-syntax-markup-inserted-bg: #d2fedb;
+  --color-prettylights-syntax-markup-changed-text: #702c00;
+  --color-prettylights-syntax-markup-changed-bg: #ffc67b;
+  --color-prettylights-syntax-markup-ignored-text: #e7ecf0;
+  --color-prettylights-syntax-markup-ignored-bg: #023b95;
+  --color-prettylights-syntax-meta-diff-range: #622cbc;
+  --color-prettylights-syntax-brackethighlighter-angle: #4b535d;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #88929d;
+  --color-prettylights-syntax-constant-other-reference-link: #032563;
+  --color-fg-default: #0e1116;
+  --color-fg-muted: #0e1116;
+  --color-fg-subtle: #66707b;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #e7ecf0;
+  --color-border-default: #20252c;
+  --color-border-muted: #88929d;
+  --color-neutral-muted: rgba(172,182,192,0.2);
+  --color-accent-fg: #0349b4;
+  --color-accent-emphasis: #0349b4;
+  --color-success-fg: #055d20;
+  --color-success-emphasis: #055d20;
+  --color-attention-fg: #744500;
+  --color-attention-emphasis: #744500;
+  --color-attention-subtle: #fcf7be;
+  --color-danger-fg: #d1242f;
+  --color-danger-emphasis: #a0111f;
+  --color-done-fg: #622cbc;
+  --color-done-emphasis: #622cbc;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=light_high_contrast] {
+  /*light_high_contrast*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #4b535d;
+  --color-prettylights-syntax-constant: #023b95;
+  --color-prettylights-syntax-entity: #512598;
+  --color-prettylights-syntax-storage-modifier-import: #0e1116;
+  --color-prettylights-syntax-entity-tag: #024c1a;
+  --color-prettylights-syntax-keyword: #a0111f;
+  --color-prettylights-syntax-string: #032563;
+  --color-prettylights-syntax-variable: #702c00;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6e011a;
+  --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+  --color-prettylights-syntax-invalid-illegal-bg: #6e011a;
+  --color-prettylights-syntax-carriage-return-text: #ffffff;
+  --color-prettylights-syntax-carriage-return-bg: #a0111f;
+  --color-prettylights-syntax-string-regexp: #024c1a;
+  --color-prettylights-syntax-markup-list: #2e1800;
+  --color-prettylights-syntax-markup-heading: #023b95;
+  --color-prettylights-syntax-markup-italic: #0e1116;
+  --color-prettylights-syntax-markup-bold: #0e1116;
+  --color-prettylights-syntax-markup-deleted-text: #6e011a;
+  --color-prettylights-syntax-markup-deleted-bg: #fff0ee;
+  --color-prettylights-syntax-markup-inserted-text: #024c1a;
+  --color-prettylights-syntax-markup-inserted-bg: #d2fedb;
+  --color-prettylights-syntax-markup-changed-text: #702c00;
+  --color-prettylights-syntax-markup-changed-bg: #ffc67b;
+  --color-prettylights-syntax-markup-ignored-text: #e7ecf0;
+  --color-prettylights-syntax-markup-ignored-bg: #023b95;
+  --color-prettylights-syntax-meta-diff-range: #622cbc;
+  --color-prettylights-syntax-brackethighlighter-angle: #4b535d;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #88929d;
+  --color-prettylights-syntax-constant-other-reference-link: #032563;
+  --color-fg-default: #0e1116;
+  --color-fg-muted: #0e1116;
+  --color-fg-subtle: #66707b;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #e7ecf0;
+  --color-border-default: #20252c;
+  --color-border-muted: #88929d;
+  --color-neutral-muted: rgba(172,182,192,0.2);
+  --color-accent-fg: #0349b4;
+  --color-accent-emphasis: #0349b4;
+  --color-success-fg: #055d20;
+  --color-success-emphasis: #055d20;
+  --color-attention-fg: #744500;
+  --color-attention-emphasis: #744500;
+  --color-attention-subtle: #fcf7be;
+  --color-danger-fg: #d1242f;
+  --color-danger-emphasis: #a0111f;
+  --color-done-fg: #622cbc;
+  --color-done-emphasis: #622cbc;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=light_high_contrast] {
+  /*light_high_contrast*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #4b535d;
+  --color-prettylights-syntax-constant: #023b95;
+  --color-prettylights-syntax-entity: #512598;
+  --color-prettylights-syntax-storage-modifier-import: #0e1116;
+  --color-prettylights-syntax-entity-tag: #024c1a;
+  --color-prettylights-syntax-keyword: #a0111f;
+  --color-prettylights-syntax-string: #032563;
+  --color-prettylights-syntax-variable: #702c00;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6e011a;
+  --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+  --color-prettylights-syntax-invalid-illegal-bg: #6e011a;
+  --color-prettylights-syntax-carriage-return-text: #ffffff;
+  --color-prettylights-syntax-carriage-return-bg: #a0111f;
+  --color-prettylights-syntax-string-regexp: #024c1a;
+  --color-prettylights-syntax-markup-list: #2e1800;
+  --color-prettylights-syntax-markup-heading: #023b95;
+  --color-prettylights-syntax-markup-italic: #0e1116;
+  --color-prettylights-syntax-markup-bold: #0e1116;
+  --color-prettylights-syntax-markup-deleted-text: #6e011a;
+  --color-prettylights-syntax-markup-deleted-bg: #fff0ee;
+  --color-prettylights-syntax-markup-inserted-text: #024c1a;
+  --color-prettylights-syntax-markup-inserted-bg: #d2fedb;
+  --color-prettylights-syntax-markup-changed-text: #702c00;
+  --color-prettylights-syntax-markup-changed-bg: #ffc67b;
+  --color-prettylights-syntax-markup-ignored-text: #e7ecf0;
+  --color-prettylights-syntax-markup-ignored-bg: #023b95;
+  --color-prettylights-syntax-meta-diff-range: #622cbc;
+  --color-prettylights-syntax-brackethighlighter-angle: #4b535d;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #88929d;
+  --color-prettylights-syntax-constant-other-reference-link: #032563;
+  --color-fg-default: #0e1116;
+  --color-fg-muted: #0e1116;
+  --color-fg-subtle: #66707b;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #e7ecf0;
+  --color-border-default: #20252c;
+  --color-border-muted: #88929d;
+  --color-neutral-muted: rgba(172,182,192,0.2);
+  --color-accent-fg: #0349b4;
+  --color-accent-emphasis: #0349b4;
+  --color-success-fg: #055d20;
+  --color-success-emphasis: #055d20;
+  --color-attention-fg: #744500;
+  --color-attention-emphasis: #744500;
+  --color-attention-subtle: #fcf7be;
+  --color-danger-fg: #d1242f;
+  --color-danger-emphasis: #a0111f;
+  --color-done-fg: #622cbc;
+  --color-done-emphasis: #622cbc;
+}
+}
+
+[data-color-mode=light][data-light-theme=dark],
+[data-color-mode=dark][data-dark-theme=dark],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=dark],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=dark] {
+  /*dark*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #7ee787;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #7ee787;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-inserted-bg: #033a16;
+  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #e6edf3;
+  --color-fg-muted: #848d97;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #2f81f7;
+  --color-accent-emphasis: #1f6feb;
+  --color-success-fg: #3fb950;
+  --color-success-emphasis: #238636;
+  --color-attention-fg: #d29922;
+  --color-attention-emphasis: #9e6a03;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+  --color-danger-emphasis: #da3633;
+  --color-done-fg: #a371f7;
+  --color-done-emphasis: #8957e5;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=dark] {
+  /*dark*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #7ee787;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #7ee787;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-inserted-bg: #033a16;
+  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #e6edf3;
+  --color-fg-muted: #848d97;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #2f81f7;
+  --color-accent-emphasis: #1f6feb;
+  --color-success-fg: #3fb950;
+  --color-success-emphasis: #238636;
+  --color-attention-fg: #d29922;
+  --color-attention-emphasis: #9e6a03;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+  --color-danger-emphasis: #da3633;
+  --color-done-fg: #a371f7;
+  --color-done-emphasis: #8957e5;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=dark] {
+  /*dark*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #7ee787;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #7ee787;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-inserted-bg: #033a16;
+  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #e6edf3;
+  --color-fg-muted: #848d97;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #2f81f7;
+  --color-accent-emphasis: #1f6feb;
+  --color-success-fg: #3fb950;
+  --color-success-emphasis: #238636;
+  --color-attention-fg: #d29922;
+  --color-attention-emphasis: #9e6a03;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+  --color-danger-emphasis: #da3633;
+  --color-done-fg: #a371f7;
+  --color-done-emphasis: #8957e5;
+}
+}
+
+[data-color-mode=light][data-light-theme=dark_dimmed],
+[data-color-mode=dark][data-dark-theme=dark_dimmed],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=dark_dimmed],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=dark_dimmed] {
+  /*dark_dimmed*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #768390;
+  --color-prettylights-syntax-constant: #6cb6ff;
+  --color-prettylights-syntax-entity: #dcbdfb;
+  --color-prettylights-syntax-storage-modifier-import: #adbac7;
+  --color-prettylights-syntax-entity-tag: #8ddb8c;
+  --color-prettylights-syntax-keyword: #f47067;
+  --color-prettylights-syntax-string: #96d0ff;
+  --color-prettylights-syntax-variable: #f69d50;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #e5534b;
+  --color-prettylights-syntax-invalid-illegal-text: #cdd9e5;
+  --color-prettylights-syntax-invalid-illegal-bg: #922323;
+  --color-prettylights-syntax-carriage-return-text: #cdd9e5;
+  --color-prettylights-syntax-carriage-return-bg: #ad2e2c;
+  --color-prettylights-syntax-string-regexp: #8ddb8c;
+  --color-prettylights-syntax-markup-list: #eac55f;
+  --color-prettylights-syntax-markup-heading: #316dca;
+  --color-prettylights-syntax-markup-italic: #adbac7;
+  --color-prettylights-syntax-markup-bold: #adbac7;
+  --color-prettylights-syntax-markup-deleted-text: #ffd8d3;
+  --color-prettylights-syntax-markup-deleted-bg: #78191b;
+  --color-prettylights-syntax-markup-inserted-text: #b4f1b4;
+  --color-prettylights-syntax-markup-inserted-bg: #1b4721;
+  --color-prettylights-syntax-markup-changed-text: #ffddb0;
+  --color-prettylights-syntax-markup-changed-bg: #682d0f;
+  --color-prettylights-syntax-markup-ignored-text: #adbac7;
+  --color-prettylights-syntax-markup-ignored-bg: #255ab2;
+  --color-prettylights-syntax-meta-diff-range: #dcbdfb;
+  --color-prettylights-syntax-brackethighlighter-angle: #768390;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #545d68;
+  --color-prettylights-syntax-constant-other-reference-link: #96d0ff;
+  --color-fg-default: #adbac7;
+  --color-fg-muted: #768390;
+  --color-fg-subtle: #636e7b;
+  --color-canvas-default: #22272e;
+  --color-canvas-subtle: #2d333b;
+  --color-border-default: #444c56;
+  --color-border-muted: #373e47;
+  --color-neutral-muted: rgba(99,110,123,0.4);
+  --color-accent-fg: #539bf5;
+  --color-accent-emphasis: #316dca;
+  --color-success-fg: #57ab5a;
+  --color-success-emphasis: #347d39;
+  --color-attention-fg: #c69026;
+  --color-attention-emphasis: #966600;
+  --color-attention-subtle: rgba(174,124,20,0.15);
+  --color-danger-fg: #e5534b;
+  --color-danger-emphasis: #c93c37;
+  --color-done-fg: #986ee2;
+  --color-done-emphasis: #8256d0;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=dark_dimmed] {
+  /*dark_dimmed*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #768390;
+  --color-prettylights-syntax-constant: #6cb6ff;
+  --color-prettylights-syntax-entity: #dcbdfb;
+  --color-prettylights-syntax-storage-modifier-import: #adbac7;
+  --color-prettylights-syntax-entity-tag: #8ddb8c;
+  --color-prettylights-syntax-keyword: #f47067;
+  --color-prettylights-syntax-string: #96d0ff;
+  --color-prettylights-syntax-variable: #f69d50;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #e5534b;
+  --color-prettylights-syntax-invalid-illegal-text: #cdd9e5;
+  --color-prettylights-syntax-invalid-illegal-bg: #922323;
+  --color-prettylights-syntax-carriage-return-text: #cdd9e5;
+  --color-prettylights-syntax-carriage-return-bg: #ad2e2c;
+  --color-prettylights-syntax-string-regexp: #8ddb8c;
+  --color-prettylights-syntax-markup-list: #eac55f;
+  --color-prettylights-syntax-markup-heading: #316dca;
+  --color-prettylights-syntax-markup-italic: #adbac7;
+  --color-prettylights-syntax-markup-bold: #adbac7;
+  --color-prettylights-syntax-markup-deleted-text: #ffd8d3;
+  --color-prettylights-syntax-markup-deleted-bg: #78191b;
+  --color-prettylights-syntax-markup-inserted-text: #b4f1b4;
+  --color-prettylights-syntax-markup-inserted-bg: #1b4721;
+  --color-prettylights-syntax-markup-changed-text: #ffddb0;
+  --color-prettylights-syntax-markup-changed-bg: #682d0f;
+  --color-prettylights-syntax-markup-ignored-text: #adbac7;
+  --color-prettylights-syntax-markup-ignored-bg: #255ab2;
+  --color-prettylights-syntax-meta-diff-range: #dcbdfb;
+  --color-prettylights-syntax-brackethighlighter-angle: #768390;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #545d68;
+  --color-prettylights-syntax-constant-other-reference-link: #96d0ff;
+  --color-fg-default: #adbac7;
+  --color-fg-muted: #768390;
+  --color-fg-subtle: #636e7b;
+  --color-canvas-default: #22272e;
+  --color-canvas-subtle: #2d333b;
+  --color-border-default: #444c56;
+  --color-border-muted: #373e47;
+  --color-neutral-muted: rgba(99,110,123,0.4);
+  --color-accent-fg: #539bf5;
+  --color-accent-emphasis: #316dca;
+  --color-success-fg: #57ab5a;
+  --color-success-emphasis: #347d39;
+  --color-attention-fg: #c69026;
+  --color-attention-emphasis: #966600;
+  --color-attention-subtle: rgba(174,124,20,0.15);
+  --color-danger-fg: #e5534b;
+  --color-danger-emphasis: #c93c37;
+  --color-done-fg: #986ee2;
+  --color-done-emphasis: #8256d0;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=dark_dimmed] {
+  /*dark_dimmed*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #768390;
+  --color-prettylights-syntax-constant: #6cb6ff;
+  --color-prettylights-syntax-entity: #dcbdfb;
+  --color-prettylights-syntax-storage-modifier-import: #adbac7;
+  --color-prettylights-syntax-entity-tag: #8ddb8c;
+  --color-prettylights-syntax-keyword: #f47067;
+  --color-prettylights-syntax-string: #96d0ff;
+  --color-prettylights-syntax-variable: #f69d50;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #e5534b;
+  --color-prettylights-syntax-invalid-illegal-text: #cdd9e5;
+  --color-prettylights-syntax-invalid-illegal-bg: #922323;
+  --color-prettylights-syntax-carriage-return-text: #cdd9e5;
+  --color-prettylights-syntax-carriage-return-bg: #ad2e2c;
+  --color-prettylights-syntax-string-regexp: #8ddb8c;
+  --color-prettylights-syntax-markup-list: #eac55f;
+  --color-prettylights-syntax-markup-heading: #316dca;
+  --color-prettylights-syntax-markup-italic: #adbac7;
+  --color-prettylights-syntax-markup-bold: #adbac7;
+  --color-prettylights-syntax-markup-deleted-text: #ffd8d3;
+  --color-prettylights-syntax-markup-deleted-bg: #78191b;
+  --color-prettylights-syntax-markup-inserted-text: #b4f1b4;
+  --color-prettylights-syntax-markup-inserted-bg: #1b4721;
+  --color-prettylights-syntax-markup-changed-text: #ffddb0;
+  --color-prettylights-syntax-markup-changed-bg: #682d0f;
+  --color-prettylights-syntax-markup-ignored-text: #adbac7;
+  --color-prettylights-syntax-markup-ignored-bg: #255ab2;
+  --color-prettylights-syntax-meta-diff-range: #dcbdfb;
+  --color-prettylights-syntax-brackethighlighter-angle: #768390;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #545d68;
+  --color-prettylights-syntax-constant-other-reference-link: #96d0ff;
+  --color-fg-default: #adbac7;
+  --color-fg-muted: #768390;
+  --color-fg-subtle: #636e7b;
+  --color-canvas-default: #22272e;
+  --color-canvas-subtle: #2d333b;
+  --color-border-default: #444c56;
+  --color-border-muted: #373e47;
+  --color-neutral-muted: rgba(99,110,123,0.4);
+  --color-accent-fg: #539bf5;
+  --color-accent-emphasis: #316dca;
+  --color-success-fg: #57ab5a;
+  --color-success-emphasis: #347d39;
+  --color-attention-fg: #c69026;
+  --color-attention-emphasis: #966600;
+  --color-attention-subtle: rgba(174,124,20,0.15);
+  --color-danger-fg: #e5534b;
+  --color-danger-emphasis: #c93c37;
+  --color-done-fg: #986ee2;
+  --color-done-emphasis: #8256d0;
+}
+}
+
+[data-color-mode=light][data-light-theme=dark_colorblind],
+[data-color-mode=dark][data-dark-theme=dark_colorblind],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=dark_colorblind],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=dark_colorblind] {
+  /*dark_colorblind*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #a5d6ff;
+  --color-prettylights-syntax-keyword: #ec8e2c;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #fdac54;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #d47616;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #6c3906;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #914d04;
+  --color-prettylights-syntax-string-regexp: #a5d6ff;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffe2bb;
+  --color-prettylights-syntax-markup-deleted-bg: #4e2906;
+  --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+  --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+  --color-prettylights-syntax-markup-changed-text: #ffe2bb;
+  --color-prettylights-syntax-markup-changed-bg: #4e2906;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-success-fg: #58a6ff;
+  --color-success-emphasis: #1f6feb;
+  --color-attention-fg: #d29922;
+  --color-attention-emphasis: #9e6a03;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #d47616;
+  --color-danger-emphasis: #b76100;
+  --color-done-fg: #a371f7;
+  --color-done-emphasis: #8957e5;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=dark_colorblind] {
+  /*dark_colorblind*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #a5d6ff;
+  --color-prettylights-syntax-keyword: #ec8e2c;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #fdac54;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #d47616;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #6c3906;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #914d04;
+  --color-prettylights-syntax-string-regexp: #a5d6ff;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffe2bb;
+  --color-prettylights-syntax-markup-deleted-bg: #4e2906;
+  --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+  --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+  --color-prettylights-syntax-markup-changed-text: #ffe2bb;
+  --color-prettylights-syntax-markup-changed-bg: #4e2906;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-success-fg: #58a6ff;
+  --color-success-emphasis: #1f6feb;
+  --color-attention-fg: #d29922;
+  --color-attention-emphasis: #9e6a03;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #d47616;
+  --color-danger-emphasis: #b76100;
+  --color-done-fg: #a371f7;
+  --color-done-emphasis: #8957e5;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=dark_colorblind] {
+  /*dark_colorblind*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #a5d6ff;
+  --color-prettylights-syntax-keyword: #ec8e2c;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #fdac54;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #d47616;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #6c3906;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #914d04;
+  --color-prettylights-syntax-string-regexp: #a5d6ff;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffe2bb;
+  --color-prettylights-syntax-markup-deleted-bg: #4e2906;
+  --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+  --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+  --color-prettylights-syntax-markup-changed-text: #ffe2bb;
+  --color-prettylights-syntax-markup-changed-bg: #4e2906;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-success-fg: #58a6ff;
+  --color-success-emphasis: #1f6feb;
+  --color-attention-fg: #d29922;
+  --color-attention-emphasis: #9e6a03;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #d47616;
+  --color-danger-emphasis: #b76100;
+  --color-done-fg: #a371f7;
+  --color-done-emphasis: #8957e5;
+}
+}
+
+[data-color-mode=light][data-light-theme=dark_tritanopia],
+[data-color-mode=dark][data-dark-theme=dark_tritanopia],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=dark_tritanopia],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=dark_tritanopia] {
+  /*dark_tritanopia*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #a5d6ff;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa198;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #a5d6ff;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+  --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+  --color-prettylights-syntax-markup-changed-text: #ffdcd7;
+  --color-prettylights-syntax-markup-changed-bg: #67060c;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-success-fg: #58a6ff;
+  --color-success-emphasis: #1f6feb;
+  --color-attention-fg: #d29922;
+  --color-attention-emphasis: #9e6a03;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+  --color-danger-emphasis: #da3633;
+  --color-done-fg: #a371f7;
+  --color-done-emphasis: #8957e5;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=dark_tritanopia] {
+  /*dark_tritanopia*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #a5d6ff;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa198;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #a5d6ff;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+  --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+  --color-prettylights-syntax-markup-changed-text: #ffdcd7;
+  --color-prettylights-syntax-markup-changed-bg: #67060c;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-success-fg: #58a6ff;
+  --color-success-emphasis: #1f6feb;
+  --color-attention-fg: #d29922;
+  --color-attention-emphasis: #9e6a03;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+  --color-danger-emphasis: #da3633;
+  --color-done-fg: #a371f7;
+  --color-done-emphasis: #8957e5;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=dark_tritanopia] {
+  /*dark_tritanopia*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #a5d6ff;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa198;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #a5d6ff;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+  --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+  --color-prettylights-syntax-markup-changed-text: #ffdcd7;
+  --color-prettylights-syntax-markup-changed-bg: #67060c;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-success-fg: #58a6ff;
+  --color-success-emphasis: #1f6feb;
+  --color-attention-fg: #d29922;
+  --color-attention-emphasis: #9e6a03;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+  --color-danger-emphasis: #da3633;
+  --color-done-fg: #a371f7;
+  --color-done-emphasis: #8957e5;
+}
+}
+
+[data-color-mode=light][data-light-theme=dark_high_contrast],
+[data-color-mode=dark][data-dark-theme=dark_high_contrast],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=dark_high_contrast],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=dark_high_contrast] {
+  /*dark_high_contrast*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #bdc4cc;
+  --color-prettylights-syntax-constant: #91cbff;
+  --color-prettylights-syntax-entity: #dbb7ff;
+  --color-prettylights-syntax-storage-modifier-import: #f0f3f6;
+  --color-prettylights-syntax-entity-tag: #72f088;
+  --color-prettylights-syntax-keyword: #ff9492;
+  --color-prettylights-syntax-string: #addcff;
+  --color-prettylights-syntax-variable: #ffb757;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #ff6a69;
+  --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+  --color-prettylights-syntax-invalid-illegal-bg: #e82a2f;
+  --color-prettylights-syntax-carriage-return-text: #ffffff;
+  --color-prettylights-syntax-carriage-return-bg: #ff4445;
+  --color-prettylights-syntax-string-regexp: #72f088;
+  --color-prettylights-syntax-markup-list: #fbd669;
+  --color-prettylights-syntax-markup-heading: #409eff;
+  --color-prettylights-syntax-markup-italic: #f0f3f6;
+  --color-prettylights-syntax-markup-bold: #f0f3f6;
+  --color-prettylights-syntax-markup-deleted-text: #ffdedb;
+  --color-prettylights-syntax-markup-deleted-bg: #cc1421;
+  --color-prettylights-syntax-markup-inserted-text: #acf7b6;
+  --color-prettylights-syntax-markup-inserted-bg: #007728;
+  --color-prettylights-syntax-markup-changed-text: #ffe1b4;
+  --color-prettylights-syntax-markup-changed-bg: #a74c00;
+  --color-prettylights-syntax-markup-ignored-text: #f0f3f6;
+  --color-prettylights-syntax-markup-ignored-bg: #318bf8;
+  --color-prettylights-syntax-meta-diff-range: #dbb7ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #bdc4cc;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #7a828e;
+  --color-prettylights-syntax-constant-other-reference-link: #addcff;
+  --color-fg-default: #f0f3f6;
+  --color-fg-muted: #f0f3f6;
+  --color-fg-subtle: #9ea7b3;
+  --color-canvas-default: #0a0c10;
+  --color-canvas-subtle: #272b33;
+  --color-border-default: #7a828e;
+  --color-border-muted: #7a828e;
+  --color-neutral-muted: rgba(158,167,179,0.4);
+  --color-accent-fg: #71b7ff;
+  --color-accent-emphasis: #409eff;
+  --color-success-fg: #26cd4d;
+  --color-success-emphasis: #09b43a;
+  --color-attention-fg: #f0b72f;
+  --color-attention-emphasis: #e09b13;
+  --color-attention-subtle: rgba(224,155,19,0.15);
+  --color-danger-fg: #ff6a69;
+  --color-danger-emphasis: #ff6a69;
+  --color-done-fg: #b780ff;
+  --color-done-emphasis: #b87fff;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=dark_high_contrast] {
+  /*dark_high_contrast*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #bdc4cc;
+  --color-prettylights-syntax-constant: #91cbff;
+  --color-prettylights-syntax-entity: #dbb7ff;
+  --color-prettylights-syntax-storage-modifier-import: #f0f3f6;
+  --color-prettylights-syntax-entity-tag: #72f088;
+  --color-prettylights-syntax-keyword: #ff9492;
+  --color-prettylights-syntax-string: #addcff;
+  --color-prettylights-syntax-variable: #ffb757;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #ff6a69;
+  --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+  --color-prettylights-syntax-invalid-illegal-bg: #e82a2f;
+  --color-prettylights-syntax-carriage-return-text: #ffffff;
+  --color-prettylights-syntax-carriage-return-bg: #ff4445;
+  --color-prettylights-syntax-string-regexp: #72f088;
+  --color-prettylights-syntax-markup-list: #fbd669;
+  --color-prettylights-syntax-markup-heading: #409eff;
+  --color-prettylights-syntax-markup-italic: #f0f3f6;
+  --color-prettylights-syntax-markup-bold: #f0f3f6;
+  --color-prettylights-syntax-markup-deleted-text: #ffdedb;
+  --color-prettylights-syntax-markup-deleted-bg: #cc1421;
+  --color-prettylights-syntax-markup-inserted-text: #acf7b6;
+  --color-prettylights-syntax-markup-inserted-bg: #007728;
+  --color-prettylights-syntax-markup-changed-text: #ffe1b4;
+  --color-prettylights-syntax-markup-changed-bg: #a74c00;
+  --color-prettylights-syntax-markup-ignored-text: #f0f3f6;
+  --color-prettylights-syntax-markup-ignored-bg: #318bf8;
+  --color-prettylights-syntax-meta-diff-range: #dbb7ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #bdc4cc;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #7a828e;
+  --color-prettylights-syntax-constant-other-reference-link: #addcff;
+  --color-fg-default: #f0f3f6;
+  --color-fg-muted: #f0f3f6;
+  --color-fg-subtle: #9ea7b3;
+  --color-canvas-default: #0a0c10;
+  --color-canvas-subtle: #272b33;
+  --color-border-default: #7a828e;
+  --color-border-muted: #7a828e;
+  --color-neutral-muted: rgba(158,167,179,0.4);
+  --color-accent-fg: #71b7ff;
+  --color-accent-emphasis: #409eff;
+  --color-success-fg: #26cd4d;
+  --color-success-emphasis: #09b43a;
+  --color-attention-fg: #f0b72f;
+  --color-attention-emphasis: #e09b13;
+  --color-attention-subtle: rgba(224,155,19,0.15);
+  --color-danger-fg: #ff6a69;
+  --color-danger-emphasis: #ff6a69;
+  --color-done-fg: #b780ff;
+  --color-done-emphasis: #b87fff;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=dark_high_contrast] {
+  /*dark_high_contrast*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #bdc4cc;
+  --color-prettylights-syntax-constant: #91cbff;
+  --color-prettylights-syntax-entity: #dbb7ff;
+  --color-prettylights-syntax-storage-modifier-import: #f0f3f6;
+  --color-prettylights-syntax-entity-tag: #72f088;
+  --color-prettylights-syntax-keyword: #ff9492;
+  --color-prettylights-syntax-string: #addcff;
+  --color-prettylights-syntax-variable: #ffb757;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #ff6a69;
+  --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+  --color-prettylights-syntax-invalid-illegal-bg: #e82a2f;
+  --color-prettylights-syntax-carriage-return-text: #ffffff;
+  --color-prettylights-syntax-carriage-return-bg: #ff4445;
+  --color-prettylights-syntax-string-regexp: #72f088;
+  --color-prettylights-syntax-markup-list: #fbd669;
+  --color-prettylights-syntax-markup-heading: #409eff;
+  --color-prettylights-syntax-markup-italic: #f0f3f6;
+  --color-prettylights-syntax-markup-bold: #f0f3f6;
+  --color-prettylights-syntax-markup-deleted-text: #ffdedb;
+  --color-prettylights-syntax-markup-deleted-bg: #cc1421;
+  --color-prettylights-syntax-markup-inserted-text: #acf7b6;
+  --color-prettylights-syntax-markup-inserted-bg: #007728;
+  --color-prettylights-syntax-markup-changed-text: #ffe1b4;
+  --color-prettylights-syntax-markup-changed-bg: #a74c00;
+  --color-prettylights-syntax-markup-ignored-text: #f0f3f6;
+  --color-prettylights-syntax-markup-ignored-bg: #318bf8;
+  --color-prettylights-syntax-meta-diff-range: #dbb7ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #bdc4cc;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #7a828e;
+  --color-prettylights-syntax-constant-other-reference-link: #addcff;
+  --color-fg-default: #f0f3f6;
+  --color-fg-muted: #f0f3f6;
+  --color-fg-subtle: #9ea7b3;
+  --color-canvas-default: #0a0c10;
+  --color-canvas-subtle: #272b33;
+  --color-border-default: #7a828e;
+  --color-border-muted: #7a828e;
+  --color-neutral-muted: rgba(158,167,179,0.4);
+  --color-accent-fg: #71b7ff;
+  --color-accent-emphasis: #409eff;
+  --color-success-fg: #26cd4d;
+  --color-success-emphasis: #09b43a;
+  --color-attention-fg: #f0b72f;
+  --color-attention-emphasis: #e09b13;
+  --color-attention-subtle: rgba(224,155,19,0.15);
+  --color-danger-fg: #ff6a69;
+  --color-danger-emphasis: #ff6a69;
+  --color-done-fg: #b780ff;
+  --color-done-emphasis: #b87fff;
+}
+}
+
+/*!
+  Theme: GitHub
+  Description: Highlight-js port of github.com theme
+  Author: github.com
+  Maintainer: @SNDST00M, @mjbvz
+  Updated: 2021-12-08
+*/
+.markdown-body pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 16px;
+}
+
+.markdown-body code.hljs {
+  padding: 3px 5px;
+}
+
+/*!
+  Theme: GitHub
+  Description: Theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-dark
+  Current colors taken from GitHub's CSS
+*/
+.markdown-body .hljs,
+.markdown-body pre > code {
+  color: var(--color-fg-default);
+  background: var(--color-canvas-subtle);
+}
+
+.markdown-body .hljs-function,
+.markdown-body .hljs-params {
+  color: var(--color-fg-default);
+}
+
+.markdown-body .hljs-doctag,
+.markdown-body .hljs-keyword,
+.markdown-body .hljs-meta .hljs-keyword,
+.markdown-body .hljs-template-tag,
+.markdown-body .hljs-template-variable,
+.markdown-body .hljs-type,
+.markdown-body .hljs-variable.language_ {
+  color: var(--color-prettylights-syntax-keyword);
+}
+
+.markdown-body .hljs-title,
+.markdown-body .hljs-title.class_,
+.markdown-body .hljs-title.class_.inherited__,
+.markdown-body .hljs-title.function_ {
+  color: var(--color-prettylights-syntax-entity);
+}
+
+.markdown-body .hljs-attr,
+.markdown-body .hljs-attribute,
+.markdown-body .hljs-literal,
+.markdown-body .hljs-meta,
+.markdown-body .hljs-number,
+.markdown-body .hljs-operator,
+.markdown-body .hljs-selector-attr,
+.markdown-body .hljs-selector-class,
+.markdown-body .hljs-selector-id,
+.markdown-body .hljs-variable {
+  color: var(--color-prettylights-syntax-constant);
+}
+
+.markdown-body .hljs-meta .hljs-string,
+.markdown-body .hljs-regexp,
+.markdown-body .hljs-string {
+  color: var(--color-prettylights-syntax-string);
+}
+
+.markdown-body .hljs-built_in,
+.markdown-body .hljs-symbol {
+  color: var(--color-prettylights-syntax-variable);
+}
+
+.markdown-body .hljs-code,
+.markdown-body .hljs-comment,
+.markdown-body .hljs-formula {
+  color: var(--color-prettylights-syntax-comment);
+}
+
+.markdown-body .hljs-name,
+.markdown-body .hljs-quote,
+.markdown-body .hljs-selector-pseudo,
+.markdown-body .hljs-selector-tag {
+  color: var(--color-prettylights-syntax-entity-tag);
+}
+
+.markdown-body .hljs-subst {
+  color: var(--color-prettylights-syntax-constant);
+}
+
+.markdown-body .hljs-section {
+  color: var(--color-prettylights-syntax-markup-heading);
+  font-weight: bold;
+}
+
+.markdown-body .hljs-bullet {
+  color: var(--color-prettylights-syntax-markup-list);
+}
+
+.markdown-body .hljs-emphasis {
+  color: var(--color-prettylights-syntax-constant);
+  font-style: italic;
+}
+
+.markdown-body .hljs-strong {
+  color: var(--color-prettylights-syntax-constant);
+  font-weight: bold;
+}
+
+.markdown-body .hljs-addition {
+  color: var(--color-prettylights-syntax-markup-inserted-text);
+  background-color: var(--color-prettylights-syntax-markup-inserted-bg);
+}
+
+.markdown-body .hljs-deletion {
+  color: var(--color-prettylights-syntax-markup-deleted-text);
+  background-color: var(--color-prettylights-syntax-markup-deleted-bg);
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <div
+            class="github-markdown-body"
+            data-color-mode="auto"
+            data-light-theme="light"
+            data-dark-theme="dark"
+        >
+            <div class="github-markdown-content"><h1 id="nf-corernaseq-output">nf-core/rnaseq: Output</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This document describes the output produced by the pipeline. Most of the plots are taken from the MultiQC report generated from the <a href="https://github.com/nf-core/test-datasets/tree/rnaseq#full-test-dataset-origin">full-sized test dataset</a> for the pipeline using a command similar to the one below:</p>
+<pre><code class="language-console">nextflow run nf-core/rnaseq -profile test_full,&lt;docker/singularity/institute&gt;
+</code></pre>
+<p>The directories listed below will be created in the results directory after the pipeline has finished. All paths are relative to the top-level results directory.</p>
+<h2 id="pipeline-overview">Pipeline overview</h2>
+<p>The pipeline is built using <a href="https://www.nextflow.io/">Nextflow</a> and processes data using the following steps:</p>
+<ul>
+<li><a href="#preprocessing">Preprocessing</a>
+<ul>
+<li><a href="#cat">cat</a> - Merge re-sequenced FastQ files</li>
+<li><a href="#fastqc">FastQC</a> - Raw read QC</li>
+<li><a href="#umi-tools-extract">UMI-tools extract</a> - UMI barcode extraction</li>
+<li><a href="#trimgalore">TrimGalore</a> - Adapter and quality trimming</li>
+<li><a href="#bbsplit">BBSplit</a> - Removal of genome contaminants</li>
+<li><a href="#sortmerna">SortMeRNA</a> - Removal of ribosomal RNA</li>
+</ul>
+</li>
+<li><a href="#alignment-and-quantification">Alignment and quantification</a>
+<ul>
+<li><a href="#star-and-salmon">STAR and Salmon</a> - Fast spliced aware genome alignment and transcriptome quantification</li>
+<li><a href="#star-via-rsem">STAR via RSEM</a> - Alignment and quantification of expression levels</li>
+<li><a href="#hisat2">HISAT2</a> - Memory efficient splice aware alignment to a reference</li>
+</ul>
+</li>
+<li><a href="#alignment-post-processing">Alignment post-processing</a>
+<ul>
+<li><a href="#samtools">SAMtools</a> - Sort and index alignments</li>
+<li><a href="#umi-tools-dedup">UMI-tools dedup</a> - UMI-based deduplication</li>
+<li><a href="#picard-markduplicates">picard MarkDuplicates</a> - Duplicate read marking</li>
+</ul>
+</li>
+<li><a href="#other-steps">Other steps</a>
+<ul>
+<li><a href="#stringtie">StringTie</a> - Transcript assembly and quantification</li>
+<li><a href="#bedtools-and-bedgraphtobigwig">BEDTools and bedGraphToBigWig</a> - Create bigWig coverage files</li>
+</ul>
+</li>
+<li><a href="#quality-control">Quality control</a>
+<ul>
+<li><a href="#rseqc">RSeQC</a> - Various RNA-seq QC metrics</li>
+<li><a href="#qualimap">Qualimap</a> - Various RNA-seq QC metrics</li>
+<li><a href="#dupradar">dupRadar</a> - Assessment of technical / biological read duplication</li>
+<li><a href="#preseq">Preseq</a> - Estimation of library complexity</li>
+<li><a href="#featurecounts">featureCounts</a> - Read counting relative to gene biotype</li>
+<li><a href="#deseq2">DESeq2</a> - PCA plot and sample pairwise distance heatmap and dendrogram</li>
+<li><a href="#multiqc">MultiQC</a> - Present QC for raw reads, alignment, read counting and sample similiarity</li>
+</ul>
+</li>
+<li><a href="#pseudo-alignment-and-quantification">Pseudo-alignment and quantification</a>
+<ul>
+<li><a href="#salmon">Salmon</a> - Wicked fast gene and isoform quantification relative to the transcriptome</li>
+</ul>
+</li>
+<li><a href="#workflow-reporting-and-genomes">Workflow reporting and genomes</a>
+<ul>
+<li><a href="#reference-genome-files">Reference genome files</a> - Saving reference genome indices/files</li>
+<li><a href="#pipeline-information">Pipeline information</a> - Report metrics generated during the workflow execution</li>
+</ul>
+</li>
+</ul>
+<h2 id="preprocessing">Preprocessing</h2>
+<h3 id="cat">cat</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>fastq/</code>
+<ul>
+<li><code>*.merged.fastq.gz</code>: If <code>--save_merged_fastq</code> is specified, concatenated FastQ files will be placed in this directory.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>If multiple libraries/runs have been provided for the same sample in the input samplesheet (e.g. to increase sequencing depth) then these will be merged at the very beginning of the pipeline in order to have consistent sample naming throughout the pipeline. Please refer to the <a href="https://nf-co.re/rnaseq/usage#samplesheet-input">usage documentation</a> to see how to specify these samples in the input samplesheet.</p>
+<h3 id="fastqc">FastQC</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>fastqc/</code>
+<ul>
+<li><code>*_fastqc.html</code>: FastQC report containing quality metrics.</li>
+<li><code>*_fastqc.zip</code>: Zip archive containing the FastQC report, tab-delimited data file and plot images.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>NB:</strong> The FastQC plots in this directory are generated relative to the raw, input reads. They may contain adapter sequence and regions of low quality. To see how your reads look after adapter and quality trimming please refer to the FastQC reports in the <code>trimgalore/fastqc/</code> directory.</p>
+</blockquote>
+</details>
+<p><a href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC</a> gives general quality metrics about your sequenced reads. It provides information about the quality score distribution across your reads, per base sequence content (%A/T/G/C), adapter contamination and overrepresented sequences. For further reading and documentation see the <a href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/">FastQC help pages</a>.</p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_fastqc_counts.png" alt="MultiQC - FastQC sequence counts plot"></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_fastqc_quality.png" alt="MultiQC - FastQC mean quality scores plot"></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_fastqc_adapter.png" alt="MultiQC - FastQC adapter content plot"></p>
+<h3 id="umi-tools-extract">UMI-tools extract</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>umitools/</code>
+<ul>
+<li><code>*.fastq.gz</code>: If <code>--save_umi_intermeds</code> is specified, FastQ files <strong>after</strong> UMI extraction will be placed in this directory.</li>
+<li><code>*.log</code>: Log file generated by the UMI-tools <code>extract</code> command.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p><a href="https://github.com/CGATOxford/UMI-tools">UMI-tools</a> deduplicates reads based on unique molecular identifiers (UMIs) to address PCR-bias. Firstly, the UMI-tools <code>extract</code> command removes the UMI barcode information from the read sequence and adds it to the read name. Secondly, reads are deduplicated based on UMI identifier after mapping as highlighted in the <a href="#umi-tools-dedup">UMI-tools dedup</a> section.</p>
+<h3 id="trimgalore">TrimGalore</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>trimgalore/</code>
+<ul>
+<li><code>*.fq.gz</code>: If <code>--save_trimmed</code> is specified, FastQ files <strong>after</strong> adapter trimming will be placed in this directory.</li>
+<li><code>*_trimming_report.txt</code>: Log file generated by Trim Galore!.</li>
+</ul>
+</li>
+<li><code>trimgalore/fastqc/</code>
+<ul>
+<li><code>*_fastqc.html</code>: FastQC report containing quality metrics for read 1 (<em>and read2 if paired-end</em>) <strong>after</strong> adapter trimming.</li>
+<li><code>*_fastqc.zip</code>: Zip archive containing the FastQC report, tab-delimited data file and plot images.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p><a href="https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/">Trim Galore!</a> is a wrapper tool around Cutadapt and FastQC to peform quality and adapter trimming on FastQ files. By default, Trim Galore! will automatically detect and trim the appropriate adapter sequence.</p>
+<blockquote>
+<p><strong>NB:</strong> TrimGalore! will only run using multiple cores if you are able to use more than &gt; 5 and &gt; 6 CPUs for single- and paired-end data, respectively. The total cores available to TrimGalore! will also be capped at 4 (7 and 8 CPUs in total for single- and paired-end data, respectively) because there is no longer a run-time benefit. See <a href="https://github.com/FelixKrueger/TrimGalore/blob/master/Changelog.md#version-060-release-on-1-mar-2019">release notes</a> and <a href="https://github.com/nf-core/atacseq/pull/65">discussion whilst adding this logic to the nf-core/atacseq pipeline</a>.</p>
+</blockquote>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_cutadapt_trimmed.png" alt="MultiQC - cutadapt trimmed sequence length plot"></p>
+<h3 id="bbsplit">BBSplit</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>bbsplit/</code>
+<ul>
+<li><code>*.fastq.gz</code>: If <code>--save_bbsplit_reads</code> is specified FastQ files split by reference will be saved to the results directory. Reads from the main reference genome will be named &quot;<em>primary</em>.fastq.gz&quot;. Reads from contaminating genomes will be named &quot;<em>&lt;SHORT_NAME&gt;</em>.fastq.gz&quot; where <code>&lt;SHORT_NAME&gt;</code> is the first column in <code>--bbsplit_fasta_list</code> that needs to be provided to initially build the index.</li>
+<li><code>*.txt</code>: File containing statistics on how many reads were assigned to each reference.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p><a href="http://seqanswers.com/forums/showthread.php?t=41288">BBSplit</a> is a tool that bins reads by mapping to multiple references simultaneously, using BBMap. The reads go to the bin of the reference they map to best. There are also disambiguation options, such that reads that map to multiple references can be binned with all of them, none of them, one of them, or put in a special &quot;ambiguous&quot; file for each of them.</p>
+<p>This functionality would be especially useful, for example, if you have <a href="https://en.wikipedia.org/wiki/Patient_derived_xenograft">mouse PDX</a> samples that contain a mixture of human and mouse genomic DNA/RNA and you would like to filter out any mouse derived reads.</p>
+<p>The BBSplit index will have to be built at least once with this pipeline by providing <a href="https://nf-co.re/rnaseq/parameters#bbsplit_fasta_list"><code>--bbsplit_fasta_list</code></a> which has to be a file containing 2 columns: short name and full path to reference genome(s):</p>
+<pre><code class="language-bash">mm10,/path/to/mm10.fa
+ecoli,/path/to/ecoli.fa
+sarscov2,/path/to/sarscov2.fa
+</code></pre>
+<p>You can save the index by using the <a href="https://nf-co.re/rnaseq/parameters#save_reference"><code>--save_reference</code></a> parameter and then provide it via <a href="https://nf-co.re/rnaseq/parameters#bbsplit_index"><code>--bbsplit_index</code></a> for future runs. As described in the <code>Output files</code> dropdown box above the FastQ files relative to the main reference genome will always be called <code>*primary*.fastq.gz</code>.</p>
+<h3 id="sortmerna">SortMeRNA</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>sortmerna/</code>
+<ul>
+<li><code>*.fastq.gz</code>: If <code>--save_non_ribo_reads</code> is specified, FastQ files containing non-rRNA reads will be placed in this directory.</li>
+<li><code>*.log</code>: Log file generated by SortMeRNA with information regarding reads that matched the reference database(s).</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>When <code>--remove_ribo_rna</code> is specified, the pipeline uses <a href="https://github.com/biocore/sortmerna">SortMeRNA</a> for the removal of ribosomal RNA. By default, <a href="https://github.com/biocore/sortmerna/tree/master/data/rRNA_databases">rRNA databases</a> defined in the SortMeRNA GitHub repo are used. You can see an example in the pipeline Github repository in <code>assets/rrna-default-dbs.txt</code> which is used by default via the <code>--ribo_database_manifest</code> parameter. Please note that commercial/non-academic entities require <a href="https://www.arb-silva.de/silva-license-information"><code>licensing for SILVA</code></a> for these default databases.</p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_sortmerna.png" alt="MultiQC - SortMeRNA hit count plot"></p>
+<h2 id="alignment-and-quantification">Alignment and quantification</h2>
+<h3 id="star-and-salmon">STAR and Salmon</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>star_salmon/</code>
+<ul>
+<li><code>*.Aligned.out.bam</code>: If <code>--save_align_intermeds</code> is specified the original BAM file containing read alignments to the reference genome will be placed in this directory.</li>
+<li><code>*.Aligned.toTranscriptome.out.bam</code>: If <code>--save_align_intermeds</code> is specified the original BAM file containing read alignments to the transcriptome will be placed in this directory.</li>
+</ul>
+</li>
+<li><code>star_salmon/log/</code>
+<ul>
+<li><code>*.SJ.out.tab</code>: File containing filtered splice junctions detected after mapping the reads.</li>
+<li><code>*.Log.final.out</code>: STAR alignment report containing the mapping results summary.</li>
+<li><code>*.Log.out</code> and <code>*.Log.progress.out</code>: STAR log files containing detailed information about the run. Typically only useful for debugging purposes.</li>
+</ul>
+</li>
+<li><code>star_salmon/unmapped/</code>
+<ul>
+<li><code>*.fastq.gz</code>: If <code>--save_unaligned</code> is specified, FastQ files containing unmapped reads will be placed in this directory.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p><a href="https://github.com/alexdobin/STAR">STAR</a> is a read aligner designed for splice aware mapping typical of RNA sequencing data. STAR stands for <em>S</em>pliced <em>T</em>ranscripts <em>A</em>lignment to a <em>R</em>eference, and has been shown to have high accuracy and outperforms other aligners by more than a factor of 50 in mapping speed, but it is memory intensive. Using <code>--aligner star_salmon</code> is the default alignment and quantification option.</p>
+<p><a href="https://salmon.readthedocs.io/en/latest/salmon.html">Salmon</a> from <a href="https://oceangenomics.com/">Ocean Genomics</a> is a tool for wicked-fast transcript quantification from RNA-seq data. It requires a set of target transcripts (either from a reference or de-novo assembly) in order to perform quantification. All you need to run Salmon is a FASTA file containing your reference transcripts and a set of FASTA/FASTQ/BAM file(s) containing your reads. The transcriptome-level BAM files generated by STAR are provided to Salmon for downstream quantification. You can of course also provide FASTQ files directly as input to Salmon in order to pseudo-align and quantify your data by providing the <code>--pseudo_aligner salmon</code> parameter. The results generated by the pipeline are exactly the same whether you provide BAM or FASTQ input so please see the <a href="#salmon">Salmon</a> results section for more details.</p>
+<p>The STAR section of the MultiQC report shows a bar plot with alignment rates: good samples should have most reads as <em>Uniquely mapped</em> and few <em>Unmapped</em> reads.</p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_star.png" alt="MultiQC - STAR alignment scores plot"></p>
+<h3 id="star-via-rsem">STAR via RSEM</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>star_rsem/</code>
+<ul>
+<li><code>rsem.merged.gene_counts.tsv</code>: Matrix of gene-level raw counts across all samples.</li>
+<li><code>rsem.merged.gene_tpm.tsv</code>: Matrix of gene-level TPM values across all samples.</li>
+<li><code>rsem.merged.transcript_counts.tsv</code>: Matrix of isoform-level raw counts across all samples.</li>
+<li><code>rsem.merged.transcript_tpm.tsv</code>: Matrix of isoform-level TPM values across all samples.</li>
+<li><code>*.genes.results</code>: RSEM gene-level quantification results for each sample.</li>
+<li><code>*.isoforms.results</code>: RSEM isoform-level quantification results for each sample.</li>
+<li><code>*.STAR.genome.bam</code>: If <code>--save_align_intermeds</code> is specified the original BAM file containing read alignments to the reference genome will be placed in this directory.</li>
+<li><code>*.transcript.bam</code>: If <code>--save_align_intermeds</code> is specified the original BAM file containing read alignments to the transcriptome will be placed in this directory.</li>
+</ul>
+</li>
+<li><code>star_rsem/&lt;SAMPLE&gt;.stat/</code>
+<ul>
+<li><code>*.cnt</code>, <code>*.model</code>, <code>*.theta</code>: RSEM counts and statistics for each sample.</li>
+<li><code>star_rsem/log/</code></li>
+<li><code>*.log</code>: STAR alignment report containing the mapping results summary.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p><a href="https://github.com/deweylab/RSEM">RSEM</a> is a software package for estimating gene and isoform expression levels from RNA-seq data. It has been widely touted as one of the most accurate quantification tools for RNA-seq analysis. RSEM wraps other popular tools to map the reads to the genome (i.e. STAR, Bowtie2, HISAT2; STAR is used in this pipeline) which are then subsequently filtered relative to a transcriptome before quantifying at the gene- and isoform-level. Other advantages of using RSEM are that it performs both the alignment and quantification in a single package and its ability to effectively use ambiguously-mapping reads.</p>
+<p>You can choose to align and quantify your data with RSEM by providing the <code>--aligner star_rsem</code> parameter.</p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_rsem_mapped.png" alt="MultiQC - RSEM alignment scores plot"></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_rsem_multimapped.png" alt="MultiQC - RSEM uniquely mapped plot"></p>
+<h3 id="hisat2">HISAT2</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>hisat2/</code>
+<ul>
+<li><code>&lt;SAMPLE&gt;.bam</code>: If <code>--save_align_intermeds</code> is specified the original BAM file containing read alignments to the reference genome will be placed in this directory.</li>
+</ul>
+</li>
+<li><code>hisat2/log/</code>
+<ul>
+<li><code>*.log</code>: HISAT2 alignment report containing the mapping results summary.</li>
+</ul>
+</li>
+<li><code>hisat2/unmapped/</code>
+<ul>
+<li><code>*.fastq.gz</code>: If <code>--save_unaligned</code> is specified, FastQ files containing unmapped reads will be placed in this directory.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p><a href="http://daehwankimlab.github.io/hisat2/">HISAT2</a> is a fast and sensitive alignment program for mapping next-generation sequencing reads (both DNA and RNA) to a population of human genomes as well as to a single reference genome. It introduced a new indexing scheme called a Hierarchical Graph FM index (HGFM) which when combined with several alignment strategies, enable rapid and accurate alignment of sequencing reads. The HISAT2 route through the pipeline is a good option if you have memory limitations on your compute. However, quantification isn't performed if using <code>--aligner hisat2</code> due to the lack of an appropriate option to calculate accurate expression estimates from HISAT2 derived genomic alignments. However, you can use this route if you have a preference for the alignment, QC and other types of downstream analysis compatible with the output of HISAT2.</p>
+<p>You can choose to align your data with HISAT2 by providing the <code>--aligner hisat2</code> parameter.</p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_hisat2.png" alt="MultiQC - HISAT2 alignment scores plot"></p>
+<h2 id="alignment-post-processing">Alignment post-processing</h2>
+<p>The pipeline has been written in a way where all the files generated downstream of the alignment are placed in the same directory as specified by <code>--aligner</code> e.g. if <code>--aligner star_salmon</code> is specified then all the downstream results will be placed in the <code>star_salmon/</code> directory. This helps with organising the directory structure and more importantly, allows the end-user to get the results from multiple aligners by simply re-running the pipeline with a different <code>--aligner</code> option along the <code>-resume</code> parameter. It also means that results won't be overwritten when resuming the pipeline and can be used for benchmarking between alignment algorithms if required.</p>
+<h3 id="samtools">SAMtools</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/</code>
+<ul>
+<li><code>&lt;SAMPLE&gt;.sorted.bam</code>: If <code>--save_align_intermeds</code> is specified the original coordinate sorted BAM file containing read alignments will be placed in this directory.</li>
+<li><code>&lt;SAMPLE&gt;.sorted.bam.bai</code>: If <code>--save_align_intermeds</code> is specified the BAI index file for the original coordinate sorted BAM file will be placed in this directory.</li>
+<li><code>&lt;SAMPLE&gt;.sorted.bam.csi</code>: If <code>--save_align_intermeds --bam_csi_index</code> is specified the CSI index file for the original coordinate sorted BAM file will be placed in this directory.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/samtools_stats/</code>
+<ul>
+<li>SAMtools <code>&lt;SAMPLE&gt;.sorted.bam.flagstat</code>, <code>&lt;SAMPLE&gt;.sorted.bam.idxstats</code> and <code>&lt;SAMPLE&gt;.sorted.bam.stats</code> files generated from the alignment files.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>The original BAM files generated by the selected alignment algorithm are further processed with <a href="http://samtools.sourceforge.net/">SAMtools</a> to sort them by coordinate, for indexing, as well as to generate read mapping statistics.</p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_samtools_mapped.png" alt="MultiQC - SAMtools alignment scores plot"></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_samtools_idxstats.png" alt="MultiQC - SAMtools mapped reads per contig plot"></p>
+<h3 id="umi-tools-dedup">UMI-tools dedup</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/</code>
+<ul>
+<li><code>&lt;SAMPLE&gt;.umi_dedup.sorted.bam</code>: If <code>--save_umi_intermeds</code> is specified the UMI deduplicated, coordinate sorted BAM file containing read alignments will be placed in this directory.</li>
+<li><code>&lt;SAMPLE&gt;.umi_dedup.sorted.bam.bai</code>: If <code>--save_umi_intermeds</code> is specified the BAI index file for the UMI deduplicated, coordinate sorted BAM file will be placed in this directory.</li>
+<li><code>&lt;SAMPLE&gt;.umi_dedup.sorted.bam.csi</code>: If <code>--save_umi_intermeds --bam_csi_index</code> is specified the CSI index file for the UMI deduplicated, coordinate sorted BAM file will be placed in this directory.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/umitools/</code>
+<ul>
+<li><code>*_edit_distance.tsv</code>: Reports the (binned) average edit distance between the UMIs at each position.</li>
+<li><code>*_per_umi.tsv</code>: UMI-level summary statistics.</li>
+<li><code>*_per_umi_per_position.tsv</code>: Tabulates the counts for unique combinations of UMI and position.</li>
+</ul>
+</li>
+</ul>
+<p>The content of the files above is explained in more detail in the <a href="https://umi-tools.readthedocs.io/en/latest/reference/dedup.html#dedup-specific-options">UMI-tools documentation</a>.</p>
+</details>
+<p>After extracting the UMI information from the read sequence (see <a href="#umi-tools-extract">UMI-tools extract</a>), the second step in the removal of UMI barcodes involves deduplicating the reads based on both mapping and UMI barcode information using the UMI-tools <code>dedup</code> command. This will generate a filtered BAM file after the removal of PCR duplicates.</p>
+<h3 id="picard-markduplicates">picard MarkDuplicates</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/</code>
+<ul>
+<li><code>&lt;SAMPLE&gt;.markdup.sorted.bam</code>: Coordinate sorted BAM file after duplicate marking. This is the final post-processed BAM file and so will be saved by default in the results directory.</li>
+<li><code>&lt;SAMPLE&gt;.markdup.sorted.bam.bai</code>: BAI index file for coordinate sorted BAM file after duplicate marking. This is the final post-processed BAM index file and so will be saved by default in the results directory.</li>
+<li><code>&lt;SAMPLE&gt;.markdup.sorted.bam.csi</code>: CSI index file for coordinate sorted BAM file after duplicate marking. This is the final post-processed BAM index file and so will be saved by default in the results directory. Only generated if <code>--bam_csi_index</code> is specified as a parameter.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/samtools_stats/</code>
+<ul>
+<li>SAMtools <code>&lt;SAMPLE&gt;.markdup.sorted.bam.flagstat</code>, <code>&lt;SAMPLE&gt;.markdup.sorted.bam.idxstats</code> and <code>&lt;SAMPLE&gt;.markdup.sorted.bam.stats</code> files generated from the duplicate marked alignment files.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/picard_metrics/</code>
+<ul>
+<li><code>&lt;SAMPLE&gt;.markdup.sorted.MarkDuplicates.metrics.txt</code>: Metrics file from MarkDuplicates.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>Unless you are using <a href="https://emea.illumina.com/science/sequencing-method-explorer/kits-and-arrays/umi.html">UMIs</a> it is not possible to establish whether the fragments you have sequenced from your sample were derived via true biological duplication (i.e. sequencing independent template fragments) or as a result of PCR biases introduced during the library preparation. By default, the pipeline uses <a href="https://broadinstitute.github.io/picard/command-line-overview.html#MarkDuplicates">picard MarkDuplicates</a> to <em>mark</em> the duplicate reads identified amongst the alignments to allow you to guage the overall level of duplication in your samples. However, for RNA-seq data it is not recommended to physically remove duplicate reads from the alignments (unless you are using UMIs) because you expect a significant level of true biological duplication that arises from the same fragments being sequenced from for example highly expressed genes. You can skip this step via the <code>--skip_markduplicates</code> parameter.</p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_picard_markduplicates.png" alt="MultiQC - Picard MarkDuplicates metrics plot"></p>
+<h2 id="other-steps">Other steps</h2>
+<h3 id="stringtie">StringTie</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/stringtie/</code>
+<ul>
+<li><code>*.coverage.gtf</code>: GTF file containing transcripts that are fully covered by reads.</li>
+<li><code>*.transcripts.gtf</code>: GTF file containing all of the assembled transcipts from StringTie.</li>
+<li><code>*.gene_abundance.txt</code>: Text file containing gene aboundances and FPKM values.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/stringtie/&lt;SAMPLE&gt;.ballgown/</code>: Ballgown output directory.</li>
+</ul>
+</details>
+<p><a href="https://ccb.jhu.edu/software/stringtie/">StringTie</a> is a fast and highly efficient assembler of RNA-Seq alignments into potential transcripts. It uses a novel network flow algorithm as well as an optional de novo assembly step to assemble and quantitate full-length transcripts representing multiple splice variants for each gene locus. In order to identify differentially expressed genes between experiments, StringTie's output can be processed by specialized software like <a href="https://github.com/alyssafrazee/ballgown">Ballgown</a>, <a href="http://cole-trapnell-lab.github.io/cufflinks/cuffdiff/index.html">Cuffdiff</a> or other programs (<a href="https://bioconductor.org/packages/release/bioc/html/DESeq2.html">DESeq2</a>, <a href="https://bioconductor.org/packages/release/bioc/html/edgeR.html">edgeR</a>, etc.).</p>
+<h3 id="bedtools-and-bedgraphtobigwig">BEDTools and bedGraphToBigWig</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/bigwig/</code>
+<ul>
+<li><code>*.forward.bigWig</code>: bigWig coverage file relative to genes on the forward DNA strand.</li>
+<li><code>*.reverse.bigWig</code>: bigWig coverage file relative to genes on the reverse DNA strand.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>The <a href="https://genome.ucsc.edu/goldenpath/help/bigWig.html">bigWig</a> format is an indexed binary format useful for displaying dense, continuous data in Genome Browsers such as the <a href="https://genome.ucsc.edu/cgi-bin/hgTracks">UCSC</a> and <a href="http://software.broadinstitute.org/software/igv/">IGV</a>. This mitigates the need to load the much larger BAM files for data visualisation purposes which will be slower and result in memory issues. The bigWig format is also supported by various bioinformatics software for downstream processing such as meta-profile plotting.</p>
+<h2 id="quality-control">Quality control</h2>
+<h3 id="rseqc">RSeQC</h3>
+<p><a href="(http://rseqc.sourceforge.net/)">RSeQC</a> is a package of scripts designed to evaluate the quality of RNA-seq data. This pipeline runs several, but not all RSeQC scripts. You can tweak the supported scripts you would like to run by adjusting the <code>--rseqc_modules</code> parameter which by default will run all of the following: <code>bam_stat.py</code>, <code>inner_distance.py</code>, <code>infer_experiment.py</code>, <code>junction_annotation.py</code>, <code>junction_saturation.py</code>,<code>read_distribution.py</code> and <code>read_duplication.py</code>.</p>
+<p>The majority of RSeQC scripts generate output files which can be plotted and summarised in the MultiQC report.</p>
+<h4 id="infer-experiment">Infer experiment</h4>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/rseqc/infer_experiment/</code>
+<ul>
+<li><code>*.infer_experiment.txt</code>: File containing fraction of reads mapping to given strandedness configurations.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>This script predicts the &quot;strandedness&quot; of the protocol (i.e. unstranded, sense or antisense) that was used to prepare the sample for sequencing by assessing the orientation in which aligned reads overlay gene features in the reference genome. The strandedness of each sample has to be provided to the pipeline in the input samplesheet (see <a href="https://nf-co.re/rnaseq/usage#samplesheet-input">usage docs</a>). However, this information is not always available, especially for public datasets. As a result, additional features have been incorporated into this pipeline to auto-detect whether you have provided the correct information in the samplesheet, and if this is not the case then a warning table will be placed at the top of the MultiQC report highlighting the offending samples (see image below). If required, this will allow you to correct the input samplesheet and rerun the pipeline with the accurate strand information. Note, it is important to get this information right because it can affect the final results.</p>
+<p>RSeQC documentation: <a href="http://rseqc.sourceforge.net/#infer-experiment-py">infer_experiment.py</a></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_strand_check.png" alt="MultiQC - Strand check table"></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_rseqc_inferexperiment.png" alt="MultiQC - RSeQC infer experiment plot"></p>
+<h4 id="read-distribution">Read distribution</h4>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/rseqc/read_distribution/</code>
+<ul>
+<li><code>*.read_distribution.txt</code>: File containing fraction of reads mapping to genome feature e.g. CDS exon, 5’UTR exon, 3’ UTR exon, Intron, Intergenic regions etc.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>This tool calculates how mapped reads are distributed over genomic features. A good result for a standard RNA-seq experiments is generally to have as many exonic reads as possible (<code>CDS_Exons</code>). A large amount of intronic reads could be indicative of DNA contamination in your sample but may be expected for a total RNA preparation.</p>
+<p>RSeQC documentation: <a href="http://rseqc.sourceforge.net/#read-distribution-py">read_distribution.py</a></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_rseqc_readdistribution.png" alt="MultiQC - RSeQC read distribution plot"></p>
+<h4 id="junction-annotation">Junction annotation</h4>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/rseqc/junction_annotation/bed/</code>
+<ul>
+<li><code>*.junction.bed</code>: BED file containing splice junctions.</li>
+<li><code>*.junction.Interact.bed</code>: BED file containing interacting splice junctions.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/rseqc/junction_annotation/log/</code>
+<ul>
+<li><code>*.junction_annotation.log</code>: Log file generated by the program.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/rseqc/junction_annotation/pdf/</code>
+<ul>
+<li><code>*.splice_events.pdf</code>: PDF file containing splicing events plot.</li>
+<li><code>*.splice_junction.pdf</code>: PDF file containing splice junctions plot.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/rseqc/junction_annotation/rscript/</code>
+<ul>
+<li><code>*.junction_plot.r</code>: R script used to generate pdf plots above.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/rseqc/junction_annotation/xls/</code>
+<ul>
+<li><code>*.junction.xls</code>: Excel spreadsheet with junction information.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>Junction annotation compares detected splice junctions to a reference gene model. Splicing annotation is performed in two levels: splice event level and splice junction level.</p>
+<p>RSeQC documentation: <a href="http://rseqc.sourceforge.net/#junction-annotation-py">junction_annotation.py</a></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_rseqc_junctionannotation.png" alt="MultiQC - RSeQC junction annotation plot"></p>
+<h4 id="inner-distance">Inner distance</h4>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/rseqc/inner_distance/pdf/</code>
+<ul>
+<li><code>*.inner_distance_plot.pdf</code>: PDF file containing inner distance plot.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/rseqc/inner_distance/rscript/</code>
+<ul>
+<li><code>*.inner_distance_plot.r</code>: R script used to generate pdf plot above.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/rseqc/inner_distance/txt/</code>
+<ul>
+<li><code>*.inner_distance_freq.txt</code>: File containing frequency of insert sizes.</li>
+<li><code>*.inner_distance_mean.txt</code>: File containing mean, median and standard deviation of insert sizes.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>The inner distance script tries to calculate the inner distance between two paired-end reads. It is the distance between the end of read 1 to the start of read 2, and it is sometimes confused with the insert size (see <a href="http://thegenomefactory.blogspot.com.au/2013/08/paired-end-read-confusion-library.html">this blog post</a> for disambiguation):</p>
+<p>This plot will not be generated for single-end data. Very short inner distances are often seen in old or degraded samples (<em>eg.</em> FFPE) and values can be negative if the reads overlap consistently.</p>
+<p>RSeQC documentation: <a href="http://rseqc.sourceforge.net/#inner-distance-py">inner_distance.py</a></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_rseqc_innerdistance.png" alt="MultiQC - RSeQC inner distance plot"></p>
+<h4 id="junction-saturation">Junction saturation</h4>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/rseqc/junction_saturation/pdf/</code>
+<ul>
+<li><code>*.junctionSaturation_plot.pdf</code>: PDF file containing junction saturation plot.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/rseqc/junction_saturation/rscript/</code>
+<ul>
+<li><code>*.junctionSaturation_plot.r</code>: R script used to generate pdf plot above.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>This script shows the number of splice sites detected within the data at various levels of subsampling. A sample that reaches a plateau before getting to 100% data indicates that all junctions in the library have been detected, and that further sequencing will not yield any more observations. A good sample should approach such a plateau of <em>Known junctions</em>, however, very deep sequencing is typically required to saturate all <em>Novel Junctions</em> in a sample.</p>
+<p>RSeQC documentation: <a href="http://rseqc.sourceforge.net/#junction-saturation-py">junction_saturation.py</a></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_rseqc_junctionsaturation.png" alt="MultiQC - RSeQC junction saturation plot"></p>
+<h4 id="read-duplication">Read duplication</h4>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/rseqc/read_duplication/pdf/</code>
+<ul>
+<li><code>*.DupRate_plot.pdf</code>: PDF file containing read duplication plot.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/rseqc/read_duplication/rscript/</code>
+<ul>
+<li><code>*.DupRate_plot.r</code>: R script used to generate pdf plot above.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/rseqc/read_duplication/xls/</code>
+<ul>
+<li><code>*.pos.DupRate.xls</code>: Read duplication rate determined from mapping position of read. First column is “occurrence” or duplication times, second column is number of uniquely mapped reads.</li>
+<li><code>*.seq.DupRate.xls</code>: Read duplication rate determined from sequence of read. First column is “occurrence” or duplication times, second column is number of uniquely mapped reads.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>This plot shows the number of reads (y-axis) with a given number of exact duplicates (x-axis). Most reads in an RNA-seq library should have a low number of exact duplicates. Samples which have many reads with many duplicates (a large area under the curve) may be suffering excessive technical duplication.</p>
+<p>RSeQC documentation: <a href="http://rseqc.sourceforge.net/#read-duplication-py">read_duplication.py</a></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_rseqc_readduplication.png" alt="MultiQC - RSeQC read duplication plot"></p>
+<h4 id="bam-stat">BAM stat</h4>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/rseqc/bam_stat/</code>
+<ul>
+<li><code>*.bam_stat.txt</code>: Mapping statistics for the BAM file.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>This script gives numerous statistics about the aligned BAM files. A typical output looks as follows:</p>
+<pre><code class="language-txt">#Output (all numbers are read count)
+#==================================================
+Total records:                                 41465027
+QC failed:                                     0
+Optical/PCR duplicate:                         0
+Non Primary Hits                               8720455
+Unmapped reads:                                0
+
+mapq &lt; mapq_cut (non-unique):                  3127757
+mapq &gt;= mapq_cut (unique):                     29616815
+Read-1:                                        14841738
+Read-2:                                        14775077
+Reads map to &#x27;+&#x27;:                              14805391
+Reads map to &#x27;-&#x27;:                              14811424
+Non-splice reads:                              25455360
+Splice reads:                                  4161455
+Reads mapped in proper pairs:                  21856264
+Proper-paired reads map to different chrom:    7648
+</code></pre>
+<p>MultiQC plots each of these statistics in a dot plot. Each sample in the project is a dot - hover to see the sample highlighted across all fields.</p>
+<p>RSeQC documentation: <a href="http://rseqc.sourceforge.net/#bam-stat-py">bam_stat.py</a></p>
+<h4 id="tin">TIN</h4>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/rseqc/tin/</code>
+<ul>
+<li><code>*.summary.txt</code>: File containing TIN results summary.</li>
+<li><code>*.tin.xls</code>: XLS file containing TIN results.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>This script is designed to evaluate RNA integrity at the transcript level. TIN (transcript integrity number) is named in analogous to RIN (RNA integrity number). RIN (RNA integrity number) is the most widely used metric to evaluate RNA integrity at sample (or transcriptome) level. It is a very useful preventive measure to ensure good RNA quality and robust, reproducible RNA sequencing.</p>
+<p>RSeQC documentation: <a href="http://rseqc.sourceforge.net/#tin-py">tin.py</a></p>
+<h3 id="qualimap">Qualimap</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/qualimap/&lt;SAMPLE&gt;/</code>
+<ul>
+<li><code>qualimapReport.html</code>: Qualimap HTML report that can be viewed in a web browser.</li>
+<li><code>rnaseq_qc_results.txt</code>: Textual results output.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/qualimap/&lt;SAMPLE&gt;/images_qualimapReport/</code>: Images required for the HTML report.</li>
+<li><code>&lt;ALIGNER&gt;/qualimap/&lt;SAMPLE&gt;/raw_data_qualimapReport/</code>: Raw data required for the HTML report.</li>
+<li><code>&lt;ALIGNER&gt;/qualimap/&lt;SAMPLE&gt;/css/</code>: CSS files required for the HTML report.</li>
+</ul>
+</details>
+<p><a href="http://qualimap.bioinfo.cipf.es/">Qualimap</a> is a platform-independent application written in Java and R that provides both a Graphical User Interface (GUI) and a command-line interface to facilitate the quality control of alignment sequencing data. Shortly, Qualimap:</p>
+<ul>
+<li>Examines sequencing alignment data according to the features of the mapped reads and their genomic properties.</li>
+<li>Provides an overall view of the data that helps to to the detect biases in the sequencing and/or mapping of the data and eases decision-making for further analysis.</li>
+</ul>
+<p>The <a href="http://qualimap.bioinfo.cipf.es/doc_html/analysis.html#rna-seq-qc">Qualimap RNA-seq QC module</a> is used within this pipeline to assess the overall mapping and coverage relative to gene features.</p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_qualimap_coverage.png" alt="MultiQC - Qualimap gene coverage plot"></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_qualimap_features.png" alt="MultiQC - Qualimap genomic origin plot"></p>
+<h3 id="dupradar">dupRadar</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/dupradar/box_plot/</code>
+<ul>
+<li><code>*_duprateExpBoxplot.pdf</code>: PDF file containing box plot for duplicate rate relative to mean expression.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/dupradar/gene_data/</code>
+<ul>
+<li><code>*_dupMatrix.txt</code>: Text file containing duplicate metrics per gene.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/dupradar/histogram/</code>
+<ul>
+<li><code>*_expressionHist.pdf</code>: PDF file containing histogram of reads per kilobase values per gene.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/dupradar/intercepts_slope/</code>
+<ul>
+<li><code>*_intercept_slope.txt</code>: Text file containing intercept slope values.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/dupradar/scatter_plot/</code>
+<ul>
+<li><code>*_duprateExpDens.pdf</code>: PDF file containing typical dupRadar 2D density scatter plot.</li>
+</ul>
+</li>
+</ul>
+<p>See <a href="https://www.bioconductor.org/packages/devel/bioc/vignettes/dupRadar/inst/doc/dupRadar.html">dupRadar docs</a> for further information regarding the content of these files.</p>
+</details>
+<p><a href="https://www.bioconductor.org/packages/release/bioc/html/dupRadar.html">dupRadar</a> is a Bioconductor library written in the R programming language. It generates various QC metrics and plots that relate duplication rate with gene expression levels in order to identify experiments with high technical duplication. A good sample with little technical duplication will only show high numbers of duplicates for highly expressed genes. Samples with technical duplication will have high duplication for all genes, irrespective of transcription level.</p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\dupradar_example_plot.png" alt="dupRadar - Example good and bad experiment plot"></p>
+<blockquote>
+<p><em>Credit: <a href="https://www.bioconductor.org/packages/devel/bioc/vignettes/dupRadar/inst/doc/dupRadar.html">dupRadar documentation</a></em></p>
+</blockquote>
+<h3 id="preseq">Preseq</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/preseq/</code>
+<ul>
+<li><code>*.ccurve.txt</code>: Preseq expected future yield file.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER&gt;/preseq/log/</code>
+<ul>
+<li><code>*.command.log</code>: Standard error output from command.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>The <a href="http://smithlabresearch.org/software/preseq/">Preseq</a> package is aimed at predicting and estimating the complexity of a genomic sequencing library, equivalent to predicting and estimating the number of redundant reads from a given sequencing depth and how many will be expected from additional sequencing using an initial sequencing experiment. The estimates can then be used to examine the utility of further sequencing, optimize the sequencing depth, or to screen multiple libraries to avoid low complexity samples. A shallow curve indicates that the library has reached complexity saturation and further sequencing would likely not add further unique reads. The dashed line shows a perfectly complex library where total reads = unique reads. Note that these are predictive numbers only, not absolute. The MultiQC plot can sometimes give extreme sequencing depth on the X axis - click and drag from the left side of the plot to zoom in on more realistic numbers.</p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_preseq_plot.png" alt="MultiQC - Preseq library complexity plot"></p>
+<h3 id="featurecounts">featureCounts</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER&gt;/featurecounts/</code>
+<ul>
+<li><code>*.featureCounts.txt</code>: featureCounts biotype-level quantification results for each sample.</li>
+<li><code>*.featureCounts.txt.summary</code>: featureCounts summary file containing overall statistics about the counts.</li>
+<li><code>*_mqc.tsv</code>: MultiQC custom content files used to plot biotypes in report.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p><a href="http://bioinf.wehi.edu.au/featureCounts/">featureCounts</a> from the <a href="http://subread.sourceforge.net/">Subread</a> package is a quantification tool used to summarise the mapped read distribution over genomic features such as genes, exons, promotors, gene bodies, genomic bins and chromosomal locations. We can also use featureCounts to count overlaps with different classes of genomic features. This provides an additional QC to check which features are most abundant in the sample, and to highlight potential problems such as rRNA contamination.</p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_featurecounts_biotype.png" alt="MultiQC - featureCounts biotypes plot"></p>
+<h3 id="deseq2">DESeq2</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>&lt;ALIGNER/PSEUDOALIGNER&gt;/deseq2_qc/</code>
+<ul>
+<li><code>*.plots.pdf</code>: File containing PCA and hierarchical clustering plots.</li>
+<li><code>*.dds.RData</code>: File containing R <code>DESeqDataSet</code> object  generated
+by DESeq2, with either an rlog or vst <code>assay</code> storing the
+variance-stabilised data.</li>
+<li><code>*.rds</code>: Alternative version of the RData file suitable for
+<code>readRDS</code> to give user control of the eventual object name.</li>
+<li><code>*pca.vals.txt</code>: Matrix of values for the first 2 principal components.</li>
+<li><code>*sample.dists.txt</code>: Sample distance matrix.</li>
+<li><code>R_sessionInfo.log</code>: File containing information about R, the OS and attached or loaded packages.</li>
+</ul>
+</li>
+<li><code>&lt;ALIGNER/PSEUDOALIGNER&gt;/deseq2_qc/size_factors/</code>
+<ul>
+<li><code>*.txt</code>, <code>*.RData</code>: Files containing DESeq2 sizeFactors per sample.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p><a href="https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html">DESeq2</a> is one of the most commonly used software packages to perform differential expression analysis for RNA-seq datasets.</p>
+<p><strong>This pipeline uses a standardised DESeq2 analysis script to get an idea of the reproducibility across samples within the experiment. Please note that this will not suit every experimental design, and if there are other problems with the experiment then it may not work as well as expected.</strong></p>
+<p>The script included in the pipeline uses DESeq2 to normalise read counts across all of the provided samples in order to create a PCA plot and a clustered heatmap showing pairwise Euclidean distances between the samples in the experiment. These help to show the similarity between groups of samples and can reveal batch effects and other potential issues with the experiment.</p>
+<p>For larger experiments, it may be recommended to use the <code>vst</code> transformation instead of the default <code>rlog</code> option. You can do this by providing the <code>--deseq2_vst</code> parameter to the pipeline. See <a href="http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#data-transformations-and-visualization">DESeq2 docs</a> for a more detailed explanation.</p>
+<p>The PCA plots are generated based alternately on the top five hundred most variable genes, or all genes. The former is the conventional approach that is more likely to pick up strong effects (ie the biological signal) and the latter, when different, is picking up a weaker but consistent effect that is synchronised across many transcripts. We project both of these onto the first two PCs (shown in the top row of the figure below), which is the best two dimensional representation of the variation between samples.</p>
+<p>We also explore higher components in terms of experimental factors inferred from sample names. If your sample naming convention follows a strict policy of using underscores to delimit values of experimental factors (for example <code>WT_UNTREATED_REP1</code>) and all names have the same number of underscores (so excluding <code>WT_TREATED_10ml_REP1</code> from being compatible with the previous label), then any of these factors that are informative (ie label some but not all samples the same) then we individually plot upto the first five PCs, per experimental level, for each of the experimental factors.</p>
+<p>The plot on the left hand side shows the standard PC plot - notice the variable number of underscores, meaning that the central plot would not be produced: here we have changed the underscore that is hyphenating the treatment to a '-' character. This allows the central plot to be generated, and we can see that replicate (the 2nd part of the sample name) seems to be affecting the 3rd principal component, but the treatment factor is affecting the more important first two components. The right-most plot shows all pairwise euclidean distances between the samples.</p>
+<p align="center"><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\deseq2_qc_plots.png" alt="DESeq2 PCA plots"></p>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_deseq2_pca.png" alt="MultiQC - DESeq2 PCA plot"></p>
+<p align="center"><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_deseq2_clustering.png" alt="MultiQC - DESeq2 sample similarity plot" width="600"></p>
+<h3 id="multiqc">MultiQC</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>multiqc/&lt;ALIGNER&gt;/</code>
+<ul>
+<li><code>multiqc_report.html</code>: a standalone HTML file that can be viewed in your web browser.</li>
+<li><code>multiqc_data/</code>: directory containing parsed statistics from the different tools used in the pipeline.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p><a href="http://multiqc.info">MultiQC</a> is a visualization tool that generates a single HTML report summarising all samples in your project. Most of the pipeline QC results are visualised in the report and further statistics are available in the report data directory.</p>
+<p>Results generated by MultiQC collate pipeline QC from supported tools i.e. FastQC, Cutadapt, SortMeRNA, STAR, RSEM, HISAT2, Salmon, SAMtools, Picard, RSeQC, Qualimap, Preseq and featureCounts. Additionally, various custom content has been added to the report to assess the output of dupRadar, DESeq2 and featureCounts biotypes, and to highlight samples failing a mimimum mapping threshold or those that failed to match the strand-specificity provided in the input samplesheet. The pipeline has special steps which also allow the software versions to be reported in the MultiQC output for future traceability. For more information about how to use MultiQC reports, see <a href="http://multiqc.info">http://multiqc.info</a>.</p>
+<h2 id="pseudo-alignment-and-quantification">Pseudo-alignment and quantification</h2>
+<h3 id="salmon">Salmon</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>salmon/</code>
+<ul>
+<li><code>salmon.merged.gene_counts.tsv</code>: Matrix of gene-level raw counts across all samples.</li>
+<li><code>salmon.merged.gene_tpm.tsv</code>: Matrix of gene-level TPM values across all samples.</li>
+<li><code>salmon.merged.gene_counts.rds</code>: RDS object that can be loaded in R that contains a <a href="https://bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html">SummarizedExperiment</a> container with the TPM (<code>abundance</code>), estimated counts (<code>counts</code>) and transcript length (<code>length</code>) in the assays slot for genes.</li>
+<li><code>salmon.merged.gene_counts_scaled.tsv</code>: Matrix of gene-level scaled counts across all samples.</li>
+<li><code>salmon.merged.gene_counts_scaled.rds</code>: RDS object that can be loaded in R that contains a <a href="https://bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html">SummarizedExperiment</a> container with the TPM (<code>abundance</code>), estimated counts (<code>counts</code>) and transcript length (<code>length</code>) in the assays slot for genes.</li>
+<li><code>salmon.merged.gene_counts_length_scaled.tsv</code>: Matrix of gene-level length-scaled counts across all samples.</li>
+<li><code>salmon.merged.gene_counts_length_scaled.rds</code>: RDS object that can be loaded in R that contains a <a href="https://bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html">SummarizedExperiment</a> container with the TPM (<code>abundance</code>), estimated counts (<code>counts</code>) and transcript length (<code>length</code>) in the assays slot for genes.</li>
+<li><code>salmon.merged.transcript_counts.tsv</code>: Matrix of isoform-level raw counts across all samples.</li>
+<li><code>salmon.merged.transcript_tpm.tsv</code>: Matrix of isoform-level TPM values across all samples.</li>
+<li><code>salmon.merged.transcript_counts.rds</code>: RDS object that can be loaded in R that contains a <a href="https://bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html">SummarizedExperiment</a> container with the TPM (<code>abundance</code>), estimated counts (<code>counts</code>) and transcript length (<code>length</code>) in the assays slot for transcripts.</li>
+<li><code>salmon_tx2gene.tsv</code>: Tab-delimited file containing gene to transcripts ids mappings.</li>
+</ul>
+</li>
+<li><code>salmon/&lt;SAMPLE&gt;/</code>
+<ul>
+<li><code>aux_info/</code>: Auxiliary info e.g. versions and number of mapped reads.</li>
+<li><code>cmd_info.json</code>: Information about the Salmon quantification command, version and options.</li>
+<li><code>lib_format_counts.json</code>: Number of fragments assigned, unassigned and incompatible.</li>
+<li><code>libParams/</code>: Contains the file <code>flenDist.txt</code> for the fragment length distribution.</li>
+<li><code>logs/</code>: Contains the file <code>salmon_quant.log</code> giving a record of Salmon's quantification.</li>
+<li><code>quant.genes.sf</code>: Salmon <em>gene</em>-level quantification of the sample, including feature length, effective length, TPM, and number of reads.</li>
+<li><code>quant.sf</code>: Salmon <em>transcript</em>-level quantification of the sample, including feature length, effective length, TPM, and number of reads.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>As described in the <a href="#star-and-salmon">STAR and Salmon</a> section, you can choose to pseudo-align and quantify your data with <a href="https://salmon.readthedocs.io/en/latest/salmon.html">Salmon</a> by providing the <code>--pseudo_aligner salmon</code> parameter. By default, Salmon is run in addition to the standard alignment workflow defined by <code>--aligner</code>, mainly because it allows you to obtain QC metrics with respect to the genomic alignments. However, you can provide the <code>--skip_alignment</code> parameter if you would like to run Salmon in isolation.</p>
+<p>Transcripts with large inferential uncertainty won't be assigned the exact number of reads reproducibly, every time Salmon is run. Read more about this on the <a href="https://github.com/nf-core/rnaseq/issues/585">nf-core/rnaseq</a> and <a href="https://github.com/COMBINE-lab/salmon/issues/613">salmon</a> Github repos.</p>
+<p>The <a href="https://bioconductor.org/packages/release/bioc/html/tximport.html">tximport</a> package is used in this pipeline to summarise the results generated by Salmon into matrices for use with downstream differential analysis packages. We use tximport with different options to summarize count and TPM quantifications at the gene- and transcript-level. Please see <a href="https://github.com/nf-core/rnaseq/issues/499">#499</a> for discussion and links regarding which counts are suitable for different types of analysis.</p>
+<p>According to the <code>txtimport</code> documentation you can do one of the following:</p>
+<ul>
+<li>Use bias corrected counts with an offset: import all the salmon files with <code>tximport</code> and then use <code>DESeq2</code> with <code>dds &lt;- DESeqDataSetFromTximport(txi, sampleTable, ~condition)</code> to correct for changes to the average transcript length across samples.</li>
+<li>Use bias corrected counts without an offset: load and use <code>salmon.merged.gene_counts_length_scaled.tsv</code> or <code>salmon.merged.gene_counts_scaled.tsv</code> directly as you would with a regular counts matrix.</li>
+<li>Use bias uncorrected counts: load and use the <code>txi$counts</code> matrix (or <code>salmon.merged.gene_counts.tsv</code>) with <code>DESeq2</code>. This does not correct for potential differential isoform usage. Alternatively, if you have 3’ tagged RNA-seq data this is the most suitable method.</li>
+</ul>
+<blockquote>
+<p><strong>NB:</strong> The default Salmon parameters and a k-mer size of 31 are used to create the index. As <a href="https://salmon.readthedocs.io/en/latest/salmon.html#preparing-transcriptome-indices-mapping-based-mode">documented here</a> and <a href="https://github.com/COMBINE-lab/salmon/issues/482#issuecomment-583799668">discussed here</a>, a k-mer size off 31 works well with reads that are 75bp or longer.</p>
+</blockquote>
+<p><img src="file:///\\10.22.140.220\pmata\git_repositories\buisciii-tools\bu_isciii\assets\reports\results\images\mqc_salmon.png" alt="MultiQC - Salmon fragment length distribution plot"></p>
+<h2 id="workflow-reporting-and-genomes">Workflow reporting and genomes</h2>
+<h3 id="reference-genome-files">Reference genome files</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>genome/</code>
+<ul>
+<li><code>*.fa</code>, <code>*.gtf</code>, <code>*.gff</code>, <code>*.bed</code>, <code>.tsv</code>: If the <code>--save_reference</code> parameter is provided then all of the genome reference files will be placed in this directory.</li>
+</ul>
+</li>
+<li><code>genome/index/</code>
+<ul>
+<li><code>star/</code>: Directory containing STAR indices.</li>
+<li><code>hisat2/</code>: Directory containing HISAT2 indices.</li>
+<li><code>rsem/</code>: Directory containing STAR and RSEM indices.</li>
+<li><code>salmon/</code>: Directory containing Salmon indices.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p>A number of genome-specific files are generated by the pipeline because they are required for the downstream processing of the results. If the <code>--save_reference</code> parameter is provided then these will be saved in the <code>genome/</code> directory. It is recommended to use the <code>--save_reference</code> parameter if you are using the pipeline to build new indices so that you can save them somewhere locally. The index building step can be quite a time-consuming process and it permits their reuse for future runs of the pipeline to save disk space.</p>
+<h3 id="pipeline-information">Pipeline information</h3>
+<details markdown="1">
+<summary>Output files</summary>
+<ul>
+<li><code>pipeline_info/</code>
+<ul>
+<li>Reports generated by Nextflow: <code>execution_report.html</code>, <code>execution_timeline.html</code>, <code>execution_trace.txt</code> and <code>pipeline_dag.dot</code>/<code>pipeline_dag.svg</code>.</li>
+<li>Reports generated by the pipeline: <code>pipeline_report.html</code>, <code>pipeline_report.txt</code> and <code>software_versions.yml</code>. The <code>pipeline_report*</code> files will only be present if the <code>--email</code> / <code>--email_on_fail</code> parameter's are used when running the pipeline.</li>
+<li>Reformatted samplesheet files used as input to the pipeline: <code>samplesheet.valid.csv</code>.</li>
+</ul>
+</li>
+</ul>
+</details>
+<p><a href="https://www.nextflow.io/docs/latest/tracing.html">Nextflow</a> provides excellent functionality for generating various reports relevant to the running and execution of the pipeline. This will allow you to troubleshoot errors with the running of the pipeline, and also provide you with other information such as launch commands, run times and resource usage.</p>
+</div>
+        </div>
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
