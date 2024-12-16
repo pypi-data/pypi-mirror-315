@@ -1,0 +1,15 @@
+opennano/Results.py,sha256=R0ytOR7mN1wK7cfdD4WvQpblgbYME3DbawiLuYlyPpA,1138
+opennano/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opennano/io.py,sha256=dF1GZu8f260pKs7uX2PGfCSoIQs5uLduOF0TRxiJGcM,25321
+opennano/normalization.py,sha256=Mf_ebD3T0uYey2WNBzOPszmKth57Ew5vG4qzrAZ5uaY,22996
+opennano/qc.py,sha256=WCyPDXgNe0z1cNJnmx6l3e6uopqQ-UG20Tuam-O2940,29264
+opennano/run_qc.py,sha256=IrlEoHn2pE-QO36sOBegWSmmrejFIjy7oi1TuIhO4oA,941
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/norm_test.py,sha256=GbB-_wVG8yM6GAKSkTe5vaJsc7bS94xn-DL0xwb2Imo,4221
+tests/test_processor.py,sha256=AN2x-ctBXNON_HAtoTbjBBzdzWmfeApm6KGdohQrS4A,1202
+tests/test_qc.py,sha256=vZjRTEVOzs6ajtkvOdceX_BS7LbJOmJYoMWOuBQA5I4,3272
+opennano-0.1.2.dist-info/LICENSE,sha256=hbk702dD2mI1pUIAe03WuZ-mGTkh_maa1LLQzCbSh9s,617
+opennano-0.1.2.dist-info/METADATA,sha256=1riZhOs_cHjMpsB2u_2gq4uWDb4fiJnNPEINteB9FfE,1860
+opennano-0.1.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+opennano-0.1.2.dist-info/top_level.txt,sha256=86aD4d8ww2PnJw6kxbz0WODg3lbxX_p-2BARSKjXL28,15
+opennano-0.1.2.dist-info/RECORD,,
