@@ -1,0 +1,8 @@
+license.txt
+setup.py
+is_pure_music/__init__.py
+is_pure_music/check_func.py
+is_pure_music.egg-info/PKG-INFO
+is_pure_music.egg-info/SOURCES.txt
+is_pure_music.egg-info/dependency_links.txt
+is_pure_music.egg-info/top_level.txt
