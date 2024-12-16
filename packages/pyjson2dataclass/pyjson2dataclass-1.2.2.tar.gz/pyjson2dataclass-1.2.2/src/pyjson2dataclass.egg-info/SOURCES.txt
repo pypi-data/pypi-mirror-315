@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+src/__main__.py
+src/test_dataclass.py
+src/utils.py
+src/pyjson2dataclass.egg-info/PKG-INFO
+src/pyjson2dataclass.egg-info/SOURCES.txt
+src/pyjson2dataclass.egg-info/dependency_links.txt
+src/pyjson2dataclass.egg-info/entry_points.txt
+src/pyjson2dataclass.egg-info/top_level.txt
