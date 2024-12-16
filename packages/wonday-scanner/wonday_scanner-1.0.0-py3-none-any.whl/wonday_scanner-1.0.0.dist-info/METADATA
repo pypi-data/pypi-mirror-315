@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: wonday-scanner
+Version: 1.0.0
+Summary: A comprehensive web security scanner
+Home-page: https://github.com/yourusername/wonday-scanner
+Author: Wonday
+Author-email: wonday@whitehat.kr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Security
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Requires-Dist: beautifulsoup4>=4.9.3
+Requires-Dist: urllib3>=1.26.0
+Requires-Dist: dnspython>=2.1.0
+Requires-Dist: python-whois>=0.7.3
+
+# Wonday Scanner
+
+A comprehensive web security scanner that performs various security checks including OWASP Top 10 vulnerabilities.
+
+## Features
+- Information Gathering
+  - DNS Information
+  - WHOIS Information
+  - Port Scanning
+  - Technology Stack Detection
+  - Server Information Analysis
+  
+- Directory Scanning
+  - Multi-threaded Scanning
+  - Custom Wordlist Support
+  - Response Size Analysis
+  
+- Vulnerability Assessment
+  - OWASP Top 10 Checks
+  - Security Headers Analysis
+  - SSL/TLS Configuration
+  - Injection Vulnerabilities
+  - Access Control Testing
+  - Information Disclosure
+  
+## Installation 
