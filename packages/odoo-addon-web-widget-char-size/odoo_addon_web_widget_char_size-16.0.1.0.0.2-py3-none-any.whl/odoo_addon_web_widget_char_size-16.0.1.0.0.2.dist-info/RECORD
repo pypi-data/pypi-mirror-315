@@ -1,0 +1,13 @@
+odoo/addons/web_widget_char_size/README.rst,sha256=dyJgw10k_vaugB-X3V4YWTTBoWIrOsbsw7WBEYcFDXo,2936
+odoo/addons/web_widget_char_size/__init__.py,sha256=BfrZp95sJsn0swMxPu3cEhuxtAAIL1sHPpsKKwu5jKA,70
+odoo/addons/web_widget_char_size/__manifest__.py,sha256=ZlVIRRnYm0Tu0XuAeRdDbpKx_V03EsdzbSWcRlqcCP8,557
+odoo/addons/web_widget_char_size/i18n/web_widget_char_size.pot,sha256=leB6MlaWiU1sPOdcOTxNVY5KVORnHv0MfD14HgQJIIs,341
+odoo/addons/web_widget_char_size/readme/CONTRIBUTERS.rst,sha256=eBS9IgvK-RMMIBgrRVia2TP2bRR6MmkRfySRACmo1Yo,20
+odoo/addons/web_widget_char_size/readme/DESCRIPTION.rst,sha256=eYjzGqgz3B5XVpu8KUhNY9WXhQuHBf1L29WjtW7XqtM,309
+odoo/addons/web_widget_char_size/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/web_widget_char_size/static/description/index.html,sha256=Xq9r_z7lCq8pJ3yEl1FxjBFimqe50mP-tAn19XpaMSs,12207
+odoo/addons/web_widget_char_size/static/src/js/char_widget.esm.js,sha256=zYWfynHdwlxZFGF3-zDF_6qvqGLMo79eoQqoRSiZdWU,299
+odoo_addon_web_widget_char_size-16.0.1.0.0.2.dist-info/METADATA,sha256=CsOLUYv66B8qMyai0MbENKw-IBaHLy6Jbq9vfW0fHiM,3464
+odoo_addon_web_widget_char_size-16.0.1.0.0.2.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+odoo_addon_web_widget_char_size-16.0.1.0.0.2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_web_widget_char_size-16.0.1.0.0.2.dist-info/RECORD,,
