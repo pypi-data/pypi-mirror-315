@@ -1,0 +1,7 @@
+README.md
+setup.py
+My_question_rag.egg-info/PKG-INFO
+My_question_rag.egg-info/SOURCES.txt
+My_question_rag.egg-info/dependency_links.txt
+My_question_rag.egg-info/requires.txt
+My_question_rag.egg-info/top_level.txt
