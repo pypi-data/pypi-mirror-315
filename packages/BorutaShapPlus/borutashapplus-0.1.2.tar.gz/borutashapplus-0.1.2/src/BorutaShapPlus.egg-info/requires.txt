@@ -1,0 +1,9 @@
+scikit-learn
+tqdm
+statsmodels
+matplotlib
+pandas
+numpy<=2.0.0
+shap>=0.34.0
+seaborn
+scipy
