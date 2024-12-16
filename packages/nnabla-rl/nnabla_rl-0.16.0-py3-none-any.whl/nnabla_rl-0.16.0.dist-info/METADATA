@@ -1,0 +1,417 @@
+Metadata-Version: 2.1
+Name: nnabla_rl
+Version: 0.16.0
+Summary: Deep reinforcement learning library built on top of Neural Network Libraries
+Author: Sony Group Corporation
+Maintainer: Yu Ishihara, Shunichi Sekiguchi, Takayoshi Takayanagi
+License: 
+                                         Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: Homepage, https://github.com/sony/nnabla-rl
+Project-URL: Repository, https://github.com/sony/nnabla-rl
+Project-URL: Documentation, https://nnabla-rl.readthedocs.io/en/latest/
+Keywords: deep learning,artificial intelligence,machine learning,neural network
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nnabla!=1.18.0,>=1.17
+Requires-Dist: numpy>=1.17
+Requires-Dist: gym<0.26.0
+Requires-Dist: opencv-python
+Requires-Dist: packaging
+Requires-Dist: tqdm
+Requires-Dist: gymnasium
+Provides-Extra: deploy
+Requires-Dist: setuptools>=61.0.0; extra == "deploy"
+Requires-Dist: wheel; extra == "deploy"
+Requires-Dist: build; extra == "deploy"
+Requires-Dist: twine; extra == "deploy"
+Provides-Extra: dev
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: mypy!=1.11.0; extra == "dev"
+Requires-Dist: typing-extensions; extra == "dev"
+Requires-Dist: isort>5.0.0; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: docformatter; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: sphinx-rtd-theme; extra == "doc"
+Provides-Extra: render
+Requires-Dist: pyglet>=1.4.0; extra == "render"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: mock; extra == "test"
+
+[![License](https://img.shields.io/github/license/sony/nnabla-rl)](LICENSE)
+[![Build status](https://github.com/sony/nnabla-rl/workflows/Build%20nnabla-rl/badge.svg)](https://github.com/sony/nnabla-rl/actions)
+[![Documentation Status](https://readthedocs.org/projects/nnabla-rl/badge/?version=latest)](https://nnabla-rl.readthedocs.io/en/latest/?badge=latest)
+[![Doc style](https://img.shields.io/badge/%20style-google-3666d6.svg)](https://google.github.io/styleguide/pyguide.html#s3.8-comments-and-docstrings)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+
+# Deep Reinforcement Learning Library built on top of Neural Network Libraries
+
+nnablaRL is a deep reinforcement learning library built on top of [Neural Network Libraries](https://github.com/sony/nnabla) 
+that is intended to be used for research, development and production.
+
+## Installation
+
+Installing nnablaRL is easy!
+
+```sh
+$ pip install nnabla-rl
+```
+
+nnablaRL only supports Python version >= 3.8 and [nnabla](https://github.com/sony/nnabla) version >= 1.17.
+
+### Enabling GPU accelaration (Optional)
+
+nnablaRL algorithms run on CPU by default. To run the algorithm on GPU, first install [nnabla-ext-cuda](https://github.com/sony/nnabla-ext-cuda) as follows.
+(Replace [cuda-version] depending on the CUDA version installed on your machine.)
+
+```sh
+$ pip install nnabla-ext-cuda[cuda-version]
+```
+
+```sh
+# Example installation. Supposing CUDA 11.0 is installed on your machine.
+$ pip install nnabla-ext-cuda110
+```
+
+After installing nnabla-ext-cuda, set the gpu id to run the algorithm on through algorithm's configuration.
+
+```py
+import nnabla_rl.algorithms as A
+
+config = A.DQNConfig(gpu_id=0) # Use gpu 0. If negative, will run on CPU.
+dqn = A.DQN(env, config=config)
+...
+```
+
+## Features
+
+### Friendly API
+
+nnablaRL has friendly Python APIs which enables to start training with only 3 lines of python code.
+(NOTE: Below code will run on CPU. See the above instruction to run on GPU.)
+
+```py
+import nnabla_rl.algorithms as A
+from nnabla_rl.utils.reproductions import build_classic_control_env
+
+# Prerequisite: 
+# Run below to enable rendering!
+# $ pip install nnabla-rl[render]
+env = build_classic_control_env("Pendulum-v1", render=True) # 1
+ddpg = A.DDPG(env, config=A.DDPGConfig(start_timesteps=200))  # 2
+ddpg.train(env)  # 3
+```
+
+To get more details about nnablaRL, see [documentation](https://nnabla-rl.readthedocs.io/) and [examples](./examples).
+
+### Many builtin algorithms
+
+Most of famous/SOTA deep reinforcement learning algorithms, such as DQN, SAC, BCQ, GAIL, etc., are implemented in nnablaRL. Implemented algorithms are carefully tested and evaluated. You can easily start training your agent using these verified implementations.  
+
+For the list of implemented algorithms see [here](./nnabla_rl/algorithms/README.md).
+
+You can also find the reproduction and evaluation results of each algorithm [here](./reproductions).  
+Note that you may not get completely the same results when running the reproduction code on your computer. The result may slightly change depending on your machine, nnabla/nnabla-rl's package version, etc.
+
+### Seamless switching of online and offline training
+
+In reinforcement learning, there are two main training procedures, online and offline, to train the agent.
+Online training is a training procedure that executes both data collection and network update alternately. Conversely, offline training is a training procedure that updates the network using only existing data. With nnablaRL, you can switch these two training procedures seamlessly. For example, as shown below, you can easily train a robot's controller online using simulated environment and finetune it offline with real robot dataset.
+
+```py
+import nnabla_rl
+import nnabla_rl.algorithms as A
+
+simulator = get_simulator() # This is just an example. Assuming that simulator exists
+dqn = A.DQN(simulator)
+# train online for 1M iterations
+dqn.train_online(simulator, total_iterations=1000000)
+
+real_data = get_real_robot_data() # This is also an example. Assuming that you have real robot data
+# fine tune the agent offline for 10k iterations using real data
+dqn.train_offline(real_data, total_iterations=10000)
+```
+
+### Visualization of training graph and training progress
+
+nnablaRL supports visualization of training graphs and training progresses with [nnabla-browser](https://github.com/sony/nnabla-browser)!
+
+```py
+import gym
+
+import nnabla_rl.algorithms as A
+import nnabla_rl.hooks as H
+import nnabla_rl.writers as W
+from nnabla_rl.utils.evaluator import EpisodicEvaluator
+
+# save training computational graph
+training_graph_hook = H.TrainingGraphHook(outdir="test")
+
+# evaluation hook with nnabla's Monitor
+eval_env = gym.make("Pendulum-v0")
+evaluator = EpisodicEvaluator(run_per_evaluation=10)
+evaluation_hook = H.EvaluationHook(
+    eval_env,
+    evaluator,
+    timing=10,
+    writer=W.MonitorWriter(outdir="test", file_prefix='evaluation_result'),
+)
+
+env = gym.make("Pendulum-v0")
+sac = A.SAC(env)
+sac.set_hooks([training_graph_hook, evaluation_hook])
+
+sac.train_online(env, total_iterations=100)
+```
+
+![training-graph-visualization](./docs/source/images/training-graph-visualization.png)
+
+![training-status-visualization](./docs/source/images/training-status-visualization.png)
+
+## Getting started
+
+Try below interactive demos to get started. </br>
+You can run it directly on [Colab](https://colab.research.google.com/) from the links in the table below.
+
+| Title | Notebook | Target RL task |
+|:---:|:---:|:---:|
+| Simple reinforcement learning training to get started | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sony/nnabla-rl/blob/master/interactive-demos/pendulum.ipynb) | Pendulum |
+| Learn how to use training algorithms | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sony/nnabla-rl/blob/master/interactive-demos/tutorial-algorithm.ipynb) | Pendulum |
+| Learn how to use customized network model for training | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sony/nnabla-rl/blob/master/interactive-demos/tutorial-model.ipynb) | Mountain car |
+| Learn how to use different network solver for training | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sony/nnabla-rl/blob/master/interactive-demos/tutorial-solver.ipynb) | Pendulum |
+| Learn how to use different replay buffer for training | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sony/nnabla-rl/blob/master/interactive-demos/tutorial-replay-buffer.ipynb) | Pendulum |
+| Learn how to use your own environment for training | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sony/nnabla-rl/blob/master/interactive-demos/tutorial-envs.ipynb) | Customized environment |
+| Atari game training example | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sony/nnabla-rl/blob/master/interactive-demos/atari.ipynb) | Atari games |
+
+## Documentation
+
+Full documentation is [here](https://nnabla-rl.readthedocs.io/).
+
+## Contribution guide
+
+Any kind of contribution to nnablaRL is welcome! See the [contribution guide](./CONTRIBUTING.md) for details.
+
+## License
+
+nnablaRL is provided under the [Apache License Version 2.0](LICENSE) license.
