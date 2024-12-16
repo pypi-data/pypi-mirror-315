@@ -1,0 +1,363 @@
+Metadata-Version: 2.1
+Name: mybox-tool
+Version: 0.1.0
+Summary: A powerful multi-repository management tool for Git projects
+Home-page: https://github.com/beliefgp/mybox
+Author: belief
+Author-email: belief.bian@gmail.com
+Project-URL: Bug Tracker, https://github.com/beliefgp/mybox/issues
+Project-URL: Documentation, https://github.com/beliefgp/mybox/tree/main/docs
+Project-URL: Source Code, https://github.com/beliefgp/mybox
+Keywords: git repository management tool workspace
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.0.0
+Requires-Dist: pyyaml>=6.0.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: gitpython>=3.1.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+Requires-Dist: flake8>=4.0.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+
+# MyBox
+
+MyBox 是一个强大的多仓库管理工具，帮助您更好地组织和管理多个 Git 仓库。它支持工作空间管理、批量操作、分支管理等功能，让多仓库管理变得简单高效。
+
+## 特性
+
+- **工作空间管理**
+  - 创建和管理多个工作空间
+  - 导入现有仓库
+  - 初始化新仓库
+  - 扫描并批量导入仓库
+
+- **仓库操作**
+  - 克隆远程仓库
+  - 批量执行 git 操作（pull、push、commit）
+  - 查看仓库状态
+  - 导入本地仓库
+
+- **分支管理**
+  - 创建、切换、删除分支
+  - 合并分支
+  - 查看分支状态
+  - 批量分支操作
+
+## 安装
+
+### 方法 1：从 PyPI 安装（推荐）
+
+```bash
+pip install mybox-tool
+```
+
+### 方法 2：从源码安装
+
+1. 克隆仓库：
+```bash
+git clone https://github.com/yourusername/mybox.git
+cd mybox
+```
+
+2. 安装依赖：
+```bash
+pip install -e .
+```
+
+## 快速开始
+
+1. 创建工作空间：
+```bash
+mybox workspace add dev ~/projects/dev
+```
+
+2. 克隆仓库到工作空间：
+```bash
+mybox clone dev https://github.com/user/repo.git
+```
+
+3. 查看工作空间状态：
+```bash
+mybox status dev
+```
+
+## 基本用法
+
+### 工作空间管理
+```bash
+# 列出所有工作空间
+mybox workspace list
+
+# 删除工作空间
+mybox workspace remove dev
+```
+
+### 仓库操作
+```bash
+# 导入本地仓库
+mybox import dev ~/existing-repo
+
+# 初始化新仓库
+mybox init dev new-project
+
+# 扫描并导入目录下的所有 Git 仓库
+mybox scan-import dev ~/old-projects
+```
+
+### Git 操作
+```bash
+# 拉取更新
+mybox pull dev
+
+# 提交更改
+mybox commit dev -m "feat: add new feature"
+
+# 推送更改
+mybox push dev
+```
+
+### 分支管理
+```bash
+# 列出分支
+mybox branch list dev
+
+# 创建新分支
+mybox branch create dev feature/new-feature
+
+# 切换分支
+mybox branch switch dev feature/new-feature
+
+# 删除分支
+mybox branch delete dev feature/old-feature
+```
+
+## 详细使用说明
+
+### 工作空间管理
+
+```bash
+# 添加工作空间
+mybox add workspace1 ~/projects/workspace1
+
+# 列出所有工作空间
+mybox list
+
+# 导入现有仓库
+mybox import-repo workspace1 ~/existing-repo
+
+# 初始化新仓库
+mybox init workspace1 new-project
+
+# 扫描并导入仓库
+mybox scan-import workspace1 ~/projects
+```
+
+### 仓库操作
+
+```bash
+# 查看状态
+mybox status workspace1
+
+# 拉取更新
+mybox pull workspace1
+
+# 提交更改
+mybox commit workspace1 "feat: add new feature"
+
+# 推送更改
+mybox push workspace1
+```
+
+### 分支管理
+
+```bash
+# 查看分支
+mybox branches workspace1
+
+# 创建分支
+mybox create-branch workspace1 feature/new-feature
+
+# 切换分支
+mybox switch workspace1 feature/new-feature
+
+# 合并分支
+mybox merge workspace1 feature/new-feature
+
+# 删除分支
+mybox delete-branch workspace1 feature/new-feature
+```
+
+### 批量切换分支
+
+使用 `switch` 命令可以同时切换工作空间中所有仓库的分支。如果本地分支不存在，会自动检查远程仓库：
+
+```bash
+# 切换到指定分支
+mybox switch dev feature/new-ui
+```
+
+切换分支时会显示详细的操作结果：
+
+```
+切换分支结果:
+仓库      原分支    目标分支         状态
+repo1    main     feature/new-ui   已切换
+repo2    main     feature/new-ui   已在该分支
+repo3    dev      feature/new-ui   有未提交的更改
+repo4    main     feature/new-ui   分支不存在（本地和远程）
+```
+
+分支切换过程：
+1. 检查本地是否存在目标分支
+2. 如果本地不存在：
+   - 从远程获取最新更新
+   - 检查远程是否有对应分支
+   - 如果远程分支存在，创建本地分支并设置跟踪
+3. 检查是否有未提交的更改
+4. 执行分支切换
+
+状态说明：
+- `已切换`：成功切换到目标分支
+- `已在该分支`：当前已经在目标分支上
+- `有未提交的更改`：有未保存的修改，需要先提交或暂存
+- `分支不存在（本地和远程）`：本地和远程都没有找到目标分支
+- `错误: [具体原因]`：其他错误（如权限问题等）
+
+## 命令参考
+
+### 核心命令
+
+- `add`: 添加新的工作空间
+- `list`: 列出所有工作空间
+- `clone`: 克隆远程仓库
+- `import-repo`: 导入本地仓库
+- `init`: 初始化新仓库
+- `scan-import`: 扫描并导入仓库
+
+### 仓库操作命令
+
+- `status`: 查看仓库状态
+- `pull`: 拉取更新
+- `push`: 推送更改
+- `commit`: 提交更改
+
+### 分支管理命令
+
+- `branches`: 列出所有分支
+- `create-branch`: 创建新分支
+- `switch`: 切换分支
+- `merge`: 合并分支
+- `delete-branch`: 删除分支
+
+## 配置文件
+
+MyBox 使用 `~/.mybox.yaml` 存储配置信息。配置文件格式如下：
+
+```yaml
+workspace1: /path/to/workspace1
+workspace2: /path/to/workspace2
+```
+
+## 最佳实践
+
+1. **工作空间组织**
+   - 按项目类型组织工作空间
+   - 相关的仓库放在同一个工作空间
+   - 使用有意义的工作空间名称
+
+2. **批量操作**
+   - 使用状态命令检查更改
+   - 批量提交前确认消息
+   - 定期同步所有仓库
+
+3. **分支管理**
+   - 遵循一致的分支命名规范
+   - 及时清理已合并的分支
+   - 使用有意义的提交消息
+
+## 常见问题
+
+1. **Q: 如何移动仓库到其他工作空间？**
+   A: 使用 `import-repo` 命令将仓库导入到新的工作空间。
+
+2. **Q: 如何处理合并冲突？**
+   A: MyBox 会在合并时提示冲突，需要手动解决冲突后再次提交。
+
+3. **Q: 如何更新 MyBox？**
+   A: 使用 `pip install -e .` 重新安装最新版本。
+
+## 贡献
+
+欢迎贡献代码和提出建议！请遵循以下步骤：
+
+1. Fork 仓库
+2. 创建特性分支
+3. 提交更改
+4. 推送到分支
+5. 创建 Pull Request
+
+## 许可证
+
+MIT License
+
+## 命令输出说明
+
+### 工作空间列表
+```
+名称    路径                状态
+dev     ~/projects/dev     活动
+work    ~/workspace        未找到
+```
+
+### 仓库状态
+```
+仓库        分支    状态      未跟踪
+repo1      main    clean     0
+repo2      dev     有更改    2
+```
+
+### 分支列表
+```
+repo1
+分支名     当前    远程跟踪      最后提交
+main      ✓      origin/main   feat: add new feature
+develop          origin/dev    fix: update dependencies
+
+repo2
+分支名     当前    远程跟踪      最后提交
+main      ✓      origin/main   docs: update README
+```
+
+## 错误处理
+
+MyBox 提供清晰的错误提示：
+
+- 导入已存在的仓库：
+  ```
+  错误: 目标路径 '/path/to/workspace/existing-repo' 已存在
+  ```
+
+- 扫描导入结果：
+  ```
+  扫描完成:
+  ✓ 成功导入: 2 个仓库
+  - 已存在: 1 个仓库
+  ✗ 导入失败: 1 个仓库
+
+  失败详情:
+    - /path/to/repo: 错误原因
+  ```

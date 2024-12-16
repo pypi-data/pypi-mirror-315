@@ -1,0 +1,11 @@
+README.md
+setup.py
+mybox/__init__.py
+mybox/cli.py
+mybox/mybox.py
+mybox_tool.egg-info/PKG-INFO
+mybox_tool.egg-info/SOURCES.txt
+mybox_tool.egg-info/dependency_links.txt
+mybox_tool.egg-info/entry_points.txt
+mybox_tool.egg-info/requires.txt
+mybox_tool.egg-info/top_level.txt
