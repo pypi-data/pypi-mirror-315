@@ -1,0 +1,6 @@
+Version Log
+==========
+
+3.16.0  (16/12/2024)
+-------------------
+- 3.16.0  version of acceldata_airflow_sdk
