@@ -1,0 +1,8 @@
+[console_scripts]
+scc = clustr.scc:main
+scc-building = clustr.Building:main
+scc-client = clustr.S_Clustr_Client:main
+scc-debug-device = clustr.DebugDevice:main
+scc-server = clustr.S_Clustr_Server:main
+scc-test = clustr.scctest:main
+scc-testpc = clustr.Testpc:main
