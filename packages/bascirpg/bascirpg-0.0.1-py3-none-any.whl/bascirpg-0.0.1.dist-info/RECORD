@@ -1,0 +1,11 @@
+utils/__init__.py,sha256=Gdckn76-kYZOT_AQjhqo3vpovC5nzg2m3wLBO9UsTYE,138
+utils/basics.py,sha256=Q_pEIHcUCHkt4mI4bTAKoaDUr8GhLg21LNFJ-Y8KxpE,239
+utils/components.py,sha256=CUv3Dcn6P6xFeadXeN32GYLxcyJec1XdgqcdK5qS65w,12930
+utils/errors.py,sha256=2u4vQp2ZRNGUKqxNtDXOxMqZnc0iClWZdC8Wke-qzGA,240
+utils/generators.py,sha256=AVITZakEr91BHxh7oa4q2-w48ebZY8cKTRnIJ_89stc,665
+utils/items.py,sha256=-XJgKNnQdD5Ot_TIWrh_2SLPqN8l0o0zCAV0vElD4YA,3348
+bascirpg-0.0.1.dist-info/LICENSE,sha256=h9v8atxuCBla8Qiz3mkEmwsQh2dkGDmk51VSA_1Ho6I,1069
+bascirpg-0.0.1.dist-info/METADATA,sha256=vIDve7KDVZuXRD067O3Up24QWv3AEAFUQBLLnm_5D30,4532
+bascirpg-0.0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+bascirpg-0.0.1.dist-info/top_level.txt,sha256=BXdhaaHBJTl5WDScj-NdcpdW6F1g7hNN3YP0CLPxk-0,6
+bascirpg-0.0.1.dist-info/RECORD,,
