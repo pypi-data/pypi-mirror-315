@@ -1,0 +1,12 @@
+bceinternalsdk/__init__.py,sha256=8sFyX-QcznYAf__G6oPw1KXnKwNEP6iWX_bJE1sdZNY,212
+bceinternalsdk/client/__init__.py,sha256=UOxkYstEJWQur5jC5ESJsWezmsXajZ-QeUoH_hS7AMU,212
+bceinternalsdk/client/base_model.py,sha256=BNCKTYMWRZxdJGXQjSCFdoacYSlwXJtSjPqvJ7OCMDo,1333
+bceinternalsdk/client/bce_internal_client.py,sha256=st-2_yVORs5TvbSliVWZK5NhHm4-qHIDXmOFMf0meCk,4250
+bceinternalsdk/client/decorator.py,sha256=WLk5es4wMUxL_lfnwVCWt9qwsi1H0qEreykh5lX32WM,859
+bceinternalsdk/client/paging.py,sha256=mPjsiftp1HeJV5fIoR343XqbmJE0GpQUERM-WCxxHbE,1592
+bceinternalsdk/client/test_paging.py,sha256=vTrYB88yDNf3rXPx7Ub4GM7iRzz0OhBj-Ep6k-_X92A,748
+bceinternalsdk/client/validator.py,sha256=QgaRZgPJcBIpsMp10g9x-hRBlx3U45B7e0ApdNYQD8w,4374
+bce_internal_sdk-1.0.0.9.dist-info/METADATA,sha256=gtkOlAIII0Jl1eXAnF-trpKEMyvMGo4jZ5nWpO3-QK8,611
+bce_internal_sdk-1.0.0.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bce_internal_sdk-1.0.0.9.dist-info/top_level.txt,sha256=a_JDE_p8ZpaQHv1SZCe6XIDzG2Y05wiEvPaB2SUtbRE,15
+bce_internal_sdk-1.0.0.9.dist-info/RECORD,,
