@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rmwatchlater
+Version: 0.4.0
+Summary: 
+Author: tct123
+Author-email: 42028373+tct123@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: mylocale (>=0.31.0,<0.32.0)
+Requires-Dist: pyautogui (>=0.9.54,<0.10.0)
+Description-Content-Type: text/markdown
+
+

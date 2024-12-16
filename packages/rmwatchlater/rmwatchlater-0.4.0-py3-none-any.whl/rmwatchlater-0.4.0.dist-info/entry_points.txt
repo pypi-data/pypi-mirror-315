@@ -1,0 +1,3 @@
+[console_scripts]
+rmwatchlater=rmwatchlater.__init__:main
+
