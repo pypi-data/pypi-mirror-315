@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fastapi-keycloak-auth
+Version: 1.0.0
+Summary: Keycloak authentication for FastAPI that helps to secure your API endpoints with RBAC with minimal configurations
+Home-page: https://github.com/SahasPunchihewa/fastapi-keycloak-auth
+Author: sahas
+Author-email: sahasmcg2995@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi>=0.115.6
+Requires-Dist: python-keycloak>=5.1.1
+Requires-Dist: python-jose>=3.3.0
