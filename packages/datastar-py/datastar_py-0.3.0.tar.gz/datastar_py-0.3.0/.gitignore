@@ -1,0 +1,11 @@
+tailwindcli
+datastar_site
+data
+.task
+.idea
+.DS_Store
+node_modules
+datastar-website
+*_bin
+*.pyc
+__pycache__
