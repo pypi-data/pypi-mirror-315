@@ -1,0 +1,4 @@
+colorama
+pytest
+ast2json
+setuptools
