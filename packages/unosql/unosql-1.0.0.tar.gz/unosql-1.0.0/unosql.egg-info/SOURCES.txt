@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+tests/test.py
+unosql.egg-info/PKG-INFO
+unosql.egg-info/SOURCES.txt
+unosql.egg-info/dependency_links.txt
+unosql.egg-info/top_level.txt
