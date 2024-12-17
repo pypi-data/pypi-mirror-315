@@ -1,0 +1,11 @@
+webook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webook/cli.py,sha256=lO_D6MoR-eP7ADQGZQXsQM2BRLcU1jLsPYFnqI-ZQOA,1516
+webook/commons.py,sha256=FdvtXcjEXEirPGjgv__kqGaLQpt6AGCNMPFT55pA7LU,88
+webook/main.py,sha256=xeIFrIyZwMImtHX5j6FXSTWxIcRPbhGsUhIWbEsKnSY,1690
+webook/selectors.py,sha256=F5i1Fp1ppN5n2ag901jJodUV04n1toO5EQtjm2K6iDw,499
+webook/urls.py,sha256=GvDaAFkw8t5Pnrq_yV-gCyQiaKVhjwJanTeVDT3eLus,704
+webook/web.py,sha256=Z_j7HXK_b4QDRe4xLSAJh_YIEBl9yU4sm6hc6UixP7w,1274
+webook-0.1.3.dist-info/METADATA,sha256=wDVCIQvEh6ATlkFQlC3vnyd-P7wdVVniXhMP-oTk80Y,593
+webook-0.1.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+webook-0.1.3.dist-info/entry_points.txt,sha256=v9ig8n8oq_RW_JKF7TZ9yPnZebL4kww86Dzkmfx3r78,40
+webook-0.1.3.dist-info/RECORD,,
