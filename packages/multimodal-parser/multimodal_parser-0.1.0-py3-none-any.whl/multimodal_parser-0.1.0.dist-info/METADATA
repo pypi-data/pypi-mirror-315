@@ -1,0 +1,71 @@
+Metadata-Version: 2.4
+Name: multimodal-parser
+Version: 0.1.0
+Summary: Extract content from PDF documents using multimodal LLMs in markdown format
+Project-URL: Homepage, https://github.com/iamarunbrahma/multimodal-parser
+Project-URL: Repository, https://github.com/iamarunbrahma/multimodal-parser.git
+Author-email: Arun Brahma <mithubrahma@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.13
+Requires-Dist: jinja2>=3.1.4
+Requires-Dist: ollama>=0.4.4
+Requires-Dist: pydantic>=2.10.3
+Requires-Dist: pymupdf>=1.25.1
+Requires-Dist: tqdm>=4.67.1
+Provides-Extra: dev
+Requires-Dist: black>=24.10.0; extra == 'dev'
+Requires-Dist: pytest>=8.3.4; extra == 'dev'
+Requires-Dist: ruff>=0.8.3; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Multimodal Parser
+
+Extract content from PDF documents using multimodal LLMs in markdown format.
+
+## Usage
+
+```bash
+uv run markdown.py [input-file]
+```
+
+## Installation
+
+- ***Install uv:***
+    - *Mac OS and Linux:*
+        ```bash
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+        ```
+    - *Windows:*
+        ```bash
+        powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+        ```
+
+- ***Install dependencies:***
+    ```bash
+    uv sync --all-extras && source .venv/bin/activate
+    ```
+
+## Host Ollama locally
+
+- ***Install Ollama:***
+    - *Linux:*
+        ```bash
+        curl -fsSL https://ollama.com/install.sh | sh
+        ```
+    - *Mac OS:*
+        ```bash
+        brew install ollama
+        ```
+    - *Windows:*
+        Download from [here](https://ollama.com/download/OllamaSetup.exe) and install.
+
+- ***Run Ollama:***
+    - Pull models using: `ollama pull [model-name]`
+    - Start Ollama server: `ollama serve`
+    - Verify if the server is running: `curl http://localhost:11434/api/version`
