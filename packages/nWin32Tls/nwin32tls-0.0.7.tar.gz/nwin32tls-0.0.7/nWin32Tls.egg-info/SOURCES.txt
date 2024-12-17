@@ -1,0 +1,8 @@
+setup.py
+nWin32Tls/__init__.py
+nWin32Tls/nWin32Tls.py
+nWin32Tls.egg-info/PKG-INFO
+nWin32Tls.egg-info/SOURCES.txt
+nWin32Tls.egg-info/dependency_links.txt
+nWin32Tls.egg-info/requires.txt
+nWin32Tls.egg-info/top_level.txt

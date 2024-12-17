@@ -1,0 +1,7 @@
+pyautogui>=0.9.54
+mss>=10.0.0
+pyTelegramBotAPI>=4.25.0
+Pillow>=11.0.0
+pynput>=1.7.7
+requests>=2.32.3
+PyScreeze>=1.0.1
