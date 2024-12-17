@@ -1,0 +1,2 @@
+[console_scripts]
+easy-tree-maker = tree_maker.cli:main
