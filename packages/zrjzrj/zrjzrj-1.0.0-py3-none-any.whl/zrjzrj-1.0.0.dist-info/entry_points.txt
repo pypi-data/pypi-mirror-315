@@ -1,0 +1,2 @@
+[console_scripts]
+addone = zrjzrj.main:add_one
