@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+resources/image1.png
+undo_code.egg-info/PKG-INFO
+undo_code.egg-info/SOURCES.txt
+undo_code.egg-info/dependency_links.txt
+undo_code.egg-info/not-zip-safe
+undo_code.egg-info/top_level.txt
