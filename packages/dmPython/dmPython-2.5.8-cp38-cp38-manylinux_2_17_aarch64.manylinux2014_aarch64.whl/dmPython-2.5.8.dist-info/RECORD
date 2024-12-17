@@ -1,0 +1,17 @@
+dmPython.cpython-38-aarch64-linux-gnu.so,sha256=wHffJph8V68UjyW58zMe1unStsgO9Ag0tnrk7exJuys,989657
+dmPython-2.5.8.data/data/lib/python3.8/site-packages/dmPython.pth,sha256=YJsPuJmhA1I38o7abtA0kXKA5Rlc2u97qhqMMRCFdVQ,12
+dmPython-2.5.8.data/data/lib/python3.8/site-packages/dm_remake_python_env.py,sha256=Risp8AXJAiHD0gZ5akkJvW8zvD0t8lHy-VS1KnjNhrs,67
+dmPython-2.5.8.data/data/lib/python3.8/site-packages/dmdpi.py,sha256=lOuHbHSv1PM5y0vryKPi2jiAvm3TqIZFk4MQkh_h4qI,1162
+dpi/DPI.h,sha256=dX7ccS32Icx-1D2zeUVo23NnzgASzPvuCUXBjiKeRyY,40800
+dpi/DPIext.h,sha256=jh6lD587EZ4InlwZc3rUHyRmPG6tpUTSzQg0lXTP8Qg,17846
+dpi/DPItypes.h,sha256=HgLjXrhPLiE6qZ3IzozD4LSGfpEtLsNOCNxOdhxlra8,3595
+dpi/libcrypto.so,sha256=GiBwf4vnfxChVnvgCw2pFyIz-S_21MjaW2woc3NnkGw,3220144
+dpi/libdmdpi.a,sha256=eKukpsOjqAYcVKTZTm5qDq9WJTqakYoMUQrhhZtUb88,37644560
+dpi/libdmdpi.so,sha256=XSGOgtkVUkqC_SkMDOVo1LP0TgGNHViVEiUnLwXg7Qw,12176016
+dpi/libssl.so,sha256=zGCFYu8xdlJdn5FJBGsUN_yMUILVrLaQRvcqqO4Yczs,806417
+dmPython-2.5.8.dist-info/METADATA,sha256=q-CDze-fTkrxsPsuhmnKLvgDy38xqixWpwquKszuySg,751
+dmPython-2.5.8.dist-info/WHEEL,sha256=7qYgiLwwJLmZPJXYAe90WXzmsPmUWCec-4Ak8vaPTT0,150
+dmPython-2.5.8.dist-info/top_level.txt,sha256=6jSQ6k2q8-_2-nacasera3icvbDWKBih619pBsQY22g,13
+dmPython-2.5.8.dist-info/RECORD,,
+dmPython.libs/libdmdpi-5d218e82.so,sha256=8OPblBFinLfOgCnfGLxz1YoqZo2L5gyBe-eVNY1Qlq0,12603385
+dmPython.libs/libcrypto-1a20707f.so.1.1,sha256=X8VmuBTEAvXLEarI4d1GIB05sf6EYm--1Jgrn6hKPI0,3403409
