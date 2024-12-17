@@ -1,0 +1,203 @@
+"/home-local/sokol/gba_home/sysbio/dev/ftbl2sys/influx_si/influx_s.py" "--pref" "e_coli" "--pref" "e_coli_growth" "--pref" "../prl_exp/mtf/e_coli_glc1-6n"
+code gen: 2024-12-16 14:29:50
+calcul  : 2024-12-16 14:29:50
+load    : 2024-12-16 14:29:51.35 cpu=0.57
+rinit   : 2024-12-16 14:29:51.35 cpu=0.571
+r_flux  : 2024-12-16 14:29:51.35 cpu=0.571
+Afl qr(): 2024-12-16 14:29:51.36 cpu=0.583
+dfl_dffg: 2024-12-16 14:29:51.36 cpu=0.586
+spAbr   : 2024-12-16 14:29:51.37 cpu=0.587
+weight  1: 2024-12-16 14:29:51.37 cpu=0.587
+weight  2: 2024-12-16 14:29:51.37 cpu=0.588
+weight  3: 2024-12-16 14:29:51.37 cpu=0.589
+weight  4: 2024-12-16 14:29:51.37 cpu=0.59
+weight  5: 2024-12-16 14:29:51.37 cpu=0.591
+weight  6: 2024-12-16 14:29:51.37 cpu=0.591
+weight  7: 2024-12-16 14:29:51.37 cpu=0.591
+weight  8: 2024-12-16 14:29:51.37 cpu=0.592
+measure : 2024-12-16 14:29:51.38 cpu=0.602
+ineq    : 2024-12-16 14:29:51.40 cpu=0.622
+preopt  : 2024-12-16 14:29:51.51 cpu=0.725
+labargs : 2024-12-16 14:29:51.51 cpu=0.726
+run    1: 2024-12-16 14:29:51.51 cpu=0.726
+
+Starting point
+zc ineq : 2024-12-16 14:29:51.51 cpu=0.727
+The following 1 zerocross inequalities are redundant and are removed:
+zc d.n.v47>=0
+The following 4 ineqalitie(s) are active at starting point:
+f.x.v16>=0
+f.x.v44>=0
+f.x.v7>=0
+zc f.n.v32>=0
+optim   : 2024-12-16 14:29:51.63 cpu=0.843
+it=0	res=22.48825
+it=1	res=22.28502	normstep=77.06274	btk=0.25
+it=2	res=22.11041	normstep=59.86128	btk=1
+it=3	res=22.07043	normstep=19.42764	btk=0.25
+it=4	res=22.04454	normstep=12.75059	btk=0.25
+it=5	res=22.02846	normstep=8.238405	btk=0.25
+it=6	res=22.01864	normstep=5.257543	btk=0.25
+it=7	res=22.01264	normstep=3.34352	btk=0.25
+it=8	res=22.00896	normstep=2.15775	btk=0.25
+it=9	res=22.0067	normstep=1.447141	btk=0.25
+it=10	res=22.00569	normstep=1.123139	btk=0.25
+it=20	res=21.99217	normstep=3.250824	btk=0.08197277
+it=30	res=21.97281	normstep=8.844313	btk=0.07225099
+it=40	res=21.94497	normstep=13.3144	btk=0.06355046
+it=50	res=21.90659	normstep=5.562218	btk=1
+***Warning: in first optimization pass in run : lsi_ln: Rank deficient matrix in least squares
+9 free variable(s):
+	16
+	19
+	18
+	17
+	20
+	21
+	22
+	23
+	24
+Least L2-norm solution is provided.
+lsi_ln: Rank deficient matrix in least squares
+9 free variable(s):
+	17
+	18
+	20
+	19
+	22
+	23
+	24
+	21
+	26
+Least L2-norm solution is provided.
+lsi_ln: Unfeasible constraints in null space. (It must not be. Round off errors struck again.)
+lsi_ln: Rank deficient matrix in least squares
+11 free variable(s):
+f.x.v12	12
+f.x.v4	26
+f.x.v5	29
+f.x.v11	11
+f.x.v35	25
+f.x.v22	19
+f.x.v25_1	21
+f.x.v26_1	22
+f.x.v6	30
+f.x.v17	17
+f.x.v63	31
+Least L2-norm solution is provided.
+nlsic: Maximal non linear iteration number is achieved
+secondzc: 2024-12-16 14:29:58.17 cpu=7.37
+The following inequalities are active after first pass
+   of zero crossing strategy and will be inverted:
+zc d.n.v31>=0
+zc f.n.v32>=0
+Second zero crossing pass
+it=0	res=21.9067
+it=1	res=21.90309	normstep=39.79293	btk=0.0625
+it=2	res=21.90114	normstep=32.39255	btk=0.0625
+it=3	res=21.8997	normstep=17.55082	btk=0.09945789
+it=4	res=21.89291	normstep=10.2004	btk=1
+it=5	res=21.86796	normstep=17.89855	btk=1
+it=6	res=21.85791	normstep=7.566735	btk=1
+it=7	res=21.85791	normstep=491.4968	btk=1e-07
+it=8	res=21.85783	normstep=1.028334	btk=1
+it=9	res=21.85783	normstep=0.09491429	btk=1
+it=10	res=21.85783	normstep=0.003247745	btk=1
+it=15	res=21.85783	normstep=6.798262e-06	btk=1
+***Warning: second zero crossing pass: lsi_ln: Rank deficient matrix in least squares
+12 free variable(s):
+	14
+	15
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+Least L2-norm solution is provided.
+lsi_ln: Rank deficient matrix in least squares
+13 free variable(s):
+f.x.v6	30
+f.x.v5	29
+f.x.v28	24
+f.x.v4	26
+f.x.v12	12
+f.x.v13	13
+f.x.v35	25
+f.x.v25_1	21
+f.x.v22	19
+f.n.v63	8
+f.x.v15	15
+f.x.v26_1	22
+f.x.v63	31
+Least L2-norm solution is provided.
+last zc : 2024-12-16 14:30:00.46 cpu=9.649
+Last zero crossing pass (free of zc constraints)
+it=0	res=21.85783
+it=1	res=21.85783	normstep=353.2271	btk=1e-07
+it=2	res=21.85783	normstep=11.41287	btk=1.920979e-05
+it=3	res=21.85783	normstep=0.0003092233	btk=1
+it=4	res=21.85783	normstep=0.0001953938	btk=1
+it=5	res=21.85783	normstep=1.119761e-05	btk=1
+it=6	res=21.85783	normstep=3.563848e-06	btk=0.0625
+***Warning: last zero crossing (free of zc): lsi_ln: Rank deficient matrix in least squares
+14 free variable(s):
+	15
+	16
+	17
+	18
+	19
+	20
+	21
+	22
+	23
+	24
+	25
+	26
+	27
+	28
+Least L2-norm solution is provided.
+lsi_ln: Rank deficient matrix in least squares
+14 free variable(s):
+f.x.v6	30
+f.x.v5	29
+f.x.v4	26
+f.x.v28	24
+f.x.v12	12
+f.x.v13	13
+f.x.v22	19
+f.x.v25_1	21
+f.x.v35	25
+f.n.v64	9
+f.x.v15	15
+f.x.v26_1	22
+f.n.v63	8
+f.x.v63	31
+Least L2-norm solution is provided.
+postopt : 2024-12-16 14:30:01.36 cpu=10.557
+linstats: 2024-12-16 14:30:01.41 cpu=10.599
+***Warning: inverse of covariance matrix is numerically singular.
+Statistically undefined parameter(s) seems to be:
+f.n.v32
+f.n.v34
+f.n.v63
+f.n.v64
+f.x.v11
+f.x.v12
+f.x.v13
+f.x.v15
+f.x.v22
+f.x.v25_1
+f.x.v26_1
+f.x.v28
+f.x.v35
+f.x.v4
+f.x.v5
+f.x.v6
+f.x.v63
+For a more complete list, see SD column in '.tvar.sim' result file.
+rend    : 2024-12-16 14:30:01.41 cpu=10.607
