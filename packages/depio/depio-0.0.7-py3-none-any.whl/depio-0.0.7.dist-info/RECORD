@@ -1,0 +1,14 @@
+depio/BuildMode.py,sha256=16QLYnVruGuMtMUIrT05OB_yxSWK37oEX0Pv99U0OVA,121
+depio/Executors.py,sha256=1Z9NwCc4oZW9GzNOTsUjr9fZUgnJddYmXarj-fh6LsY,3608
+depio/Pipeline.py,sha256=lLYdW9XUNnwIVxzJ5lUcQWi0e6mBL9zud5fv005shOw,8785
+depio/Task.py,sha256=0dgdJjo979SwiSWhPa4sf35ZeUQturbwG4rFhFwQztk,12263
+depio/TaskStatus.py,sha256=sUdDPRzaHiGfk5yKN99DeNEoAIEJ6fJxeOKOGP3VN0Q,745
+depio/decorators.py,sha256=JBb0K-BZM-0_l_A0kh9lVxpKP_8earD_x6SQVp_tgIQ,618
+depio/exceptions.py,sha256=iVkmUbgGIZ85tgPvFQ-emjgIcs3ZVXN5vbfKvcIaEIg,495
+depio/logging.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depio/stdio_helpers.py,sha256=A4TeYY1qTmdUxuECq-JAzIPkGDHEtcjdljzcNt0ipn4,9745
+depio-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+depio-0.0.7.dist-info/METADATA,sha256=kMwwEkbauRmuk47UcKuxTt0g-Z9-WlpQbZHrJZISNck,10598
+depio-0.0.7.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+depio-0.0.7.dist-info/top_level.txt,sha256=YSCNzOu_WKLDXKOkmbmyh6e2-3rAwLWdxD4Ll6WwnzM,6
+depio-0.0.7.dist-info/RECORD,,
