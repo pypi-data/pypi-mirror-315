@@ -1,0 +1,14 @@
+omniwatermask/__init__.py,sha256=r-uu0ym644cARaJFsd47qgaIXEinp56lMSMUCa9gI6k,194
+omniwatermask/__version__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+omniwatermask/download_models.py,sha256=zmPloTJVqeTD4lxFSThGNEe-9sZpiv_b1bzIMRxavRA,1567
+omniwatermask/raster_helpers.py,sha256=sJxpzmUcHG9DSYx-_EgyxxqnHTNc8Zr2kwiPfRTstpk,2608
+omniwatermask/target_builders.py,sha256=mWERY7_IItb84ixwba8AYV_GXR0I-nbP7PgWec4SIoU,6399
+omniwatermask/vector_cache.py,sha256=Sy5RV9X7SpCIX23DdxyFthXz11hME-Xq-LxtI62eV3A,5167
+omniwatermask/water_inf_helpers.py,sha256=E-HutcBErE97hzpC8B7RHCr5DEcC3kl1H3lZDGP4jw4,17243
+omniwatermask/water_inf_pipeline.py,sha256=xeViYqAfUbRxJ7jFPemRWF2BrrIuFlMimGQh8dhISx0,8321
+omniwatermask/models/model_download_links.csv,sha256=93BbQLPc7rkLSDSd8v_dcJIJf0sNog5lAjobpORsGs0,160
+omniwatermask-0.1.2.dist-info/LICENSE,sha256=PItRahN7HtLMUqxiLdvN-MdrH-7QwbeSaNA5BDS9Z8Q,1066
+omniwatermask-0.1.2.dist-info/METADATA,sha256=oeYuEr4YKPAt1tbjhnUNhapFiSUbeUDK2CnYjPxwGzs,6204
+omniwatermask-0.1.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+omniwatermask-0.1.2.dist-info/top_level.txt,sha256=EwHLS5T0ux6ZoQ78Ypmi_Ulj8O8x1GZU4p2uNVuR-Is,14
+omniwatermask-0.1.2.dist-info/RECORD,,
