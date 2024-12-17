@@ -1,0 +1,4 @@
+[console_scripts]
+ocpiparsemake = ocpiupdate.executables.ocpiparsemake:main
+ocpiparsexml = ocpiupdate.executables.ocpiparsexml:main
+ocpiupdate = ocpiupdate.executables.__main__:main
