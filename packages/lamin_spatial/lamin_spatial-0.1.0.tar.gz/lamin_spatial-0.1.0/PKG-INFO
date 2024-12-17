@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: lamin_spatial
+Version: 0.1.0
+Summary: Manage spatial data using LaminDB.
+Author-email: Lamin Labs <open-source@lamin.ai>
+Description-Content-Type: text/markdown
+Requires-Dist: spatialdata
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: nbproject_test ; extra == "dev"
+Requires-Dist: wetlab ; extra == "use_case"
+Requires-Dist: ourprojects ; extra == "use_case"
+Requires-Dist: vitessce[all]>=3.5.0 ; extra == "use_case"
+Requires-Dist: generate-tiff-offsets>=0.1.9 ; extra == "use_case"
+Requires-Dist: starlette ; extra == "use_case"
+Requires-Dist: duckdb ; extra == "use_case"
+Project-URL: Home, https://github.com/laminlabs/lamin-spatial
+Provides-Extra: dev
+Provides-Extra: use_case
+
+# `lamin-spatial`: LaminDB examples for spatial data
+
