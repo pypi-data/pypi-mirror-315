@@ -1,0 +1,9 @@
+duck_agents/__init__.py,sha256=adJVUoYWkeKgoT8d9w1II25c_4ieBCT1njEcGdWidiY,27
+duck_agents/base_agent.py,sha256=5aWmU3MQJw3iIXj1DCnnlyRaDu_VCoKLM6c8krFAKVc,1598
+duck_agents/llm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+duck_agents/llm/gemini_session_factory.py,sha256=ld7sYKP86Hl_XrDkIvt4Xs06SAOfp-2oOHZ6hGaVCpU,826
+duck_agents/llm/ollama_session_factory.py,sha256=puAXw-WDH2EQbRcbCBGaTuoVWdU1Nc19u9UDgKZdVMU,685
+duck_agents/llm/session_factory.py,sha256=e6NkOCuYT0lbfvCE2RrhNqfBx8MCqG48b43qQZ58lKc,412
+duck_agents-0.1.6.dist-info/METADATA,sha256=9LHUTrFPYOVswbR1W0KREXRQdxkoglgwV8Pn03J0zqI,693
+duck_agents-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+duck_agents-0.1.6.dist-info/RECORD,,
