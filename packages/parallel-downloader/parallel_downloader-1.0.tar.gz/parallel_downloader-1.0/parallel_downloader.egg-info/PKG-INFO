@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: parallel_downloader
+Version: 1.0
+Author: Falk Boudewijn Schimweg
+Author-email: git@falk.schimweg.de
+Requires-Python: >=3.10
