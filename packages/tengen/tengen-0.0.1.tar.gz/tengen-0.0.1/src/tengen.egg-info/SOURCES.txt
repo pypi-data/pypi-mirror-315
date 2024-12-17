@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/tengen.egg-info/PKG-INFO
+src/tengen.egg-info/SOURCES.txt
+src/tengen.egg-info/dependency_links.txt
+src/tengen.egg-info/top_level.txt
