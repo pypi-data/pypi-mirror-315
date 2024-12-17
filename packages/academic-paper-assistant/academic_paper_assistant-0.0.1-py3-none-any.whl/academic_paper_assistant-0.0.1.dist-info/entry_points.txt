@@ -1,0 +1,2 @@
+[console_scripts]
+paper-assistant = academic_paper_assistant:main
