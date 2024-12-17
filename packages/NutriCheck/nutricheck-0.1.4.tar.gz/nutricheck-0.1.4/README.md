@@ -1,0 +1,89 @@
+# NutriCheck
+
+## Description
+
+**NutriCheck** est un pipeline conçu pour évaluer la comestibilité d'une bactérie à partir de son génome annoté. Il s'appuie sur des analyses de toxicité potentielle, de valeur nutritionnelle et de digestibilité. Le pipeline compare les résultats obtenus à un ensemble de données d'entraînement comprenant :
+- 11 témoins positifs (bactéries présentes dans notre alimentation).
+- 9 témoins négatifs (bactéries pathogènes).
+
+Le pipeline utilise **Snakemake** et nécessite en entrée une séquence d'ADN au format FASTA.
+
+---
+
+## Fonctionnement
+
+### Étapes principales
+
+1. **Annotation génomique avec PGAP**
+   - L'utilisateur fournit une séquence d'ADN au format FASTA et le nom de l'organisme.
+   - Le pipeline génère une annotation génomique complète via le **NCBI Prokaryotic Genome Annotation Pipeline (PGAP)**.
+   - Le fichier résultant, `annot_cds_from_genomic.fna`, contient les régions codantes annotées nécessaires pour les analyses suivantes.
+
+2. **Analyse de la toxicité avec GeNomad**
+   - Le script traite le fichier FASTA annoté pour en simplifier les en-têtes et générer un fichier FASTA formaté.
+   - **GeNomad** est ensuite exécuté pour détecter les éléments génétiques mobiles (plasmides, virus).
+   - Résultats principaux :
+     - Si des éléments génétiques mobiles sont détectés, l'organisme est considéré comme potentiellement non comestible.
+     - Si aucun élément mobile n'est détecté, l'organisme est potentiellement comestible.
+
+3. **Recherche de gènes de résistance avec AMRFinder**
+   - **AMRFinder** identifie les gènes de résistance aux antibiotiques.
+   - Les résultats sont enregistrés dans `output_amrfinder.txt` et interprétés pour déterminer la présence de gènes toxiques.
+
+4. **Analyse phagique avec VirSorter**
+   - **VirSorter** analyse le fichier FASTA pour identifier des séquences phagiques ou des prophages potentiellement présents.
+   - La présence de phages indique que la bactérie n'est pas comestible, ce qui constitue un critère crucial dans l'évaluation de la sécurité alimentaire. 
+
+5. **Analyse de la nutritivité par calcul du CAI**
+   - 
+
+6. **Analyse de la digestibilité par calcul du taux de GC**
+   - 
+
+---
+
+## Utilisation
+
+### Prérequis
+
+Installez **Snakemake** via la documentation : https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
+
+### Commandes
+
+1. **Lancer le pipeline**
+   Positionnez-vous dans le répertoire contenant le fichier `Snakefile` et exécutez :
+   ```bash
+   snakemake
+   ```
+
+2. **Entrées nécessaires**
+   - Un fichier FASTA contenant la séquence d'ADN.
+   - Le nom de l'organisme associé à la séquence.
+
+3. **Résultats principaux**
+   Les résultats finaux incluent :
+
+   - Un tableau synthétisant les informations obtenues pour chaque génome analysé. Ce tableau inclut les colonnes suivantes :
+
+ID : Identifiant du génome analysé.
+
+Nombre de plasmides : Nombre de plasmides détectés dans le génome.
+
+Nombre de virus : Nombre de virus/phages identifiés.
+
+AMR : Indication de la présence ou absence de gènes de résistance aux antibiotiques (Antimicrobial Resistance, AMR).
+
+Taux purine : Proportion des bases purines (A et G) dans le génome.
+
+Distance par rapport à l'oeuf : Une métrique de distance calculée par rapport à un génome de référence spécifique, celui de l'œuf.
+
+   - Évaluation de la comestibilité.
+   - Sorties détaillées des outils (fichiers d'analyse et rapports).
+
+
+---
+
+## Auteurs
+
+- Développé par : Thomas GAGNIEU, Mathieu GUIGARD, Thibaud GUIRAMAND, Kessen POITOU
+- Contact : thomas.gagnieu@etu.univ-lyon1.fr, mathieu.guigard@etu.univ-lyon1.fr, thibaud.guiramand@etu.univ-lyon1.fr, kessen.poitou@etu.univ-lyon1.fr
