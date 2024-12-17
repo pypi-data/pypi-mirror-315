@@ -1,0 +1,13 @@
+odoo/addons/picking_edit_printed_status/README.rst,sha256=D_BfGZYeIVR1ltb8jWICwYm9Ke8kunnVndytFa3Lcts,2656
+odoo/addons/picking_edit_printed_status/__init__.py,sha256=FNlMPDojEQpwvHZlf1L1FiQCxOYOu7R3lMKD6aozhvU,65
+odoo/addons/picking_edit_printed_status/__manifest__.py,sha256=LFJ3jyu-q4ALtSb6RQ9d9dwRs9XBmCWjST8f_RMM8eg,597
+odoo/addons/picking_edit_printed_status/readme/CONTRIBUTORS.md,sha256=vdTcwM0_6IuPK1jIEMuLS9tYXVdeqoRcW38GgFp2UV8,136
+odoo/addons/picking_edit_printed_status/readme/DESCRIPTION.md,sha256=TZ_ahAFtI76srXvMHQVIaF-zDXndAPKjYvz9VuB-Lbw,95
+odoo/addons/picking_edit_printed_status/readme/USAGE.md,sha256=MahIwcLuA7_jebOnBdz7osN7KpZD52qyeH_Xx2JfPU8,288
+odoo/addons/picking_edit_printed_status/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/picking_edit_printed_status/static/description/index.html,sha256=PbA4yPhoXXhZjjYmAJRJkdynZiCvY5QLQzsTCpfMrRo,12163
+odoo/addons/picking_edit_printed_status/views/stock_picking_views.xml,sha256=594DYllLzlxWXrkPJr3NzMu4MZXSJTafEVZeWcuTxnc,1067
+odoo_addon_picking_edit_printed_status-16.0.1.0.0.1.dist-info/METADATA,sha256=HUc2cqEIv0TPvmJSLKkiO3FZVjxMk82R5hMvZ4FWNOQ,3214
+odoo_addon_picking_edit_printed_status-16.0.1.0.0.1.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_picking_edit_printed_status-16.0.1.0.0.1.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_picking_edit_printed_status-16.0.1.0.0.1.dist-info/RECORD,,
