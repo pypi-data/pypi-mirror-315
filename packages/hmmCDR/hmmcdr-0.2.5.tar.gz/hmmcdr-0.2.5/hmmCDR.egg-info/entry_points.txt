@@ -1,0 +1,4 @@
+[console_scripts]
+calculate_matrices = hmmCDR.calculate_matrices:main
+hmmCDR = hmmCDR.hmmCDR:main
+profile_plot = hmmCDR.profile_plot:main
