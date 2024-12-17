@@ -1,0 +1,10 @@
+l2winddir/__init__.py,sha256=g6XVblEuKYILhIFNa33LfujAcZut5NNY7r4x_9a1FYI,232
+l2winddir/data_module.py,sha256=KN67jBYW2dcgT8t2WpzI3PnBWYH4sa2Q4DrftGaM974,6494
+l2winddir/loss.py,sha256=o3mcI3-Ew8AJpF71_F-Ig3GvRwA-kAdqSn_vpBsAsVw,1207
+l2winddir/main.py,sha256=0h6IiEg0z8kypQds_9mtJDyfDEotIvEKPELT37dFG-U,4731
+l2winddir/predict.py,sha256=nxrqmbpKdYuli3eUtbT8vcbgiRFnk9JU7tdg--OPzA0,9735
+l2winddir/simple_conv.py,sha256=eeYYPp2R6xCpZrCclxceJ40_2OgL2E6l__V0t-zYGlA,12105
+l2winddir-0.0.1.dist-info/METADATA,sha256=gozznHdvbECpiDfChT7qfm82cIiC7Y027HvrbCQWWAM,2403
+l2winddir-0.0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+l2winddir-0.0.1.dist-info/top_level.txt,sha256=GIFDFjuaKCXBN_-l2hbi-gSHiZPdolPkIrSAQhd3gco,10
+l2winddir-0.0.1.dist-info/RECORD,,
