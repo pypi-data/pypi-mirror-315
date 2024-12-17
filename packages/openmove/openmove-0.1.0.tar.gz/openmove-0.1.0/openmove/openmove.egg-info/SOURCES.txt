@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+openmove/openmove.egg-info/PKG-INFO
+openmove/openmove.egg-info/SOURCES.txt
+openmove/openmove.egg-info/dependency_links.txt
+openmove/openmove.egg-info/requires.txt
+openmove/openmove.egg-info/top_level.txt
