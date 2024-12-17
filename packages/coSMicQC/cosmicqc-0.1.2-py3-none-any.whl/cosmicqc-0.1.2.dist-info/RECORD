@@ -1,0 +1,10 @@
+cosmicqc/__init__.py,sha256=UD9BFYX72-UcCZZ0aJXaiQkSSELGXA5EnE_l7-PZ0j8,222
+cosmicqc/analyze.py,sha256=4NAyYBoIc6Sv7TRY2Y8WJwyMzoJBnxaUIjKPudZrhgA,14981
+cosmicqc/cli.py,sha256=TGvvtS5dbV3sm2sDT95Q_iSUtAiyljdu0lIg5rTZalI,3859
+cosmicqc/data/qc_nuclei_thresholds_default.yml,sha256=Sdp0ZbB_18bka1yKSLkqbOscL-Gfsp7r6zTheU76Gsg,620
+cosmicqc/data/report_template.html,sha256=fKFJyteJi7b3mPL6Oa-XzaoOgWLNL0K9vxHmoiDlxtI,922
+cosmicqc-0.1.2.dist-info/LICENSE,sha256=Zs74y-hiRjDg7VlGslINZlrVSrrcIvdhgT9SNa5c8Fg,1498
+cosmicqc-0.1.2.dist-info/METADATA,sha256=tJ1TCz-kOzumtGh-ypMb9ZeMNe600nt83lXE3FKNwt8,3555
+cosmicqc-0.1.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+cosmicqc-0.1.2.dist-info/entry_points.txt,sha256=PrdnafdJrJQlbuZ6Yu3iiWe_K3wG7u_qhnTLUUHL02c,53
+cosmicqc-0.1.2.dist-info/RECORD,,
