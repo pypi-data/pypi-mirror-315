@@ -1,0 +1,5 @@
+[console_scripts]
+test=pytest:main
+test-cov=pytest:main--cov=apiModels--cov-report=term-missing
+test-html=pytest:main--cov=apiModels--cov-report=html
+
