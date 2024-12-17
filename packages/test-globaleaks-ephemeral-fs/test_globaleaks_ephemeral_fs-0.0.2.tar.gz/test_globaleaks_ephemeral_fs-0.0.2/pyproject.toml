@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "test_globaleaks_ephemeral_fs"
+version = "0.0.2"
+authors = [
+  { name="Giovanni Pellerano", email="giovanni.pellerano@globaleaks.org" },
+]
+description = "An ephemeral ChaCha20-encrypted filesystem implementation using fusepy and cryptography suitable for privacy-sensitive applications, such as whistleblowing platforms. "
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/globaleaks/globaleaks-ephemeral-fs"
+Issues = "https://github.com/globaleaks/globaleaks-ephemeral-fs/issues"
