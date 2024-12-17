@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: trakka
+Version: 0.0.1
+Summary: Trakka CLI
+Project-URL: Homepage, https://github.com/austrakka/austrakka2-cli
+Project-URL: Issues, https://github.com/austrakka/austrakka2-cli/issues
+Author-email: Samuel Carswell <s.carswell@unimelb.edu.au>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Trakka
+
+Will soon be home of the [AusTrakka CLI](https://github.com/austrakka/austrakka2-cli).
