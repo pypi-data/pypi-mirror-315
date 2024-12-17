@@ -1,0 +1,7 @@
+README.md
+setup.py
+everfir_metrics.egg-info/PKG-INFO
+everfir_metrics.egg-info/SOURCES.txt
+everfir_metrics.egg-info/dependency_links.txt
+everfir_metrics.egg-info/requires.txt
+everfir_metrics.egg-info/top_level.txt
