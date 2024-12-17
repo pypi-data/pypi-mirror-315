@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+src/normliv/__init__.py
+src/normliv/norm.py
+src/normliv.egg-info/PKG-INFO
+src/normliv.egg-info/SOURCES.txt
+src/normliv.egg-info/dependency_links.txt
+src/normliv.egg-info/top_level.txt
+tests/test_norm.py
