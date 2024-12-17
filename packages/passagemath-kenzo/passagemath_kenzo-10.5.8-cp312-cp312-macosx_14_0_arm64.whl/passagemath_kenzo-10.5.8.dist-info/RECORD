@@ -1,0 +1,13 @@
+passagemath_kenzo.dylibs/libgc.1.dylib,sha256=JC--Hm7PsIfRUvOg7u9EY5hYXW3UrL05vRcEWux5JDE,281456
+passagemath_kenzo.dylibs/libecl.24.5.10.dylib,sha256=kiE7f0t--NRW-hnu3bLw7N9bOl6lUw3knupOesit4-c,3577104
+passagemath_kenzo.dylibs/libgmp.10.dylib,sha256=SAog_PsaEXBCFfWAGUgjkkVu14Zh6Ww1m5rwuddKJ9c,606176
+passagemath_kenzo-10.5.8.dist-info/RECORD,,
+passagemath_kenzo-10.5.8.dist-info/WHEEL,sha256=68miiZVF0Vu0w2nj5tXUUyL44VTV0_i5TIpA8LsZ5r4,109
+passagemath_kenzo-10.5.8.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+passagemath_kenzo-10.5.8.dist-info/METADATA,sha256=84lznJQ4tTKewrqkF5PlAOgE95zYPhyl3OYD0yujTxA,2801
+sage_wheels/lib/ecl/kenzo.fas,sha256=rz32fKRIXu5nYYlNWrQSxsp-OuA4IIlmO36GuSC9G-k,1785008
+sage/all__sagemath_kenzo.py,sha256=BxNdw469oLMTGqWHUJR6gsnndnaf4bPvTGrmuV_8nqY,126
+sage/libs/kenzo.cpython-312-darwin.so,sha256=cCrd2cF5adqiyYwNIYf2swyj5IRWL1ZBQsRr_nLAEOg,55448
+sage/libs/all__sagemath_kenzo.py,sha256=c5SZXjAVl1xACOxw2lEI6Mn1yQI44QbVnpO4CkMKQGI,44
+sage/interfaces/kenzo.py,sha256=gq8i-55OVg5yH5OYogEFnDRns23hsg9E-Yg_JjaWgCY,70362
+sage/interfaces/all__sagemath_kenzo.py,sha256=c5SZXjAVl1xACOxw2lEI6Mn1yQI44QbVnpO4CkMKQGI,44
