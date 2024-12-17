@@ -1,0 +1,13 @@
+bumms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bumms/__main__.py,sha256=QrcNMnbxkH8Yu80E2-eXvWeFhSwLVueWnHscu0-F-0U,66
+bumms/ascii.bumms,sha256=jKS_Hf0aFdGk10ru6I4BCjjrJjEAr2P6ZjAcBoqT_O8,4264
+bumms/core.py,sha256=jOwK1uBbyC6B6xnv3w96rbIpi1EnsLgO-KF5zwzhfGU,1360
+bumms/knall1.mp3,sha256=5W5v52VCQuyNToTtAFJpLocdkJMR1oxZjDXbRp7XvuA,668782
+bumms/knall2.mp3,sha256=NYExYn13KDUC_Jby4T8wY-C_oYORJ1meW1p0UAoVlQM,170554
+bumms/knall3.mp3,sha256=YaBXqOsxNiNP8ecdi7WkvJcfzNxxIYReEZXBVAU-RZA,308899
+bumms/txt.bumms,sha256=Z39zQY86AXtg8oLPqYzt-_jmHQtnrYC-dG1CMWgl7aI,95
+bumms-1.1.0.dist-info/METADATA,sha256=n54QpVUH0jMjR1hLJfAaeckEVESWEBNOB532MvT5yIQ,175
+bumms-1.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+bumms-1.1.0.dist-info/entry_points.txt,sha256=1zJSTwEFA7Wy_rZCJ9hTM0bIJrS4g30CPuwaTv4HGJs,46
+bumms-1.1.0.dist-info/top_level.txt,sha256=RvOF8zeTSw_R4bd_CQKUSzNms9xRueU-xNI7R6n1TB0,6
+bumms-1.1.0.dist-info/RECORD,,
