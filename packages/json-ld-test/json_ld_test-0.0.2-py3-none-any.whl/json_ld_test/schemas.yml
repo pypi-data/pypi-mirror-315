@@ -1,0 +1,192 @@
+name: TestSuite
+id: https://w3c.github.io/json-ld-api/tests
+prefixes:
+  linkml: https://w3id.org/linkml/
+  dcterms: "http://purl.org/dc/terms/"
+  jld: "https://w3c.github.io/json-ld-api/tests/vocab#"
+  mf: "http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+imports:
+  - linkml:types
+classes:
+  Any:
+    class_uri: linkml:Any
+  Manifest:
+    abstract: true
+    class_uri: mf:Manifest
+    slots:
+      - name
+      - description
+      - sequence
+  TopLevelManifest:
+    is_a: Manifest
+    description: >
+      A manifest that contains a sequence of test manifests.
+    slot_usage:
+      sequence:
+        range: string
+  TestManifest:
+    description: >
+      A manifest that contains a sequence of tests that all relate to a specific JSON-LD feature.
+    is_a: Manifest
+    slots:
+      - baseIri
+    slot_usage:
+      sequence:
+        any_of:
+          - range: PositiveEvaluationTest
+          - range: NegativeEvaluationTest
+          - range: PositiveSyntaxTest
+  Test:
+    description: Abstract parent class for all test cases.
+    abstract: true
+    slots:
+      - name
+      - purpose
+      - input
+      - option
+      - context
+      - requires
+  PositiveEvaluationTest:
+    description: Describes a test case whose input is `input` and expects the output to be `expect`.
+    is_a: Test
+    slots:
+      - expect
+  PositiveSyntaxTest:
+    description: Describes a test case that only has to be parsed successfully to pass.
+    is_a: Test
+  NegativeEvaluationTest:
+    description: Describes a test case whose input is `input` and expects to raise an error with the message `expectErrorCode`.
+    is_a: Test
+    slots:
+      - expectErrorCode
+  Option:
+    description: Captures all extra options that can be passed to a test.
+    slots:
+      - specVersion
+      - processingMode
+      - base
+      - normative
+      - expandContext
+      - processorFeature
+      - extractAllScripts
+      - contentType
+      - httpStatus
+      - redirectTo
+      - httpLink
+      - produceGeneralizedRdf
+      - compactToRelative
+      - compactArrays
+      - useNativeTypes
+      - rdfDirection
+      - useRdfType
+      - useJCS
+slots:
+  base:
+    range: uri
+  name:
+    required: true
+    range: string
+  description:
+    required: true
+    range: string
+  baseIri:
+    required: true
+    range: uri
+  sequence:
+    required: true
+    multivalued: true
+    range: Any
+    # range: PositiveEvaluationTest | NegativeEvaluationTest
+    # range_expression:
+    #   any_of:
+    #     - is_a: PositiveTest
+    #     - is_a: NegativeTest
+  purpose:
+    range: string
+    # This should be required, but for https://github.com/w3c/json-ld-api/pull/624
+    required: false
+  input:
+    range: string
+    required: true
+  expect:
+    range: string
+    required: true
+  expectErrorCode:
+    range: string
+    required: true
+  option:
+    range: Option
+    required: false
+  processingMode:
+    range: SpecVersion
+    required: false
+  specVersion:
+    range: SpecVersion
+    required: false
+  normative:
+    range: boolean
+    required: false
+  expandContext:
+    range: uri
+    required: false
+  processorFeature:
+    range: string
+    required: false
+  extractAllScripts:
+    range: boolean
+    required: false
+  contentType:
+    range: string
+    required: false
+  httpStatus:
+    range: integer
+    required: false
+  redirectTo:
+    range: uri
+    required: false
+  produceGeneralizedRdf:
+    range: boolean
+    required: false
+  httpLink:
+    range: Any
+    required: false
+    any_of:
+      - multivalued: true
+      - multivalued: false
+  context:
+    range: string
+    required: false
+  compactToRelative:
+    range: boolean
+    required: false
+  compactArrays:
+    range: boolean
+    required: false
+  useNativeTypes:
+    range: boolean
+    required: false
+  useRdfType:
+    range: boolean
+    required: false
+  rdfDirection:
+    range: string
+    required: false  
+  useJCS:
+    range: boolean
+    required: false
+  requires:
+    range: Requires
+    required: false
+enums:
+  SpecVersion:
+    permissible_values:
+      json-ld-1.0:
+      json-ld-1.1:
+  Requires:
+    permissible_values:
+      I18nDatatype:
+      CompoundLiteral:
+      GeneralizedRdf: 
+
