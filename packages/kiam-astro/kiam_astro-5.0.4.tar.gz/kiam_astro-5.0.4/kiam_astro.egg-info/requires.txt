@@ -1,0 +1,12 @@
+numpy<3.0,>=2.0
+jdcal
+networkx
+scipy
+plotly
+pillow
+
+[:platform_system != "Windows"]
+kaleido
+
+[:platform_system == "Windows"]
+kaleido==0.1.0.post1
