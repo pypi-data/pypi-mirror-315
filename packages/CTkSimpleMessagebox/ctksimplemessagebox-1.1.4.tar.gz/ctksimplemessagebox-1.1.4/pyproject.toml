@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CTkSimpleMessagebox"
+version = "1.1.4"
+authors = [
+  { name="Scott", email="ctksimplemessagebox@gmail.com" },
+]
+description = "A simple Messagebox for Customtkinter."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/NotScottt/CTkSimpleMessageboxes"
+Issues = "https://github.com/NotScottt/CTkSimpleMessageboxes/issues"
+
+[tool.setuptools.package-data]
+Icons = ["MessageBoxIcons/*.ico"]
