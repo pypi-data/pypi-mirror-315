@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: vtk-osmesa
+Version: 0.0.7
+Summary: build package for audit (bug bounty) purpose only
+Author-email: gogo246475 <gogo246475@gmail.com>
+Project-URL: Homepage, https://github.com/gogo2464/vtk-osmesa/
+Project-URL: Issues, https://github.com/gogo2464/vtk-osmesa/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

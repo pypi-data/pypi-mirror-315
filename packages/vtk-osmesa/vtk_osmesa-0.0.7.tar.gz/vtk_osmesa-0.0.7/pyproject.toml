@@ -1,0 +1,30 @@
+[project]
+name = "vtk-osmesa"
+version = "0.0.7"
+authors = [
+  { name="gogo246475", email="gogo246475@gmail.com" },
+]
+description = "build package for audit (bug bounty) purpose only"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+]
+
+[project.urls]
+Homepage = "https://github.com/gogo2464/vtk-osmesa/"
+Issues = "https://github.com/gogo2464/vtk-osmesa/issues"
+
+[project.scripts]
+measure = "bins.main:main"
+
+[tool.setuptools]
+packages = []
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
