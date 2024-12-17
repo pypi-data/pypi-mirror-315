@@ -1,0 +1,182 @@
+Metadata-Version: 2.4
+Name: vision-parse
+Version: 0.1.0
+Summary: Extract content from PDF documents using Vision LLMs in markdown format
+Project-URL: Homepage, https://github.com/iamarunbrahma/vision-parse
+Project-URL: Repository, https://github.com/iamarunbrahma/vision-parse.git
+Author-email: Arun Brahma <mithubrahma@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+Requires-Dist: importlib-resources>=5.0.0; python_version < '3.9'
+Requires-Dist: jinja2>=3.0.0
+Requires-Dist: ollama>=0.4.4
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: pymupdf>=1.22.0
+Requires-Dist: tqdm>=4.65.0
+Provides-Extra: dev
+Requires-Dist: black>=24.4.1; extra == 'dev'
+Requires-Dist: pytest>=8.3.4; extra == 'dev'
+Requires-Dist: ruff>=0.8.3; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Vision Parse
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Author: Arun Brahma](https://img.shields.io/badge/Author-Arun%20Brahma-purple)](https://github.com/iamarunbrahma)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/vision-parse)](https://pypi.org/project/vision-parse)
+
+> 🚀 Transform PDF documents into beautifully formatted markdown using state-of-the-art Vision Language Models - all with just a few lines of code!
+
+## 🎯 Introduction
+
+Vision Parse harnesses the power of Vision Language Models to revolutionize document processing:
+
+- 📝 **Smart Content Extraction**: Intelligently identifies and extracts text, tables, and images with high precision
+- ✨ **Markdown Magic**: Converts complex document layouts into clean, well-structured markdown
+- 🎨 **Format Preservation**: Maintains document hierarchy, styling, and visual elements
+- 🤖 **AI-Powered Analysis**: Leverages cutting-edge vision models for superior accuracy
+- 🔄 **Batch Processing**: Handle multi-page documents effortlessly
+
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- 🐍 Python >= 3.8
+- 🖥️ Ollama (for local model hosting)
+
+### Installation
+
+Install the package using pip:
+
+```bash
+pip install vision-parse
+```
+
+### Setting up Ollama
+
+1. **Install Ollama** based on your operating system:
+
+   **Linux:**
+   ```bash
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+   **MacOS:**
+   ```bash
+   brew install ollama
+   ```
+
+   **Windows:**
+   Download and install from [Ollama Website](https://ollama.com/download/OllamaSetup.exe)
+
+2. **Pull and start** the Ollama server:
+   ```bash
+   ollama pull llama3.2-vision:11b
+   ollama serve
+   ```
+
+3. **Verify** server status:
+   ```bash
+   curl http://localhost:11434/api/version
+   ```
+
+
+## ⌛️ Usage
+
+### Basic Example
+
+```python
+from vision_parse import VisionParser
+
+# Initialize parser
+parser = VisionParser(
+    model_name="llama3.2-vision:11b",
+    temperature=0.7,
+    top_p=0.7
+)
+
+# Convert PDF to markdown
+pdf_path = "path/to/your/document.pdf"
+markdown_pages = parser.convert_pdf(pdf_path)
+
+# Process results
+for i, page_content in enumerate(markdown_pages, 1):
+    print(f"\n--- Page {i} ---\n{page_content}")
+```
+
+### Custom Configuration
+
+```python
+from vision_parse import VisionParser, PDFPageConfig
+
+# Configure PDF processing settings
+page_config = PDFPageConfig(
+    dpi=400,
+    color_space="RGB",
+    include_annotations=True,
+    preserve_transparency=False
+)
+
+# Initialize parser with custom config
+parser = VisionParser(
+    model_name="llama3.2-vision:11b",
+    temperature=0.7,
+    top_p=0.7,
+    page_config=page_config
+)
+
+# Convert PDF to markdown
+pdf_path = "path/to/your/document.pdf"
+markdown_pages = parser.convert_pdf(pdf_path)
+```
+
+
+## 🛠️ Development
+
+### Setting Up Development Environment
+
+1. **Clone and Setup**:
+   ```bash
+   # Clone the repository
+   git clone https://github.com/iamarunbrahma/vision-parse.git
+   cd vision-parse
+   ```
+
+2. **Install Dependencies**:
+   ```bash
+   # Install uv (Mac and Linux)
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+
+   # Install uv (Windows)
+   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+   
+   # Install dependencies
+   uv sync --all-extras && source .venv/bin/activate
+   ```
+
+3. **Quality Checks**:
+   ```bash
+   # Run test suite
+   make test
+   
+   # Code quality
+   make lint    # Run code linting
+   make format  # Format code
+   ```
+
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
