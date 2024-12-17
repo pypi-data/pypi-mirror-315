@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bumms
+Version: 1.5.0
+Summary: Eine lustige Bibliothek mit Sounds, ASCII-Art und Texten.
+Author: Justin Braun
+Requires-Dist: pygame
+Requires-Dist: video-to-ascii
