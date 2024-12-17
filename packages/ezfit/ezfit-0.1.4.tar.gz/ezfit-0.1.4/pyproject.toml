@@ -1,0 +1,19 @@
+[tool.poetry]
+authors = ["Harlan D Heilman <73567020+HarlanHeilman@users.noreply.github.com>"]
+description = "Fitting in python made easy"
+license = "GPL-2.0"
+name = "ezfit"
+readme = "README.md"
+repository = "https://github.com/WSU-Carbon-Lab/ezfit"
+version = "0.1.4"
+
+[tool.poetry.dependencies]
+matplotlib = "3.9.3"
+numpy = "2.2.0"
+pandas = "2.2.3"
+python = "^3.10"
+scipy = "1.14.1"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
