@@ -1,0 +1,7 @@
+# Python
+*.egg-info
+dist
+build
+
+# IDE
+.idea
