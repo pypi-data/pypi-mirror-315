@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: nanograph
+Version: 0.0.1
+Summary: extremely fun & simple __foundational__ graph based generative ai tools for python
+Author-email: Hammad Saeed <hvmmad@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.9
+Requires-Dist: instructor>=1.7.0
+Requires-Dist: litellm>=1.54.1
+Description-Content-Type: text/markdown
+
+# ⿻ | nanograph
+
+> extremely fun & simple __foundational__ graph based generative ai tools for python
+
