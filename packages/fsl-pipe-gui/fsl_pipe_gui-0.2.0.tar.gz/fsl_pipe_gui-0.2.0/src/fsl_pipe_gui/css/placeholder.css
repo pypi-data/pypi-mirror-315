@@ -1,0 +1,5 @@
+#grid {
+    grid-size: 2;
+    grid-gutter: 1;
+    grid-columns: 1fr 2fr;
+}

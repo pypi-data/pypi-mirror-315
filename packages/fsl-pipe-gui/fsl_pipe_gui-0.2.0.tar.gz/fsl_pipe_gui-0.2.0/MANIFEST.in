@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+include src/fsl_pipe_gui/css/selector.css
+include src/fsl_pipe_gui/css/placeholder.css
