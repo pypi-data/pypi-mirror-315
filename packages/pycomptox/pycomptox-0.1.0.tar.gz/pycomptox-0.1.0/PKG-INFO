@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: pycomptox
+Version: 0.1.0
+Summary: This is a lightweight wrapper for comptox APIs (for computational toxicology)
+Author-email: Kunal Chandra <your.email@example.com>
+Maintainer-email: Kunal Chandra <your.email@example.com>
+License: MIT License
+        
+        Copyright (c) 2024 Kunal627
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/Kunal627/pycomptox
+Project-URL: bug_tracker, https://github.com/Kunal627/pycomptox/issues
+Project-URL: documentation, https://github.com/Kunal627/pycomptox/blob/main/README.md
+Project-URL: repository, https://github.com/Kunal627/pycomptox
+Keywords: API,wrapper,REST,comptox,toxicology,computational
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: json
+
+# PyCompTox
+
+## Overview
+This is a wrapper for https://comptox.epa.gov/ toxicology analysis APIs.
+
+## Installation
+To install PyCompTox, use the following command:
+```
+pip install pycomptox
+```
+## Usage
+PyCompTox is designed to be user-friendly and intuitive. Detailed documentation and examples are available to help you get started quickly.
+
+## Documentation
+Comprehensive documentation is available at [PyCompTox Documentation](https://example.com/docs). It includes tutorials, API references, and usage examples.
+
+## Contributing
+We welcome contributions from the community. Please read our [Contributing Guidelines](https://example.com/contributing) to get started.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contributing
+
+We welcome contributions from the community! Here are some ways you can contribute:
+
+1. **Report Bugs**: If you find a bug, please report it by opening an issue on our [GitHub Issues](https://github.com/Kunal627/pycomptox/issues) page.
+
+    **Fix SSL Issues** : Install package "pip-system-certs" to fix SSL issues.
+    **Example**: pip install pip-system-certs
+
+2. **Suggest Features**: Have an idea for a new feature? Feel free to suggest it by opening a feature request on our [GitHub Issues](https://github.com/Kunal627/pycomptox/issues) page.
+
+3. **Submit Pull Requests**: If you want to contribute code, you can fork the repository, make your changes, and submit a pull request. Please ensure your code follows our coding standards and includes tests.
+
+## Acknowledgements
+We would like to thank all contributors and the open-source community for their support and contributions.
