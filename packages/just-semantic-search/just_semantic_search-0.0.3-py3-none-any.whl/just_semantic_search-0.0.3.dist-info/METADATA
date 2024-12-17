@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: just-semantic-search
+Version: 0.0.3
+Summary: Core interfaces for hybrid search implementations
+License: Apache-2.0
+Keywords: python,llm,science,review,hybrid search,semantic search
+Author: Alex Karmazin
+Author-email: karmazinalex@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: einops (>=0.8.0)
+Requires-Dist: pydantic (>=2.10.3)
+Requires-Dist: scikit-learn (>=1.5.2)
+Requires-Dist: sentence-transformers
+Requires-Dist: transformers (>=4.44.2)
+Requires-Dist: triton
+Requires-Dist: typer
+Description-Content-Type: text/markdown
+
+
