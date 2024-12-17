@@ -1,0 +1,9 @@
+devicev1/__init__.py,sha256=58CvTlhRY6mphoyhaNrOfg2JXQ_uL0JiNZjTmOCwZn0,184
+devicev1/client/__init__.py,sha256=58CvTlhRY6mphoyhaNrOfg2JXQ_uL0JiNZjTmOCwZn0,184
+devicev1/client/device_api.py,sha256=HrGOwbDU1LRl75igTy98hdxzYCM4R3tiK10TixcegN8,2405
+devicev1/client/device_client.py,sha256=R9ZsJxkjIhx_p7iy23FPKPxCcChQrxQMxUZ8mgpLUFQ,2939
+devicev1/client/device_test.py,sha256=8ITIy46qwdtnZnbofc9TV0gxN7gQ-9tsbPA1FPLvows,2280
+windmill_device-1.0.0.15.dist-info/METADATA,sha256=lvnkwOPp7Mcd5VtSWOCY_Qeo0UwaCN8o-YUrxLCQRpI,690
+windmill_device-1.0.0.15.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+windmill_device-1.0.0.15.dist-info/top_level.txt,sha256=7Fd2RVmOF9iXAHqrNmF9BnZ3xjNgwodM2GelmLcJPzI,9
+windmill_device-1.0.0.15.dist-info/RECORD,,
