@@ -1,0 +1,15 @@
+*.pyc
+*.pyo
+*.egg-info
+
+**/build
+**/dist
+
+/doc/_build
+
+test.py
+
+venv27
+venv
+.idea
+.tox
