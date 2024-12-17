@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Minimal-program-tester
+Version: 0.0.1
+Summary: A really minimalistic program tester
+Author: Benedek Z. Veres
+Author-email: veres.z.benedek@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+
+#TODO
