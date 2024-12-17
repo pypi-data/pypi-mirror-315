@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+pytest_selfie/SelfieSettingsAPI.py
+pytest_selfie/__init__.py
+pytest_selfie/plugin.py
+pytest_selfie.egg-info/PKG-INFO
+pytest_selfie.egg-info/SOURCES.txt
+pytest_selfie.egg-info/dependency_links.txt
+pytest_selfie.egg-info/entry_points.txt
+pytest_selfie.egg-info/requires.txt
+pytest_selfie.egg-info/top_level.txt

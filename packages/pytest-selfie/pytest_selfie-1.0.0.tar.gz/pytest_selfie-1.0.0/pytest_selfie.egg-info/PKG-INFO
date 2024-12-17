@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pytest-selfie
+Version: 1.0.0
+Summary: A pytest plugin for selfie snapshot testing.
+Author-email: Edwin Ye <EdwinYeDeveloper@gmail.com>, Harvir Sahota <hsahota2312@gmail.com>, Ned Twigg <ned.twigg@diffplug.com>, Selina Delgado <sdelgado411@gmail.com>
+License: Apache-2.0
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pytest>=8.0.0
+Requires-Dist: selfie-lib
+
+# pytest-selfie
+
+This package makes selfie snapshot testing available for use in pytest.
+
+See the [get started guide here](https://selfie.dev/py/get-started).
