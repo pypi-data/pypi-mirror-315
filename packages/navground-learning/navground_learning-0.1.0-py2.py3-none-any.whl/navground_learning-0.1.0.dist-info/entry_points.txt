@@ -1,0 +1,6 @@
+[navground_behaviors]
+policy = navground_learning.behaviors.policy:PolicyBehavior
+
+[navground_scenarios]
+corridor_with_obstacle = navground_learning.scenarios.corridor_with_obstacle:CorridorWithObstacle
+forward = navground_learning.scenarios.forward:ForwardScenario
