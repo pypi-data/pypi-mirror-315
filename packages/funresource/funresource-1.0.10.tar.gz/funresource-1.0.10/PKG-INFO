@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: funresource
+Version: 1.0.10
+Summary: funresource
+Author-email: niuliangtao <farfarfun@qq.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: funbuild>=1.5.55
+Requires-Dist: funutil>=1.0.43
+
+# funresource
