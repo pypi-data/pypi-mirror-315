@@ -1,0 +1,2 @@
+[console_scripts]
+kugel = kugel.main:main
