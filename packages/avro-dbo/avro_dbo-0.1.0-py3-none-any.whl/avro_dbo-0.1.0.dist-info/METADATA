@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: avro-dbo
+Version: 0.1.0
+Summary: Python classes from Avro schemas with custom serializers and deserializers, supporting all logical types.
+Author-email: Mac Anderson <mac@macanderson.com>
+Maintainer-email: Mac Anderson <mac@macanderson.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Requires-Dist: attrs
+Requires-Dist: cattrs
