@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+vuejspython.egg-info/PKG-INFO
+vuejspython.egg-info/SOURCES.txt
+vuejspython.egg-info/dependency_links.txt
+vuejspython.egg-info/entry_points.txt
+vuejspython.egg-info/requires.txt
+vuejspython.egg-info/top_level.txt
