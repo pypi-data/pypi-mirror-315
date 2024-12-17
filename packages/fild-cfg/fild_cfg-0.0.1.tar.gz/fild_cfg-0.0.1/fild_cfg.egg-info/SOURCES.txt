@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+fild_cfg/__init__.py
+fild_cfg/config.py
+fild_cfg.egg-info/PKG-INFO
+fild_cfg.egg-info/SOURCES.txt
+fild_cfg.egg-info/dependency_links.txt
+fild_cfg.egg-info/requires.txt
+fild_cfg.egg-info/top_level.txt
+tests/test_config.py
+tests/test_init_config.py

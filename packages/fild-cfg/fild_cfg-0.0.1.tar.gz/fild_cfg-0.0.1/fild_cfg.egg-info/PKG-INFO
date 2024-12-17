@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fild-cfg
+Version: 0.0.1
+Summary: Configure fild tools with yaml files
+Home-page: https://github.com/elenakulgavaya/fild-cfg
+Author: Elena Kulgavaya
+Author-email: elena.kulgavaya@gmail.com
+Project-URL: Bug Tracker, https://github.com/elenakulgavaya/fild-cfg/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fild>=0.0.8
+Requires-Dist: pyyaml
+
+# fild-cfg v 0.0.1
+
+![Downloads](https://img.shields.io/pypi/dm/fild-cfg.svg?style=flat)
+![Python Versions](https://img.shields.io/pypi/pyversions/fild-cfg.svg?style=flat)
+![License](https://img.shields.io/pypi/l/fild-cfg.svg?version=latest)
+[![Build Status](https://github.com/elenakulgavaya/fild-cfg/workflows/Tests/badge.svg)](https://github.com/elenakulgavaya/fild-cfg/actions)
