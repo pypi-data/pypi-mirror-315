@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: openrs-python
+Version: 0.1.0
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: Pillow
+Requires-Dist: opencv-python
+Requires-Dist: pyproj
+Requires-Dist: scipy
+Requires-Dist: shapely
+Requires-Dist: fiona
+Requires-Dist: geopandas
+Requires-Dist: scikit-image
