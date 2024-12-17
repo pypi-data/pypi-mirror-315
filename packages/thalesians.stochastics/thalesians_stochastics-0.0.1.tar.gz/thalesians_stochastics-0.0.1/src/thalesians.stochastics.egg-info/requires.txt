@@ -1,0 +1,4 @@
+thalesians.adiutor>=0.0.3
+numpy>=1.26.4
+statsmodels>=0.14.4
+matplotlib>=3.9.2
