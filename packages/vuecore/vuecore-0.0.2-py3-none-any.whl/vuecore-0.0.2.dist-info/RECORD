@@ -1,0 +1,13 @@
+vuecore/Dendrogram.py,sha256=65TLJWSxsJ-tHrIwvtfEJDaDp1L6rccyjpL2w999HjU,11190
+vuecore/__init__.py,sha256=579TceyrZtt4i-pnRIHM0sYJ-N8gNsft4z5SSDpw578,74
+vuecore/color_list.py,sha256=eBZ1c4doISfhd9JaZ417967gXJtBB3lqc6f0SyNFn4o,2761
+vuecore/linkers.py,sha256=ew0Xis6TdRz_Os7zdLRcQYDk64bzPrZetFZNQRpYXgQ,706
+vuecore/translate.py,sha256=xNh3aUhUdV2-kaV4z5PlKd1H7jGOgeosWoAeDRKRTm8,464
+vuecore/utils.py,sha256=d0hUnhXpNl6zSBMY6Ezk8Ee3DLKhB8B2dgbIiqrAWR4,9054
+vuecore/viz.py,sha256=SrWoJJO7sE4YNIfS4U4uVf5s18SRboo8vCXC5DmxQxg,126211
+vuecore/wgcna.py,sha256=cejIM3WLnsKBLMNYvH66HMPaEObsxlH3mqkDmtFoHdY,28866
+vuecore-0.0.2.dist-info/LICENSE,sha256=uGZxoWBOHTIdNoAmBjp_UK9BWx5GBbWncxofBMLZrTo,1092
+vuecore-0.0.2.dist-info/METADATA,sha256=AJsyAJ_ej9BQL_xl7OJdOez2t9JJiL5aJPnPDZ-Fs7E,2083
+vuecore-0.0.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+vuecore-0.0.2.dist-info/top_level.txt,sha256=oPAnPXnwW3SgNdRK-mIwYgoe7Runmy7OA6uUzNQRaa8,8
+vuecore-0.0.2.dist-info/RECORD,,
