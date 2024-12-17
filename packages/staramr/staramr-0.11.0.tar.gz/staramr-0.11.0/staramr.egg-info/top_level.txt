@@ -1,0 +1,7 @@
+bin
+build
+dist
+doc
+images
+scripts
+staramr
