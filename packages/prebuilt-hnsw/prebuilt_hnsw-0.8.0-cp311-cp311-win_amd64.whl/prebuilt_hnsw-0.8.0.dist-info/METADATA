@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: prebuilt-hnsw
+Version: 0.8.0
+Summary: Prebuilt wheels for hnswlib - Hierarchical Navigable Small World Graph Library
+Home-page: https://github.com/nmslib/hnswlib
+Author: Romlin Group AB (prebuilt wheels); Original authors: Yury Malkov and others
+Author-email: hello@romlin.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# hnswlib-prebuilt
+
+Prebuilt wheels for [hnswlib](https://github.com/nmslib/hnswlib).
+
+Originally created by Yury Malkov and the hnswlib contributors: https://github.com/nmslib/hnswlib
+
+This package provides precompiled binaries for easy installation on:
+- Linux (x86_64, aarch64)
+- macOS (x86_64, arm64)
+- Windows (x86_64) 
+
+Supports Python 3.10+
+
+Apache License 2.0
