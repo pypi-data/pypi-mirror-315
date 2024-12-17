@@ -1,0 +1,6 @@
+build
+dist
+pdf-combiner-venv
+pdf_combiner
+scripts
+tests
