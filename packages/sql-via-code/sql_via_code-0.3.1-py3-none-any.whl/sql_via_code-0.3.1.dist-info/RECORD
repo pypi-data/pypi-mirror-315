@@ -1,0 +1,8 @@
+sql_via_code/__init__.py,sha256=syzDfc8AcFc4qqe0pnLKtD5ZqFBH6_ZBc-i5QgZ6p3Q,292
+sql_via_code/engine_manager.py,sha256=o-0dvkEt-TrWrvN2Ihm9wopnQ5oqTn8Zdq_LAnU7doQ,6456
+sql_via_code/logger_config.py,sha256=72bSjrAjVUVOEgEQvN2ihwUbwijGp0Z6F1OZkAVCM7A,1096
+sql_via_code/sql_via_code.py,sha256=uvTe3UqjIEi27FqQNzymj-ucfPURdCKg15zGkY-JtqQ,8125
+sql_via_code-0.3.1.dist-info/METADATA,sha256=X2LnT173wBo9wMl7A5BK9-Owh3r5FGF4caqUN7t4e9Q,7561
+sql_via_code-0.3.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+sql_via_code-0.3.1.dist-info/top_level.txt,sha256=-35-6iwXN990bq_NH8B5r8a-KDvFzEKNJDLeeGuKTd8,13
+sql_via_code-0.3.1.dist-info/RECORD,,
