@@ -1,0 +1,13 @@
+fastapi
+pydantic
+Jinja2
+python-dotenv
+uvicorn
+pydantic-geojson
+python-multipart
+dateparser
+sqlmodel
+geoalchemy2
+psycopg2-binary
+shapely
+ipython
