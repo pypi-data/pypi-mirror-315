@@ -1,0 +1,48 @@
+[tool.poetry]
+authors = ["Nom Nom Data Inc <info@nomnomdata.com>"]
+description = "Handle authorization to Nom Nom Data services"
+license = "LGPL-3.0-only"
+name = "nomnomdata-auth"
+packages = [
+  {include = "nomnomdata"},
+]
+readme = "README.md"
+repository = "https://gitlab.com/nomnomdata/tools/nomnomdata-auth"
+version = "3.0.0"
+
+[tool.poetry.plugins."nomnomdata.cli_plugins"]
+login = "nomnomdata.auth.cli:login"
+
+[tool.poetry.dependencies]
+dunamai = "^1.23.0"
+nomnomdata-cli = "^0.1.0"
+pycognito = "^2024.5.1"
+python = "^3.9"
+requests = "^2.32.3"
+
+[tool.poetry.dev-dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+pylint = "^3.3.2"
+
+[tool.black]
+include = '\.pyi?$'
+line-length = 90
+target-version = ['py312']
+
+[tool.isort]
+default_section = 'THIRDPARTY'
+ensure_newline_before_comments = true
+force_grid_wrap = 0
+force_to_top = ['nomnomdata']
+include_trailing_comma = true
+known_first_party = ['nomnomdata', 'nominode', 'nomcom', 'engines_common', 'nomitall']
+line_length = 90
+multi_line_output = 3
+use_parentheses = true
+
+[tool.pylint.messages_control]
+disable = "C0330, C0326"
+
+[tool.pylint.format]
+max-line-length = 90
