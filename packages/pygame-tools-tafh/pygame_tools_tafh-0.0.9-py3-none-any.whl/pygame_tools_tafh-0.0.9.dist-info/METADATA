@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: pygame_tools_tafh
+Version: 0.0.9
+Summary: Advanced game engine built upon pygame. Includes such things like tweens, game objects, scenes, etc.
+Project-URL: Homepage, https://github.com/TAFH-debug/pygame_tools_TAFH
+Project-URL: Issues, https://github.com/TAFH-debug/pygame_tools_TAFH/issues
+Author-email: Talim Aushakman <aushahman2007@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
