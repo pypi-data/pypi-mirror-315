@@ -1,0 +1,6 @@
+setup.py
+gunfire.egg-info/PKG-INFO
+gunfire.egg-info/SOURCES.txt
+gunfire.egg-info/dependency_links.txt
+gunfire.egg-info/requires.txt
+gunfire.egg-info/top_level.txt
