@@ -1,0 +1,1 @@
+# Librairie pour la gestion de l'authentification SSO en SIO
