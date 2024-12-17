@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+showmereqs/__init__.py
+showmereqs/analyze.py
+showmereqs/generate.py
+showmereqs/main.py
+showmereqs/package_info.py
+showmereqs/utils.py
+showmereqs.egg-info/PKG-INFO
+showmereqs.egg-info/SOURCES.txt
+showmereqs.egg-info/dependency_links.txt
+showmereqs.egg-info/entry_points.txt
+showmereqs.egg-info/requires.txt
+showmereqs.egg-info/top_level.txt
