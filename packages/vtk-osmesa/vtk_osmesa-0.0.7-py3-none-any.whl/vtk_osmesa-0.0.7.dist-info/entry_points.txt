@@ -1,0 +1,2 @@
+[console_scripts]
+measure = bins.main:main
