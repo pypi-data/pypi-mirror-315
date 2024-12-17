@@ -1,0 +1,4 @@
+mdanalysis
+ase
+numpy
+networkx
