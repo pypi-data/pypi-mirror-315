@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+chatwithkafka/__init__.py
+chatwithkafka/app.py
+chatwithkafka/app.tcss
+chatwithkafka/cli.py
+chatwithkafka/key.py
+chatwithkafka.egg-info/PKG-INFO
+chatwithkafka.egg-info/SOURCES.txt
+chatwithkafka.egg-info/dependency_links.txt
+chatwithkafka.egg-info/entry_points.txt
+chatwithkafka.egg-info/not-zip-safe
+chatwithkafka.egg-info/requires.txt
+chatwithkafka.egg-info/top_level.txt
