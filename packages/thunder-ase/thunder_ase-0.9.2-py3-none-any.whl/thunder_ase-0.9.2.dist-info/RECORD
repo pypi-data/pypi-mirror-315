@@ -1,0 +1,12 @@
+thunder_ase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thunder_ase/fireball.py,sha256=iY6TiB_n-w_nd4u63TMu4FcUrIpibSU2Kqg77OHMOrw,33649
+thunder_ase/optimize.py,sha256=hXP4niyjl94NUYprhV_TdsUec4bLVVDvpSAvd2-7gyk,6726
+thunder_ase/utils/__init__.py,sha256=7FY43xG1WAE_nkoq5QFsvJpiKAXR51hXCJIhxqY1oXQ,1989
+thunder_ase/utils/basis_set.py,sha256=GvAs1JNjzpwyxNUEumzfw__qcvBmPiBS0tNw5r5BU7U,11962
+thunder_ase/utils/mwfn.py,sha256=7GpiQlC8U_e-SIa4QOQOiMj6K7uwi5nNUFcwOxyNdNQ,5041
+thunder_ase/utils/shell_dict.py,sha256=Is0PBbUQn6r8Q3njsnwiXMPdUIkgYj1PqYRiQn02FYA,2694
+thunder_ase-0.9.2.dist-info/METADATA,sha256=bSAl_AqLYNxh3ir4kq7fR4F6CF8oHfmlkL9pYTqhMSY,8786
+thunder_ase-0.9.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+thunder_ase-0.9.2.dist-info/entry_points.txt,sha256=RwEubm2c00nNaELQhLOpmdxBU4OQaoZHOyypgv6aBo0,73
+thunder_ase-0.9.2.dist-info/top_level.txt,sha256=7cKlVjdnxEDshWYq4mtFKDUZphW1bJFJP5IQ3chT9kc,12
+thunder_ase-0.9.2.dist-info/RECORD,,
