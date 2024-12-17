@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pandashare/__init__.py
+pandashare.egg-info/PKG-INFO
+pandashare.egg-info/SOURCES.txt
+pandashare.egg-info/dependency_links.txt
+pandashare.egg-info/top_level.txt
