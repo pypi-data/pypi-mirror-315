@@ -1,0 +1,40 @@
+[project]
+name = "sportmonks-py"
+version = "0.0.5"
+description = "A Python package to interact with the SportMonks API"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Chris McCallan"}]
+maintainers = [
+  {name = "Chris McCallan", email = "chris.mccallan+sportmonks@hotmail.co.uk"}
+]
+license = {file = "LICENSE"}
+keywords = ["sportmonks", "api", "apiv3", "football", "data", "soccer"]
+dependencies = [
+    "aiohttp>=3.11.10",
+    "asyncio>=3.4.3",
+    "datetime>=5.5",
+    "http-client>=0.1.22",
+    "pytest-asyncio>=0.25.0",
+    "pytest>=8.3.3",
+    "pytz>=2024.2",
+    "responses>=0.25.3",
+    "ruff>=0.8.2",
+    "tzlocal>=5.2",
+    "sphinx-rtd-theme>=3.0.2",
+    "sphinx>=7.4.7",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.3",
+]
+
+[project.urls]
+Repository = "https://github.com/christophermccallan/sportmonks-py"
+Issues = "https://github.com/christophermccallan/sportmonks-py/issues"
+Changelog = "https://github.com/christophermccallan/sportmonks-py/blob/main/Changelog"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
