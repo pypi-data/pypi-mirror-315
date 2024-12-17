@@ -1,0 +1,7 @@
+README.md
+setup.py
+JakaModbusCommunication.egg-info/PKG-INFO
+JakaModbusCommunication.egg-info/SOURCES.txt
+JakaModbusCommunication.egg-info/dependency_links.txt
+JakaModbusCommunication.egg-info/requires.txt
+JakaModbusCommunication.egg-info/top_level.txt
