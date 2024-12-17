@@ -1,0 +1,12 @@
+.gitignore
+LICENSE.md
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+evsetool.egg-info/PKG-INFO
+evsetool.egg-info/SOURCES.txt
+evsetool.egg-info/dependency_links.txt
+evsetool.egg-info/requires.txt
+evsetool.egg-info/top_level.txt
+tests/test_evsetool.py

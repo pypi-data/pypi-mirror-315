@@ -1,0 +1,6 @@
+scapy
+websockets
+asyncio
+ocpp
+pytest
+coverage
