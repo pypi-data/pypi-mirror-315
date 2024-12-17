@@ -1,0 +1,14 @@
+randan/__init__.py,sha256=gryslMqjohas2C4Si4ceqcIGcbDJtlxo4xWQjbKXxb0,186
+randan/bivariate_association.py,sha256=MMu946d2g8S3veN9VezBq-z-FwQADtUjXVCsKQZG2FU,17604
+randan/clustering.py,sha256=jOBu8M1bA9ZK_t4ce3G32Sd7nvvrWoqCUlZlcjGvUo4,15970
+randan/comparison_of_central_tendency.py,sha256=1W8qdUQwAhv6tm_2z9O5g0Kckhnft2syL1f9I0LLPLc,6076
+randan/descriptive_statistics.py,sha256=FPiZote4ltazOhQgBdUmBrwi3uG1nIcyza5TQ1hE708,21177
+randan/dimension_reduction.py,sha256=ir9iRu8PpzFeKLtPX4N9t0uDp7ZrYev5yhoJ-luIscY,78729
+randan/regression.py,sha256=DPx41on_Xz-62iPlwi4W_x6wbW1G7thLrIKCwq0E35M,50545
+randan/tree.py,sha256=Q1LG28kjzK_Lh9T7SuAPXjDwiHA_YTp8JHMg_d4W9_U,69334
+randan/utils.py,sha256=xBlorQaQu_HzXqvsNp2tmdOV_-HYtIRCNzRuXDCBI1c,4371
+randan-0.3.1.2.dist-info/LICENSE,sha256=ToVqqMzwexlcuiuSpu4G0KKoaJID2r4plZwBt0_wNPM,1064
+randan-0.3.1.2.dist-info/METADATA,sha256=ssfSEm_FoS_ZHZKAo_GJnvMgkZeHDcbw_z4lLHu1IV0,1002
+randan-0.3.1.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+randan-0.3.1.2.dist-info/top_level.txt,sha256=2cY73sz6kbrQHtyCKupjurCUVZiCg-qAN4yhRSegBL8,7
+randan-0.3.1.2.dist-info/RECORD,,
