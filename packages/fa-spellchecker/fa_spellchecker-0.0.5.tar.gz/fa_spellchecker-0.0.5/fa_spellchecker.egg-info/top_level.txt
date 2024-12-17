@@ -1,0 +1,6 @@
+dist
+docs
+faspellchecker
+resources
+scripts
+tests
