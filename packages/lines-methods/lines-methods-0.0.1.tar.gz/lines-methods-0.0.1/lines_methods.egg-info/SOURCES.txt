@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lines_methods.egg-info/PKG-INFO
+lines_methods.egg-info/SOURCES.txt
+lines_methods.egg-info/dependency_links.txt
+lines_methods.egg-info/top_level.txt
