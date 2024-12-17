@@ -1,0 +1,35 @@
+-c main.txt
+
+uv
+
+pip-tools
+tox
+flake8
+pytest
+pytest-isort
+pytest-mypy
+pytest-env
+pytest-cov
+pytest-vcr
+responses
+
+pytz
+types-pytz
+types-jwt
+types-python-dateutil
+types-PyYAML
+types-cachetools
+
+boto3-stubs
+botocore-stubs
+google-auth-stubs
+
+# Documentation Requirements
+recommonmark
+furo
+sphinx
+sphinx-autodoc-typehints
+
+# Internal tooling
+scriv
+

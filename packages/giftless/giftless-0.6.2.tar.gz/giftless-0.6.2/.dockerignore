@@ -1,0 +1,11 @@
+/.venv*
+/build
+/dist
+/lfs-storage
+*.egg-info
+*.pyc
+.pytest_cache
+.mypy_cache
+/.idea
+.tox
+.make-cache
