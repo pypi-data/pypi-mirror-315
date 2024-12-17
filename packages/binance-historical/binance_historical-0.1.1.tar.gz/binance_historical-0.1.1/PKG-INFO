@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: binance_historical
+Version: 0.1.1
+Summary: A package for fetching Binance historical data
+Home-page: https://github.com/Tapanhaz/binance_historical
+Author: Tapanhaz
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: tqdm
+Requires-Dist: polars
+Requires-Dist: aiolimiter
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: python-dateutil
+Requires-Dist: uvloop
