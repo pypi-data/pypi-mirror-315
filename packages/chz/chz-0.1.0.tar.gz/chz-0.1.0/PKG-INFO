@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: chz
+Version: 0.1.0
+Summary: chz is a library for managing configuration
+Author: Shantanu Jain
+Author-email: shantanu@openai.com
+Project-URL: homepage, https://github.com/openai/chz
+Project-URL: repository, https://github.com/openai/chz
+Project-URL: changelog, https://github.com/openai/chz/blob/main/CHANGELOG.md
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing-extensions>=4.7
+
+# 🪤 chz
+
+*(pronounced "चीज़")*
+
+`chz` helps you manage configuration.
