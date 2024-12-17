@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+etacorpy/__init__.py
+etacorpy/calc_eta_n.py
+etacorpy/calc_rta_n.py
+etacorpy/independence_test.py
+etacorpy.egg-info/PKG-INFO
+etacorpy.egg-info/SOURCES.txt
+etacorpy.egg-info/dependency_links.txt
+etacorpy.egg-info/requires.txt
+etacorpy.egg-info/top_level.txt
+tests/test_eta_n.py
+tests/test_independence_test.py
+tests/test_rta_n.py
