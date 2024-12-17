@@ -1,0 +1,239 @@
+Metadata-Version: 2.1
+Name: pipelineer
+Version: 1.4.2
+Summary: "Herramienta para generar esquemas Avro, JSON y SQL desde definiciones Oracle."
+Author: "Sebastian Aguilar"
+Author-email: "sebastian.aguilar.sanhueza@gmail.com"
+License: "MIT"
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+### **Nuevo README.md**
+
+```markdown
+# Pipelineer - Generador de Esquemas Avro, JSON, SQL y Tablas BigQuery
+
+Pipelineer es una herramienta diseñada para generar esquemas en formato Avro, JSON y SQL desde definiciones de tablas Oracle en formato `.sql`. También permite la generación automatizada de scripts de creación de tablas en BigQuery basados en configuraciones personalizadas.
+
+## **Comandos disponibles**
+
+Pipelineer organiza sus funcionalidades en subcomandos bajo el comando principal `make`.
+
+---
+
+### **1. `make template`**
+
+Este comando configura plantillas necesarias para trabajar con DAGs. Sobrescribe el contenido de un archivo con prefijo `dag_` en la raíz del proyecto usando una plantilla predefinida.
+
+#### **Uso**
+
+```bash
+pipelineer make template --type {oracle|api}
+```
+
+#### **Argumentos**
+
+- `--type`: **Requerido**. Especifica el tipo de plantilla a utilizar:
+  - `oracle`: Configura la plantilla para trabajar con esquemas de Oracle.
+  - `api`: Configura la plantilla para trabajar con APIs.
+
+#### **Ejemplo**
+
+```bash
+pipelineer make template --type oracle
+```
+
+#### **Notas**
+
+- El archivo con prefijo `dag_` debe estar presente en la raíz del proyecto.
+- Este comando debe ejecutarse antes de generar esquemas o scripts.
+
+---
+
+### **2. `make schemas`**
+
+Genera esquemas en formato Avro, JSON y SQL a partir de definiciones de tablas Oracle.
+
+#### **Uso**
+
+```bash
+pipelineer make schemas
+```
+
+#### **Argumentos**
+
+- `--input-folder`: Carpeta con los archivos `.sql`. Predeterminado: `schemas/oracle`.
+- `--avro-output-folder`: Carpeta de salida para los archivos Avro. Predeterminado: `schemas/avsc`.
+- `--json-output-folder`: Carpeta de salida para los archivos JSON. Predeterminado: `schemas/json`.
+- `--sql-output-folder`: Carpeta de salida para los archivos SQL. Predeterminado: `sql/oracle`.
+- `--date-format`: Formato de fechas. Opciones:
+  - `date`
+  - `datetime` (predeterminado)
+
+#### **Ejemplo**
+
+```bash
+pipelineer make schemas --input-folder schemas/oracle --avro-output-folder schemas/avsc
+```
+
+---
+
+### **3. `make bq_tables`**
+
+Genera scripts de creación de tablas en BigQuery basados en configuraciones definidas en archivos `.json`.
+
+#### **Uso**
+
+```bash
+pipelineer make bq_tables
+```
+
+#### **Argumentos**
+
+- `--config-folder`: Carpeta con los archivos de configuración `.json`. Predeterminado: `sql/bigquery/config/`.
+- `--config-file`: Ruta de un archivo de configuración específico. Opcional.
+- `--output-folder`: Carpeta de salida para los scripts. Predeterminado: `sql/bigquery/scripts/`.
+
+#### **Ejemplo**
+
+1. Generar scripts para todas las tablas en la carpeta de configuración:
+
+   ```bash
+   pipelineer make bq_tables
+   ```
+
+2. Generar un script para una tabla específica:
+
+   ```bash
+   pipelineer make bq_tables --config-file sql/bigquery/config/cob_compro.json
+   ```
+
+3. Cambiar la carpeta de salida:
+
+   ```bash
+   pipelineer make bq_tables --output-folder custom/scripts/folder/
+   ```
+
+---
+
+## **Requisitos**
+
+- Python 3.6 o superior.
+- Archivos `.sql` con la definición de tablas en formato Oracle.
+- Archivos `.json` de configuración para tablas BigQuery.
+
+---
+
+## **Flujo recomendado de ejecución**
+
+1. **Configurar la plantilla**:
+
+   Ejecuta el comando `make template` para configurar la plantilla:
+
+   ```bash
+   pipelineer make template --type oracle
+   ```
+
+2. **Generar esquemas**:
+
+   Usa el comando `make schemas` para generar los esquemas:
+
+   ```bash
+   pipelineer make schemas
+   ```
+
+3. **Generar scripts de tablas BigQuery**:
+
+   Ejecuta el comando `make bq_tables` para generar los scripts de creación de tablas en BigQuery:
+
+   ```bash
+   pipelineer make bq_tables
+   ```
+
+---
+
+## **Mensajes de error comunes**
+
+1. **No se encontró un archivo `dag_` en la raíz**:
+   - Asegúrate de tener un archivo con prefijo `dag_` en la raíz antes de ejecutar `make template`.
+
+2. **No se encontraron archivos de configuración**:
+   - Verifica que haya archivos `.json` en la carpeta de configuración especificada por `--config-folder`.
+
+3. **Falta una definición de tabla en Oracle**:
+   - Asegúrate de que el archivo `.sql` correspondiente esté en la carpeta especificada.
+
+---
+
+## **Instalación y ejecución**
+
+1. Clona este repositorio.
+2. Instala el paquete:
+   ```bash
+   pip install .
+   ```
+3. Usa los comandos descritos para trabajar con las plantillas, esquemas y scripts.
+
+---
+
+## **Licencia**
+
+Este proyecto está bajo la licencia MIT.
+```
+
+---
+
+### **Ejemplo Genérico de Archivo de Configuración**
+
+```json
+{
+  "table_name": "TABLE_NAME",            // Requerido. Nombre de la tabla (en mayúsculas).
+  "zone": "stg",                        // Opcional. Zona de la tabla: dep, stg, dim. Predeterminado: stg.
+  "partition_field": "date_column",     // Opcional. Campo de partición.
+  "partition_type": "DAY",              // Opcional. Tipo de partición: DAY, MONTH, YEAR.
+  "partition_data_type": "DATE",        // Opcional. Tipo de dato de la partición: DATE, DATETIME, TIMESTAMP.
+  "clustering_fields": ["field1"],      // Opcional. Lista de campos para clustering.
+  "date_field_type": "DATETIME"         // Opcional. Tipo de dato para columnas de fecha: DATE, DATETIME, TIMESTAMP.
+}
+```
+
+---
+
+### **Explicación**
+
+- **`table_name` (Requerido):** Nombre de la tabla en formato Oracle. Debe estar en mayúsculas.
+- **`zone` (Opcional):** Identifica la zona de la tabla en BigQuery (`dep`, `stg`, `dim`). Predeterminado: `stg`.
+- **`partition_field` (Opcional):** Campo usado para la partición. Si no se proporciona, la tabla no tendrá particiones.
+- **`partition_type` (Opcional):** Tipo de partición (`DAY`, `MONTH`, `YEAR`). Aplica solo si se define `partition_field`.
+- **`partition_data_type` (Opcional):** Tipo de dato del campo de partición (`DATE`, `DATETIME`, `TIMESTAMP`). Predeterminado: `DATE`.
+- **`clustering_fields` (Opcional):** Lista de campos para clustering. Si no se define, no se generará clustering.
+- **`date_field_type` (Opcional):** Tipo de dato para las columnas de fecha en BigQuery (`DATE`, `DATETIME`, `TIMESTAMP`). Predeterminado: `DATE`.
+
+---
+
+### **Ejemplo Real**
+
+```json
+{
+  "table_name": "COB_COMPRO",
+  "zone": "stg",
+  "partition_field": "pla_fecven",
+  "partition_type": "MONTH",
+  "partition_data_type": "DATETIME",
+  "clustering_fields": ["cpa_codigo", "emp_rut"],
+  "date_field_type": "DATETIME",
+  "dataset": "dep_core_dataset"
+}
+```
+
+En este ejemplo:
+
+1. La tabla se llama `COB_COMPRO`.
+2. Está en la zona `stg`.
+3. Está particionada por `pla_fecven` con tipo de dato `DATETIME` y partición por `MONTH`.
+4. Tiene clustering en los campos `cpa_codigo` y `emp_rut`.
+
+---
