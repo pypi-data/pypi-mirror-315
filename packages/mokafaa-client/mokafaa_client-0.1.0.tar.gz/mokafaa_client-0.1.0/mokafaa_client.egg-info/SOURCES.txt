@@ -1,0 +1,10 @@
+README.md
+setup.py
+mokafaa_client/__init__.py
+mokafaa_client/client.py
+mokafaa_client.egg-info/PKG-INFO
+mokafaa_client.egg-info/SOURCES.txt
+mokafaa_client.egg-info/dependency_links.txt
+mokafaa_client.egg-info/requires.txt
+mokafaa_client.egg-info/top_level.txt
+tests/test_client.py
