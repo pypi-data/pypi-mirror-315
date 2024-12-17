@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gtk-stream"
+version = "0.3"
+description = "A simple stream-oriented GUI protocol"
+authors = [
+ { name = "Marc Coiffier", email = "marc.coiffier@univ-grenoble-alpes.fr" }
+]
+
+dependencies = [ "pygobject" ]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: User Interfaces",
+  "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+  ]
+
+[project.urls]
+Homepage = "https://coiffiem.gricad-pages.univ-grenoble-alpes.fr/gtk-stream/"
+
+[project.scripts]
+gtk-stream = "gtk_stream.command_line:main"
