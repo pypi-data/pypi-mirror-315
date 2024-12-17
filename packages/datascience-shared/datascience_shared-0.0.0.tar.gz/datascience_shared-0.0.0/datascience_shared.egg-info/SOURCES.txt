@@ -1,0 +1,5 @@
+setup.py
+datascience_shared.egg-info/PKG-INFO
+datascience_shared.egg-info/SOURCES.txt
+datascience_shared.egg-info/dependency_links.txt
+datascience_shared.egg-info/top_level.txt
