@@ -1,0 +1,12 @@
+setup.py
+mypackage/__init__.py
+mypackage/__main__.py
+mypackage/decorators.py
+mypackage/descriptors.py
+mypackage/generators.py
+mypackage/iterators.py
+mypackage/tests/__init__.py
+voneska_mypackage.egg-info/PKG-INFO
+voneska_mypackage.egg-info/SOURCES.txt
+voneska_mypackage.egg-info/dependency_links.txt
+voneska_mypackage.egg-info/top_level.txt
