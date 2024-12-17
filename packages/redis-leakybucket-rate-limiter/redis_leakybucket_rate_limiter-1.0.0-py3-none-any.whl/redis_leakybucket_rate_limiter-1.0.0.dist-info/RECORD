@@ -1,0 +1,8 @@
+ratelimiter/__init__.py,sha256=ITapEOa-qBuLZHWYF3B4ABGi_Bm3vCcCtSH663LvIL4,44
+ratelimiter/limiter.py,sha256=5wEJPxmJ-EZaZfO_VoJqjIF2TIsnGYOf0XENBA5lnLc,2465
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_rate_limiter.py,sha256=G5p_knxyzTMvYgwGczlIZj11ll4sdaqL-nPcUqqQva8,2975
+redis_leakybucket_rate_limiter-1.0.0.dist-info/METADATA,sha256=76QqwP3keizh2BZMlOGg-sC5KOIJImlObGgDY10u8WM,688
+redis_leakybucket_rate_limiter-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+redis_leakybucket_rate_limiter-1.0.0.dist-info/top_level.txt,sha256=xJfu9REzOm6aEyXHJaTwkCfevMqsKQj1yrv52ZmFsHw,18
+redis_leakybucket_rate_limiter-1.0.0.dist-info/RECORD,,
