@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dataScienceTree"
+version = "0.1.1"
+description = "Herramienta CLI para inicializar estructura de carpetas para EDA y ML"
+authors = ["Juan_Maniglia <90753457+JuanManiglia@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/tuusuario/dstree"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+DSTree = "dataScienceTree.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
