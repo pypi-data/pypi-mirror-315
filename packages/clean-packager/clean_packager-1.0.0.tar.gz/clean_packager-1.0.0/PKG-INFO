@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: clean-packager
+Version: 1.0.0
+Author: None
+Author-email: 
+License: GPL-3
+Description-Content-Type: text/markdown
+
+# clean-packager
+
+**`clean-packager`** is a Python utility that simplifies the process of cleaning up and organizing your Python package directories. It ensures your project is well-structured and free of unnecessary files before publishing to PyPI or deploying to production.
+
+---
+
+## Features
+
+- **Remove Unnecessary Files**: Cleans up temporary files, cache directories, and other clutter (e.g., `.pyc`, `.pyo`, `__pycache__`).
+- **Streamline Package Structure**: Keeps only essential files like source code, `README`, `LICENSE`, and setup scripts.
+- **Customizable Cleanup**: Define specific file patterns or directories to exclude from your package.
+- **Pre-Publish Checks**: Validates the package structure before upload.
+- **Safe Mode**: Preview changes before permanently deleting files.
+
+---
+
+## Installation
+
+Install the package using `pip`:
+
+```bash
+pip install clean-packager
