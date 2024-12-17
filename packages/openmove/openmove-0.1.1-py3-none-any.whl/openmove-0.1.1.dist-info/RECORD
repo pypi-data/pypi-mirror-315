@@ -1,0 +1,9 @@
+openmove/__init__.py,sha256=LVxRki1GUKXZX-GtOjG7lZ5g4RT_nb8wczu9-6AV8NY,539
+openmove/calculations.py,sha256=2XPOR1_0Qpa1lyiekKmJTnH-M7HkGHKTEl4PerW9sn8,9016
+openmove/pose_utils.py,sha256=T4hTMoX6aPV3ZeXAje_rtG69kf2SjDdPnU-suZ29lMM,4166
+openmove/video_utils.py,sha256=nc8PHiOTz8Bhf7Ls9dueAO9LvQJWD13sfNGC-hZZt0c,639
+openmove/visualization.py,sha256=cBelwvO6EACQeKIo6U7WcD9_MN8qvYxrkHJuwMyPQjo,10174
+openmove-0.1.1.dist-info/METADATA,sha256=BD9RlzN5Al7020UwkwfJiRhXbpVCTMA3s31iKtw___4,717
+openmove-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+openmove-0.1.1.dist-info/top_level.txt,sha256=J7xSsM9E7_Gt-ngyq9XKZVl-z-kbubm7A8ZNZ7Lo2Y8,9
+openmove-0.1.1.dist-info/RECORD,,
