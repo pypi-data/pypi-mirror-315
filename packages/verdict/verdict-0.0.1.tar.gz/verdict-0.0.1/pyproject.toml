@@ -1,0 +1,17 @@
+[project]
+name = "verdict"
+version = "0.0.1"
+authors = [
+  { name="Nimit Kalra", email="nimit@haizelabs.com" },
+]
+description = "LLM Evaluation Pipelines"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/haizelabs/verdict"
+Issues = "https://github.com/haizelabs/verdict/issues"

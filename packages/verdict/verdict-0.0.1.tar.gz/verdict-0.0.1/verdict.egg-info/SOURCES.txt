@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+verdict.egg-info/PKG-INFO
+verdict.egg-info/SOURCES.txt
+verdict.egg-info/dependency_links.txt
+verdict.egg-info/top_level.txt
