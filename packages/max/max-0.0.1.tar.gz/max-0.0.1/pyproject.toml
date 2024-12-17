@@ -1,0 +1,31 @@
+[project]
+name = "max"
+version = "0.0.1"
+description = """Temporary placeholder package future releases of the Modular \
+MAX SDK on PyPI which is currently only avalaible as a conda package."""
+authors = [
+    {name = "Modular Inc", email = "hello@modular.com"},
+]
+dependencies = []
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "Apache 2.0"}
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pdm]
+distribution = true
+
+[tool.pixi.project]
+channels = ["conda-forge", "https://conda.modular.com/max"]
+platforms = ["osx-arm64"]
+
+[tool.pixi.pypi-dependencies]
+max = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.pixi.dependencies]
+max = ">=24.6.0,<25"
