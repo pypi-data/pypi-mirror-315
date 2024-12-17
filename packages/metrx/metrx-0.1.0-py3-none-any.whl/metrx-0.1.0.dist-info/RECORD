@@ -1,0 +1,9 @@
+metrx/__init__.py,sha256=xCHG4bBdmQPuTqYgMykR2cPtCF8Cg6V_qYQujSQc_IE,111
+metrx/distance_measures.py,sha256=w2URo97LN1cWRu6E_X-q-XppTwmFBfhk6WmvbjD36AQ,47694
+metrx/statistical_measures.py,sha256=Gh8p8__SFZA2NguQEMt47fmz21FDEMV1dvBqkQULHjs,25949
+metrx/utils.py,sha256=qPwd6m3n836wFW1FLLS4W-jHb7BeW0dyl4CKUl6nPAs,1223
+metrx-0.1.0.dist-info/LICENSE,sha256=GTOI8bWyWN6cY39snfhG96eUbZ2s6or8MSYicmY3Ec4,1067
+metrx-0.1.0.dist-info/METADATA,sha256=3QPU4cq7WbxyL_ZQd9W3YyVeTnzS3DWdHZwecpLy1Qc,4837
+metrx-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+metrx-0.1.0.dist-info/top_level.txt,sha256=gFuflnnNrbq-m33Kcu-lMxa3v4Gyef_etWXr30gU8jY,6
+metrx-0.1.0.dist-info/RECORD,,
