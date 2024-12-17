@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+my_package_gang/__init__.py
+my_package_gang/class_operations.py
+my_package_gang/operations.py
+my_package_gang.egg-info/PKG-INFO
+my_package_gang.egg-info/SOURCES.txt
+my_package_gang.egg-info/dependency_links.txt
+my_package_gang.egg-info/top_level.txt
