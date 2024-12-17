@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: async-cloudpayments
+Version: 1.6.4
+Summary: CloudPayments Python Client Library (Asynchronous version)
+Home-page: https://github.com/ex3lite/aio-cloudpayments-python-client
+Download-URL: https://github.com/ex3lite/aio-cloudpayments-python-client/tarball/1.6.4
+Author: Antida software
+Author-email: info@antidasoftware.com
+License: MIT license
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.7.0
+Requires-Dist: pytz>=2015.7
+
+CloudPayments Python Client Library (Asynchronous Fork)
+======================================================
+
+.. image:: https://img.shields.io/pypi/v/cloudpayments.svg
+   :target: https://pypi.python.org/pypi/cloudpayments/
+   :alt: Python Package Index
+
+.. image:: https://img.shields.io/travis/car3ge/cloudpayments-python-client.svg
+   :target: https://travis-ci.org/car3ge/cloudpayments-python-client
+   :alt: Travis CI
+
+Этот пакет — асинхронная версия клиента для платежного сервиса `CloudPayments <http://cloudpayments.ru/>`_. Он позволяет работать с `API CloudPayments <http://cloudpayments.ru/Docs/Api>`_ в асинхронном режиме с использованием библиотеки `aiohttp`.
+
+Установка
+=========
+
+::
+
+    pip install async-cloud-payments-fork
+
+Требования
+==========
+
+Python 3.7+.
+
+Использование
+=============
+
+.. code:: python
+
+    from cloudpayments import CloudPayments
+
+    client = CloudPayments('public_id', 'api_secret')
+    await client.test()  # Важно использовать await для асинхронных методов
+
+При создании клиента задаются аутентификационные параметры: Public ID и Api Secret. Оба этих значения можно получить в личном кабинете.
+
+Обращение к API осуществляется через асинхронные методы клиента.
+
+
+| **Тестовый метод** (`описание <https://cloudpayments.ru/wiki/integration/instrumenti/api>`__)
+
+.. code:: python
+
+    await client.test(request_id=None)
+
+``request_id`` — идентификатор для `идемпотентного запроса <https://developers.cloudkassir.ru/>`__.
+
+В случае успеха возвращает строку с сообщением от сервиса.
+
+(описание остальных методов остается без изменений)
+
+Авторы
+======
+
+Разработано в `car3ge <https://github.com/car3ge>`_.
+Асинхронная версия форк клиента CloudPayments для Python.
+Пишите мне, если нужна консультация по работе с платежными системами: `sharashka.brk@gmail.com <sharashka.brk@gmail.com>`_.
+
+Лицензия
+========
+
+MIT
