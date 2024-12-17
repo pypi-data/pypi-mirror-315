@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pip_start
+Version: 0.1.3
+Summary: A Python Package allowing thr automatic checking and updating of a python package upon import
+Home-page: https://github.com/Veillax/pip_start
+Author: Veillax
+Author-email: contact@veillax.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# pip-start
+![PyPI - Version](https://img.shields.io/pypi/v/pip-start?label=Version)
+![PyPI - License](https://img.shields.io/pypi/l/pip-start?label=License)
+![GitHub Release Date](https://img.shields.io/github/release-date/Veillax/pip-start?label=Release%20Date)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pip-start?label=Downloads)
+
+pip-start is a custom package I worte to allow simple and seamless auto-updating of packages that need it, such as game API Wrappers.
