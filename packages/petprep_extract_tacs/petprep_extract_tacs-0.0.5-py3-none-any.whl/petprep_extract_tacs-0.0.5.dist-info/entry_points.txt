@@ -1,0 +1,4 @@
+[console_scripts]
+merge_tacs=petprep_extract_tacs.utils.merge_tacs:main
+petprep_extract_tacs=petprep_extract_tacs.extract_tacs:cli
+
