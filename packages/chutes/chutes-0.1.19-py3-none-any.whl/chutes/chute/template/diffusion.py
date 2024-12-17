@@ -1,0 +1,140 @@
+import os
+import uuid
+from io import BytesIO
+from fastapi import Response
+from pydantic import BaseModel, Field
+from typing import Callable, Optional, Union
+from chutes.chute import Chute, ChutePack, NodeSelector
+from chutes.image import Image
+
+
+class GenerationInput(BaseModel):
+    prompt: str
+    negative_prompt: str = ""
+    height: int = Field(default=1024, ge=128, le=2048)
+    width: int = Field(default=1024, ge=128, le=2048)
+    num_inference_steps: int = Field(default=25, ge=1, le=50)
+    guidance_scale: float = Field(default=7.5, ge=1.0, le=20.0)
+    seed: Optional[int] = Field(default=None, ge=0, le=2**32 - 1)
+
+
+class MinifiedGenerationInput(BaseModel):
+    prompt: str = "a beautiful mountain landscape"
+
+
+class DiffusionChute(ChutePack):
+    generate: Callable
+
+
+def build_diffusion_chute(
+    username: str,
+    name: str,
+    model_name_or_url: str,
+    node_selector: NodeSelector,
+    image: Union[str, Image],
+    readme: str = "",
+    xl: Optional[bool] = True,
+    pipeline_args: Optional[dict] = {},
+):
+    chute = Chute(
+        username=username,
+        name=name,
+        readme=readme,
+        image=image,
+        node_selector=node_selector,
+        standard_template="diffusion",
+        concurrency=1,
+    )
+
+    @chute.on_startup()
+    async def initialize_pipeline(self):
+        """
+        Initialize the pipeline, download model if necessary.
+        """
+        import torch
+        import aiohttp
+        from urllib.parse import urlparse
+        from diffusers import (
+            StableDiffusionPipeline,
+            StableDiffusionXLPipeline,
+        )
+
+        self.torch = torch
+        torch.cuda.empty_cache()
+        torch.cuda.init()
+        torch.cuda.set_device(0)
+
+        # Initialize cache dir.
+        hf_home = os.getenv("HF_HOME", os.path.expanduser("~/.cache/huggingface"))
+        os.makedirs(hf_home, exist_ok=True)
+        civitai_home = os.getenv("CIVITAI_HOME", os.path.expanduser("~/.cache/civitai"))
+        os.makedirs(civitai_home, exist_ok=True)
+
+        # Handle civitai models/cache.
+        model_identifier = model_name_or_url
+        single_file = False
+        if model_name_or_url.lower().startswith("https://civitai.com"):
+            model_id = urlparse(model_name_or_url).path.rstrip("/").split("/")[-1]
+            download_url = (
+                f"https://civitai.com/api/download/models/{model_id}?type=Model&format=SafeTensor"
+            )
+            model_path = os.path.join(civitai_home, f"{model_id}.safetensors")
+            model_identifier = model_path
+            single_file = True
+            if not os.path.exists(model_path):
+                async with aiohttp.ClientSession(raise_for_status=True) as session:
+                    async with session.get(download_url) as resp:
+                        with open(model_path, "wb") as outfile:
+                            while chunk := await resp.content.read(8192):
+                                outfile.write(chunk)
+
+        # Initialize the pipeline.
+        pipeline_class = StableDiffusionXLPipeline if xl else StableDiffusionPipeline
+        method = "from_pretrained" if not single_file else "from_single_file"
+        self.pipeline = getattr(pipeline_class, method)(
+            model_identifier,
+            torch_dtype=torch.float16,
+            **pipeline_args,
+        )
+        self.pipeline.to("cuda")
+
+    @chute.cord(
+        public_api_path="/generate",
+        method="POST",
+        input_schema=GenerationInput,
+        minimal_input_schema=MinifiedGenerationInput,
+        output_content_type="image/jpeg",
+        pass_chute=True,
+    )
+    async def generate(self, params: GenerationInput) -> Response:
+        """
+        Generate an image.
+        """
+        generator = None
+        if params.seed is not None:
+            generator = self.torch.Generator(device="cuda").manual_seed(params.seed)
+        with self.torch.inference_mode():
+            result = self.pipeline(
+                prompt=params.prompt,
+                negative_prompt=params.negative_prompt,
+                height=params.height,
+                width=params.width,
+                num_inference_steps=params.num_inference_steps,
+                num_images=1,
+                guidance_scale=params.guidance_scale,
+                generator=generator,
+            )
+        image = result.images[0]
+        buffer = BytesIO()
+        image.save(buffer, format="JPEG", quality=85)
+        buffer.seek(0)
+        return Response(
+            content=buffer.getvalue(),
+            media_type="image/jpeg",
+            headers={"Content-Disposition": f'attachment; filename="{uuid.uuid4()}.jpg"'},
+        )
+
+    return DiffusionChute(
+        chute=chute,
+        generate=generate,
+    )
