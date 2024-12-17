@@ -1,0 +1,17 @@
+transformers
+accelerate
+optimum
+torch
+tensorflow
+langchain
+llama_index
+openai
+sentence-transformers
+pinecone-client
+weaviate-client
+chroma
+qdrant-client
+tiktoken
+rich
+uvicorn
+fastapi

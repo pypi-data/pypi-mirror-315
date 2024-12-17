@@ -1,0 +1,40 @@
+[project]
+name = "llm_install_pack"
+version = "0.1.0"
+description = "A Python Library to download all the required LLM Python packages for building an LLM-based chatbot"
+authors = [
+    { name="Sivateja", email="sivatejaat@gmail.com" }
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+
+# Here we list all dependencies discussed:
+# - Core LLM and Transformers ecosystem
+# - LangChain, LlamaIndex
+# - OpenAI for API-based models
+# - Embedding and Vector DB clients
+# - Additional utilities
+dependencies = [
+    "transformers",
+    "accelerate",
+    "optimum",
+    "torch",
+    "tensorflow",
+    "langchain",
+    "llama_index",
+    "openai",
+    "sentence-transformers",
+    "pinecone-client",
+    "weaviate-client",
+    "chroma",
+    "qdrant-client",
+    "tiktoken",
+    "rich",
+    "uvicorn",
+    "fastapi"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
