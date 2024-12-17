@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: NutriCheck
+Version: 0.1.0
+Summary: Prediction of the comestibility of a micro-organism from its DNA sequence
+Project-URL: repo_git, http://pedago-service.univ-lyon1.fr:2325/mguigard/sujet-9/-/tree/package?ref_type=heads
+Author: Kessen Poitou
+Author-email: Thomas Gagnieu <thomas.gagnieu@etu.univ-lyon1.fr>, Mathieu Guigard <mathieu.guigard@etu.univ-lyon1.fr>, Thibaud Guiramand <thibaud.guiramand@etu.univ-lyon1.fr>
+Maintainer: Kessen Poitou
+Maintainer-email: Thomas Gagnieu <thomas.gagnieu@etu.univ-lyon1.fr>, Mathieu Guigard <mathieu.guigard@etu.univ-lyon1.fr>, Thibaud Guiramand <thibaud.guiramand@etu.univ-lyon1.fr>
+Keywords: annotation,comestibility,digestibility,gene,gene expression,toxicity
+Requires-Dist: biopython>=1.84
+Requires-Dist: panda>=0.3.1
+Requires-Dist: pandas>=2.2.3
