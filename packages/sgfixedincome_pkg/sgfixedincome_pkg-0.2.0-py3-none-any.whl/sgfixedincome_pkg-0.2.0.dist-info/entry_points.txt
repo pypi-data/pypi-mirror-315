@@ -1,0 +1,3 @@
+[console_scripts]
+sgfixedincome-app=sgfixedincome_pkg.cli:run_app
+
