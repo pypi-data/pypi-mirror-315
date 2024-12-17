@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "steadysun"
+dynamic = ["version"]
+authors = [{ name = "Pierrick MADE", email = "pierrick.made@steady-sun.com" }]
+description = "A package to interact with Steadysun's API"
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = ["geojson", "pandas", "pydantic", "pydantic-geojson", "requests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+
+[project.urls]
+Homepage = "https://www.steady-sun.com"
+Documentation = "https://steadysun-pypi.readthedocs.io"
+Repository = "https://github.com/steadysun-pmade/steadysun-pypi/issues"
+Issues = "https://github.com/steadysun-pmade/steadysun-pypi/issues"
+Changelog = "https://github.com/steadysun-pmade/steadysun-pypi/blob/master/CHANGELOG.md"

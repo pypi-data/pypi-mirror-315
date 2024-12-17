@@ -1,0 +1,10 @@
+pre-commit
+pytest
+pytest-cov
+
+sphinx
+autodocsumm
+autodoc_pydantic
+sphinx-rtd-theme
+sphinx_tabs
+sphinx_copybutton

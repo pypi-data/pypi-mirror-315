@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: steadysun
+Version: 0.1.0
+Summary: A package to interact with Steadysun's API
+Author-email: Pierrick MADE <pierrick.made@steady-sun.com>
+License: MIT License
+        
+        Copyright (c) [2024] [Steadysun]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        1. **Attribution**: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. If you distribute or modify the Software, you must provide proper attribution to the original author by including a visible credit in the documentation or product.
+        
+        2. **Paid Services**: Some functionalities of this software may require a paid token or subscription to access certain services. The Software itself remains free to use, modify, and distribute, but third-party services or API integrations may require payment.
+        
+        3. **Disclaimer**: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Homepage, https://www.steady-sun.com
+Project-URL: Documentation, https://steadysun-pypi.readthedocs.io
+Project-URL: Repository, https://github.com/steadysun-pmade/steadysun-pypi/issues
+Project-URL: Issues, https://github.com/steadysun-pmade/steadysun-pypi/issues
+Project-URL: Changelog, https://github.com/steadysun-pmade/steadysun-pypi/blob/master/CHANGELOG.md
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: geojson
+Requires-Dist: pandas
+Requires-Dist: pydantic
+Requires-Dist: pydantic-geojson
+Requires-Dist: requests
+
+# Steadysun Package
+
+A Python package designed to facilitate interaction with the [**Steadysun** API](https://steadyweb.steady-sun.com/rapidoc/).
+
+## Features
+
+- **Easy API Interaction**: Simplified methods to authenticate and query the Steadysun API.
+- **Data Retrieval**: Fetch solar forecast data in various formats (JSON, CSV, etc.).
+- **Error Handling**: Graceful error handling for common API errors such as authentication failure, bad requests, and more.
+- **Customizable**: Flexible configuration options to tailor API requests to your needs.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install steadysun
+```
+
+## Quick Start
+
+Here's an example of how to use `steadysun`:
+
+```python
+from steadysun.steadysun_api import SteadysunAPI
+from steadysun.forecast import get_forecast
+
+# You can either set your token in your env at "STEADYSUN_API_TOKEN"
+# OR use the following line :
+SteadysunAPI.set_api_token("YOUR_TOKEN")
+
+forecast_df = get_forecast("SITE_UUID")
+
+forecast_df = get_forecast(
+    site_uuid="SITE_UUID",
+    time_step=30,
+    horizon=2440,
+    precision=4,
+    fields=["all_sky_global_horizontal_irradiance", "2m_temperature"],
+)
+```
+
+## Documentation
+
+- **Package doc** : For detailed information about this package, please refer to [https://steadysun-pypi.readthedocs.io](https://steadysun-pypi.readthedocs.io).
+- **API doc** : For detailed information about the API endpoints, parameters, and available data, please refer to the [Steadysun API Documentation](https://steadyweb.steady-sun.com/rapidoc/).
+
+
+## Package history (CHANGELOG)
+
+For detailed information on version updates of this package, please refer to the [CHANGELOG](./CHANGELOG.md).
+
+## Contact
+
+For questions, issues, or support, feel free to reach out via email at <contact@steady-sun.com>.
+
+You can also submit ideas or report issues on the [GitHub Issues page](https://github.com/steadysun-pmade/steadysun-pypi/issues).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
