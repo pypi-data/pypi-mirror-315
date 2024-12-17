@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+fanparsai/__init__.py
+fanparsai.egg-info/PKG-INFO
+fanparsai.egg-info/SOURCES.txt
+fanparsai.egg-info/dependency_links.txt
+fanparsai.egg-info/requires.txt
+fanparsai.egg-info/top_level.txt
+fanparsai/fpvad/ERI_VAD.pth
+fanparsai/fpvad/VAD.py
+fanparsai/fpvad/__init__.py
+fanparsai/fpvad/pyannote_v2.json
