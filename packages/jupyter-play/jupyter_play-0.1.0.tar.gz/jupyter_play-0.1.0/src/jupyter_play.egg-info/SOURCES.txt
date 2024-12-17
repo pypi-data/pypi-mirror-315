@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/jupyter_play/__init__.py
+src/jupyter_play/html_games.zip
+src/jupyter_play/py.typed
+src/jupyter_play.egg-info/PKG-INFO
+src/jupyter_play.egg-info/SOURCES.txt
+src/jupyter_play.egg-info/dependency_links.txt
+src/jupyter_play.egg-info/requires.txt
+src/jupyter_play.egg-info/top_level.txt

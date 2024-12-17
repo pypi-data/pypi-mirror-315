@@ -1,0 +1,2 @@
+ipython>=8.30.0
+setuptools>=75.6.0
