@@ -1,0 +1,9 @@
+setup.py
+project/__init__.py
+project/core.py
+project_test_lib_ciandt.egg-info/PKG-INFO
+project_test_lib_ciandt.egg-info/SOURCES.txt
+project_test_lib_ciandt.egg-info/dependency_links.txt
+project_test_lib_ciandt.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core.py
