@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: KennyPavan
+Version: 1.0.0
+Summary: Kenny Pavan: About, projects, and resume as a PyPi package.
+Home-page: https://github.com/kennypavan/kennypavan
+Author: Kenny Pavan
+Author-email: pavan@protonmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Because it was too easy to just make this a pdf. 
+Below is a simple package which has methods for displaying details about my experience, skills, hobbies, current projects, some inspirational quotes, and resume. 
+
+## Install
+```
+pip install kennypavan
+```
+
+## Usage
+```python
+from KennyPavan import KennyPavan
+
+#treating myself as an object
+kennypavan = KennyPavan()
+
+#about me
+kennypavan.about()
+
+#skillset
+kennypavan.skills()
+
+#experience
+kennypavan.experience()
+
+#education
+kennypavan.education()
+
+#show any publications
+kennypavan.publications()
+```
+
+<br />
+<br />
+
+<font size="18px">🤷</font><br />
+<i>There's also a few properties</i>
