@@ -1,0 +1,2 @@
+[tool.setuptools_scm]
+write_to = "mkdocs_drawio_converter/_version.py"
