@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: vuejspython
+Version: 1.0.4
+Summary: Vuejs runner, with filesystem, and allowing python extension (e.g., to leverage numpy)
+Home-page: https://github.com/twitwi/vuejs-python/
+Author: Rémi Emonet
+Author-email: remi+242-e2f8@heeere.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+
+
+If you're looking for "Vuejs-python that brings the concepts of vuejs to Python", see our V0 branch (and readme, and V0.* on pypi).
+
+The goal of vuejs-python (starting from V1) is to
+- easily run standalone Vue.js components / micro-apps,
+- give them access to the working directory,
+- allow (unsafe) extensions to be written in Python (including numpy, local resource access, etc)
+
+
+## Installation
+
+~~~
+pip install vuejspython
+~~~
+
+## Usage
+
+~~~
+vjspy [--trust-python] [--port=...] [--host=...] myfile.vue more arbitrary parameters
+~~~
+
+
+You can run the bundled tools using their `:` prefixed names instead of the vue file, for instance:
+
+~~~
+vjspy :create-demo-files demo
+vjspy :view-file demo/file1.txt
+vjspy :edit-file demo/file1.txt
+vjspy --trust-python :file-rotator demo/file*.txt
+vjspy :exam-toggle demo/exam/*
+~~~
+
+
