@@ -1,0 +1,13 @@
+decorator==4.0.2
+folium
+imageio
+librosa
+matplotlib
+moviepy==1.0.3
+numpy
+opencv-python
+pandas
+reverse-geocode
+
+[dev]
+pytest
