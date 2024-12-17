@@ -1,0 +1,14 @@
+name: condaenv
+
+channels:
+  - conda-forge
+
+dependencies:
+  - pip
+  - numpy>=2
+  - scipy
+  - superlu_dist
+  - hypre
+  - mumps-mpi
+  - DFO-LS
+  - mpmath
