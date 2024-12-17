@@ -1,0 +1,17 @@
+xaitk_jatic/__init__.py,sha256=rI1DupkIX1AtdQOcvpku2Hl1TOmASzRtNpAINHbLCeo,287
+xaitk_jatic/interop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xaitk_jatic/interop/image_classification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xaitk_jatic/interop/image_classification/model.py,sha256=krqqwJyjHfgj3vzs0iUUbZFB_WFmrkCuM7C4J6SMcpg,2154
+xaitk_jatic/interop/object_detection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xaitk_jatic/interop/object_detection/dataset.py,sha256=jVHRSu0jdiVEZYD2e2ruFJbpUwx9FLQULOnsZ_6MAR0,5645
+xaitk_jatic/interop/object_detection/model.py,sha256=IE-MFWrxwq9_3g2_-PZHYdCjcT3D3Cev9GF4yS96JCQ,3218
+xaitk_jatic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xaitk_jatic/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xaitk_jatic/utils/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xaitk_jatic/utils/bin/sal_on_coco_dets.py,sha256=6HKdorw3h6PUqtwUlTRYPMcWGmkjjmMx-9s-X2cxuQY,7112
+xaitk_jatic/utils/sal_on_dets.py,sha256=KTs30dzrIX90rYOtBjznM4dGlriMzq-y4p8Mp8BNJ5A,2357
+xaitk_jatic-0.4.3.dist-info/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+xaitk_jatic-0.4.3.dist-info/METADATA,sha256=lRmG3Ltu8_W5_fNl1mEIBkAhXixboEE0Pqfcx3fqA1k,5177
+xaitk_jatic-0.4.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+xaitk_jatic-0.4.3.dist-info/entry_points.txt,sha256=OfFoPDzlMQa33f9BzO-jm_tFlfpPhNu5wDV2LLMh4tA,92
+xaitk_jatic-0.4.3.dist-info/RECORD,,
