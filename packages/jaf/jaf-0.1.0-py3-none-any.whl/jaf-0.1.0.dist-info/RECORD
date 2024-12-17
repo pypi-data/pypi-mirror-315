@@ -1,0 +1,11 @@
+jaf/__init__.py,sha256=Sj-NInrzMoN_ngOlj_bvU31-5ihMc5VfSBR4eoczG_E,40
+jaf/jaf.py,sha256=79-XxYiR1Qd7HOJGL8JBVwoYoPUlTYwZOg1UYS99oys,1966
+jaf/jaf_eval.py,sha256=93Ha2-nHJad7ol93ipYQPKdSjxFH09v5qXdPxQMnHAk,5677
+jaf/utils.py,sha256=b6V17hcnkyrTnN1X5OZo_UaVy3YXHPlaonUpTah5ZVM,5357
+jaf/builtins/builtins.py,sha256=Ovy5FTxQrWL4KqE4kQMx85b--MGYUX_Ft18ws7ki4k8,1347
+jaf/dsl/__init__.py,sha256=4KzGN4MsvSGVI9O3-cON0RraD4gAZA8jXDqUD4W3cTo,36
+jaf/dsl/parse.py,sha256=drlFFgST_RWrnSyubZ5KTuefOb7dZ_Gd6WRwmzfUIY4,4331
+jaf-0.1.0.dist-info/METADATA,sha256=1qGZiVzBi-D6lP39c_0xNA9WOe5Mj5-Rl-qAWXbszNQ,8738
+jaf-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+jaf-0.1.0.dist-info/top_level.txt,sha256=Xu1RZbGaM4_yQX7bpalo881hg7N_dybaOW282F15ruE,4
+jaf-0.1.0.dist-info/RECORD,,
