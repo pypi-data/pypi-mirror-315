@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "kamu"
+version = "0.1.0"
+description = "Kamu decentralized data supply chain client library"
+readme = "README.md"
+authors = [{ name = "Kamu Data Inc.", email = "dev@kamu.dev" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = [
+    "kamu",
+    "opendatafabric",
+    "data",
+    "decentralized",
+    "web3",
+    "AI",
+    "ML",
+]
+dependencies = ["adbc_driver_manager", "adbc_driver_flightsql", "pyarrow"]
+requires-python = ">=3.9"
+
+
+[project.urls]
+Homepage = "https://github.com/kamu-data/kamu-client-python"
+
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "build",
+    "docker",
+    "flake8",
+    "isort",
+    "pandas",
+    "pip-tools",
+    "pylint",
+    "pytest",
+    "twine",
+]
+
+
+[tool.isort]
+profile = "black"
