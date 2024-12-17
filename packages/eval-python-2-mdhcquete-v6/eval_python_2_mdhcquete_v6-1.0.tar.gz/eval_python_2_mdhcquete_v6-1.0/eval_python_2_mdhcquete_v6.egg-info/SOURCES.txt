@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+eval_python_2_mdhcquete_v6/__init__.py
+eval_python_2_mdhcquete_v6/__main__.py
+eval_python_2_mdhcquete_v6/funciones.py
+eval_python_2_mdhcquete_v6/main.py
+eval_python_2_mdhcquete_v6.egg-info/PKG-INFO
+eval_python_2_mdhcquete_v6.egg-info/SOURCES.txt
+eval_python_2_mdhcquete_v6.egg-info/dependency_links.txt
+eval_python_2_mdhcquete_v6.egg-info/entry_points.txt
+eval_python_2_mdhcquete_v6.egg-info/requires.txt
+eval_python_2_mdhcquete_v6.egg-info/top_level.txt
