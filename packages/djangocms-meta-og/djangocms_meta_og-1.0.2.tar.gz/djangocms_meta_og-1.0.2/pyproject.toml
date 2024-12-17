@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+version = "1.0.2"
+name = "djangocms-meta-og"
+dependencies = [
+  "django-cms",
+  "django-meta-og ~= 1.0",
+]
+requires-python = ">=3.9"
+authors = [
+    {name = "Zdeněk Böhm", email = "zdenek.bohm@nic.cz"},
+]
+description = "DjangoCMS HTML Meta tags for OpenGraph."
+readme = "README.md"
+license = {text = "BSD License"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+
+    "License :: OSI Approved :: BSD License",
+
+    "Operating System :: OS Independent",
+
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+
+    "Framework :: Django CMS",
+    "Framework :: Django CMS :: 3.4",
+    "Framework :: Django CMS :: 4.1",
+
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+
+[project.urls]
+Homepage = "https://gitlab.nic.cz/djangocms-apps/djangocms-meta-og"
+Repository = "https://gitlab.nic.cz/djangocms-apps/djangocms-meta-og.git"
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+target-version = "py312"
+exclude = [
+  "migrations",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = false
+docstring-code-line-length = "dynamic"
