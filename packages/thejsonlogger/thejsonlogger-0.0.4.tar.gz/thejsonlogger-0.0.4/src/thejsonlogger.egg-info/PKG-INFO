@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: thejsonlogger
+Version: 0.0.4
+Summary: The JSON Logger
+Home-page: https://github.com/rueth-io/thejsonlogger
+Author: Aaron Rueth
+Author-email: Aaron Rueth <arueth@gmail.com>
+Project-URL: Homepage, https://github.com/rueth-io/thejsonlogger
+Project-URL: Issues, https://github.com/rueth-io/thejsonlogger/issues
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Logging
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# thejsonlogger
+
+## Build
+
+```
+pip install -U pip setuptools
+```
+
+```
+python setup.py sdist
+```
+
+```
+twine upload dist/*
+```
