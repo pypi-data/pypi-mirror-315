@@ -1,0 +1,14 @@
+/.tox
+/.vscode
+/build
+/dist
+*.egg-info
+*.pyc
+/doc/build
+.*_cache
+/uv.lock
+
+# coverage
+.coverage*
+coverage.xml
+/snapshot_report.html

@@ -1,0 +1,48 @@
+[project]
+name = "file-tree"
+version = "1.5.1"
+description = "Describe structure directory for visualisation and pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Michiel Cottaar", email = "michiel.cottaar@ndcn.ox.ac.uk" }
+]
+dependencies = [
+    "numpy",
+    "xarray",
+	"pandas",
+	"parse",
+	"rich",
+]
+license = {file = "LICENSE"}
+
+[project.urls]
+Homepage = "https://git.fmrib.ox.ac.uk/fsl/file-tree"
+Documentation = "https://open.win.ox.ac.uk/pages/fsl/file-tree"
+Repository = "https://git.fmrib.ox.ac.uk/fsl/file-tree"
+Issues = "https://git.fmrib.ox.ac.uk/fsl/file-tree/-/issues"
+Changelog = "https://git.fmrib.ox.ac.uk/fsl/file-tree/-/blob/main/CHANGELOG.md"
+
+[project.scripts]
+file-tree="file_tree.app:run"
+
+[project.optional-dependencies]
+app = ["textual"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipython",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest",
+    "sphinx",
+    "pytest-asyncio>=0.25.0",
+    "pytest-textual-snapshot>=1.0.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
