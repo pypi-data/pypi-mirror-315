@@ -1,0 +1,2 @@
+[console_scripts]
+python-pvm = check_versions:main
