@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tk-flow"
+dynamic = ["version"]
+requires-python = ">=3.6"
+authors = [
+  {name = "Alex Cecil", email = "ajcecil@iastate.edu"},
+]
+maintainers = [
+  {name = "Alex Cecil", email = "ajcecil@iastate.edu"}
+]
+description = "Using the tkinter UI library to build flowcharts."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["flowchart", "flow", "flowcharts", "charts"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python"
+]
+
+
+
+[project.urls]
+Repository = "https://github.com/ajcecil/tk_flow.git"
