@@ -1,0 +1,15 @@
+jupyterlab_cell_input_footer/__init__.py,sha256=9KT--2mX0qMJqm0AVxUUXG_nLGz4oUlU8bYodWhhsCM,614
+jupyterlab_cell_input_footer/_version.py,sha256=lFB9nR4WN0iXcp5UpfmTfw1Z2jWBDmClLEWF046NHmc,171
+jupyterlab_cell_input_footer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer/package.json,sha256=Dn7KP3A0numO-qXAookyq1wWGtVr3nYdhFFs5Yt-1cI,6201
+jupyterlab_cell_input_footer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer/schemas/jupyterlab-cell-input-footer/package.json.orig,sha256=Yrtk4jIGJvGOOK0Yg0DmmOVhbAKo1vrwJiouuOb0K80,6989
+jupyterlab_cell_input_footer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer/schemas/jupyterlab-cell-input-footer/plugin.json,sha256=51-tDR81bGg0_BU5rkC_UlvFCFZ9bpA1MpRZ1UH_bo8,209
+jupyterlab_cell_input_footer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer/static/434.15dbd57ab529e543a04e.js,sha256=FdvVerUp5UOgTirl5FxGU4QyqFGOIJyg2FREv_e2Rps,1226
+jupyterlab_cell_input_footer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer/static/728.5d75350c1312c507d03a.js,sha256=XXU1DBMSxQfQOp0mC45SdZA9nIDp0AdWQsMaVVtQCOY,4027
+jupyterlab_cell_input_footer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer/static/remoteEntry.ba439fcf4f1640d2b0a7.js,sha256=ukOfz08WQNKwpzTqOFAt8J2z1R__0r8uiqYQ7g2MskM,6806
+jupyterlab_cell_input_footer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer/static/style.js,sha256=Yvsm3H7RlAW8VCIZW_w4ff5kSjuUc5Quc966Zi_K9r8,171
+jupyterlab_cell_input_footer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+jupyterlab_cell_input_footer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer/install.json,sha256=aG8ni2w5VrKpGXs2NqGXk_259PX1Ox03_xl-XQFTFKo,217
+jupyterlab_cell_input_footer-0.1.1.dist-info/METADATA,sha256=jA4coDWGwcqO_f3M8fqpj4vZAs7tLE67J5uItps-t2I,3755
+jupyterlab_cell_input_footer-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyterlab_cell_input_footer-0.1.1.dist-info/licenses/LICENSE,sha256=OEG9RvhdHKGY1ZU37dk3Huhyy5kRtBvkJE5fLGSAU9U,1519
+jupyterlab_cell_input_footer-0.1.1.dist-info/RECORD,,
