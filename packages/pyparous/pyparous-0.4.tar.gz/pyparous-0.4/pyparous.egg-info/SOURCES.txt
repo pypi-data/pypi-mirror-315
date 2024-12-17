@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pyparous/__init__.py
+pyparous/main.py
+pyparous.egg-info/PKG-INFO
+pyparous.egg-info/SOURCES.txt
+pyparous.egg-info/dependency_links.txt
+pyparous.egg-info/top_level.txt
