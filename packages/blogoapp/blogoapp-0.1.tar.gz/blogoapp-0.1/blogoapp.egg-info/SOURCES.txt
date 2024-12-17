@@ -1,0 +1,7 @@
+README.md
+setup.py
+blogoapp.egg-info/PKG-INFO
+blogoapp.egg-info/SOURCES.txt
+blogoapp.egg-info/dependency_links.txt
+blogoapp.egg-info/requires.txt
+blogoapp.egg-info/top_level.txt
