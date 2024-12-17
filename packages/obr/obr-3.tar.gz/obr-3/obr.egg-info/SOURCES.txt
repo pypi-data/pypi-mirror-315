@@ -1,0 +1,10 @@
+README.rst
+pyproject.toml
+setup.py
+obr/__init__.py
+obr/client.py
+obr/command.py
+obr.egg-info/PKG-INFO
+obr.egg-info/SOURCES.txt
+obr.egg-info/dependency_links.txt
+obr.egg-info/top_level.txt
