@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: wsgicas
+Version: 0.1
+Summary: WSGI CAS (Central Authentication Service) Utilities
+Home-page: 
+Author: Matthew J Desmarais
+Author-email: matthew.desmarais@gmail.com
+License: MIT
+Keywords: cas wsgi
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: webob
