@@ -1,0 +1,13 @@
+README.md
+setup.py
+wikimuscle/__init__.py
+wikimuscle/apiwiki.py
+wikimuscle/categories_url.py
+wikimuscle/config.py
+wikimuscle/interfaces.py
+wikimuscle/services.py
+wikimuscle.egg-info/PKG-INFO
+wikimuscle.egg-info/SOURCES.txt
+wikimuscle.egg-info/dependency_links.txt
+wikimuscle.egg-info/requires.txt
+wikimuscle.egg-info/top_level.txt
