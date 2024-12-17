@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: init-llm
+Version: 0.0.1
+Summary: Init LLM
+Home-page: https://github.com/wangrenyuan/init-llm
+Author: G
+Author-email: G <wangrenyuan@outlook.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: langchain>=0.1.0
+Requires-Dist: openai
+Requires-Dist: langchain-openai
+Requires-Dist: langchain-community
+Requires-Dist: toml
+Requires-Dist: python-dotenv
+
+# Init LLM
+tool kit using langchain to initialize openai compatible LLMs and embeddings.
+
+## environment file
