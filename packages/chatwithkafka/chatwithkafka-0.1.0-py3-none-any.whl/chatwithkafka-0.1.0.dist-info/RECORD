@@ -1,0 +1,10 @@
+chatwithkafka/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatwithkafka/app.py,sha256=tYpwmGvZU4vqjy7S4ZUTS6PO-WKD_sQnIU82NfRP5eI,6039
+chatwithkafka/cli.py,sha256=sE4qDW0nG9xu5cIkqxUNWFHMDYKk3Ir4UTDUdMz2l-Y,1475
+chatwithkafka/key.py,sha256=8CugIw3f05LKqFI5r062V4QNgNLOlvz6PIQyYTWuY8E,516
+chatwithkafka-0.1.0.dist-info/LICENSE,sha256=vLbDY_VrZdK0gLue_Ml3m8ImGQVMBY8q-5VzDXTE5LY,1084
+chatwithkafka-0.1.0.dist-info/METADATA,sha256=gWx9IIlYrnnOU8WZHw4Zz7bjrrEEgyBaa2XyNWZaNck,3716
+chatwithkafka-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+chatwithkafka-0.1.0.dist-info/entry_points.txt,sha256=-Awx_q4u0hLP0eu807aUIvWvjOgiOQULBKWB_wXhWPo,105
+chatwithkafka-0.1.0.dist-info/top_level.txt,sha256=BoAJyjWKzInutwdBNt4re_1ByHBglTBP7OqDdwMzB6g,14
+chatwithkafka-0.1.0.dist-info/RECORD,,
