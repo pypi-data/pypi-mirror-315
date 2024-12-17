@@ -1,0 +1,7 @@
+tex_minify/__init__.py,sha256=HWkqckY_eXBL65M16fY-4sGLmBNVT2e3oVRSCAJV6bs,90
+tex_minify/cli.py,sha256=CxOp6kzVb89vJr8JdXmyimGQiZlBfbmTjS8tF1EUfJQ,1256
+tex_minify/processor.py,sha256=DrUXT6pULB22i_txk8_VKHxotC7VknD_N9nrhLXuw-w,2027
+tex_minify-0.1.0.dist-info/METADATA,sha256=9xPY292IiwTfwb_XFpzzq3aFIrFxGnPsTf1akTOMvS8,1962
+tex_minify-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+tex_minify-0.1.0.dist-info/entry_points.txt,sha256=_WG35qj3wMfHJb9y5dDUjrUfnhK_GEyMYT3jTLs_vYo,91
+tex_minify-0.1.0.dist-info/RECORD,,
