@@ -1,0 +1,12 @@
+celery
+cryptography
+django
+django-admin-extra-buttons
+django-constance
+django-countries
+django-picklefield
+PyJWT
+requests
+social-auth-app-django
+setuptools
+wheel

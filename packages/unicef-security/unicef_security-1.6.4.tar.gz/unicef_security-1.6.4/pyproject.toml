@@ -1,0 +1,58 @@
+[project]
+name = "unicef-security"
+version = "1.6.4"
+description = "Provides Basic UNICEF User model and integration with Azure"
+readme = "README.rst"
+license = {text = "Apache-2.0 OR MIT"}
+authors = [
+    { name = "UNICEF", email = "rapidpro@unicef.org" },
+]
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "celery",
+    "cryptography",
+    "django",
+    "django-admin-extra-buttons",
+    "django-constance",
+    "django-countries",
+    "django-picklefield",
+    "PyJWT",
+    "requests",
+    "social-auth-app-django",
+    "setuptools",
+    "wheel"
+]
+
+[tool.uv]
+dev-dependencies = [
+    "django_regex",
+    "django-webtest",
+    "factory-boy",
+    "flake8",
+    "httpretty",
+    "isort",
+    "mock",
+    "pytest",
+    "pytest-cov",
+    "pytest-django",
+    "pytest-echo",
+    "pytest-factoryboy",
+    "requests-mock",
+    "responses",
+    "tox",
+    "unittest2",
+    "vcrpy",
+]
+
+[project.urls]
+Homepage = "https://github.com/unicef/unicef-security"
