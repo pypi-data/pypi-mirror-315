@@ -1,0 +1,10 @@
+dearpygui/managers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dearpygui/managers/fonts/__init__.py,sha256=brtzXW1LbqXfdKL-BQtQ-JUL1AtECQWTG1i4dUgJSvE,79
+dearpygui/managers/fonts/font.py,sha256=_8zSgqwX2kKOt1dRWOa4FTZtSumicgAYYFHC4mAgrXc,5415
+dearpygui/managers/fonts/fonts.py,sha256=nUVq36a8Zqqt-ByeV1ZiRTYdomnmtMVoBgKdEr6N15U,2711
+dearpygui/managers/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dearpygui/managers/types.py,sha256=mgCto_JINkf8tSR6_M3-dq45sCeFVv7GO04TNODGz1o,1370
+dearpygui_managers-0.1.0.dist-info/LICENSE,sha256=FtiYQ2z71XROZUUT9qQsmtyITPbidgWmRTMA58Lptvg,1073
+dearpygui_managers-0.1.0.dist-info/METADATA,sha256=nHCoNaG2pp-s-JyeCYAwN9UdNR0JpBNS4FiJxF1prZc,667
+dearpygui_managers-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+dearpygui_managers-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dearpygui-managers
+Version: 0.1.0
+Summary: A collection of managers to simplify working with DearPyGUI.
+License: MIT
+Author: Romanin
+Author-email: 60302782+romanin-rf@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: dearpygui (>=2.0.0,<3.0.0)
+Requires-Dist: typing-extensions (>=4.12.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# dearpygui-managers
+
+A collection of managers to simplify working with DearPyGUI.
