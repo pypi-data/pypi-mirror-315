@@ -1,0 +1,4 @@
+[console_scripts]
+chatsh=chatsh:main
+chatsh-tui=chatsh.chatsh_textual:main
+
