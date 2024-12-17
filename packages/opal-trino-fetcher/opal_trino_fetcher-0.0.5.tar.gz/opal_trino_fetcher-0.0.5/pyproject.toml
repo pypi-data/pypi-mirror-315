@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=7.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'opal-trino-fetcher'
+authors = [
+    { name="Alon Nahmias", email="alon.alon.nahmias@gmail.com" },
+]
+description="An OPAL fetch provider to bring authorization state from Trino."
+keywords = [ "Open Policy Agent", "OPA", "OPAL", "Open Policy Administration Layer", "Trino"]
+requires-python = ">=3.10"
+dependencies = [
+    'opal-common>=0.1.11',
+    'aiotrino',
+    "pydantic",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Source" = "https://github.com/alonahmias/opal-trino-fetcher"
+"Bug Tracker" = "https://github.com/alonahmias/opal-trino-fetcher/issues"
+
+[tool.setuptools_scm]
