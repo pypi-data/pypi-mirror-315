@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+favicon.png
+setup.py
+zip.zip
+code_beautifyer.egg-info/PKG-INFO
+code_beautifyer.egg-info/SOURCES.txt
+code_beautifyer.egg-info/dependency_links.txt
+code_beautifyer.egg-info/not-zip-safe
+code_beautifyer.egg-info/top_level.txt
+resources/image1.png

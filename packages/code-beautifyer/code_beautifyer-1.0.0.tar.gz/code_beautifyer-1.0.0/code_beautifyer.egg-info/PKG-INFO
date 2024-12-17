@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: code-beautifyer
+Version: 1.0.0
+Author: None
+Author-email: 
+License: GPL-3
+Description-Content-Type: text/markdown
+
+# code-beautifyer
+
+**`code-beautifyer`** is a Python package designed to help developers clean up, format, and standardize their code. Whether you're working with Python, JavaScript, HTML, or other popular programming languages, this tool provides an easy way to make your code more readable and maintainable.
+
+---
+
+## Features
+
+- **Automatic Code Formatting**: Ensures your code adheres to best practices.
+- **Multi-Language Support**: Works with Python, JavaScript, HTML, and more.
+- **Customizable Rules**: Define your own formatting preferences.
+- **Error-Free Indentation**: Fixes inconsistent indentation and spacing.
+- **Lightweight and Fast**: Optimized for quick processing even for large codebases.
+
+---
+
+## Installation
+
+Install the package using `pip`:
+
+```bash
+pip install code-beautifyer
