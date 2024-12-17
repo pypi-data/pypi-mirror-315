@@ -1,0 +1,13 @@
+PEM4Fe/__init__.py,sha256=10_w7o2juYBrGMh32_KbveULW9jk2tejpyUAD-uC6PE,4
+PEM4Fe/config.py,sha256=5nHA2VKcAaZBslToucgo3HcGedS4XyHqBwzOQXpz3L0,2282
+PEM4Fe/data_processing.py,sha256=h46OXARisTh4zpbNH0catiIpwEI-Pl99kQDwC2ZGkbk,4095
+PEM4Fe/fitting.py,sha256=VZlP_DWni67uQ-n_Mlutsgdm-H46B4xxWQ67VfFMlZU,13433
+PEM4Fe/main.py,sha256=NA1SU7lXRewuDkrejmPwSIcumfaJi_YnnaFUbO-Aa6U,4437
+PEM4Fe/output.py,sha256=Pl7Ly07PbwKLIRDdO5DaSwVHpftG6ItpoMq0SxE_lUU,8135
+PEM4Fe/peak_detection.py,sha256=AfeSEMm9SeL_onqebZt7m47Hq8cWOL639IshkvM2IqQ,16308
+PEM4Fe-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+PEM4Fe-1.0.0.dist-info/METADATA,sha256=_BSB6yoP7bhLeIR0Xqb7yGW-TQjh5lt8R3KwbFqzyu0,1289
+PEM4Fe-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+PEM4Fe-1.0.0.dist-info/entry_points.txt,sha256=qFaUe8_dz2lHumBQXO8R-Gx4Fpc500lWqeTo9dSbdSQ,44
+PEM4Fe-1.0.0.dist-info/top_level.txt,sha256=NIXNdkhZM77UhTr1nK0XNwIm0hX1uQHPiAbwDA7LzVw,7
+PEM4Fe-1.0.0.dist-info/RECORD,,
