@@ -1,0 +1,2 @@
+[console_scripts]
+bumms = bumms.__main__:main

@@ -1,0 +1,16 @@
+README.md
+setup.py
+bumms/__init__.py
+bumms/__main__.py
+bumms/ascii.bumms
+bumms/core.py
+bumms/knall1.mp3
+bumms/knall2.mp3
+bumms/knall3.mp3
+bumms/txt.bumms
+bumms.egg-info/PKG-INFO
+bumms.egg-info/SOURCES.txt
+bumms.egg-info/dependency_links.txt
+bumms.egg-info/entry_points.txt
+bumms.egg-info/requires.txt
+bumms.egg-info/top_level.txt
