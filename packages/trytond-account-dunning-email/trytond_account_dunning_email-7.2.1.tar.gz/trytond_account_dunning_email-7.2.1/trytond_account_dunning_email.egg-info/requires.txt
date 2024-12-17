@@ -1,0 +1,8 @@
+python-sql
+trytond_account_dunning<7.3,>=7.2
+trytond_account_dunning_letter<7.3,>=7.2
+trytond_party<7.3,>=7.2
+trytond<7.3,>=7.2
+
+[test]
+proteus<7.3,>=7.2
