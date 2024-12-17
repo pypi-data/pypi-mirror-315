@@ -1,0 +1,13 @@
+pdstemplate/__init__.py,sha256=7S95AyUfHHNkHsl-RMMDQMX3enBC3B2d2VO3RuQTaXY,39207
+pdstemplate/_pdsblock.py,sha256=ozlhrEPhTBA9koc4s54PocaubispQD0zW3jAkF6pmx8,40089
+pdstemplate/_utils.py,sha256=utXlOUyer8UCoSp_iFm8LaIgX-gtoWhK4WuZ5Ghsc0w,6636
+pdstemplate/_version.py,sha256=o9XMlNC6GoiUn7mwoOOgJdijgp3B_2fLdgizcKs1i2o,411
+pdstemplate/asciitable.py,sha256=4QGC8bkPgNwoBlIRADi8AN3qRZW0RMtqXqxi84-eY5Q,23792
+pdstemplate/pds3table.py,sha256=NFn8-4qOZQk5rkV4GavRnhZYzUwRE1SUtMJBvpO-eQA,58065
+programs/tablelabel.py,sha256=I9DEKKT2mOoJlzZVPtkpUw3_-eXTIRUGf4QnkNQN1nY,8314
+rms_pdstemplate-2.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rms_pdstemplate-2.0.0.dist-info/METADATA,sha256=Kek0j9XkCl1n1EsukVS5_uT8uoVzP8j1FnlLrTaXG68,16545
+rms_pdstemplate-2.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+rms_pdstemplate-2.0.0.dist-info/entry_points.txt,sha256=wXf4z_pOpL169GeNytWQiBDPkXe9b_iWqcV9g_f8P58,56
+rms_pdstemplate-2.0.0.dist-info/top_level.txt,sha256=_5Wt6X053rvP7dYk9oVpBoD0oSc7cIolJQmp3B2y4eE,21
+rms_pdstemplate-2.0.0.dist-info/RECORD,,
