@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: netbox_cesnet_services_plugin
+Version: 1.1.5
+Summary: NetBox plugin for cesnet_services.
+Author: Jan Krupa
+License: MIT
+License-File: LICENSE
