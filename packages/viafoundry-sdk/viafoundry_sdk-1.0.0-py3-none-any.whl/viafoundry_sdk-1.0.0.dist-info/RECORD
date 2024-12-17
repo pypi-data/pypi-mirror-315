@@ -1,0 +1,11 @@
+viafoundry/__init__.py,sha256=hFDIpqVJQinXqRcYOKwUeD-niD6KUCXsqf2MIy_gMuA,122
+viafoundry/auth.py,sha256=wiRiwVfge7ezaPvn8T3g3ypTxIvBNzFoBsbyUm7w7MQ,2971
+viafoundry/client.py,sha256=vlRNQLNZD0W_ODLMF9HEzCaP_uFVsark7KMPedaGNPs,5334
+viafoundry/utils.py,sha256=1Gcbk_JTxcN6l1yPaL1Z74JJQY2D6gbJn1NGJp2M3IQ,75
+viafoundry/bin/__init__.py,sha256=rjtzg0138RUbtZ1ToGI-y7BOF7nqU5vUPpbT7nDAGIc,81
+viafoundry/bin/foundry.py,sha256=I5qq80EYSVQ7ZIsSb5jWd1h26bB4xGw0BIvKx-6PMZA,3989
+viafoundry_sdk-1.0.0.dist-info/METADATA,sha256=VtndtQGCWohOBuWoYZ-_P-boNbnaQmpwHfZMfMcX0uE,426
+viafoundry_sdk-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+viafoundry_sdk-1.0.0.dist-info/entry_points.txt,sha256=p9vnQbVJMNuYkoyZr7muBzlKHM8NHHbA6HMf5uxinnA,55
+viafoundry_sdk-1.0.0.dist-info/top_level.txt,sha256=dDbDTML06LDDf52nfL60wflSiqV7mBCbx9uRUrxLouI,11
+viafoundry_sdk-1.0.0.dist-info/RECORD,,
