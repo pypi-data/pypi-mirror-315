@@ -1,0 +1,6 @@
+radical.utils<1.100,>=1.90.0
+radical.gtod<1.100,>=1.90.0
+psij-python
+setproctitle
+requests
+dill
