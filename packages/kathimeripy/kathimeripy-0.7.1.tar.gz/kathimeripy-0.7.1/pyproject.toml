@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "kathimeripy"
+version = "0.7.1"
+description = "A package that uses you user name and password for Kathimerini.gr to generate an Epub and send it to your Amazon Kindle."
+authors = ["Kdra <drakopuloskostas+gh@gmail.com>"]
+readme = "README.md"
+package-mode = true
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: News/Diary"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.12.3"
+rss-parser = "^2.1.0"
+datetime = "^5.5"
+joblib = "^1.4.2"
+epub = "^0.5.2"
+pypub3 = "^2.0.7"
+typer = "^0.15.1"
+python-crontab = "^3.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
