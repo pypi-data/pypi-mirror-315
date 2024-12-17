@@ -1,0 +1,20 @@
+# rsaitehu-matplot3d/pyproject.toml
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rsaitehu"]
+namespaces = true
+
+[project]
+name = "rsaitehu-matplot3d"
+version = "0.0.1"
+description = "matplotlib utilities"
+dependencies = [
+  "numpy>=1.22.0",
+  "matplotlib>=3.5.3",
+  "rsaitehu-geometry>=0.0.1"
+]

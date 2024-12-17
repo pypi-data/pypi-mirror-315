@@ -1,0 +1,19 @@
+# rsaitehu-pointcloud/pyproject.toml
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rsaitehu"]
+namespaces = true
+
+[project]
+name = "rsaitehu-pointcloud"
+version = "0.0.1"
+description = "Pointcloud utilities"
+dependencies = [
+  "numpy>=1.22.0",
+  "open3d>=0.16.0"
+]

@@ -1,0 +1,21 @@
+# rsaitehu-procrustes/pyproject.toml
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rsaitehu"]
+namespaces = true
+
+[project]
+name = "rsaitehu-procrustes"
+version = "0.0.1"
+description = "procrustes utilities"
+dependencies = [
+  "numpy>=1.22.0",
+  "scikit-learn>=1.1.3",
+  "scipy==1.9.3"
+]
+
