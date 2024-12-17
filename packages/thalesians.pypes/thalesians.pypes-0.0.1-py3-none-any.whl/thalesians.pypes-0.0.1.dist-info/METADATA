@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: thalesians.pypes
+Version: 0.0.1
+Summary: A pype abstraction for interprocess communication (IPC) in Python and Jupyter
+Author-email: Paul Alexander Bilokon <paul@thalesians.com>
+Project-URL: Homepage, https://github.com/thalesians/pypes/
+Project-URL: Issues, https://github.com/thalesians/pypes/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: thalesians.adiutor>=0.0.3
+Requires-Dist: pyzmq>=22.3.0
+Requires-Dist: zmq
+
+# pypes
+A pype abstraction for interprocess communication (IPC) in Python and Jupyter
