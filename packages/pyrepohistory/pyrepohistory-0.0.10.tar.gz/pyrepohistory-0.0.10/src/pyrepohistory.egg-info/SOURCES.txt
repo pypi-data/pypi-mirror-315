@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/pyrepohistory/__init__.py
+src/pyrepohistory/main.py
+src/pyrepohistory.egg-info/PKG-INFO
+src/pyrepohistory.egg-info/SOURCES.txt
+src/pyrepohistory.egg-info/dependency_links.txt
+src/pyrepohistory.egg-info/top_level.txt
+src/pyrepohistory/lib/__init__.py
+src/pyrepohistory/lib/cloning.py
+src/pyrepohistory/lib/commit_analysis.py
+src/pyrepohistory/lib/primary_language.py
