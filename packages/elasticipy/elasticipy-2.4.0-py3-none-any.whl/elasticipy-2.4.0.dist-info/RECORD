@@ -1,0 +1,14 @@
+Elasticipy/CrystalSymmetries.py,sha256=DAX-XPgYqI2nFvf6anCVvZ5fLM0CNSDJ7r2h15l3Hoc,3958
+Elasticipy/FourthOrderTensor.py,sha256=ZepylBpy9113g1o7vDH79Gs2CFwCTf6-DRbx_xynQHk,49743
+Elasticipy/PoleFigure.py,sha256=G3Sz7ssX2KKY96g3XEvcaOYFmEat9JUCdb2A91XbA6w,3531
+Elasticipy/SecondOrderTensor.py,sha256=mS8fXCRVaw99utCCpta-yQG-SerBr_RGk77umb-S9E0,23421
+Elasticipy/SphericalFunction.py,sha256=m87g6TT8IvMBHM1ltaNfR3k1Mhwj2Jq0Ea2vxAm-lAI,33026
+Elasticipy/StressStrainTensors.py,sha256=1pliXrtVZpA1ch-Ks-A4iXyBRBuawXpSD4_sYmjA1KY,3764
+Elasticipy/ThermalExpansion.py,sha256=QClCATgpuA3xO8iaOEQreaALLGJNAkCK0e5wdn8fbp4,6282
+Elasticipy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Elasticipy/gui.py,sha256=vi4X3fASkgZCmAZQv-nAxz4RWbuaM-d7gRx-c2BFRLs,11227
+elasticipy-2.4.0.dist-info/LICENSE,sha256=qNthTMSjVkIDM1_BREgVFQHdn1wVNQi9pwWVfTIazMA,1074
+elasticipy-2.4.0.dist-info/METADATA,sha256=36FFs0ntYkQVofYAuaQxQOjgpsr57Hqd_dXoRjEF6MQ,2730
+elasticipy-2.4.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+elasticipy-2.4.0.dist-info/top_level.txt,sha256=k4zSQzJR5P4vzlHlhWUaxNgvgloq4KIp8oca2X8gQOw,11
+elasticipy-2.4.0.dist-info/RECORD,,
