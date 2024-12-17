@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+testXbsUiautomator2.egg-info/PKG-INFO
+testXbsUiautomator2.egg-info/SOURCES.txt
+testXbsUiautomator2.egg-info/dependency_links.txt
+testXbsUiautomator2.egg-info/requires.txt
+testXbsUiautomator2.egg-info/top_level.txt
