@@ -1,0 +1,3 @@
+[console_scripts]
+chatwithkafka = chatwithkafka.cli:cli
+chatwithkafka-keygen = chatwithkafka.key:key_cli
