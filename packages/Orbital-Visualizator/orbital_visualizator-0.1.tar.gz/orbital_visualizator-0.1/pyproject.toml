@@ -1,0 +1,16 @@
+[project]
+name = "Orbital_Visualizator"
+version = "0.01"
+authors = [{name = "Baptiste LEBON", email = "Baptiste.LEBON@estaca.eu"}]
+description = "Gives a 3D representation of a given orbit from TLE (Two Lines Elements) or directly from Keplerian paramaters."
+readme="README.md"
+dependencies=[
+    "numpy",
+    "matplotlib",
+    "skyfield",
+    "importlib-metadata ; python_version<='3.10'",
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
