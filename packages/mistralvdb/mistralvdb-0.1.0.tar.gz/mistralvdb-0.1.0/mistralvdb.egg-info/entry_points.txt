@@ -1,0 +1,2 @@
+[console_scripts]
+mistralvdb-server = mistralvdb.cli:run_server
