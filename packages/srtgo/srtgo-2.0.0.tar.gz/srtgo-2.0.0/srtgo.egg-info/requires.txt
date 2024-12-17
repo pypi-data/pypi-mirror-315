@@ -1,0 +1,6 @@
+prompt_toolkit>=3
+inquirer
+python-telegram-bot
+termcolor
+click
+keyring
