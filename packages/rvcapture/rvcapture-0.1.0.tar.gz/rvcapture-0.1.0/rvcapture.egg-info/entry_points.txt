@@ -1,0 +1,2 @@
+[console_scripts]
+rvcapture = RVCapture.main:app

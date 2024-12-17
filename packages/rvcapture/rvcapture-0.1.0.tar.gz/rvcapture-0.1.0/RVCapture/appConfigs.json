@@ -1,0 +1,15 @@
+{
+    "appConfig": {
+        "appName": "Roojh Capture CLI Tool",
+        "shortName": "rvct",
+        "appVersion": "0.1.0",
+        "author": "Roojh Healthcare",
+        "description": "A CLI tool to manage your medical devices"
+    },
+    "dockerConfig": {
+        "aws_account_id": "147997154696",
+        "repository_name": "greengrass-docker-rpi",
+        "image_tag": "latest",
+        "aws_region": "us-east-1"
+    }
+}
