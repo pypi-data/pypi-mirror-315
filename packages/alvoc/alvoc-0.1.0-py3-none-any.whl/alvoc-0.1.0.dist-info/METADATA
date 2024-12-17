@@ -1,0 +1,74 @@
+Metadata-Version: 2.4
+Name: alvoc
+Version: 0.1.0
+Author-email: mshunjan <manjothunjan@gmail.com>
+License-File: LICENSE
+Requires-Python: <3.13,>=3.11
+Requires-Dist: biopython<2.0,>=1.84
+Requires-Dist: matplotlib<4.0.0,>=3.9.0
+Requires-Dist: numpy<3.0.0,>=2.0.0
+Requires-Dist: ortools<10.0.0,>=9.10.4067
+Requires-Dist: pysam<1.0.0,>=0.22.1
+Requires-Dist: scikit-learn<2.0.0,>=1.5.1
+Requires-Dist: seaborn<1.0.0,>=0.13.2
+Requires-Dist: typer<1.0.0,>=0.12.3
+Description-Content-Type: text/markdown
+
+
+<div style="display: flex; justify-content: center; align-items: center; text-align: center; flex-direction: column;">
+  <div style="display: flex; align-items: center;">
+    <img src="https://raw.githubusercontent.com/alvoc/alvoc/main/docs/assets/icon.svg" alt="Logo" width="200" height="auto">
+    <span style="font-size: 100px; color: #4e8ada;"> Alvoc </span>
+  </div>
+
+  <p><em>Abundance learning for variants of concern</em></p>
+
+  <div style="text-align: center;">
+    <p>
+      <a href="https://github.com/alvoc/alvoc/issues" target="_blank">Report Bug</a>
+      |
+      <a href="https://github.com/alvoc/alvoc/issues" target="_blank">Request Feature</a>
+    </p>
+    <p>
+      <a href="https://alvoc.github.io" target="_blank"> Documentation </a>
+    </p>
+  </div> 
+</div>
+
+---
+
+## Overview
+
+Alvoc is used for estimating the abundace of variants of concern from wastewater sequencing data.
+
+It can be used for:
+
+* Converting nucleotide and amino acid mutations for a particular virus
+* Determining the frequency of mutations of interest in BAM files
+* Plotting the depth for each ARTIC amplicon
+* Comparing amplicon GC content with its read depth (as a measure of degredation)
+
+## Installation
+
+
+### With Pip
+
+Pip is the default package installer for Python.
+
+1. Install [Python](https://www.python.org/downloads/). We recommend using [pyenv](https://github.com/pyenv/pyenv) for python version management.
+
+2. Install it directly from source (main branch).
+
+<!-- termynal -->
+```console
+$ pip install git+https://github.com/alvoc/alvoc.git@main
+---> 100%
+Done!
+```
+
+## Usage/Examples
+ 
+[TBD]
+
+# License
+This project is licensed under the terms of the MIT license.
