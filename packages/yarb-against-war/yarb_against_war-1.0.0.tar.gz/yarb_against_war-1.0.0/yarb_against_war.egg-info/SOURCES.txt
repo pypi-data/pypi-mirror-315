@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+yarb.py
+yarb_against_war.egg-info/PKG-INFO
+yarb_against_war.egg-info/SOURCES.txt
+yarb_against_war.egg-info/dependency_links.txt
+yarb_against_war.egg-info/entry_points.txt
+yarb_against_war.egg-info/requires.txt
+yarb_against_war.egg-info/top_level.txt
