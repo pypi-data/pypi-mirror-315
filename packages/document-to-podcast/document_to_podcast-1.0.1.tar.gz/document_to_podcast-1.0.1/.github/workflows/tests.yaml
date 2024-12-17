@@ -1,0 +1,44 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'tests/**'
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'tests/**'
+  workflow_dispatch:
+
+jobs:
+  run-linter:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: "pip"
+
+      - name: Install test dependencies
+        run: pip install -e '.[tests]'
+
+      - name: Install parler dependency
+        run: pip install -e '.[parler]'
+
+      - name: Run Unit Tests
+        run: pytest -v tests/unit
+
+      - name: Run Integration Tests
+        run: pytest -v tests/integration
+
+      - name: Run E2E tests
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        run: pytest -v tests/e2e
