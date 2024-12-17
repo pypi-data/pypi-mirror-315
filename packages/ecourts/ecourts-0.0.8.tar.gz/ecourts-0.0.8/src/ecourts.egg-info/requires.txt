@@ -1,0 +1,16 @@
+requests~=2.32
+beautifulsoup4~=4.12
+opencv-python~=4.10.0
+click~=8.1
+tabulate~=0.9
+tqdm~=4.67
+
+[docs]
+pdoc3~=0.11
+
+[test]
+pytest~=8.3
+pytest-cov<7,>=5
+PyYAML~=6.0
+pytest-recording~=0.13
+wat-inspector~=0.3
