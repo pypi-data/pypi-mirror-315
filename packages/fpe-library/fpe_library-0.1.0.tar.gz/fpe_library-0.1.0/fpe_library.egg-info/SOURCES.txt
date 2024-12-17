@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fpe/__init__.py
+fpe/fpe.py
+fpe_library.egg-info/PKG-INFO
+fpe_library.egg-info/SOURCES.txt
+fpe_library.egg-info/dependency_links.txt
+fpe_library.egg-info/requires.txt
+fpe_library.egg-info/top_level.txt
