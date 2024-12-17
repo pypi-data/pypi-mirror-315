@@ -1,0 +1,8 @@
+pytest_selfie/SelfieSettingsAPI.py,sha256=ek2Lg_q78arZgY4wIetqrjB2R4RZjmgV5gwcMPwYjt4,1673
+pytest_selfie/__init__.py,sha256=S5E2wXd6GUH7Gd4zfyuXoWu5VWDbvBYja_FuhKFniGY,127
+pytest_selfie/plugin.py,sha256=YaMzrNIpWo-86iK_pZtjwWHhVGBAu1vxNNv8lMhGGTI,18411
+pytest_selfie-1.0.0.dist-info/METADATA,sha256=yE7dma2eNEj0y3nN3BnXuVp8tuV-Og1sy-mQ6DqhZXA,576
+pytest_selfie-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pytest_selfie-1.0.0.dist-info/entry_points.txt,sha256=5D0L7Yd2lBaJ_DeOJxPgEitOFLfU-4XEaRxASsnAmRE,48
+pytest_selfie-1.0.0.dist-info/top_level.txt,sha256=LF0Cpz5j7sc4l3F56eDjwXlMMf4CtfusQOwcvYf6p6E,14
+pytest_selfie-1.0.0.dist-info/RECORD,,
