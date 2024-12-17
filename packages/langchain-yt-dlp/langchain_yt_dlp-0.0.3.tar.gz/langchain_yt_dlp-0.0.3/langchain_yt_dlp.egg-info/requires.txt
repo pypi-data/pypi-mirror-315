@@ -1,0 +1,3 @@
+yt-dlp
+langchain
+youtube-transcript-api
