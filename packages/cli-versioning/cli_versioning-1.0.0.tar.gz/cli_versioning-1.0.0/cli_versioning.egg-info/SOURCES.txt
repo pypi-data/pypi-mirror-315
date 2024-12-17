@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+cli_versioning.egg-info/PKG-INFO
+cli_versioning.egg-info/SOURCES.txt
+cli_versioning.egg-info/dependency_links.txt
+cli_versioning.egg-info/entry_points.txt
+cli_versioning.egg-info/requires.txt
+cli_versioning.egg-info/top_level.txt
+version_system/__init__.py
+version_system/__main__.py
+version_system/version_system.py
