@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: huggingface_nas
+Version: 0.0.1
+Summary: Using NAS such as huggingface hub
+Home-page: https://github.com/tony9402/huggingface_nas
+Author: tony9402
+Author-email: tony9402@naver.com
+License: Apache 2.0 License
+Keywords: huggingface nas
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm>=4.27
+Requires-Dist: datasets>=3.1.0
+Requires-Dist: requests
