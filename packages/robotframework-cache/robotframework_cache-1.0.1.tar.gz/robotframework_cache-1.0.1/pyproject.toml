@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "robotframework-cache"
+version = "1.0.1"
+description = "Robot Framework libary for caching values across tests and test runs"
+authors = ["Sander van Beek <lakitna@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "CacheLibrary", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+robotframework = ">=5.0.1"
+robotframework-pabot = ">2"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+robotframework-faker = "^5.0.0"
+setuptools = "^75.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
