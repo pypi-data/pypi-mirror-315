@@ -1,0 +1,16 @@
+*.pyc
+*.pyo
+*.egg-info
+.eggs/*
+
+/build
+/dist
+/doc
+
+test.py
+
+/test/.env
+
+.venv
+.idea
+.tox
