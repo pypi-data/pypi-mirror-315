@@ -1,0 +1,15 @@
+airbite/__init__.cp311-win_amd64.pyd,sha256=Vm-K1ZEfbhvNLbzwohThfHgo8M9g9SFHZANSw-U5gu0,34304
+airbite/connectors.cp311-win_amd64.pyd,sha256=fbyYtMk95WX-fw6AQrRwW6nLcFirYzasgFZ0kvhXwnM,90112
+airbite/hacks.cp311-win_amd64.pyd,sha256=6i1wP-PfjIRpRpGa6EDw1ill7e7KcoYk5EUFHIj0hXA,82432
+airbite/model_generator.cp311-win_amd64.pyd,sha256=eJULlFAeSH6UZ6EWvPu327j_iPX3d1CdTUqsQUdcmGU,114688
+airbite/util.cp311-win_amd64.pyd,sha256=9ccK-wUw4tE1zRGHTxDxtk7za9IBhh-djDu0nquaJVI,69632
+airbite/connector_configs/__init__.cp311-win_amd64.pyd,sha256=T38QAKxvt9wOkygtF8OMdTFjOXHcOAdJiSDiDm5y8xs,27136
+airbite/connector_configs/model/__init__.cp311-win_amd64.pyd,sha256=9jffXNB7-FBk7a0eKm5BKbuARftNTfrjlsQNE6zuVuQ,19456
+airbite/connector_configs/model/destination_csv__1_0_0.cp311-win_amd64.pyd,sha256=H2QRILHtnVA5yNmJ63ghNMyk4YsHQa8G9mnxbYwMsK4,36864
+airbite/connector_configs/model/destination_sftp_json__0_1_0.cp311-win_amd64.pyd,sha256=2ZVHvV9qfi6rnbc6ZO6MV-1ZpEgwtzE0qdauDd94YTc,33280
+airbite/connector_configs/model/source_file__0_5_15.cp311-win_amd64.pyd,sha256=E8dsCkh2hpb4wRq-jEmAVl0s1LQgRVmI41_7YZF1Cnw,57856
+airbite/connector_configs/model/source_file__0_5_16.cp311-win_amd64.pyd,sha256=dNVJr9V5cMMudlV8HnQCob3SQSAKtm-fx92e9YHrfCM,57856
+airbite-0.1.10.dist-info/METADATA,sha256=sRt0PwlOqNQRTQV7---2kEyctAVFIeYXMmieXZiGD7M,3934
+airbite-0.1.10.dist-info/WHEEL,sha256=nkBcd8Ko0v5sEcSagm2-x_RVrb8gBSkTa8VFFZ0Mr1o,101
+airbite-0.1.10.dist-info/top_level.txt,sha256=4NwLAEo7MsrixZH4EubUdKdxJRj7PYJwzsExvnvg2gU,8
+airbite-0.1.10.dist-info/RECORD,,
