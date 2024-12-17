@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: tamandua
+Version: 0.0.2
+Summary: A tiny web scrapers collection.
+Project-URL: Homepage, https://gitlab.com/andresmrm/tamandua
+Project-URL: Issues, https://gitlab.com/andresmrm/tamandua/issues
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: pyrfc6266
+Requires-Dist: python-slugify
+Requires-Dist: requests
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# Tamandua
+
+Assim como o bicho "aspira" formigas, estes códigos devem "aspirar" coisas da web.
+
+## Instalar
+
+Por enquanto ainda não consegui que liberem o nome `tamandua` no PyPI principal, então precisa usar o de teste:
+
+    pip install -i https://test.pypi.org/simple/ tamandua
+
+Para atualizar:
+
+    pip install --upgrade -i https://test.pypi.org/simple/ tamandua
+
+## Rodar
+
+```Python
+from tamandua import Scraper
+Scraper().deep_process_url('https://example.com/subfolder')
+```
+
+## PyPI
+
+```
+    python3 -m build
+    python3 -m twine upload dist/*
+```
