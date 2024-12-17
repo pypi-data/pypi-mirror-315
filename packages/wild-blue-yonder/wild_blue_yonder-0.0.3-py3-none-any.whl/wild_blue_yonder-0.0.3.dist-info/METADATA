@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: wild-blue-yonder
+Version: 0.0.3
+Summary: Language Models helping you make your Bluesky(r) environment less wild.
+Author-email: Alexander Fedotov <alex.fedotov@aol.com>
+Project-URL: Homepage, https://github.com/wild-blue-yonder/wild-blue-yonder
+Project-URL: Bug Tracker, https://github.com/wild-blue-yonder/wild-blue-yonder/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai>=1.57.4
+Requires-Dist: PyYAML>=6.0.2
+Requires-Dist: blue-yonder>=0.0.24
+
+# Wild Blue Yonder
+Package Name
+<pre>
+  pip install wild-blue-yonder
+</pre>
+Then:
+```Python
+  # Python
+  import wild_blue_yonder as wby
+```
