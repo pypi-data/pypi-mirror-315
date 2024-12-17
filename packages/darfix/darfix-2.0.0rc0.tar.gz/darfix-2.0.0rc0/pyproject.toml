@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=46.4", "wheel", "numpy"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+# consider_namespace_packages = true  # for pytest>=8.1
+addopts = "--import-mode=importlib" # for all pytest versions, pytest-cov needs `pip install -e .`
+
+[tool.bumpversion]
+current_version = "2.0.0rc0"
+parse = """(?x)
+    (?P<major>0|[1-9]\\d*)\\.
+    (?P<minor>0|[1-9]\\d*)\\.
+    (?P<patch>0|[1-9]\\d*)
+    (?:
+        (?P<pre_l>[a-zA-Z-]+)         # pre-release label
+        (?P<pre_n>0|[1-9]\\d*)        # pre-release version number
+    )?                                # pre-release section is optional
+"""
+serialize = ["{major}.{minor}.{patch}{pre_l}{pre_n}", "{major}.{minor}.{patch}"]
+tag = true
+tag_name = "v{new_version}"
+tag_message = "Bump from {current_version} to {new_version}"
+commit = true
+message = "Bump from {current_version} to {new_version}"
+
+[tool.bumpversion.parts.pre_l]
+values = ["dev", "rc"]
+
+[[tool.bumpversion.files]]
+filename = 'src/darfix/_version.py'
