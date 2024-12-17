@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+pyproject.toml
+.github/workflows/OnRelease.yml
+PPManager.egg-info/PKG-INFO
+PPManager.egg-info/SOURCES.txt
+PPManager.egg-info/dependency_links.txt
+PPManager.egg-info/entry_points.txt
+PPManager.egg-info/requires.txt
+PPManager.egg-info/top_level.txt
+PackageManager/__main__.py
+PackageManager/config_file.py
+PackageManager/main.py

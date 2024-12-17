@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: PPManager
+Version: 0.1.2
+Requires-Python: >=3.12
+License-File: LICENSE
+Requires-Dist: tomli-w==1.1.0
+Requires-Dist: virtualenv==20.28.0
