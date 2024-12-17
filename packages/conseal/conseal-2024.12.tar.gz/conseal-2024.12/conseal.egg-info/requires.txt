@@ -1,0 +1,13 @@
+numpy
+jpeglib>=1.0.0
+scipy
+numba
+setuptools
+
+[deploy]
+
+[dev]
+flake8
+parameterized
+pillow
+pandas
