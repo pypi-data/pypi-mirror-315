@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=l9iMtar97ATchrt9gVh2ilqBiPHEGN1U2K6X7CaBftc,805
+README.md,sha256=fDkKW_e6TwR6dxI55QHf4dt9INtzDGx1LpkLAJOGhZ0,6365
+speedy_openai/__init__.py,sha256=qrxi3D5rNmdp-MkSDuN_XZRIBhXyJRNqpxn9O_gqWus,354
+speedy_openai/client.py,sha256=aT02rX19zToSy0aHVTwJnrUuRO3IXUAXWuxE06Fgaqs,5174
+speedy_openai/configs.py,sha256=mSCYCD4LxfK2cfJmLunU2UjX-7WrCOzPH8KJtPpOSlM,1597
+speedy_openai/rate_limiter.py,sha256=ko7_mORJqQ-g5KAiKHsBRtXCvyF5TYySZnrQGj0VERg,5067
+speedy_openai-0.2.0.dist-info/LICENSE,sha256=hsagMSfH_TL_MHX7Aq6jXVQSXZT4Rvew0OE0eF6u2zk,1064
+speedy_openai-0.2.0.dist-info/METADATA,sha256=UQZZvxafIsdqp2rB5We-5KeAWvwp4HtCYVPyyVOOhxc,7647
+speedy_openai-0.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+speedy_openai-0.2.0.dist-info/RECORD,,
