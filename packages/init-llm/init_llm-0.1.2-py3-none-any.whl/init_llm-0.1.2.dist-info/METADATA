@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: init-llm
+Version: 0.1.2
+Summary: A toolkit for initializing LLMs and embeddings with multiple providers
+Home-page: https://github.com/wangrenyuan/init-llm
+Author: G
+Author-email: G <wangrenyuan@outlook.com>
+License: MIT
+Project-URL: Homepage, https://github.com/bluemeat0724/init_llm
+Project-URL: Documentation, https://github.com/bluemeat0724/init_llm#readme
+Project-URL: Repository, https://github.com/bluemeat0724/init_llm.git
+Keywords: llm,ai,langchain,openai,embeddings
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: langchain>=0.1.0
+Requires-Dist: openai>=1.0.0
+Requires-Dist: langchain-openai>=0.0.5
+Requires-Dist: langchain-community>=0.0.20
+Requires-Dist: toml>=0.10.2
+Requires-Dist: python-dotenv>=1.0.0
+
+# Init LLM
+
+A toolkit for initializing LLMs(Langchain) and embeddings with multiple providers.
+All models are openai compatible.
+
+## Installation
+
+```bash
+pip install init-llm
+```
+
+## Quick Start
+
+```python
+from init_llm import ChatLLM, EmbeddingLLM
+
+# Initialize chat model
+llm = ChatLLM('openai')  # or 'azure', 'anthropic', etc.
+response = llm.invoke('Hello!')
+
+# Initialize embeddings
+embeddings = EmbeddingLLM('text-embedding-3-small')
+vector = embeddings.embed_query('Hello world')
+```
+
+## Configuration
+
+The package uses two configuration files:
+- `model_providers.toml`: Model configurations and provider settings
+- `.env`: API keys and other sensitive information
+
+### Auto Configuration
+On first use, the package will:
+1. Check for configuration files in the working directory
+2. If not found, create them automatically with default settings
+3. Load environment variables from `.env`
+
+### Custom Configuration
+You can specify custom configuration location and env file name:
+
+```python
+llm = ChatLLM(
+    'openai',
+    config_dir='/path/to/config',
+    env_file='custom.env'
+)
+```
+
+## See Supported Providers in model_providers.toml
+
+
+## License
+
+[MIT](LICENSE)
+
