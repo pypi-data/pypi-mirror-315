@@ -1,0 +1,3 @@
+[console_scripts]
+bumms = bumms.__main__:main
+bumms-hd = bumms.__main__:bumms_hd
