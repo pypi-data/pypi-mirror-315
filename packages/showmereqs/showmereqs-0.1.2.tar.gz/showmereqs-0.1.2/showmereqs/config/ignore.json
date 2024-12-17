@@ -1,0 +1,11 @@
+{
+    "ignore_dirs": [
+        "venv",
+        ".venv",
+        ".git",
+        ".idea",
+        "__pycache__",
+        "dist",
+        "build"
+    ]
+}
