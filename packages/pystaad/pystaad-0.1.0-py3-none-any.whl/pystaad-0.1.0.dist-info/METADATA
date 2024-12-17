@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pystaad
+Version: 0.1.0
+Summary: A Python package to simplify STAAD.Pro automation
+Home-page: https://github.com/unrealweb01/pystaad
+Author: Ragul
+Author-email: testing010101@proton.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: pywin32 >=304
+
+# Pystaad
+
+Pystaad is a Python package that leverages the OpenSTAAD API to automate STAAD.Pro operations. It enhances the capabilities of STAAD.Pro by adding advanced tools and inbuilt features to streamline structural analysis tasks.
+
+---
+
+## Features
+
+- **Automates STAAD.Pro operations** using the OpenSTAAD API.
+- Includes inbuilt tools for:
+  - Generating and applying loads.
+  - Modeling tapered sections.
+  - Analyzing structures programmatically.
+- Simplifies interaction with STAAD.Pro using Python.
+- Extends the functionality of OpenSTAAD with advanced features.
+
+---
+
+## Installation
+
+Install the package using `pip`:
+
+```bash
+pip install pystaad
