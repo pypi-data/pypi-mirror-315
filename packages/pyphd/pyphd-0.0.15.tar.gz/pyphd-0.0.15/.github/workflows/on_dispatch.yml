@@ -1,0 +1,41 @@
+# Workflow that triggers when (empty) commits are pushed with message
+
+name: Increment minor/major workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      type:
+        description: "Version bump type"
+        type: choice
+        options: ['major', 'minor', 'micro']
+        default: 'minor'
+        
+
+jobs:
+  context-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+  # version-bump:
+  #   name: Version bump ⬆️
+  #   permissions:
+  #     contents: write
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #       with:
+  #         ref: ${{ github.base_ref }}
+  #         fetch-depth: 0
+  #         token: ${{ secrets.READ_WRITE_PAT }}
+  #     - name: Hatch version bump ⬆️
+  #       uses: phdenzel/hatch-bump@v1.1.0-dev3
+  #       with:
+  #         type: ${{ inputs.type }}
+  #         ref: ${{ github.base_ref }}
+  #         github-token: ${{ secrets.READ_WRITE_PAT }}
+  #         tag: true
+  #         force: true

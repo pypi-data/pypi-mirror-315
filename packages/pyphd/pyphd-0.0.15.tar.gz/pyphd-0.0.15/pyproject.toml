@@ -1,0 +1,84 @@
+[project]
+name = "pyphd"
+dynamic = ["version"]
+license = { file = "LICENSE" }
+authors = [
+  { name = "Philipp Denzel", email = "phdenzel@gmail.com" },
+]
+maintainers = [
+  { name = "Philipp Denzel", email = "phdenzel@gmail.com" },
+]
+description = "Create an opinionated python project structure."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+  "GitPython",
+  "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = ["ruff", "pre-commit", "pytest", "pytest-cov"]
+
+[project.scripts]
+pyphd = "pyphd.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/phdenzel/pyphd.git"
+Repository = "https://github.com/phdenzel/pyphd.git"
+Documentation = "https://github.com/phdenzel/pyphd#readme"
+Issues =  "https://github.com/phdenzel/pyphd/issues"
+Source =  "https://github.com/phdenzel/pyphd"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/pyphd/__about__.py"
+
+[tool.hatch.envs.test]
+dependencies = [
+  "pytest",
+  "pytest-cov"
+]
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib --cov=src/pyphd --cov-report html"
+
+[tool.coverage.run]
+source_pkgs = ["pyphd", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/pyphd/__about__.py",
+]
+
+[tool.coverage.paths]
+hatchtest = ["src/pyphd", "*/pyphd/src/pyphd"]
+tests = ["tests", "*/pyphd/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.ruff.lint]
+extend-select = [
+    "UP", # pyupgrade
+    "D",  # pydocstyle
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
