@@ -1,0 +1,49 @@
+Zhouhan Lin,co-authored,A structured self-attentive sentence embedding
+Minwei Feng,co-authored,A structured self-attentive sentence embedding
+Cicero Nogueira dos Santos,co-authored,A structured self-attentive sentence embedding
+Mo Yu,co-authored,A structured self-attentive sentence embedding
+Bing Xiang,co-authored,A structured self-attentive sentence embedding
+Bowen Zhou,co-authored,A structured self-attentive sentence embedding
+Yoshua Bengio,co-authored,A structured self-attentive sentence embedding
+Minh-Thang Luong,co-authored,Multi-task sequence to sequence learning
+Quoc V. Le,co-authored,Multi-task sequence to sequence learning
+Ilya Sutskever,co-authored,Multi-task sequence to sequence learning
+Oriol Vinyals,co-authored,Multi-task sequence to sequence learning
+Lukasz Kaiser,co-authored,Multi-task sequence to sequence learning
+Minh-Thang Luong,co-authored,Effective approaches to attention-based neural machine translation
+Hieu Pham,co-authored,Effective approaches to attention-based neural machine translation
+Christopher D Manning,co-authored,Effective approaches to attention-based neural machine translation
+Mitchell P Marcus,co-authored,Building a large annotated corpus of English: The Penn Treebank
+Mary Ann Marcinkiewicz,co-authored,Building a large annotated corpus of English: The Penn Treebank
+Beatrice Santorini,co-authored,Building a large annotated corpus of English: The Penn Treebank
+David McClosky,co-authored,Effective self-training for parsing
+Eugene Charniak,co-authored,Effective self-training for parsing
+Mark Johnson,co-authored,Effective self-training for parsing
+Ankur Parikh,co-authored,A decomposable attention model
+Oscar Täckström,co-authored,A decomposable attention model
+Dipanjan Das,co-authored,A decomposable attention model
+Jakob Uszkoreit,co-authored,A decomposable attention model
+Romain Paulus,co-authored,A deep reinforced model for abstractive summarization
+Caiming Xiong,co-authored,A deep reinforced model for abstractive summarization
+Richard Socher,co-authored,A deep reinforced model for abstractive summarization
+Slav Petrov,co-authored,Learning accurate; compact; and interpretable tree annotation
+Leon Barrett,co-authored,Learning accurate; compact; and interpretable tree annotation
+Romain Thibaux,co-authored,Learning accurate; compact; and interpretable tree annotation
+Dan Klein,co-authored,Learning accurate; compact; and interpretable tree annotation
+Ofir Press,co-authored,Using the output embedding to improve language models
+Lior Wolf,co-authored,Using the output embedding to improve language models
+Rico Sennrich,co-authored,Neural machine translation of rare words with subword units
+Barry Haddow,co-authored,Neural machine translation of rare words with subword units
+Alexandra Birch,co-authored,Neural machine translation of rare words with subword units
+Noam Shazeer,co-authored,Outrageously large neural networks: The sparsely-gated mixture-of-experts layer
+Azalia Mirhoseini,co-authored,Outrageously large neural networks: The sparsely-gated mixture-of-experts layer
+Krzysztof Maziarz,co-authored,Outrageously large neural networks: The sparsely-gated mixture-of-experts layer
+Andy Davis,co-authored,Outrageously large neural networks: The sparsely-gated mixture-of-experts layer
+Quoc Le,co-authored,Outrageously large neural networks: The sparsely-gated mixture-of-experts layer
+Geoffrey Hinton,co-authored,Outrageously large neural networks: The sparsely-gated mixture-of-experts layer
+Jeff Dean,co-authored,Outrageously large neural networks: The sparsely-gated mixture-of-experts layer
+Nitish Srivastava,co-authored,Dropout: a simple way to prevent neural networks from overfitting
+Geoffrey E Hinton,co-authored,Dropout: a simple way to prevent neural networks from overfitting
+Alex Krizhevsky,co-authored,Dropout: a simple way to prevent neural networks from overfitting
+Ilya Sutskever,co-authored,Dropout: a simple way to prevent neural networks from overfitting
+Ruslan Salakhutdinov,co-authored,Dropout: a simple way to prevent neural networks from overfitting

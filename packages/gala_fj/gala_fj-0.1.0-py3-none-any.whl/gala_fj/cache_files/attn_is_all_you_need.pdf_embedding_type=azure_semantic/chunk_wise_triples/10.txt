@@ -1,0 +1,4 @@
+Francois Chollet,authored,Xception: Deep learning with depthwise separable convolutions
+Xception: Deep learning with depthwise separable convolutions,published on,arXiv
+Xception: Deep learning with depthwise separable convolutions,preprint number,arXiv:1610.02357
+Xception: Deep learning with depthwise separable convolutions,published in,2016

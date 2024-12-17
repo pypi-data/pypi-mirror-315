@@ -1,0 +1,20 @@
+Google,grants permission,journalistic or scholarly works
+Ashish Vaswani,affiliated with,Google Brain
+Noam Shazeer,affiliated with,Google Brain
+Niki Parmar,affiliated with,Google Research
+Jakob Uszkoreit,affiliated with,Google Research
+Llion Jones,affiliated with,Google Research
+Aidan N. Gomez,affiliated with,University of Toronto
+Łukasz Kaiser,affiliated with,Google Brain
+Transformer,achieves BLEU score,28.4 on WMT 2014 English-to-German
+Transformer,achieves BLEU score,41.8 on WMT 2014 English-to-French
+Transformer,trained for,3.5 days on eight GPUs
+Transformer,proposed by,Ashish Vaswani et al.
+Transformer,relies on,attention mechanisms
+Transformer,does not use,recurrence and convolutions
+Transformer,applied to,English constituency parsing
+Transformer,uses,Multi-Head Attention
+Transformer,uses,Scaled Dot-Product Attention
+Transformer,uses,self-attention
+Transformer,uses,positional encodings
+Transformer,uses,encoder-decoder structure

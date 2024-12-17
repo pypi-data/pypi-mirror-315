@@ -1,0 +1,19 @@
+Sainbayar Sukhbaatar,co-authored,End-to-end memory networks
+Arthur Szlam,co-authored,End-to-end memory networks
+Jason Weston,co-authored,End-to-end memory networks
+Rob Fergus,co-authored,End-to-end memory networks
+End-to-end memory networks,published in,Advances in Neural Information Processing Systems 28
+End-to-end memory networks,published by,Curran Associates; Inc.
+End-to-end memory networks,published in,2015
+Ilya Sutskever,co-authored,Sequence to sequence learning with neural networks
+Oriol Vinyals,co-authored,Sequence to sequence learning with neural networks
+Quoc VV Le,co-authored,Sequence to sequence learning with neural networks
+Sequence to sequence learning with neural networks,published in,Advances in Neural Information Processing Systems
+Sequence to sequence learning with neural networks,published in,2014
+Christian Szegedy,co-authored,Rethinking the inception architecture for computer vision
+Vincent Vanhoucke,co-authored,Rethinking the inception architecture for computer vision
+Sergey Ioffe,co-authored,Rethinking the inception architecture for computer vision
+Jonathon Shlens,co-authored,Rethinking the inception architecture for computer vision
+Zbigniew Wojna,co-authored,Rethinking the inception architecture for computer vision
+Rethinking the inception architecture for computer vision,published in,CoRR
+Rethinking the inception architecture for computer vision,published in,2015

@@ -1,0 +1,8 @@
+Muhua Zhu,co-authored,Fast and accurate shift-reduce constituent parsing
+Yue Zhang,co-authored,Fast and accurate shift-reduce constituent parsing
+Wenliang Chen,co-authored,Fast and accurate shift-reduce constituent parsing
+Min Zhang,co-authored,Fast and accurate shift-reduce constituent parsing
+Jingbo Zhu,co-authored,Fast and accurate shift-reduce constituent parsing
+Fast and accurate shift-reduce constituent parsing,published in,Proceedings of the 51st Annual Meeting of the ACL
+Proceedings of the 51st Annual Meeting of the ACL,volume,Volume 1: Long Papers
+Fast and accurate shift-reduce constituent parsing,pages,434-443

@@ -1,0 +1,7 @@
+neo4j:
+  uri: "neo4j://localhost:7686"
+  username: "neo4j"
+  password: "Parth@0001"
+
+insertion_type:
+  type: sem_kg #sem_kg,kg
