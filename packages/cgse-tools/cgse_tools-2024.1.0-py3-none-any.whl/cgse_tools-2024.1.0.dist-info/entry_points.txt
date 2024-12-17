@@ -1,0 +1,9 @@
+[cgse.plugins]
+foo=scripts.cgse_plugins:foo
+
+[cgse.service.plugins]
+xxx=scripts.cgse_service_plugins:xxx
+
+[cgse.version]
+cgse-tools=egse
+
