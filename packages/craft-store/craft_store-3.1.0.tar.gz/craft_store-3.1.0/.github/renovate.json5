@@ -1,0 +1,3 @@
+{
+  extends: ["github>canonical/starflow:renovate-base.json5"],
+}
