@@ -1,0 +1,6 @@
+pyproject.toml
+fastvideo/__init__.py
+fastvideo.egg-info/PKG-INFO
+fastvideo.egg-info/SOURCES.txt
+fastvideo.egg-info/dependency_links.txt
+fastvideo.egg-info/top_level.txt

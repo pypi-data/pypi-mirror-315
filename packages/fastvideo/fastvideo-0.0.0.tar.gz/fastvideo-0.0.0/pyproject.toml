@@ -1,0 +1,8 @@
+[project]
+name = "fastvideo"
+version = "0.0.0"
+description = "Coming soon"
+
+authors = [
+    { name = "Peiyuan Zhang", email = "a1286225768@gmail.com" }
+]
