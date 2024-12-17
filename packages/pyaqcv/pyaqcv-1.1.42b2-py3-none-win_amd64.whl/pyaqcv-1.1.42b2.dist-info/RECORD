@@ -1,0 +1,11 @@
+pyaqcv/__init__.py,sha256=WGkhZ2usM8GiirC4iQapB6nTO9Db4x8CR8gLsliMvtA,21
+pyaqcv/_pyaqcv.pyd,sha256=AXobxQVh6-9_Q6NEyvq1BgpN7EVnJwgP6cSF9-3yBVE,15084544
+pyaqcv/aqcv.dll,sha256=ndsuNLlRNZkLSQb1PuK58cdGDehqMG043FEg2bUE0fU,41598976
+pyaqcv/geometry.dll,sha256=MoCAuqKsqdv99i8lFwV6izKYSeRmpyqh0FLzvt-yMpo,25239040
+pyaqcv/libcrypto-1_1-x64.dll,sha256=ubYbccz0YoVlfpObntuwezGI7PwKVL0k-WU5CocQNCo,2874792
+pyaqcv/pyaqcv.py,sha256=SblkiyzEagITBNNGoZ-G5L6OsVuRe3HnwfU6s8fODvU,1474547
+pyaqcv-1.1.42b2.dist-info/LICENSE.txt,sha256=eTAMrQxkyw6ApSsWH9vJdyVXchbASCr9kEPFfwQzv-c,1091
+pyaqcv-1.1.42b2.dist-info/METADATA,sha256=aYvVC6EXZ4Us4LSkgkU6Pkxll2SfCHyUZcpcTteZH1U,451
+pyaqcv-1.1.42b2.dist-info/WHEEL,sha256=37evyuMEjsyAveQX40iT43Lz7iWGYiYX5J9a6lEUCNg,97
+pyaqcv-1.1.42b2.dist-info/top_level.txt,sha256=dzYnRbMoyjCjgNaRYTyDXGVYblhOrdkw2uz4it4ptbI,7
+pyaqcv-1.1.42b2.dist-info/RECORD,,
