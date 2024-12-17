@@ -1,0 +1,2 @@
+# NOTE NOTE TODO FIXME BUG This was a first try at getting iter + reattachment and ... well .. it didn't work.
+# So we're going to do iter only first and once that works, we can start thinking about how to implement reattachment.

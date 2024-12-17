@@ -1,0 +1,1 @@
+- Please fix weird behaviours caused by the fact that the output of `chunk()` after having been memoized will be the exact same object if the output is a mutable (list). This requires deepcopying the output.

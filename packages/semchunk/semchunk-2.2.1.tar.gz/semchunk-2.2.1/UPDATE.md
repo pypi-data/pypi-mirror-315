@@ -1,0 +1,29 @@
+# Making Changes
+1. Checkout `dev`.
+1. Make changes to the codebase, documenting them in CHANGELOG as you go along.
+1. If you've changed the package's headline, update the docstring in \__init__.py, introduction in README, GitHub repository description, and pyproject.toml description.
+1. Sort your imports with `python -m isort src/semchunk/.`.
+1. Enumerate your dependencies by running `pipreqs src/semchunk/.`.
+1. If you've added or removed any functions, update your imports in \__init__.py and the unit tests in test_semchunk.py.
+1. Install semchunk with `pip install .`.
+1. Install dependencies: `pip install pytest pytest-cov tiktoken hatch build twine transformers semantic_text_splitter build twine`.
+1. Test your code and verify that coverage remains at 100% with `pytest --cov=semchunk --cov-report=html`.
+1. Update the version number in pyproject.toml.
+1. If you've changed the API for `chunk()`, update its docstring and the documentation in README, including the Usage section.
+1. If you've changed how text is chunked, update the Methodology section of your README.
+1. Calculate benchmarks with `python tests/bench.py`.
+1. Calculate percentage differences with https://www.calculatorsoup.com/calculators/algebra/percentage-decrease-calculator.php.
+1. Update your benchmarks in the Introduction and Benchmarks sections of the README.
+1. Verify that you have not used relative links in README (they don't work on PyPI, in fact, PyPI doesn't even support linking to headings (which is why you must hardcode links to GitHub)).
+1. Update the version number and date in CHANGELOG.
+1. Link the version number in CHANGELOG to a diff with the previous version.
+1. If its a new year, update the year in LICENCE.
+1. Verify 'TODO', 'BUG' and 'FIXME' are not in the codebase.
+1. Commit your changes to `dev`.
+1. Checkout `main`.
+1. Merge `dev` into `main`.
+1. Verify that the build passes on GitHub Actions.
+1. Create a new release on GitHub.
+1. Run the following command: `cd D:/semchunk; del -r dist; python -m build; python -m twine upload --repository pypi dist/*`.
+1. Authenticate with the following token: `pypi-AgEIcHlwaS5vcmcCJGNlN2Y1YzFkLWYyNGYtNGRmOS05YjQwLTNmZjc1MmU1YmQxYQACKlszLCJkZjIwNWFlZC1iMjY1LTQ0YTYtOTVmMS1hNzU0MjQzMDIyMTgiXQAABiD_ZYh6sk5WVVUBrQQzBpIpzmBBXrWuDuF_fjQrcfveeQ`
+1. Checkout `dev`.
