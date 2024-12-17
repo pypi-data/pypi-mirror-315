@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: openmove
+Version: 0.1.1
+Summary: A Python package for video processing and pose estimation.
+Home-page: https://github.com/chags1313/openmove
+Author: Cole Hagen
+Author-email: chags1313@gmail.com
+Project-URL: Bug Tracker, https://github.com/chags1313/openmove/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: mediapipe
+Requires-Dist: pandas
+Requires-Dist: imageio
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: twine; extra == "dev"

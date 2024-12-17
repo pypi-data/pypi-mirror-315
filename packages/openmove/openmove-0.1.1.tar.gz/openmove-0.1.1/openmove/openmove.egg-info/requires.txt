@@ -1,0 +1,9 @@
+opencv-python
+numpy
+mediapipe
+pandas
+imageio
+
+[dev]
+pytest
+twine
