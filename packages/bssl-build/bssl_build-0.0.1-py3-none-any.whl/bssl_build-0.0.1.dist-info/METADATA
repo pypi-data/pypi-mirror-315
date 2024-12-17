@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bssl_build
+Version: 0.0.1
+Summary: A package for accessing BoringSSL binaries
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: cffi>=1.15.0

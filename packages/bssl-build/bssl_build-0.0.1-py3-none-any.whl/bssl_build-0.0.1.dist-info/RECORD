@@ -1,0 +1,7 @@
+bssl_build/__init__.py,sha256=42Su_qeOeiYuipC8bY75aeVLElRHAzEMz1F40KsecUs,604
+bssl_build/libcrypto.so,sha256=tSklJrIHO4DDf16c43_-SUk-A6zlaLa40VR9r9zkOv8,6787888
+bssl_build/libssl.so,sha256=dFWh8zkX6NeRW9xxwekc3IldvzFRzyZHYd0kPtuBn6k,8046224
+bssl_build-0.0.1.dist-info/METADATA,sha256=mqO4lDvGz2VZCAPP6fpkDLYr0ENlh8mgmGBvdjlYQiY,356
+bssl_build-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+bssl_build-0.0.1.dist-info/top_level.txt,sha256=W7Xn0i9Z_a3XRJzxfNv4FSDeYTxnFGMUH4alE2bNjik,11
+bssl_build-0.0.1.dist-info/RECORD,,
