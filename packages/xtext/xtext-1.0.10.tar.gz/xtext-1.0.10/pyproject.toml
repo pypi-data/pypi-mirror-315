@@ -1,0 +1,58 @@
+[project]
+
+# ** base metadata **
+name = "xtext"
+version = "1.0.10"
+description = "super fun, comfy & __foundational__ tools to help you build & interpret with generative ai."
+authors = [
+    { name = "Hammad Saeed", email = "hvmmad@gmail.com" }
+]
+readme = "readme.md"
+
+
+# ** python version **
+requires-python = ">=3.9"
+
+
+# ** package dependencies **
+dependencies = [
+    "instructor>=1.7.0",
+    "litellm>=1.55.2",
+    "networkx>=3.2.1",
+]
+
+
+# ** extra dependency groups **
+[dependency-groups]
+# ** dev tools **
+dev = [
+    # core dev tools
+    # i love astral.sh
+    # packaging & linting
+    "ruff",
+    "uv",
+    
+    # publishing
+    "twine",
+
+    # testing
+    "pytest",
+    "pytest-asyncio",
+
+    # docs
+    "mkdocstrings[python]",
+    "mkdocs-jupyter",
+    "mkdocs-material",
+    "mkdocs-material-extensions",
+    "mkdocs-git-revision-date-localized-plugin",
+    "mkdocs-git-revision-date-plugin",
+    "mkdocs-minify-plugin",
+    "mkdocs-awesome-pages-plugin",
+    "mkdocs-table-reader-plugin",
+]
+
+
+# ** seaside uses hatchling for package building **
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

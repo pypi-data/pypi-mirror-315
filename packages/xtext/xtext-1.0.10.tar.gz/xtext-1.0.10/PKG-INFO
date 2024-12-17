@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: xtext
+Version: 1.0.10
+Summary: super fun, comfy & __foundational__ tools to help you build & interpret with generative ai.
+Author-email: Hammad Saeed <hvmmad@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.9
+Requires-Dist: instructor>=1.7.0
+Requires-Dist: litellm>=1.55.2
+Requires-Dist: networkx>=3.2.1
+Description-Content-Type: text/markdown
+
+# 🌊 seaside
+
+> super duper comfy & __foundational__ tools to help you build & interpret with generative ai.
