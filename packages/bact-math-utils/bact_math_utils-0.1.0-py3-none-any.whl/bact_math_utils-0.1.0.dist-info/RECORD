@@ -1,0 +1,12 @@
+bact_math_utils/__init__.py,sha256=8lkQkKse0_lRCKYhVqqFeaGOx5G1HuIas0kFTIkuRcI,132
+bact_math_utils/distorted_orbit.py,sha256=6T8MoP-CNDenPnsSaNUSWP5PR7jeeDcuxct5faBr3PU,2961
+bact_math_utils/exp_fit.py,sha256=BYj6qHtRG7hUQ79_LRtikcPDANSejV8EaEqGDJadBPg,5812
+bact_math_utils/life_time.py,sha256=Yf37SwgbSygVCTsgA1lDOGFBh0koca8HRWBacjTklIs,6444
+bact_math_utils/linear_fit.py,sha256=PQUSDf5fSUjkv_x2PtVc2EXRiO0LOrb9II-5tIKBQQI,1644
+bact_math_utils/misc.py,sha256=nvTUaYV4-7-E1t6dKLIH9F6Wt7WRIiDSbhoy-Gz4_FU,5026
+bact_math_utils/stats.py,sha256=iIOzuQNOr53MAQgyiavep2TDpru7qrLUsofpvnz2X7k,862
+bact_math_utils/tune.py,sha256=08VwMjpJW81wRNCgTmpOEiRW5f_6xDKeElMKpGQ1IX4,1935
+bact_math_utils-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bact_math_utils-0.1.0.dist-info/METADATA,sha256=vo2sNoPbHv_SSCUDMSTIgyaPEbiJtnvgQ41b_TdzUFY,1023
+bact_math_utils-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+bact_math_utils-0.1.0.dist-info/RECORD,,
