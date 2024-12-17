@@ -1,0 +1,16 @@
+ipfs_kit_py/__init__.py,sha256=JM5bU_m4D9P1wbsaL6isa0wSQBu88aH93DFuGYtewmM,325
+ipfs_kit_py/install_ipfs.py,sha256=yqxoexcUe1eGGuUozPwSfTYewu7aNLPlEWAxbHn_PD8,61353
+ipfs_kit_py/ipfs.py,sha256=pkRYeDeegVldRh1FccNwF_tHprH04FodNO8io3RjcfU,15402
+ipfs_kit_py/ipfs_cluster_ctl.py,sha256=n-aMdMB3_r2TvuEL4QvlvMcrolmGOzS4hrvmTxGdU2A,7334
+ipfs_kit_py/ipfs_cluster_follow.py,sha256=ttygtgZ3UvlqKVDn2RhPv88hNBeOLWUrQBYf58Xjdps,9048
+ipfs_kit_py/ipfs_cluster_service.py,sha256=c_fOOya4k1ysRcttvcwUV4sQbshxUisFocfR84YNz_k,3254
+ipfs_kit_py/ipfs_kit.py,sha256=4OahE3K8NutTqSAlxXLgnlJeN8ywDt_1alpWY0WXWpw,27279
+ipfs_kit_py/ipget.py,sha256=8xGkZlhF8sYPOZh63XEqgZJJix8FkdAiiSlzqhvMteM,3526
+ipfs_kit_py/s3_kit.py,sha256=8H29Nva8SpaPDHDr0XJE9F8rnY1b-b8imnrdi_Y4JHM,15472
+ipfs_kit_py/storacha_kit.py,sha256=3MDMiGmaeOcJ6Fbjt5KVFok0rQUmGujRysvFVRoWwew,36217
+ipfs_kit_py/test_fio.py,sha256=H72-KOcR1v2LiBtzvxJ8LHWMHqW-JPFxWZQlu1Zx0Fo,11746
+ipfs_kit_py-0.0.9.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ipfs_kit_py-0.0.9.dist-info/METADATA,sha256=SHBdBLQc-1-VmIULZnqvHL1v3DLtpehJWfpmptpJLKw,2121
+ipfs_kit_py-0.0.9.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ipfs_kit_py-0.0.9.dist-info/top_level.txt,sha256=kBanAdW4bpnA_L-HZ7ALUF2K_hiLqVkjKq6nf4GJuCE,12
+ipfs_kit_py-0.0.9.dist-info/RECORD,,
