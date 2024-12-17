@@ -1,0 +1,2 @@
+[console_scripts]
+hairpred = hairpred.python_script.hairpred:main

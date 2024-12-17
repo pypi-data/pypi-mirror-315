@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+src/hairpred.egg-info/PKG-INFO
+src/hairpred.egg-info/SOURCES.txt
+src/hairpred.egg-info/dependency_links.txt
+src/hairpred.egg-info/entry_points.txt
+src/hairpred.egg-info/requires.txt
+src/hairpred.egg-info/top_level.txt
+src/hairpred/models/rf_bestmodel_pssm.pkl
+src/hairpred/models/rf_bestmodel_rsa.pkl
+src/hairpred/python_script/__init__.py
+src/hairpred/python_script/hairpred.py
