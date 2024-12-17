@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: catface
+Version: 0.1.3
+Summary: CLI tool to setup Python projects
+Author-email: Yanick andrade <yanick.jair.ta@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/YanickJair/catface
+Project-URL: Repository, https://github.com/YanickJair/catface.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click>=8.0.0
+Requires-Dist: cookiecutter>=2.1.0
+Requires-Dist: rich>=13.9.4
+Requires-Dist: questionary>=2.0.1
+Requires-Dist: pre-commit>=4.0.1
+Requires-Dist: ruff>=0.8.2
+
+<div align="center">
+<img src=".https://github.com/YanickJair/catface/blob/main/assets/catface-logo.svg" width="200" height="200" alt="Catface Logo">
+
+# Catface
+</div>
+
+## Features
+
+- **Documentation (MkDocs)**
+  - Automatic API documentation
+  - Material design theme
+  - Ready-to-deploy structure
+
+- **Docker Integration**
+  - Multi-stage builds
+  - Production-ready configuration
+  - Python version specific base images
+
+- **Development Tools**
+  - Pre-commit hooks for code quality
+  - Ruff for fast linting and formatting
+  - Tox for testing across Python versions
+
+## Quick Start
+
+```bash
+# Install Catface
+pip install catface
+
+# Create a new project
+catface my-awesome-project
+```
+
+## Pre-configured Tox file
+
+  - Task automation: Using Tox we can automate repetitive tasks
+  - Test against multiple Python versions
+  - Environment management: Using Tox we can create different environments each with its dependencies
+  - Lint and format code using Ruff
+
+```bash
+# Cd inside your project
+cd my-awesome-project
+
+tox # runs all environments
+tox -e <env_name> # running each environment individually by name
+tox -p all # parallel execution
