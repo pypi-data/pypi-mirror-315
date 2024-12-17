@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pandas_numpy_lib
+Version: 0.1
+Summary: A library to combine pandas and numpy functionalities.
+Home-page: https://github.com/MaheshMakwana787/pandas_numpy_lib
+Author: Mahesh Makwana
+Author-email: maheshmakwana527@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: numpy>=1.18.0
+
+# pandas_numpy_lib
+
+A simple library to combine functionalities of pandas and numpy.
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install pandas_numpy_lib

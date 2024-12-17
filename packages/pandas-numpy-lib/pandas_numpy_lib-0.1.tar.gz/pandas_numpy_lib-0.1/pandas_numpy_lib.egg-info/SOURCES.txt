@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pandas_numpy_lib/__init__.py
+pandas_numpy_lib/core.py
+pandas_numpy_lib.egg-info/PKG-INFO
+pandas_numpy_lib.egg-info/SOURCES.txt
+pandas_numpy_lib.egg-info/dependency_links.txt
+pandas_numpy_lib.egg-info/requires.txt
+pandas_numpy_lib.egg-info/top_level.txt
+tests/test_core.py
