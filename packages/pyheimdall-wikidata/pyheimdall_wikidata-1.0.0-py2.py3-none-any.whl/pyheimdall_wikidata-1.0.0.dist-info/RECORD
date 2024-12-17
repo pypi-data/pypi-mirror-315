@@ -1,0 +1,7 @@
+heimdall/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+heimdall/connectors/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+heimdall/connectors/wikidata.py,sha256=dgVmNidJU4Fj0wTWJ1X7E-2iqys_Pn5Lnjp0P6JDlcA,4074
+pyheimdall_wikidata-1.0.0.dist-info/METADATA,sha256=KW3xuBUw_vPhlTo2EG-fvoL1CLfrfzIzbTpS5mGaRwM,4334
+pyheimdall_wikidata-1.0.0.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+pyheimdall_wikidata-1.0.0.dist-info/licenses/LICENSE,sha256=sKUum8idBofBmYXeq03HFwVMXAFlMBxEjpcyh0BsFok,34450
+pyheimdall_wikidata-1.0.0.dist-info/RECORD,,
