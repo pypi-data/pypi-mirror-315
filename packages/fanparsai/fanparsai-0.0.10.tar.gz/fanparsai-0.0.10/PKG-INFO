@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: fanparsai
+Version: 0.0.10
+Summary: FanPars Library for Various Models
+Author: FanPars
+Description-Content-Type: text/markdown
+Requires-Dist: asteroid-filterbanks==0.4.0
