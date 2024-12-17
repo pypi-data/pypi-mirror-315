@@ -1,0 +1,8 @@
+openseespy
+numpy
+plotly
+scipy
+pillow
+kaleido
+tqdm
+ipywidgets
