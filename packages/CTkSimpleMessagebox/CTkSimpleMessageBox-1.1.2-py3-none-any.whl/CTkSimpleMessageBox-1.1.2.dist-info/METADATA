@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: CTkSimpleMessageBox
+Version: 1.1.2
+Summary: A simple Messagebox for Customtkinter
+Author-email: Scott <ctksimplemessagebox@gmail.com>
+License: MIT
+License-File: LICENSE
