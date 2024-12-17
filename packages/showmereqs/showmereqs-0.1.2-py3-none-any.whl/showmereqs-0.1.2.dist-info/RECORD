@@ -1,0 +1,15 @@
+showmereqs/__init__.py,sha256=xqllV8c4cbNAXUC8GLlAsWdejh-4yhxoY-uCCeFoL8U,46
+showmereqs/analyze.py,sha256=iNKwU6iaYP-0B38jYxserHhfsKXLEfG-y_p5Bmc4tP4,2429
+showmereqs/generate.py,sha256=A6yBr-N_FiKXivqIHb-LRaeLV1pF61uA4d0_K62IZOU,2555
+showmereqs/main.py,sha256=03CJnp1dnYGDFvjIMZ0CS49137p3i91N0OcT3XfYrJ4,2175
+showmereqs/package_info.py,sha256=8hwHchcAGTYvyvT_kzHPVNR8JmBpw8do9FxNJCbD5Wo,2527
+showmereqs/utils.py,sha256=IVF_EIUNCNRsK6iiY3kVhGsgkriPTGuOys_ZjJIHeVA,1751
+showmereqs/config/ignore.json,sha256=8SH6YNpxvr48HVXlFZyVmGII0zvGHFNrtUZvJJyxUZQ,163
+showmereqs/config/mapping,sha256=P6Yso8l9nccgdxoKQRh17IbWAUuvVriP2izVVeDi4BA,28009
+showmereqs/config/stdlib,sha256=KI1ZFljeC41RXUTB7EMmvq3ePwv7Jmz0-FiqLtGbfU0,38382
+showmereqs-0.1.2.dist-info/LICENSE,sha256=x2jrQ13MwyMIIN0sbO9wVJA_Q8uV9v3QHWoiZzpMlOk,890
+showmereqs-0.1.2.dist-info/METADATA,sha256=zPd_YkyHZFVrkMAMGTyzDTIVNhu_w-5FtA_gk-QpJCM,2852
+showmereqs-0.1.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+showmereqs-0.1.2.dist-info/entry_points.txt,sha256=2i9PVllA24ZiEsT2B02mJZk2eDlPI_IoPI0Es6lNatg,47
+showmereqs-0.1.2.dist-info/top_level.txt,sha256=iRZk-xRic6Ul86JarZqycohpF7nbXawXLSxr9omlYkI,11
+showmereqs-0.1.2.dist-info/RECORD,,
