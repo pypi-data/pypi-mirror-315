@@ -1,0 +1,2 @@
+[mkpipe.loaders]
+oracledb = mkpipe_loader_oracledb:OracledbLoader

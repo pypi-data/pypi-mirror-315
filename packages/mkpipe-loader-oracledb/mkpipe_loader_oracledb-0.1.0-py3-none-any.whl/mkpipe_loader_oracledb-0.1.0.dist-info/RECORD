@@ -1,0 +1,8 @@
+mkpipe_loader_oracledb/__init__.py,sha256=0249qvR9XIO6rDF767ifXWaNBWbhgBKMMH889aaOqq4,5753
+mkpipe_loader_oracledb/jars/com.oracle.database.jdbc_ojdbc11-23.6.0.24.10.jar,sha256=jmryw0AcZCcJIuDcpmh5_QcoHeM0etHRoOEVPtQUI6Y,7270547
+mkpipe_loader_oracledb-0.1.0.dist-info/LICENSE,sha256=6G5XWHq2ng2Te_IpVeOKvDabtRBPwqaImM7vpke0HOE,11348
+mkpipe_loader_oracledb-0.1.0.dist-info/METADATA,sha256=ca7_qjM7lgaFn4jj_cviLIcv0KCZbScdK7l4e5gJi4s,1102
+mkpipe_loader_oracledb-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+mkpipe_loader_oracledb-0.1.0.dist-info/entry_points.txt,sha256=HC05AWIfMDJxStS0DecSS9wTxNXfU0fXa3nWxCKS_nY,66
+mkpipe_loader_oracledb-0.1.0.dist-info/top_level.txt,sha256=5g1YpvTPndvW25YDdlzCggbdr3UpOIWlAPYYHij2eQY,23
+mkpipe_loader_oracledb-0.1.0.dist-info/RECORD,,
