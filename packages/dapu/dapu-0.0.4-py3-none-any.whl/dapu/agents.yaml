@@ -1,0 +1,6 @@
+runsql:
+  package: dapu.agents
+  module: agent_runsql
+stream:
+  package: dapu.agents
+  module: agent_stream
