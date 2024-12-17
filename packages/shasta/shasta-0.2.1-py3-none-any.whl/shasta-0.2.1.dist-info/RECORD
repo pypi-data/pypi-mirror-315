@@ -1,0 +1,12 @@
+shasta/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shasta/ast_node.py,sha256=wtBynIOB86yEIOfOhJiAUYburam08hBfpbwko8mJgDc,40929
+shasta/bash_to_shasta_ast.py,sha256=ehBI6Wi5b58bVwZDgpEG7EvHydYNWylh6FX05NNhAdg,17257
+shasta/flags.py,sha256=gOV_vBqs6gDzoU4csZJj9vAzKGQDXZcvcSdvZil5Xdo,6344
+shasta/json_to_ast.py,sha256=N64L_YFUMyZPIdA-AW-G2ApJW0hINro-OMdqlHTXnKc,4740
+shasta/print_lib.py,sha256=ccPvDU1lrSQE3A9bMByv7Q4qbijxIR623x1ZY7uRlAM,3768
+shasta/subst.py,sha256=Xvxf9eFSyTayljapoSfiqrFeO9H0wIiF4KfH9sh7xvA,2643
+shasta-0.2.1.dist-info/LICENSE,sha256=bBzsX4d9vukU7AqWhrODETKuVqaqCDSxzk53_d-r3hw,1073
+shasta-0.2.1.dist-info/METADATA,sha256=qI1NP9qrLGeljnDGK3gKUYzCFkMndQetzd5sobM-bo4,2389
+shasta-0.2.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+shasta-0.2.1.dist-info/top_level.txt,sha256=_cez3Bx2j5fEPajaWOwYmnEEYYk6ZILdwUvFEgdF30c,7
+shasta-0.2.1.dist-info/RECORD,,
