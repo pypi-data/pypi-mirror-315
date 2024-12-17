@@ -1,0 +1,9 @@
+absl-py
+numpy
+rich
+namex
+h5py
+optree
+ml-dtypes
+packaging
+scikit-learn
