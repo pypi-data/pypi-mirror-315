@@ -1,0 +1,204 @@
+<!-- apps.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Applications - Groundlight Hub</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .header {
+        background-color: #003366; /* Dark blue color */
+        color: white;
+        padding: 10px 20px;
+    }
+
+    .headerbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerbar div, .headerbar ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .headerbar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .headerbar ul li {
+        padding: 0 15px;
+    }
+
+    .headerbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .tabbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #005599; /* Slightly lighter blue color */
+    }
+
+    .info-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .info-table th, .info-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .info-table tr:nth-child(even){background-color: #f2f2f2;}
+    .info-table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #003366;
+        color: white;
+    }
+
+    .main-section {
+        margin: 50px auto;
+        width: 100%;
+        max-width: 800px;
+        box-sizing: border-box;
+    }
+
+    .disabled {
+        color: #999;
+        text-decoration: line-through;
+    }
+
+    .selected a {
+        font-weight: 900;
+        text-decoration: underline !important;
+    }
+    /* Spinner Styles */
+    .spinner {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        border-top-color: #003366;
+        animation: spin 1s ease infinite;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+    /* Center spinner within main section */
+    .spinner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Hide the spinner by default */
+    .spinner.hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h2>Groundlight Hub</h2>
+</div>
+
+<div class="tabbar">
+    <div class="headerbar">
+        <ul>
+            <li><a href="/">Device Status</a></li>
+            <li><a href="/admin/cfgstore/configentry/">Configure Device</a></li>
+            <li><a href="/logs/{{ service_name }}/">Device Logs</a></li>
+            <li><a href="/views/discovery">Camera Discovery</a></li>
+            <li class="selected"><a href="#">Apps</a></li>
+            <li><a href="https://dashboard.groundlight.ai/">Cloud Dashboard</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-section">
+    <h3>Applications</h3>
+
+    <!-- Applications Table -->
+    <table class="info-table" id="appTable">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Link</th>
+        </tr>
+        <tbody id="appList">
+            <!-- App data will be populated here -->
+            <tr>
+                <td colspan="3">
+                    Loading apps...
+                    <!-- Loading Spinner -->
+                    <div class="spinner-container">
+                        <div id="loadingSpinner" class="spinner"></div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // Function to fetch and display app data from index.json
+    function fetchAppData() {
+        // Append a unique timestamp parameter to bypass the cache
+        const url = `/apps/index.json?timestamp=${new Date().getTime()}`;
+
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('JSON not available yet');
+                }
+                return response.json();
+            })
+            .then(data => {
+                displayApps(data);
+                clearInterval(fetchInterval);  // Stop polling once data is available
+                document.getElementById('loadingSpinner').classList.add('hidden'); // Hide spinner
+            })
+            .catch(error => {
+                console.log('Waiting for index.json to be available...');
+            });
+    }
+
+    // Function to display apps on the page
+    function displayApps(data) {
+        const appList = document.getElementById('appList');
+        appList.innerHTML = '';  // Clear the loading message
+
+        data.forEach(app => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${app.app_name}</td>
+                <td>${app.app_description}</td>
+                <td><a href="${app.app_url}">Open</a></td>
+            `;
+            appList.appendChild(row);
+        });
+    }
+
+    // Show spinner initially and set an interval to poll for the JSON file every 5 seconds
+    const fetchInterval = setInterval(fetchAppData, 5000);
+    fetchAppData(); // Initial fetch attempt
+</script>

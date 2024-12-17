@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "glhub_sdk"
+version = "0.1.0"
+description = ""
+authors = ["Groundlight"]
+readme = "README.md"
+
+packages = [
+    { include = "glhub_sdk"},
+    {include = "**/*.py", from = "glhub_sdk/generated"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+hubaxle-api-client = {path = "glhub_sdk/generated", develop = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

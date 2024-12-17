@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Groundlight Hub</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .header {
+        background-color: #003366; /* Dark blue color */
+        color: white;
+        padding: 10px 20px;
+    }
+
+    .headerbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerbar div, .headerbar ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .headerbar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .headerbar ul li {
+        padding: 0 15px;
+    }
+
+    .headerbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .tabbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #005599; /* Slightly lighter blue color */
+    }
+
+    .info-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .info-table th, .info-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .info-table tr:nth-child(even){background-color: #f2f2f2;}
+    .info-table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #003366;
+        color: white;
+    }
+
+    .main-section {
+        margin: 50px auto;
+        width: 100%;
+        max-width: 800px;
+        box-sizing: border-box;
+    }
+
+    .disabled {
+        color: #999;
+        text-decoration: line-through;
+    }
+
+    .selected a {
+        font-weight: 900;
+        text-decoration: underline !important;
+    }
+    
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h2>Groundlight Hub</h2>
+</div>
+
+<div class="tabbar">
+    <div class="headerbar">
+        <ul>
+            <li class="selected"><a href="#">Device Status</a></li>
+            <li><a href="/admin/cfgstore/configentry/">Configure Device</a></li>
+            <li><a href="/logs/{{ service_name }}/">Device Logs</a></li>
+            <li><a href="/views/discovery">Camera Discovery</a></li>
+            <li><a href="/views/apps">Apps</a></li>
+            <li><a href="https://dashboard.groundlight.ai/">Cloud Dashboard</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-section">
+    <h3>Hub Device System Status</h3>
+    <table class="info-table">
+        <tr>
+            <th>Information</th>
+            <th>Value</th>
+        </tr>
+        <tbody id="systemStatusTable">
+            {% for key, value in system_info.items %}
+            <tr>
+                <td>{{ key|capfirst }}</td>
+                <td id="value_{{ key }}">{{ value }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // Function to update the system status table
+    function updateSystemStatus() {
+        fetch('/hub/api/system_status')
+            .then(response => response.json())
+            .then(data => {
+                // Loop through each key-value pair in the JSON data
+                for (const [key, value] of Object.entries(data)) {
+                    // Find the table cell by ID and update its text content
+                    const cell = document.getElementById(`value_${key}`);
+                    if (cell) {
+                        cell.textContent = value;
+                    }
+                }
+            })
+            .catch(error => console.error('Error fetching system status:', error));
+    }
+
+    // Fetch updated data every 5 seconds to save CPU and network resources
+    setInterval(updateSystemStatus, 5000);
+</script>
+
+</body>
+</html>
