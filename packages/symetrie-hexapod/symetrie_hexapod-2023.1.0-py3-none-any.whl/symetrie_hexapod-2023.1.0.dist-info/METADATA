@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: symetrie-hexapod
+Version: 2023.1.0
+Summary: Symetrie Hexapod implementation for CGSE
+License: Common-EGSE Software License Agreement
+Requires-Dist: cgse-common
+Requires-Dist: cgse-core
+Requires-Dist: cgse-gui
+Requires-Dist: cgse-coordinates
+Requires-Dist: PyQt5
+
