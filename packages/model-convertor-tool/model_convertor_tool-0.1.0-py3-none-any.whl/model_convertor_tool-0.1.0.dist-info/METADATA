@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: model-convertor-tool
+Version: 0.1.0
+Summary: A brief description of your package
+Home-page: UNKNOWN
+Author: xxx
+Author-email: your.email@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+模型转换脚本使用说明
+简介:
+本脚本用于在不同框架之间转换模型权重。目前支持nv（NVIDIA）和hw（华为）两种硬件平台的模型转换。脚本根据传入的参数决定执行哪种转换流程。
+
+使用方法
+NVIDIA平台命令格式
+model_converter.sh [model_convertor] [model] [hf2mcore] [MASTER_PORT] [model_size] [HG_CKPT_PATH] [SOURCE_CKPT_PATH] [TARGET_CKPT_PATH] [TP] [PP]
+参数说明
+model_convertor：指定模型转换的类型，目前支持nv（NVIDIA）、hw（华为）和inference(推理)。
+model：指定需要转换的模型名称。
+hf2mcore：是否执行hf到mcore的转换，若为true则执行hf到mcore的转换，否则执行mcore到hf的转换。
+MASTER_PORT：主节点端口，用于分布式训练。
+model_size：模型大小。
+HG_CKPT_PATH：下载到本地的huggingface模型路径。
+SOURCE_CKPT_PATH：源模型权重路径。
+TARGET_CKPT_PATH：目标模型权重路径。
+TP：模型并行。
+PP：管道并行。
+
+支持的模型列表
+nv模型转换支持：baichuan2, deepseek, llama2, llama3, qwen, qwen2, qwen1.5
+hw模型转换支持：gpt2, llama2, llama3
+inference模型转换支持：baichuan2
+
+hw平台命令格式
+model_converter.sh [model_convertor] [model] [hf2ms] [input_path] [output_path] [layers]
+参数说明
+model_convertor：指定模型转换的类型，目前支持nv（NVIDIA）、hw（华为）和inference(推理)。
+model：指定需要转换的模型名称。
+hf2ms：是否执行hf到ms的转换，若为true则执行hf到ms的转换，否则执行ms到hf的转换。
+input_path：源模型权重路径。
+output_path：目标模型权重路径。
+layers：模型层数。仅model=gpt2 hf2ms=true时需要指定。
+
+示例
+转换NVIDIA平台的qwen模型：
+model_convertor.sh nv qwen true 6666 7B qwen/qwen-ckpt-origin qwen/qwen-ckpt-origin qwen/qwen-core-ckpt  1 1 
+转换华为平台的llama2模型：
+
+
+注意事项
+确保所有路径参数都是正确的，且脚本有权限访问这些路径。
+如果模型不在支持的列表中，脚本将输出不支持的消息并退出。
+脚本在执行转换过程中，若遇到错误，将返回错误代码1。
+常见问题
+若遇到“模型不支持权重转换”的提示，请检查模型名称是否正确，或者该模型是否在支持的列表中。
+确保环境变量MASTER_PORT已经正确设置，否则分布式训练可能无法正常进行。
+联系方式
+如有任何问题，请联系脚本维护者或发送邮件至[邮箱地址]。
+
+请根据实际情况调整上述内容，确保文档的准确性和完整性。
+

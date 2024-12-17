@@ -1,0 +1,135 @@
+apiVersion: "ai.cmss.chinamobile.com/v1alpha1"
+kind: PyTorchJob
+metadata:
+  name: gpt-13b
+spec:
+  nprocPerNode: "8"
+  pytorchReplicaSpecs:
+    Master:
+      replicas: 1
+      restartPolicy: OnFailure
+      template:
+        metadata:
+          labels:
+            app: gpt-13b
+        spec:
+          nodeSelector:
+            model-test: nvtest-nemo
+          hostNetwork: true
+          dnsPolicy: None
+          dnsConfig:
+            nameservers:
+            - 10.222.0.34
+            searches:
+            - default.svc.cluster.local
+            - svc.cluster.local
+            - cluster.local
+            - localdomain
+            options:
+            - name: ndots
+              value: "5"
+          affinity:
+            podAntiAffinity:
+              requiredDuringSchedulingIgnoredDuringExecution:
+              - labelSelector:
+                  matchExpressions:
+                  - key: app
+                    operator: In
+                    values:
+                    - gpt-13b
+                topologyKey: "kubernetes.io/hostname"
+          schedulerName: ai-scheduler
+          containers:
+            - name: pytorch
+              image: registry.paas/cmss/nemo_test:v1.4
+              command:
+                - "/bin/sh"
+                - "-c"
+                - |
+                  # sleep 100000 &&
+                  cd /data/data/Megatron-LM/ &&
+                  # chmod +x multi_node_pretain.sh &&
+                  bash multi_node_pretain.sh 2>&1 | tee "log/LM_node$(RANK)_$(date +'%Y-%m-%d_%H-%M-%S').log"
+              env:
+              - name: NCCL_SOCKET_IFNAME
+                value: eth0
+              resources:
+                limits:
+                  nvidia.com/gpu: 8
+              volumeMounts:
+                - mountPath: /data
+                  name: data
+                - mountPath: /dev/shm
+                  name: shm-volume
+          volumes:
+            - name: data
+              hostPath:
+                path: /mnt/data
+            - name: shm-volume
+              emptyDir:
+                medium: Memory
+                sizeLimit: 126Gi
+    Worker:
+      replicas: 1
+      restartPolicy: OnFailure
+      template:
+        metadata:
+          labels:
+            app: gpt-13b
+        spec:
+          nodeSelector:
+            model-test: nvtest-nemo
+          hostNetwork: true
+          dnsPolicy: None
+          dnsConfig:
+            nameservers:
+            - 10.222.0.34
+            searches:
+            - default.svc.cluster.local
+            - svc.cluster.local
+            - cluster.local
+            - localdomain
+            options:
+            - name: ndots
+              value: "5"
+          affinity:
+            podAntiAffinity:
+              requiredDuringSchedulingIgnoredDuringExecution:
+              - labelSelector:
+                  matchExpressions:
+                  - key: app
+                    operator: In
+                    values:
+                    - gpt-13b
+                topologyKey: "kubernetes.io/hostname"
+          schedulerName: ai-scheduler
+          containers:
+            - name: pytorch
+              image: registry.paas/cmss/nemo_test:v1.4
+              command:
+                - "/bin/sh"
+                - "-c"
+                - |
+                  #sleep 100000 &&
+                  cd /data/data/Megatron-LM/ &&
+                  # chmod +x multi_node_pretain.sh &&
+                  bash multi_node_pretain.sh 2>&1 | tee "log/LM_node$(RANK)_$(date +'%Y-%m-%d_%H-%M-%S').log"
+              env:
+              - name: NCCL_SOCKET_IFNAME
+                value: eth0
+              resources:
+                limits:
+                  nvidia.com/gpu: 8
+              volumeMounts:
+                - mountPath: /data
+                  name: data
+                - mountPath: /dev/shm
+                  name: shm-volume
+          volumes:
+            - name: data
+              hostPath:
+                path: /mnt/data
+            - name: shm-volume
+              emptyDir:
+                medium: Memory
+                sizeLimit: 126Gi

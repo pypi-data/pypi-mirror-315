@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "server_count": "2",
+  "server_list": [
+    {
+      "server_id": "10.208.200.63",
+      "container_ip": "10.208.200.63",
+      "device": [
+        {"device_id": "0","device_ip": "192.168.11.54","rank_id": "0"},
+        {"device_id": "1","device_ip": "192.168.12.54","rank_id": "1"},
+        {"device_id": "2","device_ip": "192.168.13.54","rank_id": "2"},
+        {"device_id": "3","device_ip": "192.168.14.54","rank_id": "3"},
+        {"device_id": "4","device_ip": "192.168.15.54","rank_id": "4"},
+        {"device_id": "5","device_ip": "192.168.16.54","rank_id": "5"},
+        {"device_id": "6","device_ip": "192.168.17.54","rank_id": "6"},
+        {"device_id": "7","device_ip": "192.168.18.54","rank_id": "7"}],
+      "host_nic_ip": "reserve"
+    },
+    {
+      "server_id": "10.208.200.65",
+      "container_ip": "10.208.200.65",
+      "device": [
+        {"device_id": "0","device_ip": "192.168.11.56","rank_id": "8"},
+        {"device_id": "1","device_ip": "192.168.12.56","rank_id": "9"},
+        {"device_id": "2","device_ip": "192.168.13.56","rank_id": "10"},
+        {"device_id": "3","device_ip": "192.168.14.56","rank_id": "11"},
+        {"device_id": "4","device_ip": "192.168.15.56","rank_id": "12"},
+        {"device_id": "5","device_ip": "192.168.16.56","rank_id": "13"},
+        {"device_id": "6","device_ip": "192.168.17.56","rank_id": "14"},
+        {"device_id": "7","device_ip": "192.168.18.56","rank_id": "15"}],
+      "host_nic_ip": "reserve"
+    }
+  ],
+  "status": "completed"
+}
