@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+tests/test_uwifi.py
+uwifi.egg-info/PKG-INFO
+uwifi.egg-info/SOURCES.txt
+uwifi.egg-info/dependency_links.txt
+uwifi.egg-info/top_level.txt
