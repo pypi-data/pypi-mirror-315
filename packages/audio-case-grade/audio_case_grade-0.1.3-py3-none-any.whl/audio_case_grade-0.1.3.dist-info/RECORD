@@ -1,0 +1,14 @@
+audio_case_grade/__init__.py,sha256=kK7owKXti08yHlrP525sqJ6I5WX_gXkzi5E2XoClxAo,929
+audio_case_grade/assignment.py,sha256=BqSPjTFa8tHnGLhlRUThgXYt48kmKahbL0Sf1o66TWs,720
+audio_case_grade/clean.py,sha256=UlyRAByZK8SBUlDw8Q8J422FLWM962cKzi5UKugzM9Y,3917
+audio_case_grade/core.py,sha256=KCKezbUVtAmh_vSzzUCOW1kvIEZbufHedRozGARpn0I,770
+audio_case_grade/keybank.py,sha256=eausai2kxP2UAjErJ7OUiURiiVitLaZp9owpAz6ARAw,5319
+audio_case_grade/keyword.py,sha256=nzHsgKA3IX6u2jgdqPrjlN_P79tURKgBCcnkQEEhTK0,3870
+audio_case_grade/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audio_case_grade/types.py,sha256=_ZawKV4kX8XQBkHSBD0mEWJGdxtYcucvo1ZMa3TCj3s,6484
+audio_case_grade/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audio_case_grade/resources/abbreviations.csv,sha256=dEFTQ4yNy2gVCO2krbm6GlrM16C9jLeohe4d0gvTd7s,7512
+audio_case_grade/resources/keybank.csv,sha256=B5ZEMX85QTT3asi0dwoBQOW3V6WzlO4Xhet87_Qj0GM,13930
+audio_case_grade-0.1.3.dist-info/METADATA,sha256=D696q5WDq1mWmkCQEFUSBg0E0_vLzrixk09SVZQpt6g,868
+audio_case_grade-0.1.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+audio_case_grade-0.1.3.dist-info/RECORD,,
