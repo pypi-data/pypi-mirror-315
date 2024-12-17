@@ -1,0 +1,17 @@
+evo/__init__.py,sha256=Ije_ZPGvCVtxdaL_onti8ojLyZUsJLpaBq7m6T_N4h0,162
+evo/generation.py,sha256=l_ledK81W-_fcbC2R-8y8sulfZBu_KTYg3juEQmzUHY,3109
+evo/models.py,sha256=tzv2kEYEkenzeVjZS_Pphvr_179z-g-qsDr7iD6fs0E,3268
+evo/scoring.py,sha256=4psMOUxu9l_gx-mD8eseuQXdKpYpHyWrUCPDhBK0SUA,4349
+evo/utils.py,sha256=z3JPATjAX13cDAnzHMApDDCn7J7clH_RihUEsSFidnk,5197
+evo/version.py,sha256=vE1d4SLob9yNClAcQFR-6-s-lUjNmxAwanw-IDAWuR8,16
+evo/configs/evo-1-131k-base_inference.yml,sha256=LdTzZxotjC7H1TKUaUdYQyAaPG6fYfhsayMGkSBGlYA,1292
+evo/configs/evo-1-8k-base_inference.yml,sha256=_S45_kmfts0ZzbdFUKV1gTXvjwZJSPxJs81tBOUp1Pw,1108
+evo/scripts/example_inference.py,sha256=1Vn1aZ2VEilLtlmTmzRubYqZqpsSAcbP4-4uUFVTRTA,1187
+evo/scripts/generate.py,sha256=muHFdiK2ndzK2Uo4fp1WOkpu-9kUqFwmSx5ETkKxEns,2413
+evo/scripts/generation_to_folding.py,sha256=5b1VDq1-VDqmU1M_DJWyF6EnNi0idBzYnZzQ0D-cvA4,5485
+evo/scripts/score.py,sha256=nnDG19Nk90gx0bVs4EKDFnBl9pl8x4lMmjNk6Lguv3w,2014
+evo_model-0.3.dist-info/LICENSE,sha256=-GD-01-jTnIJF5rBZ6-vqZsWHXd1LOMXgbAvDWpxLFg,11338
+evo_model-0.3.dist-info/METADATA,sha256=3NMAgWfBkvYKn7hClBfFyWnDDNQWgoCO4Rq1QbXht8o,7694
+evo_model-0.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+evo_model-0.3.dist-info/top_level.txt,sha256=IzLrK1mG2bGw1cT2umqNfLw0GqQgmBQaeZYk3YlWe3o,4
+evo_model-0.3.dist-info/RECORD,,
