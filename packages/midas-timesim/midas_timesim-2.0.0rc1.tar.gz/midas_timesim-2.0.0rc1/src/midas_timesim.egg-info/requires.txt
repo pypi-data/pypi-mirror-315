@@ -1,0 +1,3 @@
+midas-mosaik>=2.0.0rc1
+mosaik_api
+numpy
