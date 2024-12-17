@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: cosmograph
+Version: 0.0.13
+Summary: Binder to the cosmograph visual analytics for big graphs
+Home-page: https://github.com/cosmograph-org/py_cosmograph
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: i2
+Requires-Dist: dol
+Requires-Dist: jy
+Requires-Dist: ju
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: linked
+Requires-Dist: lkj
+Requires-Dist: tabled
+Requires-Dist: cosmograph-widget
+Requires-Dist: traitlets
+
+# cosmograph
+
+Python binder to the [cosmograph visual analytics tools](https://github.com/cosmograph-org) for big graphs. 
+
+To install:	```pip install cosmograph```
+
+
+# Links
+
+* [pypi cosmograph page](https://pypi.org/project/cosmograph/)
+
+
