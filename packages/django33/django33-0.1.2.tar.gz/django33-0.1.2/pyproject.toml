@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "django33"
+version = "0.1.2"
+description = "django的国产化替代版本，基于django二次开发，用法和django完全一样！"
+authors = ["zhangdapeng <1156956636@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+asgiref = ">=3.8.1,<4"
+sqlparse = ">=0.3.1"
+tzdata = { version = ">=0.0.1", markers = "sys_platform == 'win32'" }
+
+[tool.poetry.scripts]
+django33-admin = "django33.core.management:execute_from_command_line"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
