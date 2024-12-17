@@ -1,0 +1,45 @@
+name: Check Code
+
+on: [push]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup-python-env
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Format
+        continue-on-error: true
+        id: format
+        run: uv run ruff format .
+      - name: Lint
+        continue-on-error: true
+        id: lint
+        run: uv run ruff check .
+      - name: Test
+        continue-on-error: true
+        id: test
+        run: uv run pytest
+      - name: Type Check
+        continue-on-error: true
+        id: mypy
+        run: uv run mypy -p aserehe --strict
+      - name: Security Check
+        continue-on-error: true
+        id: security
+        run: uv run bandit -r aserehe
+      - name: Check Results
+        run: |
+          if [[ "${{ steps.format.outcome }}" == "failure" ]] || \
+             [[ "${{ steps.lint.outcome }}" == "failure" ]] || \
+             [[ "${{ steps.test.outcome }}" == "failure" ]] || \
+             [[ "${{ steps.mypy.outcome }}" == "failure" ]] || \
+             [[ "${{ steps.security.outcome }}" == "failure" ]]; then
+            echo "One or more checks failed"
+            exit 1
+          fi

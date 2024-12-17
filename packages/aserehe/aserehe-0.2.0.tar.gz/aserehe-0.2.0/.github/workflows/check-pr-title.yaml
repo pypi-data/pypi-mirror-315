@@ -1,0 +1,13 @@
+name: Check PR Title
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+jobs:
+  check-pr-title:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/setup-python-env
+      - run: echo "${{ github.event.pull_request.title }}" | uv run aserehe check --from-stdin
