@@ -1,0 +1,9 @@
+appdirs
+attrs
+cattrs
+jinja2
+jsonschema
+markdown
+python-decouple
+ruamel.yaml
+termcolor
