@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_winzy_macos_reminder.py
+winzy_macos_reminder/__init__.py
+winzy_macos_reminder.egg-info/PKG-INFO
+winzy_macos_reminder.egg-info/SOURCES.txt
+winzy_macos_reminder.egg-info/dependency_links.txt
+winzy_macos_reminder.egg-info/entry_points.txt
+winzy_macos_reminder.egg-info/requires.txt
+winzy_macos_reminder.egg-info/top_level.txt
