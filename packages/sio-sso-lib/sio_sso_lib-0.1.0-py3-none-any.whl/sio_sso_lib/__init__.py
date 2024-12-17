@@ -1,0 +1,1 @@
+from .main import dire_bonjour
