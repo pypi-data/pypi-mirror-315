@@ -1,0 +1,2 @@
+[console_scripts]
+sharpshot = sharpshot.cli:main
