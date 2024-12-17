@@ -1,0 +1,6 @@
+winzy
+colorama
+requests
+
+[test]
+pytest

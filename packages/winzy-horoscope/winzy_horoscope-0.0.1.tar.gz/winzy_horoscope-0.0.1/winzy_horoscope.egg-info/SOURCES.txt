@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_winzy_horoscope.py
+winzy_horoscope/__init__.py
+winzy_horoscope.egg-info/PKG-INFO
+winzy_horoscope.egg-info/SOURCES.txt
+winzy_horoscope.egg-info/dependency_links.txt
+winzy_horoscope.egg-info/entry_points.txt
+winzy_horoscope.egg-info/requires.txt
+winzy_horoscope.egg-info/top_level.txt

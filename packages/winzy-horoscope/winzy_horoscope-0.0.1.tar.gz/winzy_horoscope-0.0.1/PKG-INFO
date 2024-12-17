@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: winzy-horoscope
+Version: 0.0.1
+Summary: Get daily Horoscope using https://horoscope-app-api.vercel.app by Ashutosh Krishna
+Author: Sukhbinder Singh
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/sukhbinder/winzy-horoscope
+Project-URL: Changelog, https://github.com/sukhbinder/winzy-horoscope/releases
+Project-URL: Issues, https://github.com/sukhbinder/winzy-horoscope/issues
+Project-URL: CI, https://github.com/sukhbinder/winzy-horoscope/actions
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: winzy
+Requires-Dist: colorama
+Requires-Dist: requests
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+
+# winzy-horoscope
+
+[![PyPI](https://img.shields.io/pypi/v/winzy-horoscope.svg)](https://pypi.org/project/winzy-horoscope/)
+[![Changelog](https://img.shields.io/github/v/release/sukhbinder/winzy-horoscope?include_prereleases&label=changelog)](https://github.com/sukhbinder/winzy-horoscope/releases)
+[![Tests](https://github.com/sukhbinder/winzy-horoscope/workflows/Test/badge.svg)](https://github.com/sukhbinder/winzy-horoscope/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/sukhbinder/winzy-horoscope/blob/main/LICENSE)
+
+Get daily Horoscope using https://horoscope-app-api.vercel.app by [Ashutosh Krishna](https://horoscope-app-api.vercel.app)
+
+
+Exploring astro API for personal project inspired by friend's interest in astrology.
+
+
+## Installation
+
+First [install winzy](https://github.com/sukhbinder/winzy) by typing
+
+```bash
+pip install winzy
+```
+
+Then install this plugin in the same environment as your Winzy application.
+```bash
+winzy install winzy-horoscope
+```
+## Usage
+
+Demo of usage
+
+![winzy-horoscope-demo.gif](https://raw.githubusercontent.com/sukhbinder/windy-horoscope/main/winzy-horoscope-demo.gif)
+
+## Development
+
+To set up this plugin locally, first checkout the code. Then create a new virtual environment:
+```bash
+cd winzy-horoscope
+python -m venv venv
+source venv/bin/activate
+```
+Now install the dependencies and test dependencies:
+```bash
+pip install -e '.[test]'
+```
+To run the tests:
+```bash
+python -m pytest
+```
