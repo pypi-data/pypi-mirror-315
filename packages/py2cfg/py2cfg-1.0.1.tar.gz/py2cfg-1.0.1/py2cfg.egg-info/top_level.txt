@@ -1,0 +1,4 @@
+dist
+examples
+py2cfg
+tests

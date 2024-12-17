@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: py2cfg
+Version: 1.0.1
+Summary: From any python3 source code, generate Control Flow Graph (CFG).
+Project-URL: Homepage, https://gitlab.com/classroomcode/py2cfg
+Requires-Python: >=3.12
+License-File: LICENSE
+Requires-Dist: astor
+Requires-Dist: pudb
+Requires-Dist: websocket-server
+Requires-Dist: graphviz
+Requires-Dist: flask
+Requires-Dist: requests
