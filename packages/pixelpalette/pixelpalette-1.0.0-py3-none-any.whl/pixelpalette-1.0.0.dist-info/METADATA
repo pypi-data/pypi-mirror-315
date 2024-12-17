@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pixelpalette
+Version: 1.0.0
+Summary: A package to extract dominant colors from images and represent them in RGB, Hex, and HSL formats.
+Home-page: https://github.com/imparth7/pixelpalette
+Author: Parth Dudhatra
+Author-email: imparth.dev@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/imparth7/pixelpalette/issues
+Project-URL: Source Code, https://github.com/imparth7/pixelpalette
+Keywords: color extraction,image processing,dominant colors,RGB to Hex,RGB to HSLcolor palettes,image analysis
+Platform: Any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+
+# Pixel Palette
+
+A Python package to extract dominant colors from an image and display them in RGB, Hex, and HSL formats.
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install pixelpalette
+```
+
+## Usage
+
+```py
+from pixelpalette import extract_colors
+
+image_path = "you_image_path"
+colors = extract_colors(image_path, n_colors=10)
+
+for i, color in enumerate(colors):
+    print(f"Color {i+1}:")
+    print(f"  RGB: {color['RGB']}")
+    print(f"  Hex: {color['Hex']}")
+    print(f"  HSL: {color['HSL']}")
+```
+
+### Outout
+
+```bash
+Color 1:
+  RGB: rgb(255, 200, 100)
+  Hex: #ffc864
+  HSL: hsl(30, 100%, 70%)
+...
+```
+
+## Dependencies
+- numpy
+- matplotlib
+- scikit-learn
