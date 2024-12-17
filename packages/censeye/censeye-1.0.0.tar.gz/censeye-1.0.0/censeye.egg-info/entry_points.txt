@@ -1,0 +1,3 @@
+[console_scripts]
+censeye = censeye:cli.main
+
