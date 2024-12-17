@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+src/MixtureMetrics/MixtureMetrics.py
+src/MixtureMetrics/__init__.py
+src/MixtureMetrics.egg-info/PKG-INFO
+src/MixtureMetrics.egg-info/SOURCES.txt
+src/MixtureMetrics.egg-info/dependency_links.txt
+src/MixtureMetrics.egg-info/requires.txt
+src/MixtureMetrics.egg-info/top_level.txt
