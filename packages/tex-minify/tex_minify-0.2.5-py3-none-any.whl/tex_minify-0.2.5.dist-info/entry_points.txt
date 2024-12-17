@@ -1,0 +1,5 @@
+[console_scripts]
+tex-minify = tex_minify.cli:cli
+
+[uvx]
+tex-minify = tex_minify.cli:cli
