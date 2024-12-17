@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+grpcio
+grpcio-tools
+kubernetes
+pydantic
+requests
+python-dotenv
+numpy
