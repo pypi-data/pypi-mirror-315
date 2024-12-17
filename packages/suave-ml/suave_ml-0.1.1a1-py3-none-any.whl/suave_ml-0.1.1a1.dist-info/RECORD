@@ -1,0 +1,10 @@
+suave/__init__.py,sha256=Kj9rQzbAZq8ShEsLjWl0C5KyoCWegBogkkMTbO4Fo20,99
+suave/_base.py,sha256=E8X5TAjr_r25JaUW9A-4DWq7SGLKmKjJvoYnHiYjm3Q,388
+suave/sklearn.py,sha256=pn9spEPLWEg_NMrw1ubPt3mnqAaosLwJbwnU1EjUCSg,11361
+suave/suave.py,sha256=DYQcBnGtP_UjFZsWV5FOTFHmhJNEcIDQavkzpejQgYg,60093
+suave/utils.py,sha256=U-JV_vDHeVe5Cz1VB48-oFTrFd6tm6gOxArKGser0P0,4386
+suave_ml-0.1.1a1.dist-info/LICENSE,sha256=Bq8nDGhCdpB14GTQWFDq8VEunM0XpM8uMU-_HEsWG_Y,1523
+suave_ml-0.1.1a1.dist-info/METADATA,sha256=-SfSmqGLN3vA89BElgpyYsh81MsIgLf6YIPSTbIW3p0,7773
+suave_ml-0.1.1a1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+suave_ml-0.1.1a1.dist-info/top_level.txt,sha256=I1xpUjnElx-cTVc8hCAebDchcNmW6pzld71_KUOhoUc,6
+suave_ml-0.1.1a1.dist-info/RECORD,,
