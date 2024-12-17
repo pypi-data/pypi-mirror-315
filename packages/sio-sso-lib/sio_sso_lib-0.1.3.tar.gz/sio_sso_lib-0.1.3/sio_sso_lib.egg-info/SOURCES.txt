@@ -1,0 +1,9 @@
+README.md
+setup.py
+sio_sso_lib/__init__.py
+sio_sso_lib/main.py
+sio_sso_lib.egg-info/PKG-INFO
+sio_sso_lib.egg-info/SOURCES.txt
+sio_sso_lib.egg-info/dependency_links.txt
+sio_sso_lib.egg-info/requires.txt
+sio_sso_lib.egg-info/top_level.txt

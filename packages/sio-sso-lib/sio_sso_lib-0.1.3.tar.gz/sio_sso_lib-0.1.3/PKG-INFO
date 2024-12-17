@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sio_sso_lib
+Version: 0.1.3
+Summary: Librairie pour la gestion de l'authentification SSO en SIO
+Home-page: https://sso.inoctet.fr
+Author: Paul
+Author-email: contact@inoctet.fr
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: numpy
+
+# Librairie pour la gestion de l'authentification SSO en SIO
