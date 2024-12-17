@@ -1,0 +1,8 @@
+.DS_Store,sha256=ewof8U_pMGlcoJPUN_6R7oY5Stm-gemDSDW5OOO2A_Q,6148
+mlipdockers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlipdockers/core.py,sha256=VXGK1qUbJdO8P5SecmXV5Y0rk4QR7cGokxobTzJWq8M,1402
+mlipdockers/dkreq.py,sha256=x3EzQUMlsHrrm4Md82WV69iG_ybboVlcEelTT92tfIQ,4360
+mlipdockers-0.0.5.dist-info/METADATA,sha256=pavH-5djii1gJ6Acjc10axobHErLeTiB3TUr8rjRDOs,712
+mlipdockers-0.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+mlipdockers-0.0.5.dist-info/top_level.txt,sha256=_BgJFsZqJHGXrYbozqees6jp9yYU0Tf0hrRvFo7xVBg,12
+mlipdockers-0.0.5.dist-info/RECORD,,
