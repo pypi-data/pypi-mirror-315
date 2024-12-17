@@ -1,0 +1,8 @@
+{
+  "test": "yes",
+  "validation": {
+    "common": {
+      "api_credentials": "fake_key"
+    }
+  }
+}
