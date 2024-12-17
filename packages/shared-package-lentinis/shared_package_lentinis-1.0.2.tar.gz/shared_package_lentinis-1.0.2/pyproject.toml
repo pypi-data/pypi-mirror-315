@@ -1,0 +1,13 @@
+[project]
+name = "shared-package-lentinis"
+version = "1.0.2"
+description = "A shared utilities package"
+dependencies = ["fastapi"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
