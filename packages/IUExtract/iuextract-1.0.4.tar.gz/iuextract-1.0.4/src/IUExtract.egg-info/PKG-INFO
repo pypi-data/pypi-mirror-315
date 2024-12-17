@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: IUExtract
+Version: 1.0.4
+Summary: Rule-based Idea Unit segmentation algorithm for the English language.
+Home-page: https://github.com/TT-CL/iuextract
+Author: Gecchele Marcello
+Author-email: Marcello Gecchele <linked.uno@pm.me>
+License: The Clear BSD License
+        
+        Copyright (c) 2022 Marcello Gecchele, 
+         Tokunaga Laboratory of Computational Linguistics, Tokyo Institute of Technology
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted (subject to the limitations in the disclaimer
+        below) provided that the following conditions are met:
+        
+             * Redistributions of source code must retain the above copyright notice,
+             this list of conditions and the following disclaimer.
+        
+             * Redistributions in binary form must reproduce the above copyright
+             notice, this list of conditions and the following disclaimer in the
+             documentation and/or other materials provided with the distribution.
+        
+             * Neither the name of the copyright holder nor the names of its
+             contributors may be used to endorse or promote products derived from this
+             software without specific prior written permission.
+        
+        NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE GRANTED BY
+        THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+        CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+        LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+        PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+        CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+        EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+        PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+        BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+        IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+        ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+        POSSIBILITY OF SUCH DAMAGE.
+Project-URL: Homepage, https://tt-cl.github.io/iu-resources/
+Project-URL: Documentation, https://github.com/TT-CL/iuextract
+Project-URL: Repository, https://github.com/TT-CL/iuextract.git
+Project-URL: Issues, https://github.com/TT-CL/iuextract/issues
+Keywords: Idea Unit,textual segmentation,segmentation,linguistics
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: spacy>=3.0.0
+
+# IUExtract
+Rule-based Idea Unit segmentation algorithm for the English language.
+
+## Installation
+First of all, you need to install the dependencies:
+```
+pip install spacy
+python -m spacy download en_core_web_lg
+```
+To install the package with the command line tool [install pipx](https://pipx.pypa.io/latest/installation/) and run the following command:
+```
+pipx install iuextract --python 3.9
+```
+
+If you only wish to use the package in your python projects you can install without executable via
+```
+pip install iuextract
+```
+
+## Command Line Interface (CLI) Usage
+Once installed via `pipx`, you can run
+```
+iuextract -i input_file.txt 
+```
+to segment `file.txt` into Idea Units. The segmented file will be printed on the console as standard output.
+You can specify an output file with the `-o` parameter.
+```
+iuextract -i input_file.txt -o output_file.txt
+```
+For more options you can call the help argument.
+```
+iuextract -h
+```
