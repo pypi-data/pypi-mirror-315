@@ -1,0 +1,8 @@
+multimodal_parser/__init__.py,sha256=t0DPVTCOhENkJWO8jzed16A8Cu-WmXaTAVZciKy5S3k,362
+multimodal_parser/markdown.py,sha256=PP3DYsAQzw3Z3W49kcVHTSeWxbfMuutKsmYruPKKtsQ,10326
+multimodal_parser/img_analysis.prompt,sha256=UeaVroUbMVt3t3lyME3TrbYZC9RHadXvM43BgbSA5Lk,328
+multimodal_parser/md_prompt.j2,sha256=SsBYgg7wr_642DEtaW_DoH970z1USMZfHedUx4nV4cc,1806
+multimodal_parser-0.1.1.dist-info/METADATA,sha256=k0q_TJjQjvVBo95Of-g_LRUH2PintPNiJivberSZ2No,2161
+multimodal_parser-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+multimodal_parser-0.1.1.dist-info/licenses/LICENSE,sha256=1JTJhQjUYDqJzFJhNtitm7mHyE71PRHgetIqRRWg6Pk,1068
+multimodal_parser-0.1.1.dist-info/RECORD,,
