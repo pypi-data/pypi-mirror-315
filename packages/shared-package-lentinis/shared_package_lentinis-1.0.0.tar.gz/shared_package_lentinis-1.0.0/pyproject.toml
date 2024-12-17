@@ -1,0 +1,16 @@
+[project]
+name = "shared-package-lentinis"
+version = "1.0.0"
+description = "A shared utilities package"
+authors = [
+    { name = "Your Name", email = "youremail@example.com" }
+]
+license = { text = "MIT" }
+dependencies = [
+"fastapi",
+
+]  # Add any dependencies `shared` needs here
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

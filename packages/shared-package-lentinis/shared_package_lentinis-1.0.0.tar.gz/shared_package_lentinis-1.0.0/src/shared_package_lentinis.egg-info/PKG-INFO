@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: shared-package-lentinis
+Version: 1.0.0
+Summary: A shared utilities package
+Author-email: Your Name <youremail@example.com>
+License: MIT
+Requires-Dist: fastapi
