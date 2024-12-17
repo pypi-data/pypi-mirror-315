@@ -1,0 +1,10 @@
+django_uidfield/__init__.py,sha256=gEVU9slzag45yMqkLFFFcqThjV9T7w9OqZB76Mo3yr0,140
+django_uidfield/fields.py,sha256=hUzqh4MQxeETxxW8_FUV3RPkjFCDAZSAZzdWeaCuxDM,1210
+django_uidfield/misc.py,sha256=urBUa6hB_Knqy2tG40TvZ0-Rjw2ZzjTJzvSnTjGxxhg,1278
+django_uidfield/models.py,sha256=XMDl6CIkkClPRrW3Hy5UNVOTezrebLJAAUC9Bs4FkDA,1310
+django_uidfield/tests.py,sha256=iuV_kK4QkPH7oSzXFEmV45yPOqHjIVuJ-dI7ca2wha8,4092
+django_uidfield-0.3.5.dist-info/LICENSE,sha256=lGO9pAaQjwTEVDYPUBwh8uvMQiHL4WToTW1qltVXxsk,1063
+django_uidfield-0.3.5.dist-info/METADATA,sha256=mmcCp_Nu-TEJm8FDnTWL31wUVOyaZo_9qwykuVPBvGQ,2704
+django_uidfield-0.3.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+django_uidfield-0.3.5.dist-info/top_level.txt,sha256=c2OvrLMK5aOTD8IzsTyfx2Z3zwC2Rkn23q8FOa8AlfE,16
+django_uidfield-0.3.5.dist-info/RECORD,,
