@@ -1,0 +1,9 @@
+README.md
+setup.py
+palette/__init__.py
+palette/extractor.py
+pixelpalette.egg-info/PKG-INFO
+pixelpalette.egg-info/SOURCES.txt
+pixelpalette.egg-info/dependency_links.txt
+pixelpalette.egg-info/requires.txt
+pixelpalette.egg-info/top_level.txt
