@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pkg-platzi-final
+Version: 0.1.0
+Summary: Este paquete implementa un ejemplo de un sistema básico de gestión de reservas en Python.
+Home-page: https://github.com/Odelgadoo/pkg_platzi_final
+Author: odelgadoo
+Author-email: odelgadoo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# paquete_platzi_final
+
+Este paquete implementa un ejemplo de un sistema bÃ¡sico de gestiÃ³n de reservas en Python.
+
+Para usarlo, crea un archivo .py y copia el siguiente script:
+```
+import asyncio
+from pkg_platzi_final.main import main
+asyncio.run(main())
+```
+
+## Instalar libreria
+
+## Resultado esperado, luego de instalar la libreria y ejecutar el cÃ³digo de ejemplo.
+
+La habitaciÃ³n nÃºmero 101 ha sido agregada!
+La habitaciÃ³n nÃºmero 102 ha sido agregada!
+El cliente Alice ha sido adicionado!
+El cliente Juan ha sido adicionado!
+La habitaciÃ³n 101 estÃ¡ disponible!
+Reserva creada para Alice en la habitaciÃ³n 101
+Procesando el pago del cliente Alice por valor de $100
+Pago completado para el cliente Alice por valor de $100
+La habitaciÃ³n 101 ahora NO estÃ¡ disponible!
+La habitaciÃ³n 102 estÃ¡ disponible!
+Reserva creada para Juan en la habitaciÃ³n 102
+Procesando el pago del cliente Juan por valor de $200
+Pago completado para el cliente Juan por valor de $200
+La habitaciÃ³n 102 ahora NO estÃ¡ disponible!
+Reserva 2 cancelada
+La habitaciÃ³n 102 ahora estÃ¡ disponible!
+Reserva no encontrada
+
+
+

@@ -1,0 +1,12 @@
+pkg_platzi_final/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg_platzi_final/main.py,sha256=JdQ7y0wMMLxXzOB4ew6ftsqzrMGfSFaPCZ5J6LvvEBM,1808
+pkg_platzi_final/hotel_management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg_platzi_final/hotel_management/customers.py,sha256=60l7eeomNCYfYK2fZQb99VTCElcTPrT0sV2tm1RgdZg,620
+pkg_platzi_final/hotel_management/payments.py,sha256=HRB4e-G0IFrM2DnoWuL_oHY6xTPGaqUSe8Q8c-VhFJY,390
+pkg_platzi_final/hotel_management/reservations.py,sha256=OW-prJEh6OdPy7ZnQhscTD3LGfC0OHYxPzGAxtyIQbY,1234
+pkg_platzi_final/hotel_management/rooms.py,sha256=iOfb6pDrvnZqsVmANPfj0gMaSHDkmdjqVDK7leByGd0,1341
+pkg_platzi_final-0.1.0.dist-info/LICENSE.txt,sha256=3MZjU1WCBupeypEAJD8QkmSE_PBWqLT9yGgbR1ymUXU,1089
+pkg_platzi_final-0.1.0.dist-info/METADATA,sha256=K3Tbh_NM2BLHZnX0YYcCOR_UjbXLFYe6PPQoH23e-jM,1735
+pkg_platzi_final-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+pkg_platzi_final-0.1.0.dist-info/top_level.txt,sha256=hzer_cqtCpF3G74dlk-p9xu1T28hh5IrmJDtHPnl7Kc,17
+pkg_platzi_final-0.1.0.dist-info/RECORD,,
