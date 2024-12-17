@@ -1,0 +1,29 @@
+[project]
+name = "cstation"
+version = "0.1.21"
+description = "Managing PerfectWork Platform Infrastracture"
+readme = "README.md"
+authors = [{name = "Loh W S (Wilson)"}]
+requires-python = ">=3.9"
+dependencies = [
+    "auto-click-auto>=0.1.5",
+    "click>=8.1.7",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+]
+
+[project.urls]
+# Homepage = "https://github.com/simonw/demo-app"
+# Changelog = "https://github.com/simonw/demo-app/releases"
+# Issues = "https://github.com/simonw/demo-app/issues"
+# CI = "https://github.com/simonw/demo-app/actions"
+
+[project.scripts]
+cstation = "cstation.cli:cli"
