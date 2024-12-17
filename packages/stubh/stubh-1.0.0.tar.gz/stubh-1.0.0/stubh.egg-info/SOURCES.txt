@@ -1,0 +1,8 @@
+README.md
+setup.py
+sth/__init__.py
+sth/sth.py
+stubh.egg-info/PKG-INFO
+stubh.egg-info/SOURCES.txt
+stubh.egg-info/dependency_links.txt
+stubh.egg-info/top_level.txt
