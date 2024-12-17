@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: tofile
+Version: 0.1.0
+Summary: Create directory structures from tree command output
+Home-page: https://github.com/dawid-ai/tree2file
+Author: dawid-ai
+Author-email: dawid-ai <hello@dawid.ai>
+License: MIT
+Project-URL: Homepage, https://github.com/dawid-ai/tree2file
+Project-URL: Bug Tracker, https://github.com/dawid-ai/tree2file/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Tree2File
+
+A command-line tool to create directory structures from tree command output.
+
+## Installation
+
+```bash
+pip install tofile
+```
+
+## Usage
+
+1. Run the command:
+```bash
+tofile
+```
+
+2. Paste your tree structure. For example:
+```bash
+my_project/
+├── src/
+│   └── main.py
+├── tests/
+│   └── test_main.py
+└── README.md
+```
+
+3. Press Enter twice to finish input.
+
+The tool will create the directory structure in your current working directory.
+
+
+## Features
+
+- Creates directories and files from tree command output
+- Validates input structure before creation
+- Handles nested directories and files
+- Simple command-line interface
+- Two convenient commands: t2f or tree2file
+
+## License
+MIT License

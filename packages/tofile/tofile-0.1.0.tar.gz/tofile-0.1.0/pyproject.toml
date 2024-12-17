@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tofile"
+version = "0.1.0"
+description = "Create directory structures from tree command output"
+readme = "README.md"
+authors = [
+    { name = "dawid-ai", email = "hello@dawid.ai" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/dawid-ai/tree2file"
+"Bug Tracker" = "https://github.com/dawid-ai/tree2file/issues"
+
+[project.scripts]
+tofile = "tofile.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
