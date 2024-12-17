@@ -1,0 +1,3 @@
+from django33.test import TestCase
+
+# 创建你的测试代码

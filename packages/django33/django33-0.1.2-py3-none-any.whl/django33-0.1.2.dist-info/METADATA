@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: django33
+Version: 0.1.2
+Summary: django的国产化替代版本，基于django二次开发，用法和django完全一样！
+Author: zhangdapeng
+Author-email: 1156956636@qq.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: asgiref (>=3.8.1,<4)
+Requires-Dist: sqlparse (>=0.3.1)
+Requires-Dist: tzdata (>=0.0.1) ; sys_platform == "win32"
+Description-Content-Type: text/markdown
+
+# django33
+django的国产化替代版本，基于django二次开发，用法和django完全一样！
+
+## 安装
+```shell
+pip install django33
+```
