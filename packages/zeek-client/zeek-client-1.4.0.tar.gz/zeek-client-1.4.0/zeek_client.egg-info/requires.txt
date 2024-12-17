@@ -1,0 +1,7 @@
+argcomplete>=3.4.0
+argparse>=1.4.0
+websocket-client>=1.8.0
+
+[dev]
+pytest-cov>=5.0.0
+pytest>=8.1.1
