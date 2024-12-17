@@ -1,0 +1,40 @@
+[build-system]
+requires = ['setuptools>=64.0.0', 'build']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'oklabsdk'
+dynamic = ['version', 'readme']
+description = 'OKLab Software Development Kit'
+authors = [
+    { name = 'Matej Holubec', email = 'holubec@oksystem.cz' },
+]
+license = { text = 'GNU General Public License v3 (GPLv3)' }
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Environment :: Console',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+    'Operating System :: POSIX :: Linux',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: Implementation :: PyPy',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+]
+requires-python = '>=3.10'
+dependencies = [
+    'python-dotenv',
+    'requests',
+    'pdf2image'
+]
+
+[project.urls]
+url = 'https://oksystem.cz'
+
+[tool.setuptools.packages.find]
+include = ['oklabsdk']
+
+[tool.setuptools.package-data]
+'oklabsdk' = ['*', '**/*', '!**/__pycache__']
+
+[tool.setuptools.dynamic]
+version = {attr = 'oklabsdk.version.__version__'}
