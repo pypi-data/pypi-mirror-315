@@ -1,0 +1,16 @@
+thalesians/__init__.py,sha256=gy5l3yqRGwNDXv62K4jarZWyIcFqTTYNeew0m5RYgp0,91
+thalesians/stochastics/__init__.py,sha256=gy5l3yqRGwNDXv62K4jarZWyIcFqTTYNeew0m5RYgp0,91
+thalesians/stochastics/distrs.py,sha256=VmC11FQ9sd9TIAgX5tUuyLKbDtL9TG5pU0jPI36bVT4,23562
+thalesians/stochastics/kde.py,sha256=pYzc8xU1QqjPBc9iH7XwQuWrpIF3t84eLLDs8V8wFWc,12180
+thalesians/stochastics/outliers.py,sha256=kRuIYLsHeaHqh-hsJjsOFGSUkraDI0HdonsGVEP1OLg,650
+thalesians/stochastics/processes.py,sha256=_33_63MDDn9fXAQxvYyxDDqho9LXl9CiIwKE2Dk2ELA,30457
+thalesians/stochastics/simulation.py,sha256=Wzg569o8ExDIE_cYy_bbsiPLcsNoTuIhe0dHxI9Rthc,4150
+thalesians/stochastics/filtering/__init__.py,sha256=RUwua_BwycoRtYdWTXBO3MiOuaR1p9VDX0ienjpl6Q8,19285
+thalesians/stochastics/filtering/kalman.py,sha256=5VK4jez4PHnSogU4-7AXrkmG-a23KV4txdgxB52-JYc,14237
+thalesians/stochastics/filtering/particle.py,sha256=4av5RaoVXRbBlVXcCR7Q8BmFV2CnjNwmA4ScTEDH6Pk,22145
+thalesians/stochastics/filtering/visual.py,sha256=MtFCEGGrUfDw_v2chqKmR4u4tZWGRGsagxCDgsPAIxY,32163
+thalesians.stochastics-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+thalesians.stochastics-0.0.1.dist-info/METADATA,sha256=RqvoUQ8k9KoaqAkhoKnive6miDC39NQn-k-gSdILGLo,917
+thalesians.stochastics-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+thalesians.stochastics-0.0.1.dist-info/top_level.txt,sha256=IfKqmaDuDlMsxecUNDYqWF156N_CK1skrFS_FTFnw-I,11
+thalesians.stochastics-0.0.1.dist-info/RECORD,,
