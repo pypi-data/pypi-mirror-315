@@ -1,0 +1,14 @@
+*.pyc
+*.pyo
+*.egg-info
+
+/build
+/dist
+/doc/_build
+
+.idea
+
+.venv
+
+test.py
+
