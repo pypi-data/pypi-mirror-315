@@ -1,0 +1,8 @@
+gradio_picto_gallery/__init__.py,sha256=igEtwZtTZ5NsPCVfH8xh2sB97-6nBjseU672dMwDaSg,67
+gradio_picto_gallery/pictogallery.py,sha256=Hmf6egQPEpXNiTVVqhgxwfzkBF9CnnrVEaSiVvnzpZ4,15238
+gradio_picto_gallery/pictogallery.pyi,sha256=nsypQDHX9pv57Zsa8m7rlSO8fTkRWWttYR5XJH0h8jk,53583
+gradio_picto_gallery/templates/component/index.js,sha256=nUaqkG6hUkm0dyt8pqKqyozRCiYjTtvfi3kOzh-VODs,232178
+gradio_picto_gallery/templates/component/style.css,sha256=PPGxobbqTlhbDf-CzUqSbPNaZkpFy1O4kyMIUyp0PNw,22905
+gradio_picto_gallery-0.0.8.dist-info/METADATA,sha256=JYOxdZxziubgBPteh_wTISSK4dBaebuvmUbWeITFsU8,16612
+gradio_picto_gallery-0.0.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gradio_picto_gallery-0.0.8.dist-info/RECORD,,
