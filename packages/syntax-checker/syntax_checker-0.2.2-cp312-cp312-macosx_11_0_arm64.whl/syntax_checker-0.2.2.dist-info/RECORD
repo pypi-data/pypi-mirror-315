@@ -1,0 +1,5 @@
+syntax_checker-0.2.2.dist-info/METADATA,sha256=rZVOKRNsy5qvpoeXtdWMhPAzEv8vz_YGPMrC71ZADTQ,4212
+syntax_checker-0.2.2.dist-info/WHEEL,sha256=SYMExoGVir0jDPn9LQbD9tQXhCV6461e0GBdAxP1b78,104
+syntax_checker/__init__.py,sha256=PHgOTt8et16N8TnygwKRYQZz9r4mzmv1QZmYB4XdgZg,139
+syntax_checker/syntax_checker.cpython-312-darwin.so,sha256=3qje98-JLxGUg-CctyO4SqGQOe-vJpeYvJn3I9qpyEA,18230648
+syntax_checker-0.2.2.dist-info/RECORD,,
