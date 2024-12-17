@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+torchfa/__init__.py
+torchfa/dataset.py
+torchfa/torchfa.py
+torchfa.egg-info/PKG-INFO
+torchfa.egg-info/SOURCES.txt
+torchfa.egg-info/dependency_links.txt
+torchfa.egg-info/requires.txt
+torchfa.egg-info/top_level.txt
