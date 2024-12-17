@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: PySciVisToolKit
+Version: 0.0.2
+Summary: a simple toolkit for scivis
+Author-email: Kaiyuan Tang <dullpigeon@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Requires-Dist: icecream
+Requires-Dist: imageio
+Requires-Dist: lpips
+Requires-Dist: netCDF4
+Requires-Dist: numpy
+Requires-Dist: opencv_python
+Requires-Dist: opencv_python_headless
+Requires-Dist: Pillow
+Requires-Dist: pytorch_msssim
+Requires-Dist: PyYAML
+Requires-Dist: scikit_image
+Requires-Dist: scikit_learn
+Requires-Dist: scipy
+Requires-Dist: tifffile
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: tqdm
+Requires-Dist: tyro
+Requires-Dist: Wand
+
+# PySciVisToolKit-CLI
+A simple CLI tool to tackle some easy tasks during writing SciVis paper. Still under developing.
+
+## Installation
+```bash
+pip install PySciVisToolKit
+```

@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PySciVisToolKit"
+authors = [
+    {name = "Kaiyuan Tang", email = "dullpigeon@gmail.com"},
+]
+description = "a simple toolkit for scivis"
+readme = "README.md"
+requires-python = ">=3.8.0"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "icecream",
+    "imageio",
+    "lpips",
+    "netCDF4",
+    "numpy",
+    "opencv_python",
+    "opencv_python_headless",
+    "Pillow",
+    "pytorch_msssim",
+    "PyYAML",
+    "scikit_image",
+    "scikit_learn",
+    "scipy",
+    "tifffile",
+    "torch",
+    "torchvision",
+    "tqdm",
+    "tyro",
+    "Wand",
+]
+version = "0.0.2"
+
+
+[project.scripts]
+diff_img = "src.diff_img:entrypoint"
+img_lpips = "src.img_lpips:entrypoint"
+img_psnr = "src.img_psnr:entrypoint"
+img_ssim = "src.img_ssim:entrypoint"
+vol_psnr = "src.vol_psnr:entrypoint"
+norm = "src.norm:entrypoint"
+trim = "src.trim:entrypoint"
+nc2raw = "src.nc2raw:entrypoint"
+tiff2vol = "src.tiff2vol:entrypoint"
+imgs2video = "src.imgs2video:entrypoint"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
