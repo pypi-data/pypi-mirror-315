@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: lilo.mdof
+Version: 0.0.0
+Summary: Structural dynamics toolbox 
+Author-email: Chrystal Chern <52893467+chrystalchern@users.noreply.github.com>
+Project-URL: homepage, https://stairlab.berkeley.edu
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: opensees
+Requires-Dist: requests
