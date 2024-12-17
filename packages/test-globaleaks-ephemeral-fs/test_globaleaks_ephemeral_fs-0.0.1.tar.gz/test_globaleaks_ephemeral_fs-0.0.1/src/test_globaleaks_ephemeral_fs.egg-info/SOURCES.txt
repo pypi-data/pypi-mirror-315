@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/globaleaks_ephemeral_fs/__init__.py
+src/test_globaleaks_ephemeral_fs.egg-info/PKG-INFO
+src/test_globaleaks_ephemeral_fs.egg-info/SOURCES.txt
+src/test_globaleaks_ephemeral_fs.egg-info/dependency_links.txt
+src/test_globaleaks_ephemeral_fs.egg-info/entry_points.txt
+src/test_globaleaks_ephemeral_fs.egg-info/requires.txt
+src/test_globaleaks_ephemeral_fs.egg-info/top_level.txt
+tests/test.py

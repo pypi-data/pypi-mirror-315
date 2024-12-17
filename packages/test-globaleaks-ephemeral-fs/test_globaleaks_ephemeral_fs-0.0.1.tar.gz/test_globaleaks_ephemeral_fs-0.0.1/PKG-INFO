@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: test-globaleaks-ephemeral-fs
+Version: 0.0.1
+Summary: An ephemeral, encrypted filesystem implementation using fusepy and cryptography suitable for whistleblowing applications
+Author: Giovanni Pellerano
+Author-email: giovanni.pellerano@globaleaks.org
+License: AGPL-3.0-or-later
+Project-URL: Homepage, https://github.com/globaleaks/globaleaks-ephemeral-fs
+Project-URL: Issues, https://github.com/globaleaks/globaleaks-ephemeral-fs
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: cryptography
+Requires-Dist: fusepy
