@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+openrs_python.egg-info/PKG-INFO
+openrs_python.egg-info/SOURCES.txt
+openrs_python.egg-info/dependency_links.txt
+openrs_python.egg-info/requires.txt
+openrs_python.egg-info/top_level.txt
+rs_tools/__init__.py
+rs_tools/dataprocessor.py
+rs_tools/geo2proj.py
+rs_tools/normalization.py
+rs_tools/polygonize.py
+rs_tools/rs3.py

@@ -1,0 +1,10 @@
+numpy
+matplotlib
+Pillow
+opencv-python
+pyproj
+scipy
+shapely
+fiona
+geopandas
+scikit-image
