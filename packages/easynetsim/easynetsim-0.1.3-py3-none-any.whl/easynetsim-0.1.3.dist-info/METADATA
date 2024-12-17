@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: easynetsim
+Version: 0.1.3
+Summary: A simple network simulator for testing ping and routing
+Home-page: https://github.com/denver-code/easynetsim
+License: MIT
+Author: Ihor Savenko
+Author-email: csigorek@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: networkx (>=3.4.2,<4.0.0)
+Project-URL: Repository, https://github.com/denver-code/easynetsim
+Description-Content-Type: text/markdown
+
+# Easy Network Simulator
+
+A simple network simulator for testing ping and routing between nodes.
+
+## Installation
+
+To install this package, run:
+
+```bash
+pip install easynetsim
+```
+
+## Usage
+```python
+from easynetsim import NetworkSimulator
+
+# Define network configuration
+config = {
+    "nodes": [
+        {"hostname": "router1", "ip": "192.168.1.1", "type": "router"},
+        {"hostname": "server1", "ip": "192.168.1.10", "type": "server"},
+        {"hostname": "client1", "ip": "192.168.1.100", "type": "client"},
+    ],
+    "links": [
+        {
+            "source": "router1",
+            "destination": "server1",
+            "latency": 10,
+            "packet_loss": 0.05,
+        },
+        {
+            "source": "router1",
+            "destination": "client1",
+            "latency": 20,
+            "packet_loss": 0.01,
+        },
+    ],
+}
+
+# Initialize network simulator
+simulator = NetworkSimulator()
+simulator.load_network(config)
+
+# Demonstrate ping operation
+result = simulator.ping("client1", "192.168.1.10")
+print(result)
+```
+
+### Examples
+More examples located in `examples` folder.
+
+## Roadmap  
+- [ ] Test cases
+- [ ] Action for release autopublish
