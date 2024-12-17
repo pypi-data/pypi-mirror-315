@@ -1,0 +1,2 @@
+[console_scripts]
+iptv_spider = iptv_spider:main
