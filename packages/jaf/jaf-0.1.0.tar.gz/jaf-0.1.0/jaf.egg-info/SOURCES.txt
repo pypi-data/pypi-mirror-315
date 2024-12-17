@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+jaf/__init__.py
+jaf/jaf.py
+jaf/jaf_eval.py
+jaf/utils.py
+jaf.egg-info/PKG-INFO
+jaf.egg-info/SOURCES.txt
+jaf.egg-info/dependency_links.txt
+jaf.egg-info/top_level.txt
+jaf/builtins/builtins.py
+jaf/dsl/__init__.py
+jaf/dsl/parse.py
