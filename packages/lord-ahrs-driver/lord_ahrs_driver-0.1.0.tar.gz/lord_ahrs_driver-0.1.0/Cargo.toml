@@ -1,0 +1,15 @@
+[package]
+name = "lord-ahrs-driver"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "lord_ahrs_driver"
+crate-type = ["cdylib"]
+
+[dependencies]
+binrw = "0.14.1"
+crossbeam-channel = "0.5.14"
+pyo3 = "0.23.0"
+serialport = "4.6.1"
