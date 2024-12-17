@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: dokanalyse
+Version: 0.1.0
+Summary: Arealanalyse av DOK-datasett
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygeoapi
+Requires-Dist: asyncio
+Requires-Dist: nest-asyncio
+Requires-Dist: aiohttp
+Requires-Dist: cachetools
+Requires-Dist: async-lru
+Requires-Dist: pydantic<2.0
+Requires-Dist: jsonschema
+Requires-Dist: pydash
+Requires-Dist: pillow
+Requires-Dist: python-socketio[client]
+Requires-Dist: lxml
+Requires-Dist: types-lxml
+Requires-Dist: shapely
+Requires-Dist: PyYAML
+Requires-Dist: starlette
+Requires-Dist: build
+Provides-Extra: gdal-391
+Requires-Dist: gdal==3.9.1; extra == "gdal-391"
+Provides-Extra: gdal-362
+Requires-Dist: gdal==3.6.2; extra == "gdal-362"
+
+# Arealanalyse av DOK-datasett
+Process-plugin til pygeoapi for arealanalyse av DOK-datasett
