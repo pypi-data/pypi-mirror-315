@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: opal-trino-fetcher
+Version: 0.0.3
+Summary: An OPAL fetch provider to bring authorization state from Trino.
+Author-email: Alon Nahmias <alon.alon.nahmias@gmail.com>
+Project-URL: Source, https://github.com/alonahmias/opal-trino-fetcher
+Project-URL: Bug Tracker, https://github.com/alonahmias/opal-trino-fetcher/issues
+Keywords: Open Policy Agent,OPA,OPAL,Open Policy Administration Layer,Trino
+Requires-Python: >=3.10
+Requires-Dist: opal-common>=0.1.11
+Requires-Dist: aiotrino
+Requires-Dist: pydantic
