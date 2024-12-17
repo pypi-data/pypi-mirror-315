@@ -1,0 +1,5 @@
+numpy
+torch>=2.0.0
+scikit-image
+SimpleITK
+nnunetv2>=2.5.1
