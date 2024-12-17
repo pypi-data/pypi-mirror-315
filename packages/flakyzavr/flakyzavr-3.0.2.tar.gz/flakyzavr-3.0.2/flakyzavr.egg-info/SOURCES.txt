@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flakyzavr/__init__.py
+flakyzavr/_flakyzavr_plugin.py
+flakyzavr/_jira_stdout.py
+flakyzavr/_messages.py
+flakyzavr/_traceback.py
+flakyzavr/py.typed
+flakyzavr/version
+flakyzavr/version.py
+flakyzavr.egg-info/PKG-INFO
+flakyzavr.egg-info/SOURCES.txt
+flakyzavr.egg-info/dependency_links.txt
+flakyzavr.egg-info/requires.txt
+flakyzavr.egg-info/top_level.txt
