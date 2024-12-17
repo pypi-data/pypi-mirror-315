@@ -1,0 +1,95 @@
+[project]
+name = "viracitapada"
+version = "0.1.1"
+description = "Performs metrical analysis on ISO-15919-transliterated Sanskrit verses"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["sanskrit", "metrical-parser", "library", "metrical-analysis"]
+authors = [
+    { name = "bkis" }
+]
+maintainers = [
+    { name = "bkis" }
+]
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    # Audience
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "Topic :: Text Processing :: Linguistic",
+    # supported Python versions
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/VedaWebProject/viracitapada"
+Issues = "https://github.com/VedaWebProject/viracitapada/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "coverage>=7.6.9",
+    "mypy>=1.13.0",
+    "pytest>=8.3.4",
+    "ruff>=0.8.3",
+]
+
+# mypy
+
+[tool.mypy]
+python_version = "3.10"
+files = "src/viracitapada/**/*.py"
+warn_return_any = true
+
+# ruff
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+indent-width = 4
+respect-gitignore = false
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+fixable = ["ALL"]
+unfixable = []
+ignore = ["F722"]
+select = ["E", "F", "W", "I", "UP", "SIM"]
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+lines-between-types = 1
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+skip-magic-trailing-comma = false
+
+# pytest
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+# coverage
+
+[tool.coverage.run]
+source = ["src"]
+branch = false
+
+[tool.coverage.report]
+precision = 2
+skip_empty = true
+
+[tool.coverage.html]
+title = "viracitapada - Test Coverage Report"
