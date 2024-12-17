@@ -1,0 +1,11 @@
+whatthepatch_pydantic/__init__.py,sha256=Ey6Ee4AZK7YRZyOKXoQ-JYCjt1JfXO6v2KGWR1BErLk,127
+whatthepatch_pydantic/apply.py,sha256=NQ3XotsCLiEOm_9XrJ-_jFLswXq8bLcRZe1W7ZcaYiU,3798
+whatthepatch_pydantic/exceptions.py,sha256=3g40g57CJCsqQT3I-kotgOq-j01gedSte4PDXP4CwYU,768
+whatthepatch_pydantic/model.py,sha256=YRBwVpnNc3eOVyCKx3pz8LNau4aGFUS5VXtMZdBCgyI,434
+whatthepatch_pydantic/patch.py,sha256=bNhO2_5xGzqDVGpL59_gOHq1DHI4cpPmjgO7dN6AdIE,32833
+whatthepatch_pydantic/snippets.py,sha256=5gbwd18ZZDvd-mkvd9-wEveNtqIcfZz9m6Gn-SNfTq4,1402
+whatthepatch_pydantic-1.0.6a3.dist-info/LICENSE,sha256=lP66gCCy-5ENgFrqOLDSYuYUe-FlDtQ1cqGI7q-FN4s,1096
+whatthepatch_pydantic-1.0.6a3.dist-info/METADATA,sha256=PdsT0r0hJPfXGKVvGvjvKTpHxGqYeCftKO1RnOLKhrk,7411
+whatthepatch_pydantic-1.0.6a3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+whatthepatch_pydantic-1.0.6a3.dist-info/top_level.txt,sha256=YS0__PR1xnAMPsgh0hBTGbz-U98e8Wbom42Re7aGO8o,22
+whatthepatch_pydantic-1.0.6a3.dist-info/RECORD,,
