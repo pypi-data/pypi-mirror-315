@@ -1,0 +1,158 @@
+Metadata-Version: 2.1
+Name: zsl_jwt
+Version: 1.0.0
+Summary: A JWT implementation for ZSL
+Author-email: Martin Babka <babka@atteq.com>, "Atteq s.r.o." <open.source@atteq.com>
+License: Copyright (c) 2017, Martin Babka
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without modification, are permitted provided that the
+        following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following
+        disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following
+        disclaimer in the documentation and/or other materials provided with the distribution.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+        INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+        SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+        WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+        THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Requires-Python: >=3.12
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: zsl>=0.16.5
+Requires-Dist: Jinja2
+Requires-Dist: PyYAML
+Requires-Dist: future
+Requires-Dist: pyjwt
+Provides-Extra: report
+Requires-Dist: docutils; extra == "report"
+Requires-Dist: readme-renderer; extra == "report"
+Requires-Dist: pygments; extra == "report"
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: Flake8-pyproject; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+
+========
+Overview
+========
+
+.. start-badges
+
+.. list-table::
+    :stub-columns: 1
+
+    * - docs
+      - |docs|
+    * - tests
+      - | |coveralls| |codecov|
+    * - package
+      - | |version| |wheel| |supported-versions| |supported-implementations|
+        | |commits-since|
+
+.. |docs| image:: https://readthedocs.org/projects/zsl_jwt/badge/?style=flat
+    :target: https://readthedocs.org/projects/zsl_jwt
+    :alt: Documentation Status
+
+.. |coveralls| image:: https://coveralls.io/repos/AtteqCom/zsl_jwt/badge.svg?branch=master&service=github
+    :alt: Coverage Status
+    :target: https://coveralls.io/r/AtteqCom/zsl_jwt
+
+.. |codecov| image:: https://codecov.io/github/AtteqCom/zsl_jwt/coverage.svg?branch=master
+    :alt: Coverage Status
+    :target: https://codecov.io/github/AtteqCom/zsl_jwt
+
+.. |version| image:: https://img.shields.io/pypi/v/zsl-jwt.svg
+    :alt: PyPI Package latest release
+    :target: https://pypi.python.org/pypi/zsl-jwt
+
+.. |commits-since| image:: https://img.shields.io/github/commits-since/AtteqCom/zsl_jwt/v1.0.0.svg
+    :alt: Commits since latest release
+    :target: https://github.com/AtteqCom/zsl_jwt/compare/v1.0.0...master
+
+.. |wheel| image:: https://img.shields.io/pypi/wheel/zsl-jwt.svg
+    :alt: PyPI Wheel
+    :target: https://pypi.python.org/pypi/zsl-jwt
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/zsl-jwt.svg
+    :alt: Supported versions
+    :target: https://pypi.python.org/pypi/zsl-jwt
+
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/zsl-jwt.svg
+    :alt: Supported implementations
+    :target: https://pypi.python.org/pypi/zsl-jwt
+
+
+.. end-badges
+
+JWT implementation for ZSL framework. This modules adds security
+possibilities to ZSL.
+
+* Free software: BSD license
+
+Installation
+============
+
+Just add `zsl_jwt` to your requirements or use
+::
+
+    pip install zsl-jwt
+
+
+Usage
+=====
+
+Add `zsl_jwt.module.JWTModule` to the modules in your `IoCContainer`
+and provide a `zsl_jwt.configuration.JWTConfiguration` in your
+configuration under `JWT` variable.
+
+Documentation
+=============
+
+See more in https://zsl-jwt.readthedocs.io/
+
+Development
+===========
+
+To run the all tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox

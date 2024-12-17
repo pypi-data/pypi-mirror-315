@@ -1,0 +1,114 @@
+[build-system]
+requires = [
+    "setuptools>=66.0.0",
+    "wheel>=0.38.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zsl_jwt"
+version = "1.0.0"
+description = "A JWT implementation for ZSL"
+readme = "README.rst"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+
+authors = [
+  { name = "Martin Babka", email = "babka@atteq.com" },
+  { name = "Atteq s.r.o.", email = "open.source@atteq.com"}
+]
+
+keywords = []
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: Unix",
+    "Operating System :: POSIX",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities"
+]
+
+dependencies = [
+    "zsl>=0.16.5",
+    "Jinja2",
+    "PyYAML",
+    "future",
+    "pyjwt",
+]
+
+[project.optional-dependencies]
+report = [
+    "docutils",
+    "readme-renderer",
+    "pygments",
+]
+dev = [
+    "check-manifest",
+    "pytest",
+    "pytest-cov",
+    "flake8",
+    "Flake8-pyproject",
+    "isort",
+    "coverage",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.wheel]
+universal = true
+
+include-package-data = true
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Linting / Testing Configuration
+# ─────────────────────────────────────────────────────────────────────────────
+
+[tool.flake8]
+max-line-length = 120
+exclude = [
+    "tests/*",
+    "*/migrations/*",
+    "*/south_migrations/*",
+]
+
+[tool.pytest.ini_options]
+norecursedirs = [
+    ".git",
+    ".tox",
+    ".env",
+    "dist",
+    "build",
+    "south_migrations",
+    "migrations",
+]
+python_files = [
+    "test_*.py",
+    "*_test.py",
+    "tests.py",
+]
+addopts = [
+    "-rxEfsw",
+    "--strict",
+    "--ignore=docs/conf.py",
+    "--ignore=setup.py",
+    "--ignore=ci",
+    "--ignore=.eggs",
+    "--doctest-modules",
+    "--doctest-glob=*.rst",
+    "--tb=short",
+]
+
+[tool.isort]
+force_single_line = true
+line_length = 120
+known_first_party = "zsl_jwt"
+default_section = "THIRDPARTY"
+forced_separate = "test_zsl_jwt"
+not_skip = "__init__.py"
+skip = ["migrations", "south_migrations"]
