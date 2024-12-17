@@ -1,0 +1,2 @@
+[console_scripts]
+pdf_util = pdf_util.pdf_util:main
