@@ -1,0 +1,17 @@
+ccpi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccpi/cuda_kernels/TV_PD_GPU_kernels.cuh,sha256=NhX-Hshi5F82pxOWhmbijlWuI9IyCVWjwgFokj-DYLo,12519
+ccpi/cuda_kernels/TV_ROF_GPU_kernels.cuh,sha256=iqO1dydXmOtYEaXry5BQm5DCyGLQo_d20myNJepU8oo,12206
+ccpi/cuda_kernels/__init__.py,sha256=YIY1w2jj3bxHkLJrq3la8o8pf9NbHXltOEpR17uOE7s,1108
+ccpi/filters/TV.py,sha256=ezxUcxgp-bmE4z6pqNNrlxMP3o_qsl9JR27Yt5R68q8,40631
+ccpi/filters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccpi/filters/diffusion.py,sha256=Ekx5WiY75hp3lvP-rBSeIpiU6WBAXzoxaudFBPSZV4Q,8526
+ccpi/filters/regularisers.py,sha256=Pv7WkPdBBH13fY67yoK2ak3Rm82KEI22RF_ngdUXty8,1832
+ccpi/filters/regularisersCuPy.py,sha256=2L1ppR5M-FBV6UOEkcFShlDxJOWoMBi2GwHpnkR4-9w,10620
+ccpi/filters/utils.py,sha256=9Df22LooUKKyqoJc6tIVhlF2fHIYfSTGhkzcLnT3-HY,726
+ccpi/supp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccpi/supp/qualitymetrics.py,sha256=a0Q26CQYpuy3s4iOckuwQibnCXPDzL-Lgbvy2j_RCvU,2616
+ccpi_regularisation_cupy-24.1.0.dist-info/LICENSE,sha256=F7RC8Xvfmt3axe4CBZKl2D1YO6aLPFMC2bOIgIbGTYA,11377
+ccpi_regularisation_cupy-24.1.0.dist-info/METADATA,sha256=9mh6IWIWVFs9JP02nVWN75ED5_SY5ftlo15HurLxheM,9744
+ccpi_regularisation_cupy-24.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ccpi_regularisation_cupy-24.1.0.dist-info/top_level.txt,sha256=zvPov4SXLFddnXGzKt01OhBmFOOyj6FwJ7PA472jmUg,5
+ccpi_regularisation_cupy-24.1.0.dist-info/RECORD,,
