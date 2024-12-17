@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: urdf-to-usd
+Version: 0.1.0
+Summary: Add your description here
+Author-email: neka-nat <nekanat.stock@gmail.com>
+Requires-Python: >=3.12
+Requires-Dist: scipy>=1.14.1
+Requires-Dist: trimesh>=4.5.3
+Requires-Dist: usd-core>=24.11
+Requires-Dist: yourdfpy>=0.0.56
+Description-Content-Type: text/markdown
+
+# urdf-to-usd
+
+URDF to USD converter
+
+![urdf-to-usd](usd_demo.gif)
