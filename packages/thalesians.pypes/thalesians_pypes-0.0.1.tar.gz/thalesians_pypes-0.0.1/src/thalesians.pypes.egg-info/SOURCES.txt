@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/thalesians/__init__.py
+src/thalesians.pypes.egg-info/PKG-INFO
+src/thalesians.pypes.egg-info/SOURCES.txt
+src/thalesians.pypes.egg-info/dependency_links.txt
+src/thalesians.pypes.egg-info/requires.txt
+src/thalesians.pypes.egg-info/top_level.txt
+src/thalesians/pypes/__init__.py
+src/thalesians/pypes/zmq.py
+test/test_pypes.py
