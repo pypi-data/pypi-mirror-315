@@ -1,0 +1,5 @@
+syntax_checker-0.2.0.dist-info/METADATA,sha256=M9g1n5E8bmLXNSfOuD9OirpexevFcWkJbtc1G9UI904,3984
+syntax_checker-0.2.0.dist-info/WHEEL,sha256=HVA0wOUnIw3WSu8DET4aOHFt1dH_siSsnV6db_YgIxE,92
+syntax_checker/__init__.py,sha256=PHgOTt8et16N8TnygwKRYQZz9r4mzmv1QZmYB4XdgZg,139
+syntax_checker/syntax_checker.cp310-win32.pyd,sha256=rcP5gN3tta1ZOssR16bVW3tc3KfCud_G0kk5bMKZCJQ,17487360
+syntax_checker-0.2.0.dist-info/RECORD,,
