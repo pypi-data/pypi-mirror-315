@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: overdue
+Version: 0.1.0
+Summary: Easy timeout actions for any Python code with contextmanagers or decorators
+Author-email: Antti Kajander <kajaste@users.noreply.github.com>
+Requires-Python: >=3.10
