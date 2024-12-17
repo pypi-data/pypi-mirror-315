@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: EasilyAI
+Version: 0.1.1
+Summary: A library that simplifies the usage of AI!
+Home-page: https://github.com/GustyCube/EasilyAI
+Author: GustyCube
+Author-email: gc@gustycube.xyz
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: openai>=1.0.0
+Requires-Dist: requests>=2.0.0
