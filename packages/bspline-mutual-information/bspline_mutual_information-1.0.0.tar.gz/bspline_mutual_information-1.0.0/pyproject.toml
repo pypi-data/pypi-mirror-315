@@ -1,0 +1,58 @@
+[build-system]
+requires = [
+    "hatchling", 
+    "hatch-vcs",
+    ]
+build-backend = "hatchling.build"
+
+[project]
+name = "bspline-mutual-information"
+description = "B-spline based mutual information estimator"
+authors = [
+    {name = "Yannick Mahlich", email = "yannick.mahlich@pnnl.gov"},
+]
+maintainers = [
+    {name = "Yannick Mahlich", email = "yannick.mahlich@pnnl.gov"},
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "License :: OSI Approved :: BSD License",
+]
+readme = "README.md"
+license = {text = "2-clause BSD"}
+dynamic = [
+    "version",
+    ]
+dependencies = [
+    "numpy >= 1.22.0",
+    "scipy >= 1.9.0", 
+]
+
+[project.urls]
+Documentation = "https://github.com/pnnl-predictive-phenomics/bspline_mutual_information/blob/main/README.md"
+Issues = "https://github.com/pnnl-predictive-phenomics/bspline_mutual_information/issues"
+Repository = "https://github.com/pnnl-predictive-phenomics/bspline_mutual_information.git"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/bspline_mutual_information/_version.py"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib"
+]
