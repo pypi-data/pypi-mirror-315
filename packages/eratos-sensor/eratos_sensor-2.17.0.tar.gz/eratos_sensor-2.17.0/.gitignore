@@ -1,0 +1,22 @@
+cassettes/
+build/
+dist/
+
+*.pyc
+*.pyo
+*.egg-info
+
+.tox/
+.env/
+venv/
+venv35/
+venv36/
+
+# IDEA Specific
+.idea/*
+*.iml
+
+# macOS
+.DS_Store
+
+venv2/
