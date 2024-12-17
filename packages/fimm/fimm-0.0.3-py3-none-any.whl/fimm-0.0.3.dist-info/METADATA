@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: fimm
+Version: 0.0.3
+Summary: Finetune PyTorch Image Models with TIMM
+Author-email: Ivo Rapant <rapanti@cs.uni-freiburg.de>
+License: MIT License
+        
+        Copyright (c) 2024 rapanti
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/rapanti/fimm
+Project-URL: Bug Reports, https://github.com/rapanti/fimm/issues
+Project-URL: Source, https://github.com/rapanti/fimm
+Keywords: Machine Learning,Deep Learning,Image,Fine-Tuning
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: timm
+
+# FIMM
+Finetune PyTorch Image Models with TIMM
+
+This project provides a simple way to finetune PyTorch Image Models with TIMM.
+
+## Installation
+To install FIMM (`fimm`), you can simply use `pip`:
+
+```bash
+pip install fimm
+```
+
+### Install from source
+To install from source, you can clone this repo and install with `pip`:
+
+```bash
+git clone https://github.com/rapanti/fimm
+pip install -e fimm  # -e for editable mode
+```
+
+## Usage
+To use FIMM, you can simply run the follwing command to train or finetune a model:
+```bash
+train --data-dir /path/to/dataset --model resnet50 --experiment resnet50 # this trains a resnet50 model from scratch
+train --data-dir /path/to/dataset --model resnet50 --experiment resnet50 --pretrained  # this finetunes a resnet50 model
+```
+
+To validate the performance of a model, you can simply run the following command:
+```bash
+validate --data-dir /path/to/eval/dataset --model resnet50 --checkpoint output/train/resnet50/model_best.pth.tar # this tests the resnet50 model
+```
+
