@@ -1,0 +1,8 @@
+seatools/ioc/starters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seatools/ioc/starters/uvicorn/__init__.py,sha256=r-4Fa-whIfC62eh8rUihkiXkBfS2cEy8WolQ9zD_s74,23
+seatools/ioc/starters/uvicorn/main.py,sha256=G5mHOE1tTwYSynGgNdfmA7N001ernvweevx4amYg8_A,23855
+seatools_starter_server_uvicorn-1.0.2.dist-info/METADATA,sha256=U_vwF4Cyhz_uzjfjgfsPGiXOd8Zx3oRjQMG8e5NsjKo,2359
+seatools_starter_server_uvicorn-1.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+seatools_starter_server_uvicorn-1.0.2.dist-info/entry_points.txt,sha256=X3DDmAa0m-R_ZPbA1pcouBc4vGuHvFbOb3nWeTHMCk8,68
+seatools_starter_server_uvicorn-1.0.2.dist-info/licenses/LICENSE,sha256=yycmqcZRDsHWSKb8iO6IrPz4ucHOe5KrjkEHFpwX8YQ,1088
+seatools_starter_server_uvicorn-1.0.2.dist-info/RECORD,,
