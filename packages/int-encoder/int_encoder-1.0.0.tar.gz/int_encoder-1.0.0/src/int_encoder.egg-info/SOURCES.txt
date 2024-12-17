@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/int_encoder/__init__.py
+src/int_encoder/config.py
+src/int_encoder.egg-info/PKG-INFO
+src/int_encoder.egg-info/SOURCES.txt
+src/int_encoder.egg-info/dependency_links.txt
+src/int_encoder.egg-info/top_level.txt
