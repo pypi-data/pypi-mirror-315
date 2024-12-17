@@ -1,0 +1,16 @@
+# {{ title }}
+
+{% if description %}
+{{ description }}
+{% endif %}
+
+{% if content %}
+{{ content }}
+{% endif %}
+
+{% if metadata %}
+## Metadata
+{% for key, value in metadata.items() %}
+- {{ key }}: {{ value }}
+{% endfor %}
+{% endif %}

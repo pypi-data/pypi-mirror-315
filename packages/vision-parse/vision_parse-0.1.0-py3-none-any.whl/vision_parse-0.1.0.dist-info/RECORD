@@ -1,0 +1,8 @@
+vision_parse/__init__.py,sha256=kCCIz-MDYiBG3CpqYZBlRrCtv4mdUSCwILjc5X8ZlNY,188
+vision_parse/parser.py,sha256=gO4kF--ISdeAltl9AKsv-2g_weAGTRllXEc1OwhkMxY,10289
+vision_parse/img_analysis.prompt,sha256=CDuRLiH6QSEjJZIuZKwDRQv4XssmAVHbRuwUNBc7Bas,459
+vision_parse/md_prompt.j2,sha256=v5lVnnu-UqqvxKt3CbfAns9BznfhP6Gqe_wgMdCLgdQ,231
+vision_parse-0.1.0.dist-info/METADATA,sha256=tRIwhGekJdq7MyouZPYpYoCjwu_yMdlaMg7ws7VzTUs,4909
+vision_parse-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+vision_parse-0.1.0.dist-info/licenses/LICENSE,sha256=1JTJhQjUYDqJzFJhNtitm7mHyE71PRHgetIqRRWg6Pk,1068
+vision_parse-0.1.0.dist-info/RECORD,,
