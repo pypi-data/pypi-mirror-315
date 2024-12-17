@@ -1,0 +1,13 @@
+convex-0.7.0.dist-info/METADATA,sha256=gycVvqj9lMx1GleJ3kiNYCFR3eMeFkXCEvJQGOs-s5I,9032
+convex-0.7.0.dist-info/WHEEL,sha256=uU5Hc-CLLwvmgVZFKEbCPdpMl2UVd2F3JTJm34-7bh0,105
+convex-0.7.0.dist-info/licenses/LICENSE,sha256=3sI6kzOdw7UrrR7mzJb0Uqaq6l_Iml5YFQ7kNw9xlF4,11343
+_convex/int64.py,sha256=7LkK4Isk9adqlM7hshdcV0_IIoPjYwbC9-KzdBuBh0s,1300
+_convex/__init__.py,sha256=Gx1SY5zA2h2R2JM1i5ggkrR2q2BV9Kb5ckBTfeG9pOQ,325
+_convex/_convex.pyi,sha256=EL7XMiPGwoTZL6-qsX93oO6IfHV49yqGIEAgI2RUPj4,1844
+_convex/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+convex/values.py,sha256=Qzslql4xUo7K-Fe660ZaDWUcGE7KUIEBQK3oHiZBwjI,13626
+convex/http_client.py,sha256=AtoNjnOu-0Z379cOn1wEtwd15yTf9dbqcJheZ_hay-E,5227
+convex/__init__.py,sha256=mOR08DWeTJbTGFtJulCNIXei60Wg1gmtluQWzHv0nE4,8832
+convex/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+_convex/_convex.cpython-313t-darwin.so,sha256=IyRBrj-3oYoeZ7vhuYKomtjaeBeUoekjnccqw6qsiq4,3546816
+convex-0.7.0.dist-info/RECORD,,
