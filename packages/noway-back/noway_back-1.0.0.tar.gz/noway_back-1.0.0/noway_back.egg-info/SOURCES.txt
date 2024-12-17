@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+favicon.png
+setup.py
+zip.zip
+noway_back.egg-info/PKG-INFO
+noway_back.egg-info/SOURCES.txt
+noway_back.egg-info/dependency_links.txt
+noway_back.egg-info/not-zip-safe
+noway_back.egg-info/top_level.txt
+resources/image1.png
