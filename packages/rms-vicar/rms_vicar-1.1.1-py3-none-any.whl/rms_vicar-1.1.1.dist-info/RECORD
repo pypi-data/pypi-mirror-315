@@ -1,0 +1,11 @@
+vicar/_DEFINITIONS.py,sha256=j94ZEmMYeAbDDfHp4VYR8jeioErMS3XVxi-t4SYxrls,4491
+vicar/_LABEL_GRAMMAR.py,sha256=GttLyezbSTX_XCPlz7nQV6nPgG-ZKa4ZepxfqTPsquU,10490
+vicar/__init__.py,sha256=5yianSe3ET1ROUwiE8S-WmDyqbIiuwy6FAr_0yKNpSU,3781
+vicar/_version.py,sha256=EPoWF0em1tKJgBz5dbBF-r29860VBk-SsdiXh6E1aO0,411
+vicar/vicarimage.py,sha256=Xz0KlMCx0Ip9moatmBl000ltB-dEEWr4tQBa1lzEDDU,56957
+vicar/vicarlabel.py,sha256=Pf-FpHXmkRGoHqLlPnEYzUsYDJ916amq7JgnSK4CN6M,107301
+rms_vicar-1.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rms_vicar-1.1.1.dist-info/METADATA,sha256=N_02Kpg1HckWW2uPkA4Rva72uUAkMI1rFFfHFHjwvzU,7838
+rms_vicar-1.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+rms_vicar-1.1.1.dist-info/top_level.txt,sha256=oymP9BUoT9H_6FvqhYpsVQqqzw0AulOhcpUvW-z5Woo,6
+rms_vicar-1.1.1.dist-info/RECORD,,
