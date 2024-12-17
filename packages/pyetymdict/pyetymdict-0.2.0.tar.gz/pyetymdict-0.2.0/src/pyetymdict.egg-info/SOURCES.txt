@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pyetymdict/__init__.py
+src/pyetymdict/dataset.py
+src/pyetymdict.egg-info/PKG-INFO
+src/pyetymdict.egg-info/SOURCES.txt
+src/pyetymdict.egg-info/dependency_links.txt
+src/pyetymdict.egg-info/not-zip-safe
+src/pyetymdict.egg-info/requires.txt
+src/pyetymdict.egg-info/top_level.txt
+tests/test_dataset.py

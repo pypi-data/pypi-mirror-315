@@ -1,0 +1,17 @@
+attrs
+pycldf
+cldfcatalog
+pylexibank
+
+[dev]
+flake8
+wheel
+build
+twine
+tox
+
+[test]
+pytest>=5
+pytest-mock
+pytest-cov
+coverage>=4.2
