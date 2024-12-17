@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cgse-coordinates
+Version: 2023.1.0
+Summary: Reference Frames and Coordinate Transofrmations for CGSE
+License: Common-EGSE Software License Agreement
+Requires-Dist: cgse-core
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: transforms3d
+
