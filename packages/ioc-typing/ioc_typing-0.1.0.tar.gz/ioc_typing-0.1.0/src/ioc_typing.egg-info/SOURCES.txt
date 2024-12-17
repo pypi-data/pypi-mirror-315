@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/ioc_typing/__init__.py
+src/ioc_typing/ioc_classifier.py
+src/ioc_typing.egg-info/PKG-INFO
+src/ioc_typing.egg-info/SOURCES.txt
+src/ioc_typing.egg-info/dependency_links.txt
+src/ioc_typing.egg-info/requires.txt
+src/ioc_typing.egg-info/top_level.txt
+tests/test_classifier.py
