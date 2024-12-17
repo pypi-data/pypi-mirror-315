@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=67.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "wild-blue-yonder"
+version = "0.0.3"
+authors = [
+    {name="Alexander Fedotov", email="alex.fedotov@aol.com"},
+]
+description = "Language Models helping you make your Bluesky(r) environment less wild."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+]
+dependencies = [
+    "openai >= 1.57.4",
+    "PyYAML >= 6.0.2",
+    "blue-yonder >= 0.0.24"
+]
+[project.urls]
+"Homepage" = "https://github.com/wild-blue-yonder/wild-blue-yonder"
+"Bug Tracker" = "https://github.com/wild-blue-yonder/wild-blue-yonder/issues"
