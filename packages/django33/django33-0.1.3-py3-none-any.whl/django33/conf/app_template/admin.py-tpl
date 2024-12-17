@@ -1,0 +1,3 @@
+from django33.contrib import admin
+
+# 把你要交给后台管理系统的模型在这里注册
