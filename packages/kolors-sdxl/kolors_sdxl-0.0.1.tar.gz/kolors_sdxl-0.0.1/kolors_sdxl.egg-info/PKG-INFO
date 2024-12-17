@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: kolors-sdxl
+Version: 0.0.1
+Summary: The training and inference code for Kolors models.
+Author: Kolors
+License-File: LICENSE
