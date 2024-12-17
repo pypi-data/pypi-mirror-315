@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: fle_2d
+Version: 0.0.8
+Summary: Fast expansion into harmonics on the disk
+Author: Nicholas F. Marshall
+License:    MIT License
+           
+           Copyright (c) 2022 Nicholas F. Marshall
+           
+           Permission is hereby granted, free of charge, to any person obtaining a copy
+           of this software and associated documentation files (the "Software"), to deal
+           in the Software without restriction, including without limitation the rights
+           to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+           copies of the Software, and to permit persons to whom the Software is
+           furnished to do so, subject to the following conditions:
+           
+           The above copyright notice and this permission notice shall be included in all
+           copies or substantial portions of the Software.
+           
+           THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+           IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+           FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+           AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+           LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+           OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+           SOFTWARE.
+        
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fle_2d
+
+Installing in conda environment
+
+```bash
+conda create -n fle 
+conda activate fle
+conda install -c conda-forge pip numpy scipy joblib matplotlib finufft
+pip install fle-2d
+```
+
+Installing using pip
+
+```bash
+pip install numpy scipy joblib matplotlib finufft fle-2d
+```
+
+Testing install
+
+```bash
+git clone https://github.com/nmarshallf/fle_2d.git
+# Or download folder and unzip
+cd fle_2d/tests/
+python3 test_fle_2d.py 
+```
+
+If you find the code useful, please cite the corresponding paper:
+
+Nicholas F. Marshall, Oscar Mickelin, and Amit Singer. Fast expansion into harmonics on the disk: A steerable basis with fast radial convolutions. SIAM Journal on Scientific Computing, 45(5):A2431–A2457, 2023.
+
+```text
+@article{marshall2023fast,
+  author = {Marshall, Nicholas F. and Mickelin, Oscar and Singer, Amit},
+  title = {Fast Expansion into Harmonics on the Disk: A Steerable Basis with Fast Radial Convolutions},
+  journal = {SIAM Journal on Scientific Computing},
+  volume = {45},
+  number = {5},
+  pages = {A2431-A2457},
+  year = {2023},
+  doi = {10.1137/22M1542775},
+}
+```
+
+# Acknowledgements
+We thank Yunpeng Shi for contributing a vectorized version of the code for tensor inputs consisting of multiples images.
