@@ -1,0 +1,8 @@
+orderly-set<6,>=5.2.3
+
+[cli]
+click==8.1.7
+pyyaml==6.0.2
+
+[optimize]
+orjson
