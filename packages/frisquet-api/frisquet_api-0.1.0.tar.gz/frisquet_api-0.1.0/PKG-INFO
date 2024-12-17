@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: frisquet-api
+Version: 0.1.0
+Summary: Python client for the Frisquet API
+Author-email: markkvdb <github@mvanderbroek.com>
+Requires-Python: >=3.12
+Requires-Dist: httpx>=0.28.0
+Requires-Dist: pydantic>=2.10.3
