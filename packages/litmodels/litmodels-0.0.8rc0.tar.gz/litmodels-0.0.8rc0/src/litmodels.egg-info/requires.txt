@@ -1,0 +1,12 @@
+lightning-sdk>=0.1.40
+lightning-utilities
+
+[test]
+coverage>=5.0
+pytest-cov
+pytest-mock
+pytest>=6.0
+pytorch-lightning>=2.0
+
+[typing]
+mypy==1.13.0
