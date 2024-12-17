@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.py
+Testing/WriteTests.py
+Testing/__init__.py
+WikiDataPy/BASE.py
+WikiDataPy/__init__.py
+WikiDataPy/bulkWriter.py
+WikiDataPy/grapher.py
+WikiDataPy/reader.py
+WikiDataPy/sparql.py
+WikiDataPy/writer.py
+WikiDataPy.egg-info/PKG-INFO
+WikiDataPy.egg-info/SOURCES.txt
+WikiDataPy.egg-info/dependency_links.txt
+WikiDataPy.egg-info/requires.txt
+WikiDataPy.egg-info/top_level.txt
