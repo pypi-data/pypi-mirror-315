@@ -1,0 +1,7 @@
+pytest >= 8.1
+pytest-smtpd
+swh.core[testing]
+swh.graph[testing]
+swh.storage[testing]
+types-pyyaml
+types-tabulate
