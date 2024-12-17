@@ -1,0 +1,2 @@
+[console_scripts]
+globaleaks-ephemeral-fs = globaleaks_ephemeral_fs:main
