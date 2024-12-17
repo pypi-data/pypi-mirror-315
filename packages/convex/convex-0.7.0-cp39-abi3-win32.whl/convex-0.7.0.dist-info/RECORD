@@ -1,0 +1,13 @@
+convex-0.7.0.dist-info/METADATA,sha256=WPgC61q1JYeTwPUCZDHJpneIRzvndezDmsQbLSbhZV8,9200
+convex-0.7.0.dist-info/WHEEL,sha256=_plVEhq66EMrLOR5dKkIdeN8MdC9FvNHlOOEi46ntLY,90
+convex-0.7.0.dist-info/licenses/LICENSE,sha256=k6iumdjYVOyjPKLdmWOeo5rkxYJyoEWc0BkImpK7z0c,11545
+_convex/int64.py,sha256=TRoPorxlx3-Rpi95T7tHRr1gwDq3aNkEVzFoQLENR7I,1339
+_convex/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+_convex/_convex.pyi,sha256=4oytfe3LfMX-LUvMx5a7NZIARNFokSnk3G89gKQz2YY,1897
+_convex/__init__.py,sha256=7SzFrTfEeQAQxL4plzSLTYpSkSU5oFWzIBirGB5nyWk,341
+convex/http_client.py,sha256=8s7iUua1ca78m8-lhJm4XqVEUyx9Dt_yPS_TTF4j-Ec,5374
+convex/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+convex/values.py,sha256=vbAm_ClAJJ1_T3wyJHO_fStFOFK4dadIeG5w76d1Ir4,14052
+convex/__init__.py,sha256=y4R6MpWrSxYnLXbxRfA_NReI-quZriEyeyvhrd2vkxE,9082
+_convex/_convex.pyd,sha256=RDJLb82ek4rO2Ut78Qmcc9ZDgkdf6qqF26KD81LMcsc,2435072
+convex-0.7.0.dist-info/RECORD,,
