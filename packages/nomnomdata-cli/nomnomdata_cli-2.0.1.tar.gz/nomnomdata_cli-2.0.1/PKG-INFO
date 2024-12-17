@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nomnomdata-cli
+Version: 2.0.1
+Summary: Package containing empty cli
+Home-page: https://gitlab.com/nomnomdata/tools/nomnomdata-cli
+License: LGPL-3.0-only
+Author: Nom Nom Data Inc
+Author-email: info@nomnomdata.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (==8.1.7)
+Requires-Dist: coloredlogs (>=15.0.1,<16.0.0)
+Requires-Dist: dunamai (>=1.23.0,<2.0.0)
+Requires-Dist: packaging (>=24.2,<25.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Requires-Dist: setuptools (>=75.6.0,<76.0.0)
+Project-URL: Repository, https://gitlab.com/nomnomdata/tools/nomnomdata-cli
+Description-Content-Type: text/markdown
+
+
