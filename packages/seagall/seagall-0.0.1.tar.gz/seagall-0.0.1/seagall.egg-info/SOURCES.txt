@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+seagall.egg-info/PKG-INFO
+seagall.egg-info/SOURCES.txt
+seagall.egg-info/dependency_links.txt
+seagall.egg-info/top_level.txt
