@@ -1,0 +1,12 @@
+[workspace]
+members = ["meme_generator", "meme_generator_py", "meme_options_derive"]
+resolver = "2"
+
+[workspace.package]
+version = "0.2.0-alpha.5"
+authors = ["meetwq <meetwq@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/MemeCrafters/meme-generator-rs"
+repository = "https://github.com/MemeCrafters/meme-generator-rs"
+edition = "2021"
