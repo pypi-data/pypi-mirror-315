@@ -1,0 +1,190 @@
+[build-system]
+build-backend = "poetry_dynamic_versioning.backend"
+requires = [ "poetry-core>=1.1", "poetry-dynamic-versioning>=1.4" ]
+
+[tool.poetry]
+name = "pytmosph3r"
+version = "2.3.0"
+description = "Pytmosph3R, generating transmission spectra from 3D atmospheric simulations"
+authors = [ "Aurélien Falco <aurelien.falco@u-bordeaux.fr>" ]
+
+license = "BSD"
+readme = "README.md"
+homepage = "https://forge.oasu.u-bordeaux.fr/LAB/whiplash/pytmosph3r-2"
+repository = "https://forge.oasu.u-bordeaux.fr/LAB/whiplash/pytmosph3r-2"
+documentation = "https://perso.astrophy.u-bordeaux.fr/~jleconte/pytmosph3r-doc/"
+
+keywords = [ 'exoplanet', 'simulation', 'pytmosph3r', 'spectra', 'atmosphere', 'atmospheric' ]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: MacOS',
+    'Operating System :: POSIX',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: Unix',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Software Development :: Libraries',
+    'Topic :: Scientific/Engineering :: Astronomy',
+    'Topic :: Scientific/Engineering :: Atmospheric Science',
+]
+
+include = [ "pytmosph3r/__version__.py" ]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+exo-k = "^1.3.0"
+
+configobj = ">=5.0.8"
+psutil = ">=5.9.5"
+tqdm = ">=4.66.1"
+
+"ai.cs" = ">=1.0.7"
+setuptools = { version = '>=70.0', python = "^3.12" }
+
+Wand = ">=0.6.13"
+
+taurex = { version = ">=3.1.4a0", optional = true }
+taurex-ace = { version = ">=1.0.2.dev0", optional = true }
+pyfastchem = { version = ">=3.1.1", optional = true }
+
+astropy = [
+    { version = "^6.1.1", python = "^3.10" },
+    { version = "^6.0", python = "3.9" },
+    { version = "^5.1", python = "3.8" },
+]
+numba = [
+    { version = ">=0.58", python = "^3.9" },
+    { version = "^0.58", python = "3.8" },
+]
+numpy = [
+    { version = "^1.23", python = "^3.10" },
+    { version = "^1.23", python = "3.9" },
+    { version = "^1.23, <1.25", python = "3.8" },
+]
+scipy = [
+    { version = "^1.14", python = "^3.10" },
+    { version = "^1.10", python = "3.9" },
+    { version = "^1.10", python = "3.8" },
+]
+
+[tool.poetry.extras]
+taurex = [ 'taurex', 'taurex-ace' ]
+fastchem = [ 'pyfastchem' ]
+
+[tool.poetry.group.doc.dependencies]
+papermill = "^2.6.0"
+
+Sphinx = { version = "^8.1.3", python = "^3.10" }
+nbsphinx = { version = "^0.9.5", python = "^3.10" }
+nbsphinx-link = { version = "^1.3.1", python = "^3.10" }
+sphinx-argparse = { version = "^0.5.2", python = "^3.10" }
+sphinx-autoapi = { version = "^3.4.0", python = "^3.10" }
+sphinx-autobuild = { version = "^2024.10.3", python = "^3.10" }
+sphinx-rtd-theme = { version = "3.0.2", python = "^3.10" }
+sphinx-math-dollar = { git = "https://github.com/sympy/sphinx-math-dollar.git", python = "^3.10" }
+sphinx-paramlinks = { version = "^0.6.0", python = "^3.10" }
+sphinx-autodoc-typehints = { version = "^2.5.0", python = "^3.10" }
+
+sphinxcontrib-bibtex = { version = "^2.6.3", python = "^3.10" }
+sphinxcontrib-napoleon = { version = "^0.7", python = "^3.10" }
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+
+[tool.poetry.group.linters.dependencies]
+deptry = { version = "^0.21.1", python = "^3.10" }
+nb-clean = { version = "^4.0.1", python = "^3.10" }
+
+bandit = { extras = [ "baseline", "toml" ], version = "^1.8.0", python = "^3.10" }
+isort = "^5.13.2"
+
+pyproject-fmt = { version = "^2.5.0", python = "^3.10" }
+
+[tool.poetry.group.testing.dependencies]
+coverage = { version = "^7.6.9", python = "^3.10" }
+tox = "^4.23.2"
+
+pytest = "^8.3.4"
+pytest-cov = { version = "^6.0.0", python = "^3.10" }
+pytest-clarity = "^1.0.1"
+pytest-sugar = "^1.0.0"
+hypothesis = { extras = [ "numpy" ], version = "^6.122.3", python = "^3.10" }
+
+[tool.poetry.scripts]
+#pytmosph3r = "pytmosph3r.cli.p3:main"
+#pytmosph3r-nc-to-h5 = "pytmosph3r.cli.interface_nc_to_h5:nc_to_h5"
+#pytmosph3r-h5-to-nc = "pytmosph3r.cli.interface_h5_to_nc:h5_to_nc"
+#pytmosph3r-nc-to-nc = "pytmosph3r.cli.interface_nc_to_nc:nc_to_nc"
+pytmosph3r-plot = "pytmosph3r.plot.plot:main"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+style = "pep440"
+bump = true
+pattern = "default-unprefixed"
+
+[tool.poetry-dynamic-versioning.files."pytmosph3r/__version__.py"]
+persistent-substitution = true
+initial-content = """
+  __version__ = "0.0.0"
+"""
+
+[tool.isort]
+profile = 'pycharm'
+src_paths = [ 'pytmosph3r', 'tests_p3' ]
+skip_gitignore = true
+
+multi_line_output = 11
+line_length = 120
+
+extra_standard_library = [ "typing_extensions" ]
+
+[tool.deptry]
+ignore_notebooks = true
+
+[tool.pyproject-fmt]
+indent = 4
+max_supported_python = "3.12"
+
+[tool.pytest.ini_options]
+minversion = '7.0'
+addopts = '-p no:warnings' # --capture=no
+testpaths = [ "tests_p3" ]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+exclude_lines = [
+    '\#\s*pragma: no cover',
+    '^\s*raise AssertionError\b',
+    '^\s*raise NotImplementedError\b',
+    '^\s*return NotImplemented\b',
+    '^\s*raise$',
+    '^assert False\b',
+    '''^if __name__ == ['"]__main__['"]:$''',
+]
+omit = [
+    "tests_p3/*",
+]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+
+[tool.bandit]
+exclude_dirs = [ '.venv', '.tox', 'tests_p3' ]
+
+skips = [
+    'B101', # Use of assert detected.
+    'B403', # disable warnings about pickle
+]
+
+[mypy]
