@@ -1,0 +1,16 @@
+pytest_revealtype_injector/__init__.py,sha256=3zGbYqpjy1u4__CnFV56_VB1fSpZ1LPbOgsI35Vfpz8,211
+pytest_revealtype_injector/hooks.py,sha256=cj1iXJJrVtqylXvvdLfjZ61HGBt5wsGBUe-iAgu9WiU,2434
+pytest_revealtype_injector/log.py,sha256=U9IvsoZzhFQcdFmVtuSmt2OTYxxFuIP5o321dyE4hiA,417
+pytest_revealtype_injector/main.py,sha256=ftTxEY13fNCY7Z3_oPvh38OtHQzqmxYAYnyzzgit29w,4786
+pytest_revealtype_injector/models.py,sha256=XsxUQGdv1U4CFi1bB1VeEojPpiwCZp7uxRIWuTGhIaM,3214
+pytest_revealtype_injector/plugin.py,sha256=fkI6yF0dFVba0jEikIrsRp1NUQd2ohWLq4x2lSvFyH0,211
+pytest_revealtype_injector/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_revealtype_injector/adapter/__init__.py,sha256=wQg3Ply0Xrfe9US_lzgqRgKFE89ZBvDFti6_77X_NKk,339
+pytest_revealtype_injector/adapter/mypy_.py,sha256=q-stxOY2bffTAm2SoHiCAb7VA_f9jXc4UxlyimXV-RY,8840
+pytest_revealtype_injector/adapter/pyright_.py,sha256=fn8lE0G3ZeRANH6xKpizDOEXyH8a9yHHYdLCgMSsiFg,4857
+pytest_revealtype_injector-0.2.2.dist-info/METADATA,sha256=JXyzhgJp_UwveDqAvKDIWeFkJcdFv5lEEUrKS4I8A2o,5520
+pytest_revealtype_injector-0.2.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pytest_revealtype_injector-0.2.2.dist-info/entry_points.txt,sha256=UfOm7y3WQnOoGV1mgTMb42MI6iBRPIl88FJiAOnt6SY,74
+pytest_revealtype_injector-0.2.2.dist-info/licenses/COPYING,sha256=LSYUX8PcSMvHCkhM5oi07eOrSLV89qdEJ-FVZmbcpNE,355
+pytest_revealtype_injector-0.2.2.dist-info/licenses/COPYING.mit,sha256=IzYEFDIOECyuupg_B3O9FvgjnU9i4JtambpbleoYHdQ,1060
+pytest_revealtype_injector-0.2.2.dist-info/RECORD,,
