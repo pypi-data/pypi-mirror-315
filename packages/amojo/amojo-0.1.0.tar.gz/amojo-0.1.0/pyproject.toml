@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "amojo"
+version = "0.1.0"
+description = "Another amoCRM API wrapper for Python"
+authors = ["Maksim Abramov <62175286+maskyy@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.10.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+ruff = "^0.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
