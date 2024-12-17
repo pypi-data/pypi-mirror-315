@@ -1,0 +1,13 @@
+embeddings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+embeddings/embeddings.py,sha256=ZGfG70aqmvCD0yB7dG44Fw2Jetu-dx2oldnXZkJlux0,7249
+mistral_vectordb/__init__.py,sha256=jlwRF99SkSKR0HI5S9dApqmCnPyLbFyPrVDhBq3lNGI,284
+mistral_vectordb/database.py,sha256=KD_bxjBzbxtTgTn145xRm1JHjSFuOpEcXpFJtlmHNiE,1922
+mistral_vectordb/index.py,sha256=jNn478nUL8XXOz0FDvlrmSKRGznWQr-74naB7KtJ_y0,1560
+mistral_vectordb/storage.py,sha256=TP4xQNJqS7KlCxffXlvfJoPowWzmhh6dZUW2V_YHXJ0,2574
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/helpers.py,sha256=hPLMDE5NvQrQ0JlGU3ahmSqHqC610NP0q2hTsMtmK-4,435
+mistral_vectordb-0.1.0.dist-info/LICENSE,sha256=g2Yt8nEo8yjmlfgZg3Mx5Nbm3ym4aOezNyGyNlk54XY,1105
+mistral_vectordb-0.1.0.dist-info/METADATA,sha256=jqnwjQ9rya8CRRLDzoKGr3GQ3WnSKEB_3xo3ae3-300,4282
+mistral_vectordb-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+mistral_vectordb-0.1.0.dist-info/top_level.txt,sha256=U34FFNLuZikUmXg7_e3kasWPF5nnlaGl3E4nambOQ3g,34
+mistral_vectordb-0.1.0.dist-info/RECORD,,
