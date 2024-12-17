@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+magpipe.egg-info/PKG-INFO
+magpipe.egg-info/SOURCES.txt
+magpipe.egg-info/dependency_links.txt
+magpipe.egg-info/top_level.txt
