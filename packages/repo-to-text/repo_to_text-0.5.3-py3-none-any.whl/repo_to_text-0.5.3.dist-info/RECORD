@@ -1,0 +1,13 @@
+repo_to_text/__init__.py,sha256=JFLs75cQngS-3IIdvqrRXRxfKM_ZolGHXlxJSeFcCas,66
+repo_to_text/main.py,sha256=Ldbhehl24gp3RkkgokRht8dgWw8jnO72OljqjO3IIq4,77
+repo_to_text/cli/__init__.py,sha256=XNFxL9N6L4ESCk_lYqawa41CxfcGldKymOgCQhqgqMs,130
+repo_to_text/cli/cli.py,sha256=GNXPc93o5wqC-zoprlKDWTiuoqYT6nK2d5GQwcm8DX8,3086
+repo_to_text/core/__init__.py,sha256=xKAfHK-hD_GkfZqmb7QRGcCt2nGZM5QDD599y9avCTM,193
+repo_to_text/core/core.py,sha256=oDgmZHuYih6UyU3h-4-nCRt79nT-nSQRoTzVxIH6RhQ,9579
+repo_to_text/utils/__init__.py,sha256=-SPFk_faoFVHW1xgZTvva1R9HZNhDRw2p0uPdrryecU,180
+repo_to_text/utils/utils.py,sha256=2y8uyfa7OqrPh2le8mFYSSlAUZkMYp38mtRPwt5L42Y,3019
+repo_to_text-0.5.3.dist-info/METADATA,sha256=Iq4CHsNFfBA087dfL56Ie64aOBCJRIX82lYluwTVjb0,8370
+repo_to_text-0.5.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+repo_to_text-0.5.3.dist-info/entry_points.txt,sha256=0T4tL794LHt5Ef5_jooodzRSdREcKGWu1XIIFm9-ahs,89
+repo_to_text-0.5.3.dist-info/licenses/LICENSE,sha256=nj9qoIIbeblFGFBjJzgZm6e82UgA6t9noYXdwNVphdA,1070
+repo_to_text-0.5.3.dist-info/RECORD,,
