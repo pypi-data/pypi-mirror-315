@@ -1,0 +1,16 @@
+pdf_combiner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_combiner/image_to_pdf.py,sha256=mlF-jnUeZVzLVR7pM9MwEPqgHBNtLeMIqz-neyXCRas,165
+pdf_combiner/input.py,sha256=W13Wh7Pk8DsKXMgSi6QER29SdUSDLjxe81IxgJWccDM,3230
+pdf_combiner/pdf_combiner.py,sha256=DUmYNW4R8DK32L2MWETCpb_YVR4mKHuz9UZDp00wFoM,2130
+pdf_combiner/util.py,sha256=xaWGiXbhNBSrsomh-s2HpHBzT6LIeEqvku495HnVWQk,610
+scripts/format.py,sha256=z6hXoulFry2toStlSwhGUzTPF9YjZUXndJniB0e9Dnc,1655
+scripts/generate_installer.py,sha256=jpMETCPdCu6q6IqspihpgSJksfnH435IEQSNHPkyVFk,1733
+scripts/test_python_source.py,sha256=cGXAIlDM_Wq5UlLIuYCX7YS3Ew7qaJDdFdZxGaXGj9M,762
+tests/test_image_to_pdf.py,sha256=FvKnzQhbYKcxC4HtSS7_XU1OhohMh_byxtaszpbIaKs,390
+tests/test_inputs.py,sha256=qdmivaYQmSXbla0BsH6pJoPcSv_i91gLKc1Xukmx4nY,4132
+pdf_combiner-0.0.1.dist-info/LICENSE.md,sha256=o_nR69KIevZr4OwlHGtoAzOYvubLfy1b3_Y2xdUL8aU,2971
+pdf_combiner-0.0.1.dist-info/METADATA,sha256=LwuVbPi0JFsOjg6NGpHoMn6AXw7paPeHpmmk-hnowJo,1105
+pdf_combiner-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pdf_combiner-0.0.1.dist-info/entry_points.txt,sha256=L13ZIZp91F2BxXChhycVBK53_3y8yJVOmNAA0cZ7unM,64
+pdf_combiner-0.0.1.dist-info/top_level.txt,sha256=OROLSbC_moYB3ibhs8Cd1aaxg0CSXWD2cX791hd-y_c,27
+pdf_combiner-0.0.1.dist-info/RECORD,,
