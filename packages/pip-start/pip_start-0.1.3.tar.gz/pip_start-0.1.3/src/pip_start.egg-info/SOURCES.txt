@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/pip_start/__init__.py
+src/pip_start/pip_start.py
+src/pip_start.egg-info/PKG-INFO
+src/pip_start.egg-info/SOURCES.txt
+src/pip_start.egg-info/dependency_links.txt
+src/pip_start.egg-info/requires.txt
+src/pip_start.egg-info/top_level.txt
