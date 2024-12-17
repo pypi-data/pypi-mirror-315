@@ -1,0 +1,8 @@
+setup.py
+qarag/__init__.py
+qarag/pipe.py
+ragpack.egg-info/PKG-INFO
+ragpack.egg-info/SOURCES.txt
+ragpack.egg-info/dependency_links.txt
+ragpack.egg-info/requires.txt
+ragpack.egg-info/top_level.txt
