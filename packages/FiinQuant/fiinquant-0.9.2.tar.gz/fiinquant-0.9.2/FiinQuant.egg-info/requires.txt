@@ -1,0 +1,9 @@
+requests
+pandas
+numpy
+signalrcore
+fastdtw
+matplotlib
+scipy
+python_dotenv
+ta
