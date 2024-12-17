@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+simqcore/__init__.py
+simqcore/base.py
+simqcore.egg-info/PKG-INFO
+simqcore.egg-info/SOURCES.txt
+simqcore.egg-info/dependency_links.txt
+simqcore.egg-info/not-zip-safe
+simqcore.egg-info/requires.txt
+simqcore.egg-info/top_level.txt
