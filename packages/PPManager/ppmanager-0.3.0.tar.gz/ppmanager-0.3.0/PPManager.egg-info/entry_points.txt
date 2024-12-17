@@ -1,0 +1,2 @@
+[console_scripts]
+ppm = PackageManager.main:main
