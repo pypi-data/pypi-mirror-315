@@ -1,0 +1,14 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/keyboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/keyboard/base_keyboards.py,sha256=ncxOmM2FWy9KHoWna6ljZip1cGQxl6-tSd8Puz0885Q,2285
+src/sender/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/sender/sender.py,sha256=ykD4PzvS82IAS-tQGekU3G113tSVvWJQT27PtVa01CQ,2054
+src/windows/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/windows/base_window.py,sha256=tAmgSfmO1w_QKRB13v5PqcJuQikU9b8QHsfXwVukQrI,2398
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=4AcmbxP69KteQ_sAYkwHLdbE85UXM58M9sEeP2oP0gI,611
+TGWindow-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+TGWindow-0.0.1.dist-info/METADATA,sha256=cxH6GaN1OmT9u7v-7eKIgWRGE0pG_E_6TiNFot-1rAY,5181
+TGWindow-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+TGWindow-0.0.1.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+TGWindow-0.0.1.dist-info/RECORD,,
