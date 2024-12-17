@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include easy-tree-maker *.py
+recursive-include tests *.py
