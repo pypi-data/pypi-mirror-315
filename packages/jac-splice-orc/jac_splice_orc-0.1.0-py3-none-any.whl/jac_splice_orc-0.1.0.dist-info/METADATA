@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jac-splice-orc
+Version: 0.1.0
+Summary: JAC Splice-Orchestrator: Kubernetes-based dynamic remote module management for JacLang
+Author: Jason Mars
+Author-email: jason@jaseci.org
+Requires-Python: >=3.11
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+Requires-Dist: kubernetes
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+Requires-Dist: numpy
+
