@@ -1,0 +1,24 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.poetry]
+authors = ["Thomas Menchi <thomas.menchi@modeo.ai>"]
+description = "A python package to build etl pipeline."
+name = "sdh_pyetl"
+package-mode = true
+readme = "README.md"
+version = "0.1.2"
+
+[tool.poetry.dependencies]
+boto3 = "^1.35.76"
+loguru = "^0.7.3"
+pandas = "^2.2.3"
+pydantic = "^2.10.3"
+python = "^3.12.0"
+pyyaml = "^6.0.2"
+sqlalchemy = "^2.0.36"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.1"
+pytest = "^8.3.4"
