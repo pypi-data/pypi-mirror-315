@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ragpack
+Version: 1.0.0
+Summary: A Python package for RAG pipelines using OpenAI and FAISS.
+Home-page: UNKNOWN
+Author: Tarun
+Author-email: gangadhartarun21@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: openai==0.28.0
+Requires-Dist: sentence-transformers==3.2.1
+Requires-Dist: faiss-cpu==1.9.0
+Requires-Dist: datasets==3.2.0
+Requires-Dist: transformers==4.46.3
+
+UNKNOWN
+
