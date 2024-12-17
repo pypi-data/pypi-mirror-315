@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: msb_parent_api
+Version: 0.0.3
+Summary: A small async API wrapper for MySchoolBucks Parents.
+Home-page: https://github.com/schwartzpub/msb_parent_api
+Author: Jacob Schwartz
+Author-email: Jacob Schwartz <jake@schwartzpub.com>
+Project-URL: Homepage, https://github.com/schwartzpub/msb_parent_api
+Project-URL: Bug Tracker, https://github.com/schwartzpub/msb_parent_api/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: pydantic
+
+# MySchoolBucks Parent API
+
+
+## Installing
+
+
+### Usage
