@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: ProvSense
+Version: 0.0.1
+Summary: ProvSense is a Python library for managing knowledge graph provenance. It enables efficient comparison of files, tracking changes, and enforcing provenance rules to ensure data integrity and traceability. Ideal for researchers and developers, ProvSense promotes transparency and accountability in data-driven workflows.
+Home-page: https://github.com/sensein/ProvSense/
+License: Apache-2.0
+Keywords: python,data-integrity,file-comparison,data-governance,provenance,knowledge-graph,provenance-tracking,reproducibility,lineage
+Author: tekrajchhetri
+Author-email: tekraj@mit.edu
+Maintainer: tekrajchhetri
+Maintainer-email: tekraj@mit.edu
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Project-URL: Documentation, https://sensein.group/brainkbdocs/
+Project-URL: Repository, https://github.com/sensein/ProvSense/
+Description-Content-Type: text/markdown
+
+# ProvSense
+
+ProvSense is a Python library for managing knowledge graph provenance. It enables efficient comparison of files, tracking changes, and enforcing provenance rules to ensure data integrity and traceability. Ideal for researchers and developers, ProvSense promotes transparency and accountability in data-driven workflows.
+
+## Installation
+Install this package via :
+
+```sh
+pip install ProvSense
+```
+
+Or get the newest development version via:
+
+```sh
+pip install git+https://github.com/sensein/ProvSense/.git
+```
+
+## Quick start
+```Python
+from ProvSense.app import hello_world
+
+hello_world()
+```
+
+## To do:
+- [ ] A
+- [ ] lot
+
