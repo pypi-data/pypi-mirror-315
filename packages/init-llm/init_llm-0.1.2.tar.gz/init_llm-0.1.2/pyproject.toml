@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "init-llm"
+version = "0.1.2"
+description = "A toolkit for initializing LLMs and embeddings with multiple providers"
+authors = [{name = "G", email = "wangrenyuan@outlook.com"}]
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["llm", "ai", "langchain", "openai", "embeddings"]
+dependencies = [
+    "langchain>=0.1.0",
+    "openai>=1.0.0",
+    "langchain-openai>=0.0.5",
+    "langchain-community>=0.0.20",
+    "toml>=0.10.2",
+    "python-dotenv>=1.0.0"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.setuptools.package-data]
+init_llm = ["model_providers.toml", ".env.template"]
+
+[project.urls]
+Homepage = "https://github.com/bluemeat0724/init_llm"
+Documentation = "https://github.com/bluemeat0724/init_llm#readme"
+Repository = "https://github.com/bluemeat0724/init_llm.git"
+
