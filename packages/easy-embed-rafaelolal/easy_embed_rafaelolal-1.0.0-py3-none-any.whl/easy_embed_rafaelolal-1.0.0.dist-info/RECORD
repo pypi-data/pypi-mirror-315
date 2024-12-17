@@ -1,0 +1,11 @@
+easy_embed/__init__.py,sha256=Xa_PiPVG1n0_UdDXFF2I__3laqPGU7nXSwhBZFmp73w,26
+easy_embed/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easy_embed/src/db.py,sha256=vjbE_QZ9j_LEDoVmpxnzdG4hr9MMeN_ycG9A6Z8PT-c,3101
+easy_embed/src/main.py,sha256=goUGF0tJVX-pWupbKVf2VoYLm8yGZTxzTBnai2USj60,2436
+easy_embed/src/router.py,sha256=tSZoGapCoWCcCX1fpc1PlwNJGv8g_U2x9i2n9f10iTc,3984
+easy_embed/src/schemas.py,sha256=f5EQ1ye240A6a8PzAusLF_jqCJxv_ajp3YW3jOv1oLc,400
+easy_embed_rafaelolal-1.0.0.dist-info/LICENSE,sha256=j4JqL14zCCDZ_k_mFuHiaoc0wBaLRGlSCczx3ofjQdw,1070
+easy_embed_rafaelolal-1.0.0.dist-info/METADATA,sha256=pMdF_TRSU0O-qLCFcxxLqbxDsc8ibEntEfFht2MiX3U,5080
+easy_embed_rafaelolal-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+easy_embed_rafaelolal-1.0.0.dist-info/top_level.txt,sha256=9brzd1RsfIGOYC66o5QlysbuchYP6Fxi-GIAIIdirXo,11
+easy_embed_rafaelolal-1.0.0.dist-info/RECORD,,
