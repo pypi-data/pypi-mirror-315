@@ -1,0 +1,8 @@
+setup.py
+qarag/__init__.py
+qarag/pipe.py
+ragalonepack.egg-info/PKG-INFO
+ragalonepack.egg-info/SOURCES.txt
+ragalonepack.egg-info/dependency_links.txt
+ragalonepack.egg-info/requires.txt
+ragalonepack.egg-info/top_level.txt
