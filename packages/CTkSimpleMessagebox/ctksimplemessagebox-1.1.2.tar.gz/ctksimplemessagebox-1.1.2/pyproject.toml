@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CTkSimpleMessageBox"
+version = "1.1.2"
+description = "A simple Messagebox for Customtkinter"
+authors = [{name = "Scott", email = "ctksimplemessagebox@gmail.com"}]
+license = {text = "MIT"}
+dependencies = []
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"my_package" = ["MessageBoxIcons/*.ico"]
