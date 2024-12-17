@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+zrjzrj/__init__.py
+zrjzrj/main.py
+zrjzrj.egg-info/PKG-INFO
+zrjzrj.egg-info/SOURCES.txt
+zrjzrj.egg-info/dependency_links.txt
+zrjzrj.egg-info/entry_points.txt
+zrjzrj.egg-info/top_level.txt
