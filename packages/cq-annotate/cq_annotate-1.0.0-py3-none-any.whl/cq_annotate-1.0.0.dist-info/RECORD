@@ -1,0 +1,10 @@
+cq_annotate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cq_annotate/callouts.py,sha256=L9aHtsC36BGjh3uS3qhZHSMHViaEnG9NljRap3eOpiM,6057
+cq_annotate/dimensioning.py,sha256=Q-nizisVpXB6mn3VFcA0QTfFqkPLpu327eZSy_g9sKo,4258
+cq_annotate/overlays.py,sha256=Qbau_4blxhdfXhS1Z1-y4te4J-klKgpM5hr-XVPm9io,1416
+cq_annotate/views.py,sha256=fD-_DvcudeffHOgsu7gKDzmCDP_vs8td-0EsIOMLgZ0,1754
+cq_annotate/icons/safety_warning.svg,sha256=9On-JnNmMEQmKbp-c-buT50qf7aCyMNQmiZfpkUjALU,3019
+cq_annotate-1.0.0.dist-info/METADATA,sha256=Se9oyhxY2a63QcvQwxLcE9AvFOEIvWlUumiEtRzaGQE,4176
+cq_annotate-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cq_annotate-1.0.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cq_annotate-1.0.0.dist-info/RECORD,,
