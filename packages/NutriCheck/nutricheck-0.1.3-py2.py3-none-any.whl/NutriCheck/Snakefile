@@ -1,0 +1,47 @@
+# vu la très longue durée nécessaire au changement d'environnement
+# mieux vaut envisager du batch processing - lots de plusieurs organismes
+
+# install_genomad OK
+rule install_genomad: 
+    output:
+        "database_genomad/genomad_db_installed.flag"
+    conda: 
+        "envs/genomad.yaml"
+    shell:
+        """
+        genomad download-database database_genomad
+        touch database_genomad/genomad_db_installed.flag
+        """      
+
+rule run_check_genomad:
+    conda: 
+        "envs/genomad.yaml"
+    params:
+        input_dir=config.get("input_dir"),
+        output_dir=config.get("output_dir")
+    input:
+        fna_file="{params.input_dir}/{sample}.fna"
+        #fna="{params.input_dir}/{sample}.fna",
+        #fa="{params.input_dir}/{sample}.fa"
+    output:
+        "{params.output_dir}/genomad/{sample}" 
+    shell:
+        """
+        genomad end-to-end --cleanup {input.fna_file} {output_dir} genomad_db 
+        """
+        #python3 code_python/main_toxico.py {input.fa} genomad {output}
+        #python3 code_python/main_toxico.py {input.fna} genomad {output}
+        
+
+rule run_check_amrfinder:
+    input:
+        "snake_input/test_prot_AMR.fa"
+    output:
+        "snake_output/test_prot"
+    conda: 
+        "envs/amr.yaml"
+    shell:
+        # python3 script.py fasta_file logiciel_à_lancer
+        "python3 code_python/main_toxico.py code_python/data/Bifidobacterium_pgap.faa amrfinder"
+        
+        
