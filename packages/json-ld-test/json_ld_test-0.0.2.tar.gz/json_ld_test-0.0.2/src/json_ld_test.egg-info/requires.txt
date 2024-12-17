@@ -1,0 +1,12 @@
+linkml-runtime>=1.8.3
+pydantic
+
+[dev]
+requests
+pytest
+linkml-runtime>=1.8.3
+linkml>=1.8.5
+mkdocs-material>=9.5.48
+mkdocs>=1.6.1
+mkdocstrings[python]>=0.27.0
+griffe-pydantic>=1.1.0
