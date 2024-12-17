@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+basicsoperations/__init__.py
+basicsoperations/operations.py
+basicsoperations.egg-info/PKG-INFO
+basicsoperations.egg-info/SOURCES.txt
+basicsoperations.egg-info/dependency_links.txt
+basicsoperations.egg-info/top_level.txt
