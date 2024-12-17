@@ -1,0 +1,32 @@
+name: CI_mutation_testing
+
+on:
+  push:
+    branches: [ 'main' ]
+  pull_request:
+    branches: [ '**' ]
+jobs:
+  run_mutation_Testing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install xonsh
+        run: |
+          uv tool install xonsh
+  
+      - name: Run mutation tests
+        run: |
+          uvx xonsh tasks/mutationtests.xsh
+      
+      - name: Upload cosmic ray log
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: cosmic_ray_log
+          path: report_mutations*.html
