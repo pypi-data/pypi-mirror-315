@@ -1,0 +1,50 @@
+{
+    "onset": {
+        "Description": "Time at which the event occurred, in seconds, relative to the beginning of the acquisition.",
+        "Units": "seconds"
+    },
+    "duration": {
+        "Description": "Duration of the event, in seconds. For events with no duration (e.g., responses), set this to 0.",
+        "Units": "seconds"
+    },
+    "trial_type": {
+        "Description": "The type of trial (e.g., 'go', 'nogo', 'stimulus', etc.)."
+    },
+    "stim_file": {
+        "Description": "Relative path or identifier for the stimulus file presented."
+    },
+    "stimulus_type": {
+        "Description": "The type of stimulus presented (e.g., 'image', 'word', 'movie').",
+        "Units": "n/a"
+    },
+    "stimulus": {
+        "Description": "Identifier or name of the stimulus presented."
+    },
+    "event_type": {
+        "Description": "The type of event (e.g., 'presentation_image', 'presentation_text')."
+    },
+    "text_presented": {
+        "Description": "The text displayed to participants during the task."
+    },
+    "responded_discrete_value": {
+        "Description": "Just a slider value."
+    },
+    "HED": {
+        "Description": "Hierarchical Event Descriptors (HED) for tagging the event with detailed information.",
+        "Recommended": true
+    },
+    "StimulusPresentation": {
+        "OperationSystem": "Windows 10",
+        "SoftwareName": "PsychoPy",
+        "SoftwareRRID": "SCR_006571",
+        "SoftwareVersion": "2024.2.4"
+    },
+    "TaskName": "ExampleTask",
+    "TaskDescription": "A detailed description of the task.",
+    "Instructions": "Follow the on-screen instructions to complete the task.",
+    "CogAtlasID": "http://www.cognitiveatlas.org/task/id/trm_4a3fd79d09ab8",
+    "CogPOID": "http://www.cogpo.org/ontologies/CogPOver1.owl",
+    "InstitutionName": "Example Institution",
+    "InstitutionAddress": "123 Research Blvd, Example City, Country",
+    "InstitutionalDepartmentName": "Department of Neuroscience"
+}

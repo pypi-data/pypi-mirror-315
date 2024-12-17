@@ -1,0 +1,137 @@
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_PIPELINE_SOURCE == "tag"
+    - if: $CI_COMMIT_BRANCH == "main"
+    - if: $CI_COMMIT_TAG
+
+stages:
+  - Static Analysis
+  - Test
+  - Deploy
+
+default:
+  image: python:3.10-slim
+
+# Static Analysis jobs
+autopep8:
+  stage: Static Analysis
+  script:
+    - pip install autopep8
+    - autopep8 --diff --recursive --max-line-length 99 psychopy_bids/
+
+black:
+  stage: Static Analysis
+  script:
+    - pip install black
+    - black --check psychopy_bids/
+
+isort:
+  stage: Static Analysis
+  script:
+    - pip install isort
+    - isort --check-only psychopy_bids/
+
+bandit:
+  stage: Static Analysis
+  script:
+    - pip install bandit
+    - bandit -r psychopy_bids/
+
+codespell:
+  stage: Static Analysis
+  script:
+    - pip install codespell
+    - codespell --ignore-words-list="assertIn" psychopy_bids/
+
+flake8:
+  stage: Static Analysis
+  script:
+    - pip install flake8
+    - flake8 --ignore=E501,W503,F841 psychopy_bids/
+
+pylint:
+  stage: Static Analysis
+  script:
+    - pip install pylint numpy pandas requests
+    - pip install psychopy --no-deps
+    - pip install psychopy-bids --no-deps
+    - pylint --method-naming-style=camelCase -d R0902,R0913,C0301,W0511,R0917,C0302,R0912 psychopy_bids/bids/*.py
+    - pylint -d C0103,R0913,R0914,R0915,W0212,W0511,R0917,R0912,W0612,C0301 psychopy_bids/bids_event/*.py
+    - pylint -d C0103,R0913,R0915,W0511,R0917,C0301 psychopy_bids/bids_settings/*.py
+
+# Test Job
+pytest:
+  stage: Test
+  image: wieluk/bids_ci_cd_ubuntu22:v1.4
+  tags:
+    - self-hosted
+  parallel:
+    matrix:
+      - PYTHON_VERSION: "3.8"
+      - PYTHON_VERSION: "3.9"
+      - PYTHON_VERSION: "3.10"
+  script:
+    - source /home/gitlab-runner/psychopy_${PYTHON_VERSION}/bin/activate
+    - pip install -U psychopy .
+    - pip show psychopy 
+    - pip show psychopy-bids
+    - pytest --cov=psychopy_bids -v --disable-warnings
+  artifacts:
+    paths:
+      - tests/tested_code_blocks.md  
+    expire_in: 7 days
+
+bids_validator:
+  stage: Test
+  image: wieluk/bids_ci_cd_ubuntu22:v1.4
+  tags:
+    - self-hosted
+  needs:
+   - pytest
+  script:
+    - source /home/gitlab-runner/psychopy_3.10/bin/activate
+    - pip install -U psychopy .
+    - pip show psychopy 
+    - pip show psychopy-bids
+    - |
+        for i in {1..10}; do
+          xvfb-run -s "-screen 0 1024x768x24" python tests/bids_validator/experiment_lastrun.py
+          sleep 1
+        done
+    - python -c "import seedir as sd; sd.seedir('tests/bids_validator/bids', printout=True)"
+    - /home/gitlab-runner/bids-validator/local-run tests/bids_validator/bids
+
+# Release Job for PyPI
+release_pypi:
+  stage: Deploy
+  before_script:
+    - apt-get update && apt-get install -y git
+    - git fetch --tags
+    - git describe --tags  # Ensure Git metadata is available
+  script:
+    - pip install --upgrade build twine
+    - rm -rf dist/
+    - python -m build
+    - python -m twine upload --repository pypi dist/* -u __token__ -p $PYPI_TOKEN --non-interactive
+  only:
+    refs:
+      - tags
+    variables:
+      - $CI_COMMIT_TAG =~ /^v\d{4}\.\d+\.\d+$/
+      - $CI_COMMIT_REF_NAME == "main" 
+
+release_gitlab:
+  stage: Deploy
+  image: registry.gitlab.com/gitlab-org/release-cli:latest            
+  script:
+    - echo "running release_job"
+  release:                              
+    tag_name: '$CI_COMMIT_TAG'
+    description: '$CI_COMMIT_TAG'
+  only:
+    refs:
+      - tags
+    variables:
+      - $CI_COMMIT_TAG =~ /^v\d{4}\.\d+\.\d+$/
+      - $CI_COMMIT_REF_NAME == "main"

@@ -1,0 +1,40 @@
+{
+    "Name": "bids",
+    "BIDSVersion": "1.8.0",
+    "HEDVersion": "8.1.0",
+    "DatasetType": "raw",
+    "License": "CC-BY-NC-4.0",
+    "Authors": [
+        "Author One",
+        "Author Two"
+    ],
+    "Acknowledgements": "We thank the contributors and institutions who made this dataset possible.",
+    "HowToAcknowledge": "Please cite the authors listed in the dataset along with the following publication: [Insert citation here].",
+    "Funding": [
+        "Grant Number 123456 from XYZ Organization",
+        "Grant Number 654321 from ABC Foundation"
+    ],
+    "EthicsApprovals": [
+        "Approval ID 2023-001 from University Research Ethics Committee"
+    ],
+    "ReferencesAndLinks": [
+        "https://doi.org/10.1234/example",
+        "https://example.com/dataset-info"
+    ],
+    "DatasetDOI": "https://doi.org/10.5678/example-doi",
+    "SourceDatasets": [
+        {
+            "URL": "https://example.com/source-dataset",
+            "DOI": "10.1000/example",
+            "Version": "1.0.0"
+        }
+    ],
+    "GeneratedBy": [
+        {
+            "Name": "psychopy-bids",
+            "Version": "2024.1.4",
+            "Description": "A PsychoPy plugin for working with the Brain Imaging Data Structure (BIDS).",
+            "CodeURL": "https://gitlab.com/psygraz/psychopy-bids"
+        }
+    ]
+}
