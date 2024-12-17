@@ -1,0 +1,3 @@
+[console_scripts]
+colrev-sync=src.sync:main
+

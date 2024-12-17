@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: colrev-sync
+Version: 0.1.0
+Summary: CoLRev package for sync
+Home-page: https://github.com/CoLRev-Environment/colrev-sync
+License: MIT
+Author: Gerit Wagner
+Author-email: gerit.wagner@uni-bamberg.de
+Requires-Python: >=3.8,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Repository, https://github.com/CoLRev-Environment/colrev-sync
