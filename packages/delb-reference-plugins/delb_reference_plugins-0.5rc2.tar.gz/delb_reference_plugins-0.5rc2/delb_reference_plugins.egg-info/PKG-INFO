@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: delb-reference-plugins
+Version: 0.5rc2
+Summary: A package with spare non-sense plugins for delb as developer's reference.
+Author: Frank Sachsenheim
+License: AGPL-3.0-only
+Requires-Dist: delb[https-loader]~=0.5-rc2
