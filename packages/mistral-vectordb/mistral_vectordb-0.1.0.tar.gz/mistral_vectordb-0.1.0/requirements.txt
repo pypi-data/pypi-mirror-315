@@ -1,0 +1,8 @@
+# requirements.txt
+numpy>=1.19.0
+faiss-cpu>=1.7.0
+mistralai>=0.0.7
+tqdm>=4.65.0
+pydantic>=1.8.0
+pytest>=6.0.0
+

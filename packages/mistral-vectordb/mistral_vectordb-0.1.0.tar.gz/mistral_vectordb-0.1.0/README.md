@@ -1,0 +1,130 @@
+# README.md
+# Mistral VectorDB
+
+A high-performance vector database optimized for Mistral AI embeddings, featuring efficient similarity search, storage, and retrieval capabilities.
+
+## Features
+
+- **Optimized for Mistral AI**: Built specifically for Mistral's embedding model
+- **Efficient Vector Search**: Uses FAISS with HNSW and IVF for fast similarity search
+- **Advanced Storage**: Compressed storage with LSM-tree inspired design
+- **Rich Querying**: Metadata filtering and customizable search parameters
+- **Batch Processing**: Efficient handling of bulk operations
+- **Caching System**: Smart caching for frequently accessed embeddings
+- **Easy Integration**: Simple API for seamless integration
+
+## Installation
+
+```bash
+pip install mistral-vectordb
+```
+
+## Quick Start
+
+```python
+from mistral_vectordb import VectorDatabase, MistralEmbeddings
+
+# Initialize with your Mistral API key
+embeddings = MistralEmbeddings(api_key="your-api-key")
+db = VectorDatabase("db_path", dimension=embeddings.dimension)
+
+# Add documents
+text = "Sample document"
+embedding = embeddings.embed(text)
+doc_id = db.add_document(
+    content=text,
+    embedding=embedding[0],
+    metadata={"category": "tech"}
+)
+
+# Search
+query = "similar document"
+query_embedding = embeddings.embed(query)
+results = db.search(
+    query_embedding=query_embedding[0],
+    k=10,
+    threshold=0.7,
+    metadata_filters={"category": "tech"}
+)
+```
+
+## Advanced Usage
+
+### Batch Processing
+
+```python
+# Embed multiple documents
+texts = ["Document 1", "Document 2", "Document 3"]
+embeddings_array = embeddings.bulk_embed(
+    texts,
+    batch_size=32,
+    show_progress=True
+)
+
+# Add to database
+for text, embedding in zip(texts, embeddings_array):
+    db.add_document(
+        content=text,
+        embedding=embedding,
+        metadata={"batch": "example"}
+    )
+```
+
+### Custom Search Parameters
+
+```python
+results = db.search(
+    query_embedding=query_embedding[0],
+    k=5,                    # Number of results
+    threshold=0.8,          # Minimum similarity score
+    metadata_filters={      # Filter by metadata
+        "category": "tech",
+        "language": "en"
+    }
+)
+```
+
+## API Reference
+
+### MistralEmbeddings
+
+```python
+embeddings = MistralEmbeddings(
+    api_key="your-api-key",
+    model="mistral-embed",    # Embedding model to use
+    cache_dir="path/to/cache", # Optional cache directory
+    cache_duration=24         # Cache duration in hours
+)
+
+# Generate embeddings
+embedding = embeddings.embed("text")
+embeddings_array = embeddings.bulk_embed(["text1", "text2"])
+```
+
+### VectorDatabase
+
+```python
+db = VectorDatabase(
+    path="db_path",           # Database storage path
+    dimension=1024            # Embedding dimension
+)
+
+# Add document
+doc_id = db.add_document(
+    content="text",           # Original text
+    embedding=vector,         # NumPy array
+    metadata={"key": "value"} # Optional metadata
+)
+
+# Search
+results = db.search(
+    query_embedding=vector,   # Query vector
+    k=10,                    # Number of results
+    threshold=0.7,           # Similarity threshold
+    metadata_filters={}      # Optional filters
+)
+```
+
+## Contributing
+
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on how to submit pull requests, report issues, and contribute to the project.

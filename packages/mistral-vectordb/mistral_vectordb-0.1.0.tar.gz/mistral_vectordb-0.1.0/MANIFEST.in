@@ -1,0 +1,9 @@
+# MANIFEST.in
+include LICENSE
+include README.md
+include requirements.txt
+include requirements-dev.txt
+include pyproject.toml
+recursive-include tests *.py
+recursive-include docs *.rst *.py *.bat *.html *.css *.js
+recursive-include examples *.py *.ipynb
