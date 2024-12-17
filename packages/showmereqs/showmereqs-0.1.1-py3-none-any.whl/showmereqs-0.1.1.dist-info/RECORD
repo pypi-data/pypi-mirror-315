@@ -1,0 +1,15 @@
+showmereqs/__init__.py,sha256=xqllV8c4cbNAXUC8GLlAsWdejh-4yhxoY-uCCeFoL8U,46
+showmereqs/analyze.py,sha256=rTTmVJde1B4ladSrh3PDQCvgBgc2XfvGWUB9DgAGB0Q,2557
+showmereqs/generate.py,sha256=ElUrrDtS52WwWF3KYeo993sPqALfv9P9TiLSrXIb2_o,2245
+showmereqs/main.py,sha256=bTtC-M-pEgROPOn_xrZ42cFceBxcy_RdncRMpEjG010,599
+showmereqs/package_info.py,sha256=IDO1zqhxHEtyBM9iH1y0d1hQx5f7CzVvZV7k_tfM37U,2525
+showmereqs/utils.py,sha256=BvZPGiX_7dK8j-ui9UsFIEk9WqIQrzDtvA3Sg-aUTKk,1775
+showmereqs/config/ignore.json,sha256=8SH6YNpxvr48HVXlFZyVmGII0zvGHFNrtUZvJJyxUZQ,163
+showmereqs/config/special_mapping,sha256=P6Yso8l9nccgdxoKQRh17IbWAUuvVriP2izVVeDi4BA,28009
+showmereqs/config/stdlib,sha256=KI1ZFljeC41RXUTB7EMmvq3ePwv7Jmz0-FiqLtGbfU0,38382
+showmereqs-0.1.1.dist-info/LICENSE,sha256=x2jrQ13MwyMIIN0sbO9wVJA_Q8uV9v3QHWoiZzpMlOk,890
+showmereqs-0.1.1.dist-info/METADATA,sha256=lF2uoYpMcPJh0cb4qK5J76vdC6K9oIGGjM1d5koVexs,2815
+showmereqs-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+showmereqs-0.1.1.dist-info/entry_points.txt,sha256=2i9PVllA24ZiEsT2B02mJZk2eDlPI_IoPI0Es6lNatg,47
+showmereqs-0.1.1.dist-info/top_level.txt,sha256=iRZk-xRic6Ul86JarZqycohpF7nbXawXLSxr9omlYkI,11
+showmereqs-0.1.1.dist-info/RECORD,,
