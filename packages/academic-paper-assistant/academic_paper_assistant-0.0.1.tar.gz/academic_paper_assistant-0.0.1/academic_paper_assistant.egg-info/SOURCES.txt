@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+readme.md
+academic_paper_assistant/__init__.py
+academic_paper_assistant.egg-info/PKG-INFO
+academic_paper_assistant.egg-info/SOURCES.txt
+academic_paper_assistant.egg-info/dependency_links.txt
+academic_paper_assistant.egg-info/entry_points.txt
+academic_paper_assistant.egg-info/top_level.txt

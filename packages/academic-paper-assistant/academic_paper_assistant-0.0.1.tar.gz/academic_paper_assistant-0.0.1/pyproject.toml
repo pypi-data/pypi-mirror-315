@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "academic-paper-assistant"
+version = "0.0.1"
+description = "An assistant tool for academic paper writing"
+readme = "readme.md"
+authors = [{ name = "koukouxu", email = "koukouxu@vip.qq.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["academic", "paper", "writing", "assistant"]
+dependencies = []
+requires-python = ">=3.6"
+
+[project.urls]
+Homepage = "https://github.com/xzjjj/AcademicPaperAssistant"
+Repository = "https://github.com/xzjjj/AcademicPaperAssistant.git"
+
+[project.scripts]
+paper-assistant = "academic_paper_assistant:main"
+
+[tool.setuptools.packages.find]
+include = ["academic_paper_assistant*"]
+exclude = ["tests*"]

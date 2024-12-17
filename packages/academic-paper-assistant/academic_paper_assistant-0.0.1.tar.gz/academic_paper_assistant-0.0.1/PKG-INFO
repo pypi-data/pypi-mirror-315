@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: academic-paper-assistant
+Version: 0.0.1
+Summary: An assistant tool for academic paper writing
+Author-email: koukouxu <koukouxu@vip.qq.com>
+License: MIT
+Project-URL: Homepage, https://github.com/xzjjj/AcademicPaperAssistant
+Project-URL: Repository, https://github.com/xzjjj/AcademicPaperAssistant.git
+Keywords: academic,paper,writing,assistant
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Academic Paper Assistant
+
+An assistant tool for academic paper writing. This package is currently under development.
+
+## Installation
+
+```bash
+pip install academic-paper-assistant
+```
+
+## Usage
+
+```python
+from academic_paper_assistant import main
+main()
+```
+
+## Features (Coming Soon)
+
+- Paper writing assistance
+- Reference management
+- Format conversion
+- Multi-language support
+
+## License
+
+MIT License
