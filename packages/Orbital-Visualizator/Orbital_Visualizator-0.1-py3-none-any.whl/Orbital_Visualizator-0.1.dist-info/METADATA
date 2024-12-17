@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Orbital_Visualizator
+Version: 0.1
+Summary: Gives a 3D representation of a given orbit from TLE (Two Lines Elements) or directly from Keplerian paramaters.
+Home-page: https://github.com/ArpaxSpaceSystems/Orbital_Visualizator.git
+Author: Baptiste LEBON
+Author-email: Baptiste LEBON <Baptiste.LEBON@estaca.eu>
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: skyfield
+Requires-Dist: importlib-metadata; python_version <= "3.10"
+
+# Orbital_Visualizator
+Gives a 3D representation of a given orbit from TLE (Two Lines Elements) or directly from Keplerian paramaters.
+
+
+Documentation of methods and functions can be found in ``> docs/source > index.rst``
