@@ -1,0 +1,6 @@
+cifar_utils/__init__.py
+cifar_utils/setup.py
+cifar_utils.egg-info/PKG-INFO
+cifar_utils.egg-info/SOURCES.txt
+cifar_utils.egg-info/dependency_links.txt
+cifar_utils.egg-info/top_level.txt

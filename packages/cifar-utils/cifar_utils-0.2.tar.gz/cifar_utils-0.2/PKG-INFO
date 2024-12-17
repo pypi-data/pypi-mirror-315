@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: cifar-utils
+Version: 0.2
+Author: Jyothsna Lakshminarayanan
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# CIFAR-100 Utils
+
+This package provides simple utility functions to help you work with the CIFAR-100 dataset. 
+
+## What is CIFAR-100?
+
+CIFAR-100 is a popular dataset used in machine learning. It contains 100 different classes of images, each with 600 images. These classes range from animals like 'dog' and 'cat', to objects like 'car' and 'plane'. The dataset is divided into 20 superclasses, each of which contains several fine-grained classes.
+
+### What does this package do?
+
+This package gives you the following useful functions:
+
+- **`get_classes()`**: This function returns a list of 100 fine-grained class names (e.g., 'apple', 'dog', 'airplane').
+- **`get_super_classes()`**: This function returns a list of 20 broad superclasses (e.g., 'aquatic mammals', 'flowers', 'vehicles').
+- **`image_data()`**: This function provides a concise summary of the CIFAR-100 dataset, including image format, matrix explanation, the number of superclasses, and the number of images in each superclass.
+
+These functions are useful when you're working with the CIFAR-100 dataset and want easy access to the class names, superclasses, or need a quick overview of the dataset.
+
+## Installation
+
+You can easily install the package using pip:
+
+```bash
+pip install cifar-utils
+
+## Usage
+
+Once you've installed the package, you can use it in your Python code like this:
+
+### 1. Get all class names:
+
+The `get_classes()` function returns a list of 100 fine-grained class names from the CIFAR-100 dataset.
+
+```python
+from cifar_utils import get_classes
+
+# Get all class names from CIFAR-100
+class_names = get_classes()
+
+# Print the first 10 class names
+print(class_names[:10])  
+
+### 2. Get all super class names:
+
+from cifar_utils import get_super_classes
+
+# Get all superclasses
+super_classes = get_super_classes()
+
+# Print the first 10 superclasses
+print(super_classes[:10])
+
+### 3. Get an overview about the image data:
+
+from cifar_utils import image_data
+
+# Get summary of CIFAR-100 dataset
+image_data()
+
+### **Disclaimer**:
+
+I would like to clarify that I **did not copy** any of the content in this package. Any resemblance to other resources or code is purely **coincidental**.
+
+For the **class names** used in this package, I referred to the **Hugging Face** website as a reference, and they were used as a foundation for the functionality in this package.
