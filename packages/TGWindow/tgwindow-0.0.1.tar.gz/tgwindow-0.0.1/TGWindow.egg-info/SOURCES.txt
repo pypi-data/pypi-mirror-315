@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+TGWindow.egg-info/PKG-INFO
+TGWindow.egg-info/SOURCES.txt
+TGWindow.egg-info/dependency_links.txt
+TGWindow.egg-info/requires.txt
+TGWindow.egg-info/top_level.txt
+src/__init__.py
+src/keyboard/__init__.py
+src/keyboard/base_keyboards.py
+src/sender/__init__.py
+src/sender/sender.py
+src/windows/__init__.py
+src/windows/base_window.py
+tests/__init__.py
+tests/test.py
