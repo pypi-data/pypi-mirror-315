@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+tutor_forum.egg-info/PKG-INFO
+tutor_forum.egg-info/SOURCES.txt
+tutor_forum.egg-info/dependency_links.txt
+tutor_forum.egg-info/entry_points.txt
+tutor_forum.egg-info/requires.txt
+tutor_forum.egg-info/top_level.txt
+tutorforum/__about__.py
+tutorforum/__init__.py
+tutorforum/plugin.py
