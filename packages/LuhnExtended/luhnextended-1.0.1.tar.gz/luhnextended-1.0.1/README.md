@@ -1,0 +1,90 @@
+# LuhnExtended
+
+LuhnExtended is a Python library for advanced operations with the Luhn algorithm. It provides functions to generate, verify, and append Luhn check digits, with support for user-defined checksum values.
+
+## Features
+- **Checksum Calculation**: Calculate the Luhn checksum for a given string of digits.
+- **Verification**: Verify whether a string of digits satisfies the Luhn algorithm.
+- **Check Digit Generation**: Generate the correct check digit to append to a string of digits.
+- **Append Check Digit**: Easily append the correct Luhn check digit to a string.
+
+## Installation
+
+Install the `LuhnExtended` library using `pip` directly from PyPI:
+
+```sh
+pip install LuhnExtended
+```
+
+## Usage
+
+### Importing the Library
+
+```python
+from LuhnExtended import checksum, verify, generate, append
+```
+
+### Functions
+
+#### `checksum(string)`
+Compute the Luhn checksum for the provided string of digits. Note that this assumes the check digit is in place.
+
+**Example**:
+
+```python
+checksum_value = checksum("356938035643806")
+print(checksum_value)  # Output: 7
+```
+
+#### `verify(string, checksum_expected=0)`
+Check if the provided string of digits satisfies the Luhn checksum.
+
+**Parameters**:
+- `string` (str): The string of digits to verify.
+- `checksum_expected` (int, optional): Expected checksum value.
+
+**Example**:
+
+```python
+# Test verification
+is_valid = verify("356938035643806", 7)
+print(f"Is ('356938035643806', 7) valid? {is_valid}")  # Expected output: True
+
+is_invalid = verify("356938035643806", 0)
+print(f"Is ('356938035643806', 0) valid? {is_invalid}")  # Expected output: False
+
+is_invalid = verify("534618613411236", 7)
+print(f"Is ('534618613411236', 7) valid? {is_invalid}")  # Expected output: False
+```
+
+#### `generate(string, checksum_desired=0)`
+Generate the Luhn check digit to append to the provided string.
+
+**Parameters**:
+- `string` (str): The string of digits to generate a check digit for.
+- `checksum_desired` (int, optional): Desired checksum value (default is `0`).
+
+**Example**:
+
+```python
+check_digit = generate("35693803564380", 7)
+print(f"Generated check digit for ('35693803564380', 7): {check_digit}")  # Output: 6
+```
+
+#### `append(string, checksum_desired=0)`
+Append the Luhn check digit to the end of the provided string.
+
+**Parameters**:
+- `string` (str): The string of digits to append a check digit to.
+- `checksum_desired` (int, optional): Desired checksum value (default is `0`).
+
+**Example**:
+
+```python
+full_string = append("35693803564380", 7)
+print(f"Appended check digit to ('35693803564380', 7): {full_string}")  # Output: '356938035643806'
+```
+
+## Author
+
+Developed by Luhn Extended.
