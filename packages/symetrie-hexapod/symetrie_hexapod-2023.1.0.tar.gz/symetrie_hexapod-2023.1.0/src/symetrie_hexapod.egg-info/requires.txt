@@ -1,0 +1,5 @@
+cgse-common
+cgse-core
+cgse-gui
+cgse-coordinates
+PyQt5
