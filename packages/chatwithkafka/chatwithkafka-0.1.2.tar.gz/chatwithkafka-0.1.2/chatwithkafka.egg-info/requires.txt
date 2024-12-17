@@ -1,0 +1,4 @@
+confluent-kafka
+textual
+tzlocal
+cryptography
