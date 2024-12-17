@@ -1,0 +1,11 @@
+numpy
+pytest
+pytest-cov
+tqdm
+shapely
+xarray
+xsar
+xarray-safe-s1
+xradarsat2
+xarray-safe-rcm
+xsarsea
