@@ -1,0 +1,13 @@
+tcloud/__init__.py,sha256=3LY4DBlbclmu268xPwQA5_FEDV7INDRJFe_jjtnNw3Y,203
+tcloud/_version.py,sha256=o9XMlNC6GoiUn7mwoOOgJdijgp3B_2fLdgizcKs1i2o,411
+tcloud/cli.py,sha256=8smA6CEsa5Z6nJQmbudm2P3Bo0jJKkhddZjzcPyXbo0,3746
+tcloud/config.py,sha256=D2VZsHu7nHUMdBmjPCftT8rLB7FRYmI-I2y5qj4hkFQ,4300
+tcloud/constants.py,sha256=jUSx26l3zQxiSPcvS-AtqIaGd7TZoYHugAvf2eUnFKk,155
+tcloud/installer.py,sha256=7Hc8_IejeqEdGBbb6hyQwH6TKsgIoL8RHNK2NTcQ8g0,5014
+tcloud/pip_helper.py,sha256=IVtn4n8LeCe2UuV9XuzW41NpoXv1a2ndMfdOij1xEDQ,935
+tcloud-2.0.0.dist-info/LICENSE,sha256=OlMefUjgWJdULtf84BLW0AZZcY8DwdgQqb_1j2862j8,11346
+tcloud-2.0.0.dist-info/METADATA,sha256=0Jq36LoOr74i3Jqg0bopYpKBkiDFzDCnZzV-HyFXF68,2793
+tcloud-2.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+tcloud-2.0.0.dist-info/entry_points.txt,sha256=Bh688l3o4PUTIgdWr9aRSbU1A9VAd4glZgu5_SgqiPk,42
+tcloud-2.0.0.dist-info/top_level.txt,sha256=7e3sZHDI5OPAIWURKfJU9HLE0wcsGy2HwwZbdO1jVGM,7
+tcloud-2.0.0.dist-info/RECORD,,
