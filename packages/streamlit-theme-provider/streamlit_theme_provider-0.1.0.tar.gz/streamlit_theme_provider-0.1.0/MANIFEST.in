@@ -1,0 +1,3 @@
+recursive-include src/streamlit_theme_provider/frontend *
+include README.md
+include LICENSE
