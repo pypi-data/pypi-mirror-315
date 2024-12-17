@@ -1,0 +1,2 @@
+recursive-include gtecble/native *
+include README.md LICENSE gtecble/requirements.txt CHANGELOG.md
