@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: circuitpainter
+Version: 0.1.0
+Summary: Sketching interface for macking function printed circuit boards
+Keywords: kicad,pcb,printed ciruit board,circuit design,skectching
+Author-email: Matthew Mets <matt@blinkinlabs.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: numpy
+Project-URL: Homepage, https://circuitpainter.blinkinlabs.com
+Project-URL: Repository, https://github.com/blinkinlabs/circuitpainter
+
+# Circuit Painter
+
+![](doc/_static/images/lotus_leds.png)
+
+Circuit painter is a creative coding tool for making functional printed
+circuit boards.
+
+See the full documentation here: https://circuitpainter.blinkinlabs.com/
+
