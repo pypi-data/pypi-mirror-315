@@ -1,0 +1,39 @@
+Voici un exemple de **Makefile** avec deux cibles (`target1` et `target2`) et une dépendance (`dependency.txt`). Ce Makefile permet d'exécuter différentes commandes en fonction de la cible appelée et montre comment un fichier dépendant peut être utilisé pour conditionner l'exécution des cibles.
+
+### Exemple de Makefile
+
+```makefile
+# Ce fichier Makefile contient deux cibles simples avec une dépendance
+
+# Cible 1 qui dépend de "dependency.txt"
+target1: dependency.txt
+	echo "Execution de target1 car dependency.txt est present"
+
+# Cible 2 sans dépendance
+target2:
+	echo "Execution de target2 sans dépendance"
+
+# Créer la dépendance si elle n'existe pas déjà
+dependency.txt:
+	echo "Contenu de la dépendance" > dependency.txt
+```
+
+### Explication
+
+- **target1** dépend de `dependency.txt`. Si `dependency.txt` est déjà présent, alors `target1` sera exécuté. Si `dependency.txt` n'existe pas, la cible `dependency.txt` est exécutée pour le créer.
+- **target2** n’a aucune dépendance et peut être exécuté indépendamment.
+
+### Utilisation
+
+- Pour exécuter `target1` (et créer `dependency.txt` s'il n'existe pas encore) :
+
+  ```bash
+  make target1
+  ```
+
+- Pour exécuter `target2` sans se soucier de la dépendance :
+
+  ```bash
+  make target2
+  ```
+.

@@ -1,0 +1,41 @@
+/data/home/kpoitou/miniconda3/bin/conda init
+source .bashrc
+
+# Pour Amr Finder plus
+conda activate /data/home/kpoitou/miniconda3/envs/amrfinder/
+fichier test :
+cp /data/home/kpoitou/big_projet/test_dna.fa .
+amrfinder -n test_dna.fa            #n car seq de NT
+amrfinder -n sequence.fasta -o output.txt --database /path/to/amrfinder_database --plus
+
+# Pour VirSorter
+
+conda activate /data/home/kpoitou/miniconda3/envs/virsorter/
+
+# modifier -f test_dna.fa pour changer le fichier à analyser
+# modifier --wdir /data/home/kpoitou/virsorter_output pour changer le dossier de sortie des résultats 
+wrapper_phage_contigs_sorter_iPlant.pl -f test_dna.fa --db 1 --wdir /data/home/kpoitou/virsorter_output --ncpu 4 --data-dir /data/home/kpoitou/project_tools/virsorter-data
+
+# Pour geNomad
+conda activate /data/home/kpoitou/miniconda3/envs/genomad/
+
+
+# pour en savoir plus sur le fonctionnement de geNomad
+https://portal.nersc.gov/genomad/pipeline.html
+
+# pour utiliser geNomad
+https://portal.nersc.gov/genomad/quickstart.html
+
+# genomad end-to-end [OPTIONS] INPUT OUTPUT DATABASE
+
+So, to run the full geNomad pipeline (end-to-end command), taking a nucleotide FASTA file (GCF_009025895.1.fna.gz) and the database (project_tools/genomad_db) as input, we will execute the following command:
+
+genomad end-to-end --cleanup --splits 4 GCF_009025895.1.fna.gz genomad_output project_tools/genomad_db
+
+The results will be written inside the genomad_output directory.
+
+# Pour le calcul de nutritivité
+conda activate /data/home/kpoitou/miniconda3/envs/cai/
+
+
+
