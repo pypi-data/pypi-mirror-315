@@ -1,0 +1,3 @@
+[console_scripts]
+dpr = dpr.scripts.dpr:main
+dpr_make_fancy_graph = dpr.scripts.dpr_make_fancy_graph:main
