@@ -1,0 +1,15 @@
+airbite-0.1.12.dist-info/RECORD,,
+airbite-0.1.12.dist-info/WHEEL,sha256=dqcMvds7ym-Clu_2fY2xyUvpe9ORKPgCJKUqdwjOvr8,110
+airbite-0.1.12.dist-info/top_level.txt,sha256=4NwLAEo7MsrixZH4EubUdKdxJRj7PYJwzsExvnvg2gU,8
+airbite-0.1.12.dist-info/METADATA,sha256=K6OzOST1lFt4yRXOPGZu_BJbUkv9heqLgiF-mdsYHy0,3956
+airbite/connectors.cpython-311-darwin.so,sha256=a973Mx5bWC-ioVVy5VoMylngZt1FFecxUOz1sqv49VY,126128
+airbite/hacks.cpython-311-darwin.so,sha256=_hNZ1ekCTvZWRWwCfocRceck546pvRBIY-tuU-EQ-HI,132488
+airbite/util.cpython-311-darwin.so,sha256=Jo7k3j6ZyMCj4Eo-__bV1j3SoY9_NyGRvJ9M-ZOVBSo,105696
+airbite/model_generator.cpython-311-darwin.so,sha256=N-PKwHc4Q0GB7DX7ySB2T1YFRRW65-g9kIZer9_P7dU,170360
+airbite/__init__.cpython-311-darwin.so,sha256=O4YdyZKwoInKIy4jpn1uJuhtEyXG_knbunDARGn8Y4k,62256
+airbite/connector_configs/__init__.cpython-311-darwin.so,sha256=hX6QsaZom8Qvlf5YeewmFAXyrz5eln2_u-Qmd68bU3Y,41808
+airbite/connector_configs/model/destination_sftp_json__0_1_0.cpython-311-darwin.so,sha256=OBe9gLnoosU_n69T0rhE8lfqJMC4k-MDrxuTt6qtEbM,62208
+airbite/connector_configs/model/destination_csv__1_0_0.cpython-311-darwin.so,sha256=Y3v5P1uqPF6AZeDNsj1vlTcv2qqkduGGECm_cjZ2LjI,62400
+airbite/connector_configs/model/source_file__0_5_15.cpython-311-darwin.so,sha256=ZMAUlXdBLUU4DviFd2Juzn6ev_7AFnfzy-lLGWv8fYM,104400
+airbite/connector_configs/model/__init__.cpython-311-darwin.so,sha256=M2BilyuXYprZkDFqDonT0uoKCr2_W_6o2Flh5SI6AYM,38496
+airbite/connector_configs/model/source_file__0_5_16.cpython-311-darwin.so,sha256=0vzXzs1CmXxqp900Wjp46ZXRpEvktwqHecML-lFKWZw,104400
