@@ -1,0 +1,4 @@
+cgse-core
+numpy
+pandas
+transforms3d

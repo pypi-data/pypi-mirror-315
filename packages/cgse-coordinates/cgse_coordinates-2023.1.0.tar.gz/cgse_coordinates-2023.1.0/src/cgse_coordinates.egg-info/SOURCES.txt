@@ -1,0 +1,17 @@
+pyproject.toml
+src/cgse_coordinates.egg-info/PKG-INFO
+src/cgse_coordinates.egg-info/SOURCES.txt
+src/cgse_coordinates.egg-info/dependency_links.txt
+src/cgse_coordinates.egg-info/entry_points.txt
+src/cgse_coordinates.egg-info/requires.txt
+src/cgse_coordinates.egg-info/top_level.txt
+src/egse/coordinates/__init__.py
+src/egse/coordinates/avoidance.py
+src/egse/coordinates/cslmodel.py
+src/egse/coordinates/laser_tracker_to_dict.py
+src/egse/coordinates/point.py
+src/egse/coordinates/pyplot.py
+src/egse/coordinates/referenceFrame.py
+src/egse/coordinates/refmodel.py
+src/egse/coordinates/rotationMatrix.py
+src/egse/coordinates/transform3d_addon.py
