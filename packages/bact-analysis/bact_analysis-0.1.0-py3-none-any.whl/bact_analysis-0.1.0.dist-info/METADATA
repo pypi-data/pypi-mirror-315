@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: bact-analysis
+Version: 0.1.0
+Summary: bact accelerator optimisation analysis tools
+Home-page: https://github.com/hz-b/bact-analysis
+License: GPL-3.0
+Author: Pierre Schnizer
+Requires-Python: >=3.7
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: bact_math_utils
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: xarray
+Project-URL: Documentation, https://github.com/hz-b/bact-analysis
+Project-URL: Repository, https://github.com/hz-b/bact-analysis
