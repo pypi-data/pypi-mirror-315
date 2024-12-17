@@ -1,0 +1,4314 @@
+{
+  "swagger": "2.0",
+  "info": {},
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "notifications/v1/settings"
+    },
+    {
+      "name": "notifications/v1/notification"
+    },
+    {
+      "name": "notifications/v1/device"
+    },
+    {
+      "name": "notifications/v2/notification"
+    },
+    {
+      "name": "notifications/v2/transaction"
+    }
+  ],
+  "paths": {
+    "/notifications/v1/settings/case": {
+      "get": {
+        "tags": [
+          "notifications/v1/settings"
+        ],
+        "summary": "Get notification settings for current user (INTERNAL)",
+        "description": "",
+        "operationId": "getSettings",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/ResultStash-no.mnemonic.services.notification.spi.response.UserCaseNotificationSettings-single"
+            }
+          },
+          "401": {
+            "description": "Authentication failed"
+          },
+          "403": {
+            "description": "Access denied"
+          },
+          "412": {
+            "description": "Validation error"
+          }
+        }
+      }
+    },
+    "/notifications/v1/settings/case/app": {
+      "put": {
+        "tags": [
+          "notifications/v1/settings"
+        ],
+        "summary": "Set notification settings for current user APP notification (INTERNAL)",
+        "description": "",
+        "operationId": "setAppSettings",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "App notification settings",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.request.CurrentUserSetCaseAppNotificationSettingsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/ResultStash-no.mnemonic.services.notification.spi.response.UserCaseNotificationSettings-single"
+            }
+          },
+          "401": {
+            "description": "Authentication failed"
+          },
+          "403": {
+            "description": "Access denied"
+          },
+          "412": {
+            "description": "Validation error"
+          }
+        }
+      }
+    },
+    "/notifications/v1/notification": {
+      "post": {
+        "tags": [
+          "notifications/v1/notification"
+        ],
+        "summary": "Prepare a new notification (INTERNAL)",
+        "description": "",
+        "operationId": "prepareNotification",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Notification request",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.request.NotificationRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/ResultStash-no.mnemonic.services.notification.spi.response.NotificationResponse-single"
+            }
+          },
+          "401": {
+            "description": "Authentication failed"
+          },
+          "403": {
+            "description": "Access denied"
+          },
+          "412": {
+            "description": "Validation error"
+          }
+        }
+      }
+    },
+    "/notifications/v1/notification/{notificationID}/send": {
+      "put": {
+        "tags": [
+          "notifications/v1/notification"
+        ],
+        "summary": "Send a pending notification (INTERNAL)",
+        "description": "",
+        "operationId": "sendNotification",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "notificationID",
+            "in": "path",
+            "description": "Notification ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/ResultStash-no.mnemonic.services.notification.spi.response.NotificationResponse-single"
+            }
+          },
+          "401": {
+            "description": "Authentication failed"
+          },
+          "403": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "Object not found"
+          },
+          "412": {
+            "description": "Validation error"
+          }
+        }
+      }
+    },
+    "/notifications/v1/device": {
+      "get": {
+        "tags": [
+          "notifications/v1/device"
+        ],
+        "summary": "List current users notification device (INTERNAL)",
+        "description": "",
+        "operationId": "listDevices",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Max number of results",
+            "required": false,
+            "type": "integer",
+            "default": 25,
+            "format": "int32"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "Skip results",
+            "required": false,
+            "type": "integer",
+            "default": 0,
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/ResultStash-no.mnemonic.services.notification.spi.response.NotificationDevice-list"
+            }
+          },
+          "401": {
+            "description": "Authentication failed"
+          },
+          "403": {
+            "description": "Access denied"
+          },
+          "412": {
+            "description": "Validation error"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "notifications/v1/device"
+        ],
+        "summary": "Enroll notification device (INTERNAL)",
+        "description": "",
+        "operationId": "createDevice",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Device enrollment request",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.request.NotificationDeviceEnrollRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/ResultStash-no.mnemonic.services.notification.spi.response.NotificationDevice-single"
+            }
+          },
+          "401": {
+            "description": "Authentication failed"
+          },
+          "403": {
+            "description": "Access denied"
+          },
+          "412": {
+            "description": "Validation error"
+          }
+        }
+      }
+    },
+    "/notifications/v1/device/{id}": {
+      "delete": {
+        "tags": [
+          "notifications/v1/device"
+        ],
+        "summary": "Revoke notification device (INTERNAL)",
+        "description": "",
+        "operationId": "revokeDevice",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of device to revoke",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/ResultStash-no.mnemonic.services.notification.spi.response.NotificationDevice-single"
+            }
+          },
+          "401": {
+            "description": "Authentication failed"
+          },
+          "403": {
+            "description": "Access denied"
+          },
+          "412": {
+            "description": "Validation error"
+          }
+        }
+      }
+    },
+    "/notifications/v2/notification/search": {
+      "post": {
+        "tags": [
+          "development"
+        ],
+        "summary": "Returns a list of current user's notifications matching the search criteria (DEV)",
+        "description": "",
+        "operationId": "searchNotifications",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "NotificationSearch request",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.NotificationSearchRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/ResultStash-no.mnemonic.services.notification.spi.v2.response.NotificationResponse-list"
+            }
+          },
+          "401": {
+            "description": "Authentication failed"
+          },
+          "403": {
+            "description": "Access denied"
+          },
+          "412": {
+            "description": "Validation error"
+          }
+        }
+      }
+    },
+    "/notifications/v2/transaction": {
+      "post": {
+        "tags": [
+          "development"
+        ],
+        "summary": "Prepare a new notification transaction. This endpoint is NOT meant for users, only for applications on behalf of a user. (DEV)",
+        "description": "",
+        "operationId": "prepareNotificationTransaction",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Notification request",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.NotificationRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/ResultStash-no.mnemonic.services.notification.spi.v2.response.PrepareNotificationTransactionResponse-single"
+            }
+          },
+          "401": {
+            "description": "Authentication failed"
+          },
+          "403": {
+            "description": "Access denied"
+          },
+          "412": {
+            "description": "Validation error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "NotificationRecord": {
+      "type": "object",
+      "properties": {
+        "notificationID": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "The ID of the notification entity stored for this notification. May be null (for non-user notifications)"
+        },
+        "recipient": {
+          "position": 0,
+          "description": "Describes the recipient of this notification, either a user, or an email address",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.RecipientRecord"
+        },
+        "channels": {
+          "type": "array",
+          "position": 0,
+          "description": "The channel description describing how this recipient was notified",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "sms",
+              "email",
+              "app",
+              "notificationCenter"
+            ]
+          }
+        }
+      }
+    },
+    "EmailRecipient": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "position": 0,
+          "description": "If email type recipient, this specifies the email to notify."
+        },
+        "language": {
+          "type": "string",
+          "position": 0,
+          "description": "If email type recipient, this specifies the language to notify in. (default english)",
+          "enum": [
+            "norwegian",
+            "english"
+          ]
+        },
+        "format": {
+          "type": "string",
+          "position": 0,
+          "description": "If email type recipient, this specifies if the notification should be of a brief or verbose format. (default verbose)",
+          "enum": [
+            "brief",
+            "verbose"
+          ]
+        }
+      },
+      "description": "Email type recipients, not connected to a user."
+    },
+    "no.mnemonic.services.notification.spi.v2.request.Recipient": {
+      "type": "object"
+    },
+    "no.mnemonic.services.notification.spi.response.UserCaseNotificationAppSettings": {
+      "type": "object",
+      "properties": {
+        "verbose": {
+          "type": "boolean",
+          "position": 0,
+          "description": "If true, app notifications should be verbose."
+        },
+        "priority": {
+          "type": "array",
+          "position": 0,
+          "description": "If set, only send app notifications for cases with these priorities.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "critical"
+            ]
+          }
+        }
+      }
+    },
+    "no.mnemonic.services.argus.common.rest.model.ResultStash": {
+      "properties": {
+        "responseCode": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Status code returned from API"
+        },
+        "limit": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Maximum number of returned results"
+        },
+        "offset": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of skipped results"
+        },
+        "count": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of available results on server"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Actual number of returned results"
+        },
+        "metaData": {
+          "type": "object",
+          "description": "Additional unstructured meta data associated with response"
+        },
+        "messages": {
+          "type": "array",
+          "description": "Contains messages returned from the API, usually error messages",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.argus.common.rest.model.ResultMessage"
+          }
+        },
+        "data": {
+          "type": "object",
+          "description": "Returned results (might be an array or a single object)"
+        }
+      }
+    },
+    "ChangeEventField": {
+      "type": "object",
+      "required": [
+        "fieldName",
+        "id",
+        "value"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "The UUID of the field entity."
+        },
+        "fieldName": {
+          "type": "string",
+          "position": 0,
+          "description": "The name of the field descriptor."
+        },
+        "value": {
+          "type": "string",
+          "position": 0,
+          "description": "Value for the field."
+        }
+      }
+    },
+    "NotificationRequestContext": {
+      "type": "object"
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventCommentResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid",
+              "position": 0,
+              "description": "The UUID of the comment."
+            },
+            "comment": {
+              "type": "string",
+              "position": 0,
+              "description": "The comment in textual form. Will be sanitized (HTML)."
+            }
+          }
+        }
+      ]
+    },
+    "ChangeEventWatcher": {
+      "type": "object",
+      "required": [
+        "id",
+        "watcher",
+        "watcherType"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "Id of the watcher object."
+        },
+        "watcherType": {
+          "type": "string",
+          "position": 0,
+          "description": "Type of watcher. Informs if watcher is group, user or email.",
+          "enum": [
+            "user",
+            "group",
+            "email"
+          ]
+        },
+        "watcher": {
+          "type": "string",
+          "position": 0,
+          "description": "User, group or destination (email) affected."
+        }
+      }
+    },
+    "JsonNode": {
+      "type": "object"
+    },
+    "ChangeEventCommentResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "The UUID of the comment."
+        },
+        "comment": {
+          "type": "string",
+          "position": 0,
+          "description": "The comment in textual form. Will be sanitized (HTML)."
+        }
+      }
+    },
+    "UserRecipientRecord": {
+      "type": "object",
+      "properties": {
+        "user": {
+          "position": 0,
+          "description": "The notified user.",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.UserInfo"
+        }
+      },
+      "description": "User type recipients, connected to a single user."
+    },
+    "no.mnemonic.services.notification.spi.request.CurrentUserSetCaseAppNotificationSettingsRequest": {
+      "type": "object",
+      "properties": {
+        "verbose": {
+          "type": "boolean",
+          "position": 0,
+          "description": "If set, modify verbosity setting for app notifications."
+        },
+        "priority": {
+          "type": "array",
+          "position": 0,
+          "description": "If set, only send app notifications for cases with these priorities.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "critical"
+            ]
+          }
+        }
+      },
+      "description": "Request to update current case notification settings for app notification"
+    },
+    "NotificationRequest": {
+      "type": "object",
+      "required": [
+        "operation",
+        "recipients",
+        "requestContext",
+        "service"
+      ],
+      "properties": {
+        "recipients": {
+          "type": "array",
+          "position": 0,
+          "description": "List of user and email recipients to notify.",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.Recipient"
+          },
+          "maxItems": 2147483647,
+          "minItems": 1
+        },
+        "objectCustomer": {
+          "type": "string",
+          "position": 0,
+          "description": "Id or shortname for customer of the object this notification is related to.If notification is not customer relevant, this may not be set."
+        },
+        "objectID": {
+          "type": "string",
+          "position": 0,
+          "description": "Which Argus object (case, document, sensor, asset, etc.) generated the notification. Is not required, as some operations will not have a corresponding Argus object."
+        },
+        "service": {
+          "type": "string",
+          "position": 0,
+          "description": "What service generated the notification.",
+          "enum": [
+            "caseService"
+          ]
+        },
+        "operation": {
+          "type": "string",
+          "position": 0,
+          "description": "What operation generated the notification.",
+          "enum": [
+            "caseUpdate",
+            "caseCreate",
+            "caseClosed",
+            "casePriorityChange",
+            "caseAddAttachment",
+            "caseAddComment"
+          ]
+        },
+        "requestContext": {
+          "position": 0,
+          "description": "Context interface which is extended for specific services.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.NotificationRequestContext"
+        }
+      },
+      "description": "Interface to be used by other services to generate notifications.."
+    },
+    "PrepareNotificationTransactionResponse": {
+      "type": "object",
+      "properties": {
+        "transactionID": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "records": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.NotificationRecord"
+          }
+        }
+      },
+      "description": "Describes the prepared notification transaction"
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventCategory": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "category"
+          ],
+          "properties": {
+            "category": {
+              "position": 0,
+              "description": "The category.",
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.CaseCategory"
+            }
+          }
+        }
+      ]
+    },
+    "ChangeEventUserResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Id of the user."
+        },
+        "shortName": {
+          "type": "string",
+          "position": 0,
+          "description": "Shortname of user."
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "Name of user."
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventTagResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string",
+              "position": 0,
+              "description": "The key of the tag."
+            },
+            "value": {
+              "type": "string",
+              "position": 0,
+              "description": "The value of the tag."
+            }
+          }
+        }
+      ]
+    },
+    "DomainInfo": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "position": 0,
+          "description": "ID of the response object."
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "Name of the domain."
+        }
+      },
+      "description": "SPI DomainInfo"
+    },
+    "com.fasterxml.jackson.databind.JsonNode": {
+      "type": "object"
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventUserResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int64",
+              "position": 0,
+              "description": "Id of the user."
+            },
+            "shortName": {
+              "type": "string",
+              "position": 0,
+              "description": "Shortname of user."
+            },
+            "name": {
+              "type": "string",
+              "position": 0,
+              "description": "Name of user."
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.response.NotificationRecord": {
+      "type": "object",
+      "properties": {
+        "notificationID": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "The ID of the notification entity stored for this notification. May be null (for non-user notifications)"
+        },
+        "recipient": {
+          "position": 0,
+          "description": "Describes the recipient of this notification, either a user, or an email address",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.RecipientRecord"
+        },
+        "channels": {
+          "type": "array",
+          "position": 0,
+          "description": "The channel description describing how this recipient was notified",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "sms",
+              "email",
+              "app",
+              "notificationCenter"
+            ]
+          }
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventUser": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "shortName"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int64",
+              "position": 0,
+              "description": "Id of the user."
+            },
+            "shortName": {
+              "type": "string",
+              "position": 0,
+              "description": "Shortname of user."
+            },
+            "name": {
+              "type": "string",
+              "position": 0,
+              "description": "Name of user."
+            }
+          }
+        }
+      ]
+    },
+    "NotificationDevice": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "iphone",
+            "android"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "flags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "deleted"
+            ]
+          }
+        }
+      }
+    },
+    "NotificationResponseContext": {
+      "type": "object"
+    },
+    "ChangeEventTypeResponse": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "Type of the case.",
+          "enum": [
+            "securityIncident",
+            "operationalIncident",
+            "informational",
+            "change"
+          ]
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.NotificationRequestContext": {
+      "type": "object"
+    },
+    "ResultStash-no.mnemonic.services.notification.spi.v2.response.NotificationResponse-list": {
+      "required": [
+        "data"
+      ],
+      "properties": {
+        "responseCode": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Status code returned from API"
+        },
+        "limit": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Maximum number of returned results"
+        },
+        "offset": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of skipped results"
+        },
+        "count": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of available results on server"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Actual number of returned results"
+        },
+        "metaData": {
+          "type": "object",
+          "description": "Additional unstructured meta data associated with response"
+        },
+        "messages": {
+          "type": "array",
+          "description": "Contains messages returned from the API, usually error messages",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.argus.common.rest.model.ResultMessage"
+          }
+        },
+        "data": {
+          "type": "array",
+          "description": "Contains an array of results",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.NotificationResponse"
+          }
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventDescription": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "description"
+          ],
+          "properties": {
+            "description": {
+              "type": "string",
+              "position": 0,
+              "description": "Textual description of the case. Will be sanitized (HTML). => @SafeHTML"
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.response.NotificationResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "ID of the response object."
+        },
+        "recipients": {
+          "type": "array",
+          "position": 0,
+          "description": "The recipients that this notification sends to",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.response.NotificationResponseRecipient"
+          }
+        },
+        "state": {
+          "type": "string",
+          "position": 0,
+          "description": "The state of this notification.",
+          "enum": [
+            "prepared",
+            "sent"
+          ]
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventServiceResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "service": {
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.CaseService"
+            }
+          }
+        }
+      ]
+    },
+    "ChangeEventDescription": {
+      "type": "object",
+      "required": [
+        "description"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "position": 0,
+          "description": "Textual description of the case. Will be sanitized (HTML). => @SafeHTML"
+        }
+      }
+    },
+    "ResultStash-no.mnemonic.services.notification.spi.response.UserCaseNotificationSettings-single": {
+      "required": [
+        "data"
+      ],
+      "properties": {
+        "responseCode": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Status code returned from API"
+        },
+        "limit": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Maximum number of returned results"
+        },
+        "offset": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of skipped results"
+        },
+        "count": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of available results on server"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Actual number of returned results"
+        },
+        "metaData": {
+          "type": "object",
+          "description": "Additional unstructured meta data associated with response"
+        },
+        "messages": {
+          "type": "array",
+          "description": "Contains messages returned from the API, usually error messages",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.argus.common.rest.model.ResultMessage"
+          }
+        },
+        "data": {
+          "description": "Contains a single result",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.response.UserCaseNotificationSettings"
+        }
+      }
+    },
+    "CaseNotificationRequestContext": {
+      "type": "object",
+      "required": [
+        "caseID",
+        "description",
+        "priority",
+        "service",
+        "status",
+        "subject",
+        "type"
+      ],
+      "properties": {
+        "caseID": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Id of the case.",
+          "minimum": 1
+        },
+        "status": {
+          "type": "string",
+          "position": 0,
+          "description": "Current status of the case.",
+          "enum": [
+            "pendingCustomer",
+            "pendingSoc",
+            "pendingVendor",
+            "workingSoc",
+            "workingCustomer",
+            "pendingClose",
+            "closed"
+          ]
+        },
+        "priority": {
+          "type": "string",
+          "position": 0,
+          "description": "Current priority of the case. Required to correctly label in the notification center.",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "Case type. Required to correctly label in the notification center.",
+          "enum": [
+            "securityIncident",
+            "operationalIncident",
+            "informational",
+            "change"
+          ]
+        },
+        "service": {
+          "position": 0,
+          "description": "Service descriptor for the service this case is bound to.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.CaseService"
+        },
+        "category": {
+          "position": 0,
+          "description": "Category descriptor for the category descriptor this case is bound to (or null).",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.CaseCategory"
+        },
+        "subject": {
+          "type": "string",
+          "position": 0,
+          "description": "Subject of the case."
+        },
+        "description": {
+          "type": "string",
+          "position": 0,
+          "description": "Textual description of the case. Will be sanitized (HTML). => @SafeHTML"
+        },
+        "changes": {
+          "type": "array",
+          "position": 0,
+          "description": "List of changes to the case being notified. Only required on case update events.",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.CaseChangeEvent"
+          }
+        }
+      },
+      "description": "Notification request context for case notifications. This object will be used to generate messages, based on templates that expect certain fields to be present."
+    },
+    "no.mnemonic.services.notification.spi.v2.response.ChannelResponse": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "Type of notification channel.",
+          "enum": [
+            "sms",
+            "email",
+            "app"
+          ]
+        },
+        "success": {
+          "type": "boolean",
+          "position": 0,
+          "description": "Did we succeed in notifying the user through the channel."
+        }
+      },
+      "description": "Specifies the notification channel and whether it was a success."
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventWatcherResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid",
+              "position": 0,
+              "description": "Id of the watcher object."
+            },
+            "watcherType": {
+              "type": "string",
+              "position": 0,
+              "description": "Type of watcher. Informs if watcher is group, user or email.",
+              "enum": [
+                "user",
+                "group",
+                "email"
+              ]
+            },
+            "watcher": {
+              "type": "string",
+              "position": 0,
+              "description": "User, group or destination (email) affected."
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventSubjectResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "subject": {
+              "type": "string",
+              "position": 0,
+              "description": "Subject of the case."
+            }
+          }
+        }
+      ]
+    },
+    "ChangeEventCategory": {
+      "type": "object",
+      "required": [
+        "category"
+      ],
+      "properties": {
+        "category": {
+          "position": 0,
+          "description": "The category.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.CaseCategory"
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.CaseChangeEvent": {
+      "type": "object",
+      "required": [
+        "field"
+      ],
+      "properties": {
+        "field": {
+          "type": "string",
+          "position": 0,
+          "description": "Which case filed is changed.",
+          "enum": [
+            "description",
+            "comment",
+            "assignedTech",
+            "assignedUser",
+            "attachment",
+            "status",
+            "priority",
+            "watcher",
+            "tag",
+            "field"
+          ]
+        },
+        "previousObject": {
+          "position": 0,
+          "description": "What was the previous value. If added, not changed, this should be null.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventObject"
+        },
+        "newObject": {
+          "position": 0,
+          "description": "What is the new value. If the change is removal, this should be null.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventObject"
+        }
+      },
+      "description": "Allows us to specify which specific changes has happen to the case on an update notification."
+    },
+    "ChangeEventSubjectResponse": {
+      "type": "object",
+      "properties": {
+        "subject": {
+          "type": "string",
+          "position": 0,
+          "description": "Subject of the case."
+        }
+      }
+    },
+    "ChangeEventTag": {
+      "type": "object",
+      "required": [
+        "key",
+        "value"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "position": 0,
+          "description": "The key of the tag."
+        },
+        "value": {
+          "type": "string",
+          "position": 0,
+          "description": "The value of the tag."
+        }
+      }
+    },
+    "ChangeEventUser": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "shortName"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Id of the user."
+        },
+        "shortName": {
+          "type": "string",
+          "position": 0,
+          "description": "Shortname of user."
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "Name of user."
+        }
+      }
+    },
+    "EmailRecipientRecord": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "position": 0,
+          "description": "If email type recipient, this specifies the email to notify."
+        },
+        "language": {
+          "type": "string",
+          "position": 0,
+          "description": "If email type recipient, this specifies the language to notify in. (default english)",
+          "enum": [
+            "norwegian",
+            "english"
+          ]
+        },
+        "format": {
+          "type": "string",
+          "position": 0,
+          "description": "The format of the notification (brief or verbose) (default verbose)",
+          "enum": [
+            "brief",
+            "verbose"
+          ]
+        }
+      },
+      "description": "Email type recipients, not connected to a user."
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.NotificationResponseContext": {
+      "type": "object"
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventTypeResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "position": 0,
+              "description": "Type of the case.",
+              "enum": [
+                "securityIncident",
+                "operationalIncident",
+                "informational",
+                "change"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ResultStash-no.mnemonic.services.notification.spi.response.NotificationDevice-single": {
+      "required": [
+        "data"
+      ],
+      "properties": {
+        "responseCode": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Status code returned from API"
+        },
+        "limit": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Maximum number of returned results"
+        },
+        "offset": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of skipped results"
+        },
+        "count": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of available results on server"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Actual number of returned results"
+        },
+        "metaData": {
+          "type": "object",
+          "description": "Additional unstructured meta data associated with response"
+        },
+        "messages": {
+          "type": "array",
+          "description": "Contains messages returned from the API, usually error messages",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.argus.common.rest.model.ResultMessage"
+          }
+        },
+        "data": {
+          "description": "Contains a single result",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.response.NotificationDevice"
+        }
+      }
+    },
+    "no.mnemonic.services.argus.common.spi.response.DomainInfo": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32",
+          "position": 0,
+          "description": "ID of the response object."
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "Name of the domain."
+        }
+      },
+      "description": "SPI DomainInfo"
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventPriority": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "priority"
+          ],
+          "properties": {
+            "priority": {
+              "type": "string",
+              "position": 0,
+              "description": "Priority of the case.",
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "critical"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.response.PrepareNotificationTransactionResponse": {
+      "type": "object",
+      "properties": {
+        "transactionID": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "records": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.NotificationRecord"
+          }
+        }
+      },
+      "description": "Describes the prepared notification transaction"
+    },
+    "ChangeEventPriority": {
+      "type": "object",
+      "required": [
+        "priority"
+      ],
+      "properties": {
+        "priority": {
+          "type": "string",
+          "position": 0,
+          "description": "Priority of the case.",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        }
+      }
+    },
+    "ChangeEventSubject": {
+      "type": "object",
+      "required": [
+        "subject"
+      ],
+      "properties": {
+        "subject": {
+          "type": "string",
+          "position": 0,
+          "description": "Subject of the case. => @SafeHTML"
+        }
+      }
+    },
+    "CaseNotificationResponseContext": {
+      "type": "object",
+      "required": [
+        "caseID",
+        "description",
+        "priority",
+        "service",
+        "status",
+        "subject",
+        "type"
+      ],
+      "properties": {
+        "caseID": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Id of the case."
+        },
+        "status": {
+          "type": "string",
+          "position": 0,
+          "description": "Current status of the case.",
+          "enum": [
+            "pendingCustomer",
+            "pendingSoc",
+            "pendingVendor",
+            "workingSoc",
+            "workingCustomer",
+            "pendingClose",
+            "closed"
+          ]
+        },
+        "priority": {
+          "type": "string",
+          "position": 0,
+          "description": "Current priority of the case. Required to correctly label in the notification center.",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "Case type. Required to correctly label in the notification center.",
+          "enum": [
+            "securityIncident",
+            "operationalIncident",
+            "informational",
+            "change"
+          ]
+        },
+        "service": {
+          "position": 0,
+          "description": "The service the case is bound to.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.CaseService"
+        },
+        "category": {
+          "position": 0,
+          "description": "The category the case is bound to. If not set, no category is bound.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.CaseCategory"
+        },
+        "subject": {
+          "type": "string",
+          "position": 0,
+          "description": "Subject of the case."
+        },
+        "description": {
+          "type": "string",
+          "position": 0,
+          "description": "Textual description of the case. Will be sanitized (HTML). => @SafeHTML"
+        },
+        "changes": {
+          "type": "array",
+          "position": 0,
+          "description": "List of changes to the case being notified. Only required on case update events.",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.CaseChangeEventResponse"
+          }
+        }
+      },
+      "description": "Notification request context for case notifications. Used to generate notifications in the notification center."
+    },
+    "ChangeEventObject": {
+      "type": "object"
+    },
+    "no.mnemonic.services.argus.common.spi.response.UserInfo": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "ID of the response object."
+        },
+        "shortName": {
+          "type": "string",
+          "position": 0,
+          "description": "The subject's short name"
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "The subject's name"
+        },
+        "domain": {
+          "position": 0,
+          "description": "The subject's domain",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.DomainInfo"
+        },
+        "customer": {
+          "position": 0,
+          "description": "The customer the subject belongs to",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.CustomerInfo"
+        },
+        "flags": {
+          "type": "array",
+          "position": 0,
+          "description": "The subject's flags",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "deleted"
+            ]
+          }
+        },
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "Type of the subject",
+          "readOnly": true,
+          "enum": [
+            "user",
+            "group"
+          ]
+        }
+      },
+      "description": "SPI UserInfo"
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventPriorityResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "priority": {
+              "type": "string",
+              "position": 0,
+              "description": "Priority of the case.",
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "critical"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.argus.common.rest.model.ResultMessage": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "messageTemplate": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "FIELD_ERROR",
+            "ACTION_ERROR",
+            "WARNING",
+            "NOTIFICATION",
+            "INFO"
+          ]
+        },
+        "field": {
+          "type": "string"
+        },
+        "parameter": {
+          "type": "object"
+        },
+        "timestamp": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    },
+    "ChannelResponse": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "Type of notification channel.",
+          "enum": [
+            "sms",
+            "email",
+            "app"
+          ]
+        },
+        "success": {
+          "type": "boolean",
+          "position": 0,
+          "description": "Did we succeed in notifying the user through the channel."
+        }
+      },
+      "description": "Specifies the notification channel and whether it was a success."
+    },
+    "ChangeEventComment": {
+      "type": "object",
+      "required": [
+        "comment",
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "The UUID of the comment."
+        },
+        "comment": {
+          "type": "string",
+          "position": 0,
+          "description": "The comment in textual form. Will be sanitized (HTML). => @SafeHTML"
+        }
+      }
+    },
+    "ResultMessage": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "messageTemplate": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "FIELD_ERROR",
+            "ACTION_ERROR",
+            "WARNING",
+            "NOTIFICATION",
+            "INFO"
+          ]
+        },
+        "field": {
+          "type": "string"
+        },
+        "parameter": {
+          "type": "object"
+        },
+        "timestamp": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.request.NotificationRequestAttachment": {
+      "type": "object",
+      "required": [
+        "contentType",
+        "data",
+        "fileName"
+      ],
+      "properties": {
+        "contentType": {
+          "type": "string",
+          "position": 0,
+          "description": "MIME Content type of this attachment."
+        },
+        "fileName": {
+          "type": "string",
+          "position": 0,
+          "description": "Filename of this attachment."
+        },
+        "data": {
+          "type": "string",
+          "position": 0,
+          "description": "The raw bytes of this attachment."
+        }
+      },
+      "description": "Attachment object which is part of a NotificationRequest"
+    },
+    "CaseCategory": {
+      "type": "object",
+      "required": [
+        "id",
+        "localizedNames",
+        "shortName"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "The UUID of the category."
+        },
+        "shortName": {
+          "type": "string",
+          "position": 0,
+          "description": "The shortname of the category."
+        },
+        "localizedNames": {
+          "type": "object",
+          "position": 0,
+          "description": "Localized names for the category.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Common model to describe a category"
+    },
+    "ResultStash-no.mnemonic.services.notification.spi.response.NotificationResponse-single": {
+      "required": [
+        "data"
+      ],
+      "properties": {
+        "responseCode": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Status code returned from API"
+        },
+        "limit": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Maximum number of returned results"
+        },
+        "offset": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of skipped results"
+        },
+        "count": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of available results on server"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Actual number of returned results"
+        },
+        "metaData": {
+          "type": "object",
+          "description": "Additional unstructured meta data associated with response"
+        },
+        "messages": {
+          "type": "array",
+          "description": "Contains messages returned from the API, usually error messages",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.argus.common.rest.model.ResultMessage"
+          }
+        },
+        "data": {
+          "description": "Contains a single result",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.response.NotificationResponse"
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventAttachmentResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid",
+              "position": 0,
+              "description": "The UUID of the attachment."
+            },
+            "name": {
+              "type": "string",
+              "position": 0,
+              "description": "The file name of the attachment."
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.CaseNotificationResponseContext": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/NotificationResponseContext"
+        },
+        {
+          "type": "object",
+          "required": [
+            "caseID",
+            "description",
+            "priority",
+            "service",
+            "status",
+            "subject",
+            "type"
+          ],
+          "properties": {
+            "caseID": {
+              "type": "integer",
+              "format": "int64",
+              "position": 0,
+              "description": "Id of the case."
+            },
+            "status": {
+              "type": "string",
+              "position": 0,
+              "description": "Current status of the case.",
+              "enum": [
+                "pendingCustomer",
+                "pendingSoc",
+                "pendingVendor",
+                "workingSoc",
+                "workingCustomer",
+                "pendingClose",
+                "closed"
+              ]
+            },
+            "priority": {
+              "type": "string",
+              "position": 0,
+              "description": "Current priority of the case. Required to correctly label in the notification center.",
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "critical"
+              ]
+            },
+            "type": {
+              "type": "string",
+              "position": 0,
+              "description": "Case type. Required to correctly label in the notification center.",
+              "enum": [
+                "securityIncident",
+                "operationalIncident",
+                "informational",
+                "change"
+              ]
+            },
+            "service": {
+              "position": 0,
+              "description": "The service the case is bound to.",
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.CaseService"
+            },
+            "category": {
+              "position": 0,
+              "description": "The category the case is bound to. If not set, no category is bound.",
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.CaseCategory"
+            },
+            "subject": {
+              "type": "string",
+              "position": 0,
+              "description": "Subject of the case."
+            },
+            "description": {
+              "type": "string",
+              "position": 0,
+              "description": "Textual description of the case. Will be sanitized (HTML). => @SafeHTML"
+            },
+            "changes": {
+              "type": "array",
+              "position": 0,
+              "description": "List of changes to the case being notified. Only required on case update events.",
+              "items": {
+                "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.CaseChangeEventResponse"
+              }
+            }
+          },
+          "description": "Notification request context for case notifications. Used to generate notifications in the notification center."
+        }
+      ]
+    },
+    "ChangeEventService": {
+      "type": "object",
+      "required": [
+        "service"
+      ],
+      "properties": {
+        "service": {
+          "position": 0,
+          "description": "The service.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.CaseService"
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.request.NotificationRequest": {
+      "type": "object",
+      "required": [
+        "event",
+        "recipients"
+      ],
+      "properties": {
+        "customerID": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Set the customer context of this notification request. If not set, it should default to the current users customer.",
+          "minimum": 0
+        },
+        "event": {
+          "type": "string",
+          "position": 0,
+          "description": "The name of the notification event to trigger. This will determine notification behaviour and rules."
+        },
+        "recipients": {
+          "type": "array",
+          "position": 0,
+          "description": "Recipients to notify, either user or non-user.",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.request.NotificationRequestRecipient"
+          },
+          "maxItems": 2147483647,
+          "minItems": 1
+        },
+        "attachments": {
+          "type": "array",
+          "position": 0,
+          "description": "Attachments to process in this notification. The notification rules and destinations will determine how these are used.",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.request.NotificationRequestAttachment"
+          }
+        },
+        "context": {
+          "type": "object",
+          "position": 0,
+          "description": "The notification context objects. The notification event determines which context objects are expected. Each object should be JSON serializable.",
+          "additionalProperties": {
+            "$ref": "#/definitions/com.fasterxml.jackson.databind.JsonNode"
+          }
+        }
+      },
+      "description": "Request to prepare sending notifications. This is only used for API testing, and is not permitted for ordinary users."
+    },
+    "ChangeEventObjectResponse": {
+      "type": "object"
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventCategoryResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.CaseCategory"
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventField": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "fieldName",
+            "id",
+            "value"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid",
+              "position": 0,
+              "description": "The UUID of the field entity."
+            },
+            "fieldName": {
+              "type": "string",
+              "position": 0,
+              "description": "The name of the field descriptor."
+            },
+            "value": {
+              "type": "string",
+              "position": 0,
+              "description": "Value for the field."
+            }
+          }
+        }
+      ]
+    },
+    "ResultStash-no.mnemonic.services.notification.spi.v2.response.PrepareNotificationTransactionResponse-single": {
+      "required": [
+        "data"
+      ],
+      "properties": {
+        "responseCode": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Status code returned from API"
+        },
+        "limit": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Maximum number of returned results"
+        },
+        "offset": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of skipped results"
+        },
+        "count": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of available results on server"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Actual number of returned results"
+        },
+        "metaData": {
+          "type": "object",
+          "description": "Additional unstructured meta data associated with response"
+        },
+        "messages": {
+          "type": "array",
+          "description": "Contains messages returned from the API, usually error messages",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.argus.common.rest.model.ResultMessage"
+          }
+        },
+        "data": {
+          "description": "Contains a single result",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.PrepareNotificationTransactionResponse"
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.response.NotificationResponseRecipient": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "The type of this recipient",
+          "enum": [
+            "email",
+            "sms",
+            "app"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "Name of this recipient"
+        },
+        "destination": {
+          "type": "string",
+          "position": 0,
+          "description": "The destination of this recipient (email, sms or other)"
+        },
+        "flags": {
+          "type": "array",
+          "position": 0,
+          "description": "The flags of this recipient",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "verbose"
+            ]
+          }
+        },
+        "userID": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "The ID of the user this notification is bound to, or 0 if not a user"
+        }
+      }
+    },
+    "ChangeEventStatus": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "position": 0,
+          "description": "Status of the case.",
+          "enum": [
+            "pendingCustomer",
+            "pendingSoc",
+            "pendingVendor",
+            "workingSoc",
+            "workingCustomer",
+            "pendingClose",
+            "closed"
+          ]
+        }
+      }
+    },
+    "ResultStash": {
+      "properties": {
+        "responseCode": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Status code returned from API"
+        },
+        "limit": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Maximum number of returned results"
+        },
+        "offset": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of skipped results"
+        },
+        "count": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of available results on server"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Actual number of returned results"
+        },
+        "metaData": {
+          "type": "object",
+          "description": "Additional unstructured meta data associated with response"
+        },
+        "messages": {
+          "type": "array",
+          "description": "Contains messages returned from the API, usually error messages",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.argus.common.rest.model.ResultMessage"
+          }
+        },
+        "data": {
+          "type": "object",
+          "description": "Returned results (might be an array or a single object)"
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventService": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "service"
+          ],
+          "properties": {
+            "service": {
+              "position": 0,
+              "description": "The service.",
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.CaseService"
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.response.RecipientRecord": {
+      "type": "object"
+    },
+    "ChangeEventCategoryResponse": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.CaseCategory"
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventSubject": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "subject"
+          ],
+          "properties": {
+            "subject": {
+              "type": "string",
+              "position": 0,
+              "description": "Subject of the case. => @SafeHTML"
+            }
+          }
+        }
+      ]
+    },
+    "CurrentUserSetCaseAppNotificationSettingsRequest": {
+      "type": "object",
+      "properties": {
+        "verbose": {
+          "type": "boolean",
+          "position": 0,
+          "description": "If set, modify verbosity setting for app notifications."
+        },
+        "priority": {
+          "type": "array",
+          "position": 0,
+          "description": "If set, only send app notifications for cases with these priorities.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "critical"
+            ]
+          }
+        }
+      },
+      "description": "Request to update current case notification settings for app notification"
+    },
+    "no.mnemonic.services.notification.spi.v2.response.EmailRecipientRecord": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/RecipientRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string",
+              "position": 0,
+              "description": "If email type recipient, this specifies the email to notify."
+            },
+            "language": {
+              "type": "string",
+              "position": 0,
+              "description": "If email type recipient, this specifies the language to notify in. (default english)",
+              "enum": [
+                "norwegian",
+                "english"
+              ]
+            },
+            "format": {
+              "type": "string",
+              "position": 0,
+              "description": "The format of the notification (brief or verbose) (default verbose)",
+              "enum": [
+                "brief",
+                "verbose"
+              ]
+            }
+          },
+          "description": "Email type recipients, not connected to a user."
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.CaseCategory": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "The UUID of the case category."
+        },
+        "shortName": {
+          "type": "string",
+          "position": 0,
+          "description": "The shortname of the case category."
+        },
+        "localizedNames": {
+          "type": "object",
+          "position": 0,
+          "description": "Localized names for the case category.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "RecipientRecord": {
+      "type": "object"
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventDescriptionResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string",
+              "position": 0,
+              "description": "Textual description of the case. Will be sanitized (HTML). => @SafeHTML"
+            }
+          }
+        }
+      ]
+    },
+    "NotificationResponseRecipient": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "The type of this recipient",
+          "enum": [
+            "email",
+            "sms",
+            "app"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "Name of this recipient"
+        },
+        "destination": {
+          "type": "string",
+          "position": 0,
+          "description": "The destination of this recipient (email, sms or other)"
+        },
+        "flags": {
+          "type": "array",
+          "position": 0,
+          "description": "The flags of this recipient",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "verbose"
+            ]
+          }
+        },
+        "userID": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "The ID of the user this notification is bound to, or 0 if not a user"
+        }
+      }
+    },
+    "CaseChangeEvent": {
+      "type": "object",
+      "required": [
+        "field"
+      ],
+      "properties": {
+        "field": {
+          "type": "string",
+          "position": 0,
+          "description": "Which case filed is changed.",
+          "enum": [
+            "description",
+            "comment",
+            "assignedTech",
+            "assignedUser",
+            "attachment",
+            "status",
+            "priority",
+            "watcher",
+            "tag",
+            "field"
+          ]
+        },
+        "previousObject": {
+          "position": 0,
+          "description": "What was the previous value. If added, not changed, this should be null.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventObject"
+        },
+        "newObject": {
+          "position": 0,
+          "description": "What is the new value. If the change is removal, this should be null.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventObject"
+        }
+      },
+      "description": "Allows us to specify which specific changes has happen to the case on an update notification."
+    },
+    "UserCaseNotificationSettings": {
+      "type": "object",
+      "properties": {
+        "user": {
+          "position": 0,
+          "description": "The user which these settings apply to.",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.UserInfo"
+        },
+        "appSettings": {
+          "position": 0,
+          "description": "The app notification settings set for this user.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.response.UserCaseNotificationAppSettings"
+        }
+      }
+    },
+    "ChangeEventAttachmentResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "The UUID of the attachment."
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "The file name of the attachment."
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.response.NotificationResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "Unique identifier for this notification."
+        },
+        "transactionID": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "Unique identifier for the parent transaction which generated this notification."
+        },
+        "transactionUser": {
+          "position": 0,
+          "description": "User info for the user which triggered the transaction generating this notificaiton",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.UserInfo"
+        },
+        "objectCustomer": {
+          "position": 0,
+          "description": "The customer for the object for which the notification transaction was generated",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.CustomerInfo"
+        },
+        "objectID": {
+          "type": "string",
+          "position": 0,
+          "description": "The identifier for the object for which the notification transaction was generated"
+        },
+        "flags": {
+          "type": "array",
+          "position": 0,
+          "description": "Set of flags for the notification. Tells if the notification is seen or was suppressed.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "seen",
+              "suppressed"
+            ]
+          }
+        },
+        "createdTimestamp": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Timestamp for when the notification was created."
+        },
+        "firstSeenTimestamp": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Timestamp for when the notification was first seen by the receiving user."
+        },
+        "service": {
+          "type": "string",
+          "position": 0,
+          "description": "What service generated the notification",
+          "enum": [
+            "caseService"
+          ]
+        },
+        "operation": {
+          "type": "string",
+          "position": 0,
+          "description": "What operation generated the notification",
+          "enum": [
+            "caseUpdate",
+            "caseCreate",
+            "caseClosed",
+            "casePriorityChange",
+            "caseAddAttachment",
+            "caseAddComment"
+          ]
+        },
+        "channels": {
+          "type": "array",
+          "position": 0,
+          "description": "Which notification channels will/was the receiving user attempted to be notified through.",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.ChannelResponse"
+          }
+        },
+        "context": {
+          "position": 0,
+          "description": "Context interface which is extended for specific services.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.NotificationResponseContext"
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventTag": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "key",
+            "value"
+          ],
+          "properties": {
+            "key": {
+              "type": "string",
+              "position": 0,
+              "description": "The key of the tag."
+            },
+            "value": {
+              "type": "string",
+              "position": 0,
+              "description": "The value of the tag."
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventStatus": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "status"
+          ],
+          "properties": {
+            "status": {
+              "type": "string",
+              "position": 0,
+              "description": "Status of the case.",
+              "enum": [
+                "pendingCustomer",
+                "pendingSoc",
+                "pendingVendor",
+                "workingSoc",
+                "workingCustomer",
+                "pendingClose",
+                "closed"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventWatcher": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "id",
+            "watcher",
+            "watcherType"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid",
+              "position": 0,
+              "description": "Id of the watcher object."
+            },
+            "watcherType": {
+              "type": "string",
+              "position": 0,
+              "description": "Type of watcher. Informs if watcher is group, user or email.",
+              "enum": [
+                "user",
+                "group",
+                "email"
+              ]
+            },
+            "watcher": {
+              "type": "string",
+              "position": 0,
+              "description": "User, group or destination (email) affected."
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.response.UserRecipientRecord": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/RecipientRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "user": {
+              "position": 0,
+              "description": "The notified user.",
+              "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.UserInfo"
+            }
+          },
+          "description": "User type recipients, connected to a single user."
+        }
+      ]
+    },
+    "Recipient": {
+      "type": "object"
+    },
+    "ResultStash-no.mnemonic.services.notification.spi.response.NotificationDevice-list": {
+      "required": [
+        "data"
+      ],
+      "properties": {
+        "responseCode": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Status code returned from API"
+        },
+        "limit": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Maximum number of returned results"
+        },
+        "offset": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of skipped results"
+        },
+        "count": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Number of available results on server"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Actual number of returned results"
+        },
+        "metaData": {
+          "type": "object",
+          "description": "Additional unstructured meta data associated with response"
+        },
+        "messages": {
+          "type": "array",
+          "description": "Contains messages returned from the API, usually error messages",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.argus.common.rest.model.ResultMessage"
+          }
+        },
+        "data": {
+          "type": "array",
+          "description": "Contains an array of results",
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.response.NotificationDevice"
+          }
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.CaseService": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "The UUID of the case service entity."
+        },
+        "shortName": {
+          "type": "string",
+          "position": 0,
+          "description": "The shortname of the case service."
+        },
+        "localizedNames": {
+          "type": "object",
+          "position": 0,
+          "description": "Localized names for the case service.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "NotificationSearchRequest": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "format": "int32",
+          "position": 0,
+          "description": "Limit number of returning notifications. (default 25)",
+          "default": 25
+        },
+        "offset": {
+          "type": "integer",
+          "format": "int32",
+          "position": 0,
+          "description": "Offset notifications (default 0)",
+          "default": 0
+        },
+        "user": {
+          "type": "array",
+          "position": 0,
+          "description": "Restrict search to return notifications generated by specified users. Can be shortnames or userIds.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "startTimestamp": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Restrict search to return notifications created after the timestamp. Defaults to no restrictions."
+        },
+        "endTimestamp": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Restrict search to return notifications created before the timestamp. Defaults to now."
+        },
+        "includeFlags": {
+          "type": "array",
+          "position": 0,
+          "description": "Restrict search to return notifications which have the specified flags set.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "seen",
+              "suppressed"
+            ]
+          }
+        },
+        "excludeFlags": {
+          "type": "array",
+          "position": 0,
+          "description": "Restrict search to return notifications which have the specified flags unset.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "seen",
+              "suppressed"
+            ]
+          }
+        },
+        "service": {
+          "type": "array",
+          "position": 0,
+          "description": "Limit to notifications generated by the specified Argus services.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "caseService"
+            ]
+          }
+        },
+        "operation": {
+          "type": "array",
+          "position": 0,
+          "description": "Limit to notifications generated by the specified Argus operations",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "caseUpdate",
+              "caseCreate",
+              "caseClosed",
+              "casePriorityChange",
+              "caseAddAttachment",
+              "caseAddComment"
+            ]
+          }
+        },
+        "objectID": {
+          "type": "array",
+          "position": 0,
+          "description": "Limit to notification generated by the specified set of Argus objects by their IDs",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "objectCustomer": {
+          "type": "array",
+          "position": 0,
+          "description": "Limit to notifications generated by the specified customers. Can be a list of shortnames and/or customerIDs",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "includeContext": {
+          "type": "boolean",
+          "position": 0,
+          "description": "Specify if service specific notification context should be included (default false)",
+          "default": false
+        }
+      },
+      "description": "Allows current user to search for received notifications."
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.CaseService": {
+      "type": "object",
+      "required": [
+        "id",
+        "localizedNames",
+        "shortName"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "The UUID of the service."
+        },
+        "shortName": {
+          "type": "string",
+          "position": 0,
+          "description": "The shortname of the service."
+        },
+        "localizedNames": {
+          "type": "object",
+          "position": 0,
+          "description": "Localized names for the service.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Common model to describe a service"
+    },
+    "NotificationRequestAttachment": {
+      "type": "object",
+      "required": [
+        "contentType",
+        "data",
+        "fileName"
+      ],
+      "properties": {
+        "contentType": {
+          "type": "string",
+          "position": 0,
+          "description": "MIME Content type of this attachment."
+        },
+        "fileName": {
+          "type": "string",
+          "position": 0,
+          "description": "Filename of this attachment."
+        },
+        "data": {
+          "type": "string",
+          "position": 0,
+          "description": "The raw bytes of this attachment."
+        }
+      },
+      "description": "Attachment object which is part of a NotificationRequest"
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventType": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "position": 0,
+              "description": "Type of the case.",
+              "enum": [
+                "securityIncident",
+                "operationalIncident",
+                "informational",
+                "change"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.request.EmailRecipient": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Recipient"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string",
+              "position": 0,
+              "description": "If email type recipient, this specifies the email to notify."
+            },
+            "language": {
+              "type": "string",
+              "position": 0,
+              "description": "If email type recipient, this specifies the language to notify in. (default english)",
+              "enum": [
+                "norwegian",
+                "english"
+              ]
+            },
+            "format": {
+              "type": "string",
+              "position": 0,
+              "description": "If email type recipient, this specifies if the notification should be of a brief or verbose format. (default verbose)",
+              "enum": [
+                "brief",
+                "verbose"
+              ]
+            }
+          },
+          "description": "Email type recipients, not connected to a user."
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventStatusResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "position": 0,
+              "description": "Status of the case.",
+              "enum": [
+                "pendingCustomer",
+                "pendingSoc",
+                "pendingVendor",
+                "workingSoc",
+                "workingCustomer",
+                "pendingClose",
+                "closed"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventObjectResponse": {
+      "type": "object"
+    },
+    "ChangeEventDescriptionResponse": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "position": 0,
+          "description": "Textual description of the case. Will be sanitized (HTML). => @SafeHTML"
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventAttachment": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid",
+              "position": 0,
+              "description": "The UUID of the attachment."
+            },
+            "name": {
+              "type": "string",
+              "position": 0,
+              "description": "The file name of the attachment."
+            }
+          }
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.request.UserRecipient": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Recipient"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "user": {
+              "type": "string",
+              "position": 0,
+              "description": "Shortname or UserID of the user to notify. Set if User type recipient."
+            }
+          },
+          "description": "User type recipients, connected to a single user."
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventObject": {
+      "type": "object"
+    },
+    "CustomerInfo": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "ID of the response object."
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "Name of the customer."
+        },
+        "shortName": {
+          "type": "string",
+          "position": 0,
+          "description": "Shortname of the customer."
+        },
+        "domain": {
+          "position": 0,
+          "description": "Domain that this customer belongs to.",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.DomainInfo"
+        }
+      },
+      "description": "SPI CustomerInfo"
+    },
+    "ChangeEventFieldResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "The UUID of the field descriptor."
+        },
+        "fieldName": {
+          "type": "string",
+          "position": 0,
+          "description": "The name of the field descriptor."
+        },
+        "value": {
+          "type": "string",
+          "position": 0,
+          "description": "Value for the field."
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.response.UserCaseNotificationSettings": {
+      "type": "object",
+      "properties": {
+        "user": {
+          "position": 0,
+          "description": "The user which these settings apply to.",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.UserInfo"
+        },
+        "appSettings": {
+          "position": 0,
+          "description": "The app notification settings set for this user.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.response.UserCaseNotificationAppSettings"
+        }
+      }
+    },
+    "NotificationRequestRecipient": {
+      "type": "object",
+      "required": [
+        "format",
+        "language",
+        "type"
+      ],
+      "properties": {
+        "userID": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "If set, this ID referse to the user to notify",
+          "minimum": 0
+        },
+        "format": {
+          "type": "string",
+          "position": 0,
+          "description": "If applicable, format suggests the preferred notification format for this recipient. Defaults to brief.",
+          "enum": [
+            "brief",
+            "verbose"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "Type specifies the preferred notification type for this recipient. Defaults to email.",
+          "enum": [
+            "sms",
+            "email"
+          ]
+        },
+        "language": {
+          "type": "string",
+          "position": 0,
+          "description": "Type specifies the preferred notification language for this recipient. Defaults to english.",
+          "enum": [
+            "english",
+            "norwegian"
+          ]
+        },
+        "role": {
+          "type": "string",
+          "position": 0,
+          "description": "This specifies the role this recipient has (why is the recipient being notified). Default is undefined.",
+          "enum": [
+            "serviceContact",
+            "watcher",
+            "copy",
+            "currentUser"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "This specifies the name of the recipient. Only applicable if the recipient is not referring to a user."
+        },
+        "email": {
+          "type": "string",
+          "position": 0,
+          "description": "This specifies the notification email of the recipient. Only applicable for recipients of type email, which is not connected to a user."
+        },
+        "phone": {
+          "type": "string",
+          "position": 0,
+          "description": "This specifies the notification phone number of the recipient. Only applicable for recipients of type sms, which is not connected to a user."
+        }
+      },
+      "description": "Recipient object which is part of a NotificationRequest"
+    },
+    "no.mnemonic.services.notification.spi.request.NotificationRequestRecipient": {
+      "type": "object",
+      "required": [
+        "format",
+        "language",
+        "type"
+      ],
+      "properties": {
+        "userID": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "If set, this ID referse to the user to notify",
+          "minimum": 0
+        },
+        "format": {
+          "type": "string",
+          "position": 0,
+          "description": "If applicable, format suggests the preferred notification format for this recipient. Defaults to brief.",
+          "enum": [
+            "brief",
+            "verbose"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "Type specifies the preferred notification type for this recipient. Defaults to email.",
+          "enum": [
+            "sms",
+            "email"
+          ]
+        },
+        "language": {
+          "type": "string",
+          "position": 0,
+          "description": "Type specifies the preferred notification language for this recipient. Defaults to english.",
+          "enum": [
+            "english",
+            "norwegian"
+          ]
+        },
+        "role": {
+          "type": "string",
+          "position": 0,
+          "description": "This specifies the role this recipient has (why is the recipient being notified). Default is undefined.",
+          "enum": [
+            "serviceContact",
+            "watcher",
+            "copy",
+            "currentUser"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "This specifies the name of the recipient. Only applicable if the recipient is not referring to a user."
+        },
+        "email": {
+          "type": "string",
+          "position": 0,
+          "description": "This specifies the notification email of the recipient. Only applicable for recipients of type email, which is not connected to a user."
+        },
+        "phone": {
+          "type": "string",
+          "position": 0,
+          "description": "This specifies the notification phone number of the recipient. Only applicable for recipients of type sms, which is not connected to a user."
+        }
+      },
+      "description": "Recipient object which is part of a NotificationRequest"
+    },
+    "no.mnemonic.services.notification.spi.response.NotificationDevice": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "iphone",
+            "android"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "flags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "deleted"
+            ]
+          }
+        }
+      }
+    },
+    "UserInfo": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "ID of the response object."
+        },
+        "shortName": {
+          "type": "string",
+          "position": 0,
+          "description": "The subject's short name"
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "The subject's name"
+        },
+        "domain": {
+          "position": 0,
+          "description": "The subject's domain",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.DomainInfo"
+        },
+        "customer": {
+          "position": 0,
+          "description": "The customer the subject belongs to",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.CustomerInfo"
+        },
+        "flags": {
+          "type": "array",
+          "position": 0,
+          "description": "The subject's flags",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "deleted"
+            ]
+          }
+        },
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "Type of the subject",
+          "readOnly": true,
+          "enum": [
+            "user",
+            "group"
+          ]
+        }
+      },
+      "description": "SPI UserInfo"
+    },
+    "no.mnemonic.services.notification.spi.v2.request.NotificationRequest": {
+      "type": "object",
+      "required": [
+        "operation",
+        "recipients",
+        "requestContext",
+        "service"
+      ],
+      "properties": {
+        "recipients": {
+          "type": "array",
+          "position": 0,
+          "description": "List of user and email recipients to notify.",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.Recipient"
+          },
+          "maxItems": 2147483647,
+          "minItems": 1
+        },
+        "objectCustomer": {
+          "type": "string",
+          "position": 0,
+          "description": "Id or shortname for customer of the object this notification is related to.If notification is not customer relevant, this may not be set."
+        },
+        "objectID": {
+          "type": "string",
+          "position": 0,
+          "description": "Which Argus object (case, document, sensor, asset, etc.) generated the notification. Is not required, as some operations will not have a corresponding Argus object."
+        },
+        "service": {
+          "type": "string",
+          "position": 0,
+          "description": "What service generated the notification.",
+          "enum": [
+            "caseService"
+          ]
+        },
+        "operation": {
+          "type": "string",
+          "position": 0,
+          "description": "What operation generated the notification.",
+          "enum": [
+            "caseUpdate",
+            "caseCreate",
+            "caseClosed",
+            "casePriorityChange",
+            "caseAddAttachment",
+            "caseAddComment"
+          ]
+        },
+        "requestContext": {
+          "position": 0,
+          "description": "Context interface which is extended for specific services.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.NotificationRequestContext"
+        }
+      },
+      "description": "Interface to be used by other services to generate notifications.."
+    },
+    "no.mnemonic.services.argus.common.spi.response.CustomerInfo": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "ID of the response object."
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "Name of the customer."
+        },
+        "shortName": {
+          "type": "string",
+          "position": 0,
+          "description": "Shortname of the customer."
+        },
+        "domain": {
+          "position": 0,
+          "description": "Domain that this customer belongs to.",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.DomainInfo"
+        }
+      },
+      "description": "SPI CustomerInfo"
+    },
+    "CaseChangeEventResponse": {
+      "type": "object",
+      "properties": {
+        "field": {
+          "type": "string",
+          "position": 0,
+          "description": "Which case filed has been changed.",
+          "enum": [
+            "description",
+            "comment",
+            "assignedTech",
+            "assignedUser",
+            "attachment",
+            "status",
+            "priority",
+            "watcher",
+            "tag",
+            "field"
+          ]
+        },
+        "previousObject": {
+          "position": 0,
+          "description": "What was the previous value. If added, not changed, this is null.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventObjectResponse"
+        },
+        "newObject": {
+          "position": 0,
+          "description": "What is the new value. If the change is removal, this is null.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventObjectResponse"
+        }
+      },
+      "description": "Allows us to specify which specific changes has happen to the case on an update notification."
+    },
+    "ChangeEventStatusResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "position": 0,
+          "description": "Status of the case.",
+          "enum": [
+            "pendingCustomer",
+            "pendingSoc",
+            "pendingVendor",
+            "workingSoc",
+            "workingCustomer",
+            "pendingClose",
+            "closed"
+          ]
+        }
+      }
+    },
+    "ChangeEventAttachment": {
+      "type": "object",
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "The UUID of the attachment."
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "The file name of the attachment."
+        }
+      }
+    },
+    "ChangeEventType": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "Type of the case.",
+          "enum": [
+            "securityIncident",
+            "operationalIncident",
+            "informational",
+            "change"
+          ]
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.CaseCategory": {
+      "type": "object",
+      "required": [
+        "id",
+        "localizedNames",
+        "shortName"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "The UUID of the category."
+        },
+        "shortName": {
+          "type": "string",
+          "position": 0,
+          "description": "The shortname of the category."
+        },
+        "localizedNames": {
+          "type": "object",
+          "position": 0,
+          "description": "Localized names for the category.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Common model to describe a category"
+    },
+    "ChangeEventPriorityResponse": {
+      "type": "object",
+      "properties": {
+        "priority": {
+          "type": "string",
+          "position": 0,
+          "description": "Priority of the case.",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        }
+      }
+    },
+    "ChangeEventWatcherResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "Id of the watcher object."
+        },
+        "watcherType": {
+          "type": "string",
+          "position": 0,
+          "description": "Type of watcher. Informs if watcher is group, user or email.",
+          "enum": [
+            "user",
+            "group",
+            "email"
+          ]
+        },
+        "watcher": {
+          "type": "string",
+          "position": 0,
+          "description": "User, group or destination (email) affected."
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventFieldResponse": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObjectResponse"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid",
+              "position": 0,
+              "description": "The UUID of the field descriptor."
+            },
+            "fieldName": {
+              "type": "string",
+              "position": 0,
+              "description": "The name of the field descriptor."
+            },
+            "value": {
+              "type": "string",
+              "position": 0,
+              "description": "Value for the field."
+            }
+          }
+        }
+      ]
+    },
+    "UserCaseNotificationAppSettings": {
+      "type": "object",
+      "properties": {
+        "verbose": {
+          "type": "boolean",
+          "position": 0,
+          "description": "If true, app notifications should be verbose."
+        },
+        "priority": {
+          "type": "array",
+          "position": 0,
+          "description": "If set, only send app notifications for cases with these priorities.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "critical"
+            ]
+          }
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.request.NotificationSearchRequest": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "format": "int32",
+          "position": 0,
+          "description": "Limit number of returning notifications. (default 25)",
+          "default": 25
+        },
+        "offset": {
+          "type": "integer",
+          "format": "int32",
+          "position": 0,
+          "description": "Offset notifications (default 0)",
+          "default": 0
+        },
+        "user": {
+          "type": "array",
+          "position": 0,
+          "description": "Restrict search to return notifications generated by specified users. Can be shortnames or userIds.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "startTimestamp": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Restrict search to return notifications created after the timestamp. Defaults to no restrictions."
+        },
+        "endTimestamp": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Restrict search to return notifications created before the timestamp. Defaults to now."
+        },
+        "includeFlags": {
+          "type": "array",
+          "position": 0,
+          "description": "Restrict search to return notifications which have the specified flags set.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "seen",
+              "suppressed"
+            ]
+          }
+        },
+        "excludeFlags": {
+          "type": "array",
+          "position": 0,
+          "description": "Restrict search to return notifications which have the specified flags unset.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "seen",
+              "suppressed"
+            ]
+          }
+        },
+        "service": {
+          "type": "array",
+          "position": 0,
+          "description": "Limit to notifications generated by the specified Argus services.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "caseService"
+            ]
+          }
+        },
+        "operation": {
+          "type": "array",
+          "position": 0,
+          "description": "Limit to notifications generated by the specified Argus operations",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "caseUpdate",
+              "caseCreate",
+              "caseClosed",
+              "casePriorityChange",
+              "caseAddAttachment",
+              "caseAddComment"
+            ]
+          }
+        },
+        "objectID": {
+          "type": "array",
+          "position": 0,
+          "description": "Limit to notification generated by the specified set of Argus objects by their IDs",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "objectCustomer": {
+          "type": "array",
+          "position": 0,
+          "description": "Limit to notifications generated by the specified customers. Can be a list of shortnames and/or customerIDs",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "includeContext": {
+          "type": "boolean",
+          "position": 0,
+          "description": "Specify if service specific notification context should be included (default false)",
+          "default": false
+        }
+      },
+      "description": "Allows current user to search for received notifications."
+    },
+    "ChangeEventTagResponse": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "position": 0,
+          "description": "The key of the tag."
+        },
+        "value": {
+          "type": "string",
+          "position": 0,
+          "description": "The value of the tag."
+        }
+      }
+    },
+    "NotificationDeviceEnrollRequest": {
+      "type": "object",
+      "required": [
+        "name",
+        "token",
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "The type of device to enroll.",
+          "enum": [
+            "iphone",
+            "android"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "The display name of the enrolled device."
+        },
+        "token": {
+          "type": "string",
+          "position": 0,
+          "description": "The notification token to enroll, to uniquely reference the device. This should be received from the notification service provider."
+        }
+      },
+      "description": "Request to enroll a new notification device (for push notifications) for the current user"
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.CaseNotificationRequestContext": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/NotificationRequestContext"
+        },
+        {
+          "type": "object",
+          "required": [
+            "caseID",
+            "description",
+            "priority",
+            "service",
+            "status",
+            "subject",
+            "type"
+          ],
+          "properties": {
+            "caseID": {
+              "type": "integer",
+              "format": "int64",
+              "position": 0,
+              "description": "Id of the case.",
+              "minimum": 1
+            },
+            "status": {
+              "type": "string",
+              "position": 0,
+              "description": "Current status of the case.",
+              "enum": [
+                "pendingCustomer",
+                "pendingSoc",
+                "pendingVendor",
+                "workingSoc",
+                "workingCustomer",
+                "pendingClose",
+                "closed"
+              ]
+            },
+            "priority": {
+              "type": "string",
+              "position": 0,
+              "description": "Current priority of the case. Required to correctly label in the notification center.",
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "critical"
+              ]
+            },
+            "type": {
+              "type": "string",
+              "position": 0,
+              "description": "Case type. Required to correctly label in the notification center.",
+              "enum": [
+                "securityIncident",
+                "operationalIncident",
+                "informational",
+                "change"
+              ]
+            },
+            "service": {
+              "position": 0,
+              "description": "Service descriptor for the service this case is bound to.",
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.CaseService"
+            },
+            "category": {
+              "position": 0,
+              "description": "Category descriptor for the category descriptor this case is bound to (or null).",
+              "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.CaseCategory"
+            },
+            "subject": {
+              "type": "string",
+              "position": 0,
+              "description": "Subject of the case."
+            },
+            "description": {
+              "type": "string",
+              "position": 0,
+              "description": "Textual description of the case. Will be sanitized (HTML). => @SafeHTML"
+            },
+            "changes": {
+              "type": "array",
+              "position": 0,
+              "description": "List of changes to the case being notified. Only required on case update events.",
+              "items": {
+                "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.request.context.cases.CaseChangeEvent"
+              }
+            }
+          },
+          "description": "Notification request context for case notifications. This object will be used to generate messages, based on templates that expect certain fields to be present."
+        }
+      ]
+    },
+    "no.mnemonic.services.notification.spi.request.NotificationDeviceEnrollRequest": {
+      "type": "object",
+      "required": [
+        "name",
+        "token",
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "position": 0,
+          "description": "The type of device to enroll.",
+          "enum": [
+            "iphone",
+            "android"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "position": 0,
+          "description": "The display name of the enrolled device."
+        },
+        "token": {
+          "type": "string",
+          "position": 0,
+          "description": "The notification token to enroll, to uniquely reference the device. This should be received from the notification service provider."
+        }
+      },
+      "description": "Request to enroll a new notification device (for push notifications) for the current user"
+    },
+    "ChangeEventServiceResponse": {
+      "type": "object",
+      "properties": {
+        "service": {
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.CaseService"
+        }
+      }
+    },
+    "no.mnemonic.services.notification.spi.v2.response.context.cases.CaseChangeEventResponse": {
+      "type": "object",
+      "properties": {
+        "field": {
+          "type": "string",
+          "position": 0,
+          "description": "Which case filed has been changed.",
+          "enum": [
+            "description",
+            "comment",
+            "assignedTech",
+            "assignedUser",
+            "attachment",
+            "status",
+            "priority",
+            "watcher",
+            "tag",
+            "field"
+          ]
+        },
+        "previousObject": {
+          "position": 0,
+          "description": "What was the previous value. If added, not changed, this is null.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventObjectResponse"
+        },
+        "newObject": {
+          "position": 0,
+          "description": "What is the new value. If the change is removal, this is null.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.cases.changeevent.ChangeEventObjectResponse"
+        }
+      },
+      "description": "Allows us to specify which specific changes has happen to the case on an update notification."
+    },
+    "NotificationResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "Unique identifier for this notification."
+        },
+        "transactionID": {
+          "type": "string",
+          "format": "uuid",
+          "position": 0,
+          "description": "Unique identifier for the parent transaction which generated this notification."
+        },
+        "transactionUser": {
+          "position": 0,
+          "description": "User info for the user which triggered the transaction generating this notificaiton",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.UserInfo"
+        },
+        "objectCustomer": {
+          "position": 0,
+          "description": "The customer for the object for which the notification transaction was generated",
+          "$ref": "#/definitions/no.mnemonic.services.argus.common.spi.response.CustomerInfo"
+        },
+        "objectID": {
+          "type": "string",
+          "position": 0,
+          "description": "The identifier for the object for which the notification transaction was generated"
+        },
+        "flags": {
+          "type": "array",
+          "position": 0,
+          "description": "Set of flags for the notification. Tells if the notification is seen or was suppressed.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "seen",
+              "suppressed"
+            ]
+          }
+        },
+        "createdTimestamp": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Timestamp for when the notification was created."
+        },
+        "firstSeenTimestamp": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "Timestamp for when the notification was first seen by the receiving user."
+        },
+        "service": {
+          "type": "string",
+          "position": 0,
+          "description": "What service generated the notification",
+          "enum": [
+            "caseService"
+          ]
+        },
+        "operation": {
+          "type": "string",
+          "position": 0,
+          "description": "What operation generated the notification",
+          "enum": [
+            "caseUpdate",
+            "caseCreate",
+            "caseClosed",
+            "casePriorityChange",
+            "caseAddAttachment",
+            "caseAddComment"
+          ]
+        },
+        "channels": {
+          "type": "array",
+          "position": 0,
+          "description": "Which notification channels will/was the receiving user attempted to be notified through.",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.ChannelResponse"
+          }
+        },
+        "context": {
+          "position": 0,
+          "description": "Context interface which is extended for specific services.",
+          "$ref": "#/definitions/no.mnemonic.services.notification.spi.v2.response.context.NotificationResponseContext"
+        }
+      }
+    },
+    "CaseService": {
+      "type": "object",
+      "required": [
+        "id",
+        "localizedNames",
+        "shortName"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "position": 0,
+          "description": "The UUID of the service."
+        },
+        "shortName": {
+          "type": "string",
+          "position": 0,
+          "description": "The shortname of the service."
+        },
+        "localizedNames": {
+          "type": "object",
+          "position": 0,
+          "description": "Localized names for the service.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Common model to describe a service"
+    },
+    "UserRecipient": {
+      "type": "object",
+      "properties": {
+        "user": {
+          "type": "string",
+          "position": 0,
+          "description": "Shortname or UserID of the user to notify. Set if User type recipient."
+        }
+      },
+      "description": "User type recipients, connected to a single user."
+    },
+    "no.mnemonic.services.notification.spi.v2.request.context.cases.changeevent.ChangeEventComment": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ChangeEventObject"
+        },
+        {
+          "type": "object",
+          "required": [
+            "comment",
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid",
+              "position": 0,
+              "description": "The UUID of the comment."
+            },
+            "comment": {
+              "type": "string",
+              "position": 0,
+              "description": "The comment in textual form. Will be sanitized (HTML). => @SafeHTML"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
