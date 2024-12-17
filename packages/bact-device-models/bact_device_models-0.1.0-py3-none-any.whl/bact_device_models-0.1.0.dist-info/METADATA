@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bact-device-models
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/hz-b/bact-device-models
+License: GPL-3.0
+Author: Waheedullah Sulaiman Khail
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: jsons
+Project-URL: Documentation, https://github.com/hz-b/bact-device-models.git
+Project-URL: Repository, https://github.com/hz-b/bact-device-models.git
