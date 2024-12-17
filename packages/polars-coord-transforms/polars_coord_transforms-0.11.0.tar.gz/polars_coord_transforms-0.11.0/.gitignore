@@ -1,0 +1,8 @@
+/pyo3-polars/target
+target/
+*.so
+__pycache__
+.vscode
+.ruff_cache
+.idea/
+main_.rs
