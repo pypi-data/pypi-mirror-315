@@ -1,0 +1,25 @@
+
+### 5. **Build Your Library**
+
+Now, you can proceed to build and package your library:
+
+1. **Install `setuptools` and `wheel`** if you haven’t yet:
+
+    ```bash
+    pip install setuptools wheel
+    ```
+
+2. **Build your package**:
+
+    ```bash
+    python setup.py sdist bdist_wheel
+    ```
+
+3. **Upload to PyPI** using `twine`:
+
+    ```bash
+    pip install twine
+    twine upload dist/*
+    ```
+
+After following these steps, your package will be published and available for installation via `pip`!

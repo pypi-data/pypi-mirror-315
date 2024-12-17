@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mindbot/__init__.py
+mindbot/ai_functions.py
+pymindbot.egg-info/PKG-INFO
+pymindbot.egg-info/SOURCES.txt
+pymindbot.egg-info/dependency_links.txt
+pymindbot.egg-info/requires.txt
+pymindbot.egg-info/top_level.txt
