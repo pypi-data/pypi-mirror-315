@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fundrive-baidu
+Version: 1.0.7
+Summary: fundrive
+Author-email: niuliangtao <farfarfun@qq.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: aget>=0.2.0
+Requires-Dist: chardet>=5.2.0
+Requires-Dist: click>=8.1.7
+Requires-Dist: cryptography>=44.0.0
+Requires-Dist: cython>=3.0.11
+Requires-Dist: funutil>=1.0.43
+Requires-Dist: jinja2>=3.1.4
+Requires-Dist: passlib>=1.7.4
+Requires-Dist: pillow>=10.4.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: requests-toolbelt>=1.0.0
+Requires-Dist: rich>=13.9.4
+Requires-Dist: typing-extensions>=4.12.2
+
+# fundrive-baidu
