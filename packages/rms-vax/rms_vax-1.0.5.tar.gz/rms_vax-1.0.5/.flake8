@@ -1,0 +1,11 @@
+[flake8]
+max-line-length: 90
+per-file-ignores =
+    # continuation line missing indentation or outdented
+    # continuation line under-indented for visual indent
+    # continuation line unaligned for hanging indent
+    # whitespace after '['
+    # whitespace before ']'
+    # whitespace before ','
+    # missing whitespace after ','
+    tests/test_vax.py:E122,E128,E131,E201,E202,E203,E231
