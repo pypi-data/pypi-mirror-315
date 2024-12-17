@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+re_copilot/__init__.py
+re_copilot.egg-info/PKG-INFO
+re_copilot.egg-info/SOURCES.txt
+re_copilot.egg-info/dependency_links.txt
+re_copilot.egg-info/requires.txt
+re_copilot.egg-info/top_level.txt
+re_copilot/chat/Chatbot.py
+re_copilot/chat/Constants.py
+re_copilot/chat/__init__.py
