@@ -1,0 +1,9 @@
+folioclient/FolioClient.py,sha256=sXW0wi2hUsWPKHsY1ESYoGIdaxeyyhOr6z8v0xnrd7k,27558
+folioclient/__init__.py,sha256=v1XT62bcsJ2EcrAOQKUN_UqeYoV_3kj_ByGN7BOUFlQ,232
+folioclient/cached_property.py,sha256=kQFmRbmPRlFHj0GdPUGKVfaRXYHIHgC7H4lSo3TR1aU,1514
+folioclient/decorators.py,sha256=TaTmAQTnVMDMldPb2cnsjclsoKePNhHdOXoubXqplkA,1646
+folioclient/exceptions.py,sha256=I1xLKUug5qJ4_oO9_N9ytuiJbrf5WVbjBeoamBihi9g,287
+folioclient-0.61.2.dist-info/LICENSE,sha256=QO8vqU6RN0mLQYENgQ_fROdmbEcNPOLT0LKFyH69RiU,1072
+folioclient-0.61.2.dist-info/METADATA,sha256=bTAGwH1xnR184JIP5nrIT_0IKk3EMOBPtGy3ALPqMvc,1598
+folioclient-0.61.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+folioclient-0.61.2.dist-info/RECORD,,
