@@ -1,0 +1,16 @@
+fdtooldf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fdtooldf/fdtool.py,sha256=k2ttTN0u5megVEnHXUw93DNHCA308q8GFiPA7-per_w,6049
+fdtooldf/modules/Apriori_Gen.py,sha256=L-nxm8WXXDV_NlV3ZSCKz5UR_fnQcRZzu9QJi9QQKqk,1272
+fdtooldf/modules/GetFDs.py,sha256=X0uP9CXb6dSNwjzhKDKsw23LutuyMoCaBgl3P0D7f_w,3251
+fdtooldf/modules/ObtainEquivalences.py,sha256=eOdk-o-JLGzM0Lj7Wu3ppF1nZhMVq7bFHeZ9Ah5sncc,1111
+fdtooldf/modules/Prune.py,sha256=4_Qqx2wPQfufFgXojux5QQz4XVkHJEVFYo43arOq_9M,2818
+fdtooldf/modules/__init__.py,sha256=FJRSpNLpy3ULhaqgZduhFVQvJh1t0tBi2kFdhVcKNaw,91
+fdtooldf/modules/binaryRepr.py,sha256=nrByrcVYlw1t044oj9YFpFr2PgSBYU9hEeNq_tx9iDw,366
+fdtooldf/modules/dbschema/__init__.py,sha256=9hJZKUKj7bRrDi65BzHkzPY-Sk3XRxDnt39EMAVz8_A,24
+fdtooldf/modules/dbschema/dbschema.py,sha256=GH0Q_gEIo3ZvRIUDyNGrAWQkbgWu1hEIwhuN6l61mxA,12872
+fdtooldf/modules/keyRun.py,sha256=LRl4dC1kUkmdhHepuwNx04EzWfE33ZBq_ioFDXLrFZQ,1052
+fdtooldf/runner.py,sha256=4MoWQ_HALhW54-qu_sESildfxw3CaAo6WlsHa2acSIM,1437
+fdtooldf/utils.py,sha256=J7dtFZV-mC77P3u5zWO7-TR8ceLaUBBBitkpKYNyrRU,1781
+fdtooldf-0.0.1.dist-info/METADATA,sha256=f9UFn-ZS653_o_tHWbkz4d9wq-QQqzej4SOtuzXgf-E,3130
+fdtooldf-0.0.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+fdtooldf-0.0.1.dist-info/RECORD,,
