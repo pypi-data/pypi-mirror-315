@@ -1,0 +1,3 @@
+[console_scripts]
+clicerin=clicerin.main:app
+
