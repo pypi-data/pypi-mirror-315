@@ -1,0 +1,26 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "xx0"  # 上传所使用的名称
+version = "0.1.1"
+description = "包的简短描述"
+readme = "README.md"
+authors = []
+packages = [
+    { include = "x" }  # 这个使用的是import的名称
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+typer = "0.9.0"
+pygithub = "^2.5.0"
+playwright = "^1.48.0"
+openai = "^1.54.4"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+x = "x.cli:app"  # 这个使用的是包import的名称
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
