@@ -1,0 +1,3 @@
+openai>=1.57.4
+PyYAML>=6.0.2
+blue-yonder>=0.0.24
