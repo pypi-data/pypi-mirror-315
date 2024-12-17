@@ -1,0 +1,2 @@
+[winzy.plugins]
+remind = winzy_macos_reminder:remind_plugin
