@@ -1,0 +1,14 @@
+pg_upsert/__init__.py,sha256=-Hpo_UpVWkNVwynemp6kp-9qgEjm1dfxy55PwUCAveg,323
+pg_upsert/__main__.py,sha256=6TPqqYhSwwGiz8CyqmSbs58rrx6bpe3BgdLWnZMJ6Ao,87
+pg_upsert/__version__.py,sha256=9DeYNXI9q3nY3mSQdItD22socCihaNNqYgiIm-VcGK8,441
+pg_upsert/cli.py,sha256=TaQ1OyokYN479XpCVnC4CZCDMko5KzUPyR83lyoZj8c,7762
+pg_upsert/postgres.py,sha256=GF4eNXmuXkkO8AXFP47M2QcDNQeZydcPDMjuqRGbGHg,7242
+pg_upsert/ui.py,sha256=4Y4s4tbaEVhKmxvV5TuL-jYGIGOpq_i5sVAhnbjLCKY,18618
+pg_upsert/upsert.py,sha256=EiBFpvXjdrpXBDMuGck8LcxaERZ9wXlVxdi55Vy9cTI,92991
+pg_upsert/utils.py,sha256=3QKVMlO_9YvyQPriCGQwYdaZusZPl95oArjEo67eLvY,1818
+pg_upsert-1.4.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pg_upsert-1.4.5.dist-info/METADATA,sha256=3jULSOSnF6HS4mzyU1MT-DoaG9NUHbddTQXaxcekY4k,50595
+pg_upsert-1.4.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pg_upsert-1.4.5.dist-info/entry_points.txt,sha256=faJES_GCJKyz5mulmeSjGLt8TQXpAowDAqap8sYKkxg,49
+pg_upsert-1.4.5.dist-info/top_level.txt,sha256=mTQfLBHZEZs462aGuc3-Cr2_CE0WmM8VAHc5l_BR-Cg,10
+pg_upsert-1.4.5.dist-info/RECORD,,
