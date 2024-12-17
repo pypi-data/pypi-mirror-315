@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: antares-hep
+Version: 0.6.1
+Summary: Automated Numerical To Analytical REconstruction Software
+Home-page: UNKNOWN
+Author: Giuseppe De Laurentis, Daniel Maitre
+Author-email: g.dl@hotmail.it
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE.txt
+
+UNKNOWN
+
