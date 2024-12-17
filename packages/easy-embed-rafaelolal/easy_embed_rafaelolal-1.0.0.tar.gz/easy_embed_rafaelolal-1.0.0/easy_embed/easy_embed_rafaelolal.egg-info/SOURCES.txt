@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+easy_embed/easy_embed/__init__.py
+easy_embed/easy_embed/src/__init__.py
+easy_embed/easy_embed/src/db.py
+easy_embed/easy_embed/src/main.py
+easy_embed/easy_embed/src/router.py
+easy_embed/easy_embed/src/schemas.py
+easy_embed/easy_embed_rafaelolal.egg-info/PKG-INFO
+easy_embed/easy_embed_rafaelolal.egg-info/SOURCES.txt
+easy_embed/easy_embed_rafaelolal.egg-info/dependency_links.txt
+easy_embed/easy_embed_rafaelolal.egg-info/requires.txt
+easy_embed/easy_embed_rafaelolal.egg-info/top_level.txt

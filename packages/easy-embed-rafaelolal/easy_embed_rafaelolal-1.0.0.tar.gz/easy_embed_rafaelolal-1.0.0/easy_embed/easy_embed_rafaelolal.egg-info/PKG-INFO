@@ -1,0 +1,197 @@
+Metadata-Version: 2.1
+Name: easy-embed-rafaelolal
+Version: 1.0.0
+Summary: Simple self-hosted semantic search API
+Home-page: https://github.com/rafaelolal/csci-3485-final
+Author: Rafael Almeida
+Author-email: contact@ralmeida.dev
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.12.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: anyio==4.7.0
+Requires-Dist: certifi==2024.12.14
+Requires-Dist: charset-normalizer==3.4.0
+Requires-Dist: click==8.1.7
+Requires-Dist: dnspython==2.7.0
+Requires-Dist: email_validator==2.2.0
+Requires-Dist: fastapi==0.115.6
+Requires-Dist: fastapi-cli==0.0.7
+Requires-Dist: filelock==3.16.1
+Requires-Dist: fsspec==2024.10.0
+Requires-Dist: h11==0.14.0
+Requires-Dist: httpcore==1.0.7
+Requires-Dist: httptools==0.6.4
+Requires-Dist: httpx==0.28.1
+Requires-Dist: huggingface-hub==0.26.5
+Requires-Dist: idna==3.10
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: joblib==1.4.2
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: MarkupSafe==3.0.2
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: networkx==3.4.2
+Requires-Dist: numpy==2.2.0
+Requires-Dist: packaging==24.2
+Requires-Dist: pillow==11.0.0
+Requires-Dist: pydantic==2.10.3
+Requires-Dist: pydantic_core==2.27.1
+Requires-Dist: Pygments==2.18.0
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: python-multipart==0.0.19
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: regex==2024.11.6
+Requires-Dist: requests==2.32.3
+Requires-Dist: rich==13.9.4
+Requires-Dist: rich-toolkit==0.12.0
+Requires-Dist: safetensors==0.4.5
+Requires-Dist: scikit-learn==1.6.0
+Requires-Dist: scipy==1.14.1
+Requires-Dist: sentence-transformers==3.3.1
+Requires-Dist: setuptools==75.6.0
+Requires-Dist: shellingham==1.5.4
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: SQLAlchemy==2.0.36
+Requires-Dist: sqlmodel==0.0.22
+Requires-Dist: starlette==0.41.3
+Requires-Dist: sympy==1.13.1
+Requires-Dist: threadpoolctl==3.5.0
+Requires-Dist: tokenizers==0.21.0
+Requires-Dist: torch==2.5.1
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: transformers==4.47.0
+Requires-Dist: typer==0.15.1
+Requires-Dist: typing_extensions==4.12.2
+Requires-Dist: urllib3==2.2.3
+Requires-Dist: uvicorn==0.34.0
+Requires-Dist: uvloop==0.21.0
+Requires-Dist: watchfiles==1.0.3
+Requires-Dist: websockets==14.1
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: twine>=4.0.2; extra == "dev"
+
+# Easy Embed App
+
+Simple self-hosted semantic search API.
+
+GitHub: https://github.com/rafaelolal/csci-3485-final
+
+Demo: https://github.com/rafaelolal/csci-3485-final/blob/main/CSCI_3485_Final_Project_Presentation.pptx
+
+## Installation
+```bash
+pip install easy-embed-rafaelolal
+```
+
+## Usage
+
+```py
+from easy_embed import App
+
+app = App()
+
+# Optional: set a SentenceTransformer model by passing in whatever necessary
+# arguments
+# app.set_model(**kwargs)
+# 
+# Optional: set device
+# app.set_model_device(my_device)
+#
+# Optional: models that require further setup before being used can be
+# accessed through `app.model`
+# app.model.prepare()
+#
+# Optional: for models with unique encoding functions, you can override
+# `app.encode` with `custom_encode` using default parameters and custom logic
+# app.encode = lambda text, new = "hi": app.model.transform(text, new)
+
+app.run(host="0.0.0.0", port=8000, allow_origins=["*"])
+```
+
+## Documentation
+
+### API Endpoints
+
+Visit the `/docs` url for more information and for quick testing.
+
+Below are example values for the response body:
+
+#### /create
+
+```
+{
+  "doc": "string",
+  "index": 0,
+  "collection": "string"
+}
+```
+
+#### /read
+
+Use the below values only for small and simple semantic search tasks. Consider using the `collection` value for more documents or more frequent needs.
+```
+{
+  "q": "string",
+  "docs": [
+    "string"
+  ],
+  "k": 0
+}
+```
+
+Use the below values if you have already used the `create` endpoint to precompute the embedding vectors of the documents.
+```
+{
+  "q": "string",
+  "collection": "string",
+  "k": 0
+}
+```
+
+#### /update
+
+The main purpose of this endpoint is to keep the embeddings up to date with your data. Consider creating a custom script to automatically make a call to this endpoint whenever a datapoint is edited in your database.
+```
+{
+  "index": 0,
+  "collection": "string",
+  "doc": "string"
+}
+```
+
+#### /delete
+
+```
+{
+  "index": 0,
+  "collection": "string"
+}
+```
+
+### Custom Embedding Model
+
+Important note: the return type for a custom encode function must be `-> list[float] | list[list[float]]`. This is because of how the similarities are computed.
+
+Refer to the usage example above.
+
+## Main Dependencies
+
+Python version: `python==3.12.8`
+
+```
+fastapi==0.115.6
+sentence-transformers==3.3.1
+sqlmodel==0.0.22
+```
+
+## Citations
+
+How to publish to PyPi: https://youtu.be/5KEObONUkik
+
+Default model used: Solatorio, Aivin V. "GISTEmbed: Guided In-sample Selection of Training Negatives for Text Embedding Fine-tuning." arXiv preprint arXiv:2402.16829 (2024).
