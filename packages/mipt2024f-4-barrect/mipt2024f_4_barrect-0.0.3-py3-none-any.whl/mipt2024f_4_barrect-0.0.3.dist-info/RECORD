@@ -1,0 +1,12 @@
+mipt2024f_4_barrect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mipt2024f_4_barrect/rectify.py,sha256=xh8niKAU0-dEDStpIH4z1XYm0IlF2yhPBZXaiH4zueQ,1143
+mipt2024f_4_barrect/internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mipt2024f_4_barrect/internal/elliptic.py,sha256=-drpP_IPDDvYJfnWsKQNpquHbQsQ5qhpUQgnpqt6GJ4,109
+mipt2024f_4_barrect/internal/gridgen.py,sha256=Arsg89O6K2j0xjW8Y_gRMHjlhKkVnBNUaSHMlbjJumU,2562
+mipt2024f_4_barrect/internal/gridmap.py,sha256=D7qI_BIySJOwSGhjVS4BbuAWjAx5-XwjyQ8lS-b0BfQ,185
+mipt2024f_4_barrect/internal/warp.py,sha256=BpUcPw4PmuVcNHfNaZ5lpC9y4LzcjJ1ien4HPpZX5Ag,1590
+mipt2024f_4_barrect-0.0.3.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+mipt2024f_4_barrect-0.0.3.dist-info/METADATA,sha256=iXtR9VNxqqUGTMGqIAPkKtHwNi9u3YLWtuGHd32qEVM,383
+mipt2024f_4_barrect-0.0.3.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+mipt2024f_4_barrect-0.0.3.dist-info/top_level.txt,sha256=XpHBDt76dX4hRYPsHnTFnl3K0menh57l3u_8pf3x3Bo,20
+mipt2024f_4_barrect-0.0.3.dist-info/RECORD,,
