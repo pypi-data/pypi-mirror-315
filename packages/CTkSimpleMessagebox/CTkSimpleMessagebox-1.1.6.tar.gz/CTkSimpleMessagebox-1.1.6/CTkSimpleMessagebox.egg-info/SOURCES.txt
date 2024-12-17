@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+CTkSimpleMessagebox.egg-info/PKG-INFO
+CTkSimpleMessagebox.egg-info/SOURCES.txt
+CTkSimpleMessagebox.egg-info/dependency_links.txt
+CTkSimpleMessagebox.egg-info/top_level.txt
+src/CTkSimpleMessagebox.py
+src/__init__.py
+src/resources/ErrorIcon.ico
+src/resources/InfoIcon.ico
+src/resources/Thumbs.db
