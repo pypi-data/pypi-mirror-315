@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: smart-flask-instrumentator
+Version: 0.1.0
+Summary: Easy to use library to auto-instrument your Flask app
+License: MIT
+Author: Sygmei
+Author-email: 3835355+Sygmei@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask (>=3.1.0,<4.0.0)
+Requires-Dist: opentelemetry-distro (==0.45b0)
+Requires-Dist: opentelemetry-exporter-otlp (==1.24.0)
+Requires-Dist: opentelemetry-instrumentation (==0.45b0)
+Requires-Dist: opentelemetry-instrumentation-flask (==0.45b0)
+Requires-Dist: opentelemetry-instrumentation-jinja2 (==0.45b0)
+Requires-Dist: opentelemetry-instrumentation-logging (==0.45b0)
+Requires-Dist: opentelemetry-instrumentation-psycopg (==0.45b0)
+Description-Content-Type: text/markdown
+
+# SmartFlaskInstrumentator
+Easy to use library to auto-instrument your Flask app
+

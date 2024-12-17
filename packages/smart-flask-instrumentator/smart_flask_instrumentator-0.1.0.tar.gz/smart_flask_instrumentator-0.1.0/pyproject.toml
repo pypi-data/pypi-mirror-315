@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "smart-flask-instrumentator"
+version = "0.1.0"
+description = "Easy to use library to auto-instrument your Flask app"
+authors = ["Sygmei <3835355+Sygmei@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+opentelemetry-distro = "0.45b0"
+opentelemetry-exporter-otlp = "1.24.0"
+opentelemetry-instrumentation = "0.45b0"
+opentelemetry-instrumentation-flask = "0.45b0"
+opentelemetry-instrumentation-jinja2 = "0.45b0"
+opentelemetry-instrumentation-logging = "0.45b0"
+opentelemetry-instrumentation-psycopg = "0.45b0"
+flask = "^3.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
