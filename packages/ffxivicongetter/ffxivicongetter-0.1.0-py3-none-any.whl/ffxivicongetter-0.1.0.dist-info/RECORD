@@ -1,0 +1,11 @@
+ffxivicongetter/__init__.py,sha256=GOjYKOkD0bYckVHAOV_Mm7-mCnKTJd3mj9yt8T7g_I8,56
+ffxivicongetter/__main__.py,sha256=go5l2GYQBQJcw-xl6FEY5QAHct16kGChSbl62InzVzg,36
+ffxivicongetter/cli.py,sha256=zL-Qfh6Gqv8TUAnUHBzZWFpUyhkBGXUvUmHg7CO0EP8,488
+ffxivicongetter/core.py,sha256=s-G8rKjg1cSaoPDJa7k1j-j0U6MWAtmwRrHVqW6Cpac,7783
+ffxivicongetter/jobs.py,sha256=U6rJXHZqypOyQrf0MK8qirmb-l4ous2-H0c7jscrEhw,3325
+ffxivicongetter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffxivicongetter-0.1.0.dist-info/METADATA,sha256=LfaVMyJ0o3jjSMNzTxsfKqbp14kYDyM3y_50TaYdRWo,319
+ffxivicongetter-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ffxivicongetter-0.1.0.dist-info/entry_points.txt,sha256=TJGewQHuu0MiCS0QgKiCAgWhcuudQbigfHl2RE5Jfdo,65
+ffxivicongetter-0.1.0.dist-info/licenses/LICENSE.md,sha256=DRZmGsZGUmKy_m3lldDjFfo-XQgnwelmcCnFvf6k17c,1066
+ffxivicongetter-0.1.0.dist-info/RECORD,,
