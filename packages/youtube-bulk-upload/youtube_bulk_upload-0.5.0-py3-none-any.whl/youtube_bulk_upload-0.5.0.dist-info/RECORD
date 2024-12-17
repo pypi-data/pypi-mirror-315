@@ -1,0 +1,11 @@
+youtube_bulk_upload/__init__.py,sha256=T8QOeY5Nt0bNKjoM_yq6_OE64naQ-Vt9qLYVnr4BM_w,86
+youtube_bulk_upload/bulk_upload.py,sha256=jYshkqhXhGywEkxV_USfo_Ora7gG4Er3cHn41dNTkkA,23474
+youtube_bulk_upload/cli.py,sha256=48Qabwd6mzHKCIeswJIbhwNvCTlp4jf6QSnqmZNVxSw,7252
+youtube_bulk_upload/gui.py,sha256=0BiA5A4oPl1KvlD6dgu0y20KhnGpB7r1BtP4ZucWwYg,46155
+youtube_bulk_upload/logo.ico,sha256=PR2RrIrkzotxdDPoWlDsUz_2jDlDDzrIoVAPOAu5rHE,157065
+youtube_bulk_upload/logo.png,sha256=zGMGnBdjBt7ZW5ZJjbaxMWhNPOs33CXMgBQGEE02nbY,148610
+youtube_bulk_upload-0.5.0.dist-info/LICENSE,sha256=0li1XKGd12dkWRDkAk88ZNHuFKcG-i5XxojTFlUaB4s,1080
+youtube_bulk_upload-0.5.0.dist-info/METADATA,sha256=5dSUf6MD8ueYm-PLsWwWKedMuwK7tyPX1Y62qYFzKas,9070
+youtube_bulk_upload-0.5.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+youtube_bulk_upload-0.5.0.dist-info/entry_points.txt,sha256=M6KV-tZmMds46DaBVMuL1AnmMaRxEoxrxJaUOfFRNZ4,121
+youtube_bulk_upload-0.5.0.dist-info/RECORD,,
