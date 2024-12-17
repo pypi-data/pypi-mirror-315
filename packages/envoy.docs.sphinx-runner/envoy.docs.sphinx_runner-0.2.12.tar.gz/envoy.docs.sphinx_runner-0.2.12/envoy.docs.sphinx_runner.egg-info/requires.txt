@@ -1,0 +1,15 @@
+aio.run.runner>=0.3.4
+colorama
+docutils~=0.21
+envoy.base.utils>=0.5.7
+packaging>=23.0
+protobuf
+pygments>=2.18.0
+sphinx-copybutton>=0.5.1
+sphinx-rtd-theme>=2.0.0rc2
+sphinx>=6.2.0
+sphinxcontrib-httpdomain
+sphinxcontrib-jquery>=3.0.0
+sphinxcontrib-serializinghtml
+sphinxext-rediraffe
+types-pygments
