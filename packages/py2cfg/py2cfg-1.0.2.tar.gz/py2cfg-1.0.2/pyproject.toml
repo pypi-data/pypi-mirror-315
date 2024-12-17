@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py2cfg"
+description = "From any python3 source code, generate Control Flow Graph (CFG)."
+readme = "README.md"
+version = "1.0.2"
+requires-python = ">=3.12"
+dependencies = [
+    "astor",
+    "pudb",
+    "websocket-server",
+    "graphviz",
+    "flask",
+    "requests"
+]
+
+[tool.setuptools.packages]
+find = {} 
+
+[project.scripts]
+py2cfg = "py2cfg._runner:main"
+
+[project.urls]
+Homepage = "https://gitlab.com/classroomcode/py2cfg"
