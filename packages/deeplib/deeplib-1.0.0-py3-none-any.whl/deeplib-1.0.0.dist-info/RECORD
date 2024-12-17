@@ -1,0 +1,16 @@
+deeplib/__init__.py,sha256=wdz6JtZaTIRekhvLBUem7rXv0lc7ESu-IdvhA9Qeowo,97
+deeplib/datasets/__init__.py,sha256=tQXbYYywAHm0OHq2NVmmptX9MS0NE71TDaI74O46gtQ,320
+deeplib/datasets/anomaly.py,sha256=OFct2q9ezaJy7P5naZcIZdSumFqv46uVElUUNUP2Xx0,2313
+deeplib/datasets/base.py,sha256=ETPgT5QKCcDV9s1gi6IlstMoKs8iHzbajN7DWptylSM,1918
+deeplib/datasets/coco.py,sha256=mb2ZrNDBS9NJxOF2bO_-Gv4YBpFoJD2ZKm91EpntZMc,2850
+deeplib/datasets/detection.py,sha256=iIDSte7WJ2e4SrJvFTzZEnaE1BIdRWZi4DNnSLI4pYE,1713
+deeplib/datasets/segmentation.py,sha256=cph2WH0CNeTIP9aRdfaAALzrAp2IQXEV_3a3Ys8soyU,5387
+deeplib/metrics/__init__.py,sha256=4r7r1N_b5Pfetal9Auft9POjcyhVWhIugTbew9--vi0,123
+deeplib/metrics/segmentation.py,sha256=2fPsp9r5C6UViHG-QzIAyf6rTCXlABbWSH_3hiOgQHY,3756
+deeplib/trainers/__init__.py,sha256=4z03tNEPhHJmlg9gl1jOYvN6UyMwlzAdRoemhnOMSO8,128
+deeplib/trainers/base.py,sha256=Kxtr7RijSXzJP5ibCA9pbgnZA8K-EurVI1hY20Kl24k,6166
+deeplib/trainers/segmentation.py,sha256=X683scCeK9sCpG3EkUxNr132z9HY8KbFMnWTIp3ikO0,4318
+deeplib-1.0.0.dist-info/METADATA,sha256=4PGQD2_9wu95Q0_tRl3rryU_UvABFC6bOVRAJkbyf04,6511
+deeplib-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+deeplib-1.0.0.dist-info/top_level.txt,sha256=dG-KY2fv0_YAQinxzHmEHBnwjCTaSI-Zs1y7gqTOVwM,8
+deeplib-1.0.0.dist-info/RECORD,,
