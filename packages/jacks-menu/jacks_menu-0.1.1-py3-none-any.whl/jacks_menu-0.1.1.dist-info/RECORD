@@ -1,0 +1,13 @@
+jacks_menu/__init__.py,sha256=IHZnLbdMKt7d3AyQK1DtYCiZRypHfqAEEFMW1AuJ8IE,3291
+jacks_menu/__version__.py,sha256=1gDRDzx5hMxoZZNY7PiEkAjESxMCL3soYWG09IdZopg,163
+jacks_menu/constants.py,sha256=rFmR6Cl2u7gFY-OYpAbvqrW-vZa99il9-GZbFIZAxgs,631
+jacks_menu/export.py,sha256=hxTDOP8idMYgv_N5uUpOv4VbmJYOEwTeyCuBt76ex_8,1822
+jacks_menu/menu.py,sha256=5PfwyZOzEXQVtpwx82lCxPqiqF-p6tLR7glFUXSHDVw,238
+jacks_menu/parser.py,sha256=AFGjnOCAWJWfbklWsDUsrc3c7zwdkJVaS7a6RmcZaD4,1548
+jacks_menu/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jacks_menu/website.py,sha256=Y_TPEQi4vkWjzPWLnXClqmgIuEBwE67MDXK9ZgebYaw,3737
+jacks_menu-0.1.1.dist-info/METADATA,sha256=FWXXjCiviUMOq6aSnILPm6KgM-NA3Lee46iBYe_2Jtc,1003
+jacks_menu-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jacks_menu-0.1.1.dist-info/entry_points.txt,sha256=KA3lgSBsWNdD_zrNhB9H3mL_wVpQeTXCxFvYPpHAa3c,47
+jacks_menu-0.1.1.dist-info/licenses/LICENSE,sha256=Nd7ZbWP49x4OnCKPaofukOuJKlaP8oeuTW-W49w_HSU,1071
+jacks_menu-0.1.1.dist-info/RECORD,,
