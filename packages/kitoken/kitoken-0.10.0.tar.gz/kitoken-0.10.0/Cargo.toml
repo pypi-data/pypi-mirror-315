@@ -1,0 +1,235 @@
+[package]
+
+name = "kitoken"
+description = "Fast and versatile tokenizer for language models, supporting BPE, Unigram and WordPiece tokenization"
+version = "0.10.0"
+authors = ["Christian Sdunek <me@systemcluster.me>"]
+keywords = ["tokenizer", "nlp", "bpe", "unigram", "wordpiece"]
+categories = ["text-processing", "algorithms", "wasm", "no-std", "parser-implementations"]
+license = "BSD-2-Clause"
+repository = "https://github.com/Systemcluster/kitoken"
+readme = "README.md"
+edition = "2021"
+resolver = "2"
+rust-version = "1.82.0"
+include = [
+    "Cargo.toml",
+    "src/**/*",
+    "LICENCE",
+]
+
+
+[workspace]
+
+members = ["packages/python"]
+
+
+[lib]
+
+name = "kitoken"
+path = "src/lib.rs"
+
+
+[features]
+
+default = [
+    "std",
+    "serialization",
+    "normalization",
+    "convert",
+    "regex-perf",
+    "multiversion",
+]
+
+# Enables all stable features
+all = [
+    "std",
+    "serialization",
+    "normalization",
+    "convert",
+    "split",
+    "regex-unicode",
+    "regex-perf",
+    "multiversion",
+]
+
+# Enables standard library features
+std = ["dep:thiserror", "orx-priority-queue/std", "memchr/std", "multiversion?/std"]
+
+# Enables serialization and deserialization
+serialization = ["dep:serde", "dep:postcard"]
+
+# Enables all input normalization features
+normalization = ["normalization-unicode", "normalization-charsmap"]
+# Enables unicode input normalization support
+normalization-unicode = ["dep:unicode-normalization"]
+# Enables precompiled charsmap input normalization support
+normalization-charsmap = ["bstr/unicode"]
+
+# Enables all input split features
+split = ["split-unicode-script"]
+# Enables input split by unicode scripts
+split-unicode-script = ["dep:unicode-script"]
+
+# Enables detection and conversion for all supported tokenizer data formats
+convert = ["convert-tiktoken", "convert-sentencepiece", "convert-tokenizers", "convert-tekken", "convert-detect"]
+# Enables conversion for the HuggingFace Tokenizers format
+convert-tokenizers = ["dep:base64", "dep:serde", "dep:serde_json", "hashbrown/serde"]
+# Enables conversion for the SentencePiece format
+convert-sentencepiece = ["dep:sentencepiece-model"]
+# Enables conversion for the OpenAI Tiktoken format
+convert-tiktoken = ["dep:base64"]
+# Enables conversion for the Mistral Tekken format
+convert-tekken = ["dep:base64", "dep:serde", "dep:serde_json"]
+# Enables detection of supported formats during deserialization (enables serialization feature)
+convert-detect = ["serialization"]
+
+# Enables support for additional regex unicode patterns
+regex-unicode = ["fancy-regex/unicode"]
+# Enables additional regex performance optimizations
+regex-perf = ["fancy-regex/perf"]
+# Use the oniguruma regex engine instead of fancy-regex
+regex-onig = ["dep:onig"]
+
+# Enables the use of multiversion for generating multiple code paths with different CPU feature utilization
+multiversion = ["dep:multiversion"]
+
+# Enables the use of unstable features
+unstable = []
+
+
+[dependencies]
+
+bstr = { version = "1.10", default-features = false, features = ["alloc"] }
+log = { version = "0.4" }
+fancy-regex = { version = "0.14", default-features = false }
+regex-automata = { version = "0.4", default-features = false, features = [
+    "alloc",
+    "syntax",
+    "meta",
+    "nfa",
+    "dfa",
+    "hybrid",
+    "unicode-perl",
+    "unicode-gencat",
+    "unicode-case",
+] }
+regex-syntax = { version = "0.8", default-features = false, features = [
+    "unicode-perl",
+    "unicode-gencat",
+    "unicode-case",
+] }
+hashbrown = { version = "0.15", default-features = false, features = ["default-hasher", "inline-more", "allocator-api2"] }
+once_cell = { version = "1.19", default-features = false, features = ["alloc", "race"] }
+orx-priority-queue = { version = "1.4", default-features = false }
+memchr = { version = "2.7", default-features = false, features = ["alloc"] }
+derive_more = { version = "1.0", default-features = false, features = ["deref", "deref_mut", "as_ref", "index", "index_mut"] }
+
+# optional dependencies for the std feature
+thiserror = { version = "1.0", optional = true }
+
+# optional dependencies for the serialization feature
+serde = { version = "1.0", default-features = false, features = ["alloc", "derive"], optional = true }
+postcard = { version = "1.0", default-features = false, features = ["alloc"], optional = true }
+
+# optional dependencies for the regex-onig feature
+onig = { version = "6.4", default-features = false, optional = true }
+
+# optional dependencies for the normalization-unicode feature
+unicode-normalization = { version = "0.1", optional = true }
+
+# optional dependencies for the split-unicode-script feature
+unicode-script = { version = "0.5", optional = true }
+
+# optional dependencies for the convert-tiktoken and convert-tokenizers features
+base64 = { version = "0.22", default-features = false, features = ["alloc"], optional = true }
+
+# optional dependencies for the convert-sentencepiece feature
+sentencepiece-model = { version = "0.1", default-features = false, optional = true }
+
+# optional dependencies for the convert-tokenizers and convert-tekken features
+serde_json = { version = "1.0", default-features = false, features = ["alloc"], optional = true }
+
+# optional dependencies for the multiversion feature
+multiversion = { version = "0.8", default-features = false, optional = true }
+
+[dev-dependencies]
+
+kitoken = { path = ".", default-features = false, features = [
+    "std",
+    "serialization",
+    "convert",
+    "normalization",
+    "split",
+    "regex-perf",
+    "multiversion",
+] }
+
+console = { version = "0.15", features = ["windows-console-colors"] }
+simple_logger = { version = "5.0" }
+criterion = { version = "0.5", default-features = false, features = ["cargo_bench_support"] }
+
+
+[package.metadata.docs.rs]
+
+rustdoc-args = ["--cfg", "docsrs"]
+
+
+[profile.release]
+
+codegen-units = 1
+debug = false
+debug-assertions = false
+incremental = false
+lto = "fat"
+opt-level = 's'
+overflow-checks = false
+panic = "abort"
+strip = "symbols"
+
+[profile.release.build-override]
+
+opt-level = 's'
+
+[profile.performance]
+
+inherits = "release"
+opt-level = 3
+
+[profile.performance.build-override]
+
+opt-level = 3
+
+[profile.bench]
+
+inherits = "release"
+opt-level = 3
+debug = true
+strip = "none"
+
+[profile.bench.build-override]
+
+opt-level = 3
+
+[profile.test]
+
+inherits = "dev"
+opt-level = 1
+
+
+[[bench]]
+name = "encode_cl100k"
+path = "benches/bench_encode_cl100k.rs"
+harness = false
+[[bench]]
+name = "encode_gpt2"
+path = "benches/bench_encode_gpt2.rs"
+harness = false
+[[bench]]
+name = "encode_llama2"
+path = "benches/bench_encode_llama2.rs"
+harness = false
+[[bench]]
+name = "encode_xlnet"
+path = "benches/bench_encode_xlnet.rs"
+harness = false
