@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: reefbuilder_segmentation
+Version: 1.0.0
+Summary: An instance segmentation library focussed on solving marine conservation-related problems
+Author: Ishan Nangia
+Author-email: ishannangia.123@gmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: black (>=24.4.2,<25.0.0)
+Requires-Dist: dataclasses-json (>=0.6.4,<0.7.0)
+Requires-Dist: fiftyone (>=1.0.0,<2.0.0)
+Requires-Dist: flake8 (>=7.1.0,<8.0.0)
+Requires-Dist: numpy (==1.26.4)
+Requires-Dist: opencv-python (>=4.10.0.84,<5.0.0.0)
+Requires-Dist: scipy (==1.13.1)
+Requires-Dist: supervision (==0.17)
+Requires-Dist: ultralytics (>=8.1.47,<9.0.0)
+Description-Content-Type: text/markdown
+
+# Objective
+The broad goal is to develop a pipeline to automate the modelling of segmentation tasks, primarily for 
+marine conservation use cases. Find out more about the project at [this Notion page](https://sleet-metacarpal-b16.notion.site/Segmentation-e0ad44bf260a483b88967d4225496511?pvs=74). 
+
+# Github Repo Structure
+Loosely adapted from [here](https://medium.com/analytics-vidhya/folder-structure-for-machine-learning-projects-a7e451a8caaa)
+
+# Setting Up the Project
+Follow the CONTRIBUTING.md file to see how to set up your project
