@@ -1,0 +1,12 @@
+Le,published,2017
+Jianpeng Cheng,co-authored,Long short-term memory-networks for machine reading
+Li Dong,co-authored,Long short-term memory-networks for machine reading
+Mirella Lapata,co-authored,Long short-term memory-networks for machine reading
+Jianpeng Cheng,published,2016
+Kyunghyun Cho,co-authored,Learning phrase representations using rnn encoder-decoder for statistical machine translation
+Bart van Merrienboer,co-authored,Learning phrase representations using rnn encoder-decoder for statistical machine translation
+Caglar Gulcehre,co-authored,Learning phrase representations using rnn encoder-decoder for statistical machine translation
+Fethi Bougares,co-authored,Learning phrase representations using rnn encoder-decoder for statistical machine translation
+Holger Schwenk,co-authored,Learning phrase representations using rnn encoder-decoder for statistical machine translation
+Yoshua Bengio,co-authored,Learning phrase representations using rnn encoder-decoder for statistical machine translation
+Kyunghyun Cho,published,2014

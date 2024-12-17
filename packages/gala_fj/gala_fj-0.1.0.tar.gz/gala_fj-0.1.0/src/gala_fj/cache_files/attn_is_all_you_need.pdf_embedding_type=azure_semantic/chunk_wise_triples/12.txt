@@ -1,0 +1,19 @@
+Łukasz Kaiser,co-authored,Samy Bengio
+Łukasz Kaiser,co-authored,Ilya Sutskever
+Łukasz Kaiser,published in,Advances in Neural Information Processing Systems (NIPS)
+Łukasz Kaiser,published in,International Conference on Learning Representations (ICLR)
+Samy Bengio,co-authored,Łukasz Kaiser
+Ilya Sutskever,co-authored,Łukasz Kaiser
+Nal Kalchbrenner,co-authored,Lasse Espeholt
+Nal Kalchbrenner,co-authored,Karen Simonyan
+Nal Kalchbrenner,co-authored,Aaron van den Oord
+Nal Kalchbrenner,co-authored,Alex Graves
+Nal Kalchbrenner,co-authored,Koray Kavukcuoglu
+Nal Kalchbrenner,published in,arXiv
+Yoon Kim,co-authored,Carl Denton
+Yoon Kim,co-authored,Luong Hoang
+Yoon Kim,co-authored,Alexander M. Rush
+Yoon Kim,published in,International Conference on Learning Representations
+Diederik Kingma,co-authored,Jimmy Ba
+Diederik Kingma,published in,International Conference on Learning Representations (ICLR)
+Jimmy Ba,co-authored,Diederik Kingma

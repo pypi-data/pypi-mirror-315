@@ -1,0 +1,17 @@
+Zhu et al. (2013),performance on,WSJ only; discriminative
+Dyer et al. (2016),performance on,WSJ only; discriminative
+Transformer (4 layers),performance on,WSJ only; discriminative
+Zhu et al. (2013),performance on,semi-supervised
+Huang & Harper (2009),performance on,semi-supervised
+McClosky et al. (2006),performance on,semi-supervised
+Vinyals & Kaiser el al. (2014),performance on,semi-supervised
+Transformer (4 layers),performance on,semi-supervised
+Luong et al. (2015),performance on,multi-task
+Dyer et al. (2016),performance on,generative
+Transformer,outperforms,BerkeleyParser
+Transformer,trained on,WSJ training set
+Transformer,achieves state of the art on,WMT 2014 English-to-German
+Transformer,achieves state of the art on,WMT 2014 English-to-French
+Nal Kalchbrenner,provided,comments and corrections
+Stephan Gouws,provided,comments and corrections
+TensorFlow,hosts code at,https://github.com/tensorflow/tensor2tensor

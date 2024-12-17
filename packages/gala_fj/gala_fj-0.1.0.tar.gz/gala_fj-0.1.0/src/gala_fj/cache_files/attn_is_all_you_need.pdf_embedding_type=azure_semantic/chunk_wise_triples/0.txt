@@ -1,0 +1,13 @@
+Google,grants permission,journalistic or scholarly works
+Ashish Vaswani,affiliated with,Google Brain
+Noam Shazeer,affiliated with,Google Brain
+Niki Parmar,affiliated with,Google Research
+Jakob Uszkoreit,affiliated with,Google Research
+Llion Jones,affiliated with,Google Research
+Aidan N. Gomez,affiliated with,University of Toronto
+Łukasz Kaiser,affiliated with,Google Brain
+WMT 2014 English-to-German translation task,BLEU score,28.4
+WMT 2014 English-to-French translation task,BLEU score,41.8
+Transformer,trained for,3.5 days
+Transformer,trained on,eight GPUs
+Harvard University,located in,Cambridge; Massachusetts

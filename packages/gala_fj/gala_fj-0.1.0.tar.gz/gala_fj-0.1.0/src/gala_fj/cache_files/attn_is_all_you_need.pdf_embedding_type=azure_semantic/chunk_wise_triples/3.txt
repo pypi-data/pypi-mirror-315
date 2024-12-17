@@ -1,0 +1,2 @@
+WMT 2014 English-to-German translation task,outperformed by,big transformer model
+big transformer model,established new state-of-the-art BLEU score,28

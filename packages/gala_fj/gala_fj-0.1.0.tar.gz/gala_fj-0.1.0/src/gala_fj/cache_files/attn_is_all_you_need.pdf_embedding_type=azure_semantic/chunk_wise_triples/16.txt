@@ -1,0 +1,6 @@
+Grammar as a foreign language,published in,Advances in Neural Information Processing Systems
+Grammar as a foreign language,published in,2015
+Google's neural machine translation system: Bridging the gap between human and machine translation,published in,arXiv preprint arXiv:1609.08144
+Google's neural machine translation system: Bridging the gap between human and machine translation,published in,2016
+Deep recurrent models with fast-forward connections for neural machine translation,published in,CoRR
+Deep recurrent models with fast-forward connections for neural machine translation,published in,2016

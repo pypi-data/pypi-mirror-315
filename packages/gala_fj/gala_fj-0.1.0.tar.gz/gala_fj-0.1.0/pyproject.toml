@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "gala_fj"
+version = "0.1.0"
+description = ""
+authors = [ "Parth Thakkar <parth.thakkar@fujitsu.com>",
+            "Suraj Nagaje <suraj.nagaje@fujitsu.com>",
+            "Pranoy Panda <pranoy.panda@fujitsu.com>",
+            "Chaitanya <nagasrikrishnachaitanya.devaguptapu@fujitsu.com>", 
+        ]
+readme = "README.md"
+packages = [{include = "gala_fj", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+langchain = "^0.3.12"
+docling-core = "^2.10.0"
+bs4 = "^0.0.2"
+validators = "^0.34.0"
+langchain-community = "^0.3.12"
+requests = "^2.32.3"
+langchain-google-genai = "^2.0.7"
+rank-bm25 = "^0.2.2"
+nltk = "^3.9.1"
+poetry-dotenv = "^0.4.0"
+langchain-text-splitters = "^0.3.3"
+langchain-experimental = "^0.3.3"
+tqdm = "^4.67.1"
+neo4j = "^5.27.0"
+langchain-openai = "^0.2.12"
+langchain-cohere = "^0.3.3"
+langchain-groq = "^0.2.1"
+yacs = "^0.1.8"
+docling = "^2.12.0"
+chromadb = "^0.5.23"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

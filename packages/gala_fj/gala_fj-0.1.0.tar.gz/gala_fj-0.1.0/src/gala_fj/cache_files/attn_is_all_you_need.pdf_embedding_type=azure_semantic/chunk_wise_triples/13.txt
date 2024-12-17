@@ -1,0 +1,5 @@
+Oleksii Kuchaiev,co-authored,Factorization tricks for LSTM networks
+Boris Ginsburg,co-authored,Factorization tricks for LSTM networks
+Factorization tricks for LSTM networks,published on,arXiv
+Factorization tricks for LSTM networks,preprint number,arXiv:1703.10722
+Factorization tricks for LSTM networks,published in,2017

@@ -1,0 +1,31 @@
+Junyoung Chung,co-authored,Empirical evaluation of gated recurrent neural networks on sequence modeling
+Çaglar Gülçehre,co-authored,Empirical evaluation of gated recurrent neural networks on sequence modeling
+Kyunghyun Cho,co-authored,Empirical evaluation of gated recurrent neural networks on sequence modeling
+Yoshua Bengio,co-authored,Empirical evaluation of gated recurrent neural networks on sequence modeling
+Chris Dyer,co-authored,Recurrent neural network grammars
+Adhiguna Kuncoro,co-authored,Recurrent neural network grammars
+Miguel Ballesteros,co-authored,Recurrent neural network grammars
+Noah A. Smith,co-authored,Recurrent neural network grammars
+Jonas Gehring,co-authored,Convolutional sequence to sequence learning
+Michael Auli,co-authored,Convolutional sequence to sequence learning
+David Grangier,co-authored,Convolutional sequence to sequence learning
+Denis Yarats,co-authored,Convolutional sequence to sequence learning
+Yann N. Dauphin,co-authored,Convolutional sequence to sequence learning
+Alex Graves,authored,Generating sequences with recurrent neural networks
+Kaiming He,co-authored,Deep residual learning for image recognition
+Xiangyu Zhang,co-authored,Deep residual learning for image recognition
+Shaoqing Ren,co-authored,Deep residual learning for image recognition
+Jian Sun,co-authored,Deep residual learning for image recognition
+Sepp Hochreiter,co-authored,Gradient flow in recurrent nets: the difficulty of learning long-term dependencies
+Yoshua Bengio,co-authored,Gradient flow in recurrent nets: the difficulty of learning long-term dependencies
+Paolo Frasconi,co-authored,Gradient flow in recurrent nets: the difficulty of learning long-term dependencies
+Jürgen Schmidhuber,co-authored,Gradient flow in recurrent nets: the difficulty of learning long-term dependencies
+Sepp Hochreiter,co-authored,Long short-term memory
+Jürgen Schmidhuber,co-authored,Long short-term memory
+Zhongqiang Huang,co-authored,Self-training PCFG grammars with latent annotations across languages
+Mary Harper,co-authored,Self-training PCFG grammars with latent annotations across languages
+Rafal Jozefowicz,co-authored,Exploring the limits of language modeling
+Oriol Vinyals,co-authored,Exploring the limits of language modeling
+Mike Schuster,co-authored,Exploring the limits of language modeling
+Noam Shazeer,co-authored,Exploring the limits of language modeling
+Yonghui Wu,co-authored,Exploring the limits of language modeling
