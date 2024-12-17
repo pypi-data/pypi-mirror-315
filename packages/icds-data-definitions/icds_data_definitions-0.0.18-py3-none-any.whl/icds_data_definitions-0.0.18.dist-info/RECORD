@@ -1,0 +1,14 @@
+icds_data_definitions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icds_data_definitions/aerial_corridor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icds_data_definitions/aerial_corridor/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icds_data_definitions/aerial_corridor/v1/corridor_booking_schema.py,sha256=jcm2sRDXo6yloPTOr9pxFePWTNqk3RqPuEOs4UCi7io,557
+icds_data_definitions/aerial_corridor/v1/drone_port_schema.py,sha256=ClDa94onLBr9iCFL-aHyg6X8KNUt3uFjTRGCv25MYGE,4673
+icds_data_definitions/aerial_corridor/v1/dss.py,sha256=1zE3XiGPcfB1LWSp4mOJB2YFrmKpStUGV6N3TvZPk2Q,24942
+icds_data_definitions/aerial_corridor/v1/schema.py,sha256=gUVZOpSrfMmPIF6QaxJp8mVUwLBIFfIvfBrupU7krRI,493
+icds_data_definitions/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icds_data_definitions/common/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icds_data_definitions/common/v1/schema.py,sha256=l7nOvyDfI8pKq1dUPAIsRzMdGp7UD0htpsf8aaHoF6U,1133
+icds_data_definitions-0.0.18.dist-info/METADATA,sha256=qgyQXTrjgnIIpltkdlsJdm3doUMHMkhMVMcEsU4478s,841
+icds_data_definitions-0.0.18.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+icds_data_definitions-0.0.18.dist-info/top_level.txt,sha256=Z_qewsV3ZVAeXc_pBWhTAWKWk6Q9uGx7iBmeMk-RC0A,22
+icds_data_definitions-0.0.18.dist-info/RECORD,,
