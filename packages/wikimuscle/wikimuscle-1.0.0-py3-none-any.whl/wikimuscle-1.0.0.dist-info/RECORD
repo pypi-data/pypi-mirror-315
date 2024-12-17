@@ -1,0 +1,10 @@
+wikimuscle/__init__.py,sha256=Pwo2ok28BuATqySrNag4tdF80ZuRjMQdrzBMtcRqdHY,2347
+wikimuscle/apiwiki.py,sha256=Y0dQqLvjypQQmwVJzwAwcbDPOPSI9--6EB2737jQhHc,7076
+wikimuscle/categories_url.py,sha256=M8_PzZU8A_GaBJNpwp0wTDpwJ_b6ph-9L8as6DSTLyI,2659
+wikimuscle/config.py,sha256=FeOsOL3xGTR-P2A9YHO9V-_5qKjKgM8LOmZ_nSeu8ns,920
+wikimuscle/interfaces.py,sha256=X5iBBSI-Qq2CJFeEg7JpBaLWuhQFLXLG41JNaam2D0A,3308
+wikimuscle/services.py,sha256=fAY49ZOlCUzEUescxGbLjT2e7Spurm_TyzF7j2bCS2M,2125
+wikimuscle-1.0.0.dist-info/METADATA,sha256=QtGKoCzKtCVTJdwM8uFVT5yCwqbF6Ik5hm6hh0kefR0,7153
+wikimuscle-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+wikimuscle-1.0.0.dist-info/top_level.txt,sha256=hrxmJiTmBrPWOMsb9edkOYaBBYj-eC56FLwUGAIxhkY,11
+wikimuscle-1.0.0.dist-info/RECORD,,
