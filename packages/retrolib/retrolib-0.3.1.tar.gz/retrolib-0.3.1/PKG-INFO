@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: retrolib
+Version: 0.3.1
+Summary: Une bibliothèque avec des trucs retro. A library with retro stuff.
+Author: Léonor Leclerc
+Author-email: leo-nor7777@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE_FR
+Requires-Dist: Pillow
+
+🇫🇷 - RetroLib, c'est une bibliothèque que j'ai créé et ça à un lien avec les vieux ordinateurs et les trucs rétro. Il y a quelques outils, (dans beaucoup de temps, je dirai beaucoup d'outils) comme un outil de Pixel Art et... c'est tout. Regardez dans les fichiers de retrolib pour voir les instructions.
+
+🇬🇧 - RetroLib is a library I created and it has something to do with old computers and retro stuff. There are some tools, (in a lot of time, I'll say a lot of tools) like a Pixel Art tool and... that's it. Look in the retrolib files for instructions.
