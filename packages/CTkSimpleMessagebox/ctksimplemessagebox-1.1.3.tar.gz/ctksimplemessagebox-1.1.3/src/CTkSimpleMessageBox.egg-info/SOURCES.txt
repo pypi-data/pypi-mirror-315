@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/CTkSimpleMessagebox.py
+src/CTkSimpleMessageBox.egg-info/PKG-INFO
+src/CTkSimpleMessageBox.egg-info/SOURCES.txt
+src/CTkSimpleMessageBox.egg-info/dependency_links.txt
+src/CTkSimpleMessageBox.egg-info/top_level.txt
+src/CTkSimpleMessagebox.egg-info/PKG-INFO
+src/CTkSimpleMessagebox.egg-info/SOURCES.txt
+src/CTkSimpleMessagebox.egg-info/dependency_links.txt
+src/CTkSimpleMessagebox.egg-info/top_level.txt
