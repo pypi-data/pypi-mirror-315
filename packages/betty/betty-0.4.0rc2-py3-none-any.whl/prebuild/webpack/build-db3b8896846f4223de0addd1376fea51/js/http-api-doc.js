@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[713],{67188:(e,t,a)=>{var r=a(69191);document.querySelectorAll("[data-betty-openapi-url]").forEach((e=>{(0,r.A)({url:e.dataset.bettyOpenapiUrl,dom_id:`#${e.id}`})}))}},e=>{e.O(0,[502,143,130,863],(()=>{return t=67188,e(e.s=t);var t}));e.O()}]);
