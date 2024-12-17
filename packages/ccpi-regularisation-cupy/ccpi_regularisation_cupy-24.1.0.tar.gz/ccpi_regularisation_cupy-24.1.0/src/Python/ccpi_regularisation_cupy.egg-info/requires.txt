@@ -1,0 +1,13 @@
+cupy
+numpy
+pillow
+pytest
+
+[dev]
+pytest
+pytest-cov
+pytest-xdist
+pytest-benchmark
+flake8
+pyproject-flake8
+pydocstyle
