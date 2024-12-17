@@ -1,0 +1,11 @@
+profila/__init__.py,sha256=rCIph2bpzRVKSefbIzeqylGAWsZvjK9StXnT7OL7F94,1219
+profila/__main__.py,sha256=jDpwK9NsegBzEW6WaLqI86S3OFzjfjzQKxo_VDME_Ps,6417
+profila/_gdb.py,sha256=JyNMSoz9cJwLfryOZMrlOC26TeFDdZjGWTYr5YtB5tA,5143
+profila/_ipython.py,sha256=EaJg7RmYnZMNjf5FUjIgSfrPltDM39QK5FBe4ww0fxQ,2445
+profila/_render.py,sha256=TjwIXMd4S6HONf1iaFbv066Gua25rF8aomIwNfEBrKA,1076
+profila/_stats.py,sha256=GihaGl0JSoPMknFY_b58DSqQ5kMyKxj1umx9-K3wZnM,3028
+profila-0.3.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+profila-0.3.1.dist-info/METADATA,sha256=TSo6chPM54YkIdOJJiVuRrA8oxx48QgYP2v70mAs8Ug,5615
+profila-0.3.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+profila-0.3.1.dist-info/top_level.txt,sha256=S6Y30kYEZJzdEHj8iUV0L5i902gwyJmOggD_nWyVPvs,8
+profila-0.3.1.dist-info/RECORD,,
