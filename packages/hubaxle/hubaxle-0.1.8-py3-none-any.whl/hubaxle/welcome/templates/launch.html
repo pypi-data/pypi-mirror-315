@@ -1,0 +1,243 @@
+<!-- apps.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading App {{ app_num }} - Groundlight Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #003366;
+            /* Dark blue color */
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .headerbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .headerbar div,
+        .headerbar ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .headerbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .headerbar ul li {
+            padding: 0 15px;
+        }
+
+        .headerbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .tabbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #005599;
+            /* Slightly lighter blue color */
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .info-table th,
+        .info-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .info-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .info-table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #003366;
+            color: white;
+        }
+
+        .main-section {
+            margin: 50px auto;
+            width: 100%;
+            max-width: 800px;
+            box-sizing: border-box;
+        }
+
+        .disabled {
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        .selected a {
+            font-weight: 900;
+            text-decoration: underline !important;
+        }
+
+        /* Spinner Styles */
+        .spinner {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border: 12px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top-color: #003366;
+            animation: spin 1s ease infinite;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Center spinner within main section */
+        .spinner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Hide the spinner by default */
+        .spinner.hidden {
+            display: none;
+        }
+
+        #app-status {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>Groundlight Hub</h2>
+    </div>
+
+    <div class="tabbar">
+        <div class="headerbar">
+            <ul>
+                <li class="selected"><a href="#">Launch Application</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-section">
+        <h1 id="app-status">Launching App {{ app_num }}...</h1>
+        <div class="spinner-container">
+            <div id="loadingSpinner" class="spinner"></div>
+        </div>
+    </div>
+
+    <script>
+        const appNum = {{ app_num }};
+        const url = `/apps/index.json?timestamp=${new Date().getTime()}`;
+        const spinner = document.querySelector('.spinner');
+        const statusText = document.getElementById('app-status');
+
+        async function checkAppReady(appUrl) {
+            try {
+                // Use HEAD request to check if the app is ready
+                const response = await fetch(appUrl, { method: 'HEAD' });
+
+                if (response.ok) {
+                    // App is ready, redirect now
+                    window.location.href = appUrl;
+                } else if (response.status === 502 || response.status === 503) {
+                    // App not ready, retry after a short delay
+                    console.log(`Status ${response.status} for app: ${appUrl}. Retrying...`);
+                    statusText.textContent = 'App is starting up, please wait...';
+                    spinner.classList.remove('hidden');
+                    setTimeout(() => checkAppReady(appUrl), 2000);
+                } else {
+                    // Unexpected response code
+                    console.error(`Unexpected status ${response.status} for app: ${appUrl}`);
+                    statusText.textContent = `Unexpected response: ${response.status}. Please contact Groundlight Support.`;
+                    spinner.classList.add('hidden');
+                }
+            } catch (error) {
+                // Handle network or unexpected errors
+                console.error('Error checking app readiness:', error);
+                statusText.textContent = `An Error Occurred. Please contact Groundlight Support. ${error.message}`;
+                spinner.classList.add('hidden');
+            }
+        }
+
+        async function checkAppStatus() {
+            try {
+                const response = await fetch(url);
+
+                if (response.status === 502 || response.status === 503) {
+                    // Server is still initializing, retry after 2 seconds
+                    console.log(`Status ${response.status}: Server initializing.`);
+                    statusText.textContent = 'Application Initializing, Please Wait...';
+                    spinner.classList.remove('hidden');
+                    setTimeout(checkAppStatus, 2000); // Retry
+                    return;
+                }
+
+                if (!response.ok) {
+                    // Handle other HTTP errors
+                    console.error(`Error: Received status code ${response.status}`);
+                    statusText.textContent = `Error: ${response.status}. Please contact Groundlight Support.`;
+                    spinner.classList.add('hidden');
+                    return;
+                }
+
+                const data = await response.json();
+                const app = data.find(app => app.app_num === String(appNum));
+
+                if (app) {
+                    // Check if the URL is ready
+                    checkAppReady(app.app_url);
+                } else {
+                    // App not found
+                    console.log('App not found in JSON response.');
+                    statusText.textContent = 'Application unavailable. Please contact Groundlight Support.';
+                    spinner.classList.add('hidden');
+                }
+            } catch (error) {
+                // Handle network or unexpected errors
+                console.error('Error checking app status:', error);
+                statusText.textContent = `An Error Occurred. Please contact Groundlight Support. ${error.message}`;
+                spinner.classList.add('hidden');
+            }
+        }
+
+        // Start polling
+        checkAppStatus();
+    </script>
+
+</body>
+
+</html>

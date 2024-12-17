@@ -1,0 +1,4 @@
+[console_scripts]
+discover-cameras=hubaxle.gldiscover:discover_cameras
+launch-service=hubaxle.service:launch
+

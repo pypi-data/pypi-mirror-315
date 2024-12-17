@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Camera Discovery</title>
+</head>
+<body>
+    <h1>Camera Discovery Page</h1>
+    <ul>
+        {% if waiting %}
+            <li>Waiting for results...</li>
+        {% endif %}
+        {% for url in rtsp_urls %}
+            <li>{{ url }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

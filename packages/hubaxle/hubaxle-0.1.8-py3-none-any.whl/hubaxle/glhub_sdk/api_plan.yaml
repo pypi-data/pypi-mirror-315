@@ -1,0 +1,221 @@
+# Note: this is currently written in "openapi-ish" -- it's not fully valid, as we're just mapping out a rough idea. We
+# can hammer out the details as we build.
+openapi: 3.0.3
+info:
+  title: GLHub API
+  version: 0.1.0
+  description: Manage GLHubs.
+  contact:
+    name: Questions?
+    email: info@groundlight.ai
+# Auth: TBD
+# Initial thoughts -- almost all of the API will require authentication. Even for /api/v1/ping and /api/v1/status, it
+# seems like we want to know that the ping-er is authenticated.
+paths:
+  # /web: this is where we expose the web UI pages.
+  /:
+    get:
+      description: |
+        API Base URL. We simply report "Hello from GLHub. Please use the API endpoints under /api/v1/ or the
+        web URLs under /web/.
+  /api/v1/ping:
+    get:
+      description: Ping the API server to see if it's responding.
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Ping"
+  /api/v1/status:
+    get:
+      description: Check the status of the GLHub.
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HubStatus"
+  /api/v1/cameras:
+    # Alternative names?
+    #   - /api/v1/streams
+    get:
+      description: List the accessible camera streams.
+      parameters:
+        - name: state
+          required: false
+          description: Filter to cameras in this state.
+        - name: subtype
+          required: false
+          description: Filter to camera streams of this subtype.
+    post:
+      description: Create a new camera.
+  /api/v1/cameras/discover:
+    post:
+      description: |
+        Look on the network for camera streams, and create camera objects for any that are not yet accounted for.
+      parameters:
+        - name: method
+          required: false
+          description: How to discover cameras ("USB", "ONVIF", "PORT_SCAN", "PORT_SCAN_AGGRESSIVE")
+  /api/v1/cameras/{id}:
+    get:
+      description: Get metadata on a particular camera stream.
+    patch:
+      description: Partially update a camera.
+    delete:
+      description: Stop polling for this camera.
+  /api/v1/cameras/{id}/image:
+    get:
+      description: Grab an image from the camera stream.å
+  /api/v1/spec:
+    # It's a little weird to have 1 spec ...
+    post:
+      description: Apply a glhub config specification.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              - name: preview
+                description: If preview mode is enabled, validate the spec and return the planned changes.
+                required: false
+                schema:
+                  type: boolean
+    get:
+      description: Get the active config specification.
+  /api/v1/secrets:
+    get:
+      description: Get a list of secrets.
+    post:
+      description: Create a secret.
+  /api/v1/secrets/{id}:
+    get:
+      # There is a tradeoff in security versus convenience. For GLHub secrets, I think the convenience of being able to
+      # inspect the camera user / password (for example) is worth returning the secret in plain text.
+      description: Get a secret.
+    patch:
+      description: Update a secret.
+    delete:
+      description: Delete a secret.
+  /api/v1/adopt:
+    post:
+      description: |
+        Register this GLHub to the caller identity (TBD what the identity is -- account, group, tag, user?).
+        I.e., the caller (GL service) might provide a service API token that the gub can store for later usage.
+components:
+  schemas:
+    BaseObject:
+      # All single, non-error objects will at least have these fields
+      type: object
+      properties:
+        id:
+          type: string
+          readOnly: true
+          description: A unique ID for this object.
+        type:
+          value: BaseObject
+          readOnly: true
+          description: The type of this object.
+        created_at:
+          type: string
+          format: date-time
+          readOnly: true
+          description: When this object was created.
+        updated_at:
+          type: string
+          format: date-time
+          readOnly: true
+          description: When this object was most recently updated.
+        name:
+          type: string
+          description: A short, descriptive name for the object.
+    Camera: # BaseObject
+      type: object
+      properties:
+        uri:
+          type: string
+          description: |
+            URI for accessing the stream. You may reference a limited set of environment variables with
+            {{ VAR_NAME }} template syntax.
+        subtype:
+          type: enum
+          description: The type of stream (e.g., "rtsp" or "usb").
+        state:
+          type: enum
+          description: SEEN, CONNECTED, UNKNOWN
+          # SEEN: camera auto-discovery sees this camera on the network, but we can't grab an image (e.g., because the
+          #   credentials are wrong)
+          # Connected: we can see the camera on the network and we can grab images
+          # Unknown: We have a reference to this camera, but we don't currently see it on the network (e.g., the USB was
+          #   unplugged, or the RTSP stream died).
+    PaginatedCameraList: PaginatedList[Camera]
+    Processor: # BaseObject
+      type: object
+      properties:
+        subtype:
+          type: enum
+          description: The app used to process the images.
+        inputs:
+          type: array
+          description: List of input types and ids.
+          properties:
+            id:
+              type: string
+              description: ID of the input stream.
+            type:
+              type: string
+              description: The type of the stream input (e.g. "Camera").
+        options:
+          type: object
+          description: App subtype-specific configuration.
+          properties:
+            detector_id:
+              type: string
+              description: Route image queries to this detector.
+    PaginatedProcessorList: PaginatedList[Processor]
+    Spec:
+      type: object
+      properties:
+        data:
+          # TODO: Should this be POST data (e.g., a dict in a python SDK), or literal YAML/JSON string? I prefer POST
+          # data dict.
+          type: object
+          description: The actual specification.
+    HubStatus:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        diagnostics:
+          type: object
+    Ping:
+      type: object
+      properties:
+        message:
+          type: string
+          description: A short text message, informing the client that the ping was successful.
+    Error:
+      type: object
+      properties:
+        error_type:
+          type: enum
+          description: What type of error happened?
+        message:
+          type: string
+          description: A text description of the error.
+    PaginatedList:
+      type: object
+      properties:
+        type:
+          value: List
+          readOnly: true
+          description: This object has type "List".
+        count:
+          type: int
+          readOnly: true
+          description: Number of results overall (without pagination).
+        results:
+          type: array
+          description: The list of results.

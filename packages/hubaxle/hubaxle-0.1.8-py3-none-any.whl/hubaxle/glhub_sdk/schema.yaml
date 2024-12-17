@@ -1,0 +1,272 @@
+openapi: 3.0.3
+info:
+  title: GLHub API
+  version: 0.1.0
+  description: Manage GLHub
+  contact:
+    name: Groundlight
+    email: info@groundlight.ai
+paths:
+  /api/v1/appdata/app/appconfig:
+    get:
+      operationId: get app config
+      description: Get the app configuration, returned as a binary stream
+      tags:
+      - app_data
+      security:
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfigEntry'
+          description: ''
+    put:
+      operationId: put app config
+      description: put the app configuration
+      tags:
+      - app_data
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfigEntryRequest'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ConfigEntryRequest'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ConfigEntryRequest'
+        required: true
+      security:
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfigEntry'
+          description: ''
+    patch:
+      operationId: patch app config
+      description: patch the app configuration
+      tags:
+      - app_data
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedConfigEntryRequest'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PatchedConfigEntryRequest'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedConfigEntryRequest'
+      security:
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConfigEntry'
+          description: ''
+  /api/v1/cameras:
+    get:
+      operationId: list cameras
+      description: list all cameras
+      tags:
+      - cameras
+      security:
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CameraConfig'
+          description: ''
+  /api/v1/secrets:
+    get:
+      operationId: list secrets
+      description: List all secrets in the hub
+      tags:
+      - secrets
+      security:
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Secret'
+          description: ''
+    post:
+      operationId: create secret
+      description: Create a secret in the hub
+      tags:
+      - secrets
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SecretRequest'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/SecretRequest'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/SecretRequest'
+        required: true
+      security:
+      - basicAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Secret'
+          description: ''
+components:
+  schemas:
+    CameraConfig:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        name:
+          type: string
+          maxLength: 100
+        created_at:
+          type: string
+          format: date-time
+          readOnly: true
+        updated_at:
+          type: string
+          format: date-time
+          readOnly: true
+        rtsp_url:
+          type: string
+          maxLength: 200
+        kind:
+          $ref: '#/components/schemas/KindEnum'
+        contents:
+          type: string
+      required:
+      - contents
+      - created_at
+      - id
+      - kind
+      - name
+      - rtsp_url
+      - updated_at
+    ConfigEntry:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        name:
+          type: string
+          readOnly: true
+        kind:
+          $ref: '#/components/schemas/KindEnum'
+        contents:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+          readOnly: true
+        updated_at:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+      - contents
+      - created_at
+      - id
+      - kind
+      - name
+      - updated_at
+    ConfigEntryRequest:
+      type: object
+      properties:
+        kind:
+          $ref: '#/components/schemas/KindEnum'
+        contents:
+          type: string
+          minLength: 1
+      required:
+      - contents
+      - kind
+    KindEnum:
+      enum:
+      - yaml
+      - json
+      - env
+      - text
+      type: string
+      description: |-
+        * `yaml` - YAML
+        * `json` - JSON
+        * `env` - Environment variables
+        * `text` - Any text
+    PatchedConfigEntryRequest:
+      type: object
+      properties:
+        kind:
+          $ref: '#/components/schemas/KindEnum'
+        contents:
+          type: string
+          minLength: 1
+    Secret:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        name:
+          type: string
+          maxLength: 100
+        created_at:
+          type: string
+          format: date-time
+          readOnly: true
+        updated_at:
+          type: string
+          format: date-time
+          readOnly: true
+        value:
+          type: string
+          maxLength: 200
+      required:
+      - created_at
+      - id
+      - name
+      - updated_at
+      - value
+    SecretRequest:
+      type: object
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        value:
+          type: string
+          minLength: 1
+          maxLength: 200
+      required:
+      - name
+      - value
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
