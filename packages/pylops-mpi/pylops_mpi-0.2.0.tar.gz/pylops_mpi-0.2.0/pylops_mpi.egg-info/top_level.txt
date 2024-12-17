@@ -1,0 +1,7 @@
+dist
+docs
+examples
+pylops_mpi
+testdata
+tests
+tutorials
