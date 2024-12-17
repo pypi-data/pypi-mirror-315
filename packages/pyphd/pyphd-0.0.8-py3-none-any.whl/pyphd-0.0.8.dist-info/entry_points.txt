@@ -1,0 +1,2 @@
+[console_scripts]
+pyphd = pyphd.__main__:main
