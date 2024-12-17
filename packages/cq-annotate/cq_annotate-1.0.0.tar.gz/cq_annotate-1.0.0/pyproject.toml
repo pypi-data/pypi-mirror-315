@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cq-annotate"
+version = "1.0.0"
+license = "Apache-2.0"
+authors = [
+  { name="Jeremy Wright" },
+]
+description = "An annotation extension designed to work with the CadQuery API"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "cadquery",
+  "svgutils",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "black",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jmwright/cq-annotate"
+"Bug Tracker" = "https://github.com/jmwright/cq-annotate/issues"
+
+[tool.hatch.metadata]
+allow-direct-references = true
