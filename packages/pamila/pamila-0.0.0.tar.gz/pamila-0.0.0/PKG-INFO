@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pamila
+Version: 0.0.0
+Summary: python accelerator middle layer
+Home-page: https://github.com/hz-b/pamila
+License: GPL-3.0
+Author: Hidaka, Yoshiteru
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Documentation, https://github.com/hz-b/pamila
+Project-URL: Repository, https://github.com/hz-b/pamila
