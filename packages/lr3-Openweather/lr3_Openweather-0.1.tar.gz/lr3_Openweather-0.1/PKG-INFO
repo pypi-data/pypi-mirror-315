@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lr3_Openweather
+Version: 0.1
+Summary: Приложение для получения данных о погоде с Openweather API
+Home-page: https://github.com/nasirdn/prog/tree/main/sem5/lr3
+Author: ZakNastia
+Author-email: zaknastia2004@gmail.com
+License: UNKNOWN
+Description: # Weather App
+        
+        Приложение для получения данных о погоде с OpenWeather API
+        
+        # Установка
+        
+        ```
+        pip install weather_app
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

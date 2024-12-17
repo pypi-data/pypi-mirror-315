@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+lr3_Openweather/__init__.py
+lr3_Openweather/getweatherdata.py
+lr3_Openweather/main.py
+lr3_Openweather/own_key.py
+lr3_Openweather.egg-info/PKG-INFO
+lr3_Openweather.egg-info/SOURCES.txt
+lr3_Openweather.egg-info/dependency_links.txt
+lr3_Openweather.egg-info/entry_points.txt
+lr3_Openweather.egg-info/requires.txt
+lr3_Openweather.egg-info/top_level.txt
