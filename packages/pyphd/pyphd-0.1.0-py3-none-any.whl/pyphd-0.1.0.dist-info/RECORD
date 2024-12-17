@@ -1,0 +1,10 @@
+pyphd/__about__.py,sha256=MPF0Q56TkNTCCtZoJgP1NpcDbhMHjiZ6BLT-b7YTnoc,682
+pyphd/__init__.py,sha256=x1c4tI_ADVa96PUXgRVWuQrvVJmxqcuNj0bH0VGt_NE,658
+pyphd/__main__.py,sha256=lgRduMw31L-Zmd5qWH3utAnrOeO73FPYTLa925_4VhA,1942
+pyphd/parser.py,sha256=Vl4O-ekCPnR6kzgpmBpDx-Bg_H2YYjB-e8zO5aspFFI,2595
+pyphd/template.py,sha256=ckv9JwERDLjIsoFJT0SEnG4qfqdY6ycWF4HeIwQOAwI,39403
+pyphd-0.1.0.dist-info/METADATA,sha256=GPRb4a2l5Xd7_lDeFRL4SX1IEgmfi7_hy-n2OhHn-qI,43190
+pyphd-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyphd-0.1.0.dist-info/entry_points.txt,sha256=amQluZhN8qVcPQ1C8TAeTorczIJZfnUxLJFCW9IeERM,46
+pyphd-0.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyphd-0.1.0.dist-info/RECORD,,
