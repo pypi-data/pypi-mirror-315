@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: procslib
+Version: 0.2.0
+Summary: Multi-purpose processing library for downstream use
+Author-Email: yada <trojblue@gmail.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Project-URL: Homepage, https://arot-devs.github.io/procslib
+Project-URL: Documentation, https://arot-devs.github.io/procslib
+Project-URL: Changelog, https://arot-devs.github.io/procslib/changelog
+Project-URL: Repository, https://github.com/arot-devs/procslib
+Project-URL: Issues, https://github.com/arot-devs/procslib/issues
+Project-URL: Discussions, https://github.com/arot-devs/procslib/discussions
+Project-URL: Gitter, https://gitter.im/arot-devs/procslib
+Project-URL: Funding, https://github.com/sponsors/trojblue
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# procslib
+
+[![ci](https://github.com/arot-devs/procslib/workflows/ci/badge.svg)](https://github.com/arot-devs/procslib/actions?query=workflow%3Aci)
+[![documentation](https://img.shields.io/badge/docs-mkdocs-708FCC.svg?style=flat)](https://arot-devs.github.io/procslib/)
+[![pypi version](https://img.shields.io/pypi/v/procslib.svg)](https://pypi.org/project/procslib/)
+[![gitter](https://badges.gitter.im/join%20chat.svg)](https://app.gitter.im/#/room/#procslib:gitter.im)
+
+Multi-purpose processing library for downstream use. Project generated with [copier-uv](https://github.com/pawamoy/copier-uv)
+
+## Installation
+
+```bash
+pip install procslib
+```
+
+With [`uv`](https://docs.astral.sh/uv/):
+
+```bash
+uv tool install procslib
+```
+
+
+
+## Usage
+
+
+for how to navigate the project repo (generate changelogs, release versions, etc) see the [project template documentation](https://pawamoy.github.io/copier-uv/work/):
+
+```bash
+make setup  # only once
+
+<write code>
+make format  # to auto-format the code
+
+<write tests>
+make test  # to run the test suite
+
+make check  # to check if everything is OK
+
+<commit your changes>
+
+make changelog  # to update the changelog
+<edit changelog if needed>
+
+make release version=x.y.z  # to release a new version (find the exact version number to use from CHANGELOG.md)
+```
+
+## Documentation
+
+To view (and live edit) the documentations, run:
+
+```bash
+make docs host=0.0.0.0
+```
