@@ -1,0 +1,17 @@
+kody_clientsdk_python/__init__.py,sha256=mFY0GwwuN-a3M8w93_mskS6GZIvv9SNdjLfJaWNsm-I,22
+kody_clientsdk_python/ecom/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kody_clientsdk_python/ecom/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kody_clientsdk_python/ecom/v1/ecom_pb2.py,sha256=hNTl0AmD7aGgkLP7EkLbsQXwl5G0MPaMiGyOoWUHOLQ,12675
+kody_clientsdk_python/ecom/v1/ecom_pb2_grpc.py,sha256=M3pdNPjNJ_PUBPpFx3CNSCOYQUhYgfK2lXFNDXAeyUc,12121
+kody_clientsdk_python/pay/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kody_clientsdk_python/pay/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kody_clientsdk_python/pay/v1/pay_pb2.py,sha256=RxBjjH3PEsxJ9Rh7RP5WLR26G9QD3IyuMCykmge984w,6902
+kody_clientsdk_python/pay/v1/pay_pb2_grpc.py,sha256=IpLprHEah4ymqQ-EpDI92XgbD6sDIHXxWJaXa2eGc0o,11657
+kody_clientsdk_python/sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kody_clientsdk_python/sdk/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kody_clientsdk_python/sdk/common/pagination_pb2.py,sha256=D2VMHl6EQyPLQk2xQsqVFE6HlHziqi6rsxiDXqHLUVQ,1767
+kody_clientsdk_python/sdk/common/pagination_pb2_grpc.py,sha256=q4yl2WURorgMV0CQDy1-vwN6hII8jL-u5nZM9iEvA7A,919
+kody_clientsdk_python-0.1.7.dist-info/METADATA,sha256=dBqiXEUOxwV-AovT_RTQZ6ByhZq8lqGPUUvJCS_oTgY,987
+kody_clientsdk_python-0.1.7.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+kody_clientsdk_python-0.1.7.dist-info/top_level.txt,sha256=ph0dOENHJFEtQ1KgbxDvudnd9hgTsCeaXOvCN9b704M,22
+kody_clientsdk_python-0.1.7.dist-info/RECORD,,
