@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: django-better-azure-communication-email
+Version: 0.0.0
+Summary: A better Django email backend for Azure Communication Email service.
+Home-page: https://github.com/itm8-CDC/django-better-azure-communication-email
+License: Apache-2.0
+Keywords: django,email,azure
+Author: Frederich Pedersen
+Author-email: frodo@hobbits.dk
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: azure-communication-email (>=1.0)
+Requires-Dist: azure-identity (>=1.15)
+Project-URL: Bug Tracker, https://github.com/itm8-CDC/django-better-azure-communication-email/issues
+Project-URL: Company Website, https://itm8.com/
+Project-URL: Repository, https://github.com/itm8-CDC/django-better-azure-communication-email
+Description-Content-Type: text/markdown
+
+[![codecov](https://codecov.io/gh/itm8-CDC/django-better-azure-communication-email/graph/badge.svg?token=L167GIRS20)](https://codecov.io/gh/itm8-CDC/django-better-azure-communication-email)
+
+# Django Better Azure Communication Email
+This is a fork from: https://github.com/retech-us/django-azure-communication-email
+
+A Django email backend for Azure Communication Email service.
+
+## Installation
+Run the following on your system:
+
+    pip install django-better-azure-communication-email
+
+Then, add these settings to your Django `settings.py`:
+
+    EMAIL_BACKEND = 'django_better_azure_communication_email.EmailBackend'
+
+    AZURE_COMMUNICATION_CONNECTION_STRING = '...'
+    # OR
+    AZURE_KEY_CREDENTIAL = '...'
+    AZURE_COMMUNICATION_ENDPOINT = '...'
+
+If you prefer to use Azure Active Directory authentication, you can use the
+following `settings.py` instead:
+
+    EMAIL_BACKEND = 'django_better_azure_communication_email.EmailBackend'
+
+    AZURE_COMMUNICATION_ENDPOINT = '...'
+
+    # Note: make sure to set the following environment variables:
+    # AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_CLIENT_SECRET
+
+Now, when you use `django.core.mail.send_mail`, Azure Communication Email
+service will send the messages by default.
+
