@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: django-templateyak
+Version: 0.0.2
+Summary: class-based Django TemplateTags
+Home-page: https://django-templateyak.levit.be
+Author: LevIT SCS
+Author-email: info@levit.be
+License: MIT License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 5.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Django TemplateYAK
+
+YAK in **Django TemplateYAK** stands for Yet Another Komponent.
+
+This library provides class-based templatetags for Django.
+
+Writing templatetags in Django that don't fit [simple_tag](https://docs.djangoproject.com/en/dev/howto/custom-template-tags/#simple-tags) or [inclusion_tag](https://docs.djangoproject.com/en/dev/howto/custom-template-tags/#inclusion-tags) is non-trivial. Class-based templatetags is an attempt at making it less complicated.
+
+As a bonus, you'll find a Django Komponent system also included in this library. You can use it straight out of the box or as a reference for implementing your own templatetags.
+
+## Documentation
+
+Documentation available at https://django-templateyak.levit.be
+
+
