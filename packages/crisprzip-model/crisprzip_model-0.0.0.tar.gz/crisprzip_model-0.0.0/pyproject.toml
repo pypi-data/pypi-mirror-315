@@ -1,0 +1,7 @@
+[project]
+name = "crisprzip-model"
+authors = [
+    {name = "Hidde Offerhaus", email = "hsofferhaus@gmail.com"},
+]
+version = "0.0.0"
+description = "Coming soon"
