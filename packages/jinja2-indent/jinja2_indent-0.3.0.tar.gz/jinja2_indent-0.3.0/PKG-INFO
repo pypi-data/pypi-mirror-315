@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: jinja2-indent
+Version: 0.3.0
+Summary: A Jinja2 extension for managing indentation in templates.
+License: MIT
+Author: Mihail Mishakin
+Author-email: x896321475@gmail.com
+Maintainer: Mihail Mishakin
+Maintainer-email: x896321475@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: jinja2 (>=3.0.0,<4.0.0)
+Requires-Dist: jinja2-simple-tags (>=0.6.1,<0.7.0)
+Project-URL: repository, https://github.com/dldevinc/jinja2-indent
+Description-Content-Type: text/markdown
+
+# jinja2-indent
+
+This Jinja2 extension adjusts the indentation of block content to a specified width.
+
+[![PyPI](https://img.shields.io/pypi/v/jinja2-indent.svg)](https://pypi.org/project/jinja2-indent/)
+[![Build Status](https://github.com/dldevinc/jinja2-indent/actions/workflows/tests.yml/badge.svg)](https://github.com/dldevinc/jinja2-indent)
+[![Software license](https://img.shields.io/pypi/l/jinja2-indent.svg)](https://pypi.org/project/jinja2-indent/)
+
+## Compatibility
+
+-   `python` >= 3.9
+
+## Installation
+
+Install the latest release with pip:
+
+```shell
+pip install jinja2-indent
+```
+
+## Usage
+
+The `{% indent %}` tag provided by this extension allows you to adjust the indentation level of the content inside the tag block. You can specify the desired width (in spaces), and the extension will reformat the content accordingly. This is particularly useful for aligning nested or indented structures in templates.
+
+### Example
+
+The following example demonstrates how to increase the indentation of a block of text:
+
+```jinja2
+root:
+{% indent 2 %}
+- name: a
+  value: 1
+
+- name: b
+  value: 2
+
+- name: c
+  value: 3
+{% endindent %}
+```
+
+```
+root:
+  - name: a
+    value: 1
+
+  - name: b
+    value: 2
+
+  - name: c
+    value: 3
+```
+
+The following example demonstrates how to remove unnecessary indentation from a block of text:
+
+```jinja2
+- name: a
+  value: 1
+
+{% indent 0 %}
+  - name: b
+    value: 2
+{% endindent %}
+
+- name: c
+  value: 3
+```
+
+```
+- name: a
+  value: 1
+
+- name: b
+  value: 2
+
+- name: c
+  value: 3
+```
+
