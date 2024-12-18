@@ -1,0 +1,1054 @@
+
+    <html>
+    <head><meta charset="utf-8" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+    .page 
+        {padding:50px; margin:100px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; background-color: white; border-radius:10px;}
+    body 
+        {font-family: Verdana, Geneva, Arial, sans-serif; background-color: #EEE;}
+    a 
+        {text-decoration: none;}
+
+    </style>    
+    </head>
+    <body>
+    <div class="page"><style>
+    .container {position: relative; height: 600px;}
+    .centered-element {text-align: center; margin: 0; width:80%; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+    </style>
+    <div class='container'>
+        <div class='centered-element'>
+            
+        <style>
+        .title_logo {
+            width: 350px;
+            height: 130px;
+            margin: 42px auto;
+            background: linear-gradient(to bottom right, white, #006fff);
+            border: 3px solid #8ca5ff;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 60;
+            color: #ededed;
+        }
+        </style>
+        <div class="title_logo">
+            <span>Webslides</span>
+        </div>
+    
+            <h1>Webslides Documentation</h1><br>
+            <p style='line-height: 1.5;'>
+            
+        <table style="width: 100%; text-align: left; font-size: 1em; border-collapse: collapse; border: 0;">
+            <colgroup>
+                <col style="width: 20%;">
+                <col style="width: 80%;">
+            </colgroup>
+            <tbody>
+                <tr style="border: 0;">
+                    <td style="border: 0; padding: 10px; text-decoration: underline; vertical-align: top; text-align: right;">About</td>
+                    <td style="border: 0; padding: 10px;">Webslides is a Python package that creates HTML presentations <b>like this one</b>.<br>It enables easy sharing of Python-generated content such as charts, other visuals and data</td>
+                </tr>
+                
+                <tr style="border: 0;">
+                    <td style="border: 0; padding: 10px; text-decoration: underline; vertical-align: top; text-align: right;">Contents</td>
+                    <td style="border: 0; padding: 10px;">This presentation demonstrates features of the HTML format and should help you get started</td>
+                </tr>
+                
+                <tr style="border: 0;">
+                    <td style="border: 0; padding: 10px; text-decoration: underline; vertical-align: top; text-align: right;">PyPi</td>
+                    <td style="border: 0; padding: 10px;"><a href="https://pypi.org/project/webslides/">https://pypi.org/project/webslides/</a></td>
+                </tr>
+                
+                <!-- more rows here -->
+            </tbody>
+        </table></p>
+        </div>
+    </div><div style="background-color: #FFFFFF; line-height: 1.6; padding:10px;"><HR style="width:20%; margin-left:0;">13 Dec. 2024<br></div></div><div class="page"><h3 id='id_contents'>Contents</h3><table style="line-height: 1.6;"><tr><td style="padding:20px; vertical-align: top;"><span title='Why to use Webslides' style='color: white; background-color: #008AC9; padding:5px;'>WHY</span><br><br><b><span title='Features that beat Microsoft Powerpoint'>Advantages over Powerpoint</span></b><br>&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;<a href='#0'>Dynamic pagelength</a> &#128161;<br>&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;<a href='#1'>Interactive content</a> &#128161;<br>&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;<a href='#2'>Any HTML content will render</a> &#128161;<br>&nbsp;&nbsp;&nbsp;&nbsp;4.&nbsp;<a href='#3'>Styled Pandas Dataframes</a> &#128161;<br>&nbsp;&nbsp;&nbsp;&nbsp;5.&nbsp;<a href='#4'>Super speed updates!</a> &#128161;<br><br><span title='How to use Webslides' style='color: white; background-color: #008AC9; padding:5px;'>HOW</span><br><br><b><span title='Kickstart your project'>Getting Started</span></b><br>&nbsp;&nbsp;&nbsp;&nbsp;6.&nbsp;<a href='#5'>Install and Import</a> &#128161;<br>&nbsp;&nbsp;&nbsp;&nbsp;7.&nbsp;<a href='#6'>Run Demo</a> &#128161;<br>&nbsp;&nbsp;&nbsp;&nbsp;8.&nbsp;<a href='#7'>Hello World</a> &#128161;<br></td></tr></table></div><div class="page"><h3 id='highlights'>Highlights summary &#128161;</h3><span  style='line-height: 1.6;'><br><span title='Why to use Webslides' style='color: white; background-color: #008AC9; padding:5px;'>WHY</span><br><br><b><span title='Features that beat Microsoft Powerpoint'>Advantages over Powerpoint</span></b><br>&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;<a href='#0'>Dynamic pagelength</a>: - Pages can be as long (or short) as needed, like this one!<br>&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;<a href='#1'>Interactive content</a>: - Native Plotly graph ojects can be inserted as content, and they have many interactive features<br>&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;<a href='#1'>Interactive content</a>: - Try zooming in the by dragging a window in the plot. Or toggle visibility of a data series via the legend keys<br>&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;<a href='#2'>Any HTML content will render</a>: - For example this map<br>&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;<a href='#3'>Styled Pandas Dataframes</a>: - Wow, notice that max value marked red<br>&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;<a href='#3'>Styled Pandas Dataframes</a>: - Not to mention the lowest value, marked green<br>&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;<a href='#4'>Super speed updates!</a>: - A key advantage of this presentation form may be that updates only require the <i>press of a button</i><br><br><span title='How to use Webslides' style='color: white; background-color: #008AC9; padding:5px;'>HOW</span><br><br><b><span title='Kickstart your project'>Getting Started</span></b><br>&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;<a href='#5'>Install and Import</a>: - Nothing new here, good old pip install..<br>&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;<a href='#6'>Run Demo</a>: - ws.demo() will generate the html you are reading now<br>&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;<a href='#7'>Hello World</a>: - basic example, demonstrating all available parameters<br></span></div><div class="page"><div class="footer" style="width: 100%; margin: 0 auto; text-align:right;"> <a title="Highlights summary" href="#highlights">&#128161;</a> <a title="Next highlight" href="#1">&#9658;</a> <a id="0" title="Table of contents" href="#id_contents">&#128196;</a> p1</div><h3 class='pagetitle' style='line-height: 2;'><span style='color: white; background-color: #008AC9; padding:5px;' title='Why to use Webslides'>WHY</span> <span style='font-weight: normal;' title='Features that beat Microsoft Powerpoint'>Advantages over Powerpoint</span>: <span title='dynamic_lenght'>Dynamic pagelength</span></h3><div style="background-color: #EBEBEB; line-height: 1.6; padding:10px;">- Pages can be as long (or short) as needed, like this one!<br></div><div style='padding:3%'>Nothing much on this page really, that's why its so short 😉</div><div style="background-color: #FFFFFF; line-height: 1.6; padding:10px;"><HR style="width:20%; margin-left:0;">- and adding a footer can be usefull too..<br>- ps. Have you noted the page navigation on the top right of the page?<br>- &#x1F4A1;: this marks pages with a highlight. If a page has no highlights (remarks in grey area) it is not shown in the highlight summary page nor marked in the table of contents<br></div></div><div class="page"><div class="footer" style="width: 100%; margin: 0 auto; text-align:right;"><a title="Previous highlight" href="#0">&#9664;</a> <a title="Highlights summary" href="#highlights">&#128161;</a> <a title="Next highlight" href="#2">&#9658;</a> <a id="1" title="Table of contents" href="#id_contents">&#128196;</a> p2</div><h3 class='pagetitle' style='line-height: 2;'><span style='color: white; background-color: #008AC9; padding:5px;' title='Why to use Webslides'>WHY</span> <span style='font-weight: normal;' title='Features that beat Microsoft Powerpoint'>Advantages over Powerpoint</span>: <span title='interactive_content'>Interactive content</span></h3><div style="background-color: #EBEBEB; line-height: 1.6; padding:10px;">- Native Plotly graph ojects can be inserted as content, and they have many interactive features<br>- Try zooming in the by dragging a window in the plot. Or toggle visibility of a data series via the legend keys<br></div><div style='padding:3%'><div>                            <div id="fbc15fc5-bd2d-4a07-b701-1436ba0b0844" class="plotly-graph-div" style="height:700px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("fbc15fc5-bd2d-4a07-b701-1436ba0b0844")) {                    Plotly.newPlot(                        "fbc15fc5-bd2d-4a07-b701-1436ba0b0844",                        [{"customdata":[[0.2],[0.2],[0.2],[0.2],[0.2],[0.4],[0.3],[0.2],[0.2],[0.1],[0.2],[0.2],[0.1],[0.1],[0.2],[0.4],[0.4],[0.3],[0.3],[0.3],[0.2],[0.4],[0.2],[0.5],[0.2],[0.2],[0.4],[0.2],[0.2],[0.2],[0.2],[0.4],[0.1],[0.2],[0.1],[0.2],[0.2],[0.1],[0.2],[0.2],[0.3],[0.3],[0.2],[0.6],[0.4],[0.3],[0.2],[0.2],[0.2],[0.2]],"hovertemplate":"species=setosa\u003cbr\u003esepal_width=%{x}\u003cbr\u003esepal_length=%{y}\u003cbr\u003epetal_length=%{marker.size}\u003cbr\u003epetal_width=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"setosa","marker":{"color":"#636efa","size":[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5,1.5,1.6,1.4,1.1,1.2,1.5,1.3,1.4,1.7,1.5,1.7,1.5,1.0,1.7,1.9,1.6,1.6,1.5,1.4,1.6,1.6,1.5,1.5,1.4,1.5,1.2,1.3,1.5,1.3,1.5,1.3,1.3,1.3,1.6,1.9,1.4,1.6,1.4,1.5,1.4],"sizemode":"area","sizeref":0.01725,"symbol":"circle"},"mode":"markers","name":"setosa","orientation":"v","showlegend":true,"x":[3.5,3.0,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1,3.7,3.4,3.0,3.0,4.0,4.4,3.9,3.5,3.8,3.8,3.4,3.7,3.6,3.3,3.4,3.0,3.4,3.5,3.4,3.2,3.1,3.4,4.1,4.2,3.1,3.2,3.5,3.1,3.0,3.4,3.5,2.3,3.2,3.5,3.8,3.0,3.8,3.2,3.7,3.3],"xaxis":"x","y":[5.1,4.9,4.7,4.6,5.0,5.4,4.6,5.0,4.4,4.9,5.4,4.8,4.8,4.3,5.8,5.7,5.4,5.1,5.7,5.1,5.4,5.1,4.6,5.1,4.8,5.0,5.0,5.2,5.2,4.7,4.8,5.4,5.2,5.5,4.9,5.0,5.5,4.9,4.4,5.1,5.0,4.5,4.4,5.0,5.1,4.8,5.1,4.6,5.3,5.0],"yaxis":"y","type":"scatter"},{"customdata":[[1.4],[1.5],[1.5],[1.3],[1.5],[1.3],[1.6],[1.0],[1.3],[1.4],[1.0],[1.5],[1.0],[1.4],[1.3],[1.4],[1.5],[1.0],[1.5],[1.1],[1.8],[1.3],[1.5],[1.2],[1.3],[1.4],[1.4],[1.7],[1.5],[1.0],[1.1],[1.0],[1.2],[1.6],[1.5],[1.6],[1.5],[1.3],[1.3],[1.3],[1.2],[1.4],[1.2],[1.0],[1.3],[1.2],[1.3],[1.3],[1.1],[1.3]],"hovertemplate":"species=versicolor\u003cbr\u003esepal_width=%{x}\u003cbr\u003esepal_length=%{y}\u003cbr\u003epetal_length=%{marker.size}\u003cbr\u003epetal_width=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"versicolor","marker":{"color":"#EF553B","size":[4.7,4.5,4.9,4.0,4.6,4.5,4.7,3.3,4.6,3.9,3.5,4.2,4.0,4.7,3.6,4.4,4.5,4.1,4.5,3.9,4.8,4.0,4.9,4.7,4.3,4.4,4.8,5.0,4.5,3.5,3.8,3.7,3.9,5.1,4.5,4.5,4.7,4.4,4.1,4.0,4.4,4.6,4.0,3.3,4.2,4.2,4.2,4.3,3.0,4.1],"sizemode":"area","sizeref":0.01725,"symbol":"circle"},"mode":"markers","name":"versicolor","orientation":"v","showlegend":true,"x":[3.2,3.2,3.1,2.3,2.8,2.8,3.3,2.4,2.9,2.7,2.0,3.0,2.2,2.9,2.9,3.1,3.0,2.7,2.2,2.5,3.2,2.8,2.5,2.8,2.9,3.0,2.8,3.0,2.9,2.6,2.4,2.4,2.7,2.7,3.0,3.4,3.1,2.3,3.0,2.5,2.6,3.0,2.6,2.3,2.7,3.0,2.9,2.9,2.5,2.8],"xaxis":"x","y":[7.0,6.4,6.9,5.5,6.5,5.7,6.3,4.9,6.6,5.2,5.0,5.9,6.0,6.1,5.6,6.7,5.6,5.8,6.2,5.6,5.9,6.1,6.3,6.1,6.4,6.6,6.8,6.7,6.0,5.7,5.5,5.5,5.8,6.0,5.4,6.0,6.7,6.3,5.6,5.5,5.5,6.1,5.8,5.0,5.6,5.7,5.7,6.2,5.1,5.7],"yaxis":"y","type":"scatter"},{"customdata":[[2.5],[1.9],[2.1],[1.8],[2.2],[2.1],[1.7],[1.8],[1.8],[2.5],[2.0],[1.9],[2.1],[2.0],[2.4],[2.3],[1.8],[2.2],[2.3],[1.5],[2.3],[2.0],[2.0],[1.8],[2.1],[1.8],[1.8],[1.8],[2.1],[1.6],[1.9],[2.0],[2.2],[1.5],[1.4],[2.3],[2.4],[1.8],[1.8],[2.1],[2.4],[2.3],[1.9],[2.3],[2.5],[2.3],[1.9],[2.0],[2.3],[1.8]],"hovertemplate":"species=virginica\u003cbr\u003esepal_width=%{x}\u003cbr\u003esepal_length=%{y}\u003cbr\u003epetal_length=%{marker.size}\u003cbr\u003epetal_width=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"virginica","marker":{"color":"#00cc96","size":[6.0,5.1,5.9,5.6,5.8,6.6,4.5,6.3,5.8,6.1,5.1,5.3,5.5,5.0,5.1,5.3,5.5,6.7,6.9,5.0,5.7,4.9,6.7,4.9,5.7,6.0,4.8,4.9,5.6,5.8,6.1,6.4,5.6,5.1,5.6,6.1,5.6,5.5,4.8,5.4,5.6,5.1,5.1,5.9,5.7,5.2,5.0,5.2,5.4,5.1],"sizemode":"area","sizeref":0.01725,"symbol":"circle"},"mode":"markers","name":"virginica","orientation":"v","showlegend":true,"x":[3.3,2.7,3.0,2.9,3.0,3.0,2.5,2.9,2.5,3.6,3.2,2.7,3.0,2.5,2.8,3.2,3.0,3.8,2.6,2.2,3.2,2.8,2.8,2.7,3.3,3.2,2.8,3.0,2.8,3.0,2.8,3.8,2.8,2.8,2.6,3.0,3.4,3.1,3.0,3.1,3.1,3.1,2.7,3.2,3.3,3.0,2.5,3.0,3.4,3.0],"xaxis":"x","y":[6.3,5.8,7.1,6.3,6.5,7.6,4.9,7.3,6.7,7.2,6.5,6.4,6.8,5.7,5.8,6.4,6.5,7.7,7.7,6.0,6.9,5.6,7.7,6.3,6.7,7.2,6.2,6.1,6.4,7.2,7.4,7.9,6.4,6.3,6.1,7.7,6.3,6.4,6.0,6.9,6.7,6.9,5.8,6.8,6.7,6.7,6.3,6.5,6.2,5.9],"yaxis":"y","type":"scatter"}],                        {"height":700,"legend":{"itemsizing":"constant","title":{"text":"species"},"tracegroupgap":0},"template":{"data":{"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"title":{"text":"Iris Dataset: Sepal Dimensions and Petal Characteristics by Species"},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"sepal_width"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"sepal_length"}}},                        {"responsive": true}                    )                };                            </script>        </div></div><div style="background-color: #FFFFFF; line-height: 1.6; padding:10px;"><HR style="width:20%; margin-left:0;">- Link to Plotly gallery <a href="https://plotly.com/python/">here</a><br></div></div><div class="page"><div class="footer" style="width: 100%; margin: 0 auto; text-align:right;"><a title="Previous highlight" href="#1">&#9664;</a> <a title="Highlights summary" href="#highlights">&#128161;</a> <a title="Next highlight" href="#3">&#9658;</a> <a id="2" title="Table of contents" href="#id_contents">&#128196;</a> p3</div><h3 class='pagetitle' style='line-height: 2;'><span style='color: white; background-color: #008AC9; padding:5px;' title='Why to use Webslides'>WHY</span> <span style='font-weight: normal;' title='Features that beat Microsoft Powerpoint'>Advantages over Powerpoint</span>: <span title='html_format'>Any HTML content will render</span></h3><div style="background-color: #EBEBEB; line-height: 1.6; padding:10px;">- For example this map<br></div><div style='padding:3%'><div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    
+        &lt;script&gt;
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        &lt;/script&gt;
+    
+    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_88c625b243f75fc8ef0ad90c010f7b91 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_88c625b243f75fc8ef0ad90c010f7b91&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_88c625b243f75fc8ef0ad90c010f7b91 = L.map(
+                &quot;map_88c625b243f75fc8ef0ad90c010f7b91&quot;,
+                {
+                    center: [52.1326, 5.2913],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;maxBounds&quot;: null,
+  &quot;zoom&quot;: 8,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5715361456fc0c55245c3c56b7a11ee4 = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_5715361456fc0c55245c3c56b7a11ee4.addTo(map_88c625b243f75fc8ef0ad90c010f7b91);
+        
+    
+            var feature_group_ceb696177799638795d3d7900acd13da = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_696696b6b7f239d302f5d4ef8d9d41f0 = L.marker(
+                [51.9225, 4.4792],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_4ec22c53885ee5a0e7517e4fe1463306 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_696696b6b7f239d302f5d4ef8d9d41f0.setIcon(icon_4ec22c53885ee5a0e7517e4fe1463306);
+        
+    
+            marker_696696b6b7f239d302f5d4ef8d9d41f0.bindTooltip(
+                `&lt;div&gt;
+                     Rotterdam
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_57d73662851d969d98cad2944a230d4f = L.marker(
+                [52.0907, 5.1214],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_c868a9a4b419eb0ec3a07ebf01002d0b = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_57d73662851d969d98cad2944a230d4f.setIcon(icon_c868a9a4b419eb0ec3a07ebf01002d0b);
+        
+    
+            marker_57d73662851d969d98cad2944a230d4f.bindTooltip(
+                `&lt;div&gt;
+                     Utrecht
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_fba37efc5150598446e0def1ea0a1b5d = L.marker(
+                [52.0705, 4.3007],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_33c1ffa539e1f7354973989f50a611d3 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_fba37efc5150598446e0def1ea0a1b5d.setIcon(icon_33c1ffa539e1f7354973989f50a611d3);
+        
+    
+            marker_fba37efc5150598446e0def1ea0a1b5d.bindTooltip(
+                `&lt;div&gt;
+                     The Hague
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_360806c4252931ea046b30f5baf4c66c = L.marker(
+                [53.2194, 6.5665],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_045bde98a29bd06f0cf83721d721808e = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_360806c4252931ea046b30f5baf4c66c.setIcon(icon_045bde98a29bd06f0cf83721d721808e);
+        
+    
+            marker_360806c4252931ea046b30f5baf4c66c.bindTooltip(
+                `&lt;div&gt;
+                     Groningen
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_88faaa2c67034f4db42fbf509b1dbf39 = L.marker(
+                [51.9843, 5.8987],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_98b8011341993b74a37ef7cffd52755b = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_88faaa2c67034f4db42fbf509b1dbf39.setIcon(icon_98b8011341993b74a37ef7cffd52755b);
+        
+    
+            marker_88faaa2c67034f4db42fbf509b1dbf39.bindTooltip(
+                `&lt;div&gt;
+                     Arnhem
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_8cdf3c40c68309af84697bca34c7a3bc = L.marker(
+                [50.8483, 5.6889],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_66b5f82a942f7f94129c57b6328a4e68 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_8cdf3c40c68309af84697bca34c7a3bc.setIcon(icon_66b5f82a942f7f94129c57b6328a4e68);
+        
+    
+            marker_8cdf3c40c68309af84697bca34c7a3bc.bindTooltip(
+                `&lt;div&gt;
+                     Maastricht
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_04f37dc67cd2c324e12df655d403ab97 = L.marker(
+                [52.9959, 6.5622],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_012c4e9279f8b460ad252e320933de23 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_04f37dc67cd2c324e12df655d403ab97.setIcon(icon_012c4e9279f8b460ad252e320933de23);
+        
+    
+            marker_04f37dc67cd2c324e12df655d403ab97.bindTooltip(
+                `&lt;div&gt;
+                     Assen
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_1aa251b8fe62c658d2435d4517fce8bb = L.marker(
+                [53.2014, 5.8086],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_ce07786aa7346a225ba4d1fa15b1ed0a = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_1aa251b8fe62c658d2435d4517fce8bb.setIcon(icon_ce07786aa7346a225ba4d1fa15b1ed0a);
+        
+    
+            marker_1aa251b8fe62c658d2435d4517fce8bb.bindTooltip(
+                `&lt;div&gt;
+                     Leeuwarden
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_5f7ce3197de7b8a2c3bab44ec3912d20 = L.marker(
+                [52.3874, 4.6387],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_29566fb7e2934b02dc5de273e2bdde99 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_5f7ce3197de7b8a2c3bab44ec3912d20.setIcon(icon_29566fb7e2934b02dc5de273e2bdde99);
+        
+    
+            marker_5f7ce3197de7b8a2c3bab44ec3912d20.bindTooltip(
+                `&lt;div&gt;
+                     Haarlem
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            feature_group_ceb696177799638795d3d7900acd13da.addTo(map_88c625b243f75fc8ef0ad90c010f7b91);
+        
+    
+            var feature_group_c5441a5cb673d893ed5ca310d365209f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_e812ca7782f1b24a309c1ccf77e28776 = L.marker(
+                [52.3676, 4.9041],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_c5441a5cb673d893ed5ca310d365209f);
+        
+    
+            var icon_4f828b60c564ae926211aa1d458f2e3e = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;star&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_e812ca7782f1b24a309c1ccf77e28776.setIcon(icon_4f828b60c564ae926211aa1d458f2e3e);
+        
+    
+            marker_e812ca7782f1b24a309c1ccf77e28776.bindTooltip(
+                `&lt;div&gt;
+                     Amsterdam
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            feature_group_c5441a5cb673d893ed5ca310d365209f.addTo(map_88c625b243f75fc8ef0ad90c010f7b91);
+        
+    
+            var layer_control_5c953c6d86f6e2f51a97291ec118abe8_layers = {
+                base_layers : {
+                    &quot;openstreetmap&quot; : tile_layer_5715361456fc0c55245c3c56b7a11ee4,
+                },
+                overlays :  {
+                    &quot;Province Capitals&quot; : feature_group_ceb696177799638795d3d7900acd13da,
+                    &quot;Country Capital&quot; : feature_group_c5441a5cb673d893ed5ca310d365209f,
+                },
+            };
+            let layer_control_5c953c6d86f6e2f51a97291ec118abe8 = L.control.layers(
+                layer_control_5c953c6d86f6e2f51a97291ec118abe8_layers.base_layers,
+                layer_control_5c953c6d86f6e2f51a97291ec118abe8_layers.overlays,
+                {
+  &quot;position&quot;: &quot;topleft&quot;,
+  &quot;collapsed&quot;: false,
+  &quot;autoZIndex&quot;: true,
+}
+            ).addTo(map_88c625b243f75fc8ef0ad90c010f7b91);
+
+        
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div><div style="background-color: #FFFFFF; line-height: 1.6; padding:10px;"><HR style="width:20%; margin-left:0;">- this map was created with Folium (<a href="https://python-visualization.github.io/folium/">docs</a>)<br></div></div><div class="page"><div class="footer" style="width: 100%; margin: 0 auto; text-align:right;"><a title="Previous highlight" href="#2">&#9664;</a> <a title="Highlights summary" href="#highlights">&#128161;</a> <a title="Next highlight" href="#4">&#9658;</a> <a id="3" title="Table of contents" href="#id_contents">&#128196;</a> p4</div><h3 class='pagetitle' style='line-height: 2;'><span style='color: white; background-color: #008AC9; padding:5px;' title='Why to use Webslides'>WHY</span> <span style='font-weight: normal;' title='Features that beat Microsoft Powerpoint'>Advantages over Powerpoint</span>: <span title='styling_df'>Styled Pandas Dataframes</span></h3><div style="background-color: #EBEBEB; line-height: 1.6; padding:10px;">- Wow, notice that max value marked red<br>- Not to mention the lowest value, marked green<br></div><div style='padding:3%'><style type="text/css">
+#T_15e92 th {
+  padding: 3px 10px 3px 10px;
+}
+#T_15e92_row0_col0, #T_15e92_row6_col3 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(171, 176, 245, 1);
+}
+#T_15e92_row0_col1, #T_15e92_row1_col3, #T_15e92_row6_col4 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(207, 210, 249, 1);
+}
+#T_15e92_row0_col2 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(248, 248, 254, 1);
+}
+#T_15e92_row0_col3 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(92, 102, 235, 1);
+}
+#T_15e92_row0_col4 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(114, 123, 238, 1);
+}
+#T_15e92_row1_col0 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(157, 163, 243, 1);
+}
+#T_15e92_row1_col1 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(193, 196, 247, 1);
+}
+#T_15e92_row1_col2 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(90, 99, 235, 1);
+}
+#T_15e92_row1_col4, #T_15e92_row9_col0 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(135, 142, 241, 1);
+}
+#T_15e92_row2_col0 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(187, 191, 247, 1);
+}
+#T_15e92_row2_col1 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(208, 211, 249, 1);
+}
+#T_15e92_row2_col2 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(172, 177, 245, 1);
+}
+#T_15e92_row2_col3 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(214, 217, 250, 1);
+}
+#T_15e92_row2_col4 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(91, 100, 235, 1);
+}
+#T_15e92_row3_col0 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(95, 105, 236, 1);
+}
+#T_15e92_row3_col1 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(224, 226, 251, 1);
+}
+#T_15e92_row3_col2 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(177, 182, 246, 1);
+}
+#T_15e92_row3_col3 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(105, 114, 237, 1);
+}
+#T_15e92_row3_col4 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(93, 103, 236, 1);
+}
+#T_15e92_row4_col0 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(242, 243, 253, 1);
+}
+#T_15e92_row4_col1 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(183, 188, 246, 1);
+}
+#T_15e92_row4_col2 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(183, 187, 246, 1);
+}
+#T_15e92_row4_col3 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(202, 206, 249, 1);
+}
+#T_15e92_row4_col4 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(214, 216, 250, 1);
+}
+#T_15e92_row5_col0, #T_15e92_row8_col2 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(90, 100, 235, 1);
+}
+#T_15e92_row5_col1 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(98, 107, 236, 1);
+}
+#T_15e92_row5_col2 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(115, 124, 238, 1);
+}
+#T_15e92_row5_col3 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(233, 234, 252, 1);
+}
+#T_15e92_row5_col4 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(156, 162, 243, 1);
+}
+#T_15e92_row6_col0 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(231, 233, 252, 1);
+}
+#T_15e92_row6_col1 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(243, 244, 254, 1);
+}
+#T_15e92_row6_col2 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(135, 143, 241, 1);
+}
+#T_15e92_row7_col0 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(163, 169, 244, 1);
+}
+#T_15e92_row7_col1 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(222, 224, 251, 1);
+}
+#T_15e92_row7_col2 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(192, 196, 247, 1);
+}
+#T_15e92_row7_col3 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(236, 237, 253, 1);
+}
+#T_15e92_row7_col4 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 1);
+  border: 5px solid green;
+}
+#T_15e92_row8_col0 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(203, 206, 249, 1);
+}
+#T_15e92_row8_col1 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(126, 134, 239, 1);
+}
+#T_15e92_row8_col3 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(226, 228, 252, 1);
+}
+#T_15e92_row8_col4 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(89, 99, 235, 1);
+  border: 5px solid red;
+}
+#T_15e92_row9_col1 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(197, 201, 248, 1);
+}
+#T_15e92_row9_col2 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(103, 112, 237, 1);
+}
+#T_15e92_row9_col3 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(99, 108, 236, 1);
+}
+#T_15e92_row9_col4 {
+  padding: 3px 10px 3px 10px;
+  margin: 3px;
+  text-align: right;
+  background-color: rgba(89, 99, 235, 1);
+}
+</style>
+<table id="T_15e92">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_15e92_level0_col0" class="col_heading level0 col0" >column1</th>
+      <th id="T_15e92_level0_col1" class="col_heading level0 col1" >column2</th>
+      <th id="T_15e92_level0_col2" class="col_heading level0 col2" >column3</th>
+      <th id="T_15e92_level0_col3" class="col_heading level0 col3" >column4</th>
+      <th id="T_15e92_level0_col4" class="col_heading level0 col4" >column5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_15e92_level0_row0" class="row_heading level0 row0" >row1</th>
+      <td id="T_15e92_row0_col0" class="data row0 col0" >50%</td>
+      <td id="T_15e92_row0_col1" class="data row0 col1" >29%</td>
+      <td id="T_15e92_row0_col2" class="data row0 col2" >6%</td>
+      <td id="T_15e92_row0_col3" class="data row0 col3" >95%</td>
+      <td id="T_15e92_row0_col4" class="data row0 col4" >82%</td>
+    </tr>
+    <tr>
+      <th id="T_15e92_level0_row1" class="row_heading level0 row1" >row2</th>
+      <td id="T_15e92_row1_col0" class="data row1 col0" >58%</td>
+      <td id="T_15e92_row1_col1" class="data row1 col1" >38%</td>
+      <td id="T_15e92_row1_col2" class="data row1 col2" >96%</td>
+      <td id="T_15e92_row1_col3" class="data row1 col3" >29%</td>
+      <td id="T_15e92_row1_col4" class="data row1 col4" >70%</td>
+    </tr>
+    <tr>
+      <th id="T_15e92_level0_row2" class="row_heading level0 row2" >row3</th>
+      <td id="T_15e92_row2_col0" class="data row2 col0" >41%</td>
+      <td id="T_15e92_row2_col1" class="data row2 col1" >29%</td>
+      <td id="T_15e92_row2_col2" class="data row2 col2" >49%</td>
+      <td id="T_15e92_row2_col3" class="data row2 col3" >25%</td>
+      <td id="T_15e92_row2_col4" class="data row2 col4" >96%</td>
+    </tr>
+    <tr>
+      <th id="T_15e92_level0_row3" class="row_heading level0 row3" >row4</th>
+      <td id="T_15e92_row3_col0" class="data row3 col0" >93%</td>
+      <td id="T_15e92_row3_col1" class="data row3 col1" >20%</td>
+      <td id="T_15e92_row3_col2" class="data row3 col2" >46%</td>
+      <td id="T_15e92_row3_col3" class="data row3 col3" >87%</td>
+      <td id="T_15e92_row3_col4" class="data row3 col4" >94%</td>
+    </tr>
+    <tr>
+      <th id="T_15e92_level0_row4" class="row_heading level0 row4" >row5</th>
+      <td id="T_15e92_row4_col0" class="data row4 col0" >9%</td>
+      <td id="T_15e92_row4_col1" class="data row4 col1" >43%</td>
+      <td id="T_15e92_row4_col2" class="data row4 col2" >43%</td>
+      <td id="T_15e92_row4_col3" class="data row4 col3" >32%</td>
+      <td id="T_15e92_row4_col4" class="data row4 col4" >26%</td>
+    </tr>
+    <tr>
+      <th id="T_15e92_level0_row5" class="row_heading level0 row5" >row6</th>
+      <td id="T_15e92_row5_col0" class="data row5 col0" >96%</td>
+      <td id="T_15e92_row5_col1" class="data row5 col1" >92%</td>
+      <td id="T_15e92_row5_col2" class="data row5 col2" >82%</td>
+      <td id="T_15e92_row5_col3" class="data row5 col3" >15%</td>
+      <td id="T_15e92_row5_col4" class="data row5 col4" >58%</td>
+    </tr>
+    <tr>
+      <th id="T_15e92_level0_row6" class="row_heading level0 row6" >row7</th>
+      <td id="T_15e92_row6_col0" class="data row6 col0" >16%</td>
+      <td id="T_15e92_row6_col1" class="data row6 col1" >9%</td>
+      <td id="T_15e92_row6_col2" class="data row6 col2" >70%</td>
+      <td id="T_15e92_row6_col3" class="data row6 col3" >50%</td>
+      <td id="T_15e92_row6_col4" class="data row6 col4" >30%</td>
+    </tr>
+    <tr>
+      <th id="T_15e92_level0_row7" class="row_heading level0 row7" >row8</th>
+      <td id="T_15e92_row7_col0" class="data row7 col0" >54%</td>
+      <td id="T_15e92_row7_col1" class="data row7 col1" >21%</td>
+      <td id="T_15e92_row7_col2" class="data row7 col2" >38%</td>
+      <td id="T_15e92_row7_col3" class="data row7 col3" >13%</td>
+      <td id="T_15e92_row7_col4" class="data row7 col4" >2%</td>
+    </tr>
+    <tr>
+      <th id="T_15e92_level0_row8" class="row_heading level0 row8" >row9</th>
+      <td id="T_15e92_row8_col0" class="data row8 col0" >32%</td>
+      <td id="T_15e92_row8_col1" class="data row8 col1" >75%</td>
+      <td id="T_15e92_row8_col2" class="data row8 col2" >96%</td>
+      <td id="T_15e92_row8_col3" class="data row8 col3" >18%</td>
+      <td id="T_15e92_row8_col4" class="data row8 col4" >96%</td>
+    </tr>
+    <tr>
+      <th id="T_15e92_level0_row9" class="row_heading level0 row9" >row10</th>
+      <td id="T_15e92_row9_col0" class="data row9 col0" >70%</td>
+      <td id="T_15e92_row9_col1" class="data row9 col1" >35%</td>
+      <td id="T_15e92_row9_col2" class="data row9 col2" >89%</td>
+      <td id="T_15e92_row9_col3" class="data row9 col3" >91%</td>
+      <td id="T_15e92_row9_col4" class="data row9 col4" >96%</td>
+    </tr>
+  </tbody>
+</table>
+</div><div style="background-color: #FFFFFF; line-height: 1.6; padding:10px;"><HR style="width:20%; margin-left:0;">- styling of a pandas dataframe can be done by creating a styler object and convert that to html<br>- ie. styled_df = df.style.background_gradient(cmap='Blues') and html = styled_df.to_html()<br></div></div><div class="page"><div class="footer" style="width: 100%; margin: 0 auto; text-align:right;"><a title="Previous highlight" href="#3">&#9664;</a> <a title="Highlights summary" href="#highlights">&#128161;</a> <a title="Next highlight" href="#5">&#9658;</a> <a id="4" title="Table of contents" href="#id_contents">&#128196;</a> p5</div><h3 class='pagetitle' style='line-height: 2;'><span style='color: white; background-color: #008AC9; padding:5px;' title='Why to use Webslides'>WHY</span> <span style='font-weight: normal;' title='Features that beat Microsoft Powerpoint'>Advantages over Powerpoint</span>: <span title='updates'>Super speed updates!</span></h3><div style="background-color: #EBEBEB; line-height: 1.6; padding:10px;">- A key advantage of this presentation form may be that updates only require the <i>press of a button</i><br></div><div style='padding:3%'>Very often data, analysis conlusions and other content is revised in getting to a final version of a presentation. Since all is in python script, updates of the presentation only requires the press of the ▶ Run button.</div><div style="background-color: #FFFFFF; line-height: 1.6; padding:10px;"><HR style="width:20%; margin-left:0;">- and pagination will automatically adjust if new content is inserted<br></div></div><div class="page"><div class="footer" style="width: 100%; margin: 0 auto; text-align:right;"><a title="Previous highlight" href="#4">&#9664;</a> <a title="Highlights summary" href="#highlights">&#128161;</a> <a title="Next highlight" href="#6">&#9658;</a> <a id="5" title="Table of contents" href="#id_contents">&#128196;</a> p6</div><h3 class='pagetitle' style='line-height: 2;'><span style='color: white; background-color: #008AC9; padding:5px;' title='How to use Webslides'>HOW</span> <span style='font-weight: normal;' title='Kickstart your project'>Getting Started</span>: <span title='install'>Install and Import</span></h3><div style="background-color: #EBEBEB; line-height: 1.6; padding:10px;">- Nothing new here, good old pip install..<br></div><div style='padding:3%'><div style="background-color:#fdffc7; display: inline-block;font-size:1.1em;padding:15px;"><pre><code>#install package<br>pip install webslides<br><br>#import package<br>import webslides as ws</code></pre></div></div></div><div class="page"><div class="footer" style="width: 100%; margin: 0 auto; text-align:right;"><a title="Previous highlight" href="#5">&#9664;</a> <a title="Highlights summary" href="#highlights">&#128161;</a> <a title="Next highlight" href="#7">&#9658;</a> <a id="6" title="Table of contents" href="#id_contents">&#128196;</a> p7</div><h3 class='pagetitle' style='line-height: 2;'><span style='color: white; background-color: #008AC9; padding:5px;' title='How to use Webslides'>HOW</span> <span style='font-weight: normal;' title='Kickstart your project'>Getting Started</span>: <span title='run_demo'>Run Demo</span></h3><div style="background-color: #EBEBEB; line-height: 1.6; padding:10px;">- ws.demo() will generate the html you are reading now<br></div><div style='padding:3%'><div style="background-color:#fdffc7; display: inline-block;font-size:1.1em;padding:15px;"><pre><code>#import<br>import webslides as ws<br><br>#create and open this demo.html in browser<br>ws.demo()</code></pre></div></div><div style="background-color: #FFFFFF; line-height: 1.6; padding:10px;"><HR style="width:20%; margin-left:0;">- html output file, in this case 'demo.html', is always saved to a directory 'wsout'<br></div></div><div class="page"><div class="footer" style="width: 100%; margin: 0 auto; text-align:right;"><a title="Previous highlight" href="#6">&#9664;</a> <a title="Highlights summary" href="#highlights">&#128161;</a>  <a id="7" title="Table of contents" href="#id_contents">&#128196;</a> p8</div><h3 class='pagetitle' style='line-height: 2;'><span style='color: white; background-color: #008AC9; padding:5px;' title='How to use Webslides'>HOW</span> <span style='font-weight: normal;' title='Kickstart your project'>Getting Started</span>: <span title='hello_world'>Hello World</span></h3><div style="background-color: #EBEBEB; line-height: 1.6; padding:10px;">- basic example, demonstrating all available parameters<br></div><div style='padding:3%'><div style="font-size:1.1em;padding:15px;background-color:#fdffc7; display: inline-block;"><pre><code>
+# imports
+
+
+
+
+import webslides as ws
+import plotly.graph_objects as go
+
+
+# simple plotly fig
+def simple_fig():
+    x = list(range(1, 11))
+    y1 = [2 * i for i in x]
+    y2 = [3 * i for i in x]
+    trace1 = go.Scatter(x=x, y=y1, mode='markers+lines', name='Line 1')
+    trace2 = go.Scatter(x=x, y=y2, mode='markers+lines', name='Line 2')
+    fig = go.Figure()
+    fig.add_trace(trace1)
+    fig.add_trace(trace2)
+    fig.update_layout(title='Simple Plotly Line Figure with Two Lines')
+    return fig
+
+
+# title page
+title_page = {
+    'title_image_url': '',
+    'title': 'Title of Title Page',
+    'summary': {'Summary item 1': 'item text 1', 'Summary item 2': 'item text 2'},
+    'footer': ['- use custom title image via the title_image_url parameter', '- footer2']
+}
+
+# tooltips (optional!)
+tooltips = {'topcats': {'Topcat A': 'Put your own tooltip text here',
+                        'Topcat B': 'Put your own tooltip text here'},
+            'subcats': {'Subcat X': 'Tooltip text for subcat x here',
+                        'Subcat Y': 'Tooltip text for subcat y yere'}}
+
+# content pages
+content = {
+    'Topcat A': {
+        'Subcat X': {
+            'page1': {
+                'title': 'Page Title 1 - HTML body',
+                'highlights': ['- highlight 1', '- highlight 2'],
+                'body': 'Content 1: this is a &lt;b&gt;HTML string&lt;/b&gt;',
+                'footer': ['- footer 1a', '- &lt;i&gt;italic footer 1b&lt;/i&gt;'],
+                'show': True},
+            'page2': {
+                'title': 'Page Title 2 - No highlights',
+                'body': 'Content 2: this is a &lt;b&gt;HTML string&lt;/b&gt;',
+                'footer': ['- Note: No highlights, so no lightbulb in the index page', '- &lt;i&gt;italic footer 2b&lt;/i&gt;'],
+                'show': True}
+        },
+        'Subcat Y': {
+            'page3': {
+                'title': 'Page Title 3 - Plotly fig !',
+                'highlights': ['- highlight 3', '- note: no footer on this page'],
+                'body': simple_fig(),
+                'show': True}
+        }
+    },
+    'Topcat B': {
+        'Subcat Z': {
+            'page4':
+                {
+                    'title': 'Page Title 4 - Different topcat',
+                    'highlights': ['- highlight 5', '- highlight 6'],
+                    'body': 'Content 3',
+                    'footer': ['- footer 4a', '- footer 4b'],
+                    'show': True
+                }
+        }
+    }
+}
+
+# MAIN
+ws.create(content=content
+          , title_page=title_page
+          , fname='webslides_hello_world.html'
+          , open_in_browser=True
+          , show_index_page=True
+          , show_topcat=True
+          , show_subcat=True
+          , show_highlights_page=True
+          , show_highlights_only=False
+          , tooltips=tooltips)
+</code></pre></div>
+<br><br><button style="font-size: 1.3em; background-color: #00bb00;color: white;border-color: #c7c7c7 !important; border-radius: 6px;" onclick="navigator.clipboard.writeText(`# imports
+
+
+
+
+import webslides as ws
+import plotly.graph_objects as go
+
+
+# simple plotly fig
+def simple_fig():
+    x = list(range(1, 11))
+    y1 = [2 * i for i in x]
+    y2 = [3 * i for i in x]
+    trace1 = go.Scatter(x=x, y=y1, mode='markers+lines', name='Line 1')
+    trace2 = go.Scatter(x=x, y=y2, mode='markers+lines', name='Line 2')
+    fig = go.Figure()
+    fig.add_trace(trace1)
+    fig.add_trace(trace2)
+    fig.update_layout(title='Simple Plotly Line Figure with Two Lines')
+    return fig
+
+
+# title page
+title_page = {
+    'title_image_url': '',
+    'title': 'Title of Title Page',
+    'summary': {'Summary item 1': 'item text 1', 'Summary item 2': 'item text 2'},
+    'footer': ['- use custom title image via the title_image_url parameter', '- footer2']
+}
+
+# tooltips (optional!)
+tooltips = {'topcats': {'Topcat A': 'Put your own tooltip text here',
+                        'Topcat B': 'Put your own tooltip text here'},
+            'subcats': {'Subcat X': 'Tooltip text for subcat x here',
+                        'Subcat Y': 'Tooltip text for subcat y yere'}}
+
+# content pages
+content = {
+    'Topcat A': {
+        'Subcat X': {
+            'page1': {
+                'title': 'Page Title 1 - HTML body',
+                'highlights': ['- highlight 1', '- highlight 2'],
+                'body': 'Content 1: this is a &lt;b&gt;HTML string&lt;/b&gt;',
+                'footer': ['- footer 1a', '- &lt;i&gt;italic footer 1b&lt;/i&gt;'],
+                'show': True},
+            'page2': {
+                'title': 'Page Title 2 - No highlights',
+                'body': 'Content 2: this is a &lt;b&gt;HTML string&lt;/b&gt;',
+                'footer': ['- Note: No highlights, so no lightbulb in the index page', '- &lt;i&gt;italic footer 2b&lt;/i&gt;'],
+                'show': True}
+        },
+        'Subcat Y': {
+            'page3': {
+                'title': 'Page Title 3 - Plotly fig !',
+                'highlights': ['- highlight 3', '- note: no footer on this page'],
+                'body': simple_fig(),
+                'show': True}
+        }
+    },
+    'Topcat B': {
+        'Subcat Z': {
+            'page4':
+                {
+                    'title': 'Page Title 4 - Different topcat',
+                    'highlights': ['- highlight 5', '- highlight 6'],
+                    'body': 'Content 3',
+                    'footer': ['- footer 4a', '- footer 4b'],
+                    'show': True
+                }
+        }
+    }
+}
+
+# MAIN
+ws.create(content=content
+          , title_page=title_page
+          , fname='webslides_hello_world.html'
+          , open_in_browser=True
+          , show_index_page=True
+          , show_topcat=True
+          , show_subcat=True
+          , show_highlights_page=True
+          , show_highlights_only=False
+          , tooltips=tooltips)`);alert('Code copied to clipboard');"><b>COPY CODE</b></button></div><div style="background-color: #FFFFFF; line-height: 1.6; padding:10px;"><HR style="width:20%; margin-left:0;">- HTML allows to add javascript too, like the copy button. That's actually only one line of code<br></div></div><span></span>
+    </body>
+    </html>
+    

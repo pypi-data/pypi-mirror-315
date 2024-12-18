@@ -1,0 +1,436 @@
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    
+        &lt;script&gt;
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        &lt;/script&gt;
+    
+    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_88c625b243f75fc8ef0ad90c010f7b91 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_88c625b243f75fc8ef0ad90c010f7b91&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_88c625b243f75fc8ef0ad90c010f7b91 = L.map(
+                &quot;map_88c625b243f75fc8ef0ad90c010f7b91&quot;,
+                {
+                    center: [52.1326, 5.2913],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;maxBounds&quot;: null,
+  &quot;zoom&quot;: 8,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5715361456fc0c55245c3c56b7a11ee4 = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_5715361456fc0c55245c3c56b7a11ee4.addTo(map_88c625b243f75fc8ef0ad90c010f7b91);
+        
+    
+            var feature_group_ceb696177799638795d3d7900acd13da = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_696696b6b7f239d302f5d4ef8d9d41f0 = L.marker(
+                [51.9225, 4.4792],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_4ec22c53885ee5a0e7517e4fe1463306 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_696696b6b7f239d302f5d4ef8d9d41f0.setIcon(icon_4ec22c53885ee5a0e7517e4fe1463306);
+        
+    
+            marker_696696b6b7f239d302f5d4ef8d9d41f0.bindTooltip(
+                `&lt;div&gt;
+                     Rotterdam
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_57d73662851d969d98cad2944a230d4f = L.marker(
+                [52.0907, 5.1214],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_c868a9a4b419eb0ec3a07ebf01002d0b = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_57d73662851d969d98cad2944a230d4f.setIcon(icon_c868a9a4b419eb0ec3a07ebf01002d0b);
+        
+    
+            marker_57d73662851d969d98cad2944a230d4f.bindTooltip(
+                `&lt;div&gt;
+                     Utrecht
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_fba37efc5150598446e0def1ea0a1b5d = L.marker(
+                [52.0705, 4.3007],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_33c1ffa539e1f7354973989f50a611d3 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_fba37efc5150598446e0def1ea0a1b5d.setIcon(icon_33c1ffa539e1f7354973989f50a611d3);
+        
+    
+            marker_fba37efc5150598446e0def1ea0a1b5d.bindTooltip(
+                `&lt;div&gt;
+                     The Hague
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_360806c4252931ea046b30f5baf4c66c = L.marker(
+                [53.2194, 6.5665],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_045bde98a29bd06f0cf83721d721808e = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_360806c4252931ea046b30f5baf4c66c.setIcon(icon_045bde98a29bd06f0cf83721d721808e);
+        
+    
+            marker_360806c4252931ea046b30f5baf4c66c.bindTooltip(
+                `&lt;div&gt;
+                     Groningen
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_88faaa2c67034f4db42fbf509b1dbf39 = L.marker(
+                [51.9843, 5.8987],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_98b8011341993b74a37ef7cffd52755b = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_88faaa2c67034f4db42fbf509b1dbf39.setIcon(icon_98b8011341993b74a37ef7cffd52755b);
+        
+    
+            marker_88faaa2c67034f4db42fbf509b1dbf39.bindTooltip(
+                `&lt;div&gt;
+                     Arnhem
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_8cdf3c40c68309af84697bca34c7a3bc = L.marker(
+                [50.8483, 5.6889],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_66b5f82a942f7f94129c57b6328a4e68 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_8cdf3c40c68309af84697bca34c7a3bc.setIcon(icon_66b5f82a942f7f94129c57b6328a4e68);
+        
+    
+            marker_8cdf3c40c68309af84697bca34c7a3bc.bindTooltip(
+                `&lt;div&gt;
+                     Maastricht
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_04f37dc67cd2c324e12df655d403ab97 = L.marker(
+                [52.9959, 6.5622],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_012c4e9279f8b460ad252e320933de23 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_04f37dc67cd2c324e12df655d403ab97.setIcon(icon_012c4e9279f8b460ad252e320933de23);
+        
+    
+            marker_04f37dc67cd2c324e12df655d403ab97.bindTooltip(
+                `&lt;div&gt;
+                     Assen
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_1aa251b8fe62c658d2435d4517fce8bb = L.marker(
+                [53.2014, 5.8086],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_ce07786aa7346a225ba4d1fa15b1ed0a = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_1aa251b8fe62c658d2435d4517fce8bb.setIcon(icon_ce07786aa7346a225ba4d1fa15b1ed0a);
+        
+    
+            marker_1aa251b8fe62c658d2435d4517fce8bb.bindTooltip(
+                `&lt;div&gt;
+                     Leeuwarden
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_5f7ce3197de7b8a2c3bab44ec3912d20 = L.marker(
+                [52.3874, 4.6387],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_ceb696177799638795d3d7900acd13da);
+        
+    
+            var icon_29566fb7e2934b02dc5de273e2bdde99 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;circle&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_5f7ce3197de7b8a2c3bab44ec3912d20.setIcon(icon_29566fb7e2934b02dc5de273e2bdde99);
+        
+    
+            marker_5f7ce3197de7b8a2c3bab44ec3912d20.bindTooltip(
+                `&lt;div&gt;
+                     Haarlem
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            feature_group_ceb696177799638795d3d7900acd13da.addTo(map_88c625b243f75fc8ef0ad90c010f7b91);
+        
+    
+            var feature_group_c5441a5cb673d893ed5ca310d365209f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_e812ca7782f1b24a309c1ccf77e28776 = L.marker(
+                [52.3676, 4.9041],
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(feature_group_c5441a5cb673d893ed5ca310d365209f);
+        
+    
+            var icon_4f828b60c564ae926211aa1d458f2e3e = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;star&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_e812ca7782f1b24a309c1ccf77e28776.setIcon(icon_4f828b60c564ae926211aa1d458f2e3e);
+        
+    
+            marker_e812ca7782f1b24a309c1ccf77e28776.bindTooltip(
+                `&lt;div&gt;
+                     Amsterdam
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            feature_group_c5441a5cb673d893ed5ca310d365209f.addTo(map_88c625b243f75fc8ef0ad90c010f7b91);
+        
+    
+            var layer_control_5c953c6d86f6e2f51a97291ec118abe8_layers = {
+                base_layers : {
+                    &quot;openstreetmap&quot; : tile_layer_5715361456fc0c55245c3c56b7a11ee4,
+                },
+                overlays :  {
+                    &quot;Province Capitals&quot; : feature_group_ceb696177799638795d3d7900acd13da,
+                    &quot;Country Capital&quot; : feature_group_c5441a5cb673d893ed5ca310d365209f,
+                },
+            };
+            let layer_control_5c953c6d86f6e2f51a97291ec118abe8 = L.control.layers(
+                layer_control_5c953c6d86f6e2f51a97291ec118abe8_layers.base_layers,
+                layer_control_5c953c6d86f6e2f51a97291ec118abe8_layers.overlays,
+                {
+  &quot;position&quot;: &quot;topleft&quot;,
+  &quot;collapsed&quot;: false,
+  &quot;autoZIndex&quot;: true,
+}
+            ).addTo(map_88c625b243f75fc8ef0ad90c010f7b91);
+
+        
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
