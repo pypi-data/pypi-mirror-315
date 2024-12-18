@@ -1,0 +1,2 @@
+[console_scripts]
+ppmac-macro-substitution = ppmac_macro_substitution.__main__:main
