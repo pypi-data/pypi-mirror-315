@@ -1,0 +1,2 @@
+[console_scripts]
+neulog-respiratory-viz = NeuLogPy.respiratory_visualization:main
