@@ -1,0 +1,2 @@
+[console_scripts]
+artifactual = artifactual:main
