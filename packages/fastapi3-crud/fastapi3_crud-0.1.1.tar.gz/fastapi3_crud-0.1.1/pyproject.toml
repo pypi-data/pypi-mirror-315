@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "fastapi3-crud"
+version = "0.1.1"
+description = "基于fastapi3, 自动生成crud接口, 提高开发效率"
+authors = ["zhangdapeng <1156956636@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
