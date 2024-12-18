@@ -1,0 +1,17 @@
+[console_scripts]
+rs.ccanom = rsbooster.stats.ccanom:main
+rs.cchalf = rsbooster.stats.cchalf:main
+rs.ccpred = rsbooster.stats.ccpred:main
+rs.ccsym = rsbooster.stats.ccsym:main
+rs.diffmap = rsbooster.diffmaps.diffmap:main
+rs.extrapolate = rsbooster.esf.extrapolate:main
+rs.find_difference_peaks = rsbooster.realspace.find_peaks:find_difference_peaks
+rs.find_peaks = rsbooster.realspace.find_peaks:find_peaks
+rs.from_dials = rsbooster.io.dials2mtz:ray_main
+rs.from_dials_mpi = rsbooster.io.dials2mtz:mpi_main
+rs.internal_diffmap = rsbooster.diffmaps.internaldiffmap:main
+rs.precog2mtz = rsbooster.io.precog2mtz:main
+rs.print_refl = rsbooster.io.dials2mtz:print_refl
+rs.rfree = rsbooster.utils.rfree:main
+rs.scaleit = rsbooster.scaleit.scaleit:main
+
