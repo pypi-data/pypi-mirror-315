@@ -1,0 +1,10 @@
+Pillow
+requests
+urllib3
+tqdm
+aiohttp
+aiofiles
+
+pytest
+pytest-cov
+pre-commit
