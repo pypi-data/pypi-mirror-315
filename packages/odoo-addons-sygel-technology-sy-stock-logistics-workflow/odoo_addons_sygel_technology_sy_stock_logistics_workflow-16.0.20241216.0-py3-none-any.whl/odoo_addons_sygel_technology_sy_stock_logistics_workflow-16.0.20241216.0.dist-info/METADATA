@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: odoo-addons-sygel-technology-sy-stock-logistics-workflow
+Version: 16.0.20241216.0
+Summary: Meta package for sygel-technology-sy-stock-logistics-workflow Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-picking-edit-printed-status<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-product-search-category-attribute-stock<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-stock-picking-terms<16.1dev,>=16.0dev
+
+UNKNOWN
