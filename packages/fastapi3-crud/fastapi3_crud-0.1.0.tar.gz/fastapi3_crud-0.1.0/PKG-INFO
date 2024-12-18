@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fastapi3-crud
+Version: 0.1.0
+Summary: 
+Author: zhangdapeng
+Author-email: 1156956636@qq.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# fastapi3_crud
+
+基于fastapi3, 自动生成crud接口, 提高开发效率
+
+
