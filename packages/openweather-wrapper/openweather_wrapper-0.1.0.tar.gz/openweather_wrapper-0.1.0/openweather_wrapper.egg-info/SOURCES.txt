@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+openweather/__init__.py
+openweather/weather.py
+openweather_wrapper.egg-info/PKG-INFO
+openweather_wrapper.egg-info/SOURCES.txt
+openweather_wrapper.egg-info/dependency_links.txt
+openweather_wrapper.egg-info/requires.txt
+openweather_wrapper.egg-info/top_level.txt
+tests/test.py
+tests/test_api_wrapper.py
