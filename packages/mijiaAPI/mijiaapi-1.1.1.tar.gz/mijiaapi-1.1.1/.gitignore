@@ -1,0 +1,8 @@
+jsons/*
+!.gitkeep
+*.pyc
+build
+dist
+*.png
+*.egg-info
+scripts
