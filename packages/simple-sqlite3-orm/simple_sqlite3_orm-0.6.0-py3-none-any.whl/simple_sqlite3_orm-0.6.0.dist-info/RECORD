@@ -1,0 +1,16 @@
+simple_sqlite3_orm/__init__.py,sha256=YJ7z-yRyVW64q4rxwztKrZMNZwVgiTp8tzwgkUZ6TEo,1375
+simple_sqlite3_orm/_sqlite_spec.py,sha256=_fryjCwAmoQ-rI6ytqwdwVmfzaIxqYCaFg6VWsVwZVc,4170
+simple_sqlite3_orm/_table_spec.py,sha256=HnD2kJQuS7lqzobZ3-OR-oiOfZrFhenf8ylTDsJIYec,21573
+simple_sqlite3_orm/_types.py,sha256=PvcUO61du8tYEDf-cVfPi8QGoxKVe50o8zpivK0fOfI,1940
+simple_sqlite3_orm/_utils.py,sha256=lqtNTOCaabnqWVrr9-2QvfqCJquiwzHDtyWumef1XcE,4718
+simple_sqlite3_orm/_version.py,sha256=2JKwcA-YQ0okV2N-gwTWy_n51igWrPcsKQFm0cnqsvw,411
+simple_sqlite3_orm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_sqlite3_orm/utils.py,sha256=71IpDTgKb1SL1vxFS9mV3vUfEaXEAIP53cA3wwgkEdY,11772
+simple_sqlite3_orm/_orm/__init__.py,sha256=3VmUcvX2rwWbBpYtp3M0vh1YXEsUXFvctTxu7YeWZ1I,262
+simple_sqlite3_orm/_orm/_async.py,sha256=ckZW5nPZPuQ1_OWQaVhR3M3v0B-VZhpePdHou6g7c7c,7692
+simple_sqlite3_orm/_orm/_base.py,sha256=rfVHr-eTavWA-NN0pFc0mUA4WasT9qTiCkx5M6nDblQ,20418
+simple_sqlite3_orm/_orm/_multi_thread.py,sha256=fMCS32Nqr2aZmfANOloEzRvrYmYQL-d3zGN0AsmEYIY,7961
+simple_sqlite3_orm-0.6.0.dist-info/METADATA,sha256=1MkGCRpm220VLmgvlB0g7TN_zpR0PdZTQRa2bige38Q,15154
+simple_sqlite3_orm-0.6.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+simple_sqlite3_orm-0.6.0.dist-info/licenses/LICENSE,sha256=A7wle8B4fQ-K1CWYyOtX_AjkPHKcKx-orezD-tuikcE,11336
+simple_sqlite3_orm-0.6.0.dist-info/RECORD,,
