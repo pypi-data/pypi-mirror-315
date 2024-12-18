@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: yue-normalizer
+Version: 0.1.0
+Summary: Add your description here
+Author-email: sagewe <sagewe@fastmail.com>
+Requires-Python: >=3.12
+Requires-Dist: jiwer>=3.0.5
+Requires-Dist: matplotlib>=3.10.0
+Requires-Dist: num2words>=0.5.13
+Requires-Dist: numpy>=2.2.0
+Requires-Dist: pyarabic>=0.6.15
+Requires-Dist: regex>=2024.11.6
+Requires-Dist: zhconv>=1.4.3

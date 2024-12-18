@@ -1,0 +1,12 @@
+yue_normalizer/__init__.py,sha256=xzmJKxf3Pk8oGPJuKvlh3IKZOpjlF9xP8K2e7os5Er4,60
+yue_normalizer/chinese_normalizer.py,sha256=xWKReVDp0PP8gxhHRY85mj6bXycjRIw-PiltlU9ZdKU,56217
+yue_normalizer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yue_normalizer/tools.py,sha256=0yV6ZAQKVVjTybLo8AWThB8Gvz2kh77IW5AMGY9v48Q,3927
+yue_normalizer/normalizer/__init__.py,sha256=7-Uitkh_aB5-79sE9TIUHitPzFgZ9j8lZyWkFck-HBo,66
+yue_normalizer/normalizer/data_utils.py,sha256=jdJWgJgmzSl3ZwgQO29NykBztTVexcecxOQmi0qMD9E,1663
+yue_normalizer/normalizer/english_abbreviations.py,sha256=Oca5ocUdgqkwg2nd8ifI0B5T8ZVsWVp5IEXCsUS_PDo,52697
+yue_normalizer/normalizer/eval_utils.py,sha256=SXVLoHOLnJ1zeJrxfor7umQEAvM3IFyec9781niXeHY,7425
+yue_normalizer/normalizer/normalizer.py,sha256=0KMpST8sAYgWKbYUrbCXfgzYJutYjNNco2O33c7zKGA,22913
+yue_normalizer-0.1.0.dist-info/METADATA,sha256=anefpTS4T6BYMnOUujnBUgabSSlnS1bqliZPB-n1r1Q,376
+yue_normalizer-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+yue_normalizer-0.1.0.dist-info/RECORD,,
