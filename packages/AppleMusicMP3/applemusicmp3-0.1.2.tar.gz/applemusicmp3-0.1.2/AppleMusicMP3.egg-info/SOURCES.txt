@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+req.txt
+setup.py
+AppleMusicMP3/__init__.py
+AppleMusicMP3/main.py
+AppleMusicMP3.egg-info/PKG-INFO
+AppleMusicMP3.egg-info/SOURCES.txt
+AppleMusicMP3.egg-info/dependency_links.txt
+AppleMusicMP3.egg-info/entry_points.txt
+AppleMusicMP3.egg-info/requires.txt
+AppleMusicMP3.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+lxml
+yt-dlp
+tqdm
+pyfiglet
