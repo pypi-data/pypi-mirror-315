@@ -1,0 +1,17 @@
+databits/__init__.py,sha256=xM69G07F4glBy9SSpLDr6qIcVnmL4HUjitIy5RGdz5s,34
+databits/loader/__init__.py,sha256=VvgAhoDLmPwajQhBhsHmBYOStws6dcFs-FnuhDRicB8,23
+databits/loader/data.py,sha256=_BFVAdt6pTOBXxBdhrLqniCrrj-BkEGJwbeG-kLE5yI,2103
+databits/model/__init__.py,sha256=g90R9aWOTOwqnykRqxLBEfnob5vhMdgEconFIQsiJoc,90
+databits/model/bert.py,sha256=TQMWcV3QN-w4zE1NxuwHw4E2oP3eki6vyejoKBv9bKE,1088
+databits/model/fasttext.py,sha256=xQwmQCjTB0H6ORLq9AlG7IPBd5GxWwnDVj9FdUfZr9s,845
+databits/model/gru.py,sha256=SYV7LZZSsuM6U6P-LdWJ-VD5rJd7O0xD75jbPrkuOq0,680
+databits/model/lstm.py,sha256=xuDThOT9oi-zz7s3yxd8I9ngoo9L6oluACPkGPTEZB4,693
+databits/model/module.py,sha256=_LrD9UXlTNf444fwTioWkD_5XJn0k_u2kTWGWlC--MA,3688
+databits/model/transformer.py,sha256=3jDQmvJgWSV40WeHyxiRCIZNri_E7MkqR8HwF61VPEk,1009
+databits/trainer/__init__.py,sha256=IWxi9JH1RsAzCH10VGErIZ7gPTcNNKCH2s8pQBz-s8s,30
+databits/trainer/train.py,sha256=CTVwLchsdj6049jvh0CHjXEBlji0FYI98IEjGmKn_dQ,8545
+databits-2.0.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+databits-2.0.0.dist-info/METADATA,sha256=zbl7GcYXM--lPC8-1RP3aBCqBV1_BFvzxjkemqCLDLA,3224
+databits-2.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+databits-2.0.0.dist-info/top_level.txt,sha256=OO0myp8WbmEafxZCLQcWRb1lVfNmhk6ytFDXrIcOuQU,9
+databits-2.0.0.dist-info/RECORD,,
