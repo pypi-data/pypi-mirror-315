@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ideastatica-connection-api
+Version: 24.1.2.1474
+Summary: IdeaStatiCa Connection Rest API Client
+Home-page: https://github.com/idea-statica/ideastatica-public/tree/main/src/api-sdks/connection-api/clients/python
+Author: IdeaStatiCa
+License: UNKNOWN
+Keywords: IdeaStatiCa,Steel,Connections
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+    API for designing steel connections
+    
+
