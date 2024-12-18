@@ -1,0 +1,8 @@
+torch_mdct/__init__.py,sha256=bIMneTPtrxvHUJQ5o2DNjaRCqK6Fgcvipe3Uox2sRis,123
+torch_mdct/functional.py,sha256=ssE3BeKtct1QgYBVcpyshDuHbCf8zcP14SLiXiTAI4A,5469
+torch_mdct/torch_mdct.py,sha256=wdbVcEO_4bqxu3uoUQICSQLIuEzQDYIVFvvenAy3lfI,5109
+torch_mdct/windows.py,sha256=6gdLKQx49S9wAz8XNisG925A3VU-YGQTvw8zHZrsqVA,1812
+torch_mdct-0.4.1.dist-info/METADATA,sha256=gGPuwBlSNGwCRyYzzRAf8YwgDGVkYQCHe5xnqlXe3S0,1838
+torch_mdct-0.4.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+torch_mdct-0.4.1.dist-info/licenses/LICENSE,sha256=Peq8teTedX8JcZS1Haf_A73Uyo4mzeDuZrotrcHk_6c,1070
+torch_mdct-0.4.1.dist-info/RECORD,,
