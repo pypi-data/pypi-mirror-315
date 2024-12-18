@@ -1,0 +1,6 @@
+setup.py
+test_burkaya.egg-info/PKG-INFO
+test_burkaya.egg-info/SOURCES.txt
+test_burkaya.egg-info/dependency_links.txt
+test_burkaya.egg-info/requires.txt
+test_burkaya.egg-info/top_level.txt
