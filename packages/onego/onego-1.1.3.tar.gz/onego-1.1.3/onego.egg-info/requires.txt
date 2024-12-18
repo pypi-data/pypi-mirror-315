@@ -1,0 +1,16 @@
+
+[all]
+requests
+cloudscraper
+beautifulsoup4
+
+[files]
+
+[logger]
+
+[sessions]
+cloudscraper
+
+[utils]
+requests
+beautifulsoup4
