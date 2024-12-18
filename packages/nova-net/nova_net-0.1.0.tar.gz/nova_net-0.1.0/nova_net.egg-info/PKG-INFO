@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nova_net
+Version: 0.1.0
+Summary: NovaNet: A Novel Method for Enhanced Pothole Detection
+Author: Soumick Sarker
+Author-email: soumicksarker9@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: albumentations
+Requires-Dist: tqdm
+Requires-Dist: Pillow
+Requires-Dist: numpy
