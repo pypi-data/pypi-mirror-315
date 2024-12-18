@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: weshort
+Version: 1.0.0
+Summary: WeShort is Shortener URL and Asynchronous API in Python
+Home-page: https://github.com/AyiinXd/pyweshort
+Download-URL: https://github.com/AyiinXd/pyweshort/releases/latest
+Author: AyiinXd
+Author-email: ayiin@gotgel.org
+License: LGPLv3
+Project-URL: Tracker, https://github.com/AyiinXd/pyweshort/issues
+Project-URL: Community, https://t.me/AyiinProjects
+Project-URL: Source, https://github.com/AyiinXd/pyweshort
+Keywords: api scrapper library python shortener shortlink shorturl url
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<p align="center">
+    <b>WeShort API for Python</b>
+    <br>
+    <a href="https://github.com/AyiinXd/pyweshort">
+        Homepage
+    </a>
+    •
+    <a href="https://github.com/AyiinXd/pyweshort/releases">
+        Releases
+    </a>
+    •
+    <a href="https://t.me/AyiinChats">
+        News
+    </a>
+</p>
+
+<p align="center">
+  <img src="https://weshort.pro/images/branch.png">
+</p>
+
+## WeShort
+
+> WeShort is Shortener URL and Asynchronous API in Python
+
+``` python
+from weshort import WeShort
+from weshort.exception import WeShortError
+
+weShort = WeShort(
+    apiToken="YOUR_API_TOKEN"
+)
+
+try:
+    shortUrl = await weShort.createShortUrl("https://youtu.be/YcQFi-1lAOo?si=pZO1WopFBjU2B6XJ", 1000)
+except WeShortError as e:
+    print(e)
+    return
+else:
+    print(shortUrl)
+```
+
+**WeShort** is a modern, elegant and asynchronous [WeShort API](https://weshort.pro/)
+shortener URL. It enables you to easily interact with the main means of WeShort using Python.
+
+
+### Installation
+
+``` bash
+pip3 install weshort
+```
+
+
+## Made with ✨ by
+
+[![Ayiin](https://img.shields.io/static/v1?label=Github&message=AyiinXd&color=critical)](https://github.com/AyiinXd)   
+[![Ayiin](https://img.shields.io/static/v1?label=Telegram&message=AyiinXd&color=aqua)](https://t.me/AyiinXd)
+#
+# License
+[![License](https://www.gnu.org/graphics/gplv3-with-text-136x68.png)](LICENSE)   
+WeShort is licensed under [GNU General Public License](https://www.gnu.org/licenses/agpl-3.0.html) v3 or later.
+#
+# Credits
+*  [AyiinXd](https://github.com/AyiinXd) for [weshort](https://github.com/AyiinXd/pyweshort)
+#
