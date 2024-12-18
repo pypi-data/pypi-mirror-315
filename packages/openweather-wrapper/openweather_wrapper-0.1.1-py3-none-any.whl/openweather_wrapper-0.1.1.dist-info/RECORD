@@ -1,0 +1,10 @@
+openweather/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openweather/weather.py,sha256=9s3EiimwgGiX39RGJ8XjuPIO3rF15s3O40Q0mpRM1Lw,19057
+tests/functional_testing.py,sha256=rNwJ2MYk43CVfs17hKCgOQwPoJfIX5wFRTi4TygRqiw,2018
+tests/test.py,sha256=yHDbht_nhlTzXx_Vp8qmNqlNSGNK-D_jShzINvycOYA,124
+tests/test_api_wrapper.py,sha256=7hFzyjfaB3F991onJsKN5KdnEo_BgW7fC50zwC0OyUQ,3430
+openweather_wrapper-0.1.1.dist-info/LICENSE,sha256=BIZ9qgRkLuqCRvwzmJhZ3KmwssVSFuuQK2BdBc9q5IQ,1070
+openweather_wrapper-0.1.1.dist-info/METADATA,sha256=ecvfvh2d4YDJnnwnKJQzKrLrI72NUSEu1_Q_ygFJR-g,5729
+openweather_wrapper-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+openweather_wrapper-0.1.1.dist-info/top_level.txt,sha256=RU_-nsWBx4wM5FrbydUgrUzArFxxnleGGLSsHFmk8c4,18
+openweather_wrapper-0.1.1.dist-info/RECORD,,
