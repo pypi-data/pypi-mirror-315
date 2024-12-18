@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: p115rsacipher
+Version: 0.0.1
+Summary: 115 webdisk RSA encryption and decryption.
+Home-page: https://github.com/ChenyangGao/p115client/tree/main/modules/p115rsacipher
+License: MIT
+Keywords: python-115,RSA,cipher
+Author: ChenyangGao
+Author-email: wosiwujm@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/ChenyangGao/p115client/tree/main/modules/p115rsacipher
+Description-Content-Type: text/markdown
+
+# 115 webdisk RSA encryption and decryption.
+
+## Installation
+
+You can install via [pypi](https://pypi.org/project/p115rsacipher/)
+
+```console
+pip install -U p115rsacipher
+```
+
+## Usage
+
+```python
+from p115rsacipher import encrypt, decrypt
+```
+
