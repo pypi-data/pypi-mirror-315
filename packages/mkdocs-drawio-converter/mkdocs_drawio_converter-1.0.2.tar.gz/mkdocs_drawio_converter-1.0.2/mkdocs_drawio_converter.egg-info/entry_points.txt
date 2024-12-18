@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+drawio-converter = mkdocs_drawio_converter.plugin:DrawioConverterPlugin
