@@ -1,0 +1,20 @@
+[project]
+name = "subrip-sync"
+version = "0.1.2"
+description = "Sync SubRip subtitle with audio"
+readme = "README.md"
+authors = [
+    { email = "maduma@pt.lu" }
+]
+requires-python = ">=3.6"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/maduma/subrip-sync"
+
+[project.scripts]
+subrip-sync = "subrip_sync.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
