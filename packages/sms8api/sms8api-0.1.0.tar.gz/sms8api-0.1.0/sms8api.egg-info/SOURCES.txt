@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+sms8api.egg-info/PKG-INFO
+sms8api.egg-info/SOURCES.txt
+sms8api.egg-info/dependency_links.txt
+sms8api.egg-info/requires.txt
+sms8api.egg-info/top_level.txt
