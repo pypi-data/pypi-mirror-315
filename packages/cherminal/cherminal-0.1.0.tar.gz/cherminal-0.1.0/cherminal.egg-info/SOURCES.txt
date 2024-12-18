@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+cherminal.egg-info/PKG-INFO
+cherminal.egg-info/SOURCES.txt
+cherminal.egg-info/dependency_links.txt
+cherminal.egg-info/requires.txt
+cherminal.egg-info/top_level.txt
