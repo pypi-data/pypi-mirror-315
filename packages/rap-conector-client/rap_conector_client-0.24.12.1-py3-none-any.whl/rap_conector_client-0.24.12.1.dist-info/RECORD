@@ -1,0 +1,12 @@
+rapconector/__init__.py,sha256=lE4zSo_eZNaczgbTdla4TiezQz-lVQMgInTJC8b1o3k,67
+rapconector/client.py,sha256=rfzmGga_M1EyVodyAewcOy76nDGJESj--KAoRX1Brkw,24402
+rapconector/document.py,sha256=E-wnwKl1Emjj1moPZq3G5pBHM5c1gYUJWzDHKX7hpYY,33542
+rapconector/errors.py,sha256=Eg_8oMims6w11iGdrW12nCop-oGaYVQ1jQy6ta8ZIkc,302
+rapconector/session.py,sha256=x2qbfw1cpIOnKorCeHH1xBCvIPtZng8Ng8pN3v-GPKA,3176
+rapconector/utils.py,sha256=bIxQchx7Ij7DfIM7tOSvuiAHYcwrWvuV6MvypYEJABY,2938
+rapconector/version.py,sha256=ufjOdfMGpUI18Tky6A07vK2iTQHQyMh9iXapy1DdB0w,267
+rap_conector_client-0.24.12.1.dist-info/LICENSE.md,sha256=RG51X65V_wNLuyG-RGcLXxFsKyZnlH5wNvK_5mMlOag,7560
+rap_conector_client-0.24.12.1.dist-info/METADATA,sha256=pVMyQrEMUenPZBWZ4jXkwu2u9_yGwIJEAqQ1_blZaeQ,7556
+rap_conector_client-0.24.12.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rap_conector_client-0.24.12.1.dist-info/top_level.txt,sha256=HXN5PqMNssq_dedB6UUmMsWsun-U2kcCgCs0_giZH8s,12
+rap_conector_client-0.24.12.1.dist-info/RECORD,,
