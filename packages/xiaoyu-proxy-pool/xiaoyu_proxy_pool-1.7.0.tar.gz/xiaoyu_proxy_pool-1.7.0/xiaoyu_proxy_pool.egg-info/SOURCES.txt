@@ -1,0 +1,7 @@
+README.md
+setup.py
+xiaoyu-proxy-pool/__init__.py
+xiaoyu_proxy_pool.egg-info/PKG-INFO
+xiaoyu_proxy_pool.egg-info/SOURCES.txt
+xiaoyu_proxy_pool.egg-info/dependency_links.txt
+xiaoyu_proxy_pool.egg-info/top_level.txt
