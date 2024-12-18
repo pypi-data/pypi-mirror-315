@@ -1,0 +1,3 @@
+[console_scripts]
+tap-whatconverts=tap_whatconverts.tap:TapWhatConverts.cli
+

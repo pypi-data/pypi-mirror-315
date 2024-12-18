@@ -1,0 +1,10 @@
+tap_whatconverts/__init__.py,sha256=kj3hHUGx8oWwRRqwvIXmaTl2Ivjc_OQymRZhOFvXUtE,28
+tap_whatconverts/__main__.py,sha256=B8e5vec-c1fHCUUbyxelEV6gXLnOuZ_Dw5o0tugSlho,141
+tap_whatconverts/client.py,sha256=mzv53Mqw23j00QV-3f9gCefe2aytEvCrrrE_bSPne7A,2529
+tap_whatconverts/schemas/__init__.py,sha256=4L_j2w9G0RLeNu1IvmrlYD685cMULZhpvOezBL0leR8,42
+tap_whatconverts/streams.py,sha256=6Mqx18ijixsFFa9lGUBSb0KJwNVW3a73llT1MHuPYvg,6353
+tap_whatconverts/tap.py,sha256=lUoveqi02atgz_SDkfIb4fbOq6RSWAapR8F04iSn9rw,1973
+oviond_tap_whatconverts-0.0.1.dist-info/METADATA,sha256=aK_qZG5OfDXocH5YTFFBo7L_-qhU5-cFg9vlwQp-igA,4074
+oviond_tap_whatconverts-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+oviond_tap_whatconverts-0.0.1.dist-info/entry_points.txt,sha256=NMGihSRuRyWeH9pu4tWVcdytHMqlkIqguA4ZWjnK5fo,77
+oviond_tap_whatconverts-0.0.1.dist-info/RECORD,,
