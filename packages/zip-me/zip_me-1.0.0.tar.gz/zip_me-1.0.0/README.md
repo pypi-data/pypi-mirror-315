@@ -1,0 +1,22 @@
+# zip-me
+
+**`zip-me`** is a lightweight Python utility for efficiently compressing and managing files or directories into `.zip` archives. Whether you need to back up data, transfer files, or automate compression tasks, `zip-me` makes it easy and reliable.
+
+---
+
+## Features
+
+- **Simple Compression**: Quickly zip files or entire directories with a single command.
+- **Custom Exclusions**: Exclude specific files or folders using patterns.
+- **Recursive Directory Support**: Automatically include subdirectories and their contents.
+- **Lightweight**: Minimal dependencies, runs fast and efficiently.
+- **Cross-Platform**: Works on Windows, Linux, and macOS.
+
+---
+
+## Installation
+
+Install `zip-me` using `pip`:
+
+```bash
+pip install zip-me
