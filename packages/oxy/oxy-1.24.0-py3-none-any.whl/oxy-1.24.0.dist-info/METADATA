@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: oxy
+Version: 1.24.0
+Summary: Rust-like pattern matching for fallable code and optional values.
+Requires-Python: >=3.12
+Requires-Dist: attrs>=24.2.0
