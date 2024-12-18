@@ -1,0 +1,91 @@
+# The development and release of this extension rely on a specific development and build environment.
+# Furthermore, the extension is linked to (and tested) with a specific version of JupyterLab (or a range of versions).
+# While the extension can be built and published from the local machine, this project pipeline ensures that the build environment
+# remains consistent and targets the correct JupyterLab version.
+image: node:20.12.2
+
+cache:
+  untracked: true
+  key:
+    files:
+      - yarn.lock
+  paths:
+    - node_modules/
+  policy: pull-push
+
+stages:
+  - setup
+  - build
+  - test
+  - release
+
+install_dependencies:
+  stage: setup
+  script:
+    - apt-get update && apt-get install -y python3 python3-pip python3-venv
+    - python3 -m venv .venv
+    - . .venv/bin/activate
+    - python -m pip install --upgrade pip
+    - python -m pip install -U "jupyterlab>=4.0.0,<5"
+    - jlpm install
+    - python -m pip install --upgrade hatchling hatch_jupyter_builder
+    - python -m pip install .[test]
+
+build:
+  stage: build
+  needs: [install_dependencies]
+  artifacts:
+    paths:
+      - "dist"
+    expire_in: 1 hr
+  script:
+    - . .venv/bin/activate
+    - jlpm build
+
+lint:
+  stage: test
+  needs: [install_dependencies]
+  script:
+    - . .venv/bin/activate
+    - jlpm run lint:check
+  only:
+    - branches
+
+prettier:
+  stage: test
+  needs: [install_dependencies]
+  script:
+    - . .venv/bin/activate
+    - jlpm run prettier:check
+  only:
+    - branches
+
+bump_version:
+  stage: release
+  needs: [install_dependencies]
+  script:
+    - . .venv/bin/activate
+    - pip install twine hatch
+    - git config user.email "davide.giorgiutti@cgi.com@$CI_SERVER_HOST"
+    - git config user.name "cgi-bot"
+    - git pull "https://project_access_token_name:$PROJECT_VARIABLE_WITH_ACCESS_TOKEN_VALUE@$CI_SERVER_HOST/$CI_PROJECT_PATH.git" $CI_COMMIT_BRANCH --rebase --autostash
+    - hatch version minor
+    - CURRENT_VERSION=$(hatch version)
+    - python -c "import json; data = json.load(open('package.json')); data['version'] = '$CURRENT_VERSION'; json.dump(data, open('package.json', 'w'), indent=4)"
+    - git status
+    - git add package.json
+    - git commit -m "cgi-bot:release extension version to $(hatch version) [ci skip]"
+    - git push "https://project_access_token_name:$PROJECT_VARIABLE_WITH_ACCESS_TOKEN_VALUE@$CI_SERVER_HOST/$CI_PROJECT_PATH.git" HEAD:$CI_COMMIT_BRANCH -o ci.skip
+  only:
+    - master
+
+release:
+  stage: release
+  needs: [install_dependencies]
+  script:
+    - . .venv/bin/activate
+    - pip install build
+    - python -m build
+    - twine upload dist/*
+  only:
+    - master
