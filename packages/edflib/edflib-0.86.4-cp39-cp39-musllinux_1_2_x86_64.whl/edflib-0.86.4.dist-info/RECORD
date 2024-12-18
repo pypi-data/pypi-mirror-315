@@ -1,0 +1,15 @@
+edflib-0.86.4.dist-info/top_level.txt,sha256=Dvefo3mVPIt_gceGAET0952VEUDldsiMGHp4OMw-OjU,7
+edflib-0.86.4.dist-info/RECORD,,
+edflib-0.86.4.dist-info/METADATA,sha256=keREr2pDpi9gfRqwbC2KaWlGVzaWItug4V6j8mhX6oM,7027
+edflib-0.86.4.dist-info/WHEEL,sha256=dLfYYE4Z0SdCP38w6DLJJIjF3b49-RaiVJ7jY48RSJg,110
+edflib/sandbox.py,sha256=TNw85yB1hrc-Gg03k_0XKdkYXV0AwLaN26T9SVrULmU,3884
+edflib/testint16.py,sha256=pagUlh82AWUyfmaJdZvw2w6rr--TaH33nQDS2D4n-r4,88
+edflib/_edflib.cpython-39-x86_64-linux-gnu.so,sha256=NW2FtqSwyTHwXRTgIXbuAHLFT1TTlQlJCekvTAKSbrA,3420984
+edflib/__init__.py,sha256=-ryVhUMlBHQAYiyy3At4y7m9FyJvBxHWue4DVd5kGqo,187
+edflib/_edflib.pyx,sha256=mbU6ll5II0RWqzorDt5W9dSLA2dcHq1rh3SQhYwYkr0,57374
+edflib/edfwriter.py,sha256=FKFfKHtOPz5ixzbtkWXngL2ojcL4sbBPAM2konfpTJ0,8756
+edflib/edfreader.py,sha256=pCTQWjdqau82dqdEM768Nf50SkuGP4OVinNQX7jvssE,6645
+edflib/edf.pxi,sha256=_amlJKfOdmdmqAVRo0RKs3c8NoDFigIDB4xcyIOOIzY,1480
+edflib/purepythonheader.py,sha256=A2t93CTKXX41v5FcRdD7NCQFWgWAsSqJbWfYK-sWDP8,2813
+edflib/_edflib.c,sha256=Wrpng1YEYDWebiDM6SYlnDx0IhCDHZ3LTtfnb_UPP-4,2788322
+edflib/utils/standardtexts.py,sha256=arZOne7zHx-ZcH5mD-tt_NXQuDg0MAhmJ-d0ysIeT_E,5842
