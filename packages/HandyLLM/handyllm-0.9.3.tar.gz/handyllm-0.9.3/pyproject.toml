@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HandyLLM"
+version = "0.9.3"
+authors = [
+  { name="Atomie CHEN", email="atomic_cwh@163.com" },
+]
+description = "A handy toolkit for using LLM."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["LLM", "Large Language Model", "Prompt", "OpenAI", "API"]
+dependencies = [
+  "requests",
+  "httpx",
+  "python-frontmatter",
+  "mergedeep",
+  "python-dotenv",
+  "PyYAML",
+  "typing_extensions",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/atomiechen/HandyLLM"
+"Bug Tracker" = "https://github.com/atomiechen/HandyLLM/issues"
+Changelog = "https://github.com/atomiechen/HandyLLM/blob/master/CHANGELOG.md"
+
+[project.scripts]
+handyllm = "handyllm.__main__:cli"
+
+[tool.pytest.ini_options]
+addopts = [
+  "--ignore=examples"
+]
+
+[tool.ruff.lint.per-file-ignores]
+# # ref: https://github.com/astral-sh/ruff/issues/2407#issuecomment-1974783543
+# # Ignore unused imports and import * in __init__.py files
+# "__init__.py" = ["F401", "F403"]
