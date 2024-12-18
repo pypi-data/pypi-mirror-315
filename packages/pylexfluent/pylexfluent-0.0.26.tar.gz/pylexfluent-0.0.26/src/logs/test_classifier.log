@@ -1,0 +1,368 @@
+2024-12-17 10:52:20,134 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x74bdd0247740> : asyncio.run() cannot be called from a running event loop 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/pdf.py", line 121, in get_text_and_tables_from_pdf
+    t = asyncio.run(page.extract_text(x_tolerance=1,y_tolerance=1))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2024-12-17 10:52:20,134 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x74bdd0247740> : asyncio.run() cannot be called from a running event loop 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/pdf.py", line 121, in get_text_and_tables_from_pdf
+    t = asyncio.run(page.extract_text(x_tolerance=1,y_tolerance=1))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2024-12-17 10:52:20,135 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x74bdd0247a60> with kargs={'file_name': 'data/RIBB.pdf'}: cannot unpack non-iterable NoneType object 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 23, in try_safe_execute_asyncio
+    result= asyncio.run(func(**kargs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/test_classifier.py", line 34, in do_test
+    return await get_classification(file_name=file_name,max_pages=10)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/ai/classification/classifier.py", line 32, in get_classification
+    result,_ = await try_safe_execute_async(logger,get_text_and_tables_from_pdf, filename=file_name,extract_tables=False,max_pages=max_pages)
+    ^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2024-12-17 10:52:20,135 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x74bdd0247a60> with kargs={'file_name': 'data/RIBB.pdf'}: cannot unpack non-iterable NoneType object 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 23, in try_safe_execute_asyncio
+    result= asyncio.run(func(**kargs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/test_classifier.py", line 34, in do_test
+    return await get_classification(file_name=file_name,max_pages=10)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/ai/classification/classifier.py", line 32, in get_classification
+    result,_ = await try_safe_execute_async(logger,get_text_and_tables_from_pdf, filename=file_name,extract_tables=False,max_pages=max_pages)
+    ^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2024-12-17 10:52:20,189 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x74bdd0247740> : asyncio.run() cannot be called from a running event loop 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/pdf.py", line 121, in get_text_and_tables_from_pdf
+    t = asyncio.run(page.extract_text(x_tolerance=1,y_tolerance=1))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2024-12-17 10:52:20,189 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x74bdd0247740> : asyncio.run() cannot be called from a running event loop 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/pdf.py", line 121, in get_text_and_tables_from_pdf
+    t = asyncio.run(page.extract_text(x_tolerance=1,y_tolerance=1))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2024-12-17 10:52:20,189 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x74bdd0247a60> with kargs={'file_name': 'data/ODP.pdf'}: cannot unpack non-iterable NoneType object 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 23, in try_safe_execute_asyncio
+    result= asyncio.run(func(**kargs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/test_classifier.py", line 34, in do_test
+    return await get_classification(file_name=file_name,max_pages=10)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/ai/classification/classifier.py", line 32, in get_classification
+    result,_ = await try_safe_execute_async(logger,get_text_and_tables_from_pdf, filename=file_name,extract_tables=False,max_pages=max_pages)
+    ^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2024-12-17 10:52:20,189 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x74bdd0247a60> with kargs={'file_name': 'data/ODP.pdf'}: cannot unpack non-iterable NoneType object 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 23, in try_safe_execute_asyncio
+    result= asyncio.run(func(**kargs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/test_classifier.py", line 34, in do_test
+    return await get_classification(file_name=file_name,max_pages=10)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/ai/classification/classifier.py", line 32, in get_classification
+    result,_ = await try_safe_execute_async(logger,get_text_and_tables_from_pdf, filename=file_name,extract_tables=False,max_pages=max_pages)
+    ^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2024-12-17 10:58:37,023 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x78b1ddfc3b00> with kargs={'file_name': 'data/RIBB.pdf'}: Exception KeysWordsAndPhrases.get_keys_words:  cannot process flags argument with a compiled pattern 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/domain/keyswordsandphrases.py", line 107, in get_key_words
+    text = sanitize_text(text)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 18, in inner
+    result = func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/domain/keyswordsandphrases.py", line 55, in sanitize_text
+    return re.sub(regex, subst, text, 0, re.MULTILINE | re.DOTALL)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/re/__init__.py", line 186, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/re/__init__.py", line 295, in _compile
+    raise ValueError(
+ValueError: cannot process flags argument with a compiled pattern
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 23, in try_safe_execute_asyncio
+    result= asyncio.run(func(**kargs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/test_classifier.py", line 34, in do_test
+    return await get_classification(file_name=file_name,max_pages=10)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/ai/classification/classifier.py", line 35, in get_classification
+    freq_mots= keysWordsPhrasesHelper.get_key_words(isSorted=True, threshold=0.1)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 18, in inner
+    result = func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/domain/keyswordsandphrases.py", line 171, in get_key_words
+    raise Exception(f"Exception KeysWordsAndPhrases.get_keys_words:  {ex}")
+Exception: Exception KeysWordsAndPhrases.get_keys_words:  cannot process flags argument with a compiled pattern
+2024-12-17 10:58:37,023 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x78b1ddfc3b00> with kargs={'file_name': 'data/RIBB.pdf'}: Exception KeysWordsAndPhrases.get_keys_words:  cannot process flags argument with a compiled pattern 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/domain/keyswordsandphrases.py", line 107, in get_key_words
+    text = sanitize_text(text)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 18, in inner
+    result = func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/domain/keyswordsandphrases.py", line 55, in sanitize_text
+    return re.sub(regex, subst, text, 0, re.MULTILINE | re.DOTALL)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/re/__init__.py", line 186, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/re/__init__.py", line 295, in _compile
+    raise ValueError(
+ValueError: cannot process flags argument with a compiled pattern
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 23, in try_safe_execute_asyncio
+    result= asyncio.run(func(**kargs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/test_classifier.py", line 34, in do_test
+    return await get_classification(file_name=file_name,max_pages=10)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/ai/classification/classifier.py", line 35, in get_classification
+    freq_mots= keysWordsPhrasesHelper.get_key_words(isSorted=True, threshold=0.1)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 18, in inner
+    result = func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/domain/keyswordsandphrases.py", line 171, in get_key_words
+    raise Exception(f"Exception KeysWordsAndPhrases.get_keys_words:  {ex}")
+Exception: Exception KeysWordsAndPhrases.get_keys_words:  cannot process flags argument with a compiled pattern
+2024-12-17 10:58:37,937 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x78b1ddfc3b00> with kargs={'file_name': 'data/ODP.pdf'}: Exception KeysWordsAndPhrases.get_keys_words:  cannot process flags argument with a compiled pattern 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/domain/keyswordsandphrases.py", line 107, in get_key_words
+    text = sanitize_text(text)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 18, in inner
+    result = func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/domain/keyswordsandphrases.py", line 55, in sanitize_text
+    return re.sub(regex, subst, text, 0, re.MULTILINE | re.DOTALL)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/re/__init__.py", line 186, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/re/__init__.py", line 295, in _compile
+    raise ValueError(
+ValueError: cannot process flags argument with a compiled pattern
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 23, in try_safe_execute_asyncio
+    result= asyncio.run(func(**kargs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/test_classifier.py", line 34, in do_test
+    return await get_classification(file_name=file_name,max_pages=10)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/ai/classification/classifier.py", line 35, in get_classification
+    freq_mots= keysWordsPhrasesHelper.get_key_words(isSorted=True, threshold=0.1)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 18, in inner
+    result = func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/domain/keyswordsandphrases.py", line 171, in get_key_words
+    raise Exception(f"Exception KeysWordsAndPhrases.get_keys_words:  {ex}")
+Exception: Exception KeysWordsAndPhrases.get_keys_words:  cannot process flags argument with a compiled pattern
+2024-12-17 10:58:37,937 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x78b1ddfc3b00> with kargs={'file_name': 'data/ODP.pdf'}: Exception KeysWordsAndPhrases.get_keys_words:  cannot process flags argument with a compiled pattern 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/domain/keyswordsandphrases.py", line 107, in get_key_words
+    text = sanitize_text(text)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 18, in inner
+    result = func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/domain/keyswordsandphrases.py", line 55, in sanitize_text
+    return re.sub(regex, subst, text, 0, re.MULTILINE | re.DOTALL)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/re/__init__.py", line 186, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/re/__init__.py", line 295, in _compile
+    raise ValueError(
+ValueError: cannot process flags argument with a compiled pattern
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 23, in try_safe_execute_asyncio
+    result= asyncio.run(func(**kargs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/test_classifier.py", line 34, in do_test
+    return await get_classification(file_name=file_name,max_pages=10)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/ai/classification/classifier.py", line 35, in get_classification
+    freq_mots= keysWordsPhrasesHelper.get_key_words(isSorted=True, threshold=0.1)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 18, in inner
+    result = func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/domain/keyswordsandphrases.py", line 171, in get_key_words
+    raise Exception(f"Exception KeysWordsAndPhrases.get_keys_words:  {ex}")
+Exception: Exception KeysWordsAndPhrases.get_keys_words:  cannot process flags argument with a compiled pattern

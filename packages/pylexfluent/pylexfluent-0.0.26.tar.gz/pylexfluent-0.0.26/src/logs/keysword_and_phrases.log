@@ -1,0 +1,97 @@
+2024-12-16 11:01:46,451 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-16 11:01:46,452 - Keys words and phrases - DEBUG - Splitted (Len=1) text completed at 0.0002
+2024-12-16 11:01:47,519 - Keys words and phrases - DEBUG - NLP chunk document loaded in 1.0678 secondes
+2024-12-16 11:01:47,520 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 1.0683
+2024-12-16 11:01:47,520 - Keys words and phrases - DEBUG - Freq_mots completed at 1.0684
+2024-12-16 11:01:47,520 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-16 11:01:47,520 - Keys words and phrases - DEBUG - freq_mot threshold completed at 1.0685
+2024-12-16 11:01:47,520 - Keys words and phrases - DEBUG - freq_mot sorted at 1.0685
+2024-12-16 11:01:50,941 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-16 11:01:50,941 - Keys words and phrases - DEBUG - Splitted (Len=6) text completed at 0.0003
+2024-12-16 11:01:51,438 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4964 secondes
+2024-12-16 11:01:51,907 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4687 secondes
+2024-12-16 11:01:52,366 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4584 secondes
+2024-12-16 11:01:52,819 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4521 secondes
+2024-12-16 11:01:53,287 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4671 secondes
+2024-12-16 11:01:53,653 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.3660 secondes
+2024-12-16 11:01:53,654 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 2.7127
+2024-12-16 11:01:53,654 - Keys words and phrases - DEBUG - Freq_mots completed at 2.7127
+2024-12-16 11:01:53,654 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-16 11:01:53,654 - Keys words and phrases - DEBUG - freq_mot threshold completed at 2.7128
+2024-12-16 11:01:53,654 - Keys words and phrases - DEBUG - freq_mot sorted at 2.7129
+2024-12-16 15:23:32,762 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-16 15:23:33,831 - Keys words and phrases - DEBUG - NLP document loaded in 1.0691 secondes
+2024-12-16 15:23:33,832 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 1.0695
+2024-12-16 15:23:33,832 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 1.0696
+2024-12-16 15:23:33,832 - Keys words and phrases - DEBUG - Freq_mots completed at 1.0696
+2024-12-16 15:23:33,832 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-16 15:23:33,832 - Keys words and phrases - DEBUG - freq_mot threshold completed at 1.0696
+2024-12-16 15:23:33,832 - Keys words and phrases - DEBUG - freq_mot sorted at 1.0697
+2024-12-16 15:23:37,219 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-16 15:23:39,845 - Keys words and phrases - DEBUG - NLP document loaded in 2.6160 secondes
+2024-12-16 15:23:39,847 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 2.6285
+2024-12-16 15:23:39,847 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 2.6286
+2024-12-16 15:23:39,847 - Keys words and phrases - DEBUG - Freq_mots completed at 2.6286
+2024-12-16 15:23:39,847 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-16 15:23:39,847 - Keys words and phrases - DEBUG - freq_mot threshold completed at 2.6287
+2024-12-16 15:23:39,847 - Keys words and phrases - DEBUG - freq_mot sorted at 2.6288
+2024-12-16 15:34:30,874 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-16 15:34:31,926 - Keys words and phrases - DEBUG - NLP document loaded in 1.0512 secondes
+2024-12-16 15:34:31,926 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 1.0517
+2024-12-16 15:34:31,926 - Keys words and phrases - DEBUG - Freq_mots completed at 1.0517
+2024-12-16 15:34:31,926 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-16 15:34:31,926 - Keys words and phrases - DEBUG - freq_mot threshold completed at 1.0518
+2024-12-16 15:34:31,926 - Keys words and phrases - DEBUG - freq_mot sorted at 1.0518
+2024-12-16 15:34:35,249 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-16 15:34:37,600 - Keys words and phrases - DEBUG - NLP document loaded in 2.3508 secondes
+2024-12-16 15:34:37,602 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 2.3532
+2024-12-16 15:34:37,602 - Keys words and phrases - DEBUG - Freq_mots completed at 2.3533
+2024-12-16 15:34:37,602 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-16 15:34:37,602 - Keys words and phrases - DEBUG - freq_mot threshold completed at 2.3533
+2024-12-16 15:34:37,602 - Keys words and phrases - DEBUG - freq_mot sorted at 2.3534
+2024-12-16 15:36:25,787 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-16 15:36:26,847 - Keys words and phrases - DEBUG - NLP document loaded in 1.0598 secondes
+2024-12-16 15:48:26,335 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-16 15:48:27,363 - Keys words and phrases - DEBUG - NLP document loaded in 1.0275 secondes
+2024-12-16 15:48:39,924 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 13.5887
+2024-12-16 15:48:39,924 - Keys words and phrases - DEBUG - Freq_mots completed at 13.5894
+2024-12-16 15:48:39,924 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-16 15:48:39,925 - Keys words and phrases - DEBUG - freq_mot threshold completed at 13.5898
+2024-12-16 15:48:39,925 - Keys words and phrases - DEBUG - freq_mot sorted at 13.5901
+2024-12-16 15:48:43,494 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-16 15:48:44,454 - Keys words and phrases - DEBUG - NLP document loaded in 0.9569 secondes
+2024-12-16 15:48:44,455 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 0.9616
+2024-12-16 15:48:44,455 - Keys words and phrases - DEBUG - Freq_mots completed at 0.9616
+2024-12-16 15:48:44,455 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-16 15:48:44,455 - Keys words and phrases - DEBUG - freq_mot threshold completed at 0.9617
+2024-12-16 15:48:44,456 - Keys words and phrases - DEBUG - freq_mot sorted at 0.9618
+2024-12-16 15:53:10,998 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-16 15:53:12,010 - Keys words and phrases - DEBUG - NLP document loaded in 1.0116 secondes
+2024-12-16 15:53:12,010 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 1.0123
+2024-12-16 15:53:12,011 - Keys words and phrases - DEBUG - Freq_mots completed at 1.0123
+2024-12-16 15:53:12,011 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-16 15:53:12,011 - Keys words and phrases - DEBUG - freq_mot threshold completed at 1.0124
+2024-12-16 15:53:12,011 - Keys words and phrases - DEBUG - freq_mot sorted at 1.0124
+2024-12-16 15:53:15,451 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-16 15:53:16,399 - Keys words and phrases - DEBUG - NLP document loaded in 0.9449 secondes
+2024-12-16 15:53:16,400 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 0.9494
+2024-12-16 15:53:16,400 - Keys words and phrases - DEBUG - Freq_mots completed at 0.9495
+2024-12-16 15:53:16,400 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-16 15:53:16,400 - Keys words and phrases - DEBUG - freq_mot threshold completed at 0.9496
+2024-12-16 15:53:16,400 - Keys words and phrases - DEBUG - freq_mot sorted at 0.9496
+2024-12-17 10:58:37,022 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-17 10:58:37,933 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-17 11:01:39,216 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-17 11:01:40,219 - Keys words and phrases - DEBUG - NLP document loaded in 1.0032 secondes
+2024-12-17 11:01:40,220 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 1.0039
+2024-12-17 11:01:40,220 - Keys words and phrases - DEBUG - Freq_mots completed at 1.0040
+2024-12-17 11:01:40,220 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-17 11:01:40,220 - Keys words and phrases - DEBUG - freq_mot threshold completed at 1.0040
+2024-12-17 11:01:40,220 - Keys words and phrases - DEBUG - freq_mot sorted at 1.0041
+2024-12-17 11:01:43,651 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-17 11:01:44,586 - Keys words and phrases - DEBUG - NLP document loaded in 0.9315 secondes
+2024-12-17 11:01:44,587 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 0.9357
+2024-12-17 11:01:44,587 - Keys words and phrases - DEBUG - Freq_mots completed at 0.9358
+2024-12-17 11:01:44,587 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-17 11:01:44,587 - Keys words and phrases - DEBUG - freq_mot threshold completed at 0.9359
+2024-12-17 11:01:44,587 - Keys words and phrases - DEBUG - freq_mot sorted at 0.9359
