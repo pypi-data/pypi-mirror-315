@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ndcpyr
+Version: 0.1.0
+Summary: Пакет для работы на платформе НЦСЭД.
+Author: Владимирова Алина Валерьевна
+Author-email: alina.v.vladimirova@gmail.com
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: IPython
+
+# ndcpyr
+
+Пакет, создаваемый для работы с данными на платформе Национального центра социально-экономических данных (НЦСЭД).
+
+### Назначение
+
+- Препроцессинг данных.
+- Исследовательский анализ данных.
+
+### Примеры использования
+
+```
+import ndcpyr
+
+# Коррекция названий переменных в соответствии с PEP8.
+ndcpyr.dt_rename_pep(df)  # returns dataframe 
+
+```
