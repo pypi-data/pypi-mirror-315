@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "autonomize-ai-shared-dto-models"
+version = "0.0.27"
+description = "Central repository for shared Data Transfer Objects (DTOs) used across different services and repositories. This Package contains Python implementations of our data models."
+authors = ["Muhamed Shahabas C <muhamed@autonomize.ai>"]
+packages = [
+    { include = "shared_dto_models" }
+]
+repository = "https://github.com/autonomize-ai/shared-dto-models"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.1.0"
+toml = "^0.10.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.10.0"
+isort = "^5.12.0"
+mypy = "^1.6.1"
+pre-commit = "^3.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+include = "\\.pyi?$"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
+
+[tool.pre-commit]
+repos = [
+    { repo = "https://github.com/pre-commit/mirrors-isort", rev = "v5.12.0", hooks = [{ id = "isort" }] },
+    { repo = "https://github.com/psf/black", rev = "23.10.0", hooks = [{ id = "black" }] },
+    { repo = "https://github.com/pre-commit/mirrors-mypy", rev = "v1.6.1", hooks = [{ id = "mypy" }] },
+    { repo = "https://github.com/pre-commit/pygrep-hooks", rev = "v1.0.0", hooks = [{ id = "python-check-blanket" }] }
+]
