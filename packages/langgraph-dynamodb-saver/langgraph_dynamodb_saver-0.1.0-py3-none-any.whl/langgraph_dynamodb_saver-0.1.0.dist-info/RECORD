@@ -1,0 +1,6 @@
+langgraph_dynamodb_saver/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+langgraph_dynamodb_saver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langgraph_dynamodb_saver/dynamodbSaver.py,sha256=RLw-1g7SFN0ZK2uTI4reA6qeiE-zkJxJQJyBw2VtUJk,15099
+langgraph_dynamodb_saver-0.1.0.dist-info/METADATA,sha256=m154lj6DcpQLkWZoNgTt9nVvksQqARaoiA2qymdap0w,1448
+langgraph_dynamodb_saver-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+langgraph_dynamodb_saver-0.1.0.dist-info/RECORD,,
