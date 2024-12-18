@@ -1,0 +1,2 @@
+[console_scripts]
+applemusicmp3 = AppleMusicMP3.main:main
