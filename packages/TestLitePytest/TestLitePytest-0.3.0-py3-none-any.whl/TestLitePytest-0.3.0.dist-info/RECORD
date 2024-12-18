@@ -1,0 +1,16 @@
+testlite/TestLite.py,sha256=bBeOsPnwNHYv5ttg8k0nSstksVD4PUkE0mKzWTZcNvM,853
+testlite/_Testlite.py,sha256=EVUEMO7sxNs3arjGpnUbwwgmTlwj5vhIl9n8-5HAYdM,427
+testlite/__init__.py,sha256=nEU2WsgZcvr2xFf7aAXQt7YgwAXdVjm32H1IYSS8V7I,146
+testlite/_config.py,sha256=iEfkl_gtaTps2XP9je0cvUAmPk8y862qKT90TZMsUCU,1851
+testlite/_helper.py,sha256=sFBj7kzRvc_JUoGO33ARnWQ-O46lr9MdCydtJxD23OI,70
+testlite/_models.py,sha256=L6a3DxBhGr2MpV3lfr5HCdWTMz3MezxmnxBRY4fpgGk,4380
+testlite/_reports.py,sha256=ZWN7BlrhOy51-OJs7GKzUS5ODWlI6j1-i_ByhChA7Zw,6923
+testlite/_serializers.py,sha256=lBehrTDWjXUuDUdSvGVEbh-02uucM7EIVfdQ3ahg0bo,2780
+testlite_pytest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testlite_pytest/plugin.py,sha256=CcntDkrPtgHdGHJm6dfRG4nmN6W7wem9PYDNmSOBLxg,6815
+TestLitePytest-0.3.0.dist-info/LICENSE,sha256=co4FmjMm_LStFQt1WvGG4rwjSQxKFBAKmdUbVuFZ0oc,1105
+TestLitePytest-0.3.0.dist-info/METADATA,sha256=1pVoDxjyF0ckOUgncw1Di15moU3jG1PA06rAwo9mX50,6713
+TestLitePytest-0.3.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+TestLitePytest-0.3.0.dist-info/entry_points.txt,sha256=2VvGuzdPE8NMy3Qo_8odYj1x5UNCj2tl3ghSMwn4FlQ,51
+TestLitePytest-0.3.0.dist-info/top_level.txt,sha256=gYTTdXnFvfgXfkR4SsH_BMrEP0qeXBXRglZfhD3ntDI,25
+TestLitePytest-0.3.0.dist-info/RECORD,,
