@@ -1,0 +1,7 @@
+exclude .*
+
+prune .*
+prune build
+prune dist
+prune docs
+prune tests
