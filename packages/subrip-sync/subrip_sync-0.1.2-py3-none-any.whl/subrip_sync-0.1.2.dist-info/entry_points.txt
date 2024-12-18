@@ -1,0 +1,2 @@
+[console_scripts]
+subrip-sync = subrip_sync.cli:main
