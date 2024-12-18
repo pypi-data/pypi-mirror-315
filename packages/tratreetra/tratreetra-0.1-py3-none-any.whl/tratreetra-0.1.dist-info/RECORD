@@ -1,0 +1,15 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/evaluation.py,sha256=q306aoCj8jB42Gyg-eEDGTVeuV8JVqxszfA-VtY5Wd8,1149
+example/example.py,sha256=HHz2lah84Mg7L2jOlGab5Jh_Br3eANtK8ao27Yapszc,2651
+example/utils_evalud.py,sha256=lv5wMfFZzolsF4rdlHoZ58Z5WeA2V9iopiwY5DBG9lY,45292
+tratreetra/__init__.py,sha256=icLfmGeYB5BYZcUpJ27FNbSfnFWfakDZyEUqk-Bpc9k,229
+tratreetra/base.py,sha256=Kwnke5TyA-IaW-CiK6Pl5vL1VPE-tcnkIEl8JA2GFsw,4555
+tratreetra/models.py,sha256=lc9UKeQ8wHoiDKV-jfHvLbOzafK4HqzN7ULh5XltxLU,6992
+tratreetra/transfer.py,sha256=lunOM-YcdOu6dbxFUn2RcRDsfmXXoN___EwBF0bCiOQ,9733
+tratreetra/universal_tags.py,sha256=U0nstL4eJ4vPSGMZ2X1jIljbh8Dm1X6m9cD4boOGhmk,724
+tratreetra/utils_algo.py,sha256=-TNjn5xFT8YLTDWGU7ZL98qRyHAUm974Ql6kLVZUEmo,1660
+tratreetra-0.1.dist-info/LICENSE,sha256=ExqN1USHoFht1zy2F4zz6WbP4VgP0eLYLjNVcN4McmU,1087
+tratreetra-0.1.dist-info/METADATA,sha256=p0ugid9FR8J12Lis1ztVervPXuhZTHVCdzJ5XmHaGX0,2669
+tratreetra-0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+tratreetra-0.1.dist-info/top_level.txt,sha256=iKZMm73epfsUfOiwwsR-UHAvxeU5I1vY1yKO5R8iEKc,19
+tratreetra-0.1.dist-info/RECORD,,
