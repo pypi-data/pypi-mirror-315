@@ -1,0 +1,9 @@
+hydra-core
+hydra-zen
+pandas
+xarray
+numpy
+lightning
+omegaconf
+tqdm
+einops
