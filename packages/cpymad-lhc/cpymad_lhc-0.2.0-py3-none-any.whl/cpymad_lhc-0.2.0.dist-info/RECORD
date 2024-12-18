@@ -1,0 +1,12 @@
+cpymad_lhc/__init__.py,sha256=PtMijKyNQrXJ9y2JTV0la8NqeAZL_HBlGmTbiKCGe2s,241
+cpymad_lhc/corrector_limits.py,sha256=un8wSaV7xwcyuTgfC7xSxGA6ZQitdLuWwaCddLWJzCw,6464
+cpymad_lhc/coupling_correction.py,sha256=Ui8RWnVX9_RZWnwq7_lxplDnDPExaINhvVQ_IWiUAKY,10527
+cpymad_lhc/coupling_knob.py,sha256=VJiIWnRPm69pLkWI47-XTdMz8qSgC0oBm6Sekb05KuI,7979
+cpymad_lhc/general.py,sha256=t8ku-LMfdWv8JqhCBdoWassPqvdIFQyhd8EJ88E4aoc,21534
+cpymad_lhc/io.py,sha256=tGqlCeoEK3ArWyLYWINvYce86pYUDJJ8pwJPN6ibMdQ,404
+cpymad_lhc/ir_orbit.py,sha256=-i04mzjclSp-lx__RDkQaIBwhf7xW-1YaM4EhWvVpl0,12214
+cpymad_lhc/logging.py,sha256=iFHmBdw7sFUh3dKnpUTBwPa_uZm3WWEaQcmZdLn2VR0,6483
+cpymad_lhc-0.2.0.dist-info/METADATA,sha256=HUiX6zGG75qYiCB4byzTZjYa0hLC3e3PRtVuKCVr5ac,2895
+cpymad_lhc-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cpymad_lhc-0.2.0.dist-info/licenses/LICENSE,sha256=V1h7hhxEpFVQ-aqbtA3cAgtaTxzBXkPCiw5AHJyy4lY,1067
+cpymad_lhc-0.2.0.dist-info/RECORD,,
