@@ -1,0 +1,245 @@
+Metadata-Version: 2.4
+Name: integry
+Version: 0.0.3
+Summary: The official Python library for the Integry API
+Project-URL: Homepage, https://github.com/IntegryHQ/integry-python
+Project-URL: Issues, https://github.com/IntegryHQ/integry-python/issues
+Author-email: Integry <hello@integry.io>
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Requires-Dist: httpx<1,>=0.27.0
+Requires-Dist: pydantic<3,>=2.9.0
+Description-Content-Type: text/markdown
+
+# Integry Python API Library
+
+[![PyPI version](https://img.shields.io/pypi/v/integry.svg)](https://pypi.org/project/integry/)
+
+The Python API library allows access to [Integry REST API](https://docs.integry.ai/apis-and-sdks/api-reference) from Python programs.
+
+# Installation
+
+```bash
+# install from PyPI
+pip install integry
+```
+
+# Usage with Agent Frameworks
+
+## 1. LangChain/LangGraph
+
+```python
+import os
+from integry import Integry
+from langchain_core.messages import SystemMessage, HumanMessage
+from langchain_openai import ChatOpenAI
+from langchain_core.tools import StructuredTool
+
+user_id = "your user's ID"
+
+# Initialize the client
+integry = Integry(
+    app_key=os.environ.get("INTEGRY_APP_SECRET"),
+    app_secret=os.environ.get("INTEGRY_APP_KEY"),
+)
+
+slack_post_message = await integry.functions.get("slack-post-message", user_id)
+
+llm = ChatOpenAI(
+    model="gpt-4o",
+    api_key=os.environ.get("OPENAI_API_KEY"),
+)
+
+tool = slack_post_message.as_langchain_tool(StructuredTool.from_function, user_id)
+
+agent = create_react_agent(
+    tools=[tool],
+    model=llm,
+)
+
+await agent.ainvoke({
+    "messages": [
+        SystemMessage(content="You are a helpful assistant"),
+        HumanMessage(content="Say hello to my team on slack"),
+    ]
+})
+
+```
+
+## 2. CrewAI
+```python
+import os
+from integry import Integry
+from langchain_openai import ChatOpenAI
+
+user_id = "your user's ID"
+
+# Initialize the client
+integry = Integry(
+    app_key=os.environ.get("INTEGRY_APP_SECRET"),
+    app_secret=os.environ.get("INTEGRY_APP_KEY"),
+)
+
+slack_post_message = await integry.functions.get("slack-post-message", user_id)
+
+tool = slack_post_message.as_langchain_tool(StructuredTool.from_function, user_id)
+
+llm = ChatOpenAI(
+    model="gpt-4o",
+    api_key=SecretStr(os.environ.get("OPENAI_API_KEY")),
+)
+
+crewai_agent = Agent(
+    role="Integration Assistant",
+    goal="You are a helpful assistant",
+    backstory="You help users make actions on various apps",
+    verbose=True,
+    tools=[tool],
+    llm=llm,
+)
+
+task = Task(
+    description="Say hello to my team on slack",
+    agent=crewai_agent,
+    expected_output="Status of the operation"
+)
+
+crew = Crew(
+    agents = [crewai_agent],
+    tasks = [task]
+)
+
+result = crew.kickoff()
+```
+
+## 3. Letta
+```python
+import os
+from integry import Integry
+
+user_id = "your user's ID"
+
+# Initialize the client
+integry = Integry(
+    app_key=os.environ.get("INTEGRY_APP_SECRET"),
+    app_secret=os.environ.get("INTEGRY_APP_KEY"),
+)
+
+slack_post_message = await integry.functions.get("slack-post-message", user_id)
+
+client = create_client()
+
+agent_state = client.create_agent(
+    name="Integration Assistant", 
+)
+
+tool = slack_post_message.as_langchain_tool(StructuredTool.from_function, user_id)
+client.add_tool(tool)
+
+response = client.send_message(agent_id=agent_state.id, role="user", message="say hello to my team on Slack")
+```
+
+## 4. AutoGen (WIP)
+```python
+import os
+from integry import Integry
+
+from autogen import AssistantAgent, UserProxyAgent
+
+user_id = "your user's ID"
+
+# Initialize the client
+integry = Integry(
+    app_key=os.environ.get("INTEGRY_APP_SECRET"),
+    app_secret=os.environ.get("INTEGRY_APP_KEY"),
+)
+
+llm_config = {
+    "config_list": [
+        {
+            "model": "gpt-4o-mini",
+            "api_key": "<your-api-key>",
+        }
+    ]
+}
+
+chatbot = AssistantAgent(
+    "chatbot",
+    system_message="Reply TERMINATE when the task is done or when user's content is empty",
+    llm_config=llm_config,
+)
+
+user_proxy = UserProxyAgent(
+    name="User",
+    is_termination_msg=lambda x: x.get("content", "")
+    and "TERMINATE" in x.get("content", ""),
+    human_input_mode="NEVER",
+    code_execution_config={"use_docker": False},
+)
+
+toolset.register_tools(apps=[App.GITHUB], caller=chatbot, executor=user_proxy)
+
+response = user_proxy.initiate_chat(chatbot, message="say hello to my team on Slack")
+```
+
+# Prediction
+```python
+import os
+from integry import Integry
+
+user_id = "your user's ID"
+
+# Initialize the client
+integry = Integry(
+    app_secret=os.environ.get("INTEGRY_APP_KEY"),
+    app_key=os.environ.get("INTEGRY_APP_SECRET"),
+)
+
+# Get the most relevant function
+predictions = await integry.functions.predict(
+    prompt="say hello to my team on Slack", user_id=user_id, predict_arguments=True
+)
+
+if predictions:
+    function = predictions[0]
+    # Call the function
+    await function(user_id, function.arguments)
+```
+
+# Pagination
+List methods are paginated and allow you to iterate over data without handling pagination manually.
+```python
+from integry import Integry
+
+user_id = "your user's ID"
+
+integry = Integry(
+    app_secret=os.environ.get("INTEGRY_APP_KEY"),
+    app_key=os.environ.get("INTEGRY_APP_SECRET"),
+)
+
+async for function in integry.functions.list(user_id):
+    # do something with function
+    print(function.name)
+```
+
+If you want to control pagination, you can fetch individual pages by using the `cursor` returned by the previous page.
+```python
+from integry import Integry
+
+user_id = "your user's ID"
+
+integry = Integry(
+    app_secret=os.environ.get("INTEGRY_APP_KEY"),
+    app_key=os.environ.get("INTEGRY_APP_SECRET"),
+)
+
+first_page = await integry.apps.list(user_id)
+
+second_page = await integry.apps.list(user_id, cursor=first_page.cursor)
+```
