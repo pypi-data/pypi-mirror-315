@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: airbite
+Version: 0.1.17
+Summary: `airbite` brings the power of Airbyte to Python with an intuitive, user-friendly API. It builds upon the PyAirbyte project and adds additional features.
+Home-page: https://github.com/ossmht/airbite_pub/
+Author: ossmht
+Author-email: ossmht@gmail.com
+License: MIT
+Keywords: airbite,airbyte,data,etl,extract,transform,load,pyairbyte
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Requires-Dist: airbyte<0.999.0,>=0.21.0
+Requires-Dist: pydantic>=2.10.2
+Requires-Dist: airbyte_databricks_cache<0.999.0,>=0.1.7
+
+# airbite
+
+`airbite` brings the power of Airbyte to Python with an intuitive, user-friendly API. It builds upon the PyAirbyte project and adds additional features.
+
+With only a few lines of code, `airbite` can:
+
+- Read data from sources in either `full refresh` or `incremental refresh` mode (the source must support incremental refresh)
+- Write to destinations with multiple write strategies: `append`, `merge`, or `replace`
+
+## Supported Connectors
+
+- Number of sources: 455
+- Number of destinations: 23
+More are being added regularly
+
+The "friendly API" is heavily typed, so you don't need to refer to any connector documentation separately while coding. This also helps AI tools (like GitHub Copilot) to write correct code, saving you hours of reading.
+
+
+## Installation
+
+To install airbite, use pip:
+`pip install airbite`
+
+
+## Usage
+
+
+There are a total of 5 steps you need to perform for moving data between sources and destiantions (after `import airbite`):
+
+1. Create source config
+2. Create source
+3. Create destination config (optional)
+4. Create destination (optional)
+5. Write data into destination:
+    - `destination.write(source, ...)`
+6. (Optional) You can also just read the data from the source for exploration:
+    - `source.read_to_pandas(...)`
+    - `source.read_to_iterator(...)`
+
+In addition there are a few utility functions provided:
+
+1. `list_connectors(kind: Literal["any", "source", "destination"] = 'any', filter_text: str = None)`
+2. `get_env_variable(secret_name: str)`: use this to inject variables from your `.env` files
+
+
+Below is a basic example of moving data from source to destination. For more examples head to the examples dir.
+
+```py
+
+import airbite
+
+# step #1
+s_config = airbite.SourceFileConfig(    
+    dataset_name="data_a",
+    format="csv",
+    provider=SourceFile.LocalFilesystemLimited(storage="local"), 
+    url="./data/a.csv",
+)
+# step #2
+source = airbite.create_source(s_config)
+# step #3
+d_config = airbite.DestinationDuckDBConfig(db_path=".cache/my_cache")
+# step #4
+destination = airbite.create_destination(d_config)
+# step #5
+airbite.destination.write(source=source, streams= '*')
+
+```
+
+## Build and Publish
+
+```bash
+
+# this step MUST be executed once in local dev environment:
+# install the pre-commit and post-commit scripts that will help generate the jsonschema, models and create "connector_configs/__init__.py"
+./install-pre-n-post-commit-hook.sh
+
+
+# to generate model locally:
+python airbite/model_generator.py
+
+# build locally:
+# rm -rf airbite/airbite.egg-info airbite.egg-info dist build && python -m build -w
+rm -rf airbite/airbite.egg-info airbite.egg-info dist build && uv build --wheel
+
+# publish to test pypi
+uv publish --publish-ur 'https://test.pypi.org/legacy/' dist/*.whl
+
+# publish to pypi
+uv publish --publish-ur 'https://upload.pypi.org/legacy/' dist/*.whl
+
+# run tests
+python -m unittest tests/*.py
+
+
+# tagging and release (not used)
+git tag -a vx.x.x -m ''
+git push origin tag v0.1.0
+
+
+# create a release
+git fetch --tags origin
+git describe --tags --abbrev=0
+gh release create v0.1.8 --target feat-workflow --generate-notes
+git fetch --tags origin
+
+```
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details
