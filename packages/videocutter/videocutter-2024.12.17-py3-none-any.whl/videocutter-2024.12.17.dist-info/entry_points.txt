@@ -1,0 +1,2 @@
+[console_scripts]
+videocutter = videocutter.videocutter:app
