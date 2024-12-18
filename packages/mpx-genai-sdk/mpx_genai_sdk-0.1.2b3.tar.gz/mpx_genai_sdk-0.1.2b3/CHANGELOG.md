@@ -1,0 +1,109 @@
+# Changelog
+
+## 0.1.2-beta.3 (2024-12-17)
+
+Full Changelog: [v0.1.2-beta.1...v0.1.2-beta.3](https://github.com/masterpiecevr/mpx-sdk-python/compare/v0.1.2-beta.1...v0.1.2-beta.3)
+
+### Features
+
+* **api:** api update ([#28](https://github.com/masterpiecevr/mpx-sdk-python/issues/28)) ([a2ae388](https://github.com/masterpiecevr/mpx-sdk-python/commit/a2ae3880f54a6cf1cd7945dc661724f3b1c19781))
+* **api:** api update ([#36](https://github.com/masterpiecevr/mpx-sdk-python/issues/36)) ([4959ee4](https://github.com/masterpiecevr/mpx-sdk-python/commit/4959ee49f2edce129f841c7b5e55838f4bf8cd66))
+* **api:** api update ([#38](https://github.com/masterpiecevr/mpx-sdk-python/issues/38)) ([33346b7](https://github.com/masterpiecevr/mpx-sdk-python/commit/33346b79061c27fc5da3838ee5aad07cd09a3c38))
+
+
+### Chores
+
+* **internal:** codegen related update ([#30](https://github.com/masterpiecevr/mpx-sdk-python/issues/30)) ([5aa562e](https://github.com/masterpiecevr/mpx-sdk-python/commit/5aa562e5d921d04d7be9945b0d0def7789c4651d))
+* **internal:** codegen related update ([#33](https://github.com/masterpiecevr/mpx-sdk-python/issues/33)) ([53a553f](https://github.com/masterpiecevr/mpx-sdk-python/commit/53a553ff88d73a34a559003b882b4acc27b08eb6))
+* **internal:** codegen related update ([#34](https://github.com/masterpiecevr/mpx-sdk-python/issues/34)) ([1951923](https://github.com/masterpiecevr/mpx-sdk-python/commit/19519238d392eb31ebce597d23f702a7739f9197))
+* **internal:** remove some duplicated imports ([#31](https://github.com/masterpiecevr/mpx-sdk-python/issues/31)) ([5361b97](https://github.com/masterpiecevr/mpx-sdk-python/commit/5361b97a6f310dcc51a1a37ae738ea326d0fc244))
+* **internal:** updated imports ([#32](https://github.com/masterpiecevr/mpx-sdk-python/issues/32)) ([02ae04d](https://github.com/masterpiecevr/mpx-sdk-python/commit/02ae04deaaab004db6ea9463aceda592a7af9aff))
+* update SDK settings ([#37](https://github.com/masterpiecevr/mpx-sdk-python/issues/37)) ([95c8273](https://github.com/masterpiecevr/mpx-sdk-python/commit/95c82734a00b6a496cb2f35ef2bdce3091e1b3bb))
+
+
+### Documentation
+
+* **readme:** example snippet for client context manager ([#35](https://github.com/masterpiecevr/mpx-sdk-python/issues/35)) ([cc66e22](https://github.com/masterpiecevr/mpx-sdk-python/commit/cc66e22a14705934b113d01e11da22cbb7ab0cdf))
+
+## 0.1.2-beta.1 (2024-12-13)
+
+Full Changelog: [v0.1.0-alpha.2...v0.1.2-beta.1](https://github.com/masterpiecevr/mpx-sdk-python/compare/v0.1.0-alpha.2...v0.1.2-beta.1)
+
+### Features
+
+* **api:** api update ([#24](https://github.com/masterpiecevr/mpx-sdk-python/issues/24)) ([d6205a3](https://github.com/masterpiecevr/mpx-sdk-python/commit/d6205a31cc2fca0c4d52d54dc17db1f73ceab798))
+* **api:** api update ([#25](https://github.com/masterpiecevr/mpx-sdk-python/issues/25)) ([3bb6fa9](https://github.com/masterpiecevr/mpx-sdk-python/commit/3bb6fa98861d6febe27b76f4d68c00abc7b3d68e))
+
+
+### Chores
+
+* **internal:** codegen related update ([#22](https://github.com/masterpiecevr/mpx-sdk-python/issues/22)) ([e57801b](https://github.com/masterpiecevr/mpx-sdk-python/commit/e57801b9af8dc01816e0f158bccf6d018fa5bed9))
+* update SDK settings ([#26](https://github.com/masterpiecevr/mpx-sdk-python/issues/26)) ([c32bf2f](https://github.com/masterpiecevr/mpx-sdk-python/commit/c32bf2f3c536829fe97aa8b1882289333a806e3d))
+
+## 0.1.0-alpha.2 (2024-12-10)
+
+Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/masterpiecevr/mpx-sdk-python/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
+
+### Features
+
+* **api:** api update ([#20](https://github.com/masterpiecevr/mpx-sdk-python/issues/20)) ([1105030](https://github.com/masterpiecevr/mpx-sdk-python/commit/110503064a3b6cc4ed9f36901452168114de6a72))
+
+
+### Chores
+
+* **internal:** bump pydantic dependency ([#17](https://github.com/masterpiecevr/mpx-sdk-python/issues/17)) ([8f8436f](https://github.com/masterpiecevr/mpx-sdk-python/commit/8f8436fc220e7057250a969b5e8f44997cec9209))
+
+
+### Documentation
+
+* **readme:** fix http client proxies example ([#19](https://github.com/masterpiecevr/mpx-sdk-python/issues/19)) ([c9d15f8](https://github.com/masterpiecevr/mpx-sdk-python/commit/c9d15f85172c2d8ae692ab27fb7752b3c6b562a6))
+
+## 0.1.0-alpha.1 (2024-12-05)
+
+Full Changelog: [v0.0.1-alpha.0...v0.1.0-alpha.1](https://github.com/masterpiecevr/mpx-sdk-python/compare/v0.0.1-alpha.0...v0.1.0-alpha.1)
+
+### Features
+
+* **api:** update via SDK Studio ([3b6feec](https://github.com/masterpiecevr/mpx-sdk-python/commit/3b6feec7297318e819246db6bee7f95ccb84407c))
+* **api:** update via SDK Studio ([a78d05c](https://github.com/masterpiecevr/mpx-sdk-python/commit/a78d05c46a0a4844d18ef51f19ee758fad90a649))
+* **api:** update via SDK Studio ([230c272](https://github.com/masterpiecevr/mpx-sdk-python/commit/230c27212b67f3fb6b82e8ebd93f681b55672173))
+* **api:** update via SDK Studio ([86bf274](https://github.com/masterpiecevr/mpx-sdk-python/commit/86bf2741d8ec7a17ea403c45873afb16d45c4e1a))
+* **api:** update via SDK Studio ([7100a6a](https://github.com/masterpiecevr/mpx-sdk-python/commit/7100a6a7ab310bb6d283507bd436bc3750f4b69a))
+* **api:** update via SDK Studio ([55a55ab](https://github.com/masterpiecevr/mpx-sdk-python/commit/55a55ab0c8d5d99233825f2a844d592536b37925))
+* **api:** update via SDK Studio ([ffd0f4e](https://github.com/masterpiecevr/mpx-sdk-python/commit/ffd0f4e36f1932eefded16291f4e97b46164c4df))
+* **api:** update via SDK Studio ([14d80f3](https://github.com/masterpiecevr/mpx-sdk-python/commit/14d80f3e90568f49b8d3cba52cc01194261d9615))
+* **api:** update via SDK Studio ([0a83f26](https://github.com/masterpiecevr/mpx-sdk-python/commit/0a83f263940163b352ad9dbddcc0150d9082b403))
+* **api:** update via SDK Studio ([5acc2e6](https://github.com/masterpiecevr/mpx-sdk-python/commit/5acc2e64a783dbc48fa31aef41c296d78e88b256))
+* **api:** update via SDK Studio ([c020ecb](https://github.com/masterpiecevr/mpx-sdk-python/commit/c020ecb7e117637a10a9385894ba828ddf9c62db))
+* **api:** update via SDK Studio ([f69e559](https://github.com/masterpiecevr/mpx-sdk-python/commit/f69e559cf8937bdbc9920b236ddad89fa110ad5b))
+* **api:** update via SDK Studio ([4d1b4d5](https://github.com/masterpiecevr/mpx-sdk-python/commit/4d1b4d54f1c6923ac22bd508f9cd90adfda209a8))
+* **api:** update via SDK Studio ([#14](https://github.com/masterpiecevr/mpx-sdk-python/issues/14)) ([bf73f9d](https://github.com/masterpiecevr/mpx-sdk-python/commit/bf73f9db3ff7c683d0e77271462074ddd510530a))
+* **api:** update via SDK Studio ([#15](https://github.com/masterpiecevr/mpx-sdk-python/issues/15)) ([c24d40e](https://github.com/masterpiecevr/mpx-sdk-python/commit/c24d40e17704bb73c96e4f772d48fc4650979f4a))
+* **api:** update via SDK Studio ([#3](https://github.com/masterpiecevr/mpx-sdk-python/issues/3)) ([3a89e78](https://github.com/masterpiecevr/mpx-sdk-python/commit/3a89e7809fc690eb2be4274995b4adcf0cdbd6d1))
+* **api:** update via SDK Studio ([#4](https://github.com/masterpiecevr/mpx-sdk-python/issues/4)) ([aae6fd1](https://github.com/masterpiecevr/mpx-sdk-python/commit/aae6fd1f015d91392cf9cc956dc91d06d1b2a444))
+
+
+### Bug Fixes
+
+* **client:** compat with new httpx 0.28.0 release ([#11](https://github.com/masterpiecevr/mpx-sdk-python/issues/11)) ([b2da5bf](https://github.com/masterpiecevr/mpx-sdk-python/commit/b2da5bf6c8f6adc60906ae5b3e7db8bdb368d0c0))
+
+
+### Chores
+
+* go live ([#1](https://github.com/masterpiecevr/mpx-sdk-python/issues/1)) ([a99c91e](https://github.com/masterpiecevr/mpx-sdk-python/commit/a99c91eb215cc2f0157752f8b4bedf15fe807a73))
+* go live ([#5](https://github.com/masterpiecevr/mpx-sdk-python/issues/5)) ([7b6c9ad](https://github.com/masterpiecevr/mpx-sdk-python/commit/7b6c9ad9fdc3f6983f6686ea7a63f82a659d58a6))
+* **internal:** bump pyright ([#12](https://github.com/masterpiecevr/mpx-sdk-python/issues/12)) ([cd27786](https://github.com/masterpiecevr/mpx-sdk-python/commit/cd277866f8c9409f2f9dba954bd0d9bf0c410ac5))
+* **internal:** exclude mypy from running on tests ([#10](https://github.com/masterpiecevr/mpx-sdk-python/issues/10)) ([7887c63](https://github.com/masterpiecevr/mpx-sdk-python/commit/7887c630fb3f30d6b980c742e0df2bed1b91ba49))
+* **internal:** fix compat model_dump method when warnings are passed ([#7](https://github.com/masterpiecevr/mpx-sdk-python/issues/7)) ([87881fe](https://github.com/masterpiecevr/mpx-sdk-python/commit/87881feba0c66378408b084cfc9f2b72d7a7c05d))
+* make the `Omit` type public ([#13](https://github.com/masterpiecevr/mpx-sdk-python/issues/13)) ([5cc34e4](https://github.com/masterpiecevr/mpx-sdk-python/commit/5cc34e49d959985bcc501d4837f96f0cc28b9995))
+* rebuild project due to codegen change ([960aea0](https://github.com/masterpiecevr/mpx-sdk-python/commit/960aea0b4bc6aa1eaa9d49208ec1cb6f29f14246))
+* rebuild project due to codegen change ([cdfd3df](https://github.com/masterpiecevr/mpx-sdk-python/commit/cdfd3df8203e5f800149c80d7f994eb87589e691))
+* rebuild project due to codegen change ([faa065f](https://github.com/masterpiecevr/mpx-sdk-python/commit/faa065f6425af1a4b011fad66f8b6b50227c6cf2))
+* rebuild project due to codegen change ([fc1e677](https://github.com/masterpiecevr/mpx-sdk-python/commit/fc1e677368020f8b4a3ca351c02114b9eaee2e64))
+* remove now unused `cached-property` dep ([#9](https://github.com/masterpiecevr/mpx-sdk-python/issues/9)) ([a380e9b](https://github.com/masterpiecevr/mpx-sdk-python/commit/a380e9b52af186124b739b39d4c76212e644ea42))
+* update SDK settings ([9c8b7ce](https://github.com/masterpiecevr/mpx-sdk-python/commit/9c8b7ce26345a29465804b2bf86eb8899d7c547a))
+
+
+### Documentation
+
+* add info log level to readme ([#8](https://github.com/masterpiecevr/mpx-sdk-python/issues/8)) ([229affb](https://github.com/masterpiecevr/mpx-sdk-python/commit/229affb60c23c31de8ecea13b8c6a362aa8a9029))
