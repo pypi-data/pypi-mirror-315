@@ -1,0 +1,80 @@
+PowerDynamicEstimator (pydynamicestimator), version 0.1.0 released on 04.12.2024
+https://doi.org/10.5905/ethz-1007-842
+
+About
+
+PowerDynamicEstimator is a state estimation tool for power systems using a recursive dynamic state estimator based on an incomplete nonlinear DAE (Differential Algebraic Equations) model. 
+The estimator combines dynamic evolution equations, algebraic network equations, and phasor measurements to recursively estimate dynamic and algebraic states, making it suitable for centralized power systems dynamic estimation 
+even when some component models are missing (unknown).
+
+Citation
+
+If you use PowerDynamicEstimator in your academic work, please cite the following paper:
+
+@article{powerdynamicestimator,
+  author = {Katanic, Milos and Lygeros, John and Hug, Gabriela},
+  title = {Recursive dynamic state estimation for power systems with an incomplete nonlinear DAE model},
+  journal = {IET Generation, Transmission \& Distribution},
+  volume = {18},
+  number = {22},
+  pages = {3657-3668},
+  keywords = {differential algebraic equations, Kalman filters, state estimation},
+  doi = {https://doi.org/10.1049/gtd2.13308}, 
+  url = {https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/gtd2.13308},
+  eprint = {https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/gtd2.13308},
+  abstract = {Power systems are highly complex, large-scale engineering systems subject to many uncertainties, which makes accurate mathematical modeling challenging. 
+This article introduces a novel centralized dynamic state estimator designed specifically for power systems where some component models are missing. Including the available dynamic evolution equations, 
+algebraic network equations, and phasor measurements, the least squares criterion is applied to estimate all dynamic and algebraic states recursively. The approach generalizes the iterated extended 
+Kalman filter and does not require static network observability, relying on the network topology and parameters. Furthermore, a topological criterion is established for placing phasor measurement units (PMUs), 
+termed topological estimability, which guarantees the uniqueness of the solution. A numerical study evaluates the performance under short circuits in the network and load changes and shows superior tracking 
+performance compared to robust procedures from the literature with computational times in accordance with the typical PMU sampling rates.},
+  year = {2024}
+}
+The full version of the paper is available on ArXiv: https://arxiv.org/abs/2305.10065v2.
+
+Installation
+
+To get started with PowerDynamicEstimator, follow the installation instructions:
+
+1) Clone the repository:
+git clone https://gitlab.nccr-automation.ch/mkatanic/powerdynamicestimator
+cd PowerDynamicEstimator
+2) Install poetry:
+pip install poetry==1.8.2
+3) Install dependencies:
+poetry install
+4) Activate the virtual environment:
+poetry shell
+5) Run the main:
+poetry run python main.py
+
+
+
+Configuration:
+
+The config.py script contains parameters that are easy to modify. Please ensure that you have the correct values for your system’s configuration.
+
+Usage
+Running the Estimator
+Edit the config.py file to specify the parameters for your system setup (e.g., power generation, load distribution, node configurations).
+
+The primary script to run is main.py.
+
+
+Important Notes
+
+
+Warning: Currently, only one injector per node is supported due to initialization ambiguity. If you need to handle more than one injector per node, 
+you will need to create another node connected with a branch of very small impedance to simulate this.
+
+Parameters
+System dynamic and static parameters including the topology are specified in data subfolder. Define the loads, generators, and their characteristics at specific nodes in 
+the power system.Prefixes 'sim_' and 'est_' denote if the data are used for simulation or estimation. Disturbances are specified in separate files followed by '_dist'. 
+PMU measurements used for estimation and their associated characteristics are defined in est_param.txt.
+
+The configuration parameters that are easy to change are located in the config.py file. 
+Kalman Filter Settings: Adjust parameters related to the recursive state estimation process (e.g., noise covariance, initial error).
+
+
+License
+This software is licensed under the GNU General Public License v3.0 (GPL-3.0).
