@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gridly_api
+Version: 0.1.1
+Summary: Gridly (https://www.gridly.com) API
+Author: Walery Wysotsky
+Author-email: dev@wysotsky.info
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: python-dotenv
