@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tarot-cmoney"
+version = "0.1.4"
+description = ""
+authors = ["christian.phillips <phristianchillips@gmail.com>"]
+readme = "README.md"
+exclude = [
+    'main.py',
+    'scraper.py'
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+openai = "^1.57.3"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
