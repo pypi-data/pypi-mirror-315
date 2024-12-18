@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+batchprocessor/__init__.py
+yabp.egg-info/PKG-INFO
+yabp.egg-info/SOURCES.txt
+yabp.egg-info/dependency_links.txt
+yabp.egg-info/requires.txt
+yabp.egg-info/top_level.txt
