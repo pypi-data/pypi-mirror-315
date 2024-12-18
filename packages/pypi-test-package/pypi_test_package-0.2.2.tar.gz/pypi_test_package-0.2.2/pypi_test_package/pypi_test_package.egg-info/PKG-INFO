@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pypi_test_package
+Version: 0.2.2
+Summary: A test package for PyPI
+Author: Haibing-Ma
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pypi_test_package
+
+This is a simple example package to demonstrate how to upload a Python package to PyPI, hide source code, and install external dependencies such as `samtools` and `minimap2`.
+
+## Installation
+
+### Install Python Package
+
+To install the Python package, run:
+
+```bash
+pip install pypi_test_package
