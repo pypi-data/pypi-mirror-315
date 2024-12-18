@@ -1,0 +1,10 @@
+numpy
+pandas
+statsmodels
+scipy
+pickle
+plotly
+geopandas
+shapely
+rasterio
+rasterstats
