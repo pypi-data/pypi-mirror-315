@@ -1,0 +1,90 @@
+[tool.poetry]
+name = "django-better-azure-communication-email"
+version = "0.0.1"
+description = "A better Django email backend for Azure Communication Email service."
+authors = ["Frederich Pedersen <frodo@hobbits.dk>"]
+maintainers = []
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/itm8-CDC/django-better-azure-communication-email"
+packages = [{include = "django_better_azure_communication_email"}]
+keywords = ["django", "email", "azure"]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: Apache Software License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Framework :: Django',
+    'Framework :: Django :: 4.2',
+    'Framework :: Django :: 5.0',
+    'Framework :: Django :: 5.1',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/itm8-CDC/django-better-azure-communication-email/issues"
+"Company Website" = "https://itm8.com/"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+azure-identity = ">=1.15"
+azure-communication-email = ">=1.0"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+pytest-django = "^4.8.0"
+tox = "^4.15.1"
+django = ">=4.2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13"
+tox = "^4.14"
+
+[tool.poetry.group.release]
+optional = true
+
+[tool.poetry.group.release.dependencies]
+poetry-dynamic-versioning = "*"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+latest-tag = true
+pattern = '(?P<base>\d+\.\d+\.\d+)'
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.isort]
+py_version = 312
+default_section = "THIRDPARTY"
+known_first_party = ["django_better_azure_communication_email"]
+known_django = "django"
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "DJANGO", "FIRSTPARTY", "LOCALFOLDER"]
+combine_as_imports = true
+sort_reexports = true
+multi_line_output = 5
+lines_after_imports = 2
+combine_star = true
+include_trailing_comma = true
+remove_redundant_aliases = true
+skip_gitignore = true
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.settings"
+pythonpath = ". django_better_azure_communication_email"
