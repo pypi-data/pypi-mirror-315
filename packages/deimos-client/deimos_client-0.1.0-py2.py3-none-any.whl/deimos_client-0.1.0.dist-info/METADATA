@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: deimos-client
+Version: 0.1.0
+Summary: Deimos client for handling backend requests
+Author-email: Logan <logan@deemos.com>
+Requires-Dist: boto3
+Requires-Dist: kombu
+Requires-Dist: opencv-python==4.6.0.66
+Requires-Dist: oss2
+Requires-Dist: requests
+Requires-Dist: socket
+Requires-Dist: tos
