@@ -1,0 +1,1 @@
+"""MySchoolBucks API Data Models."""
