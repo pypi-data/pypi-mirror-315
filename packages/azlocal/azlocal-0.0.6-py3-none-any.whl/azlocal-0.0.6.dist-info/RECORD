@@ -1,0 +1,12 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/azdlocal.py,sha256=u1RcAXaOZmEbhepR0v05QD0n8jqeOsDv1lHbB9ysE0A,1782
+src/azlocal.py,sha256=OFoJzEr64wTT-BqdXEPWdTKIgQ1UhdJlHBC8_cDu2-k,1815
+src/funclocal.py,sha256=yqfcDSxKOuEj13mmvqVcgF_FIoklNluhTtnrasdI9wQ,1526
+src/shared.py,sha256=vu7tqT0LDeiiLIf-t82n31As3haSse3mvc-N__3ii8c,1432
+src/tflocal.py,sha256=yB2ptyU1F-XHFCjIOTPLn14rwXbdtqtpijbEIirpXIk,1734
+azlocal-0.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+azlocal-0.0.6.dist-info/METADATA,sha256=N9yl23-815GdAvMLLPSz-1pmy20ZyqPSYpl2b0Ax_QI,13764
+azlocal-0.0.6.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+azlocal-0.0.6.dist-info/entry_points.txt,sha256=5ebdDuJAIJ88LvEYO6aFd0lvX7tdq7Xq-aqY_Ht_9mg,132
+azlocal-0.0.6.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+azlocal-0.0.6.dist-info/RECORD,,
