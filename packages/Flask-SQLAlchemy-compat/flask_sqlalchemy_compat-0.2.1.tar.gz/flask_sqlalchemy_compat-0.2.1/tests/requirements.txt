@@ -1,0 +1,10 @@
+# Requirements for testing.
+pytest
+pytest-base-url
+pytest-flask
+pytest-html
+pytest-metadata
+py
+pytest-variables
+pytest-xdist
+flask-login

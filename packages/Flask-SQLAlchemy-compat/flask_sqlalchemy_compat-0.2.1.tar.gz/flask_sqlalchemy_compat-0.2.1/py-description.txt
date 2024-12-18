@@ -1,0 +1,1 @@
+Support the compatibility between Flask-SQLAlchemy and Flask-SQLAlchemy-Lite.
