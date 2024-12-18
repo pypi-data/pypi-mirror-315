@@ -1,0 +1,9 @@
+setup.py
+SudokuSolverPython/SudokuSolverPython.py
+SudokuSolverPython/__init__.py
+SudokuSolverPython.egg-info/PKG-INFO
+SudokuSolverPython.egg-info/SOURCES.txt
+SudokuSolverPython.egg-info/dependency_links.txt
+SudokuSolverPython.egg-info/top_level.txt
+tests/__init__.py
+tests/test_SudokuSolverPython.py
