@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+shuffleify/__init__.py
+shuffleify/core.py
+shuffleify/shuffler.py
+shuffleify.egg-info/PKG-INFO
+shuffleify.egg-info/SOURCES.txt
+shuffleify.egg-info/dependency_links.txt
+shuffleify.egg-info/requires.txt
+shuffleify.egg-info/top_level.txt

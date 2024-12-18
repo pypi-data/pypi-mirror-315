@@ -1,0 +1,117 @@
+# SHUFFLEIFY DOCUMENTATION
+
+We all use Spotify and we all love this software. But something is off inside it, especially shuffling... Have you ever felt that you were listening to the very same 10 songs every time you shuffled your hundreds song included playlist? Well, you are not alone... Which is why I started the 'Make Shuffle Great Again' campaign officially!
+
+This package is about functionality, not other fancy UI/UX stuff. If you do some visual stuff, go ahead, the basic functionality is already ready for you!
+
+## Installation
+
+```
+pip install shuffleify
+```
+
+## Quick Start
+
+Copy, set things up, run!
+
+```python
+from shuffleify.core import ApiHandler
+import shuffleify.shuffler as shuffler
+
+handler = ApiHandler(
+    client_id='your client id',
+    client_secret='your client secret'
+)
+
+playlist_id = handler.get_playlist_id('https://open.spotify.com/playlist/51gVMBShUWyqVcc3F65J2g?si=c8e60dc7f2494cc7')
+tracks = handler.get_playlist_tracks(playlist_id)
+tracks = shuffler.true_shuffle(tracks)
+
+handler.create_playlist(tracks)
+```
+
+## Authentication
+
+First of all, get your client id and secret from (there)[https://developer.spotify.com/]. Then run this:
+
+```python
+from shuffleify.core import ApiHandler
+
+handler = ApiHandler(
+    client_id='your client id',
+    client_secret='your client secret'
+)
+```
+## Getting Songs
+
+In order to get songs from playlists and albums, you need their ID. With these functions, you can obtain the information from their URL.
+
+```python
+playlist_id = handler.get_playlist_id('https://open.spotify.com/playlist/51gVMBShUWyqVcc3F65J2g?si=c8e60dc7f2494cc7')
+album_id = handler.get_album_id('https://open.spotify.com/album/00eiw4KOJZ7eC3NBEpmH4C?si=TWb4oQBEQqODOeTjpwBSqw')
+track_id = handler.get_track_id('https://open.spotify.com/track/76gcXhY3Zv6wW0BTe9nHJo?si=1f4f118a1fdf40fe')
+```
+
+Then, you can easily get all tracks from them:
+
+```python
+tracks = []
+tracks.append(track_id)
+tracks.extend(handler.get_album_tracks(album_id)) #getting songs from the album
+tracks.extend(handler.get_playlist_tracks(playlist_id)) #getting songs from the playlist
+```
+
+## Shuffling
+
+There are two ways of shuffling in Shuffleify: True Shuffling and Fair Shuffling.
+
+### True Shuffling
+
+Each song in the 'tracks' list has the very same chance. The only **true** way of shuffling.
+
+```python
+import  shuffleify.shuffler as shuffler
+
+tracks = shuffler.true_shuffle(tracks)
+```
+
+| parameter | datatype | use case | default value |
+| --- | --- | --- | --- |
+| tracks | list | all songs that requested | |
+| limit | list | maximum size of shuffled list | None |
+
+**Important:** If 'limit' is None or greater than size of tracks or less than 1 then it becomes equal to the length of the tracks list.
+
+### Fair Shuffling
+
+If a song was randomly selected, it does not mean that it will be deleted from the tracks' selection pool. In other words, every song has the chance of being multiple times in the final list.
+
+```python
+import  shuffleify.shuffler as shuffler
+
+tracks = shuffler.fair_shuffle(tracks, 10)
+```
+
+| parameter | datatype |
+| --- | --- |
+| tracks | list |
+| size | integer |
+
+## Creating The List
+
+```python
+handler.create_playlist(
+    tracks,
+    playlist_name='Playlist name here',
+    description='this is the description part',
+    public=True
+)
+```
+
+Except tracks, all the other parameters have default values, so configuring them is **optional**.
+
+| parameter | default value | 
+| --- | --- |
+| playlist_name | 'Shuffled!' |
+| description | 'created by shuffleify' |
+| public | True |
