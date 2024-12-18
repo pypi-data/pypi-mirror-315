@@ -1,0 +1,1 @@
+xbs_test_uiautomator2
