@@ -1,0 +1,16 @@
+ipsh/__init__.py,sha256=J8zISUk8iamFXjCA-0gDIdxQXsywcz-uAueY0RVkHyQ,92
+ipsh/__main__.py,sha256=Kn0ixypokItQhEDn0-IlsF30JF8WguAcTQ-C9RChNPI,79
+ipsh/buffers.py,sha256=bQjz5ZGqanSKS44dihE6QsA-UtVcCXpb0kIyU7qwxAs,7213
+ipsh/const.py,sha256=sFFCx78n-zsIYWSIf4CJrKJBnTaXNk0FmgV1O4A1_54,152
+ipsh/getch_unix.py,sha256=ufLxfn8LLFq3-ukVaewK8gBAHjj8wZfzLcK7RzTg-Mc,1010
+ipsh/getch_windows.py,sha256=ex_VbQgTTltyisJIREzImLD7re1Oh5pqVuzHlpG3veA,518
+ipsh/interactive.py,sha256=uZToCXG6cSSktUiMnNiJ-g4qBziWDJYf8QGvmcYcITo,8292
+ipsh/interpreters.py,sha256=EqPQdGQ_3qGPQd8_MWEqiq9BtfytG-oybTVmOPQLFus,10902
+ipsh/main.py,sha256=5vUbxPywjPA3FTHqYTv3U5Sv9kQCPqw1oGmrBNU7C2E,3618
+ipsh/mock_interfaces.py,sha256=KufvkXbHpZ8XKr4QcuLcDgLO3Yso2p1upCfcPzWeq20,3684
+ipsh/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipsh-0.1.9.dist-info/METADATA,sha256=vvT0vcTR93UBONI7oBCQZ7nRa4uVqToA6TpWghsak6o,17622
+ipsh-0.1.9.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ipsh-0.1.9.dist-info/entry_points.txt,sha256=ZVnpQZWRppMOcVFwWqtuBBOPRaob3w_9R7Pg-2JJ-Jw,39
+ipsh-0.1.9.dist-info/top_level.txt,sha256=07iYVOKhKVRqYnvSBsNkgozs-sYW0tFTpv7wPabPeoY,5
+ipsh-0.1.9.dist-info/RECORD,,
