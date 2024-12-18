@@ -1,0 +1,10 @@
+[console_scripts]
+bd_infer = bdpn.bd_model:main
+bd_loglikelihood = bdpn.bd_model:loglikelihood_main
+bdct_infer = bdpn.bdpn_model:main
+bdct_loglikelihood = bdpn.bdpn_model:loglikelihood_main
+bdmult_infer = bdpn.bdmult_model:main
+bdmult_loglikelihood = bdpn.bdmult_model:loglikelihood_main
+bdssmult_infer = bdpn.bdssmult_model:main
+bdssmult_loglikelihood = bdpn.bdssmult_model:loglikelihood_main
+ct_test = bdpn.model_distinguisher:main
