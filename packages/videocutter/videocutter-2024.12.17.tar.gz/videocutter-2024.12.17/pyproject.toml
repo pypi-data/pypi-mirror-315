@@ -1,0 +1,37 @@
+[project]
+name = "videocutter"
+version = "2024.12.17"
+authors = [{ name = "Guillaume Le Goc", email = "g.legoc@posteo.org" }]
+description = "Split videos around time points."
+readme = "README.md"
+requires-python = ">=3.12"
+
+license = { text = "MIT" }
+
+classifiers = ["Programming Language :: Python :: 3.12"]
+
+dependencies = [
+  "numpy>=2.1",
+  "pandas>=2.2.3",
+  "tqdm",
+  "typer",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/TeamNCMC/videocutter"
+"Source Code" = "https://github.com/TeamNCMC/videocutter"
+"Bug Tracker" = "https://github.com/TeamNCMC/videocutter/issues"
+
+[project.scripts]
+videocutter = "videocutter.videocutter:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+extend-include = ["*.ipynb"]
+
+[tool.setuptools.packages.find]
+include = ["videocutter"]
