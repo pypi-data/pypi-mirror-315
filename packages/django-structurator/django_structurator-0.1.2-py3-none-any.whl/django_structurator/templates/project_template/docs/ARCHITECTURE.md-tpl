@@ -1,0 +1,61 @@
+# Project Architecture
+
+The `{{ project_name }}` project is organized to promote scalability, maintainability, and separation of concerns. Below is a detailed overview of the folder structure:
+
+## Root Directory
+```
+{{ project_name }}/ 
+│
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── CHANGELOG.md
+│   ├── README.md
+│   ├── TROUBLESHOOTING.md
+│   └── USAGE.md
+│
+├── local_db/
+│   └── db.sqlite3
+│
+├── requirements/
+│   ├── base.txt
+│   ├── development.txt
+│   ├── production.txt
+│   └── test.txt
+│
+├── src/
+│   ├── apps/
+│   │
+│   ├── common/
+│   │   ├── __init__.py
+│   │   ├── constants.py
+│   │   └── helpers.py
+│   │
+│   ├── config/
+│   │   ├── settings/
+│   │   │   ├── __init__.py
+│   │   │   ├── base.py
+│   │   │   ├── development.py
+│   │   │   └── production.py
+│   │   ├── __init__.py
+│   │   ├── .env
+│   │   ├── .env.example
+│   │   ├── asgi.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   │
+│   ├── media/
+│   │
+│   ├── static/
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── images/
+│   │       └── favicon.ico
+│   │
+│   ├── templates/
+│   │   ├── base.html
+│   │   └── index.html
+│   │
+│   └── manage.py
+│
+└── .gitignore
+```
