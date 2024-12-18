@@ -1,0 +1,7 @@
+setup.py
+octopy-bio/__init__.py
+octopy-bio/main.py
+octopy_bio.egg-info/PKG-INFO
+octopy_bio.egg-info/SOURCES.txt
+octopy_bio.egg-info/dependency_links.txt
+octopy_bio.egg-info/top_level.txt
