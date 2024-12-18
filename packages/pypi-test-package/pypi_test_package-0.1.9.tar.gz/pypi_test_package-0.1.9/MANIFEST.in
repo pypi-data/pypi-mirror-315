@@ -1,0 +1,1 @@
+recursive-include pypi_test_package/dist6 *
