@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: mkdocs-drawio-converter
+Version: 1.0.1
+Summary: MkDocs plugin to convert Drawio files to SVG format
+Home-page: https://github.com/rajneesh-ril/mkdocs-drawio-converter
+Author: Rajneesh Kumar/Subhanshu Shukla
+Author-email: rajneesh24.kumar@ril.com
+Project-URL: Bug Tracker, https://github.com/rajneesh-ril/mkdocs-drawio-converter/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mkdocs>=1.0.0
+
+# README.md
+# MkDocs Drawio Converter Plugin
+
+A MkDocs plugin that automatically converts Drawio (.drawio) files to SVG format during the build process.
+
+## Installation
+
+```bash
+pip install mkdocs-drawio-converter
+```
+
+## Requirements
+
+- Draw.io desktop app installed (for the CLI tool)
+- MkDocs
+
+## Configuration
+
+Add the following to your `mkdocs.yml`:
+
+```yaml
+plugins:
+  - drawio-converter:
+      drawio_executable: /path/to/drawio  # Path to drawio executable
+      source_dir: docs                    # Directory containing .drawio files
+      output_dir: svg                     # Directory for output SVG files
+```
+
+## Usage
+
+1. Place your .drawio files in your docs directory
+2. Build your MkDocs site
+3. Reference the converted SVG files in your markdown:
+
+```markdown
+![My Diagram](svg/diagram.svg)
+```
