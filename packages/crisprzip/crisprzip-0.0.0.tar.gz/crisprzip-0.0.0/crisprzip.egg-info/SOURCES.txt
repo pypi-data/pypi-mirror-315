@@ -1,0 +1,6 @@
+pyproject.toml
+crisprzip/__init__.py
+crisprzip.egg-info/PKG-INFO
+crisprzip.egg-info/SOURCES.txt
+crisprzip.egg-info/dependency_links.txt
+crisprzip.egg-info/top_level.txt
