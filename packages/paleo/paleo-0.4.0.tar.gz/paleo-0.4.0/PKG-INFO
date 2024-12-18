@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: paleo
+Version: 0.4.0
+Summary: Python package for interfacing with CAVE edit histories
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: caveclient>=6.5.2
+Requires-Dist: joblib>=1.4.2
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: scipy>=1.14.1
+Requires-Dist: tqdm-joblib>=0.0.4
+Provides-Extra: jupyter
+Requires-Dist: ipywidgets>=8.1.5; extra == 'jupyter'
+Requires-Dist: jupyter>=1.1.1; extra == 'jupyter'
+Provides-Extra: skeleton
+Requires-Dist: meshparty>=1.18.0; extra == 'skeleton'
+Requires-Dist: pcg-skel>=1.0.7; extra == 'skeleton'
+Description-Content-Type: text/markdown
+
+# paleo
+
+Python package for interfacing with CAVE edit histories
+
+## Installation
+
+Install via pip:
+
+```bash
+pip install paleo
+```
+
+Install via pip with optional dependencies:
+
+```bash
+pip install paleo[skeleton]
+```
