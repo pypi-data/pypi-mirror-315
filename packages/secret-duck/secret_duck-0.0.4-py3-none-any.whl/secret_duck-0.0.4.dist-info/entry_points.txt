@@ -1,0 +1,2 @@
+[console_scripts]
+secret-duck = secret_duck.__main__:main

@@ -1,0 +1,9 @@
+secret_duck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+secret_duck/__main__.py,sha256=lnCuOcSQ2KpXFdH1YaCkEfjmMoUZ4B8l5kwY9fEnUd4,2335
+secret_duck/secret.py,sha256=invQ9KZPpPXjiq3t_RFaavAjxl-LPPmMK0NP_kMr85s,1910
+secret_duck-0.0.4.dist-info/LICENSE,sha256=POf9mioDqEsmNpW6_5PT-qxe2VbqvC5SlfnyB9jBKv4,1069
+secret_duck-0.0.4.dist-info/METADATA,sha256=2br8JIqx7LWjtyN8-RkKgQks_zmHK78NLBMLHaB2jIw,1290
+secret_duck-0.0.4.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+secret_duck-0.0.4.dist-info/entry_points.txt,sha256=mcLnZyjC3nEbzGbsOEd_rwHAsF6Omtz1k87boNH5EJI,58
+secret_duck-0.0.4.dist-info/top_level.txt,sha256=TalmE25HQBghX6cbzS-euEOEhJKCt91AmbrGNFrYOMw,12
+secret_duck-0.0.4.dist-info/RECORD,,
