@@ -1,0 +1,9 @@
+pyproject.toml
+requirements.txt
+pyqt5to6/pyqt5to6.py
+qgis_pyqt5to6.egg-info/PKG-INFO
+qgis_pyqt5to6.egg-info/SOURCES.txt
+qgis_pyqt5to6.egg-info/dependency_links.txt
+qgis_pyqt5to6.egg-info/entry_points.txt
+qgis_pyqt5to6.egg-info/requires.txt
+qgis_pyqt5to6.egg-info/top_level.txt

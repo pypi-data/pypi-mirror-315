@@ -1,0 +1,2 @@
+[console_scripts]
+pyqt5to6 = pyqt5to6.pyqt5to6:main

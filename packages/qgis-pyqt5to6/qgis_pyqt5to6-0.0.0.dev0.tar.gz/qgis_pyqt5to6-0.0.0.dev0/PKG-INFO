@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: qgis-pyqt5to6
+Version: 0.0.0.dev0
+Summary: A tool to make your QGIS plugin compatible with PyQt6
+Author-email: Julien Cabieces <julien.cabieces@oslandia.com>, Denis Rouzaud <info@opengis.ch>
+License: MIT License
+Project-URL: homepage, https://github.com/3nids/qgis-pyqt5to6
+Project-URL: repository, https://github.com/3nids/qgis-pyqt5to6
+Project-URL: tracker, https://github.com/3nids/qgis-pyqt5to6/issues
+Keywords: QGIS,PyQt,PyQt6
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: astpretty
+Requires-Dist: tokenize-rt
