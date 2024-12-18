@@ -1,0 +1,16 @@
+matplotlib>=3.5.2
+numpy>=1.23
+pandas
+scipy
+statsmodels
+typing_extensions
+
+[dev]
+pytest
+flake8
+flake8-docstrings
+flake8-import-order
+pre-commit
+pylint
+YAPF
+isort
