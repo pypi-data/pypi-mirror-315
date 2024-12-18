@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: autonomize-ai-shared-dto-models
+Version: 0.0.26
+Summary: Central repository for shared Data Transfer Objects (DTOs) used across different services and repositories. This Package contains Python implementations of our data models.
+Home-page: https://github.com/autonomize-ai/shared-dto-models
+Author: Muhamed Shahabas C
+Author-email: muhamed@autonomize.ai
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pydantic (>=2.1.0,<3.0.0)
+Project-URL: Repository, https://github.com/autonomize-ai/shared-dto-models
