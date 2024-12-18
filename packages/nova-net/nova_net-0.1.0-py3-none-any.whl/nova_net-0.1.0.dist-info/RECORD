@@ -1,0 +1,12 @@
+nova_net/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+nova_net/datasets.py,sha256=cOs1M5KY_dIYSiRoam5CyA_Uf1oRcv5vjEfYnUPFX54,1270
+nova_net/inference.py,sha256=ANYzhFjJ2bwYu1zQTtdf3p73akuucF15zpg9NyJTMZE,1022
+nova_net/model.py,sha256=ClPUC-EnWnFidE6wVzItAcbm-8Qilx_UTTaLhkAIYQc,4792
+nova_net/setup.py,sha256=CasWVKhg24TM7DV30H0-H2w7vYGj4mhyBboCvW9ID1c,449
+nova_net/train.py,sha256=fgH6_mr7Z3StCRM757R9daKl3rOLhnY2Cp1J_zIAZfo,1191
+nova_net/transforms.py,sha256=QH8dnokwTU1VBFHW1Z5ksojWK2M_KtO9GpZgyDUwxuM,453
+nova_net/utils.py,sha256=_fwD4GfA2gIA68hSOw5qG9WHl0LSqffjOMZpOZEsYHg,104
+nova_net-0.1.0.dist-info/METADATA,sha256=euEUWNE_I7Su0kngjuNLAlI3TFWEeoleOBBh1BY15Wc,343
+nova_net-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+nova_net-0.1.0.dist-info/top_level.txt,sha256=Ca1qhGwk2aZbzWn71drmEfc6K0QlMDW_7T0gkGjjcaY,9
+nova_net-0.1.0.dist-info/RECORD,,
