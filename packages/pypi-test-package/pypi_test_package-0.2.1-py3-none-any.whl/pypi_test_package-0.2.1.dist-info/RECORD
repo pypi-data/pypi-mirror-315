@@ -1,0 +1,8 @@
+pyarmor_runtime_000000/__init__.py,sha256=bFOyayx_usLNiJ1eVfpOr6s9RDm7jbUZaonbLK8v4iA,101
+pyarmor_runtime_000000/pyarmor_runtime.so,sha256=ZPVGya1hFVdHkrXalLsimtHLuIukFem2Uw__Yknm_NQ,792360
+pypi_test_package-0.2.1.dist-info/LICENSE,sha256=wMIiFvZ5UHHwSbZweqXy86P9v7KvX3n2UJS_EirC_hY,1084
+pypi_test_package-0.2.1.dist-info/METADATA,sha256=pK9Q9K5e4ugF9ufBnyuYA97aEhx2h3iq1sHkX395us4,253
+pypi_test_package-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pypi_test_package-0.2.1.dist-info/entry_points.txt,sha256=sgny0_AvJ6_4auUJIkmtv008GMd3J78RSzwvkWIPBXY,101
+pypi_test_package-0.2.1.dist-info/top_level.txt,sha256=UIsXORmwqKiCCej396W_o1b2_ZYK_ftA7sZNp9rEhAM,23
+pypi_test_package-0.2.1.dist-info/RECORD,,
