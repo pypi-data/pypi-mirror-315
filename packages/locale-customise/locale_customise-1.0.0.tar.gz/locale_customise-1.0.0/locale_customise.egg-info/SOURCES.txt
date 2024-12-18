@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+locale_customise.egg-info/PKG-INFO
+locale_customise.egg-info/SOURCES.txt
+locale_customise.egg-info/dependency_links.txt
+locale_customise.egg-info/not-zip-safe
+locale_customise.egg-info/top_level.txt
+resources/image1.png

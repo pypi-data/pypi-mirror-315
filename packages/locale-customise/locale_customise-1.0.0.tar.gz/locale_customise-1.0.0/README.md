@@ -1,0 +1,62 @@
+# locale-customise
+
+[![PyPI version](https://badge.fury.io/py/locale-customise.svg)](https://badge.fury.io/py/locale-customise)
+
+`locale-customise` is a Python package that allows developers to easily customize and manage locale-specific settings, including date, time, currency, and number formatting. It provides a simple API to tailor locale settings for different regions, making it ideal for internationalization (i18n) projects.
+
+## Features
+
+- **Flexible Locale Configuration**: Easily configure locale formats for dates, numbers, and currencies.
+- **Multi-Region Support**: Supports multiple locales for global applications.
+- **Customizable Options**: Override default locale settings with custom formats.
+- **Lightweight**: Minimal dependencies and fast performance.
+
+## Installation
+
+Install `locale-customise` using pip:
+
+```bash
+pip install locale-customise
+```
+
+## Usage
+
+Here's a basic example to get started:
+
+```python
+from locale_customise import LocaleCustomiser
+
+# Initialize LocaleCustomiser with a locale
+customiser = LocaleCustomiser("en_US")
+
+# Format a number
+formatted_number = customiser.format_number(1234567.89)
+print(formatted_number)  # Outputs: 1,234,567.89
+
+# Format a date
+formatted_date = customiser.format_date("2024-08-01")
+print(formatted_date)  # Outputs: Aug 1, 2024
+
+# Change to a different locale
+customiser.set_locale("fr_FR")
+formatted_number = customiser.format_number(1234567.89)
+print(formatted_number)  # Outputs: 1 234 567,89
+```
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out to [Your Email or GitHub Profile].
