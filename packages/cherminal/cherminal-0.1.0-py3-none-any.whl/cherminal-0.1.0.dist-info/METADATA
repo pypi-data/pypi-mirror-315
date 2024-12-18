@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cherminal
+Version: 0.1.0
+Summary: A web-based interface for interacting with a shell process.
+Author-email: Sander Vocke <sandervocke@gmail.com>
+License: MIT
+Requires-Dist: flask
+Requires-Dist: flask-httpauth
+Requires-Dist: passlib
