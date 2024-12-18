@@ -1,0 +1,8 @@
+seatools/ioc/server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seatools/ioc/server/app.py,sha256=mg8X8W9JKfR6hO0HmWvEwCPkK874aEoL0wzJBQtczdo,371
+seatools/ioc/starters/flask/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seatools/ioc/starters/flask/base.py,sha256=2hAeasqfv-AZctu3nr0xuSIgHIb7bhJo1SD971l2OKI,736
+seatools_starter_web_flask-1.0.0.dist-info/METADATA,sha256=cwj_KscBzwoLiiT7NU1tVnjYXELZcMrwwA33WgeEiRY,2079
+seatools_starter_web_flask-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+seatools_starter_web_flask-1.0.0.dist-info/licenses/LICENSE,sha256=LduyjxA3Y1efJOve6wB7602ArsRPlM6vc5aJ2q9-M6k,1067
+seatools_starter_web_flask-1.0.0.dist-info/RECORD,,
