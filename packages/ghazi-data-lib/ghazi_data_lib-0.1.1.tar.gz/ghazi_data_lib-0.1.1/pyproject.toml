@@ -1,0 +1,24 @@
+[project]
+name = "ghazi-data-lib"
+version = "0.1.1"
+description = "datalib for machine learning"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10.0",
+    "numpy>=2.2.0",
+    "pandas>=2.2.3",
+    "pytest>=8.3.4",
+    "scikit-learn>=1.6.0",
+    "seaborn>=0.13.2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.3.4"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ghazi_data_lib"]
