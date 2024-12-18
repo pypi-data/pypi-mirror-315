@@ -1,0 +1,11 @@
+api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api/articles.py,sha256=U1E-Abkc5dfNHonyUk4xUpKWmtdLvZxy3lYe0De2oEU,1909
+api/classification.py,sha256=AwUHmC02WLUUa6Gp6JPyzNGosBblcVKejpfeNlwb0lc,227
+api/client_base.py,sha256=KGrFvd3Jg2rgRRU6NXeHgjz-7kOQ2DG3BZVUkPW9QoQ,2034
+api/entities.py,sha256=DaX1i33kO7LzbDjmqQFgLBRc27VwoHzF3z_KrVHdISI,1040
+api/geojson.py,sha256=s4fttYMi9sP4IE-CoCdTbVUuph-IHm7Q0H2ON80zjgA,1507
+opol-0.1.1.dist-info/LICENSE,sha256=I0TFdoUWjxXG8qQxqmYJmZcntBwNYNpJ9YmTHvK37TU,1074
+opol-0.1.1.dist-info/METADATA,sha256=v79t2cuU_NOHJdNkNdYYYRAoi2A0XDYzkv-DnXYkBoU,722
+opol-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+opol-0.1.1.dist-info/top_level.txt,sha256=0XF5TFwfelCuuPcFarhKT7zW-9WUsZmb3a790D78BZE,4
+opol-0.1.1.dist-info/RECORD,,
