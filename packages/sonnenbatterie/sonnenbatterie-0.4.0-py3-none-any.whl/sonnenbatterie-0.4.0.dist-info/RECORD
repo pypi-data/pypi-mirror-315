@@ -1,0 +1,15 @@
+pkg/__init__.py,sha256=c0rY7YlT62phRlZDxZe9HAcQ8tU3nYcDHZaxICwk9mk,41
+pkg/sonnenbatterie.py,sha256=Mc3wqzW-i9oLybfSF6lfDr48N4vPFvT3pcPNPG2zKdw,1894
+sonnenbatterie/__init__.py,sha256=gZeyOSflW8XHeQsb4qEwri4Fb13EfKm8-mlSzRGnYCE,42
+sonnenbatterie/const.py,sha256=jzGDxBYU9Goc5wpWO8HSiImLSO_xaZTjFYZFTwfLPFM,1689
+sonnenbatterie/sonnenbatterie.py,sha256=WojFcjiQRPDpaq-et2K8Os3sZfiKaQAjU9Y-TDVAvGE,7754
+sonnenbatterie/timeofuse.py,sha256=jCx_a5wamNdHKKpS0NqEIeJUtJ7vhkwnDI5cD4yFTN0,9089
+sonnenbatterie2/__init__.py,sha256=irubrqd6Fd_jEWVulzG615dO3HZvLmurZlmrRFCLPxA,46
+sonnenbatterie2/sonnenbatterie2.py,sha256=v2DE1GdX7ws4ypbs2bQtOreZGSV49DJHN3Q4phf-RzA,4919
+timeofuse/__init__.py,sha256=h80SZ6iGqrCaLFl3v6bt4KYHnIl9lEEKmaQJU_gyX7A,25
+timeofuse/timeofuse.py,sha256=hj4d_WPcbGd-Jw79lpt55kLZWRPQTrvpNTOFaRqK_Go,9213
+sonnenbatterie-0.4.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sonnenbatterie-0.4.0.dist-info/METADATA,sha256=1IFbWTjmUVVXbpwRxpCoeInrLE2rCNMY07q3E_LMr1k,2917
+sonnenbatterie-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sonnenbatterie-0.4.0.dist-info/top_level.txt,sha256=jQz4sZu6FrHVkYu1kPlisNfN5Nm5XLI_K5AjxDbIKSs,41
+sonnenbatterie-0.4.0.dist-info/RECORD,,
