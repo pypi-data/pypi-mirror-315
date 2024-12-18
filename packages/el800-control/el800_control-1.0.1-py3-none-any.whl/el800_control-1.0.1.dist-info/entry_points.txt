@@ -1,0 +1,2 @@
+[console_scripts]
+el800-control = el800.__main__:main
