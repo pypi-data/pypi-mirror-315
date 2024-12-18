@@ -1,0 +1,42 @@
+{
+    "config": {
+        "abort": {
+            "single_instance_allowed": "Juba seadistatud. V\u00f5imalik on ainult \u00fcks seadistamine."
+        },
+        "error": {
+            "cannot_connect": "\u00dchendamine nurjus"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": ""
+                },
+                "data_description": {
+                    "host": "HEOS-toega seadme hostinimi v\u00f5i IP-aadress (eelistatavalt juhtme kaudu v\u00f5rku \u00fchendatud)."
+                },
+                "description": "Sisesta HEOS-v\u00f5imelise seadme hostinimi v\u00f5i IP-aadress, et p\u00e4\u00e4seda ligi HEOS-s\u00fcsteemile.",
+                "title": "\u00dchendu HEOS'ega"
+            }
+        }
+    },
+    "services": {
+        "sign_in": {
+            "description": "Logib sisse HEOS-i kontole.",
+            "fields": {
+                "password": {
+                    "description": "HEOS-i konto salas\u00f5na.",
+                    "name": "Salas\u00f5na"
+                },
+                "username": {
+                    "description": "HEOS-i konto kasutajanimi v\u00f5i e-posti aadress.",
+                    "name": "Kasutajanimi"
+                }
+            },
+            "name": "Logi sisse"
+        },
+        "sign_out": {
+            "description": "Logib HEOS-i kontolt v\u00e4lja.",
+            "name": "Logi v\u00e4lja"
+        }
+    }
+}
