@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "searchlite"
+version = "0.7.3"
+description = "free google results"
+authors = ["Kammari Santhosh"]
+readme = "README.md"
+license = "MIT License"
+repository = "https://github.com/santhosh/"
+keywords = [""]
+packages = [
+    {include = "searchlite"}
+]
+include = [
+#    "chat_gui.py",
+#    "chat_run.py"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+#[tool.poetry.scripts]
+#claude-chat = "chat_gui:run_app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
