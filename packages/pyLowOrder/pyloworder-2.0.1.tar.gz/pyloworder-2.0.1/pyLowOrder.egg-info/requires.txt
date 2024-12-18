@@ -1,0 +1,17 @@
+numpy
+cython>=3.0.0
+mpi4py
+matplotlib
+h5py>=3.0.0
+nfft
+
+[NN]
+torch>=2.3.0
+torchvision
+torchsummary
+tensorflow
+optuna
+
+[optionals]
+ensight-reader
+pyvista
