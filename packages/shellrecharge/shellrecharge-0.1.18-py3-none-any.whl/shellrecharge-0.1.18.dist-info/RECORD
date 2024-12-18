@@ -1,0 +1,10 @@
+shellrecharge-0.1.18.dist-info/METADATA,sha256=tiNyK63cKlz8XAFBgSry-BVQi39Gj3TgNBTM1DnD2Co,3729
+shellrecharge-0.1.18.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+shellrecharge-0.1.18.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+shellrecharge-0.1.18.dist-info/licenses/LICENSE,sha256=90xyUgb3Sq9Nvw9u3yPPcHIKiG5EVvTtXkoztIR09qM,1068
+shellrecharge/__init__.py,sha256=UTT4PxafqIFiF378lklvrHhcovfUg2ZzREAPPcYSsOQ,2576
+shellrecharge/decorators.py,sha256=cGlyab7HQ9eV2tJKhDuep3zZdjnhC0AVF6rNNDdkpTU,498
+shellrecharge/models.py,sha256=K_e0zCpsF-SByC8SfCQES9hD62rbrE4dwOgSNNvozis,2992
+shellrecharge/user.py,sha256=VJsWRaOomEJzf6lDCZnPi8ZvNxelWa1XAj6tod8A-_8,6434
+shellrecharge/usermodels.py,sha256=AjLQV8B5SiiVGGw6JG50DQ96namZCP9eq7R_1sRda-o,2870
+shellrecharge-0.1.18.dist-info/RECORD,,
