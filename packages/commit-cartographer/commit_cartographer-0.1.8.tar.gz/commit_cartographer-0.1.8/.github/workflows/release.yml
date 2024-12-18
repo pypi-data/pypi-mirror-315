@@ -1,0 +1,72 @@
+name: Release & Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    outputs:
+      released: ${{ steps.release.outputs.released }}
+      tag: ${{ steps.release.outputs.tag }}
+    
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+          
+      - name: Install dependencies
+        run: cargo install git-cliff
+          
+      - name: Generate changelog
+        run: git cliff --output CHANGELOG.md
+        
+      - name: Commit changelog
+        uses: stefanzweifel/git-auto-commit-action@v5
+          
+      - name: Get Version
+        id: version
+        run: |
+          VERSION=$(grep "^version = " pyproject.toml | cut -d'"' -f2)
+          echo "version=v${VERSION}" >> $GITHUB_OUTPUT
+          
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          release_name: Release ${{ steps.version.outputs.version }}
+          body_path: CHANGELOG.md
+          draft: false
+          prerelease: false
+          
+  publish:
+    needs: release
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+          
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+          
+      - name: Build package
+        run: uv build
+        
+      - name: Publish to PyPI
+        env:
+          UV_PUBLISH_USERNAME: ${{ secrets.UV_PUBLISH_USERNAME }}
+          UV_PUBLISH_PASSWORD: ${{ secrets.UV_PUBLISH_PASSWORD }}
+        run: uv publish
