@@ -1,0 +1,11 @@
+project_func/.gitignore,sha256=hiJj-h9Gwg8NHk2sX_zHWr1VwIIRssOGTF-HZLnYd5M,19
+project_func/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+project_func/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+project_func/scripts/cli.py,sha256=W0H3cWb31PIDVq9OUKGOJULZPU2TBW8uMAXtr8X6Mwg,675
+project_func/scripts/database.py,sha256=4pbrvpLigI1SiS7r-o8YUVFtGiGoRZ6Bn4geEVzMDo0,3788
+project_func/scripts/engine.py,sha256=aIBP-SH7TnUw7yrPlJtOgnL58x9x4voDLtCXQ7OkPyg,83
+project_func/scripts/main_base.py,sha256=lYIQmOxa1dVyqFGljC5sMgh7DDJtIIWplf0pKvvRFBU,320
+project_kuzmenka_24_565-0.1.0.dist-info/METADATA,sha256=XKS-7-Lt3qB3AtLaae0anrRXXjCk9sbfz0kyp5BiN2Y,312
+project_kuzmenka_24_565-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+project_kuzmenka_24_565-0.1.0.dist-info/entry_points.txt,sha256=04krnqiDsJUa6lf-kS30Xna5w3mLpL9SNNqC6zZSbkA,97
+project_kuzmenka_24_565-0.1.0.dist-info/RECORD,,
