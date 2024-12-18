@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tratreetra/__init__.py
+tratreetra/base.py
+tratreetra/models.py
+tratreetra/transfer.py
+tratreetra/universal_tags.py
+tratreetra/utils_algo.py
+tratreetra.egg-info/PKG-INFO
+tratreetra.egg-info/SOURCES.txt
+tratreetra.egg-info/dependency_links.txt
+tratreetra.egg-info/not-zip-safe
+tratreetra.egg-info/top_level.txt
