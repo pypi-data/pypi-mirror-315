@@ -1,0 +1,1 @@
+raise ImportError("The module is currently being update to a new version 2.0 that is not compatible with 1.0 versions.")
