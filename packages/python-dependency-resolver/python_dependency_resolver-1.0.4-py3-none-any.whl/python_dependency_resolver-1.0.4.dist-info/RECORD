@@ -1,0 +1,10 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/basis.py,sha256=DRQAq0kk70SVWTjhtOM46Y1-f2w3EtHj2qNCCPoeC0M,624
+python_dependency_resolver/__init__.py,sha256=nIDmFwiy2CHEm3Ic_3adIleDr8KRfo5iDIb9MafyQ2o,2314
+python_dependency_resolver/exceptions.py,sha256=akTy9nxid3pEF0_BGuzPzUKHEnaaygczswo3H4mNznE,796
+tests/__init__.py,sha256=qX_RbskJjpujttTyZr108fzXejZr6XakVcn5q-xnq8E,3263
+python_dependency_resolver-1.0.4.dist-info/LICENSE,sha256=KSW8MJ-bbs09-2CaFWKxgGdcrfqBLZe6GJlqoMewaGk,1072
+python_dependency_resolver-1.0.4.dist-info/METADATA,sha256=qTnbetc7QDh8_KnqRcUD8sF7NBIqk_pb0ftkfejsk-M,2880
+python_dependency_resolver-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python_dependency_resolver-1.0.4.dist-info/top_level.txt,sha256=YrvW8H54fVSl4Xk_UegXi2_ZBP74BUmMSckqZKbu1Fs,42
+python_dependency_resolver-1.0.4.dist-info/RECORD,,
