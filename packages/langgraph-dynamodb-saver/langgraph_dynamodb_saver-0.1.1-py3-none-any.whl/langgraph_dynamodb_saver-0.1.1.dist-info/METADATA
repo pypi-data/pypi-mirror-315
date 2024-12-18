@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: langgraph_dynamodb_saver
+Version: 0.1.1
+Summary: DynamoDB checkpoint saver implementation for LangGraph
+Author-email: Kamaal <skamalj@github.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: langchain-core
+Requires-Dist: langgraph
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: pytest>=7.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+// @! create readme for included code include=dynamodbSaver.py
+
+# DynamoDB Checkpoint Saver for LangGraph
+
+This module provides a DynamoDB-based implementation of the checkpoint saver for LangGraph, allowing you to persist and manage checkpoints using Amazon DynamoDB as the storage backend.
+
+## Overview
+
+The `DynamoDBSaver` class implements the `BaseCheckpointSaver` interface and provides functionality to:
+
+## Features
+
+- Automatic table creation with appropriate schema
+- Efficient key-value storage using DynamoDB's partition and sort keys
+
+## Usage
+
+# Using context manager
+with DynamoDBSaver.from_conn_info(table_name='my_checkpoints') as saver:
+    # Use the saver
+    pass
+
+# Direct initialization
+saver = DynamoDBSaver('my_checkpoints')
+
