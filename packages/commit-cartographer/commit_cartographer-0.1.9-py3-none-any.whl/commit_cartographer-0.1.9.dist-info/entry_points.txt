@@ -1,0 +1,2 @@
+[console_scripts]
+cmap = commit_cartographer.main:main
