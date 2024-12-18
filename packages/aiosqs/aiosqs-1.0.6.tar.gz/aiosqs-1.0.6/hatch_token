@@ -1,0 +1,2 @@
+hatch publish -u __token__ -a pypi-AgEIcHlwaS5vcmcCJGNkMmIwMDc0LTUyZDUtNGRmOS04Njk4LWU5YjkzYzk0ZmI5MgACDlsxLFsiYWlvc3FzIl1dAAIsWzIsWyI1MjEwZDkzZi0xYzA0LTQ1MTUtYTc2Yi01OGYzZjdkNDc3MTQiXV0AAAYgKsDFksEGStFS3docHWAa0nv5S24adIfRnL6e9Iq1vxQ --initialize-auth 
+
