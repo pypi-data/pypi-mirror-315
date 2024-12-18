@@ -1,0 +1,2 @@
+crypto_licensing>=4.2.0
+greenery<3.0,>=2.0
