@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: rdcpy
+Version: 0.1.0
+Summary: Пакет для работы на платформе НЦСЭД.
+Author: Владимирова Алина Валерьевна
+Author-email: alina.v.vladimirova@gmail.com
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: re
+Requires-Dist: IPython
+
+---
+id: 01JF8KXT59GBZAVMJMQB1FD8N4
+---
+# rdcpy
+
+Пакет, создаваемый для работы с данными на платформе Национального центра социально-экономических данных (НЦСЭД).
+
+### Features
+
+- Препроцессинг данных.
+- Исследовательский анализ данных.
+
+### Usage
+
+```
+import rdcpy
+
+# Коррекция названий переменных в соответствии с PEP8.
+rdcpy.dt_rename_pep(df)  # returns dataframe 
+
+```
