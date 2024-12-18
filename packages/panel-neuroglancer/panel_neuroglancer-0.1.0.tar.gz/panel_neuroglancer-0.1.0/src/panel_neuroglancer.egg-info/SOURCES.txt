@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/panel_neuroglancer/__init__.py
+src/panel_neuroglancer/neuroglancer_nb.py
+src/panel_neuroglancer.egg-info/PKG-INFO
+src/panel_neuroglancer.egg-info/SOURCES.txt
+src/panel_neuroglancer.egg-info/dependency_links.txt
+src/panel_neuroglancer.egg-info/requires.txt
+src/panel_neuroglancer.egg-info/top_level.txt

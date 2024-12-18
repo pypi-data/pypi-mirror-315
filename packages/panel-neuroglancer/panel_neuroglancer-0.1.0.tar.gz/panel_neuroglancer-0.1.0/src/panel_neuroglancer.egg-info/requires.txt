@@ -1,0 +1,2 @@
+neuroglancer>=2.40.1
+panel>=1.5.4
