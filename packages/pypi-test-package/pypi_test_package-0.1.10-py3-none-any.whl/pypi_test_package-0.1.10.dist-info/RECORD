@@ -1,0 +1,8 @@
+pypi_test_package/__init__.py,sha256=ntQwsfuzjm-d2owLt3W_OfLFPjgiwBRX6FTEwW_CxYU,1500
+pypi_test_package/example.py,sha256=pyWAr_vyosCvjQKUTfZ4TyebR7hHSJuEF4mEk4cc8KY,2374
+pypi_test_package-0.1.10.dist-info/LICENSE,sha256=wMIiFvZ5UHHwSbZweqXy86P9v7KvX3n2UJS_EirC_hY,1084
+pypi_test_package-0.1.10.dist-info/METADATA,sha256=ydgweqVRgohAvrxbvqALrvkZznETx0iNivTc2jpmeFo,254
+pypi_test_package-0.1.10.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pypi_test_package-0.1.10.dist-info/entry_points.txt,sha256=sgny0_AvJ6_4auUJIkmtv008GMd3J78RSzwvkWIPBXY,101
+pypi_test_package-0.1.10.dist-info/top_level.txt,sha256=Ss5maJOMSoLXV6Z52z2kgOP25VgBFIt4HW_OCakDcRo,18
+pypi_test_package-0.1.10.dist-info/RECORD,,
