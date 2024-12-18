@@ -1,0 +1,9 @@
+django_better_azure_communication_email/__init__.py,sha256=X59deb5rosYaUBsQ3z-fXm_FVfc4OGm65X9HW1QS_rc,252
+django_better_azure_communication_email/attachment.py,sha256=v3rlDqlBlxhV7ACWH8CKbEFIM95_-Ts6_isOKw7XaLY,3007
+django_better_azure_communication_email/backend.py,sha256=P8b8ugOz-z4OXfGWq98WjdFPlFdB9NQYbJOIEHOOYn8,5607
+django_better_azure_communication_email/settings.py,sha256=xAtUYJLO2pZniV5yhsc__-MF_Lg19X3owZ0Ao3Y2EXA,542
+django_better_azure_communication_email/utils.py,sha256=KoA5CeVkN7mjFq5-Ubtd1H7wrn_jXe5u10F8-gMGo-k,818
+django_better_azure_communication_email-0.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_better_azure_communication_email-0.0.0.dist-info/METADATA,sha256=exg3CU5lue1qsnta5FdI_HDZ-aUCspuE1-Oh58YS5jU,2800
+django_better_azure_communication_email-0.0.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+django_better_azure_communication_email-0.0.0.dist-info/RECORD,,
