@@ -1,0 +1,17 @@
+gisweb_jppa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gisweb_jppa/jppa.py,sha256=vUXTHB7c5sPVdHdt3sHPiYDNfbToFMTu9a1UOA9xSYU,12378
+gisweb_jppa/schema.py,sha256=Es8XJyL-0aiejftlH7J_oCOBoGCZ99zaLxf0XfYZe7s,1945
+gisweb_jppa/templates/CreaAvvisoPagamento.xml,sha256=3ww002nsjDSAzmfF9_0NLcyYfealcxYAW7jaovyTzgM,212
+gisweb_jppa/templates/Debito.xml,sha256=cJtzoyTlFe56O1fyxt0Ul1H-0_J6pabph6totshQ1so,1357
+gisweb_jppa/templates/EliminaAvvisoPagamento.xml,sha256=OrZbz3L1DGwyIfH-1P1u_qghtN2VsUns4FE7ycogZzY,186
+gisweb_jppa/templates/InfoAvvisoPagamentoPerChiaveDebito.xml,sha256=GzWNlla1mbX4rF9WlsfGBSROSlMAxb3fBNR_w7R3Go4,324
+gisweb_jppa/templates/InfoPagamentoDebito.xml,sha256=zQ4JG6prVGpGhPwQROzsSW_G0wTKE4KQBno3QiwdDM8,294
+gisweb_jppa/templates/PagaDebiti.xml,sha256=mU26lYmYbhJASN7XkmlqkC3G75hgyr2wNnEgoqChM9I,464
+gisweb_jppa/templates/SoapResponse.xml,sha256=7MbFSDy9mE8GunsDPcq_VSj1Q0KB0jLZMmRJbUndgvI,1133
+gisweb_jppa/templates/Soggetto.xml,sha256=hirai-rcdErTgbfAYoGimfFurr5yhNolMcgB6reiLwg,830
+gisweb_jppa/templates/serviceCall.xml,sha256=CGln0rh3BtYbZ-mnv_bJdohc9jPvbv_NjPp1BApJUuw,605
+gisweb_jppa/templates/wsdl_notifica.xml,sha256=F0L8sz28lye326u7kdGT_hZkJZrEIqwN278bcTOGuUU,6033
+gisweb_jppa-0.2.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+gisweb_jppa-0.2.2.dist-info/METADATA,sha256=GYK9cxtv0kmNBdwpY5qr99zfMxU7e9aYjDxTprYi3-M,899
+gisweb_jppa-0.2.2.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+gisweb_jppa-0.2.2.dist-info/RECORD,,
