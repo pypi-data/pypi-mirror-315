@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-sarvcrm-api"  # Replace with your package's name
+version = "0.1.1"    # Initial version
+description = "Simple sarvcrm api module"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Radin-System", email = "technical@rsto.ir" }
+]
+keywords = ["python", "library", "sarvcrm", "hamkaransystem", "api"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+]
+requires-python = ">=3.11"
+
+[project.urls]
+Homepage = "https://github.com/Radin-System/py-sarvcrm-api"
+BugTracker = "https://github.com/Radin-System/py-sarvcrm-api/issues"
