@@ -1,0 +1,9 @@
+odisi/__init__.py,sha256=wRb1B0myWCC8GZti14OTp-HNzDREFMRSCeZlp1Bcyl8,97
+odisi/odisi.py,sha256=oDE4Qsq7hjFhyhAD8PcdlJPP7ntx1WIhA961klcwrsg,14201
+odisi/reader.py,sha256=aBXkEcouxR2fWN5WMvQV3ZS36vIHP_vQly8r5iwnV7Q,5468
+odisi/time_callibration.py,sha256=y8-040BL_Pv7GAs08xZDxxpj7qgidpXdktn3U5IJ-QM,6528
+odisi/utils.py,sha256=8kXIRtSFD5LmzBoLbNy_B_-aeA9hhMAHSdxvJuoFhsg,151
+python_odisi-0.6.0.dist-info/METADATA,sha256=WUaPqdEdoEx5XRrQfvrhqK8xzuzS-yuLX3LGKdxghHw,4007
+python_odisi-0.6.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+python_odisi-0.6.0.dist-info/licenses/LICENSE,sha256=Edqu05APA4GbgPJ_Yv0_tXz4JIZ1Dc1pxfS58lnvUbs,1079
+python_odisi-0.6.0.dist-info/RECORD,,
