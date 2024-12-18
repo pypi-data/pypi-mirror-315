@@ -1,0 +1,13 @@
+pixegami_hellos/__init__.py,sha256=kTp_jfpH_mhoLtos_5-IBy6DDaXubKPv7bWI4n-FV-Y,302
+pixegami_hellos/app.py,sha256=6WYF8egAVi5cEHBdxoXJ3lJApIWyMqczsGkKDfOTsCY,1515
+pixegami_hellos/cam_db_config.py,sha256=yFEJ-7CpTg0o0ktuJepyNS_18YgWgj43wy2HfrG8fd0,91
+pixegami_hellos/fx.py,sha256=DHjaRZngWOvX9GbIWcK2QpIbKhlJC-erHvgrxhoEie4,617
+pixegami_hellos/initialize.py,sha256=W7mcd0GcxfP-8-qbZNuKqpppwLta0it1ey_8Z9pXx8s,384
+pixegami_hellos/main.py,sha256=cCr6c_OV5Y65pZwk8RA-ESDWfQ_skHXZTbGo2H2JdsA,32
+pixegami_hellos/organizations.py,sha256=GC4aLWoGii5K16jMWyds25Iimo1a8RDHpRq0VU-EvTA,648
+pixegami_hellos/providers.py,sha256=ACf2wVpA-gB1sSX46fMpIgDEZWRZ7JbqFbV9WihqAQc,440
+pixegami_hellos/z.py,sha256=Bnk0g7d2Pcrgdzt6MD9znnh_r0BX5KbMZ2PUiXeLt4s,29
+pixegami_hellos-3.5.dist-info/METADATA,sha256=c5FrB0Be3Z51Y6n8AzjRvrSDqeBcG12WvHUYozVtgxU,110
+pixegami_hellos-3.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pixegami_hellos-3.5.dist-info/top_level.txt,sha256=UUiaxUwQqhf5GA5SiP7zM3GwxKbqfWnF8__6No0w6D8,16
+pixegami_hellos-3.5.dist-info/RECORD,,

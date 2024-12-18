@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: pixegami_hellos
+Version: 3.5
+Requires-Dist: Flask
+Requires-Dist: Flask-SQLAlchemy
