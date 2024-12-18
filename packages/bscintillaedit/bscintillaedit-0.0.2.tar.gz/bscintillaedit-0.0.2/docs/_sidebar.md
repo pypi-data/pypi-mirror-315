@@ -1,0 +1,3 @@
+- [Home](/)
+- [For developers](development.md)
+- [PyPi project page](https://pypi.org/project/borco-pyside6-scintilla/)

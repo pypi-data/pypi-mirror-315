@@ -1,0 +1,3 @@
+[submodule "src/core_lib/scintilla"]
+	path = src/core_lib/scintilla
+	url = https://github.com/borco/scintilla.git
