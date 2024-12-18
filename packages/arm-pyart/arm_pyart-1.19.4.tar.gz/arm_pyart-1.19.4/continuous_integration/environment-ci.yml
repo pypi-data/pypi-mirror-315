@@ -1,0 +1,34 @@
+name: pyart-dev
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - scipy
+  - matplotlib
+  - gdal
+  - netcdf4
+  - pandas
+  - pytest
+  - wradlib
+  - cartopy
+  - cvxopt
+  - xarray>=2024.10.0
+  - metpy
+  - pytest-cov
+  - pytest-mpl
+  - coveralls
+  - libnetcdf
+  - flake8
+  - fsspec
+  - s3fs
+  - glpk
+  - cftime
+  - setuptools
+  - shapely
+  - ruff
+  - mda-xdrlib
+  - xradar>=0.8.0
+  - pooch
+  - versioneer
+  - black
+  - open-radar-data
