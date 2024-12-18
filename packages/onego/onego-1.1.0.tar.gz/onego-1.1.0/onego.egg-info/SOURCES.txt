@@ -1,0 +1,13 @@
+setup.py
+onego.egg-info/PKG-INFO
+onego.egg-info/SOURCES.txt
+onego.egg-info/dependency_links.txt
+onego.egg-info/requires.txt
+onego.egg-info/top_level.txt
+polinv/__init__.py
+polinv/files/__init__.py
+polinv/logger/__init__.py
+polinv/sessions/__init__.py
+polinv/sessions/chrome.py
+polinv/sessions/get_chrome_version.py
+polinv/utils/__init__.py
