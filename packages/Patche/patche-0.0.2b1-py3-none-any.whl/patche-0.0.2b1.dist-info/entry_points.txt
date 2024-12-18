@@ -1,0 +1,5 @@
+[console_scripts]
+patche = Patche.__init__:app
+
+[gui_scripts]
+

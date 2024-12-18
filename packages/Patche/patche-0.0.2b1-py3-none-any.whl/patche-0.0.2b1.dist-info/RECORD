@@ -1,0 +1,17 @@
+Patche/__init__.py,sha256=PVoMA8KWQKPFthAyEIn4oNZATeGNTGXVuqLfqoOjfmE,34
+Patche/__main__.py,sha256=QXfE3TKpFZsct7wDbpv5g3tQGmrUkBMjL_nXg_wJvEM,28
+Patche/__version__.py,sha256=wtfcRFm73_vwwNMAiQol_VGC7QetgMQWRsGYiTuqF0c,185
+Patche/app.py,sha256=I5AjgCmHmIE6jPaYYdbRwBL4dv5BK3nB4fKFDgI3u_w,838
+Patche/commands/apply.py,sha256=4aI585RjFbzn8E8RrDy4_RJnZwv_VngnB6EgQn41OvI,3405
+Patche/commands/help.py,sha256=nEGX9GHT2CJHchLh02ZJ4RxPwWf84j6j4YpSFwS6cLo,214
+Patche/commands/show.py,sha256=Io-9vruhgrPf5GalJTfEm6KNseQ2LY6Eu0MiDLtcSFs,1105
+Patche/config.py,sha256=6k9RZ8skRTQ8hPYI1I63PkupsLkZSCmVxIhJZdwRVNU,499
+Patche/model.py,sha256=Dm-LneXe3idcxNRbAhZ01Z6hqw-HDioHeJ07h2aPdvM,1842
+Patche/utils/common.py,sha256=_4o3z2Dq-9qG2ahX3UmIfShTO1mesZ3DXGu0EIeS6BE,2020
+Patche/utils/parse.py,sha256=3y9k5LU9b5EN_Yw45WF3YM9BYarYRxcUugCT_M6U7EA,5391
+Patche/utils/resolve.py,sha256=sxd8eTlmtBf-uGs5LAU3ZwZg5i3TR1Kpt4S9v-EBd_8,4902
+patche-0.0.2b1.dist-info/METADATA,sha256=WCuoG3oxMPXxNNxjV8Cz2clp9wIG6gOOyA1wwUlzozE,1246
+patche-0.0.2b1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+patche-0.0.2b1.dist-info/entry_points.txt,sha256=uEXEvqJvM7U_BjPWSqj-F29NE52vtIP0zxdY_TJhHsA,63
+patche-0.0.2b1.dist-info/licenses/LICENSE,sha256=2I7sSSPi_J8S7pOQIvPdaRQubMmIpsDI6qNblsWv5ek,1066
+patche-0.0.2b1.dist-info/RECORD,,
