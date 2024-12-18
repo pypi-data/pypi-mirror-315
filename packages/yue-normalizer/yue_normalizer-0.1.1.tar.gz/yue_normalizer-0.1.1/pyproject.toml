@@ -1,0 +1,21 @@
+[project]
+name = "yue-normalizer"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sagewe", email = "sagewe@fastmail.com" }
+]
+dependencies = [
+    "jiwer",
+    "matplotlib",
+    "num2words",
+    "numpy",
+    "pyarabic",
+    "regex",
+    "zhconv",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
