@@ -1,0 +1,10 @@
+lefaire/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lefaire/connect.py,sha256=v9eYtR4foHZQiFkLQbjoqsLz75GLXP8sI2XepV_mFcQ,5178
+lefaire/data.py,sha256=RYDvY0QTkoyg_tcRFYIPTIiNc6EL6x0WtpuTQeXr6bs,16213
+lefaire/main.py,sha256=97azUjfkYTP85Ygo6RRh0_vwpuZ57NDo-_CzQa61fX4,17141
+lefaire/prompt.py,sha256=G_-k1EU3-SnT6_K_BrqzN8T5zF8KGOHyta8XvwLsaE0,1760
+lefaire/view.py,sha256=qJ6-tZrkh1zZPyS8rm8VKgxo4Oq2gRFbHnFDkiPCMJw,9916
+lefaire-0.1.8.dist-info/METADATA,sha256=4yp38pcB9IwwuRnkkqK-AAWoxLmN7ERjQPPVtQ_v2vc,1100
+lefaire-0.1.8.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+lefaire-0.1.8.dist-info/entry_points.txt,sha256=wnb6UqnXsUrXdx7uE-DpzBV5qJCeya3urf9X06NiWzo,44
+lefaire-0.1.8.dist-info/RECORD,,
