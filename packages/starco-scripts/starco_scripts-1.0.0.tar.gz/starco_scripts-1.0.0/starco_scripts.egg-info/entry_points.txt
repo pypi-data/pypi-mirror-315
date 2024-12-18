@@ -1,0 +1,2 @@
+[console_scripts]
+starco = scripts.__main__:main

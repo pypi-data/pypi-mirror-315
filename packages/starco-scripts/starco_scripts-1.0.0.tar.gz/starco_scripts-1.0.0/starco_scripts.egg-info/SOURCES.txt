@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+scripts/__init__.py
+scripts/__main__.py
+scripts/docker.py
+scripts/linux_service.py
+scripts/nginx_config.py
+starco_scripts.egg-info/PKG-INFO
+starco_scripts.egg-info/SOURCES.txt
+starco_scripts.egg-info/dependency_links.txt
+starco_scripts.egg-info/entry_points.txt
+starco_scripts.egg-info/requires.txt
+starco_scripts.egg-info/top_level.txt

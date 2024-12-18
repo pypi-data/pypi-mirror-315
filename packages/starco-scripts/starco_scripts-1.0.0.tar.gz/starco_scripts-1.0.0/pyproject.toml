@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "starco-scripts"
+version = "1.0.0"
+description = "Starco scripts package"
+authors = [{ name = "Mojtaba Tahmasbi", email = "m.tahmasbi0111@yahoo.com" }]
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "tqdm",
+    "colorama",
+    'rich',
+    "docker",
+    'aiohttp',
+]
+
+
+[tool.setuptools]
+packages = ["scripts"]
+
+[project.scripts]
+starco = "scripts.__main__:main"
