@@ -1,0 +1,11 @@
+sigmap/__init__.py,sha256=HJqaJ5IxGgg2dgvYlq2E85QHzTyC2taLCt5UJb9Pijw,161
+sigmap/const.py,sha256=UfCPyxUNMDgL7OvcarfkEj6JKUqtBe9nBCbcZJUsF8Q,24265
+sigmap/feature.py,sha256=4pBKD4s6VtO4C85glEXpjzsi8imBZaqxnmHlN6GiB9o,34020
+sigmap/setup.py,sha256=OV8tHZMV0adSPh6h3_UnUsRdkJY1w7l0D48rjofsW70,4761
+sigmap/sigmapred.py,sha256=MSxWnms40CEURTXY_Dp241bDCRyRgrztZ_4cHpdxOeM,2713
+sigmap/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sigmap/model/svc_model_sigma70,sha256=1xtrEcK91SFIlDGsPK6UQEnn3NXWuFShDE6kNiG_Ndc,903785
+sigmap-1.1.0.dist-info/METADATA,sha256=Z99y36IHlsy1ijHj2B2N-h7cIX2ikSwtmkyVltpYhYM,4752
+sigmap-1.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sigmap-1.1.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+sigmap-1.1.0.dist-info/RECORD,,
