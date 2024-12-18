@@ -1,0 +1,9 @@
+README.md
+setup.py
+indonesian_ai_assistant/__init__.py
+indonesian_ai_assistant/assistant.py
+indonesian_ai_assistant.egg-info/PKG-INFO
+indonesian_ai_assistant.egg-info/SOURCES.txt
+indonesian_ai_assistant.egg-info/dependency_links.txt
+indonesian_ai_assistant.egg-info/requires.txt
+indonesian_ai_assistant.egg-info/top_level.txt
