@@ -1,0 +1,10 @@
+discord_emojis/__init__.py,sha256=D2LUsVXp-dHU9HyCepnC7dqhxpmSDCYD_TJUEAEfIVM,1360
+discord_emojis/_version.py,sha256=frjyh3uwA70Z4yMt3tQwjCcnVFe10oGtkloq-0Ky_LI,64
+discord_emojis/emojis_collection.py,sha256=pKdK13Dw26R-lYEptmlGOPi8T3hVXDDoLTHHZiSdSaU,72324
+discord_emojis/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discord_emojis/utils.py,sha256=zrDFDHJmJO0v0qslyRlJDTG9H9EeRjcxSO8UAE3SCpc,2839
+discord_emojis-2024.12.17.dist-info/LICENSE,sha256=2XsqCqJdqLn1_PB7Q5w_k9_u7rXmsx8-67YOpkLBwOY,1058
+discord_emojis-2024.12.17.dist-info/METADATA,sha256=kMSKrjymJDzH79zSmB4u8rWDfiyjjsQ6M0O3eOJEGkA,1793
+discord_emojis-2024.12.17.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+discord_emojis-2024.12.17.dist-info/top_level.txt,sha256=JQBrq6Ye4efibeifi_6plMnrku7UnP6R4KgI6Fddgq0,15
+discord_emojis-2024.12.17.dist-info/RECORD,,
