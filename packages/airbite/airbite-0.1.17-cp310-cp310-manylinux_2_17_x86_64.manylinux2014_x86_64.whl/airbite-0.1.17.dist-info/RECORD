@@ -1,0 +1,15 @@
+airbite-0.1.17.dist-info/top_level.txt,sha256=4NwLAEo7MsrixZH4EubUdKdxJRj7PYJwzsExvnvg2gU,8
+airbite-0.1.17.dist-info/RECORD,,
+airbite-0.1.17.dist-info/METADATA,sha256=XLxpacVlMAHZ_pKwtlN_-yNMr59oL4iD-iBk5rU3NMA,3997
+airbite-0.1.17.dist-info/WHEEL,sha256=m2_gJPr7xnnGfiE013tVzgC-Sc1sFXYskwf7kyqFHXk,151
+airbite/__init__.cpython-310-x86_64-linux-gnu.so,sha256=E8Hcn1A_7YTDeND1fbQcYmVEn7OgmBN-MU6AiAHvat4,162600
+airbite/util.cpython-310-x86_64-linux-gnu.so,sha256=YYqt_pNz9NrkCi5zAYXjUL6W0vaO954GoW-oJd7xocw,549944
+airbite/hacks.cpython-310-x86_64-linux-gnu.so,sha256=tfls-1n7npJVQDot86FYi6ggPtE55I-3GFE9UVLPl4g,630904
+airbite/connectors.cpython-310-x86_64-linux-gnu.so,sha256=YOinHCUsy7YuDAVHEud6sJ1UGOGSNSnRVJRhqe7YmjM,855120
+airbite/model_generator.cpython-310-x86_64-linux-gnu.so,sha256=Mb_EgbOdct8v0fn5VuumUXzI058ObMxjP6rT-WSpUlo,1028648
+airbite/connector_configs/__init__.cpython-310-x86_64-linux-gnu.so,sha256=pBvt_29FrndojfUzELRdYFP-APvZLMKX_ZVkNzgputI,106144
+airbite/connector_configs/model/__init__.cpython-310-x86_64-linux-gnu.so,sha256=AjZmkq0S-iC_FJdXQJx696Mx2IAffVAa36IZDQj9YMU,74048
+airbite/connector_configs/model/source_file__0_5_16.cpython-310-x86_64-linux-gnu.so,sha256=6vfpuKllPf3rtstj6CioZmynW0dgv3npUIEivpCwnVY,242440
+airbite/connector_configs/model/destination_sftp_json__0_1_0.cpython-310-x86_64-linux-gnu.so,sha256=YqznP3RqqaBKpoNStEZt52Sbcw6RINHZTRIgMwM9wiY,135224
+airbite/connector_configs/model/source_file__0_5_15.cpython-310-x86_64-linux-gnu.so,sha256=b8Bt584oM07rLjDe6MSTKMK7mLHdznk8RLiLUeDgMHs,242440
+airbite/connector_configs/model/destination_csv__1_0_0.cpython-310-x86_64-linux-gnu.so,sha256=utsYUcIF4ajvXF5lmHX_XV66aA9gYubMFwnFYvFIgTM,151880
