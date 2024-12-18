@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: starco-scripts
+Version: 1.0.0
+Summary: Starco scripts package
+Author-email: Mojtaba Tahmasbi <m.tahmasbi0111@yahoo.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: colorama
+Requires-Dist: rich
+Requires-Dist: docker
+Requires-Dist: aiohttp
+
+# Starco scripts
+
+A scripts package providing various helper functions and tools.
+
+## Installation
+
+```bash
+pip install starco-scripts
